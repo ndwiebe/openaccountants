@@ -68,9 +68,9 @@ Every skill is in exactly one state — and the repo greps honestly:
 
 Your name on the tax knowledge AI actually uses — with attribution built in:
 
-1. **Build a skill** for the work you know cold: [openaccountants.com/skills/new](https://www.openaccountants.com/skills/new). It publishes credited to you, and lands in this repo under your name.
-2. **Review a skill** in your jurisdiction — your name, credential and review date go on it, here and on every AI answer that cites it.
-3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile) and your platform edits are committed to this repo as *you* — your contribution graph reflects your work.
+1. **Open a pull request** with a skill for the work you know cold: see [CONTRIBUTING.md](CONTRIBUTING.md). Your AI can write the file from our template in 15 minutes ([docs/CONTRIBUTE-PROMPT.md](docs/CONTRIBUTE-PROMPT.md)). Once merged it is live on openaccountants.com and in every connected AI, credited to you.
+2. **Fix a skill:** open a pull request against any skill in your jurisdiction; your name goes on it as the reviewer.
+3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile). The `contributor-status` check uses it to recognise you as a verified accountant, and any platform edits are committed to this repo as *you*.
 
 The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
 
@@ -90,9 +90,10 @@ every night:
 - **The nightly exam** tests whether AIs actually said what the guides say that day, or
   improvised. Improvisation gets caught, counted and fixed at the source.
 
-The sync runs both ways: platform edits land here as commits under the author's own name,
-and merged PRs here flow back into what every AI serves, credited to you. A guide with an
-accountant's byline never changes without that accountant's one-click approval.
+The sync runs both ways: the nightly export carries team edits and platform metadata only,
+and merged PRs here flow into what every AI serves, credited to you. Accountants' changes
+arrive as their own pull requests. A guide with an accountant's byline never changes without
+that accountant's one-click approval.
 
 The whole story, in plain words: [openaccountants.com/how-it-works](https://www.openaccountants.com/how-it-works)
 
@@ -104,6 +105,7 @@ Edit **`skills/**` only** — everything else regenerates automatically:
 
 - `packages/`, `index.json`, `llms-full.txt` — generated nightly; never edit in a PR
 - Merged source PRs are credited to you and must be confirmed as ingested before the next platform export
+- Skill PRs are merged only from verified accountants; the `contributor-status` check tells you where you stand
 - Full guide: [CONTRIBUTING.md](CONTRIBUTING.md) · Layout: [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md)
 
 ---
