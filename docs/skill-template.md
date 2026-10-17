@@ -10,7 +10,7 @@
 | `description` | 80-100 words | What it covers, entity types, jurisdiction, tax year, plus trigger phrases the AI should match |
 | `jurisdiction` | ISO code | `MT`, `GB`, `DE`, `US`, `US-CA`, `GLOBAL`, `INTL`, `EU-27`. Required even when the folder path implies it. Quote `"NO"` because YAML 1.1 otherwise reads Norway's code as boolean `false` |
 | `category` | one of the vocabulary below | Domain the skill covers |
-| `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in `tax_year_notes`, never here. CI errors on anything that is not an integer 2015-2035 |
+| `tax_year` | **bare integer**, e.g. `2025` | The **coverage start year**. Ranges, fiscal calendars, and qualifiers ("2025-26", "YA 2026", "2567 (2024)") go in the body text and optional `tax_year_notes`, never here. CI errors on anything that is not an integer 2015-2035 |
 | `publisher` | string | `OpenAccountants`; identifies the publisher without a review or attestation claim |
 | `last_updated` | `YYYY-MM-DD` | Date the content was last checked/edited. It must never move backwards |
 
@@ -18,7 +18,7 @@
 
 | Key | Format | Notes |
 |-----|--------|-------|
-| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"` |
+| `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`, `"2025 (with confirmed 2026 figures noted)"`. The platform export drops this key, so repeat the period in the body text |
 | `authored_by` | name | Actual author, only when explicitly known; never inferred from a reviewer |
 | `author_profile` | URL | Public profile for the named author |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
@@ -80,7 +80,7 @@ description: >
 jurisdiction: XX   # REQUIRED — MT, GB, DE, US, US-CA, GLOBAL, INTL, EU-27, etc.
 category: international   # see the category vocabulary above
 tax_year: 2025             # bare integer = coverage start year
-tax_year_notes: "2025-26"  # optional — only when a bare year can't express it
+tax_year_notes: "2025-26"  # optional; the export drops it, so repeat the label in the body
 publisher: OpenAccountants
 last_updated: 2026-07-04   # YYYY-MM-DD
 version: 0.1
@@ -102,7 +102,7 @@ depends_on:
 [Describe: what it computes, where it fits in the pipeline, what it does NOT cover.
 Reference the upstream skills it depends on and the downstream skills that consume its output.]
 
-**Tax year coverage.** This skill is current for **tax year 2025** as of its currency date.
+**Tax year coverage.** This skill is current for **tax year 2025-26** as of its currency date.
 
 **The reviewer is the customer of this output.** Per the base, this skill assumes a credentialed reviewer reviews and signs the return. The skill produces working papers and a brief, not a return.
 

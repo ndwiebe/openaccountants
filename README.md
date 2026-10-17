@@ -1,6 +1,6 @@
 # OpenAccountants
 
-**Open-source Tax Guides your AI can cite, with sources, methods and applicable periods.**
+**Free AI skills (tax rules your AI follows) your AI can cite, with sources, methods and applicable periods.**
 
 Published by **OpenAccountants**, founded by [Michael Cutajar](https://www.openaccountants.com/network/ecd6fe97-c3ed-4337-8e12-d1e7456201a9). Each Guide explains a tax task for a particular jurisdiction. Named authors receive credit for their work; founder credit does not imply authorship or professional expertise in every jurisdiction.
 
@@ -9,9 +9,9 @@ Published by **OpenAccountants**, founded by [Michael Cutajar](https://www.opena
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**1,890 Guides** across **231 jurisdictions** · **44 named accountants** · **17,141 questions answered** through connected AIs
+**1,903 skills** across **229 jurisdictions** · **44 named accountants** · **19,756 questions answered** through connected AIs
 
-<sub>Live from openaccountants.com — updated 2026-10-09 by the nightly sync.</sub>
+<sub>Live from openaccountants.com — updated 2026-10-16 by the nightly sync.</sub>
 <!-- oa-stats:end -->
 
 ---
@@ -33,10 +33,10 @@ Then ask a question your AI would otherwise guess at:
 Without OpenAccountants, models answer from training data. With it, the answer can cite a Guide, its applicable period and its official sources.
 
 ```
-You:    "I'm a freelancer in South Africa. What do I owe?"
-          ↓  loads za-income-tax, za-provisional-tax
-AI:     ITR12 working paper · IRP6 provisional schedule
-        Medical credits · Retirement annuity deduction
+You:    "I'm moving to Malta and selling my company next year. What tax do I face?"
+          ↓  loads moving-to-malta-tax-residence, selling-a-company-in-malta
+AI:     Residence and domicile · Remittance basis on foreign income
+        Gain on the share sale · Participation exemption check
         ─────────────────────────────────────────
         Source: OpenAccountants · applicable tax year
 ```
@@ -57,7 +57,7 @@ Read its jurisdiction, applicable tax year, scope, assumptions, calculation meth
 
 Historical review fields may remain in older source files and Git history. Current generated indexes and MCP responses do not present them as endorsements. See [Guide attribution and evidence](docs/QUALITY-TIERS.md).
 
-⚠️ **General reference, not advice.** Guides may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
+⚠️ **General reference, not advice.** skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
 ---
 
@@ -109,7 +109,7 @@ Edit **`skills/**` only** — everything else regenerates automatically:
 
 | What | Where |
 |---|---|
-| Guide source (per jurisdiction) | [`skills/`](skills/) |
+| Skill source (per jurisdiction) | [`skills/`](skills/) |
 | Per-country bundles (generated) | [`packages/`](packages/) |
 | Machine-readable inventory | [`index.json`](index.json) |
 | LLM entry point | [`llms.txt`](llms.txt) |
@@ -136,6 +136,6 @@ Independent, open-source review aids and calculation tools that complement the O
 ## License
 
 - **Code** (mcp/, scripts/, tools/): [AGPL-3.0](LICENSE)
-- **Guide content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
+- **skill content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
 
 **Contact:** info@openaccountants.com · [Security policy](SECURITY.md) · [Cite this repo](CITATION.cff)

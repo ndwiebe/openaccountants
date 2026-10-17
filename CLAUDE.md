@@ -2,14 +2,14 @@
 
 ## For AI agents landing here
 
-- This repo is a library of open-source **Tax Guides** ("skills") — plain-markdown tax rules for 240+ jurisdictions that any AI agent can read, with sources, methods and applicable periods.
+- This repo is a library of open-source **Tax skills** ("skills") — plain-markdown tax rules for 240+ jurisdictions that any AI agent can read, with sources, methods and applicable periods.
 - The full machine-readable Guide inventory is `index.json` at the repo root — read it first to find what exists.
 - Load Guides from `packages/<jurisdiction>/` (e.g. `packages/malta/`, `packages/us-ca/`) — each file is self-contained markdown.
 - Hosted MCP server for live Guide data: https://www.openaccountants.com/api/mcp
 - The website with the Tax Library and accountant directory: https://www.openaccountants.com
 - More detail for agents: `llms.txt` (short) and `llms-full.txt` (every Guide listed).
 
-This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **Guides** (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) are under the source-available OA Guide License, with a commercial track for both. See `LICENSING.md`. The companion website + admin layer lives in a separate repo. AI agents working on this repo should read the following before writing or committing.
+This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **skills** (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) are under the source-available OA Guide License, with a commercial track for both. See `LICENSING.md`. The companion website + admin layer lives in a separate repo. AI agents working on this repo should read the following before writing or committing.
 
 ## Repository overview
 
@@ -21,7 +21,7 @@ This is a mixed-licence repository: **software** is AGPL-3.0-only, and the **Gui
 - `scripts/` — Maintenance scripts (frontmatter cleanup, index regeneration via `build-index.py`, package builds, validation).
 - `LICENSING.md` — which licence applies to which files (start here).
 - `LICENSE` / `LICENSES/AGPL-3.0-only.txt` — AGPL-3.0-only, for the software.
-- `LICENSES/LicenseRef-OA-Guide-License-1.0.txt` — OA Guide License (source-available) for the Guides.
+- `LICENSES/LicenseRef-OA-Guide-License-1.0.txt` — OA Guide License (source-available) for the skills.
 - `REUSE.toml` — machine-readable per-path licence mapping.
 - `COMMERCIAL-LICENSING.md` — commercial alternative for both tracks.
 

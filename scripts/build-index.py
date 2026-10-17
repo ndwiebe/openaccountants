@@ -168,7 +168,7 @@ def build_index():
 # counts that go into index.json, so the two never disagree; llms-full.txt
 # embeds llms.txt and picks the figures up on its next build.
 LLMS_COUNTS_RE = re.compile(
-    r"[\d,]+ Guides across [\d,]+ jurisdictions in this repository"
+    r"[\d,]+ (?:Guides|AI skills) across [\d,]+ jurisdictions in this repository"
     r"(?:, [\d,]+ of them accountant-reviewed(?: and signed off by named Partners(?: \(CPAs/CAs/EAs\))?)?)?"
 )
 
@@ -180,7 +180,7 @@ def stamp_llms_counts(counts, path=None):
     with open(path, encoding="utf-8", newline="") as fh:
         text = fh.read()
     stamped, n = LLMS_COUNTS_RE.subn(
-        f"{counts['guides']:,} Guides across {counts['jurisdictions']:,} "
+        f"{counts['guides']:,} AI skills across {counts['jurisdictions']:,} "
         "jurisdictions in this repository",
         text,
     )
