@@ -1,8 +1,8 @@
 # OpenAccountants
 
-**Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
+**Free AI skills (tax rules your AI follows) your AI can cite, with sources and a published attribution state.**
 
-This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
+Every skill carries one of three attribution states: built by the OpenAccountants team, Accountant-authored, or Checked by a named second accountant. Read the frontmatter before relying on a skill; a named author is distinct from a second accountant who checked the work. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
@@ -30,7 +30,7 @@ Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
 
-Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its review status. Name a professional reviewer only when that skill version has a published review record.
+Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its attribution state. Name a checking accountant only when that skill version carries `reviewed_by:`.
 
 ```
 You:    "I'm moving to Malta and selling my company next year. What tax do I face?"
@@ -51,14 +51,17 @@ AI:     Residence and domicile · Remittance basis on foreign income
 
 ---
 
-## Two states, greppable honesty
+## Three states, greppable honesty
 
-Every skill is in exactly one state — and the repo greps honestly:
+Every skill is in exactly one attribution state, and the repo greps honestly:
 
-| State | Meaning |
-|---|---|
-| **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from primary legislation, every figure cited to its source — not yet professionally reviewed |
+| State | Meaning | Grep for |
+|---|---|---|
+| **Built by Michael Cutajar and the OpenAccountants team** | Written by the team from primary sources, every figure cited. No named accountant stands behind it | `trust_label: Built by` |
+| **Accountant-authored** | A named accountant, approved on openaccountants.com, wrote it. Not yet independently checked | `authored_by:` with a person's name and `trust_label: Accountant-authored` |
+| **Checked by <name>** | An accountant other than the author checked the complete skill. Their name is in `reviewed_by:` and on [the public roster](VERIFIERS.md) | `reviewed_by:` with `review_status: current` |
+
+`tier` is the legacy machine field: `1` = checked by a second accountant, `2` = not independently checked.
 
 ⚠️ **General reference, not advice.** skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 
@@ -66,10 +69,10 @@ Every skill is in exactly one state — and the repo greps honestly:
 
 ## Are you an accountant?
 
-Your name on the tax knowledge AI actually uses — with attribution built in:
+Your name on the tax knowledge AI actually uses, with attribution built in:
 
-1. **Open a pull request** with a skill for the work you know cold: see [CONTRIBUTING.md](CONTRIBUTING.md). Your AI can write the file from our template in 15 minutes ([docs/CONTRIBUTE-PROMPT.md](docs/CONTRIBUTE-PROMPT.md)). Once merged it is live on openaccountants.com and in every connected AI, credited to you.
-2. **Fix a skill:** open a pull request against any skill in your jurisdiction; your name goes on it as the reviewer.
+1. **Open a pull request** with a skill for the work you know cold: see [CONTRIBUTING.md](CONTRIBUTING.md). Your AI can write the file from our template in 15 minutes ([docs/CONTRIBUTE-PROMPT.md](docs/CONTRIBUTE-PROMPT.md)). Once merged it is live on openaccountants.com and in every connected AI, credited to you as Accountant-authored.
+2. **Check a skill:** open a pull request against any skill in your jurisdiction that someone else wrote; once merged, the skill reads "Checked by" with your name.
 3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile). The `contributor-status` check uses it to recognise you as a verified accountant, and any platform edits are committed to this repo as *you*.
 
 The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
