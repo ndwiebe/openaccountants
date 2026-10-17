@@ -311,7 +311,7 @@ def _catalogue() -> tuple[
             dir_codes[topdir][own] += 1
         rows.append({
             "slug": slug,
-            "title": _first_h1(body) or slug,
+            "title": _first_h1(sanitize_markdown(body, meta)) or slug,
             "own_jur": own,
             "topdir": topdir,
             "category": str(meta.get("category") or ""),
@@ -452,8 +452,8 @@ def _read_skill(slug: str) -> tuple[dict[str, Any], str]:
     size = fpath.stat().st_size
     if size > MAX_FILE_BYTES:
         raise ToolInputError(f"File too large ({size:,} bytes, limit {MAX_FILE_BYTES:,})")
-    _, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
-    return rec, sanitize_markdown(body)
+    meta, body = _parse_frontmatter(fpath.read_text(encoding="utf-8"), source=fpath.name)
+    return rec, sanitize_markdown(body, meta)
 
 
 def _provenance_footer(rec: dict[str, Any]) -> str:

@@ -1,5 +1,6 @@
-"""Public Guide attribution and legacy display-metadata filtering (stdlib only)."""
+"""Public Guide attribution and legacy display-metadata filtering."""
 import re
+import yaml
 
 PUBLISHER = "OpenAccountants"
 FOUNDER_CREDIT = "OpenAccountants · Founded by Michael Cutajar"
@@ -31,13 +32,20 @@ def attribution(meta):
     }
 
 
-def sanitize_markdown(text):
+def sanitize_markdown(text, metadata=None):
     """Remove Guide endorsement metadata, preserving legal review instructions."""
+    metadata = metadata or {}
     # The stored source remains unchanged. Generated copies omit legacy scalar
     # metadata, including indented continuations of a removed YAML field.
     if text.startswith("---\n"):
         match = re.match(r"\A---\n(.*?)\n---(?:\n|$)", text, re.S)
         if match:
+            try:
+                parsed = yaml.safe_load(match.group(1))
+            except yaml.YAMLError:
+                parsed = None
+            if isinstance(parsed, dict):
+                metadata = parsed
             lines, dropping = [], False
             for line in match.group(1).splitlines():
                 key = re.match(r"^([\w-]+):", line)
@@ -48,13 +56,32 @@ def sanitize_markdown(text):
             if not any(line.startswith("publisher:") for line in lines):
                 lines.append("publisher: OpenAccountants")
             text = "---\n" + "\n".join(lines) + "\n---\n" + text[match.end():]
+    standalone_values = {"pending", "pending_review", "research-verified", "accountant-verified", "accountant-reviewed", "1", "2"}
+    for key in ("reviewed_by", "verified_by", "reviewer"):
+        value = metadata.get(key)
+        if isinstance(value, str) and value.strip():
+            standalone_values.add(value.strip().casefold())
+
+    def remove_standalone_metadata(match):
+        value = match.group("value").strip().strip("*").strip().casefold()
+        return "" if value in standalone_values else match.group(0)
+
     text = re.sub(
-        r"(?im)^\s*(?:[-*>]\s*)?(?:\*\*)?(?:Reviewed by|Verified by|Checked by|Attested by|Lead verifier|Jurisdiction reviewer|Review status|Quality tier|Verification status)(?:\*\*)?\s*:[^\n]*(?:\n|$)",
+        r"(?im)^[ \t]*(?:[-*>][ \t]*)?(?:\*{1,2})?(?:Reviewed by|Verified by|Checked by|Attested by|Lead verifier|Jurisdiction reviewer|Review status|Quality tier|Verification status)(?:\*{1,2})?[ \t]*:[ \t]*(?P<value>[^\n]*)(?:\n|$)",
+        remove_standalone_metadata, text,
+    )
+    # Remove the dated endorsement, retaining any following limitations or instructions.
+    person = r"(?:\*\*)?(?:a licensed accountant|[A-Z][\w'’-]*(?:[ \t]+[A-Z][\w'’-]*){1,5})(?:\*\*)?"
+    text = re.sub(
+        r"(?m)^[ \t]*(?:>[ \t]*)?Reviewed against (?:the cited tax authorities|the cited sources|official sources) by "
+        + person + r" on \d{4}-\d{2}-\d{2}\.[ \t]*(?:\n|$)?", "", text,
+    )
+    text = re.sub(
+        r",?[ \t]*method attested by " + person
+        + r"(?: on \d{4}-\d{2}-\d{2})?(?: \((?:https?://)?openaccountants\.com/network/[^)\n]+\))?",
         "", text,
     )
-    text = re.sub(r"(?im)^\s*(?:>\s*)?Reviewed against (?:the cited tax authorities|the cited sources|official sources) by [^\n]*(?:\n|$)", "", text)
-    text = re.sub(r"(?im)^\s*(?:>\s*)?Verified by [^\n]*(?:\n|$)", "", text)
-    text = re.sub(r"(?i)\s*\((?:accountant[- ](?:reviewed|verified)|research[- ]verified|attested by another accountant)\)", "", text)
+    text = re.sub(r"(?i)[ \t]*\((?:Tier [12][ \t]*[—:-][ \t]*)?(?:accountant[- ](?:reviewed|verified)|research[- ]verified|attested by another accountant)(?:,[ \t]*(?:reviewer sign-off pending|pending accountant sign-off))?\)", "", text)
     text = re.sub(r"(?im)^(#{1,6}\s+)Verified (rates[^\n]*)", r"\1\2", text)
     text = re.sub(r"(?i)\baccountant[- ](?:reviewed|verified)\s+(?=(?:(?:UK VAT|uk-vat-return)\s+|\[[^\]\n]+\]\([^\n)]+\)\s+)?Guide\b)", "", text)
     return re.sub(r"(?i)Michael Cutajar and (?:the )?OpenAccountants team", PUBLISHER, text)
