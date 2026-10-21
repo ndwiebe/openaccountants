@@ -14,11 +14,11 @@ assert SPEC.loader is not None
 SPEC.loader.exec_module(validate_guides)
 
 
-def errors_for(tier=None, reviewed_by=None, verified_by=None):
+def errors_for(tier=None, reviewed_by=None, verified_by=None, **provenance):
     errors = []
     validate_guides.check_quality_metadata(
         "skills/example.md",
-        {"tier": tier, "reviewed_by": reviewed_by, "verified_by": verified_by},
+        {"tier": tier, "reviewed_by": reviewed_by, "verified_by": verified_by, **provenance},
         errors,
     )
     return errors
@@ -45,6 +45,24 @@ class QualityMetadataValidationTests(unittest.TestCase):
             "must not carry a named accountant in the retired `verified_by` key",
             errors_for("2", verified_by="Alex Example, CPA")[0],
         )
+
+    def test_tier_one_rejects_non_current_review(self):
+        self.assertIn("conflicts with", errors_for("1", "Alex", review_status="pending_review")[0])
+
+    def test_tier_one_rejects_same_author_and_reviewer(self):
+        self.assertIn("must be distinct", errors_for("1", "Alex", authored_by=" alex ", review_status="current")[0])
+
+    def test_tier_one_accepts_distinct_author_current_review(self):
+        self.assertEqual(errors_for("1", "Alex", authored_by="Sam", review_status="current"), [])
+
+    def test_block_scalar_provenance_cannot_pass_as_missing_legacy_fields(self):
+        parser = validate_guides.load_build_index()
+        for provenance in ("review_status: >-\n  pending_review", "authored_by: >-\n  Alex", "authored_by: >2-\n  Alex"):
+            with self.subTest(provenance=provenance):
+                fields = parser.parse_known_keys("tier: 1\nreviewed_by: Alex\n" + provenance)
+                errors = []
+                validate_guides.check_quality_metadata("skills/example.md", fields, errors)
+                self.assertTrue(errors)
 
 
 if __name__ == "__main__":

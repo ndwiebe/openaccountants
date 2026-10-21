@@ -12,7 +12,7 @@ import yaml
 
 @unittest.skipUnless(shutil.which("bash") and shutil.which("jq"), "requires bash and jq")
 class ContributorStatusWorkflowTests(unittest.TestCase):
-    def run_step(self, step_id, pages, api_failure=False, changed_files=3000):
+    def run_step(self, step_id, pages, api_failure=False, changed_files=3000, status="unknown"):
         workflow = Path(__file__).resolve().parents[1] / ".github/workflows/contributor-status.yml"
         steps = yaml.safe_load(workflow.read_text(encoding="utf-8"))["jobs"]["contributor-status"]["steps"]
         script = steps[step_id]["run"]
@@ -22,6 +22,7 @@ class ContributorStatusWorkflowTests(unittest.TestCase):
           [ "$API_FAILURE" = "0" ] || return 1
           if [ "$2" = "-X" ]; then
             printf 'MUTATION=%s %s\n' "$3" "$4"
+            cat "$RUNNER_TEMP/comment.md" >> "$GITHUB_OUTPUT"
             return
           fi
           while [ "$#" -gt 0 ]; do
@@ -45,7 +46,8 @@ class ContributorStatusWorkflowTests(unittest.TestCase):
                    "API_PAGES": fixture.as_posix(), "API_FAILURE": "1" if api_failure else "0",
                    "PR_CHANGED_FILES": str(changed_files),
                    "GITHUB_OUTPUT": output.as_posix(), "RUNNER_TEMP": root.as_posix(),
-                   "MARKER": "<!-- contributor-status -->", "STATUS": "unknown",
+                   "MARKER": "<!-- contributor-status -->", "STATUS": status,
+                   "NAME": "Example Accountant", "JURISDICTION": "MT", "CREDENTIAL": "Example",
                    "LOOKUP_FAILED": "false", "TOUCHES_SKILLS": "false"}
             result = subprocess.run([shutil.which("bash"), "--noprofile", "--norc"],
                                     input=stubs + script, env=env, text=True, capture_output=True)
@@ -107,6 +109,14 @@ class ContributorStatusWorkflowTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("created comment", result.stdout)
         self.assertNotIn("updated comment", result.stdout)
+
+    def test_code_only_comments_preserve_cla_and_review_requirements(self):
+        for status in ("verified", "unknown"):
+            with self.subTest(status=status):
+                result, comment = self.run_step(3, [[]], status=status)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                self.assertIn("CLA and normal review requirements still apply", comment)
+                self.assertNotIn("no licence is needed", comment)
 
 
 if __name__ == "__main__":

@@ -130,7 +130,7 @@ jobs:
               if [ "$TOUCHES_SKILLS" = true ]; then
                 echo "This pull request changes skills. A maintainer (Michael or Ryan) will read the method and merge. After the merge the platform ingests it within minutes and the skill is live on openaccountants.com and in every connected AI, credited to you."
               else
-                echo "This pull request does not change skills, so no licence is needed. A maintainer will review and merge."
+                echo "Verified-accountant status is not required for code-only PRs; the repository's CLA and normal review requirements still apply."
               fi
             else
               if [ "$LOOKUP_FAILED" = true ]; then
@@ -148,7 +148,7 @@ jobs:
                 echo
                 echo "Not an accountant? Thank you for the work. Please open an issue with the correction and its official source instead, and a verified accountant will carry it in."
               else
-                echo "This pull request does not change skills, so no licence is needed and this check passes. A maintainer will review and merge."
+                echo "Verified-accountant status is not required for code-only PRs; the repository's CLA and normal review requirements still apply."
               fi
             fi
             echo

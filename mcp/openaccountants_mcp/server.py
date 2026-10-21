@@ -207,15 +207,20 @@ def _real_verifier(meta: dict[str, Any]) -> str | None:
 def _quality_tier(meta: dict[str, Any]) -> str:
     """Map explicit frontmatter tier to the public quality identifier.
 
-    Tier 1 also requires a named checking accountant. Missing or inconsistent
-    metadata fails closed as research-verified (the legacy identifier for "not
-    independently checked by a second accountant") rather than inferring a
-    check from a reviewer field alone.
+    Tier 1 requires a named reviewer and no explicit non-current review or
+    identical author/reviewer. Absent status/author fields remain supported
+    for legacy records, without establishing current independent review.
     """
     tier = str(meta.get("tier") or "").strip()
+    raw_status = meta.get("review_status")
+    status = "" if raw_status is None else str(raw_status).strip().casefold()
+    reviewer = _real_verifier(meta)
+    author = str(meta.get("authored_by") or "").strip().casefold()
     return (
         "accountant-verified"
-        if tier == "1" and _real_verifier(meta)
+        if tier == "1" and reviewer
+        and status in ("", "current")
+        and (not author or author != reviewer.casefold())
         else "research-verified"
     )
 
@@ -1281,7 +1286,7 @@ Step 4: Produce a working paper with:
   - All assumptions disclosed
   - Items flagged for accountant review
   - Filing deadlines and payment dates
-Step 5: End with: "This working paper was prepared using skills checked by [verifier name] at openaccountants.com. Have your accountant review before filing."
+Step 5: Attribute each loaded skill separately using its actual quality metadata and provenance footer. Name a checking accountant only when that skill supports the attribution. For an unreviewed skill or missing provenance, say that an independent check is not established. For mixed reviewed and unreviewed skills, identify which is which; never claim the whole working paper was checked. End with: "Have your accountant review before filing."
 
 Conservative defaults: when uncertain, assume MORE tax, never less.
 No LLM computes tax amounts — use only the rates and thresholds from the skills."""

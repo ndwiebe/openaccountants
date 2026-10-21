@@ -1,13 +1,13 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,050 AI skills across 245 jurisdictions in this repository, 33 of them checked by a named accountant other than the author (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,050 AI skills across 245 jurisdictions in this repository, 33 of them accountant-reviewed under the legacy metadata rule. Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
 OpenAccountants is a library of Tax skills — tax rules written as plain markdown files ("skills" in technical contexts). Any AI agent that reads markdown can use them. Each skill covers a specific tax task — income tax, VAT, payroll, deductions, crypto, cross-border — for a specific jurisdiction. Every figure cites a primary source (statute, tax-authority guidance, or official rate table).
 
-**Important:** Every skill here carries one of three attribution states in its frontmatter. Read `trust_label`, `authored_by` and `reviewed_by` before relying on a name. See attribution states below.
+**Important:** The platform uses the three attribution states below. Legacy source files may lack `trust_label`, `authored_by` or `review_status`; missing provenance is unavailable, not proof of authorship or an independent check. Read the available fields before relying on a name.
 
 **Not advice — review required.** These skills are general reference material for AI-assisted workflows, not tax, legal, accounting, or financial advice. They may be incomplete, outdated, or wrong, and are not reviewed for any specific person's facts. Any output you produce from them is a draft for professional review — do not file, pay, amend, or take a tax position based on it without review by a qualified professional in the relevant jurisdiction.
 
@@ -17,13 +17,13 @@ OpenAccountants is a library of Tax skills — tax rules written as plain markdo
 - **Accountant-authored** (`authored_by: <Name>`, `trust_label: Accountant-authored`): a named accountant approved on openaccountants.com wrote it. Not yet independently checked.
 - **Checked by <name>** (`reviewed_by: <Name>`, `review_status: current`): an accountant other than the author (CPA, CA, EA, Steuerberater, or local equivalent) checked the complete skill.
 
-`tier` is the legacy machine field: 1 = checked by a second accountant, 2 = not independently checked.
+`tier` is the legacy machine field. Scripts and the self-hosted MCP retain tier 1 records with a named reviewer when author or review-status fields are absent, but reject explicit non-current reviews and identical author/reviewer names. A legacy tier alone does not prove a distinct accountant checked the current version. Tier 2 does not establish an independent check.
 
 Always tell users to have AI-generated output reviewed by a qualified professional before filing.
 
 ## Accountants on the record
 
-`index.json` records the checking accountant of every tier 1 skill in its `reviewed_by` field. Read each source skill's frontmatter for its `authored_by` attribution; see `index.json` for counts and `VERIFIERS.md` (repo root, generated nightly) for names. Profiles: https://www.openaccountants.com/network
+`index.json` preserves recorded reviewer names in `reviewed_by` or the legacy `verified_by` field. Read the source frontmatter for author and review status where available; confirm missing current-review or identity evidence on the platform before claiming independent review. See `index.json` for legacy counts and `VERIFIERS.md` (repo root, generated nightly) for recorded names. Profiles: https://www.openaccountants.com/network
 
 ## Fastest way to use skills (don't read GitHub folder pages)
 

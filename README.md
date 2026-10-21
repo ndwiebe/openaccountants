@@ -2,7 +2,7 @@
 
 **Free AI skills (tax rules your AI follows) your AI can cite, with sources and a published attribution state.**
 
-Every skill carries one of three attribution states: built by the OpenAccountants team, Accountant-authored, or Checked by a named second accountant. Read the frontmatter before relying on a skill; a named author is distinct from a second accountant who checked the work. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
+The platform uses three attribution states: built by the OpenAccountants team, Accountant-authored or Checked by a named second accountant. Legacy source files may lack these fields; missing provenance is unavailable, not evidence of team authorship or an independent check. Read the frontmatter before relying on a skill. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
 
 ## Need someone to do the accounting?
 
@@ -40,7 +40,7 @@ Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
 
-Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its attribution state. Name a checking accountant only when that skill version carries `reviewed_by:`.
+Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its recorded provenance. Check the review status and authorship before claiming that a named accountant independently checked the current version.
 
 ```
 You:    "I'm moving to Malta and selling my company next year. What tax do I face?"
@@ -63,7 +63,7 @@ AI:     Residence and domicile · Remittance basis on foreign income
 
 ## Three states, greppable honesty
 
-Every skill is in exactly one attribution state, and the repo greps honestly:
+These are the platform's attribution states. Source files exported under older conventions may not yet identify one:
 
 | State | Meaning | Grep for |
 |---|---|---|
@@ -71,7 +71,7 @@ Every skill is in exactly one attribution state, and the repo greps honestly:
 | **Accountant-authored** | A named accountant, approved on openaccountants.com, wrote it. Not yet independently checked | `authored_by:` with a person's name and `trust_label: Accountant-authored` |
 | **Checked by <name>** | An accountant other than the author checked the complete skill. Their name is in `reviewed_by:` and on [the public roster](VERIFIERS.md) | `reviewed_by:` with `review_status: current` |
 
-`tier` is the legacy machine field: `1` = checked by a second accountant, `2` = not independently checked.
+`tier` is the legacy machine field. The scripts and self-hosted MCP retain tier 1 records with a named reviewer when author or review-status fields are absent. They reject explicit non-current reviews and identical author/reviewer names. A legacy tier alone does not prove a distinct accountant checked the current version; confirm that evidence on the platform. Tier 2 does not establish an independent check.
 
 ⚠️ **General reference, not advice.** skills may be incomplete, outdated, or wrong for your facts. Have a qualified professional review outputs before filing, payment, or action.
 

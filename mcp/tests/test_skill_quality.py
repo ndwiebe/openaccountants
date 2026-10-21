@@ -43,6 +43,20 @@ class SkillQualityTests(unittest.TestCase):
                 meta = {"tier": tier, "reviewed_by": "Alex Example, CPA"}
                 self.assertEqual(server._quality_tier(meta), "research-verified")
 
+    def test_explicit_non_current_review_fails_closed(self):
+        for status in ("pending_review", "stale", False):
+            with self.subTest(status=status):
+                meta = {"tier": 1, "reviewed_by": "Alex", "review_status": status}
+                self.assertEqual(server._quality_tier(meta), "research-verified")
+
+    def test_same_author_and_reviewer_fails_closed(self):
+        meta = {"tier": 1, "reviewed_by": "Alex", "authored_by": " alex ", "review_status": "current"}
+        self.assertEqual(server._quality_tier(meta), "research-verified")
+
+    def test_distinct_author_with_current_review_keeps_tier_one(self):
+        meta = {"tier": 1, "reviewed_by": "Alex", "authored_by": "Sam", "review_status": "current"}
+        self.assertEqual(server._quality_tier(meta), "accountant-verified")
+
 
 class IndexVerifierExposureTests(unittest.TestCase):
     """A non-tier-1 row must not publish a reviewer name in ``verified_by``.
@@ -58,19 +72,20 @@ name: {slug}
 tier: {tier}
 jurisdiction: MT
 reviewed_by: Alex Example, CPA
+{provenance}
 ---
 
 # {slug}
 """
 
-    def _row_for(self, slug: str, tier: int) -> dict:
+    def _row_for(self, slug: str, tier: int, provenance: str = "") -> dict:
         """Build a one-guide packages tree and return that guide's index row."""
         tmp = tempfile.TemporaryDirectory()
         self.addCleanup(tmp.cleanup)
         package = Path(tmp.name) / "malta"
         package.mkdir(parents=True)
         (package / f"{slug}.md").write_text(
-            self.GUIDE.format(slug=slug, tier=tier), encoding="utf-8"
+            self.GUIDE.format(slug=slug, tier=tier, provenance=provenance), encoding="utf-8"
         )
         self.addCleanup(server._index.cache_clear)
         with mock.patch.object(server, "PACKAGES_DIR", Path(tmp.name)):
@@ -88,6 +103,25 @@ reviewed_by: Alex Example, CPA
 
         self.assertEqual(row["quality_tier"], "accountant-verified")
         self.assertEqual(row["verified_by"], "Alex Example, CPA")
+
+    def test_pending_tier_one_hides_reviewer_in_catalogue_and_footer(self):
+        row = self._row_for("pending-guide", 1, "review_status: pending_review")
+        self.assertEqual(row["quality_tier"], "research-verified")
+        self.assertIsNone(row["verified_by"])
+        footer = server._provenance_footer(row)
+        self.assertIn("not independently checked", footer)
+        self.assertNotIn("checked by Alex", footer)
+
+    def test_tax_return_prompt_preserves_per_skill_attribution_for_mixed_input(self):
+        reviewed = self._row_for("reviewed-guide", 1)
+        unreviewed = self._row_for("unreviewed-guide", 2)
+        self.assertIn("checked by Alex", server._provenance_footer(reviewed))
+        self.assertNotIn("checked by Alex", server._provenance_footer(unreviewed))
+        prompt = server.tax_return("MT")
+        self.assertIn("Attribute each loaded skill separately", prompt)
+        self.assertIn("For an unreviewed skill or missing provenance", prompt)
+        self.assertIn("For mixed reviewed and unreviewed skills, identify which is which", prompt)
+        self.assertNotIn("[verifier name]", prompt)
 
 
 if __name__ == "__main__":

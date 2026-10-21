@@ -35,7 +35,7 @@ GUIDE_TREES = [
     os.path.join("packages", "us-federal"),
 ]
 
-# Frontmatter keys lifted into the index (in output order).
+# Frontmatter keys parsed for index rows and the review-count predicate.
 KNOWN_KEYS = [
     "name",
     "jurisdiction",
@@ -43,6 +43,8 @@ KNOWN_KEYS = [
     "tier",
     "verified_by",
     "reviewed_by",
+    "review_status",
+    "authored_by",
     "tax_year",
     "last_updated",
 ]
@@ -94,7 +96,12 @@ def parse_known_keys(block):
         key = match.group(1)
         if key not in fields or fields[key] is not None:
             continue
-        fields[key] = clean_value(match.group(2))
+        raw = match.group(2)
+        fields[key] = clean_value(raw)
+        # The stdlib scanner cannot qualify block-scalar provenance. Preserve
+        # its explicit presence so it cannot masquerade as absent legacy data.
+        if key in ("authored_by", "review_status") and raw.lstrip().startswith((">", "|")):
+            fields[key] = raw.strip()
     return fields
 
 
@@ -117,8 +124,30 @@ def guide_files():
     return sorted(set(paths))
 
 
+def is_reviewed(guide):
+    """Match the MCP legacy tier classifier, rejecting explicit contradictions.
+
+    Missing status/author fields remain supported for legacy records; they do
+    not establish that the reviewer is a distinct, current professional.
+    """
+    if str(guide.get("tier") or "").strip() != "1":
+        return False
+    raw_status = guide.get("review_status")
+    status = "" if raw_status is None else str(raw_status).strip().casefold()
+    if status not in ("", "current"):
+        return False
+    markers = {"pending", "pending_review", "none", "no", "false", "-", "n/a", "tbd"}
+    for key in ("reviewed_by", "verified_by"):
+        reviewer = str(guide.get(key) or "").strip()
+        if reviewer and reviewer.casefold() not in markers:
+            author = str(guide.get("authored_by") or "").strip()
+            return not author.startswith((">", "|")) and (not author or author.casefold() != reviewer.casefold())
+    return False
+
+
 def build_index():
     guides = []
+    reviewed_count = 0
     for rel_path in guide_files():
         with open(os.path.join(REPO_ROOT, rel_path), encoding="utf-8", errors="replace") as fh:
             text = fh.read()
@@ -126,6 +155,7 @@ def build_index():
         if block is None:
             continue  # not a guide (no frontmatter)
         fields = parse_known_keys(block)
+        reviewed_count += is_reviewed(fields)
 
         jurisdiction = fields["jurisdiction"]
         if jurisdiction and CODE_RE.match(jurisdiction):
@@ -151,27 +181,12 @@ def build_index():
     guides.sort(key=lambda g: g["path"])
 
     jurisdictions = {g["jurisdiction"] for g in guides if g["jurisdiction"]}
-    unreviewed_markers = {"pending", "none", "no", "false", "-", "n/a", "tbd"}
-
-    def is_reviewed(guide):
-        # Same rule as the MCP server's `_quality_tier`: only an explicit
-        # `tier: 1` plus a named reviewer counts. A reviewer name alone never
-        # implies sign-off, or this inventory reports guides as
-        # accountant-reviewed that the MCP server serves as research-verified.
-        if str(guide["tier"] or "").strip() != "1":
-            return False
-        for key in ("reviewed_by", "verified_by"):
-            value = guide[key]
-            if value and str(value).strip().lower() not in unreviewed_markers:
-                return True
-        return False
-
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "counts": {
             "guides": len(guides),
             "jurisdictions": len(jurisdictions),
-            "accountant_reviewed": sum(1 for g in guides if is_reviewed(g)),
+            "accountant_reviewed": reviewed_count,
         },
         "guides": guides,
     }

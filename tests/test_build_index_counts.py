@@ -9,6 +9,7 @@ import tempfile
 import unittest
 from contextlib import redirect_stderr
 from pathlib import Path
+from unittest import mock
 
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 
@@ -78,6 +79,32 @@ class StampLlmsCountsTests(unittest.TestCase):
             self.assertFalse(build_index.stamp_llms_counts(COUNTS, path=path))
         self.assertIn("expected 1", err.getvalue())
         self.assertEqual(path.read_text(encoding="utf-8"), "no counts sentence here\n")
+
+
+class ReviewCountsTests(unittest.TestCase):
+    def test_counts_exclude_explicit_review_conflicts_and_preserve_legacy(self):
+        variants = [
+            "tier: 1\nreviewed_by: Alex Example\nreview_status: pending_review",
+            "tier: 1\nreviewed_by: Alex Example\nauthored_by: alex example\nreview_status: current",
+            "tier: 1\nreviewed_by: Alex Example\nauthored_by: Sam Example\nreview_status: current",
+            "tier: 1\nverified_by: Alex Example",
+            "tier: 1\nreviewed_by: pending_review",
+            "tier: 2\nreviewed_by: Alex Example",
+            "tier: 1\nreviewed_by: Alex Example\nreview_status: >-\n  pending_review",
+            "tier: 1\nreviewed_by: Alex Example\nauthored_by: >-\n  Alex Example",
+            "tier: 1\nreviewed_by: Alex Example\nauthored_by: >2-\n  Alex Example",
+        ]
+        with tempfile.TemporaryDirectory() as tmp:
+            skills = Path(tmp) / "skills"
+            skills.mkdir()
+            for i, fields in enumerate(variants):
+                (skills / f"guide-{i}.md").write_text(f"---\n{fields}\n---\n# Guide", encoding="utf-8")
+            with mock.patch.object(build_index, "REPO_ROOT", tmp), mock.patch.object(build_index, "GUIDE_TREES", ["skills"]):
+                result = build_index.build_index()
+        self.assertEqual(result["counts"]["guides"], 9)
+        self.assertEqual(result["counts"]["accountant_reviewed"], 2)
+        # Parsing additional provenance must not silently change the public row schema.
+        self.assertNotIn("authored_by", result["guides"][0])
 
 
 if __name__ == "__main__":

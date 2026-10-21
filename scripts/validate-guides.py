@@ -105,6 +105,17 @@ def check_quality_metadata(rel, fields, errors):
         errors.append(f"{rel}: `tier` must be 1 or 2 (got {tier!r})")
     elif tier == "1" and not (reviewed_by or verified_by):
         errors.append(f"{rel}: tier 1 requires a real `reviewed_by` or `verified_by` value")
+    elif tier == "1":
+        raw_status = fields.get("review_status")
+        status = "" if raw_status is None else str(raw_status).strip().casefold()
+        reviewer = fields["reviewed_by"] if reviewed_by else fields["verified_by"]
+        author = str(fields.get("authored_by") or "").strip().casefold()
+        if status not in ("", "current"):
+            errors.append(f"{rel}: tier 1 conflicts with `review_status` {status!r}")
+        if author.startswith((">", "|")):
+            errors.append(f"{rel}: tier 1 `authored_by` must use an inline scalar for inventory validation")
+        elif author and author == str(reviewer).strip().casefold():
+            errors.append(f"{rel}: tier 1 author and checking accountant must be distinct")
     elif tier == "2" and verified_by:
         errors.append(f"{rel}: tier 2 must not carry a named accountant in the retired `verified_by` key")
 

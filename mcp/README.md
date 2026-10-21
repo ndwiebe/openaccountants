@@ -280,4 +280,4 @@ All checks should pass (path safety, tool outputs, jurisdiction count, US state 
 
 ## Disclaimer
 
-All skills and outputs are for informational and computational purposes only. Not tax, legal, or financial advice. Not a replacement for professional judgment. Every skill is in one of [two tiers](../docs/QUALITY-TIERS.md) — **accountant-reviewed** (a licensed practitioner reviewed and signed off) or a **source-cited draft** (drafted from authoritative sources, awaiting review). Most skills are source-cited drafts. Always have a qualified professional review before filing or acting upon.
+All skills and outputs are for informational and computational purposes only, not tax, legal or financial advice or a replacement for professional judgement. The self-hosted server uses [legacy tier identifiers](../docs/QUALITY-TIERS.md); older records may lack author or current-review evidence. Read each skill's provenance and confirm missing evidence on the platform before claiming an independent check. Always have a qualified professional review before filing or acting upon.

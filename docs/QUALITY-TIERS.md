@@ -2,7 +2,7 @@
 
 How we say who stands behind a skill.
 
-Every published skill is in exactly one of **three attribution states**:
+The platform defines **three attribution states**. Legacy source files may lack the fields needed to establish one:
 
 ---
 
@@ -14,9 +14,11 @@ Every published skill is in exactly one of **three attribution states**:
 | **Accountant-authored** | `authored_by: <Name[, credential]>` and `trust_label: Accountant-authored` | A named accountant, approved on openaccountants.com, wrote the skill. Nobody else has checked it yet. | `2` |
 | **Checked by <name>** | `reviewed_by: <Name[, credential]>`, `review_status: current`, `trust_label: Checked by <Name>` | An accountant other than the author checked the complete skill. Their name is on the skill and on [VERIFIERS.md](../VERIFIERS.md). | `1` |
 
-That's it. If a skill is published, it is one of those three.
+Missing provenance is unavailable. Do not infer team authorship or an independent check from absent fields.
 
-> **Display label vs. stored identifier.** `tier` stays as the machine field: `1` = checked by a second accountant, `2` = not independently checked. The `verified_by` key is retired; the export removes it. Legacy enums in scripts (`accountant-verified` / `research-verified`) keep their spelling as identifiers only. Everywhere a human reads it, the three labels above are the words.
+Use inline YAML scalars for `authored_by` and `review_status`. The inventory's dependency-free scanner cannot qualify block scalars and rejects them for tier 1 rather than treating them as missing legacy fields. The MCP reads full YAML; neither route accepts an explicit pending review or identical author/reviewer as independent sign-off.
+
+> **Display label vs. stored identifier.** `tier` stays as the legacy machine field. Scripts and the self-hosted MCP retain tier 1 records with a named reviewer when author or review-status fields are absent; they reject explicit non-current reviews and identical author/reviewer names. Legacy enums (`accountant-verified` / `research-verified`) are compatibility identifiers, not proof that a distinct professional checked the current version. Confirm that evidence on the platform. The retired `verified_by` spelling remains readable for older records.
 
 ---
 
@@ -98,11 +100,11 @@ Key rules:
 | `us-schedule-c-and-se-computation` | US Federal | Pending publication of practitioner registry |
 | `us-ca-freelance-intake` | US-CA | Pending publication of practitioner registry |
 
-This list is a hand-curated sample; the generated [VERIFIERS.md](../VERIFIERS.md) at the repo root is the current roster. A skill is in this state when it carries `tier: 1` plus the checking accountant's name in `reviewed_by`. To add one, set **both** `tier: 1` and `reviewed_by`, then regenerate the canonical inventory with `python3 scripts/build-index.py` so the tier and name land in `index.json`.
+This list is a hand-curated sample of legacy tier 1 records; the generated [VERIFIERS.md](../VERIFIERS.md) records reviewer names. These inventories do not independently verify current review or identity separation. To establish the platform's Checked by state, obtain a distinct accountant's review of the complete current version and record `tier: 1`, `reviewed_by`, `authored_by` and `review_status: current` through the platform workflow. Generated inventories remain the scheduled sync's responsibility.
 
 ### Not independently checked (tier 2)
 
-Everything else in this repo, either team-built or Accountant-authored; the `counts` block of `index.json` gives the current total. Each one's frontmatter shows the research date and the authoritative sources cross-checked.
+Other records do not establish an independent check. Read their provenance to distinguish team-built from Accountant-authored skills; legacy files may not supply enough metadata. The `counts` block of `index.json` gives the legacy classification totals.
 
 ---
 
