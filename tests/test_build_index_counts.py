@@ -55,6 +55,17 @@ class StampLlmsCountsTests(unittest.TestCase):
         self.assertFalse(build_index.stamp_llms_counts({"guides": 1998, "jurisdictions": 245, "accountant_reviewed": 171}, path=path))
         self.assertEqual(path.stat().st_mtime_ns, before)
 
+    def test_restamps_independent_check_wording_and_keeps_crlf(self) -> None:
+        sentence = SENTENCE.replace("accountant-reviewed", "checked by a named accountant other than the author")
+        path = self._write(sentence + "\r\n")
+        self.assertTrue(build_index.stamp_llms_counts(COUNTS, path=path))
+        text = path.read_bytes().decode("utf-8")
+        self.assertIn("168 of them checked by a named accountant other than the author", text)
+        self.assertTrue(text.endswith("\r\n"))
+        before = path.stat().st_mtime_ns
+        self.assertFalse(build_index.stamp_llms_counts(COUNTS, path=path))
+        self.assertEqual(path.stat().st_mtime_ns, before)
+
     def test_restamps_the_pre_rename_wording(self) -> None:
         path = self._write(OLD_SENTENCE + "\n")
         self.assertTrue(build_index.stamp_llms_counts({"guides": 1998, "jurisdictions": 245, "accountant_reviewed": 171}, path=path))

@@ -42,7 +42,7 @@ class QualityMetadataValidationTests(unittest.TestCase):
         self.assertEqual(errors_for("2", reviewed_by="Alex Example, CPA"), [])
         self.assertEqual(errors_for("2", verified_by="pending"), [])
         self.assertIn(
-            "must not claim accountant verification",
+            "must not carry a named accountant in the retired `verified_by` key",
             errors_for("2", verified_by="Alex Example, CPA")[0],
         )
 

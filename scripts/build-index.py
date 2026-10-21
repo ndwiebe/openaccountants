@@ -184,7 +184,7 @@ LLMS_COUNTS_RE = re.compile(
     # "Guides" until 16 Oct 2026, "AI skills" after: match both so the first build
     # after the rename restamps instead of warning.
     r"[\d,]+ (?:Guides|AI skills) across [\d,]+ jurisdictions in this repository, "
-    r"[\d,]+ of them accountant-reviewed"
+    r"[\d,]+ of them (?P<label>accountant-reviewed|checked by a named accountant other than the author)"
 )
 
 
@@ -195,9 +195,9 @@ def stamp_llms_counts(counts, path=None):
     with open(path, encoding="utf-8", newline="") as fh:
         text = fh.read()
     stamped, n = LLMS_COUNTS_RE.subn(
-        f"{counts['guides']:,} AI skills across {counts['jurisdictions']:,} "
+        lambda match: f"{counts['guides']:,} AI skills across {counts['jurisdictions']:,} "
         f"jurisdictions in this repository, {counts['accountant_reviewed']:,} "
-        "of them accountant-reviewed",
+        f"of them {match.group('label')}",
         text,
     )
     if n != 1:
