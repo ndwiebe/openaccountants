@@ -52,7 +52,7 @@ The self-hosted server exposes the 6 read-only tools below. The hosted server at
 | Tool | Description |
 |------|-------------|
 | `start` | **Front door.** Call first whenever a user asks for tax/accounting help. Takes optional `intent` (free text — e.g. `"taxes"`, `"VAT return"`, `"set up a company"`) and `jurisdiction` (e.g. `"MT"`, `"GB"`, `"US-CA"`). Returns either a clarification question or a ready-to-execute plan (`skills_to_load`, `expectations`, `next_action`, `guardrails`). |
-| `list_skills` | List published skills with quality tier and reviewing accountant. Optional `jurisdiction` (ISO code, e.g. `MT`, `GB`, `US-CA`) and `category` filters. |
+| `list_skills` | List published skills with publisher, explicit author and tax year. Optional `jurisdiction` (ISO code, e.g. `MT`, `GB`, `US-CA`) and `category` filters. |
 | `get_skill` | Given a skill `slug`, returns the full markdown plus a provenance/attribution footer. |
 | `get_skill_sections` | Given a `slug`, returns the skill parsed into sections (`heading`, `content`, `level`) for step-by-step application. |
 | `search_skills` | Keyword search across skill markdown (`query`, optional `jurisdiction`). Returns at most 25 matched section headings and snippets, with `returned`, `limit`, `truncated` and `unreadable_skipped` metadata. The backwards-compatible `total` field aliases `returned`; neither field is a corpus-wide match count when `truncated` is true. |
@@ -95,7 +95,7 @@ Guided workflows that turn the skills into a tax engine, not just a library:
 | `skill-feedback` | `skill_slug`, `country` | Collect structured feedback on a skill after use. |
 | `skill-review` | `skillSlug`, `scenario` | Load a skill's sections and apply them to one scenario. |
 
-> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Quality tier is derived from a file's explicit `tier` frontmatter: only `tier: 1` **plus** a named reviewer (`reviewed_by`, or the legacy `verified_by`) reports as accountant-verified. A reviewer name on its own no longer implies tier 1, and a non-tier-1 file's reviewer is not exposed as `verified_by`.
+> Note: the on-disk server reads the open-source markdown in `packages/`. Most skill files don't carry a `jurisdiction` field, so it's inherited from the package directory (the folder name for `us-XX`/`ca-XX`, otherwise the code its siblings declare). Publisher and explicit author credit identify the material. Historical reviewer names and tiers are not exposed as endorsements or inferred authorship.
 
 > **Canadian users on a development (clone) install — important:** the `ca-XX/` provincial packages (`ca-on`, `ca-qc`, `ca-bc`, …) are **generated**, not checked in. After cloning, run `python3 scripts/build-packages.py` once to materialise them. Until you do, the MCP won't return Canadian provincial skills via `list_skills(jurisdiction="CA-ON")` — only the federal Canadian files visible under `packages/canada/`. (The PyPI wheel ships with the packages already built.)
 
@@ -280,4 +280,4 @@ All checks should pass (path safety, tool outputs, jurisdiction count, US state 
 
 ## Disclaimer
 
-All skills and outputs are for informational and computational purposes only. Not tax, legal, or financial advice. Not a replacement for professional judgment. Every skill is in one of [two tiers](../docs/QUALITY-TIERS.md) — **accountant-reviewed** (a licensed practitioner reviewed and signed off) or a **source-cited draft** (drafted from authoritative sources, awaiting review). Most skills are source-cited drafts. Always have a qualified professional review before filing or acting upon.
+All skills and outputs are for informational and computational purposes only. Not tax, legal, or financial advice. Not a replacement for professional judgment. Check each Guide’s [attribution, scope, applicable period and sources](../docs/QUALITY-TIERS.md). Always have a qualified professional review before filing or acting upon.
