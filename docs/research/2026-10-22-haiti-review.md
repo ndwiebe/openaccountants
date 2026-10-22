@@ -35,3 +35,7 @@ Read articles 268–284, with pages 84 and 86 visually checked. Added the unbuil
 ## Publication diagnosis
 
 The deployed platform version endpoint reported 0478c9a739f21a61d613bec8dc41486c9c2f8c5b on 22 October 2026. Its github-ingest route accepts up to 200 paths, so the 84-path batch does not exceed that explicit cap. Failed run 39787616502 remains terminal, attempt 1. Its curl failure did not expose the HTTP status/body, so authentication, gateway and other causes are not distinguished. No production write or retry was performed during this diagnosis.
+
+## Registration and selected cessation addition
+
+Read articles 1–12, 128–131 and 298; visually checked pages 9, 10 and 91. Added NIF application evidence, permanent-number versus card-renewal distinctions and explicit personal/sole-enterprise separation. The free form is distinguished from statutory issuance charges. Closure provisions are scoped to their individual-income-tax context; no automatic corporate-liquidation rule inferred. No generic DGI change-notification period was found in the cited registration provisions, so none was invented. Article 298 day-counting is preserved without unverified holiday-based dates. Arithmetic check: 1000 + 2500 = 3500 for the explicitly conditional two-card example. Current operational channels, general taxpayer-detail amendments and transition remain unresolved. Independent review pending.
