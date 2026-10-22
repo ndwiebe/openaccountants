@@ -1,15 +1,21 @@
 ---
 name: gg-payroll-social-insurance
 description: >
-  Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare ordinary 2026 Class 1 payroll, a Class 2 review checklist and Class 3 classification/assessment working papers. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GG
 category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
+  - url: "https://gov.gg/non-employedcontributions"
+    title: "Class 3 non-employed contribution guidance; historical rate references excluded"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=185595&p=0"
+    title: "Monetary Values 2026 V2, page 6"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/CHttpHandler.ashx?id=202739&p=0"
     title: "Benefits in Kind Guide 2026, sections 1–12, Fact Sheets 1–2 and cited Statements of Practice"
     as_of: "2026-10-22"
@@ -30,13 +36,13 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey payroll and social contributions v0.5
+# Guernsey payroll and social contributions v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Who this applies to
 
-Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work.
+Prepare ordinary 2026 Class 1 payroll, a Class 2 review checklist and Class 3 classification/assessment working papers. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -72,6 +78,42 @@ For construction labour-only contracts, the guidance requires employed classific
 Controlling employee-directors became employed for contributions on **1 January 2025**. A historic election allowed a further five years of self-employed classification; obtain the election and Revenue Service confirmation rather than treating this as a new 2026 option. The webpage says receipt by 31 December 2024, while SIC1 says prior to that date: a disputed last-day election needs confirmation rather than an assumed outcome. [Contribution guidance](https://gov.gg/SScontributions); [SIC1, introduction](https://gov.gg/CHttpHandler.ashx?id=196680&p=0).
 
 Self-employed individuals are assessed at the maximum unless they apply for assessment on earnings. Do not replace an issued assessment with a self-calculated lower payment without resolving that application. [Class 2 guidance](https://gov.gg/SScontributions).
+
+### Class 3: classification and application before payment
+
+Non-employed classification includes specified low-paid employees, unpaid workers, people between jobs and part-time self-employed people below the annual lower earnings limit. Confirm class rather than assuming no contribution obligation from low wages. Apply for income-related assessment where appropriate; without an application, the published guidance charges the maximum. Pension-age health/long-term-care contributions remain distinct from social insurance. [Class 3 guidance](https://gov.gg/non-employedcontributions).
+
+The exemption test uses income **before** the non-employed allowance. Only after testing that lower limit is the allowance subtracted to calculate liability. Do not deduct the allowance first to create an exemption. The guidance also distinguishes special-rate, voluntary and overseas-voluntary contributions; eligibility for those routes requires separate review. [Class 3 guidance](https://gov.gg/non-employedcontributions).
+
+| 2026 Class 3 item | Under pension age | Over pension age |
+|---|---:|---:|
+| Rate | 11.8% | 3.8% |
+| Annual lower income limit | £24,960 | £24,960 |
+| Annual upper income limit | £196,560 | £196,560 |
+| Non-employed allowance | £11,122 | £11,122 |
+| Weekly maximum | £420.80 | £135.51 |
+| Weekly minimum unless exempt | £31.40 | £10.11 |
+
+[Monetary Values 2026 V2, page 6](https://gov.gg/CHttpHandler.ashx?id=185595&p=0). The classification webpage still mentions historical rate years; use the 2026 table for these amounts. Full assessable-income inclusions, mixed-class cases and partial periods remain open.
+
+**Boundary working paper:** assuming accepted income-related assessment, under-pension-age Class 3 status and verified assessable income, £24,959 is below the £24,960 exemption threshold. At £24,960 the below-limit exemption is not established: the calculation base after £11,122 allowance is £13,838. Multiplying by 11.8% gives £1,632.884 as annual-rate arithmetic, not a payment demand. The official weekly minimum is £31.40; reconcile the assessed weeks and rounding to Revenue Service's notice rather than paying a self-generated annual figure. [Exemption and allowance](https://gov.gg/non-employedcontributions); [2026 table](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
+
+```oa-check
+name: Guernsey Class 3 allowance applies after exemption test
+inputs:
+  established_income: 24960
+  lower_limit: 24960
+  non_employed_allowance: 11122
+  rate: 0.118
+steps:
+  - margin_above_lower: established_income - lower_limit
+  - assessment_base: established_income - non_employed_allowance
+  - annual_rate_arithmetic: assessment_base * rate
+expected:
+  margin_above_lower: 0
+  assessment_base: 13838
+  annual_rate_arithmetic: 1632.884
+```
 
 ### Dividends and qualifying loans
 
