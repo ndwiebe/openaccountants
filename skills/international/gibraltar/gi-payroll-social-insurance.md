@@ -7,9 +7,18 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.12"
+version: "0.13"
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf"
+    title: "ITO SE1 trade-income registration form, sections 3–9"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/SE%20CONTRIBUTION%20SCHEDULE%202627%20%28Fillable%29.pdf"
+    title: "ITO self-employed contribution schedule 2026/27"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf"
+    title: "ITO self-employed social insurance guidance effective July 2025, pages 4, 6 and 8"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822"
     title: "HMRC CA3822: temporary overseas employment certificate application, including Gibraltar"
     as_of: "2026-10-22"
@@ -57,7 +66,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.12
+# Gibraltar payroll and social insurance v0.13
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -243,6 +252,20 @@ Regulation 4A requires registration immediately when weekly self-employed contri
 For example, on an ordinary September month-end with no special arrangement, the statutory periods require monthly recording by **7 October** and payment by **15 October**. This example does not establish the contribution-quarter calendar or any weekend/public-holiday extension. Keep registration, schedules and payment receipts separately.
 
 Where an employed contribution is payable and the same person is also liable as self-employed **for the same contribution week**, regulation 4(7) makes only the employed contribution payable. Establish the actual overlapping weeks and liabilities; having a payroll job for part of a year is not an annual exemption from self-employed contributions. Operational coding and supporting evidence still need confirmation. [Regulation 4(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+## Self-employed forms, payment route and annual reconciliation
+
+The ITO's **SE1** asks for trading commencement, business structure, other paid employment and company directorship/shareholding details. Its status questions address control, financial risk, equipment, pricing and availability to other customers; completing it does not itself settle employment classification. Attach identification and, if applicable, business-name registration evidence. Partners also need registration, and employing staff requires separate PAYE registration. The form's signed declaration includes licensing responsibilities; tax registration is not a business licence. [SE1, sections 3–9](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf).
+
+The published **2026/27 contribution schedule** covers 1 July 2026–30 June 2027 and instructs the taxpayer to sign and return it by **30 November 2027**. Enter gross income and contributions by its numbered weeks, annual gross income, contribution-week count, amounts due/paid and outstanding balance. Week 1 is 1–7 July; week 52 is **23–30 June**, an eight-day interval. Use that calendar rather than creating a 53rd week. [2026/27 schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/SE%20CONTRIBUTION%20SCHEDULE%202627%20%28Fillable%29.pdf).
+
+This annual-form instruction does not establish repeal or waiver of regulation 4A's quarterly schedule duty described above. The relationship between that statutory duty and current annual administration still needs ITO confirmation. Neither deadline defers monthly payment.
+
+The July 2025 booklet directs monthly remittances through **https://tax.egov.gi** within fifteen days after month-end and requires written ITO authority before departing from the registration certificate's contribution rate. It describes a year-end earnings/profits assessment with overpayments refunded and underpayments collected. Retain the certificate, any written change, payment receipts and the assessment; no authenticated portal transaction has been tested for this Guide. [Booklet, page 8](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf).
+
+**Source arithmetic caution:** the same booklet prints £100 × 20% as £22 in its shared-week example and £120 × 20% as £48 in its partial-month example. The products are **£20** and **£24**. Those intermediate errors do not change the examples' displayed final cap/minimum outcomes, but the printed workings must not be copied unchecked. Apply the period's verified rates and actual contribution weeks. [Booklet, pages 4–6](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf).
+
+**Reconciliation example:** assume the established annual liability is £2,400 and receipts substantiate £2,250 paid. The balance is **£150**, not a new rate-based assessment. Record an actual refund or adjustment separately; an expected refund is not a payment receipt.
 
 ## Contribution assessments and appeals
 
