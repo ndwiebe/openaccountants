@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
-    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 13–19, 30, 37–40"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 13–27, 30, 37–40"
     as_of: "2026-10-22"
   - url: "https://gov.gg/economicsubstance"
     title: "Revenue Service economic substance, current implementation and guidance links"
@@ -30,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.6
+# Guernsey corporate tax, distributions and substance v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -192,6 +192,20 @@ For a penalty under these regulations, regulation 19 provides an appeal to the *
 The sole stated grounds are that the body is outside regulation 3's substance scope, complies with its applicable requirements, or is not subject to the penalty under the regulations. Regulation 19(4) permits confirmation or annulment; it does not state a general power to reduce a penalty because it is unaffordable. Sections 76 and 79 are excluded, while sections 77, 78, 78A and 80 apply through the stated cross-reference. Full procedural rules, onward appeal and any effect on collection require those current provisions; this draft does not assume that filing an appeal suspends enforcement. [Regulation 19(3)–(7)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 **Boundary applications:** for established consecutive third-period defaults, an ordinary company reaches regulation 14's £50,000 ceiling while a high-risk IP company reaches regulation 15's £100,000 ceiling. Neither is necessarily charged the maximum. A company outside the specified Guernsey/Alderney registration categories is not shown by this text alone to receive the same Registrar notice, even if its substance penalty applies. A missed appeal deadline requires the exceptional-circumstances application rather than an invented fresh 30-day period. [Regulations 14, 15, 17 and 19](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Responding to a substance inspection
+
+Regulation 20 permits entry to business premises and inspection for the specified regulation 9 purposes during normal business hours or another reasonable time. There are **three alternative entry routes**: occupier consent; at least **seven days’ written notice** specifying when entry/inspection will take place; or Bailiff approval under regulation 21 with regulation 22 notice. Seven days is therefore not a universal minimum where another route applies. For approved entry, notice goes to the occupier if present, otherwise someone apparently in charge, otherwise a prominent place at the premises. [Regulations 20–22](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+The regulation 20 inspection power excludes parts used **solely as a dwelling**, legally privileged items within the stated statutory definition, and documents concerning conduct of a tax appeal. Items held to further a criminal purpose are excluded from the privilege protection. Do not assume that an entire mixed home/business property is exempt, or that every accountant-client record is legally privileged. Identify the actual protected material and obtain advice on contested scope. [Regulation 20(3), including its statutory privilege cross-reference](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For entry approved by the Bailiff, regulation 23 permits reasonable assistance requirements directed at the investigated person, their tax adviser, relevant workers and persons concerned with document systems or storage. This expressly reaches electronically accessible records. The Director must give the person written information that contravening the assistance requirement is an offence. Do not transpose this particular assistance power to all consent/notice inspections without checking the applicable authority. [Regulation 23](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 24 permits copies/extracts, removal at a reasonable time and retention for a reasonable period, preservation measures, explanations and enquiries about missing documents. Electronic records can be required in a portable, visible/legible form or a form readily convertible to it. The owner can request a **receipt** for removed records and, if reasonably needed for an immediate purpose while the Director retains the original, a **free copy**. Loss/damage before return attracts compensation for reasonable replacement/repair costs. This is not a promise of compensation for every claimed business loss. [Regulation 24](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Suggested response record:** log the authority and entry route, notice/approval, scope, staff involved, documents requested/provided/removed, any privilege issue, receipt/copy requests and follow-up dates. Preserve originals and electronic records. These are working-paper recommendations, not an additional statutory form or an invented retention period.
+
+Regulation 25 makes obstruction or non-compliance without reasonable excuse an offence, with its fine linked to the current uniform scale. Regulation 26 separately imports falsification and related provisions of the Income Tax Law. Regulation 27 can make directors and other specified officers personally liable where the offence is proved to involve their consent, connivance or neglect; office-holding alone is not that proof. Current fine-scale amounts and the full incorporated provisions remain unverified here, so do not estimate criminal exposure from the civil penalty table. [Regulations 25–27](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 ### Pure-equity holdings and periods without income
 
