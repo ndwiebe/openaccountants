@@ -27,3 +27,7 @@ The withholding draft covers selected article 71 rules and distinguishes article
 [Social contributions](ye-social-contributions.md) records a material discrepancy between the institution’s law and service guidance on the employer injury charge. This draft is not ready for payroll use; SC indicates research started only.
 
 [Company formation and renewal](ye-company-formation-and-renewal.md) documents the Sana’a ministry’s LLC service requirements. Full statutory reporting, other administrations and ownership disclosures remain unresolved.
+
+## Checkpoint before moving to Syria
+
+Seven local drafts exist; none establishes comprehensive coverage. The social contribution employer injury-charge discrepancy is a material operational blocker. Other open requirements include administration-specific current law, treaty inventory/relief, full consumption-tax schedules and refunds, statutory company reporting and ownership disclosure, detailed compliance, zakat and sector regimes. No topic acceptance, issue closure, publication or attestation is inferred from file presence. At b0bf42b schema, 107 example blocks and sync checks passed, with the existing Gibraltar freshness warning.
