@@ -1,23 +1,23 @@
 ---
 name: gi-corporate-tax
 description: >
-  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions or treaty permanent establishments. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It does not compute Pillar Two, specialised exemptions or treaty permanent establishments. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.9
+version: "0.10"
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.9
+# Gibraltar corporate tax and filing v0.10
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Scope
 
-Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions or treaty permanent establishments.
+Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It does not compute Pillar Two, specialised exemptions or treaty permanent establishments.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -42,6 +42,16 @@ Paragraph 15(3) restricts the deduction of interest expense incurred to generate
 **Royalties:** Table C Class 3A covers royalties received or receivable by a company and deems them Gibraltar-source where the recipient is registered in Gibraltar. Class 3A contains no equivalent £100,000 interest threshold. Obtain the licence, rights granted, accrual calculation and recipient registration evidence; treaty relief and receipt classification must be assessed separately. [Schedule 1, Table C, Class 3A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 **Overseas movable-property rents:** Class 3B separately covers non-trading rental income from movable property outside Gibraltar received or receivable by a company, deeming it Gibraltar-source when that company is registered in Gibraltar. This is not a rule for every overseas real-estate receipt. Document the asset, location and trading/non-trading classification before applying it. [Schedule 1, Table C, Class 3B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Establish the tax accounting periods
+
+Section 16 starts a company's tax accounting period when it is first registered in Gibraltar or when the preceding accounting period ends. It normally ends at the earlier of twelve months from its beginning and the company's accounting date. Do not automatically use trading commencement as the first tax-period start, or assume a long set of financial statements creates one equally long tax period. Retain the registration evidence, accounting-date history and prior assessments. [Section 16(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For example, a company first registered on 1 July 2025 with accounts to 31 December 2025 has an initial six-month period on those assumptions. Its normal nine-month return/payment rule points to 30 September 2026. Keep the six-month period length when applying provisions that expressly time-apportion thresholds or allowances; do not halve every statutory amount merely because the period is short. [Sections 16(2)–(3), 29 and 39(1)(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Winding up ends an accounting period and begins another at its commencement, subject to section 16(1)–(3). Thereafter periods end at twelve-month intervals, with the last ending on completion of winding up. Cessation of sales is not the same event as commencement or completion of winding up. Where period boundaries are uncertain, subsection (5) permits a Commissioner assessment for a period no longer than twelve months, subject to revision on further facts or an appeal revealing the proper periods. [Section 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For accounts exceeding twelve months, subsection (6) requires time apportionment on the basis that profits accrued evenly. Its wording identifies an initial period ending on the company's accounting date and a subsequent period comprising the remaining twelve months. **Do not substitute a standard first-twelve-months-plus-remainder convention without confirming the applicable boundaries.** Obtain the determined periods and reconcile allocated profits to the accounts. If a confirmed allocation divides £180,000 evenly over eighteen months into six- and twelve-month periods, the amounts are £60,000 and £120,000; this arithmetic does not determine which dates apply. Subsection (7) gives the Commissioner discretion over profit allocation if an accounting-date delay beyond twelve months was effected to reduce tax. [Section 16(6)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Filing requirements
 
