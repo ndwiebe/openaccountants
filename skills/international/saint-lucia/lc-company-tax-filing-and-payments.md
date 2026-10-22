@@ -1,0 +1,50 @@
+---
+name: lc-company-tax-filing-and-payments
+description: >
+  Saint Lucia company income-tax filing and payment reference reconciling the base return, advance instalments and payment provisions with Act 10 of 2026. Distinguishes filing extensions from payment relief, flags the conditions in the new five-month provision, and identifies the amended six-percent late-payment penalty. Does not certify current interest orders, amnesty eligibility or a complete corporate tax computation.
+jurisdiction: LC
+category: international
+tax_year: 2026
+tier: 2
+last_updated: 2026-10-22
+version: 0.1
+verified_by: pending
+---
+
+# Saint Lucia: company tax filing and payments
+
+## Scope
+
+Read filing, advance payments and assessment payments separately. This Guide uses the official 2023 revised-law text with the enacted Income Tax (Amendment) (No. 2) Act 2026, Act 10. Later orders, transitional application and administrative implementation still require checking. It does not calculate company taxable profits or determine treaty relief. [Act 10 of 2026](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=).
+
+## Return obligation and the 2026 extension
+
+Section 84's base rule requires a signed return within three months after the year of income, subject to section 96. The return includes chargeable-income and tax calculations, a service address and disclosure of income deemed sourced outside Saint Lucia. The filing population includes persons with relevant losses and certain temporarily exempt income; no tax payable is not itself a filing exemption. Non-receipt of a form does not remove the obligation. [Section 84](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-84).
+
+Act 10 of 2026 adds section 96(3), providing a company extension of **up to five months from the end of the year of assessment**. The inserted text also makes it subject to submission by the due date specified in the Act and says no further extension is granted under subsection (1). Those conditions, and the use of “year of assessment”, must be reconciled before certifying a specific company's deadline. This draft does not rewrite the provision as an unconditional five-month grace period. [Act 10, section 4](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=).
+
+Under section 96(1), the ordinary extension route requires a written application and written notice from the Comptroller. Section 96(2) expressly says that an extension under subsection (1) does not change the section 114 payment date. Act 10 does not amend section 113 or 114 or expressly grant a corresponding payment deferral. Do not infer one solely from the new filing provision. [Section 96](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-96); [Act 10](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=).
+
+## Advance payments
+
+Section 113 applies to resident companies and specified other taxpayers, including non-residents carrying on business in Saint Lucia, subject to the independent-personal-services withholding exception. It prescribes instalments on **25 March, 25 June and 25 September**, each one-third of estimated tax. The statutory estimate uses the preceding year's disclosed chargeable income; a lower estimate requires an application and Comptroller revision, rather than unilateral reduction. [Section 113(1)–(5)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-113).
+
+The section prescribes the remaining estimated tax by **31 March of the following year**, or, for a company whose financial year does not start in January, within **three months after its financial year-end**. It does not expressly shift the three instalment dates for such a company in the retrieved text. Confirm application to a non-calendar year before constructing its calendar. Instalments credit against the year's tax. [Section 113(3), (7)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-113).
+
+## Assessment payments and payment arrangements
+
+Subject particularly to section 113, tax charged by an assessment is payable by 30 September in the year of income or within 30 days of service of the notice, whichever is later. Do not use that rule to erase advance-payment obligations. A written application can lead to a written payment extension or instalment arrangement under section 114(3), but that provision does not extend the original due date for section 115 interest purposes. Default on a permitted instalment can accelerate the outstanding balance. [Section 114](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-114).
+
+## Penalty and interest are distinct
+
+Act 10 section 5 replaces the **10%** in section 134(1) with **6%, or another rate prescribed by ministerial statutory order**. The provision concerns overdue section 113 instalments or section 114 remainder tax. It is not a six-percent annual interest rate and not a universal penalty for every tax breach. Section 134(2) preserves interest in addition. Historical liabilities, effective application and any overriding order or remission must be checked before a calculation. [Act 10](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=); [section 134](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-134).
+
+Section 115 separately ties interest to the prevailing prime rate with different uplifts for advance instalments and remainder tax, subject to ministerial orders. This draft has not established the operative order and prime-rate history, so it supplies no current numeric interest calculation. Filing an extension application is not proof that interest or penalties were waived. [Section 115](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-115).
+
+## Remaining checks
+
+Obtain the company's year-end, prior return, instalment ledger, assessment/service dates and written extension decisions. Resolve the new section 96(3) conditions, operative interest/penalty orders, any amnesty terms, return attachments, and current filing channels. Full subsequent amendment review and independent review remain pending.
+
+## Disclaimer
+
+Source-cited research draft, not accountant attestation or a certified filing calendar.

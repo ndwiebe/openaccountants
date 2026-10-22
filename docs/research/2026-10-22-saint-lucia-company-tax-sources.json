@@ -1,0 +1,43 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-84",
+      "bytes": 152657,
+      "sha256": "34cea4bda1fd903f6ee4946e09bd088a404ff36fb36d39b16f52ae23cf547753"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-96",
+      "bytes": 149887,
+      "sha256": "744911eda14de31307e696c5873752cf0d7b9b53e0f1ee55cced1d9e9235fae9"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-113",
+      "bytes": 152522,
+      "sha256": "f0e72114009814a33f8e4897c1dcd741489f9c09b960fb50fefc4d38e45ac280"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-114",
+      "bytes": 150859,
+      "sha256": "7b4479daf0b1a15489fa8548882ac1fb7c22ed3c379940b23678d45d522ba0cc"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-115",
+      "bytes": 150126,
+      "sha256": "5446ca818dd2863f4cd1687ad0bfddc870134e9aece799734d71fd4f6b414092"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-134",
+      "bytes": 149925,
+      "sha256": "221949b1774cb80fcd950faf9e7a7ce35df923874eb551d2e940b153251e8528"
+    },
+    {
+      "id": "income-act10-2026",
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=",
+      "kind": "enacted statute",
+      "retrieval": "download via HTTP/1.1; pdftotext; key page visually inspected",
+      "sha256": "04c6bd68e7651937b1764377cff098b3d797d4ac8c77b8fc5577ecb4876ad620"
+    }
+  ],
+  "review_status": "independent review pending"
+}
