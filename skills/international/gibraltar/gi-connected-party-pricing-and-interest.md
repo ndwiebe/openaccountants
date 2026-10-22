@@ -1,17 +1,17 @@
 ---
 name: gi-connected-party-pricing-and-interest
 description: >
-  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap and Commissioner-satisfied exemption. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Complex control attribution, other interest limits, international reporting and independent professional review remain outstanding.
+  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap, Commissioner-satisfied exemption and shareholder-loan deemed distributions. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Complex control attribution, other interest limits, international reporting and independent professional review remain outstanding.
 jurisdiction: GI
 category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, section 40 and Schedule 4"
+    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 22 and 40 and Schedule 4"
     as_of: "2026-10-22"
 ---
 
@@ -71,6 +71,34 @@ Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected 
 Pre-Expense net profit adds the Expense back to net profit; paragraph 4(4) specifies the tax-computed profit and turnover bases. The test is aggregate, not a fresh allowance for each invoice or connected supplier. [Schedule 4, paragraph 4(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Example: aggregate Expense £80,000, statutory gross turnover £1,000,000, pre-Expense net profit £100,000 and available brought-forward losses £40,000. The limits are **£80,000**, **£50,000**, and **75% × (£100,000 − £40,000) = £45,000**. The least is **£45,000**, giving a £35,000 restriction if that £80,000 was otherwise deducted, before assessing exemptions and other adjustments. No negative-profit case or interaction between overlapping disallowances is resolved by this example.
+
+## Shareholder advances and deemed distributions
+
+Section 22 is a recipient-income rule, separate from the company's interest deduction tests above. It addresses specified company advances, loans, asset distributions and payments on behalf of or for the benefit of shareholders or connected persons. Its wording includes ordinary residence, excludes another company from the stated connected-person category, and excludes amounts charged under Schedule 7 Chapter 6. Establish the recipient's status, relationship and any employment-benefit charge before deciding which provision applies. Do not treat every debit on a director's loan account as automatically taxable under section 22. [Section 22(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The Commissioner determines how much represents a distribution of income. That amount is deemed income as if a dividend had been paid in the **year of assessment when the advance, distribution or payment occurs**. A loan agreement or accounting label does not, by itself, establish that the Commissioner regards the entire amount as capital or a genuine non-distribution. Equally, this provision does not impose an automatic charge on every outstanding loan balance each year. [Section 22(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+In forming that opinion, the Commissioner can presume the company distributes income before capital and distributes income in the order it arose historically, unless the company demonstrates otherwise to the Commissioner's satisfaction. Retain the income/capital history and the evidence for any different treatment; a board minute alone does not prove the statutory exception has been accepted. [Section 22(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+If a later dividend is paid and set off against an advance, loan or payment already deemed income, section 22(3) prevents the dividend being assessable again **to the extent of that set-off**. Match the dividend, earlier deemed-income amount and actual debt satisfaction. The rule does not exempt an unrelated dividend or establish a general refund following cash repayment. [Section 22(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Worked example:** assume an earlier £30,000 advance was fully treated as income under section 22(1). A later £40,000 dividend is actually applied £30,000 against that advance, with £10,000 paid separately. Section 22(3) protects the £30,000 set-off from repeat assessment; the remaining £10,000 needs its own ordinary dividend analysis. This is an allocation, not a tax-rate calculation.
+
+```oa-check
+name: Gibraltar dividend set-off against previously deemed shareholder income
+inputs:
+  previously_deemed_advance: 30000
+  later_dividend: 40000
+  actual_setoff: 30000
+steps:
+  - protected_setoff: min(previously_deemed_advance, actual_setoff)
+  - dividend_requiring_separate_analysis: later_dividend - protected_setoff
+expected:
+  protected_setoff: 30000
+  dividend_requiring_separate_analysis: 10000
+```
+
+If only £12,000 of that dividend is actually set off, this provision protects only £12,000; a £30,000 historic deemed-income balance does not itself exempt £30,000 of every later dividend. Preserve the original assessment, transaction dates, account movements, dividend resolution and set-off evidence. These are recommended controls; the current return fields, administrative claim/correction route, disputed classification and cash-repayment consequences remain to verify. Coordinate with the [individual income-tax Guide](gi-individual-income-tax.md) and the payroll benefit rules where relevant.
 
 ## Exemption and evidence
 
