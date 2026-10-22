@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152"
@@ -167,6 +167,6 @@ HMRC’s [DT8152 summary](https://www.gov.uk/hmrc-internal-manuals/double-taxati
 
 For each payment, retain: both parties and beneficial-owner evidence; residence analysis; payment date and classification; gross amount and domestic source tax; recipient-category proof, ownership chain and rights where relevant; any authority determination; permanent-establishment and independent-price analysis; principal-purpose assessment; and the actual relief application, authority response and repayment record. This is a recommended working-paper structure, not an official form list.
 
-Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. Domestic capital-gain computations and filing, business profits, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
+Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. [Business profits and permanent establishments](gi-corporate-tax.md#uk-treaty-permanent-establishments-and-business-profits) are separately drafted. Domestic capital-gain computations and filing, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
 
 For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).
