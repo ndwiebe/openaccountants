@@ -1,15 +1,21 @@
 ---
 name: gg-individual-income-tax
 description: >
-  Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Special caps, resident-only elections, trusts, pension encashments and foreign-tax relief are outside these calculations. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap eligibility screening is included; cap computations, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://gov.gg/taxcap"
+    title: "Revenue Service tax-cap guidance; historical examples are dated"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=174308&p=0"
+    title: "Monetary Values, 2024 to 2018, page 5 cap exclusions"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/residency"
     title: "Residence guidance"
     as_of: "2026-10-22"
@@ -27,13 +33,13 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey individual income tax and residence v0.2
+# Guernsey individual income tax and residence v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Who this applies to
 
-Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Special caps, resident-only elections, trusts, pension encashments and foreign-tax relief are outside these calculations.
+Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap eligibility screening is included; cap computations, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -94,6 +100,16 @@ A transfer requires unused allowance and the required agreement, not merely marr
 The charge-of-child route covers qualifying lone parents who are not cohabiting, with the specified family-allowance or higher-education condition. The alternative married/cohabiting route requires the stated whole-year total-incapacity and employed-childcarer conditions. The allowance must be requested each year and claimants must file a return. Check the family facts against the complete guidance rather than counting all parents. [Rates page, charge of child](https://gov.gg/RStax-rates-and-allowances).
 
 For rent-a-room relief, the rates page permits up to **two furnished rooms** in the principal private residence, let to a **non-family member over 18**, with up to **£10,000 per room**. A self-contained unit, guesthouse or B&B business does not fit that stated route. Gross rent above the per-room allowance remains taxable under the page's rule; it is not an exemption for all receipts once the letting qualifies. Other rental deductions, allocation and interaction require separate review. [Rates page, rent a room](https://gov.gg/RStax-rates-and-allowances).
+
+## Tax-cap screening before using the ordinary calculation
+
+Revenue Service says spouses elect separately from 2023; the former joint cap is not a general current couple entitlement. Special Alderney/Open Market grandfathering needs separate review. Cap users receive no personal allowances; arrival/departure years require apportionment. Qualifying income generally includes foreign income and Guernsey bank interest; other Guernsey income needs separate treatment. A cap election can use the appropriate cap form instead of a full income-detail return. Self-employed, non-employed and pension-age electors face maximum weekly social contributions. Confirm their contribution category and current maximum before comparing elections. [Revenue Service, introductory rules, qualifying income and social contributions](https://gov.gg/taxcap).
+
+The linked monetary table, page 5, excludes Guernsey/Alderney property income, Guernsey pension/annuity triviality payments and lump sums above the tax-free limit, and, from 2023, unauthorised payments from approved pension/annuity schemes. Do not model these receipts as absorbed by a worldwide cap. Identify each excluded receipt and verify its separate tax treatment. [Monetary Values, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
+
+**Source-period limit:** the cap page labels its main amounts 2024 and its worked examples 2023; the linked PDF ends at 2024. Neither is sufficient evidence of the amount payable for 2026. The linked consolidated law returned HTTP 403 during this review. Current amounts, complete statutory eligibility, election deadlines, apportionment and special-cap transitions remain unverified here. Obtain those before producing a cap calculation; do not reuse the historical examples as 2026 results. [Cap guidance and legislation link](https://gov.gg/taxcap).
+
+**Screening example:** a married couple cannot simply combine their income under the former general joint cap. Review each person's election and income categories. If either receives a pension triviality payment or Guernsey rental income, isolate it for separate tax analysis before comparing a cap with ordinary taxation. This is a classification check, not a computed cap liability. [Cap guidance](https://gov.gg/taxcap); [exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
 ## Deadlines, filing and evidence
 
@@ -173,6 +189,7 @@ expected:
 - Which allowances, pension contributions and mortgage amounts have supporting entitlement evidence?
 - Has allowance been transferred, and have both parties filed and agreed?
 - Is there a written filing dispensation, agency arrangement or direct-assessment concession?
+- Is a cap election being considered, and what are each spouse’s income categories, arrival/departure dates, contribution status and prior special-cap elections?
 - What returns, assessments, notices and payments have already been made?
 
 ## Forward changes
