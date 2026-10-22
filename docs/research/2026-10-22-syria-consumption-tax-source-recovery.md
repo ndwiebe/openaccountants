@@ -34,3 +34,7 @@ Next productive drafting route: the service and air-ticket provisions in the rec
 ## Drafting follow-up
 
 All opening 20 instruction pages have now been visually read. Annex pages 21–235 remain unreviewed. A local services Guide has been drafted from the differentiated rates, air-ticket rules, commencement/return/payment obligations, exemptions and record controls, with three passing arithmetic examples. Independent source review is pending. The earlier four-page inspection limit above records the initial recovery pass only. See `2026-10-22-syria-consumption-services-sources.json` for the claim map and exact source hash. No accepted domain or country completion follows from this draft.
+
+## Annex map established on 23 October
+
+Visual inspection identifies service Table 1 at PDF page 21; import Table 2 starts on page 22 and continues through page 232; special goods Table 3 is on pages 233–234; domestic goods Table 4 is on page 235. Only opening/ending import pages were inspected, not the intervening tariff rows. Tables 3–4 were read against instruction pages 4–10 for the domestic-goods draft. Do not label the entire 235-page document reviewed.
