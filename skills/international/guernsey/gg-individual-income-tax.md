@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
+  - url: "https://gov.gg/CHttpHandler.ashx?id=101103&p=0"
+    title: "Leaving Guernsey, Alderney or Herm, RS-FRM-LVG-348-v1"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/taxpenalties"
     title: "Revenue Service late-return penalties guidance"
     as_of: "2026-10-22"
@@ -42,7 +45,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey individual income tax and residence v0.5
+# Guernsey individual income tax and residence v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -175,6 +178,16 @@ People living in, working in or receiving income from Guernsey must file unless 
 ### Non-resident income and agency
 
 The personal-return guidance requires an agent for a non-resident individual's Guernsey income, with responsibility for deduction, returns and tax collection. Its agent definition includes a manager or someone paying/receiving income for the non-resident. Deducted tax must reach Revenue Service **within one month of deduction**, with the non-resident deduction form. Direct assessment is a concession requiring prior agreement, not an election made by omitting the agent. The page identifies rent, pensions, employment, business and partnership income as categories requiring review. Treaty and source exemptions must be checked separately before calculating a deduction. [Agency and non-resident returns](https://gov.gg/revenue-service/personal-tax-returns).
+
+### Departure form versus annual return
+
+The departure form can replace the departure-year return only for permanent departure with earnings/bank-interest income alone, subject to its exclusions. File both where there is other income, a Guernsey property to be let, allowances beyond the personal allowance, principal-home mortgage relief, retirement-annuity-trust contributions, allowance transfers, or a Guernsey personal/occupational pension with a destination outside the UK. A UK destination alone does not establish exemption from filing. [Departure form, page 1](https://gov.gg/CHttpHandler.ashx?id=101103&p=0).
+
+Use separate forms for spouses. Include departure/return intentions, forwarding address, income through departure and final payslip; self-employed people attach accounts/computations. For retained rental property, provide expected rent to 31 December, letting/repair arrangements and rent-collector details. The form's income fields do not override its annual-return exclusions. [Form, pages 1–6](https://gov.gg/CHttpHandler.ashx?id=101103&p=0).
+
+**Boundary examples:** a permanent salary-and-bank-interest departure with only the personal allowance fits the stated replacement route. Add a Guernsey property to be let: both forms are required. Neither outcome determines residence, treaty relief or departure-year tax apportionment. [Form, page 1](https://gov.gg/CHttpHandler.ashx?id=101103&p=0).
+
+For continuing Guernsey income after departure, the penalties guidance requires a full-year income declaration. Reconcile the departure form with the later return and the non-resident agency rules above. [Revenue Service departure FAQ](https://gov.gg/taxpenalties).
 
 ## Penalties and interest
 
