@@ -7,7 +7,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: 0.8
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf"
@@ -36,7 +36,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.7
+# Gibraltar payroll and social insurance v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -203,6 +203,155 @@ The detailed authority for recovering a missed employee deduction from later wag
 5. Reconcile payroll totals to remittances and the annual return. Never multiply a rounded monthly cap to substitute for an official annual table.
 
 **Examples:** full-month ordinary gross earnings £3,000 give employee SI **£176.76**, employer SI **£243.65** and gross-plus-employer-SI **£3,243.65**, before other employer costs. At £1,000, the respective amounts are **£100** and **£180**. A person with an exemption code must not be put through this formula. The full-month formula does not determine liability for zero/very low earnings or unpaid weeks. Apply the statutory absence conditions and partial-month controls above; unresolved eligibility and recovery questions still require review.
+
+## Executable calculation controls
+
+These checks use **established liability, issued class and contribution periods**. They do not decide whether contributions are due, which class applies, or how concurrent employments should be allocated. They also do not calculate PAYE from a social-insurance rate.
+
+### Ordinary monthly floor, uncapped amount and ceiling
+
+For confirmed full-month ER liability, compare £500, £1,000 and £3,000 of established contribution earnings. £500 tests the floors; £1,000 tests the percentage amounts; £3,000 tests both ceilings. Employer SI is added to employer cost, not withheld as an employee contribution. The £500 example does not establish minimum-wage compliance or liability for unpaid weeks. [2026/27 schedule, ER monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
+
+```oa-check
+name: Gibraltar full-month ER floor middle and cap
+inputs:
+  low_earnings: 500
+  middle_earnings: 1000
+  high_earnings: 3000
+steps:
+  - low_employee: min(176.76, max(62.11, low_earnings * 0.10))
+  - low_employer: min(243.65, max(138.55, low_earnings * 0.18))
+  - middle_employee: min(176.76, max(62.11, middle_earnings * 0.10))
+  - middle_employer: min(243.65, max(138.55, middle_earnings * 0.18))
+  - high_employee: min(176.76, max(62.11, high_earnings * 0.10))
+  - high_employer: min(243.65, max(138.55, high_earnings * 0.18))
+  - high_employer_cost_before_other_costs: high_earnings + high_employer
+  - high_wages_after_employee_si_before_other_deductions: high_earnings - high_employee
+expected:
+  low_employee: 62.11
+  low_employer: 138.55
+  middle_employee: 100
+  middle_employer: 180
+  high_employee: 176.76
+  high_employer: 243.65
+  high_employer_cost_before_other_costs: 3243.65
+  high_wages_after_employee_si_before_other_deductions: 2823.24
+```
+
+The last result is **not net pay**: PAYE and any other authorised deductions still need to be applied. Gross plus employer SI is likewise not the complete cost of employment.
+
+### Confirmed class comparisons
+
+At £1,000 monthly contribution earnings, MW, PN and T2 give different employee/employer amounts. These checks validate each assigned class; they are not a menu of tax-saving elections. [2026/27 schedule, MW, PN and T2 monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
+
+```oa-check
+name: Gibraltar confirmed monthly MW PN and T2 classes
+inputs:
+  earnings: 1000
+steps:
+  - mw_employee: 69.12
+  - mw_employer: min(173.98, max(78.65, earnings * 0.20))
+  - pn_employee: 0
+  - pn_employer: min(243.65, max(138.55, earnings * 0.18))
+  - t2_employee: min(16.99, earnings * 0.10)
+  - t2_employer: 0
+expected:
+  mw_employee: 69.12
+  mw_employer: 173.98
+  pn_employee: 0
+  pn_employer: 180
+  t2_employee: 16.99
+  t2_employer: 0
+```
+
+### Partial-month minimum and maximum
+
+Use confirmed contribution weeks, not days divided by seven or a guessed fraction of the monthly cap. These reproduce the two examples above under the **2025/26 employer-note method**, whose continued procedural application must be confirmed for later payrolls. [Employer notes, section 11.2](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+```oa-check
+name: Gibraltar confirmed partial-month weekly limits
+inputs:
+  low_earnings: 100
+  low_weeks: 2
+  high_earnings: 1800
+  high_weeks: 3
+steps:
+  - low_employee: min(low_weeks * 40.79, max(low_weeks * 14.34, low_earnings * 0.10))
+  - low_employer: min(low_weeks * 56.22, max(low_weeks * 31.98, low_earnings * 0.18))
+  - high_employee: min(high_weeks * 40.79, max(high_weeks * 14.34, high_earnings * 0.10))
+  - high_employer: min(high_weeks * 56.22, max(high_weeks * 31.98, high_earnings * 0.18))
+expected:
+  low_employee: 28.68
+  low_employer: 63.96
+  high_employee: 122.37
+  high_employer: 168.66
+```
+
+### Two paydays in the same final contribution week
+
+Combine earnings first, calculate one contribution-week liability and subtract the first payday's contributions. This example concerns the same employment and final contribution week described in the employer notes; it does not resolve the separate concurrent-employer question. [Employer notes, section 11.1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+```oa-check
+name: Gibraltar shared final contribution week two paydays
+inputs:
+  first_pay: 300
+  second_pay: 300
+steps:
+  - first_employee: min(40.79, max(14.34, first_pay * 0.10))
+  - first_employer: min(56.22, max(31.98, first_pay * 0.18))
+  - combined_earnings: first_pay + second_pay
+  - total_employee: min(40.79, max(14.34, combined_earnings * 0.10))
+  - total_employer: min(56.22, max(31.98, combined_earnings * 0.18))
+  - second_employee: total_employee - first_employee
+  - second_employer: total_employer - first_employer
+expected:
+  first_employee: 30
+  first_employer: 54
+  total_employee: 40.79
+  total_employer: 56.22
+  second_employee: 10.79
+  second_employer: 2.22
+```
+
+### P8 reconciliation to actual payments
+
+These are assumed annual ledger totals, not rate-derived annual limits. Reconcile both employee and employer SI to SI remittances; keep PAYE separate. A liability journal is not evidence of payment. [P8 guidance, pages 13–14](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf).
+
+```oa-check
+name: Gibraltar P8 separate PAYE and combined SI reconciliation
+inputs:
+  paye_deducted: 4800
+  employee_si: 2000
+  employer_si: 2800
+  paye_paid: 4500
+  si_paid: 4600
+steps:
+  - total_si: employee_si + employer_si
+  - paye_outstanding: paye_deducted - paye_paid
+  - si_outstanding: total_si - si_paid
+expected:
+  total_si: 4800
+  paye_outstanding: 300
+  si_outstanding: 200
+```
+
+### Conditional PAYE late-payment increase
+
+Assume the Commissioner's discretion is exercised for **two established monthly increments**, no intervening payment, and no unresolved overlapping charge included. The example checks compounding only; it does not determine the number of chargeable months. [PAYE regulation 11(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+```oa-check
+name: Gibraltar two established compound PAYE increments
+inputs:
+  principal: 1000
+steps:
+  - after_first_increment: principal * 1.02
+  - after_second_increment: after_first_increment * 1.02
+  - increase: after_second_increment - principal
+expected:
+  after_first_increment: 1020
+  after_second_increment: 1040.40
+  increase: 40.40
+```
 
 ## Evidence and exclusions
 
