@@ -1,0 +1,66 @@
+{
+  "checked_on": "2026-10-22",
+  "review_status": "independent review and later-amendment audit pending",
+  "sources": [
+    {
+      "id": "nic-employers",
+      "url": "https://www.stlucianic.org/employers",
+      "retrieval": "direct web text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nic-faq",
+      "url": "https://www.stlucianic.org/faq",
+      "retrieval": "direct web text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "nic-employees",
+      "url": "https://www.stlucianic.org/employees",
+      "retrieval": "official indexed text",
+      "kind": "official administrative guidance"
+    },
+    {
+      "id": "vat-9",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-9",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-10",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-10",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-12",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-12",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-26",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-26",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-28",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-28",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-37",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-37",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    },
+    {
+      "id": "vat-3-01",
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/value-added-tax-act/section-3-01",
+      "retrieval": "direct web text",
+      "kind": "Revised Laws 2023 statutory text"
+    }
+  ]
+}
