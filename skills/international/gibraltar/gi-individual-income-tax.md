@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed"
@@ -17,14 +17,14 @@ sources:
     title: "Rates of Tax Rules 1989, rules 2–3C; 1 July 2024 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
-    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 24–24A; 23 March 2026 consolidation"
+    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 24–24A and 29; 23 March 2026 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Income Tax Act 2010, sections 28, 39, 64–65 and 74; Schedule 1; 23 March 2026 consolidation"
     as_of: "2026-10-22"
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.5
+# Gibraltar individual income tax: ordinary assessment v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -216,6 +216,36 @@ These are return and payment provisions, not an exhaustive account of incorrect-
 Ordinary residence, source of income and treaty residence are separate determinations. Rule 3 generally specifies **17% on the first £16,000 of taxable income and 39% on the remainder** for non-resident individuals, subject to GIBS and its express exclusions. It excludes persons covered by Allowances Rules 24(1), which concerns non-residents receiving a Gibraltar-accruing pension. Rule 24(2)–(3) limits that relief by reference to total worldwide income and specifies treatment of foreign-tax relief. Do not apply the ordinary resident ABS table or full personal allowances to every frontier worker. [Rates Rules, rule 3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf); [Allowances Rules, rule 24](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
 
 Treaty eligibility, pension exemptions, employment-location allocation and foreign relief require separate conclusions; see the [foreign-tax relief Guide](gi-foreign-tax-relief.md). These rules alone do not resolve a Spain–Gibraltar residence case.
+
+### Non-resident pensioner relief: worldwide-income limit
+
+Rule 24(1) permits a **non-resident individual receiving a pension accruing in Gibraltar** to claim the deductions, allowances and reliefs in rules 6–21 as if resident throughout the assessment year, subject to the Rules and the limit below. It does not grant that treatment to every non-resident employee or make a pension taxable where an exemption or treaty excludes it. Establish pension source, chargeability, system eligibility and each relief's conditions before applying the limit. [Allowances Rules, rule 24(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+For the rule 24(2) comparison, record **W**, total income from all sources including income outside Gibraltar's tax charge; **G**, income subject to the Gibraltar tax charge; and **H**, the hypothetical tax if total worldwide income were chargeable. The permitted relief cannot reduce the amount payable below **H × G / W**. Compute both actual and hypothetical tax **without foreign-tax relief** for this comparison, as rule 24(3) requires. This is a restriction on the specified relief, not a separate charge on otherwise exempt foreign income. Do not use the foreign country's tax bill as H or subtract a foreign credit before testing the floor. Foreign-tax relief needs its separate legal analysis. [Rule 24(2)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+**Illustrative comparison:** assume W = £50,000, G = £20,000 and an independently established hypothetical tax H = £10,000. The floor is £4,000. If the otherwise calculated liability after the claimed relief is £3,000, relief must be restricted by £1,000 to leave £4,000 before foreign-tax relief. If that liability is £5,000, the floor requires no adjustment. These assumed tax amounts illustrate the restriction; they are not computed liabilities for a particular pensioner, approved pension or tax system. With W = 0, do not divide by zero or invent a liability; revisit the charging and income facts.
+
+```oa-check
+name: Non-resident pensioner worldwide-income relief floor
+inputs:
+  worldwide_income: 50000
+  chargeable_income: 20000
+  hypothetical_worldwide_tax: 10000
+  liability_below_floor: 3000
+  liability_above_floor: 5000
+steps:
+  - floor: hypothetical_worldwide_tax * chargeable_income / worldwide_income
+  - restriction_below: max(0, floor - liability_below_floor)
+  - restricted_liability: liability_below_floor + restriction_below
+  - restriction_above: max(0, floor - liability_above_floor)
+expected:
+  floor: 4000
+  restriction_below: 1000
+  restricted_liability: 4000
+  restriction_above: 0
+```
+
+Rule 29 requires a claim in a return on the proper form, or another form and manner prescribed by the Commissioner, with the particulars and supporting proof required. Record worldwide income evidence, the Gibraltar-source pension, each relief claimed, both tax computations and the separate foreign-credit analysis. A working-paper calculation is not a submitted claim; the current form, channel and any case-specific evidence request remain to be verified. [Rule 29](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
 
 ## Two worked examples that recompute
 
