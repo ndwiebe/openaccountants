@@ -1,0 +1,5 @@
+# Dominica registration research, 22 October 2026
+
+New topic absent from existing country folder. Read SRO 26 of 2012 and its scheduled BN forms, CIPO business/company instructions and current Form 1. Narrative name page refers to 2011 rules; enacted instrument is 2012 with 1 October 2012 commencement. Rule 8 permits information sharing, not proof of completed tax enrolment. Company page expressly distinguishes automatic taxpayer confirmation from separate PAYE registration. Form 1 eligibility language differs at age eighteen from narrative; no broad eligibility opinion claimed.
+
+Old form URLs returned 404; current Form 1 URL from registry worked. Form 9A fetch 502, no inspection claimed. Act 4 of 2008 downloaded but text extraction has gaps, so its definition not inferred. Base Act/full company amendments, annual deadlines and beneficial ownership remain work. IRD startup page old VAT threshold deliberately excluded. No prices, processing promises, full formation opinion or independent review claimed.

@@ -1,0 +1,37 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-rules.pdf",
+      "bytes": 53457,
+      "sha256": "508f574a6a6c9f89d7b00535fa6c5a6889589053a5927e038d844f67e31f7a0c"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-act4-2008.pdf",
+      "bytes": 33541,
+      "sha256": "ea1d422ac491d2784bc981c502ed3e9dbdb10f39085797a98991d631dff53ad7"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/forms/bnc/Application-Incorporation-companies-act.pdf",
+      "bytes": 99674,
+      "sha256": "0e2f595bbebca6d43f0acee9b80d845e9a5f6a957e99ce6f9e4e5ef0765e5afb"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/businesses-and-companies/companies/",
+      "bytes": 15296,
+      "sha256": "aeefb92bc0e0c3065277184895e95e5db7f910105bd8c5b93fcd28ea3a1dcd7c"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "Base Act and full amendment reconciliation",
+    "Corporate eligibility, annual returns and beneficial ownership",
+    "Current Form 9A and online submission completion",
+    "Fees and sector permissions"
+  ],
+  "access_notes": [
+    "Old images/forms URLs returned 404; current forms/bnc Form 1 resolved",
+    "Form 9A returned 502 in web fetch; not substantively inspected",
+    "Act 4 of 2008 text extraction incomplete; no operative definition inferred"
+  ]
+}
