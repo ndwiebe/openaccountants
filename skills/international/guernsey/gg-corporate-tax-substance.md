@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
-    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–7, 9, 30, 37–40"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–9, 30, 37–40"
     as_of: "2026-10-22"
   - url: "https://gov.gg/economicsubstance"
     title: "Revenue Service economic substance, current implementation and guidance links"
@@ -30,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.3
+# Guernsey corporate tax, distributions and substance v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -112,7 +112,36 @@ Regulation 4 requires the activity to be directed/managed locally, local core in
 
 For direction and management, the governing board must meet in Guernsey sufficiently often for the decisions required; a quorum must be **physically present**. Strategic decisions must be taken at those meetings and recorded in minutes; the board collectively needs the expertise to decide; relevant minutes and records must be kept in Guernsey. A local registered office or a signed resolution alone does not establish all these tests. [Regulation 4(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
-Local outsourcing can satisfy the CIGA requirement only where the activity is performed **in Guernsey** and the body demonstrates adequate supervision. Retain the service agreement, actual work locations, responsible personnel, deliverables and supervision records. An offshore outsourced function is not converted into local CIGA merely by a Guernsey invoice. [Regulation 4(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). Specific activity-by-activity CIGA definitions under regulation 8 and the IP rules still require detailed treatment before this pack is complete.
+Local outsourcing can satisfy the CIGA requirement only where the activity is performed **in Guernsey** and the body demonstrates adequate supervision. Retain the service agreement, actual work locations, responsible personnel, deliverables and supervision records. An offshore outsourced function is not converted into local CIGA merely by a Guernsey invoice. [Regulation 4(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The activity map below develops regulation 8; specialist IP rules and a complete subsequent-amendment review remain open.
+
+### Activity classification and the work that produces the income
+
+Apply the **regulation 37 definition first**, then map the actual functions to regulation 8. The list of core income-generating activities is inclusive; it is not a checklist that can replace the actual business facts. The local-performance and supervision conditions above continue to apply. [Regulations 4, 8 and 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+| Relevant activity | Core functions identified in regulation 8 | Suggested evidence to retain |
+|---|---|---|
+| Banking | Raising funds; managing credit/currency/interest risks; hedging; customer loans/credit/financial services; regulatory capital and reporting | Decision records, risk/treasury records and regulatory filings |
+| Insurance | Predicting/calculating risk; insurance/reinsurance; client services | Underwriting, pricing, reinsurance and service records |
+| Fund management | Holding/selling investment decisions; risk/reserve calculations; currency/interest and hedging decisions; regulatory/investor reports | Investment committee decisions, portfolio/risk work and reports |
+| Financing/leasing | Funding terms; identifying/acquiring leased assets; financing/lease terms and duration; monitoring/revising agreements; risk management | Credit approvals, executed terms, asset records and monitoring |
+| Headquarters | Relevant management decisions; expenditure on behalf of group members; coordination of group activities | Authority matrix, management decisions and expenditure/coordination records |
+| Shipping | Crew management; hauling/maintenance; delivery tracking; goods-order/delivery decisions; voyage organisation/oversight | Crew, vessel, delivery and voyage-management evidence |
+| Distribution/service centre | Transport/storage; inventory; orders; consulting/administrative services | Goods flows, stock/order systems and actual service deliverables |
+
+Legal functions: [regulation 8(a)–(g)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The evidence column is a working-paper recommendation, not a prescribed form or guaranteed proof of compliance. Record who performed each material function, where, when, with what authority and under whose supervision. A provider invoice proves a payment; it does not by itself prove where the underlying function occurred.
+
+### Do not overextend the category names
+
+- **Financing/leasing** requires provision of credit facilities for consideration, including interest. It includes the specified separately charged instalment arrangements and treats an assignee of customer credit as providing the facility. Its financial-leasing limb excludes land/interests in land; banking, insurance and fund-management activities are excluded from this category. Do not classify every asset rental as financing/leasing.
+- **Distribution/service centre** is a sole/main business involving the specified purchases from non-resident group members for resale, or services to non-resident group members. Ordinary services to unrelated customers do not satisfy that group condition merely because the company calls itself a service centre. The definition excludes the other listed relevant activities.
+- **Headquarters** concerns senior management, material-risk assumption/control or substantive risk advice for non-resident group members. Check the exclusions for the other named relevant activities and IP holding. Merely calling a registered office a headquarters does not decide classification.
+- **Intra-group** uses the financial-consolidation relationship specified in regulation 37, including the hypothetical publicly traded-equity test. Do not substitute the UK treaty's ownership percentages or assume common directors alone settle this definition.
+
+All four boundaries: [regulation 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). Banking, insurance and fund management also use licensing and statutory cross-references. The 2021 document cites older sector statutes; confirm amendments or replacement-law mappings before applying those licence definitions to a 2026 entity.
+
+### IP requires an additional analysis
+
+Regulation 8(h) identifies research/development for patent-type assets and marketing, branding and distribution for marketing intangibles. Its exceptional alternative functions include the stated strategic decisions, risk management and underlying exploitation activity, but that exception is unavailable to high-risk IP bodies. Do not treat board-level risk discussion as a universal substitute for local development or marketing functions. [Regulation 8(h)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The full regulation 5/10/17 high-risk tests, rebuttal evidence and enforcement still require treatment before an IP case is accepted.
 
 ### Pure-equity holdings and periods without income
 

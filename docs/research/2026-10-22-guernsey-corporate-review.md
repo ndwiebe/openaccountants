@@ -13,3 +13,9 @@ Certificate 2/3 webpage wording and examples need reconciliation with current fo
 Direct consolidated Income Tax Law URL linked by Revenue Service again returned HTTP 403. Independent route succeeded: Revenue Service itself hosts the 2021 consolidated substance regulations, id141223. Read regulations 1,3,4,6,7,9,30,37 pure-equity definition,38–40. Current index identifies this instrument and COVID guidance withdrawal; it is not proof of an exhaustive later-amendment search.
 
 Added resident/exempt company scope and foundations/CIV/self-managed fund distinctions, physically present board quorum, proportional people/premises/expenditure, local supervised outsourcing, pure-equity definition/control routes and reduced requirements, and no-income versus nil-profit/reporting distinction. Reg30 supplies an actual residence amendment but not complete current s4 exclusions. No full residence conclusion or current amended-consolidation claim. Reg8 activity CIGA, IP/high-risk-IP, partnership exceptions and penalty machinery remain open. Qualitative criteria were not given fake arithmetic tests.
+
+## v0.4 activity-specific CIGA and classification
+
+Read regulation 8 in full and regulation 37 definitions for banking, insurance, fund management, financing/leasing, headquarters, distribution/service centres, intra-group and IP. Added function/evidence map, consideration and land-leasing boundaries, non-resident intra-group requirements and consolidation definition. Evidence suggestions are explicitly writer recommendations, not statutory forms. No fixed headcount/expenditure or outsourcing safe harbour invented.
+
+The 2021 text references older sector statutes for licensing; current replacement-law mappings remain to check. IP exceptional alternative CIGA is not extended to high-risk IP. Full regs5/10/17 and enforcement remain open. This qualitative expansion adds no artificial arithmetic checks. Source PDF hash remains unchanged.
