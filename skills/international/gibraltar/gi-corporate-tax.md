@@ -1,15 +1,18 @@
 ---
 name: gi-corporate-tax
 description: >
-  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It does not compute Pillar Two, specialised exemptions or treaty permanent establishments. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.13"
+version: "0.14"
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
+    title: "UK–Gibraltar agreement: Articles 3–5, 7–9, 21 and 28–29"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Income Tax Act 2010, 23 March 2026 consolidation"
     as_of: "2026-10-22"
@@ -36,7 +39,7 @@ sources:
 
 ## Scope
 
-Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It does not compute Pillar Two, specialised exemptions or treaty permanent establishments.
+Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -55,6 +58,70 @@ Under section 74, source is determined by the location of the activities giving 
 The licensing deeming rule has an express exception for a Gibraltar company's overseas branch or permanent establishment, to the extent of activities conducted outside Gibraltar. This disapplies that deeming limb for the stated activities; it is not a blanket exemption for all overseas receipts or proof that a foreign establishment exists. Keep the establishment evidence and attributable activities separate from Gibraltar work. [Section 74, same definition, paragraph (c)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For a non-ordinarily-resident company trading through a Gibraltar branch or agency, section 11(4) measures chargeable profits by trading income through or from it and, insofar as chargeable, property/right income connected with assets used or held by or for it. Treaty residence, permanent-establishment thresholds, dual-residence resolution and profit attribution need the applicable agreement and facts; this domestic-law section does not resolve them. [Section 11(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## UK treaty: permanent establishments and business profits
+
+Apply this section only after establishing entitlement under the UK–Gibraltar agreement, its effective period and Article 4 residence. For dual-resident companies, authority agreement is required for relief except to the extent authorities otherwise agree; incorporation alone is not the treaty tie-breaker. See [UK treaty entitlement](gi-uk-investment-income-treaty.md). Article 7(1) generally allocates enterprise profits exclusively to its territory unless it conducts business through a permanent establishment in the other territory, which can then tax attributable profits. Items separately dealt with elsewhere in the agreement retain their own rules under Article 7(4); absence of a PE is not a universal exemption for property income or investment payments. [Articles 4 and 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+### Fixed places and projects
+
+Article 5(1) defines a PE as a fixed business location through which the enterprise conducts all or part of its business. Paragraph (2) lists management places, branches, offices, factories, workshops and natural-resource extraction locations. Paragraph (3) sets a **more-than-twelve-month** duration for a building site or construction/installation project. Exactly twelve months does not pass that project-duration limb. It is not a twelve-month grace period for every office, agent or other business activity. Verify project start, completion, interruptions and any aggregation issue before drawing a conclusion; the text alone does not settle every project-timing fact. [Article 5(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment).
+
+### Activity exclusions and combined operations
+
+Article 5(4) contains specific exclusions for facilities/stock used solely for storage, display or delivery of the enterprise's goods, stock solely for processing by another enterprise, and fixed places solely for purchasing goods or collecting information. Its separate residual-activity exclusion requires preparatory or auxiliary character; a combination of listed activities must be preparatory or auxiliary overall. Do not rewrite these different limbs into a single assumed test. Establish what the location actually does. [Article 5(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment).
+
+Paragraph (5) withdraws paragraph (4)'s exclusion where the same or a closely related enterprise operates at that or another place in the same territory, the activities are complementary parts of a cohesive business operation, and either the relevant place is a PE or the combined activities are not preparatory or auxiliary. A separately incorporated warehouse and sales operation therefore require a combined factual analysis, not automatic exemption merely because one location stores goods. [Article 5(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment).
+
+For this rule, paragraph (6) includes factual control or common control, and in any event specified **more-than-50%** direct/indirect beneficial ownership. For companies it refers to aggregate vote and share value or beneficial equity interest. Exactly 50% does not trigger that numerical route, but factual control can still establish close relationship. The test is not the same as a universal 51% share-count requirement. [Article 5(6)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment).
+
+**Ownership example:** assume one equal-right class, no indirect holdings and 1,000 total shares. Holdings of 500 give 50%; 510 give 51%. The second passes the stated numerical limb; the first still needs the factual-control inquiry. Even established close relationship does not itself prove the remaining paragraph (5) conditions or a PE.
+
+```oa-check
+name: UK Gibraltar close enterprise ownership boundary
+inputs:
+  equal_right_shares: 1000
+steps:
+  - at_boundary_percent: 500 / equal_right_shares * 100
+  - above_boundary_percent: 510 / equal_right_shares * 100
+expected:
+  at_boundary_percent: 50
+  above_boundary_percent: 51
+```
+
+### Contracting agents and subsidiaries
+
+Under Article 5(7), a person acting for the enterprise who has and habitually exercises authority to conclude contracts on its behalf can create a deemed PE, subject to the independent-agent and limited-activity exceptions in the text. Examine actual authority and conduct; a job title or unsigned internal policy is not conclusive. Paragraph (8) protects an independent broker, commission agent or other independent agent acting in the ordinary course of its business. Paragraph (9) says control of one company by another does not **of itself** make either a PE of the other. It does not disapply the fixed-place, agency or combined-operation tests. [Article 5(7)–(9)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment).
+
+### Attribute profits rather than taxing all sales
+
+Article 7(2) uses a hypothetical separate and independent enterprise undertaking comparable activities under comparable conditions. Consider functions, assets and risks through the PE and elsewhere, including internal dealings. Do not allocate all customer revenue to the PE merely because customers are located there, or select a profit percentage without evidence. Keep a reconciled functional analysis and accounts supporting revenue, expense and internal-dealing allocations. Article 7(3) requires an appropriate other-territory tax adjustment to eliminate double taxation of qualifying adjusted profits, with authority consultation where necessary. [Article 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-7-business-profits).
+
+Article 9 concerns separate associated enterprises, including direct/indirect participation in management, control or capital and common participation. Where non-independent commercial/financial conditions suppress profits, the article permits inclusion of profits that would otherwise have accrued; its corresponding-adjustment provision is conditional on those being independent-party profits. It does not automatically accept every foreign adjustment. Use [connected-party rules](gi-connected-party-pricing-and-interest.md) and the [MAP route](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision) for the relevant domestic and dispute questions. [Article 9](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-9-associated-enterprises).
+
+### Shipping and offshore overrides
+
+Article 8 allocates profits from international-traffic ship/aircraft operations exclusively to the enterprise's territory. Bareboat rentals and container activities are included only when incidental to those operations; participation in pools, joint businesses and international operating agencies is also covered. Verify the Article 3 definition of international traffic and actual operations. [Articles 3(1)(h), 8](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+Article 21 takes priority for defined offshore exploration/exploitation activities. Paragraph (3) deems a PE, subject to paragraphs (4)–(5). The paragraph (4) exception is **not exceeding 30 days in aggregate in any twelve-month period beginning or ending in the fiscal year concerned**. Associated enterprises' substantially similar offshore activities are aggregated, excluding simultaneous activity. Its association definition is participation in management, control or capital or common participation; do not import Article 5(6)'s numerical route as its sole test. Paragraph (5) separately allocates specified offshore supply/personnel transportation and towing/anchor-handling profits exclusively to residence. [Article 21(1)–(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities).
+
+**Offshore example:** assume enterprise A performs 28 counted days, an associated enterprise performs 12 substantially similar days, and 10 of those days coincide with A's activity. Within the relevant window, the aggregate is **28 + 12 − 10 = 30 days**. One further non-overlapping day gives 31 and fails that paragraph (4) exception. This does not resolve paragraph (5), other PE rules, domestic charge or the distinct employee rules in the [employment treaty Guide](gi-uk-employment-pensions-treaty.md).
+
+```oa-check
+name: UK Gibraltar offshore associated activity aggregation
+inputs:
+  own_days: 28
+  associated_days: 12
+  overlapping_days: 10
+steps:
+  - aggregate_days: own_days + associated_days - overlapping_days
+  - with_extra_nonoverlapping_day: aggregate_days + 1
+expected:
+  aggregate_days: 30
+  with_extra_nonoverlapping_day: 31
+```
+
+This section establishes treaty rules, not a case-specific PE clearance, home-office ruling or profit-allocation approval. Current registration/return treatment for a particular non-resident enterprise, project-timing interpretations, valuation and internal-dealing evidence, other corridors and Article 28 anti-abuse application remain subject to further source and professional review.
 
 ## Interest, royalties and overseas movable-property income
 
