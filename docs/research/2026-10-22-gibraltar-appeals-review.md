@@ -7,3 +7,11 @@ Appeal28days from service, written to Commissioner, appeal to Tribunal, grounds>
 Postponement separate28day written application, only specified compliant-return/assessment/appeal case, disputedamount only. Initial<=3months aggregate, extension total<=4months. Nonpostponed or reduced-postponement amount payment30days from decisionissue, void decision consequence, originaldue date retained, not earlierthansection39. Section36(10) originaldue date for surcharge; no no-cost stay promised. Example20,000-12,000=8,000.
 
 Tribunal can increase assessment, not onlyreduce. Settlement has statutory determination consequences. No invented filingemail/form, calendar-adjustment rule, interest rate or completed SupremeCourtprocedure. Current operational channels, calendar/service disputes and independent review remain open.
+
+## Version 0.2: case stated
+
+Retrieved the current Supreme Court Rules index and resolved its live iframe to the 7 July 2026 consolidation. The 1 August 2025 search-result PDF is marked out of date and was not used for the update. Read current rules 25–31 and Income Tax Act Schedule 2 paragraphs 12 and 16.
+
+Added 21 days after determination, notice and £100 to Clerk; refusal for non-law question or unpaid fee; reserved determination date is notice sent, not received. Example 6 October sent / 8 October received selects 6 October without inventing calendar-adjustment rules. Court affirms or remits; Tribunal-determined tax remains payable pending case stated.
+
+Rules 25–30 use magistrates' court language. Rule 31 supplies necessary modifications for other tribunals, subject to enactment; Guide explicitly keeps tax Clerk/Tribunal route and flags operational adaptation rather than silently directing filing to magistrates. Added written legal questions and evidence-finding identification, draft/representations/final-case 21-day stages, transmission, contents restrictions and hearing-rule cross-reference. No claim that the £100 is the total cost of litigation; no mandamus procedure, holiday rule or automatic stay invented. Independent review still pending.

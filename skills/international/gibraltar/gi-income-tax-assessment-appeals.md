@@ -1,17 +1,20 @@
 ---
 name: gi-income-tax-assessment-appeals
 description: >
-  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Operational filing channels and court escalation procedures require further verification; independent legal review is pending.
+  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38 and Schedule 2"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf"
+    title: "Supreme Court Rules 2000: 7 July 2026 consolidation, rules 25–31"
     as_of: "2026-10-22"
 ---
 
@@ -51,8 +54,25 @@ Postponement of collection **does not change the original due date** for section
 
 Schedule 2 provides for hearing-date notices, normally allowing at least 28 days unless agreed or directed otherwise, and private proceedings. Parties can give evidence, call and question witnesses and address the Tribunal; representation is governed by paragraph 10. Retain an indexed evidence file and identify the witnesses needed to prove each disputed fact. [Schedule 2, paragraphs 6–11](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-The Tribunal can **reduce or increase** an assessment: an appeal is not limited to obtaining a reduction. Its final determination is recorded, and the clerk sends notice. A dissatisfied party's point-of-law route is separate and requires prompt review of the applicable procedure; this Guide does not give a complete court-filing checklist. [Schedule 2, paragraphs 12–13](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+The Tribunal can **reduce or increase** an assessment: an appeal is not limited to obtaining a reduction. Its final determination is recorded, and the clerk sends notice. The point-of-law court procedure below is separate from the initial assessment appeal. [Schedule 2, paragraphs 12–13](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 A pre-hearing agreement with the Commissioner has the consequences specified in section 35(5), as though the appeal were determined in that amount on the agreement date. Section 38 governs finality, subject to its exceptions and section 34. Preserve the agreement or determination, revised assessment and resulting payment/refund calculation. Do not assume the matter remains open simply because a formal hearing never occurred. [Sections 35(5)–(7) and 38](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-Independent source and legal review remain pending. Current submission channels, disputed-service cases, calendar computation and court escalation require further verification. The Guide does not approve an appeal, extend a deadline or certify that collection has been postponed.
+## Supreme Court: case stated on a point of law
+
+A party who considers the final determination erroneous on a point of law can require the Tribunal to state and sign a case for the Supreme Court. Within **21 days after final determination**, serve notice on the **Clerk** and pay the **£100 fee to the Clerk**. The Tribunal can refuse if the identified question is not a question of law or the fee has not been paid. This is a different recipient and deadline from the original assessment appeal to the Commissioner. [Schedule 2, paragraph 16(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Record the determination date correctly. If given at the end of the hearing, retain that date and the recorded decision. If reserved, paragraph 12(4) treats it as made when the notice is **sent to the parties**, not when it is received. For example, a reserved determination sent on 6 October and received on 8 October uses 6 October as its statutory determination date. Calculate the deadline under the applicable time-computation rules; this example does not determine weekend or holiday adjustments. [Schedule 2, paragraph 12(2)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Paragraph 16(3) applies Supreme Court Rules **25–30**. Those rules are written for magistrates' court cases; rule 31 provides the necessary modifications for other civil tribunals, subject to the governing enactment. Use the Income Tax Act's Clerk and Tribunal route, and confirm the adapted filing requirements with the Clerk and legal representative. Do not send a tax case to the magistrates' court merely because that court appears in the rules' wording. [Paragraph 16(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [rules 25–31](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
+
+The rules provide these stages, read with those modifications:
+
+1. **Written application:** identify the questions of law to be determined. Rule 25 requires a copy for each decision-maker. If the question is whether evidence supported a finding, identify that particular finding rather than making a general objection to the result. [Rules 25–26](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
+2. **Draft case:** rule 27 provides for the clerk to send the draft within **21 days after receipt of the application**, or after a mandamus order where a case was refused. Each party then has **21 days after receiving the draft** to deliver signed written representations. A refusal requires legal advice; this Guide does not establish how to obtain that order. [Rule 27](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
+3. **Final case:** within **21 days after the latest day for representations**, the decision-makers consider them, make any adjustments and state and sign the case. The clerk then transmits it promptly to the Registrar with the parties' last known addresses and sends copies to the parties or their solicitors. [Rule 28](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
+4. **Contents and hearing:** the case states the facts found and the legal questions. It must identify any finding challenged as unsupported by evidence; otherwise it must not contain a statement of evidence. Rule 30 applies the hearing provisions in rules 20, 22, 23 and 24 with necessary changes. Obtain the hearing notice and directions; this Guide is not a complete hearing or non-attendance checklist. [Rules 29–30](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
+
+The Supreme Court determines the legal question and either affirms the determination or remits the matter to the Tribunal with its opinion and directions. **Tax remains payable according to the Tribunal's determination while the case is requested or pending before the Supreme Court.** A case-stated request does not itself continue an earlier collection postponement. [Schedule 2, paragraph 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Independent source and legal review remain pending. Current submission channels, disputed-service cases, calendar computation, adapted court filing requirements and case-specific directions require further verification. The Guide does not approve an appeal, extend a deadline or certify that collection has been postponed.
