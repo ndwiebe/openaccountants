@@ -7,9 +7,12 @@ category: financial-statements
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106"
+    title: "Companies Act current-version index, last update 1 August 2025"
+    as_of: "2026-10-22"
   - url: "https://www.companieshouse.gi/publications/C0025.pdf"
     title: "Gibraltar: Companies House: filing of accounts, August 2025"
     as_of: "2026-10-22"
@@ -80,6 +83,35 @@ The annual return under section 188 has its own return date, normally the incorp
 ## Filing fees and lateness
 
 The published accounts filing fee is **£26**. Section 426 adds £180.50 when accounts are filed more than 13 but no more than 24 months after the relevant period, and £309 after 24 months. Therefore the published totals are **£26 + £180.50 = £206.50** and **£26 + £309 = £335**. These charges do not exhaust the offence and penalty provisions in section 269. An account filed after its 12-month deadline is late even before the supplementary-fee threshold is reached. [Companies Act, sections 269 and 426](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf); [Registry fee table](https://www.companieshouse.gi/publications/C0019.pdf).
+
+## Auditor appointment and authority
+
+Where an audit is required, section 255 provides annual general meeting appointment until the next AGM. The auditor must have the statutory-audit approval required by section 255(3); membership of an accounting body alone is not the stated approval. A director, officer or secretary of the company is disqualified. The additional partner/employee restriction in section 255(6)(b) has a private-company exception in its wording, but that exception does not itself establish compliance with the separate statutory-auditor approval and independence regime. Verify the actual auditor's approval and independence before appointment. [Companies Act, section 255](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+For a proposed replacement of a retiring auditor at an AGM, section 256 ordinarily requires member nomination notice to the company at least **14 days** before the AGM, a copy to the retiring auditor, and notice to members at least **seven days** before the AGM. Its subsection (2) contains a specific short-notice-meeting adjustment; do not omit it or assume every shorter notice is invalid. Keep the nomination, dispatch evidence and meeting notice together. [Section 256(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+Directors can appoint the first auditors before the first AGM and fill a casual vacancy, subject to section 256's provisions. The general meeting ordinarily fixes remuneration; directors can fix it for their first-auditor/casual-vacancy appointments, and the Registrar for a Registrar appointment. If the AGM fails to appoint, section 255(5) permits the Registrar to appoint on a member's application. These mechanisms do not cure an unqualified auditor. [Sections 255(5), 256(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+## Correcting defective accounts or reports
+
+Under section 267, directors who identify that annual accounts or the directors' report failed Part VII requirements can prepare a revision. Once the earlier version has been laid before the general meeting or delivered to the Registrar, revisions are limited to correcting that non-compliance and necessary consequential alterations. It is not a general permission to rewrite a previously filed year for a different commercial presentation. [Section 267(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+Retain the original, identify each defect and its authority, and reconcile every amendment to that correction. Section 267 also enables regulations governing replacement versus supplementary documents, auditor involvement and communication to recipients. The applicable implementing procedure has not been verified here: confirm the required signatures, audit treatment, notices and filing route before submitting a revision. Do not overwrite the evidential original or assume uploading a revised PDF completes all duties. [Section 267(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf). The correction log is recommended working-paper practice, not a statutory form.
+
+## Changing the accounting reference period
+
+Section 268 requires a notice to the Registrar identifying a new reference date and whether the current or immediately preceding period is shortened or extended. A previous period cannot be changed through this notice after its accounts/report filing period has expired. Changing a date in accounting software alone is not that notice. [Section 268(1)–(2), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+Two different extension limits apply:
+
+- A notice is ineffective if given **less than three years after the end of an earlier extended reference period**, unless the specified group-alignment exception or Ministerial direction applies. The clock runs from that earlier period's end, not from its notice date.
+- An extension cannot produce a reference period exceeding **18 months**; section 268(6) excepts a company under administration from this particular limit. That exception does not, by itself, waive every other notice condition.
+
+[Section 268(3)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf). The group-alignment provision uses the Act's own definition of an EEA undertaking, which expressly includes an undertaking established under UK or Gibraltar law. Do not substitute a general post-Brexit geographical assumption for that definition. [Section 268(4), (7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+**Boundary applications:** an ordinary company's proposed 19-month reference period exceeds the 18-month limit; an 18-month proposal still needs every other applicable condition. A repeat extension notice only two years after an earlier extended period ended fails the ordinary three-year condition unless a stated exception applies. A late prior-year filing is not remedied by changing that expired prior period under section 268(5). These are applications of separate statutory conditions, not a claim that an unreviewed notice is valid.
+
+Before implementing a date change, record the old/new periods, earlier extensions, scope of any exception, notice and Registrar response, and recalculate the separate filing and tax calendars. The notice's present form, portal process and any special tax-period consequences require confirmation. Do not presume a company-law date change automatically amends a filed tax return or its payment dates.
 
 ## Working paper and review
 

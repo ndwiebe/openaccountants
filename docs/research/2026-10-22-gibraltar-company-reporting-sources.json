@@ -19,7 +19,13 @@
     },
     {
       "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
-      "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75"
+      "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75",
+      "additional_locators_v0_2": "Sections 255\u2013256 (auditor appointments), 267 (revisions), 268 (reference-period changes)"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106",
+      "as_of": "2026-10-22",
+      "locators": "Current-version heading: last update 1 August 2025. Read via web tool; no local HTML hash."
     }
   ]
 }
