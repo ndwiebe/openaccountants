@@ -7,7 +7,7 @@ category: formation
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
@@ -152,11 +152,29 @@ Regulation 44 separately criminalises knowingly or recklessly providing the Regi
 
 The published regulation 45(5) list repeats the corporate/legal-entity entry in paragraphs (d) and (e); it must not be silently rewritten to match regulation 42's director entry. Regulation 47 separately addresses officer consent, connivance or neglect where a company commits the specified offence. Particular criminal liability, current standard-scale amounts, court filing procedures, restriction notices and public-access exemptions require further verification. [Regulations 45(5)–47](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
 
+### Register access and non-disclosure applications
+
+Regulation 26 permits requests by competent authorities, the Commissioner of Income Tax, financial intelligence units, obliged entities and members of the public, subject to its conditions. Public access is limited to the beneficial owner's **name, birth month and year, nationality, country of residence, and nature/extent of beneficial interest**. It does not create public access to every identity document, full birth date or residential address collected for registration. Authorities have the separate statutory access protections; obliged entities access information within customer due diligence. The Registrar can notify an owner about an obliged-entity/public request under regulation 26(5); do not promise that those searches are anonymous. [Regulation 26(1)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+Regulation 26(7) disapplies its specified obliged-entity/public access provisions for express-trust searches. Nominator and appointor information has separate access provisions in regulations 26ZA–26ZB for competent authorities and financial intelligence units, with specified delegated access. Do not assume the public corporate-UBO fields provide public access to every nominator, appointor or trust record. [Regulations 26(7), 26ZA–26ZB](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+Obliged entities must use a risk-based approach and **must not rely exclusively on the register** to fulfil customer due diligence. A register extract is evidence to reconcile with other records, not a complete AML review or assurance of ownership accuracy. This complements the discrepancy-report duty above. [Regulation 30](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+An individual UBO, or a Gibraltar-incorporated corporate/legal entity acting for the UBO, can apply for non-disclosure in exceptional circumstances. The application must identify the owner, former names, birth date, usual residential address and relevant entities, and contain grounds plus supporting evidence. Grounds include minority or incapacity, or exposure to fraud, kidnapping, blackmail, violence or intimidation. The Registrar evaluates the circumstances individually; a request is not automatically approved. [Regulations 31(1)–(2), 32(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+This is an access restriction, **not permission to omit required ownership information from the Registrar's filing**. Nor is it secrecy from all authorities: the application concerns regulation 26(1)(c)/(d) access, and regulation 32(4) preserves access for credit institutions, financial institutions and the specified public-official obliged entities. The Guide does not infer the full scope of that last category without checking the cited Proceeds of Crime Act provision. [Regulations 31–32](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+The Registrar must send notice **within seven days beginning with the determination date**. That is not a promise to decide an application within seven days of receipt. A refusal notice must give reasons and explain the right to seek **permission to appeal to the Supreme Court within 28 days beginning with the notice date**. This differs from the Magistrates' Court route for civil penalties above. Current application delivery, interim handling, permission/appeal procedure, duration and revocation need separate verification. [Regulation 31(3)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+Regulation 35(3) permits a late permission application if the Supreme Court is satisfied there was good reason for missing the ordinary period; relief is not automatic. An applicant seeking permission must serve written notice on the Registrar within **seven days beginning with issue of the permission application**. Keep this service obligation separate from the Registrar’s determination-notice deadline. [Regulation 35(2)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+For example, a company asking to withhold a vulnerable owner's details still needs to meet its filing obligations and supply evidence for the non-disclosure request. Even a granted public-access restriction does not establish that a credit institution is barred from access under regulation 32(4). No private ownership data or risk evidence was submitted in preparing this Guide.
+
 ### Current submission route
 
 The GFSC assumed the Registrar function on **1 September 2026**. Its announcement says the old UBO submissions portal closed on **31 August 2026**. GFSC-regulated entities use the UBO section of their GFSC Portal; other covered corporate/legal entities register at [the GFSC UBO portal](https://portal.fsc.gi/uboregister). The announced migration period ended **30 September 2026**; it is not a fresh extension for an October filing. [GFSC announcement, 4 September 2026](https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590).
 
-Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Core discrepancy reporting and civil-penalty safeguards are set out above; access restrictions, additional exceptions, detailed criminal/court procedures and historical/portal-specific nominee cases remain open; these core duties do not complete the entire ownership-transparency regime.
+Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Core discrepancy reporting and civil-penalty safeguards are set out above; core access and non-disclosure rules are also drafted; further exceptions, detailed criminal/court procedures and historical/portal-specific nominee cases remain open; these core duties do not complete the entire ownership-transparency regime.
 
 ## Completion and handover
 
