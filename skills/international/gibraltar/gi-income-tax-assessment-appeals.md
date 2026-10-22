@@ -1,15 +1,21 @@
 ---
 name: gi-income-tax-assessment-appeals
 description: >
-  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
+  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court and Gibraltar MAP submission guidance, completeness requirements and the distinction between proceedings and collection suspension. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf"
+    title: "Gibraltar Income Tax Office MAP guidance: sections 6.2–6.3, 7.1–7.2 and scope"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
+    title: "UK–Gibraltar agreement Article 24: mutual agreement procedure"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38 and Schedule 2"
     as_of: "2026-10-22"
@@ -22,7 +28,7 @@ sources:
 
 ## Scope and first checks
 
-This Guide covers income-tax enquiries and assessment limits, section 32 information-notice appeals and section 35 assessment appeals. It does not establish the route for every penalty, customs decision, transaction-tax dispute or treaty procedure. Read the actual notice and identify the statutory decision, assessed period, amount, service method and appeal information. Section 35(1) requires the assessment notice to state assessed profits or gains, tax payable, payment place and the subsection (2) appeal rights. [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+This Guide covers income-tax enquiries and assessment limits, section 32 information-notice appeals and section 35 assessment appeals. The final section distinguishes UK treaty mutual-agreement procedure (MAP) from domestic appeals. This Guide does not establish the route for every penalty, customs decision or transaction-tax dispute. Read the actual notice and identify the statutory decision, assessed period, amount, service method and appeal information. Section 35(1) requires the assessment notice to state assessed profits or gains, tax payable, payment place and the subsection (2) appeal rights. [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Enquiries and assessment limits are different clocks
 
@@ -91,4 +97,21 @@ The rules provide these stages, read with those modifications:
 
 The Supreme Court determines the legal question and either affirms the determination or remits the matter to the Tribunal with its opinion and directions. **Tax remains payable according to the Tribunal's determination while the case is requested or pending before the Supreme Court.** A case-stated request does not itself continue an earlier collection postponement. [Schedule 2, paragraph 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-Independent source and legal review remain pending. Current submission channels, disputed-service cases, calendar computation, adapted court filing requirements and case-specific directions require further verification. The Guide does not approve an appeal, extend a deadline or certify that collection has been postponed.
+## Treaty MAP: a separate submission and collection decision
+
+For the UK–Gibraltar agreement, Article 24(1) permits presentation to either competent authority within **three years from the first notification** of action resulting in taxation contrary to the agreement, irrespective of domestic remedies. Record the notification, not merely the later payment or appeal decision. An agreed resolution under paragraph (2) is implemented notwithstanding domestic time limits. This is not a universal three-year domestic appeal period. [Article 24](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure).
+
+Gibraltar's non-binding [MAP guidance, sections 6.2–6.3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf) provides:
+
+- Email the competent authority at **MAPRequests@gov.gi**, subject **MAP Request**. Alternatively post to the Commissioner of Income Tax, Competent Authority, Income Tax Office, St. Jago’s Stone Block, 331 Main Street, Gibraltar GX11 1AA.
+- Use English, including translations of supporting documents. No standard form or authority fee applies.
+- Supply identities, representative authority, treaty articles, timely-submission basis, periods, facts, amounts/currencies/exchange rates, analysis and supporting records. Disclose related foreign submissions, appeals, rulings and outcomes, and confirm accuracy and cooperation. Consult the full section 6.3 checklist.
+- An incomplete request is not treated as made until required information arrives; do not rely on an initial email to preserve time.
+
+[Sections 7.1–7.2](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf) distinguish acceptance's stated suspensory effect on domestic proceedings from **no automatic collection suspension**. A separate postponement request goes to the Commissioner, subject to domestic law. Obtain the case-specific acceptance and directions before changing litigation steps. The guidance's scope excludes agreements not entirely based on the OECD model; do not transplant it into the Spain agreement.
+
+For example, a taxpayer contesting £8,000 of a £12,000 assessment must distinguish the MAP submission, its acceptance, the domestic appeal and any collection-postponement decision. None of those amounts proves that £8,000 has been postponed. The domestic section 35 route above remains a separate statutory analysis; record the actual direction and amount. Do not withdraw an appeal merely because a MAP email was sent.
+
+Article 24(5)'s arbitration clock begins with presentation to the **other territory's authority**, and its conditions include the absence of an existing court/administrative-tribunal decision on the issues. Preserve that date separately from first notification and domestic filing dates. The [UK investment-income Guide](gi-uk-investment-income-treaty.md) records the full conditions and the contradictory HMRC summary entry. The newly verified Gibraltar submission channel does not resolve that conflict or prove an agreed arbitration operating arrangement. [Article 24(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure).
+
+Independent source and legal review remain pending. Domestic appeal submission channels, disputed-service cases, calendar computation, adapted court filing requirements and case-specific directions require further verification. The Guide does not approve an appeal, extend a deadline or certify that collection has been postponed.

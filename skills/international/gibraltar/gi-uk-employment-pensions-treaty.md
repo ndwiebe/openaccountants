@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -123,3 +123,5 @@ Prepare a residence and income-classification memo, travel log across relevant t
 A treaty allocation does not itself tell an employer to stop PAYE. Verify the current domestic withholding authorisation and return/repayment route before changing payroll; neither a general treaty claim form nor the three-year MAP window is proof of a pension exemption or a domestic refund deadline. See [Gibraltar payroll](gi-payroll-social-insurance.md) and [individual tax](gi-individual-income-tax.md). Social-security contributions, coverage certificates and benefit coordination are separate unresolved work; this income-tax agreement does not establish their treatment.
 
 Article 28 anti-abuse and conditional remittance limitations still require consideration. The [investment-income Guide](gi-uk-investment-income-treaty.md) sets out those rules and Article 24's dispute clocks. Detailed domestic procedures, day counting, employer/recharge interpretation, pension-source disputes, special statuses and the DT8152 discrepancy need further verification. Independent source review and named accountant attestation remain pending. This draft is not comprehensive cross-border coverage.
+
+For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).
