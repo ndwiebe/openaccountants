@@ -7,11 +7,30 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.12"
+version: "0.13"
 verified_by: pending
+sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
+    title: "Income Tax Act 2010, 23 March 2026 consolidation"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf"
+    title: "Rates of Tax Rules 1989, rule 6, 1 July 2024 consolidation"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf"
+    title: "Income Tax Office Guidance Notes for Companies, August 2025"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate"
+    title: "Income Tax Office corporate filing, payments and penalty guidance"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf"
+    title: "Income Tax Office business entertainment guidance; undated, limitations noted in body"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf"
+    title: "Income Tax Office allocation table 2022–2033; stale rate footer, not rate authority"
+    as_of: "2026-10-22"
 ---
 
-# Gibraltar corporate tax and filing v0.12
+# Gibraltar corporate tax and filing v0.13
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -23,7 +42,7 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 
 ## Charge and rates
 
-Apply the source-of-profit analysis under section 11 and Schedule 1, not a blanket worldwide or tax-free-offshore assumption. The standard company rate is 15% from 1 July 2024. The higher rate is 20% for the statutory utility/dominant-position categories. Mixed activities require classification before rates are assigned. [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf); [Income Tax Act](https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download).
+Apply the source-of-profit analysis under section 11 and Schedule 1, not a blanket worldwide or tax-free-offshore assumption. The standard company rate is 15% from 1 July 2024. The higher rate is 20% for the statutory utility/dominant-position categories. Mixed activities require classification before rates are assigned. Rule 6(3) requires the Commissioner's opinion that the company has abused its dominant market position; market dominance alone is not the complete statutory condition. [Rates of Tax Rules, rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf). [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf); [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Company residence and the source of profits
 
@@ -158,6 +177,24 @@ For accounting periods ending **on or after 31 July 2024**, section 20(6) limits
 
 Example: assume a designated company has a Schedule 3 profit measure of £100,000 and £80,000 of eligible carried-forward losses, all outside the protected periods below, with no insolvency exception. The cap is £50,000; set off £50,000, leaving £50,000 of profits before other applicable adjustments and £30,000 of unused losses. At exactly £50,000 of eligible losses the entire pool fits the cap. This calculation does not establish the company's status or eligibility. [Section 20(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
+```oa-check
+name: Designated company restricted losses without protected pool
+inputs:
+  schedule_three_profit: 100000
+  eligible_restricted_losses: 80000
+steps:
+  - cap: schedule_three_profit * 0.50
+  - used: min(eligible_restricted_losses, cap)
+  - remaining_profit: schedule_three_profit - used
+  - unused_losses: eligible_restricted_losses - used
+expected:
+  cap: 50000
+  used: 50000
+  remaining_profit: 50000
+  unused_losses: 30000
+```
+
+
 The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)–(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For a claim mixing protected and restricted losses, retain separate pools and obtain review of the cap computation after the mandatory ordering; this Guide does not assume whether the 50% base is reduced by the protected pool. Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Check any applicable regulations and the taxpayer's status before filing; the consolidation's definition alone does not establish every entity's treatment. [Section 20(10)–(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
@@ -196,6 +233,40 @@ Payments on account are themselves subject to late-payment surcharge. If an amou
 
 For **already established** ordinary taxable profit of £100,000, tax is **£15,000**. If £10,000 was paid on account for that period, the residual is **£5,000**. An accounting period ending 30 June 2026 ordinarily produces a 31 March 2027 return/balance date; retain any applicable official extension. Zero accounting profit does not prove zero taxable profit.
 
+```oa-check
+name: Ordinary company liability and period-matched payment
+inputs:
+  established_taxable_profit: 100000
+  ordinary_rate: 0.15
+  payments_for_period: 10000
+steps:
+  - current_tax: established_taxable_profit * ordinary_rate
+  - residual: current_tax - payments_for_period
+expected:
+  current_tax: 15000
+  residual: 5000
+```
+
+The instalment example above also recomputes under its stated, verified basis-liability assumptions:
+
+```oa-check
+name: Company instalments and higher or lower final liability
+inputs:
+  verified_basis_liability: 20000
+  higher_final_tax: 26000
+  lower_final_tax: 18000
+steps:
+  - each_instalment: verified_basis_liability * 0.50
+  - total_paid: each_instalment * 2
+  - balance_due: higher_final_tax - total_paid
+  - excess_paid: total_paid - lower_final_tax
+expected:
+  each_instalment: 10000
+  balance_due: 6000
+  excess_paid: 2000
+```
+
+
 ## Failure and boundary checks
 
 Section 64 charges **10% of unpaid tax on the day immediately after its due date**. If tax and that surcharge remain unpaid within 90 days from when the first surcharge becomes payable, a further **20% of the tax and surcharge still unpaid** becomes due. A fully unpaid £1,000 becomes £1,100, then £1,320. If the confirmed combined balance at the second trigger is £600 after intervening payments, the additional surcharge is £120, not £220; reconcile actual allocations before calculating it. These are payment surcharges, separate from return penalties. An appeal or collection postponement does not automatically remove them: section 36(10) retains the original due date for ultimately payable tax. [Sections 36(10), 39(7), 64](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [assessment appeals Guide](gi-income-tax-assessment-appeals.md).
@@ -211,6 +282,10 @@ For current company return failures, section 65(3) provides these **additional**
 The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 **Open scope:** remaining deductibility rules, building-claim procedures and special-case capital allowances, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
+
+## Sources
+
+All source URLs in the frontmatter were accessed on 22 October 2026. The dated research records retain statutory locators and source limitations. Inclusion of the allocation table or undated entertainment guidance does not remove the specific limitations noted above. The arithmetic blocks verify only the stated examples; they do not settle the mixed-loss cap interpretation or establish taxpayer eligibility.
 
 ## Self-checks and output
 
