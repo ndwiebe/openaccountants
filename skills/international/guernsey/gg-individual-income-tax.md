@@ -1,15 +1,18 @@
 ---
 name: gg-individual-income-tax
 description: >
-  Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap eligibility screening is included; cap computations, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap screening and conditional full-year cap comparisons are included; full statutory cap eligibility, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
+  - url: "https://gov.gg/CHttpHandler.ashx?id=185595&p=0"
+    title: "Monetary Values 2026, V2 16 July 2026, pages 5–6"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/taxcap"
     title: "Revenue Service tax-cap guidance; historical examples are dated"
     as_of: "2026-10-22"
@@ -33,13 +36,13 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey individual income tax and residence v0.3
+# Guernsey individual income tax and residence v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Who this applies to
 
-Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap eligibility screening is included; cap computations, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations.
+Prepare ordinary calendar-year 2026 individual tax working papers for the Guernsey income-tax jurisdiction. Cap screening and conditional full-year cap comparisons are included; full statutory cap eligibility, resident-only elections, trusts, pension encashments and foreign-tax relief remain outside these calculations.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -107,7 +110,51 @@ Revenue Service says spouses elect separately from 2023; the former joint cap is
 
 The linked monetary table, page 5, excludes Guernsey/Alderney property income, Guernsey pension/annuity triviality payments and lump sums above the tax-free limit, and, from 2023, unauthorised payments from approved pension/annuity schemes. Do not model these receipts as absorbed by a worldwide cap. Identify each excluded receipt and verify its separate tax treatment. [Monetary Values, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
-**Source-period limit:** the cap page labels its main amounts 2024 and its worked examples 2023; the linked PDF ends at 2024. Neither is sufficient evidence of the amount payable for 2026. The linked consolidated law returned HTTP 403 during this review. Current amounts, complete statutory eligibility, election deadlines, apportionment and special-cap transitions remain unverified here. Obtain those before producing a cap calculation; do not reuse the historical examples as 2026 results. [Cap guidance and legislation link](https://gov.gg/taxcap).
+**2026 amounts now corroborated:** the rates page links a different document, **Monetary Values 2026, V2 dated 16 July 2026**. Page 5 confirms £160,000 for qualifying non-Guernsey income and £320,000 for worldwide income, subject to exclusions. These cap **tax liability**, not taxable income. The same page lists £60,000 for the Open Market and new Alderney property regimes, subject to Sixth Schedule eligibility; it marks the former Alderney resident cap unavailable from 31 December 2025. Do not carry that former £65,000 cap into 2026. The Alderney property regime began in 2025 and covers arrival plus three following years on an individual basis. This table does not establish a particular person's eligibility or grandfathered amount. [2026 table, page 5](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
+
+The old cap-page download still ends at 2024. Use the newer table for 2026 figures, while retaining the guidance for its stated mechanics and exceptions. The linked consolidated law returned HTTP 403. Full statutory eligibility, election deadlines, apportionment and special-cap transitions remain open; these examples do not resolve them.
+
+For a cap elector in the applicable category, the 2026 table lists maximum weekly contributions of £468.72 (Class 2 self-employed), £420.80 (Class 3 non-employed under pension age), or £135.51 (Class 3 non-employed over pension age). Assess these separately from income tax, using the applicable contribution weeks. [2026 table, page 6](https://gov.gg/CHttpHandler.ashx?id=185595&p=0); [cap-election consequence](https://gov.gg/taxcap).
+
+### Conditional full-year cap comparisons
+
+Assume one individual, full-year qualifying residence, valid elections and independently established income classification. Exclude credits, pension payments, special property caps and part-year rules. All amounts below are reviewed taxable income, not gross receipts. Compare ordinary 20% taxation with the qualifying-income route (qualifying tax limited to £160,000, other income taxed separately) and the combined route (included income tax limited to £320,000). Guernsey property tax remains additional. No personal allowances apply on these assumed high incomes. [Cap mechanics](https://gov.gg/taxcap); [2026 limits and exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=185595&p=0).
+
+**Qualifying-income route:** £1 million qualifying income, £100,000 other included Guernsey income and £20,000 taxable Guernsey rent. Ordinary tax is £224,000. The qualifying route gives £160,000 + £20,000 + £4,000 = **£184,000**. The combined route gives £220,000 + £4,000 = £224,000, so it offers no reduction on these facts. A cap is not a compulsory charge above ordinary liability.
+
+```oa-check
+name: Guernsey 2026 qualifying cap comparison
+inputs:
+  qualifying: 1000000
+  other_included: 100000
+  property: 20000
+steps:
+  - ordinary: (qualifying + other_included + property) * 0.20
+  - qualifying_route: min(qualifying * 0.20, 160000) + (other_included + property) * 0.20
+  - combined_route: min((qualifying + other_included) * 0.20, 320000) + property * 0.20
+expected:
+  ordinary: 224000
+  qualifying_route: 184000
+  combined_route: 224000
+```
+
+**Combined route with excluded rent:** change the other included income to £1 million. Ordinary tax is £404,000; the qualifying route gives £364,000. The combined route gives £320,000 plus £4,000 property tax, or **£324,000**. Reporting £320,000 as total tax would omit the property exclusion. Social contributions remain additional in both examples.
+
+```oa-check
+name: Guernsey 2026 combined cap leaves property tax outside
+inputs:
+  qualifying: 1000000
+  other_included: 1000000
+  property: 20000
+steps:
+  - ordinary: (qualifying + other_included + property) * 0.20
+  - qualifying_route: min(qualifying * 0.20, 160000) + (other_included + property) * 0.20
+  - combined_route: min((qualifying + other_included) * 0.20, 320000) + property * 0.20
+expected:
+  ordinary: 404000
+  qualifying_route: 364000
+  combined_route: 324000
+```
 
 **Screening example:** a married couple cannot simply combine their income under the former general joint cap. Review each person's election and income categories. If either receives a pension triviality payment or Guernsey rental income, isolate it for separate tax analysis before comparing a cap with ordinary taxation. This is a classification check, not a computed cap liability. [Cap guidance](https://gov.gg/taxcap); [exclusions, page 5](https://gov.gg/CHttpHandler.ashx?id=174308&p=0).
 
@@ -206,7 +253,7 @@ The tax-reform page describes personal-tax and GST changes for 2029 and corporat
 
 ## Sources
 
-Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [section 3 extract](https://gov.gg/CHttpHandler.ashx?id=167965&p=0), [2026 rates and reliefs](https://gov.gg/RStax-rates-and-allowances), [withdrawal guidance](https://gov.gg/wopa) and [personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns). The [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Full statutory base/relief verification, part-year rules, resident-only elections, caps, pension limits, complete penalties and independent review remain open.
+Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [section 3 extract](https://gov.gg/CHttpHandler.ashx?id=167965&p=0), [2026 rates and reliefs](https://gov.gg/RStax-rates-and-allowances), [withdrawal guidance](https://gov.gg/wopa) and [personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns). The [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Full statutory base/relief verification, part-year rules, resident-only elections, full cap eligibility and special-regime transitions, pension limits, complete penalties and independent review remain open.
 
 ## Disclaimer
 
