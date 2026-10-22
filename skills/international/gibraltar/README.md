@@ -10,7 +10,19 @@ covered_by:
 
 # Gibraltar pack: coverage and remaining work
 
-Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Work in [consolidated PR #514](https://github.com/openaccountants/openaccountants/pull/514). Reconciled 22 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft. Independent AI source/editorial reviews are recorded in the research files, including the [full individual/payroll review](../../../docs/research/2026-10-22-gibraltar-individual-payroll-full-review.md); the [corporate review](../../../docs/research/2026-10-22-gibraltar-corporate-full-review.md) is also recorded. The [foreign-relief and UK treaty review](../../../docs/research/2026-10-22-gibraltar-cross-border-full-review.md) is also recorded. The [property review](../../../docs/research/2026-10-22-gibraltar-property-full-review.md) also records an unresolved stamp-duty amendment status. The [lending and appeals review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md) records a corrected notification deadline. The [transition and Spain review](../../../docs/research/2026-10-22-gibraltar-transition-spain-full-review.md) records the historical-exception correction. These do not establish professional attestation.
+Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Work in [consolidated PR #514](https://github.com/openaccountants/openaccountants/pull/514). Reconciled 22 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft.
+
+Full independent AI source/editorial review records are listed below. Each record identifies its reviewed versions, corrections and limits; subsequent additions have separate delta records in [research](../../../docs/research/). These reviews do not establish professional attestation.
+
+| Reviewed scope | Record and remaining material qualification |
+|---|---|
+| Individual and payroll | [Full review](../../../docs/research/2026-10-22-gibraltar-individual-payroll-full-review.md) |
+| Corporate tax | [Full review](../../../docs/research/2026-10-22-gibraltar-corporate-full-review.md) |
+| Foreign relief and UK treaty Guides | [Full review](../../../docs/research/2026-10-22-gibraltar-cross-border-full-review.md) |
+| Property | [Full review](../../../docs/research/2026-10-22-gibraltar-property-full-review.md); stamp-duty amendment status unresolved |
+| Connected-party lending and appeals | [Full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); notification deadline corrected |
+| Transaction-tax transition and Spain residence | [Full review](../../../docs/research/2026-10-22-gibraltar-transition-spain-full-review.md); historical-exception gate corrected |
+| Company formation and accounts | [Full review](../../../docs/research/2026-10-22-gibraltar-formation-accounts-full-review.md); audit-exemption cross-reference unresolved |
 
 The seven tax domains in current GOAL.md remain in scope. No domain has a reviewed, source-backed not-applicable determination. VAT is the programme's consumption-tax category; the mapped goods transaction-tax Guide does not assert Gibraltar has retail VAT. The accounting topics below belong to the second milestone and do not count as missing tax domains. Explicit mappings identify existing drafts; they do not certify their completeness.
 
