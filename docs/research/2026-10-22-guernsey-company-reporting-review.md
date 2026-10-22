@@ -1,0 +1,7 @@
+# Guernsey company reporting: 22 October 2026
+
+Issue #397 assigns Guernsey to Michael; existing three Guides cover tax/social/payroll and no company accounts Guide. Read Registry directors handbook printed pages 9–10 and 13–14, current annual-validation page and resolutions page, and full audit waiver PDF. Official law site returned 403 both browser and direct retrieval. Registry direct retrieval succeeded; hashes retained. No secondary-source claim used as the legal basis.
+
+Current Registry annual validation January–last February conflicts with old January-only wording in audit PDF. Use current page; old fees not adopted. Financial period <=18 months; member circulation <=12 months after year-end; records six years from making. Audit waiver advance-year rule with first-year exception; filing 30 days distinct. Eligibility exclusion regulations and voting mechanics unverified, not invented. No universal UK/IFRS mandate assumed.
+
+Fetched 2026 form and portal how-to PDFs as preparation; full field-by-field review remains. Examples: year-end 31 December 2025 => member circulation 31 December 2026; 2026 validation => 28 February 2026, prior-December incorporation excepted. Continuing calendar-year company waiver for 2027 passed during 2026 subject to eligibility; no retroactive waiver claim. Original consolidated law, approval rules, full exclusions, current fees and independent review remain open. Not comprehensive coverage.
