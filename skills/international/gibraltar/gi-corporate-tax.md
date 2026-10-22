@@ -1,7 +1,7 @@
 ---
 name: gi-corporate-tax
 description: >
-  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, cessation stock valuation, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
@@ -39,7 +39,7 @@ sources:
 
 ## Scope
 
-Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope.
+Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers income categories, expense adjustments, capital allowances, trade losses, cessation stock valuation, accounting periods, payments and filing controls. It includes UK treaty permanent-establishment and profit-attribution rules; Pillar Two, specialised exemptions and other treaty corridors remain outside the completed draft scope.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -229,6 +229,45 @@ Two construction schemes also have closed commencement windows:
 Both provide 30% of qualifying construction costs in the first period following completion and 10% in each of the second through eighth periods. A completion certificate must accompany the claim. The developer can elect the deduction for itself, the occupier, or a 50:50 split. Costs exclude land but include the specified planning/design, foundations/services, demolition and installed-building fittings. A 2026 construction start does not satisfy either window; a qualifying historical start needs its completion date and claim history checked rather than being rejected solely because the claim is later. [Paragraphs 12A–12B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For £1,000,000 of established qualifying construction costs, the statutory sequence is £300,000 then seven deductions of £100,000, totalling £1,000,000. Under a valid 50:50 election, each claimant's first-period share is £150,000. Paragraphs 12A(6) and 12B(6) expressly allow these deductions in addition to other applicable relief for the same expenditure; retain separate legal grounds rather than extending that exception to ordinary equipment claims. Project approval, elections, implementing rules and any unresolved definition of high-value accommodation require verification for a live claim. [Paragraphs 12A(2)–(8), 12B(2)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Trading stock when a trade ends
+
+Section 21 supplies a separate valuation rule when a trade or business is discontinued. Use the **amount realised or value of consideration** if the stock is sold/transferred for valuable consideration to a person carrying on, or intending to carry on, a trade or business in Gibraltar **and** its cost can be deducted by that purchaser in computing the relevant assessable income/profits. Both conditions matter. A purchaser's Gibraltar address alone does not establish them. [Section 21(1)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For other stock, use what it would have realised on an **open-market sale at discontinuance**. Do not automatically use historic cost, accounting carrying value, zero because it was given away, or the actual price of a transaction that does not meet paragraph (a). Establish the cessation date and a supportable valuation as at that date. This rule determines the stock value for the cessation profit computation; it does not itself quantify the whole taxable profit. [Section 21(1)(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The statutory stock definition extends beyond finished retail goods. It includes real or personal property ordinarily sold in the trade, items that would be sold when mature or complete, and materials used in manufacture, preparation or construction. It also includes services, articles or materials treated as professional work in progress. Identify the business's actual stock/WIP rather than applying the rule only to warehouse goods. [Section 21(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Example 1: qualifying purchaser.** Assume a discontinued trade transfers its stock for £25,000 cash and non-cash consideration independently valued at £5,000. The buyer intends to carry on the relevant Gibraltar trade and the stock cost is deductible in the buyer's taxable computation. Section 21(1)(a)'s value is **£30,000**. A £40,000 open-market estimate is not substituted merely because it is higher, though other applicable anti-avoidance/connected-party rules must still be checked. These facts and consideration values are assumed, not statutory safe harbours.
+
+```oa-check
+name: Gibraltar cessation stock qualifying consideration
+inputs:
+  cash_consideration: 25000
+  noncash_consideration_value: 5000
+steps:
+  - cessation_stock_value: cash_consideration + noncash_consideration_value
+expected:
+  cessation_stock_value: 30000
+```
+
+**Example 2: other stock.** Assume the paragraph (a) buyer/deductibility conditions are not met. Supported open-market values at cessation are £18,000 for finished goods and £12,000 for qualifying unfinished stock. The section 21(1)(b) total is **£30,000**, even if the actual disposal proceeds are £20,000. The £10,000 difference is a valuation reconciliation, not automatically the final taxable gain or tax bill; reconcile it to the accounts without counting a receipt twice.
+
+```oa-check
+name: Gibraltar cessation stock open-market alternative
+inputs:
+  finished_goods_market_value: 18000
+  unfinished_stock_market_value: 12000
+  actual_disposal_proceeds: 20000
+steps:
+  - cessation_stock_value: finished_goods_market_value + unfinished_stock_market_value
+  - valuation_difference: cessation_stock_value - actual_disposal_proceeds
+expected:
+  cessation_stock_value: 30000
+  valuation_difference: 10000
+```
+
+Recommended working papers: cessation date and stock/WIP inventory; buyer's trade and deductible-cost evidence where paragraph (a) is used; contract and cash/non-cash consideration; market valuation where paragraph (b) applies; and the bridge to the cessation accounts. Keep stock valuation separate from capital-allowance disposals and transferred-loss eligibility. Interactions with connected-party provisions, actual valuation disputes and return-field mechanics remain case-specific review work. [Sections 20A–21; Schedule 3 Part II](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Trade losses: eligibility and continuity
 
