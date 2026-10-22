@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: 0.8
 verified_by: pending
 sources:
+  - url: "https://gov.gg/RStax-rates-and-allowances"
+    title: "2026 changes: definition of a distribution"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
     title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 13–27, 30, 37–40"
     as_of: "2026-10-22"
@@ -30,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.7
+# Guernsey corporate tax, distributions and substance v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -187,7 +190,7 @@ The penalty notice must state the grounds, identify the applicable and unmet sub
 
 Regulation 16's **£150,000 enhanced penalty** concerns specified non-registered partnerships' subsequent default periods, not companies. Regulation 18 separately imports section 193 penalties for missing/false information, in addition to substance penalties. The current section 193 amounts and machinery have not been established here; neither the table nor the ordinary late-return example is a total exposure estimate. [Regulations 16 and 18](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
-For a penalty under these regulations, regulation 19 provides an appeal to the **Guernsey Tax Tribunal** by written notice **to the Director**, stating grounds, within **30 days beginning on the date of the notice imposing the penalty**. Do not substitute receipt date or the accounting-period end. Late admission requires the Tribunal to be satisfied that exceptional circumstances prevented timely notice; it is not an automatic extension. [Regulation 19(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+For a penalty under these regulations, regulation 19 provides an appeal to the Tribunal (now the **Guernsey Revenue Service Tribunal**; the 2021 text uses its former name, **Guernsey Tax Tribunal**) by written notice **to the Director**, stating grounds, within **30 days beginning on the date of the notice imposing the penalty**. Do not substitute receipt date or the accounting-period end. Late admission requires the Tribunal to be satisfied that exceptional circumstances prevented timely notice; it is not an automatic extension. [Regulation 19(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The name changed on 1 January 2022. [Tribunal guidance, page 4, footnote 1](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
 
 The sole stated grounds are that the body is outside regulation 3's substance scope, complies with its applicable requirements, or is not subject to the penalty under the regulations. Regulation 19(4) permits confirmation or annulment; it does not state a general power to reduce a penalty because it is unaffordable. Sections 76 and 79 are excluded, while sections 77, 78, 78A and 80 apply through the stated cross-reference. Full procedural rules, onward appeal and any effect on collection require those current provisions; this draft does not assume that filing an appeal suspends enforcement. [Regulation 19(3)–(7)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
@@ -199,7 +202,7 @@ Regulation 20 permits entry to business premises and inspection for the specifie
 
 The regulation 20 inspection power excludes parts used **solely as a dwelling**, legally privileged items within the stated statutory definition, and documents concerning conduct of a tax appeal. Items held to further a criminal purpose are excluded from the privilege protection. Do not assume that an entire mixed home/business property is exempt, or that every accountant-client record is legally privileged. Identify the actual protected material and obtain advice on contested scope. [Regulation 20(3), including its statutory privilege cross-reference](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
-For entry approved by the Bailiff, regulation 23 permits reasonable assistance requirements directed at the investigated person, their tax adviser, relevant workers and persons concerned with document systems or storage. This expressly reaches electronically accessible records. The Director must give the person written information that contravening the assistance requirement is an offence. Do not transpose this particular assistance power to all consent/notice inspections without checking the applicable authority. [Regulation 23](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+For entry approved by the Bailiff, regulation 23 permits reasonable assistance requirements directed at the specified investigated person, tax adviser, relevant workers and persons concerned with document systems or storage **who are present on the premises**. This particular power does not itself establish a duty for an absent adviser or remote worker. This expressly reaches electronically accessible records. The Director must give the person written information that contravening the assistance requirement is an offence. Do not transpose this particular assistance power to all consent/notice inspections without checking the applicable authority. [Regulation 23](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 Regulation 24 permits copies/extracts, removal at a reasonable time and retention for a reasonable period, preservation measures, explanations and enquiries about missing documents. Electronic records can be required in a portable, visible/legible form or a form readily convertible to it. The owner can request a **receipt** for removed records and, if reasonably needed for an immediate purpose while the Director retains the original, a **free copy**. Loss/damage before return attracts compensation for reasonable replacement/repair costs. This is not a promise of compensation for every claimed business loss. [Regulation 24](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
@@ -226,6 +229,10 @@ A distribution from income taxed below 20% to a Guernsey-resident beneficial mem
 ### Distribution and loan reporting
 
 The company guidance requires the company to deduct/pay the distribution tax and make a quarterly distribution-reporter return identifying recipient, date, amount and tax. Non-resident beneficial-member treatment requires evidence of non-residence before payment without deduction. Qualifying loans use the same reporter; repayment within **six years** permits a claim for the tax attributable to the repaid part. This is not an automatic accounting reversal. Exact distribution/loan tax computations, statutory scope and payment deadlines still need verification. [Company guidance, distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
+
+### Loan direction matters for 2026 repayments
+
+The 2026 changes page states that repayments of loans **to shareholders** are treated as dividends, excluding repayment of commercial loans by trading companies. This concerns a company repaying its borrowing from a shareholder; it is distinct from the preceding qualifying-loan case where the company lent money and receives a repayment. Do not apply the six-year tax-repayment claim to both directions. Record lender, borrower, original advance, repayment recipient, trading status and evidence supporting any commercial-loan exclusion. The guidance does not establish the complete amended statutory definition, connected-person scope or transition rules; obtain those before calculating a charge or accepting an exclusion. [Revenue Service, 2026 changes, definition of a distribution](https://gov.gg/RStax-rates-and-allowances).
 
 ### Reporting and exit are separate screens
 
