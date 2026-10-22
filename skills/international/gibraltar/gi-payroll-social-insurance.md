@@ -7,9 +7,12 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf"
+    title: "Social Insurance (Contributions) Regulations: regulations 4, 4A–4C and 17A"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf"
     title: "Social Security (Insurance) Act, 1 July 2025 consolidation: sections 5 and 7"
     as_of: "2026-10-22"
@@ -30,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.5
+# Gibraltar payroll and social insurance v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -138,6 +141,26 @@ The 2025/26 employer notes use weekly minima/maxima multiplied by weeks or part-
 Assuming two confirmed contribution weeks and £100 earnings, employee SI is **max(£10, 2 × £14.34) = £28.68** and employer SI **max(£18, 2 × £31.98) = £63.96**. Assuming three weeks and £1,800 earnings, the caps give **3 × £40.79 = £122.37** and **3 × £56.22 = £168.66**. Each assumes ordinary ER liability and no exemption. [Partial-month method and limits](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
 
 For two £300 paydays in one final contribution week, the first deductions are £30/£54; combined £600 reaches both caps, leaving **£10.79 employee and £2.22 employer** on the second payday. Do not apply a second weekly maximum. [Shared-week method](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+## Small-employer contribution credit
+
+Regulation 17A permits an employer with **no more than ten employees at any time in the assessment year** to claim £100 per employee, capped at £1,000. This is not the preceding-year average-headcount test used for P8 penalties. A company/business in its first trading year uses twenty employees and a £2,000 cap instead. The per-employee amount remains £100. [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+The claim requires all SI and PAYE amounts to have been paid on the due date under 17A(2); 17A(6) identifies the due date as on or before the 15th of the following month. Do not treat arrears cleared at year-end as automatically satisfying timely payment. If employer contributions for an employee total less than £100, that employee's credit is restricted to the actual total. Once granted, the credit offsets employer contribution liabilities in the following year. It is not a current employee deduction or an automatic income-tax refund. [Regulation 17A(2)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+**Example:** an eligible employer never exceeds eight employees. Seven employees each generated at least £100 of employer contributions; the eighth generated £60. Subject to timely-payment and claim conditions, the credit is **7 × £100 + £60 = £760**, below the £1,000 cap, for offset in the following year once granted. A continuing business that reached eleven employees fails the stated headcount condition even if it ended the year with eight. A first-year business with fifteen qualifying employees, each with at least £100 employer contributions, has a provisional **£1,500** credit under the enlarged limit. These examples assume confirmed employee counts; staff turnover/counting details and the current claim form/channel remain unverified.
+
+## Self-employed contribution administration
+
+Regulation 4A requires registration immediately when weekly self-employed contribution liability arises and a contribution schedule. It requires the quarterly schedule to be received within fifteen days after the contribution quarter, with the required signed declaration (including the accompanying declaration for a non-paper schedule). Regulation 4B separately requires monthly recording within seven days after month-end and payment within fifteen days after month-end. A quarterly schedule does not defer the monthly payment. [Regulations 4A–4B](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+For example, on an ordinary September month-end with no special arrangement, the statutory periods require monthly recording by **7 October** and payment by **15 October**. This example does not establish the contribution-quarter calendar or any weekend/public-holiday extension. Keep registration, schedules and payment receipts separately.
+
+Where an employed contribution is payable and the same person is also liable as self-employed **for the same contribution week**, regulation 4(7) makes only the employed contribution payable. Establish the actual overlapping weeks and liabilities; having a payroll job for part of a year is not an annual exemption from self-employed contributions. Operational coding and supporting evidence still need confirmation. [Regulation 4(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+## Contribution assessments and appeals
+
+The Director can assess unpaid or underpaid contributions under regulation 4C. The notice must identify the amount, payment place and appeal rights. A dispute is made by written notice addressed to the Director **within fourteen days from service**. Late permission requires a specified reasonable impediment and an application without unreasonable delay once it ends. Additional contributions under an amended assessment are payable in full within one month after service of that notice. Keep the notice and evidence of service; do not substitute the 28-day income-tax assessment appeal period. [Regulation 4C(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
 
 ## Computation
 

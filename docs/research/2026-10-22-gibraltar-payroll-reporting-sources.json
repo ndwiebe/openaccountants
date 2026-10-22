@@ -30,6 +30,12 @@
       "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
       "sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
       "locators": "Socialinsurance11.1\u201311.2, printedpages9\u201310; dated2025/26 guidance"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf",
+      "sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
+      "locators": "Regulations4(7),4A\u20134C printedpages7\u20138;17A printedpages16\u201317",
+      "version": "Parent current-version date1July2015; consolidation includes2017/156 retrospective amendment"
     }
   ]
 }
