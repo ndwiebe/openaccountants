@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
+  - url: "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009"
+    title: "Council treaty register: provisional application from 15 July 2026"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf"
     title: "Transaction Tax (Deductions) Rules 2026, LN 2026/338, rules 3–6"
     as_of: "2026-10-22"
@@ -18,7 +21,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar goods transaction-tax transition v0.3
+# Gibraltar goods transaction-tax transition v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -80,6 +83,22 @@ For commercial exports to the EU, section 102 requires proof satisfactory to the
 
 Record the goods, liable person, date/event, customs procedure and supporting documents. Establish exemption or rate classification; reconcile the valuation components; compute tax; match the declaration and payment evidence. Keep any export-refund claim and income-tax transition relief separate. Review bonded stock and other transitional procedures before using these rules for pre-commencement stock.
 
+## Transitional goods: distinguish movement, certificates and storage
+
+Section 6 defines the Implementation Date to include provisional implementation unless the contrary is expressed or implied. The Council treaty register confirms provisional application from **15 July 2026**. Use that evidenced date when examining these domestic transition provisions; do not use the superseded expected April date found in early notices. [Act, section 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf); [Council treaty register](https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009).
+
+**Goods already moving:** section 130(2) disapplies the specified treaty title and Part 6 of the Act to movements that started before the Implementation Date and ended afterwards. The operator bears the burden of proving the earlier start with relevant documents. Section 130(5) ends that treatment two months after the Implementation Date. An order or invoice raised before implementation does not by itself prove that movement began then. [Section 130(1)–(5), printed pages 82–83](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+
+**Earlier import-duty exemption certificates:** section 130(3) concerns certificates issued by the Chief Minister under the specified 2017 Tariff Regulations provision before implementation. It requires the government-to-EU transmission of certificates and relevant historical quantities and quantities commensurate with the projects. The relief is limited by Article 269(4). Section 130(6) limits duration to the shorter of the certificate's duration and three months from implementation. Retaining a certificate alone does not establish every condition; verify the treaty limitation and transmission evidence before claiming. [Section 130(3), (4), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+
+**Goods already lawfully marketed:** section 130(7) provides three months without the Article 256 requirements for goods lawfully placed on the market before implementation. The operator must prove prior placement and quantities. This provision refers to product requirements; do not turn it into a blanket transaction-tax exemption for every item of old stock. [Section 130(7)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+
+**Special procedures and temporary storage:** section 131 preserves the pre-implementation legislation for goods already in the relevant procedure/storage, subject to different limits. A special procedure is protected only while not discharged and for no longer than two months from implementation. Temporary storage is protected only while it has not ended and no later than its legal time limit. The section does **not** itself state a universal 30-day storage period. Release for free circulation, discharge and re-export fall under the specified treaty title under section 131(3). Read the applicable procedure before treating stored goods as tax-free. [Section 131, printed pages 83–84](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+
+**Evidence example:** on assumed authentic transport records, a consignment whose movement began on 14 July and ended on 20 July 2026 meets the before/after timing limb of section 130(2). A consignment first dispatched on 16 July fails that limb even if ordered on 1 July. For a qualifying certificate, if the evidenced remaining duration is one month, the shorter-of-one-and-three-months rule allows at most one month; the other conditions still apply. Do not extend either case merely because goods remain unsold.
+
+These provisions establish separate routes, not interchangeable exemptions. Attach transport-start evidence, customs procedure records, certificates and quantities to the working paper. Exact time-limit computation, incorporated treaty conditions and any subsequent amendment must be checked for a boundary-date claim.
+
 ## Transitional business relief: eligibility
 
 The enacted Transaction Tax (Deductions) Rules commenced on 23 September 2026. Rule 3 covers companies, partnerships, sole traders and other incorporated or unincorporated retail/wholesale traders certified by the Office of Fair Trading. It excludes trades principally selling food, beverages and household groceries, tobacco, wine or spirits, fuel, or vehicles. Obtain certification of the actual business; an ordinary business licence alone does not establish eligibility. [Rules 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
@@ -108,7 +127,7 @@ Each claim requires OFT certification, payment documentation and the applicable 
 
 Rule 6 separately requires compliance with the applicable de minimis aid provisions. Declare and document de minimis and other state aid received during the **three years preceding the claim**. The Commissioner can reduce the deduction to the amount compatible with those provisions. This Guide does not establish the applicable monetary aid ceiling, aggregation rules or remaining headroom. [Rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
 
-**Outstanding verification:** verify any extension after 12 October and the applicable state-aid ceiling/aggregation; treaty entry-into-force versus provisional-application rate triggers; incorporated commodity definitions, customs procedures and traveller thresholds; transitional stock; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
+**Outstanding verification:** verify any extension after 12 October and the applicable state-aid ceiling/aggregation; treaty entry-into-force versus provisional-application rate triggers; incorporated commodity definitions, customs procedures and traveller thresholds; remaining transitional-stock treaty conditions and boundary dates; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
 
 ## Self-checks and output
 

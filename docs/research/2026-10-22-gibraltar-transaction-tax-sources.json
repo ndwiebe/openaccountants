@@ -4,12 +4,17 @@
     {
       "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf",
       "sha256": "74af2de67b414f577a5a0b76a48153da9ae15461193d12072c796fbb62c56901",
-      "locators": "Commencement table page 1; sections 98\u2013102 printed pages 66\u201368; Schedule 2 paragraphs 1\u20133 printed pages 103\u2013106"
+      "locators": "Commencement table page 1; sections 98\u2013102 printed pages 66\u201368; Schedule 2 paragraphs 1\u20133 printed pages 103\u2013106; section6 printed page15; sections130\u2013131 printed pages82\u201384"
     },
     {
       "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf",
       "sha256": "b333fa23aa5e35af57e776599fe9b1a0b94ff28145ee1caeb7d423da8384ba65",
       "locators": "LN2026/338, rules 2\u20136, printed pages 2\u20135"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009",
+      "locators": "Observations: Provisional application as of15/07/2026; Article336(2)",
+      "retrieval": "Official HTML read; no local archive hash"
     }
   ]
 }
