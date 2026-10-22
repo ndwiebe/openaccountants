@@ -8,13 +8,17 @@
     },
     {
       "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
-      "title": "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16C, 24–24A; 23 March 2026 consolidation",
+      "title": "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 24–24A; 23 March 2026 consolidation",
       "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0"
     },
     {
       "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
-      "title": "Income Tax Act 2010, sections 28, 64–65 and 74; 23 March 2026 consolidation",
+      "title": "Income Tax Act 2010, sections 28, 39, 64–65 and 74; Schedule 1; 23 March 2026 consolidation",
       "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed",
+      "locators": "Questions on payments on account, further payment and reducing payments; allowance table expressly labelled 2021/22 and 2022/23 not used as current allowance evidence."
     }
   ]
 }

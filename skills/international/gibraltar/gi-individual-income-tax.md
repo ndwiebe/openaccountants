@@ -7,21 +7,24 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed"
+    title: "Income Tax Office self-employed guidance: payments on account and balance payment"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf"
     title: "Rates of Tax Rules 1989, rules 2–3C; 1 July 2024 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
-    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16C, 24–24A; 23 March 2026 consolidation"
+    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 24–24A; 23 March 2026 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Income Tax Act 2010, sections 28, 64–65 and 74; 23 March 2026 consolidation"
+    title: "Income Tax Act 2010, sections 28, 39, 64–65 and 74; Schedule 1; 23 March 2026 consolidation"
     as_of: "2026-10-22"
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.2
+# Gibraltar individual income tax: ordinary assessment v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -67,6 +70,38 @@ Amounts above are those in the 23 March 2026 consolidation, checked for 2026/27;
 
 For a full-year eligible ABS individual whose only other deduction is £3,455, the rule 16C top-up is £4,343 − £3,455 = **£888**, giving total deductions £4,343. If eligible other deductions already total £5,000, there is no top-up. Both examples assume no rule 6B restriction and no other adjustment; they are not final tax assessments.
 
+### Low-income exemption and taper relief
+
+Rule 16E(1) says an individual with **gross assessable income of £11,450 or less is not subject to tax**. This is distinct from rule 16B's allowance deducted from income. Above that exemption threshold, rule 16E prescribes reductions of assessed tax in four specific ranges; it does not provide a single continuous taper covering every amount up to £19,924. [Allowances Rules, rule 16E](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+| Gross assessable income I | L | Full taper relief T0 |
+|---|---|---|
+| >£11,450 and ≤£14,286 | £11,451 | £567.20 |
+| >£17,500 and ≤£17,822 | £17,501 | £64.40 |
+| >£18,500 and ≤£18,856 | £18,501 | £71.20 |
+| >£19,500 and ≤£19,924 | £19,501 | £84.80 |
+
+Within the applicable range, reduced taper relief is **T0 − 0.2 × (I − L)**. Deduct the resulting relief from the assessed liability, not from income. Do not fill gaps between these ranges with an invented formula or round a boundary into a different range. The statute supplies whole-pound L values; fractional-pound boundary treatment and interaction with the Commissioner's tables require confirmation for a final assessment. [Rule 16E(2)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+For example, at gross assessable income £17,601, relief is £64.40 − 20% × £100 = **£44.40**. At the stated upper endpoint £17,822, the formula gives **£0.20**. At £17,823 that range no longer applies; do not continue it to produce negative relief. These are relief amounts, not the person's entire tax bill.
+
+```oa-check
+name: Low-income taper inside range and at upper endpoint
+inputs:
+  income: 17601
+  upper_endpoint: 17822
+  lower_reference: 17501
+  full_relief: 64.40
+steps:
+  - relief: full_relief - 0.2 * (income - lower_reference)
+  - endpoint_relief: full_relief - 0.2 * (upper_endpoint - lower_reference)
+expected:
+  relief: 44.40
+  endpoint_relief: 0.20
+```
+
+Rule 16F separately specifies high-income taper relief for gross assessable income **>£99,999 and ≤£103,333**, using **£1,000 − 0.3 × (I − £100,000)**. It reduces assessed liability; it is not a new marginal tax band. At £101,000 the formula gives £700. The Commissioner can issue implementation tables under both rules. This Guide has not verified the complete current table or every interaction with other credits. [Rule 16F](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
 ### Computation working paper
 
 1. Establish assessable income and classify each proposed allowance or deduction.
@@ -81,7 +116,34 @@ For a full-year eligible ABS individual whose only other deduction is £3,455, t
 
 Section 28(1) requires a full return by **30 November immediately following the assessment-year end**, subject to its exceptions. For the year ending 30 June 2027 this gives 30 November 2027, unless an applicable legal change or authorised extension alters it. Section 28(2)'s exclusion for foreign income relieved to nil requires the Commissioner's discretionary confirmation; a taxpayer cannot simply omit the income on that assumption. [Income Tax Act, section 28](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-The live submission form/channel for the 2026/27 return, payment calendar and applicable payments on account remain to be verified. Keep return delivery, tax payment and employer PAYE remittances as separate tasks. See the [payroll Guide](gi-payroll-social-insurance.md) for employer coding and reporting. An old calculator or prior-year allowance webpage is not confirmation of a current final assessment.
+### Payments on account and the balance
+
+For individuals, section 39(2) bases two instalments on **50% each of the preceding assessment year's relevant tax liability**. The relevant income is Schedule 1 Table A paragraph 2 (property income) and Table B paragraph 2 (trade/business/profession/vocation income). For this calculation, the listed income is treated as charged after income subject to PAYE withholding. Do not automatically take 50% of a mixed-income taxpayer's entire prior-year tax bill. [Income Tax Act, section 39(2); Schedule 1](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The instalments fall due on **31 January and 30 June within the assessment year** and are credited against the return liability. For 1 July 2026–30 June 2027, those dates are **31 January 2027 and 30 June 2027**. Section 39(1) supplies the general November payment rule, subject to its exceptions; the Income Tax Office explains that self-employed taxpayers pay the remaining balance when submitting the return, no later than **30 November**. For this year the balance deadline is therefore **30 November 2027**. A weekend adjustment is not assumed here. [Section 39(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [Income Tax Office payment guidance](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed).
+
+A taxpayer expecting the required instalments to exceed the current year's liability can apply for full or partial discharge under section 39(5). The Commissioner decides under subsection (6); an application is not itself an approved reduction. Subsection (7) applies surcharges to unpaid instalments and treats a subsequently established shortfall after a reduction claim as due on the original instalment date. Keep the claim, calculation, decision and actual payments. [Section 39(5)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Instalment example:** assume the correctly identified preceding-year relevant liability is £6,000, with no approved reduction. Each instalment is £3,000. If final current-year liability is £7,500 and both instalments were paid, the remaining balance is **£1,500**. If final liability instead is £5,000, payments exceed it by **£1,000**, to be reconciled as a repayment position; this is not an extra negative payment instalment. Assume no other withholding, credit, surcharge or offset in either illustration.
+
+```oa-check
+name: Individual payments on account and final reconciliation
+inputs:
+  preceding_relevant_liability: 6000
+  higher_final_liability: 7500
+  lower_final_liability: 5000
+steps:
+  - each_instalment: preceding_relevant_liability * 0.5
+  - paid: each_instalment * 2
+  - balance_due: max(0, higher_final_liability - paid)
+  - overpayment: max(0, paid - lower_final_liability)
+expected:
+  each_instalment: 3000
+  balance_due: 1500
+  overpayment: 1000
+```
+
+The live submission form/channel for the 2026/27 return and special assessment payment cases remain to be verified. Keep return delivery, individual tax payments and employer PAYE remittances separate. See the [payroll Guide](gi-payroll-social-insurance.md) for employer reporting. The self-employed webpage labels its allowance table 2021/22 and 2022/23; that table is not used here to establish current allowance figures.
 
 ## Penalties and interest
 
@@ -147,7 +209,7 @@ expected:
 
 ## Sources and remaining verification
 
-Primary texts read on **22 October 2026**: [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf), [Rates of Tax Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), [Allowances Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). Frontmatter records the same versions. Remaining work includes the complete relief schedule and GIBS deductions, current filing/payment operations, the partial-year cross-reference, exact credit application, special regimes and independent source/professional review. The dates on the legislation index are evidence of the displayed consolidation, not a guarantee against later amendments.
+Primary legislation and [self-employed payment guidance](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed) read on **22 October 2026**: [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf), [Rates of Tax Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), [Allowances Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). Frontmatter records the same versions. Remaining work includes the complete relief schedule and GIBS deductions, current submission and payment channels, special assessment dates, the partial-year cross-reference, exact credit application, special regimes and independent source/professional review. The dates on the legislation index are evidence of the displayed consolidation, not a guarantee against later amendments.
 
 ## Self-checks and output
 
