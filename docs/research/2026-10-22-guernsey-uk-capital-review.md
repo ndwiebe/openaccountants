@@ -9,3 +9,5 @@ Article 21 overrides other provisions. Associated activity overlap is removed fr
 Recomputed 50%/51% property-value cases and 22+14−6=30 days, then 31 days with one additional non-overlapping day. These are boundary calculations, not tax-liability computations.
 
 HMRC treaty-status page checked; it still labels the arbitration memorandum not yet in force. This pass does not certify arbitration operation. Domestic charging, valuation, disposal filings, detailed offshore facts and independent review remain open.
+
+Follow-up: the separate arbitration review now identifies that the published memorandum itself has an effective-on-signature clause and two 16 June 2022 signatures, conflicting with the index status. The earlier index observation is not a conclusion that the memorandum is legally ineffective.

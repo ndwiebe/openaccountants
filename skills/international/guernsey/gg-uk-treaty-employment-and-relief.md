@@ -1,15 +1,18 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides, mutual-agreement time limits and the published arbitration procedure with an official status discrepancy. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement"
+    title: "UK–Guernsey arbitration memorandum: procedure and effective-date clause"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
     title: "HMRC DT8602 treaty summary, payment-category conditions"
     as_of: "2026-10-22"
@@ -285,7 +288,21 @@ Retain asset location and valuation support, ownership chains, trading evidence,
 
 Prepare the domestic returns and relief claims for each applicable year; retain residence evidence, employment-location records, payslips, assessments, proof of tax paid and credit allocation. Exact claim forms, deadlines, payroll clearance and treatment of later foreign refunds remain unverified. Do not stop withholding solely because this working paper identifies potential treaty relief.
 
-Under Article 25(1), a person can present a treaty-inconsistent taxation case to either competent authority within **three years from first notification of the action** producing that taxation, irrespective of domestic remedies. Record the actual notification and service evidence. Article 25 does not replace domestic appeal or payment deadlines; its competent-authority process is not a promise of immediate refund or suspension. Arbitration has further conditions and separate implementation material; this Guide does not establish that route's current availability. [Article 25](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+Under Article 25(1), a person can present a treaty-inconsistent taxation case to either competent authority within **three years from first notification of the action** producing that taxation, irrespective of domestic remedies. Record the actual notification and service evidence. Article 25 does not replace domestic appeal or payment deadlines; its competent-authority process is not a promise of immediate refund or suspension. The arbitration conditions and published implementation memorandum are examined below; an official status discrepancy remains unresolved. [Article 25](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Arbitration: separate clocks and conflicting status evidence
+
+Article 25(5) addresses unresolved issues after the authorities have been unable to resolve a qualifying case within **two years from presentation to the other territory's competent authority**. That is not the three-year first-notification deadline for presenting the initial MAP case. Retain proof of both events; do not start both clocks from the original assessment or first submission to one authority. Arbitration requires the person's request, and excludes issues already decided by either territory's court or administrative tribunal. [Article 25(1), (5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+For example, an initial submission to one authority followed by transmission to the other six months later does not make the treaty's two-year arbitration period expire two years after the initial submission. The relevant starting event is presentation to the other authority. Confirm receipt and the case's procedural position, rather than computing eligibility from an assumed forwarding date. This example does not settle any authority's completeness requirements.
+
+Article 25(2) requires implementation of an agreement reached notwithstanding domestic time limits. That does not waive the initial treaty presentation deadline. Under paragraph 5, the arbitration outcome's binding implementation is subject to the stated acceptance condition. Keep domestic litigation, appeal and collection decisions separate; do not withdraw proceedings on the basis of a draft eligibility analysis. [Article 25(2), (5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Status discrepancy:** HMRC's [treaty index](https://www.gov.uk/government/publications/guernsey-tax-treaties) says the memorandum has not entered into force. However, the [published memorandum](https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement), paragraph 13.1, takes effect on the later signature date, and both signatures are dated **16 June 2022**. Its text supports that effective date; the index conflict and present operational availability require competent-authority confirmation. Neither silently dismiss the signed text nor promise a working arbitration route from it alone.
+
+The published procedure requires a written identifying request to one or both authorities and each requesting/directly affected person's statement that no court or tribunal has decided the same issues. Part 2 requires identities, treaty grounds, facts, years, amounts/calculations, supporting analysis and records of parallel or earlier proceedings. Part 11 requires written acceptance and withdrawal/termination of resolved court issues before implementation. These are published requirements, not evidence that a particular application is accepted. [Memorandum, Parts 1–2 and 11](https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement).
+
+Before relying on arbitration, obtain the current authority instructions, resolve the status discrepancy, document both treaty clocks, identify any decided issues, and review litigation consequences with the taxpayer. Current submission addresses, case acceptance and any later amendment/termination of the memorandum remain to verify.
 
 ## Penalties and interest
 
