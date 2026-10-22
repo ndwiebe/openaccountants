@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
-    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 17, 30, 37–40"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 13–19, 30, 37–40"
     as_of: "2026-10-22"
   - url: "https://gov.gg/economicsubstance"
     title: "Revenue Service economic substance, current implementation and guidance links"
@@ -30,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.5
+# Guernsey corporate tax, distributions and substance v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -167,7 +167,31 @@ These are regulation 17(2)'s evidence categories, not an automatic approval chec
 
 For each applicable regulation 9 return, regulation 17(3) requires either a declaration that regulation **5(1)(b)** is met, with sufficient rebuttal evidence included or accompanying it, **or** a declaration that the body cannot rebut the presumption and that 5(1)(b) is not met. Do not reduce this to an unsupported compliance tick. The provision refers to company periods beginning after **31 December 2018**, with the separate partnership commencement cross-reference; it is not a new universal filing deadline. [Regulation 17(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
-Regulation 10 requires the Director to disclose high-risk IP information to a competent authority under the applicable approved international agreement or international tax measure for spontaneous exchange, **whether or not substance requirements are met**. Successful rebuttal therefore does not remove that exchange provision. Regulation 17(4) also modifies enforcement: regulation 14's third-default-period references become second-period references and regulation 15's fourth-period references become third-period references. The full penalty, notice and appeal machinery requires separate reconciliation; do not use the ordinary corporate late-return penalty example below as a substance penalty calculation. [Regulations 10 and 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+Regulation 10 requires the Director to disclose high-risk IP information to a competent authority under the applicable approved international agreement or international tax measure for spontaneous exchange, **whether or not substance requirements are met**. Successful rebuttal therefore does not remove that exchange provision. Regulation 17(4) also modifies enforcement: regulation 14's third-default-period references become second-period references and regulation 15's fourth-period references become third-period references. The company penalty and appeal provisions are mapped below, subject to their stated gaps; do not use the ordinary corporate late-return penalty example below as a substance penalty calculation. [Regulations 10 and 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Substance default notices, penalties and appeals
+
+The following maps the **2021 text**, whose subsequent-amendment review remains open. Regulations 13–15 operate following the regulation 9 return and the Director's opinion that applicable substance requirements were not met. Their monetary figures are **ceilings**, not automatic invoices. Keep the notice and the accounting-period history; do not count isolated failures across non-consecutive periods as one continuous escalation. [Regulations 13–15](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+| Statutory stage for a company | Ordinary body | High-risk IP body | Penalty ceiling in the cited provision |
+|---|---|---|---|
+| Regulation 13 | First accounting period of default, as defined in 13(4) | Same first-period provision | £10,000 |
+| Regulation 14 | Third consecutive accounting period of default | Second consecutive accounting period of default | £50,000 |
+| Regulation 15 | Fourth and subsequent consecutive accounting periods of default | Third and subsequent consecutive accounting periods of default | £100,000 for the relevant period |
+
+Sources: [regulations 13(1)/(4), 14(1)/(4), 15(1)/(4)/(5), with high-risk substitutions in 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The ordinary text labels regulation 14 as the **third**, not second, default period. This table does not invent an ordinary second-period amount or declare that period penalty-free. Reconcile that treatment and any later amendments before calculating a client's exposure. The first-period definition in 13(4) also needs the actual preceding-period scope/compliance facts; it is not simply the first notice received.
+
+For companies registered under the stated Guernsey or Alderney company laws, regulations 13 and 14 permit a Registrar notice for striking-off purposes if the Director decides there is no realistic possibility of compliance. At the regulation 15 stage the stated Registrar notice is mandatory. **A notice to the Registrar is not itself completed dissolution**; the applicable company-law procedure must also be checked. Each stage also provides for information exchange under the specified international agreement/measure framework. [Regulations 13(1), 14(1) and 15(1)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+The penalty notice must state the grounds, identify the applicable and unmet substance requirements, explain the sanctions and set out applicable appeal rights. It can also require further documents/information. Build the response around those identified failures and retain proof of submission. [Regulations 13(2)–(3), 14(2)–(3) and 15(2)–(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 16's **£150,000 enhanced penalty** concerns specified non-registered partnerships' subsequent default periods, not companies. Regulation 18 separately imports section 193 penalties for missing/false information, in addition to substance penalties. The current section 193 amounts and machinery have not been established here; neither the table nor the ordinary late-return example is a total exposure estimate. [Regulations 16 and 18](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a penalty under these regulations, regulation 19 provides an appeal to the **Guernsey Tax Tribunal** by written notice **to the Director**, stating grounds, within **30 days beginning on the date of the notice imposing the penalty**. Do not substitute receipt date or the accounting-period end. Late admission requires the Tribunal to be satisfied that exceptional circumstances prevented timely notice; it is not an automatic extension. [Regulation 19(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+The sole stated grounds are that the body is outside regulation 3's substance scope, complies with its applicable requirements, or is not subject to the penalty under the regulations. Regulation 19(4) permits confirmation or annulment; it does not state a general power to reduce a penalty because it is unaffordable. Sections 76 and 79 are excluded, while sections 77, 78, 78A and 80 apply through the stated cross-reference. Full procedural rules, onward appeal and any effect on collection require those current provisions; this draft does not assume that filing an appeal suspends enforcement. [Regulation 19(3)–(7)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Boundary applications:** for established consecutive third-period defaults, an ordinary company reaches regulation 14's £50,000 ceiling while a high-risk IP company reaches regulation 15's £100,000 ceiling. Neither is necessarily charged the maximum. A company outside the specified Guernsey/Alderney registration categories is not shown by this text alone to receive the same Registrar notice, even if its substance penalty applies. A missed appeal deadline requires the exceptional-circumstances application rather than an invented fresh 30-day period. [Regulations 14, 15, 17 and 19](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 ### Pure-equity holdings and periods without income
 
