@@ -7,9 +7,18 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.9
+version: "0.10"
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf"
+    title: "Social Security (United Kingdom) Order 2024, commencement and scheduled agreement Articles 2, 9–14, printed pages 10, 12–15"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland"
+    title: "HMRC: contribution coverage for workers coming to the UK from Gibraltar; certificate evidence"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers"
+    title: "Gibraltar Income Tax Office: detached-worker contact route"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf"
     title: "Daily Part 1 codes 19–36, linked under 2026/27 employer tables"
     as_of: "2026-10-22"
@@ -42,7 +51,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.9
+# Gibraltar payroll and social insurance v0.10
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -255,6 +264,41 @@ Use actual due/payment dates and the required application form/manner. This is n
 **Date example:** a contribution due and paid on 15 August 2025 has a two-year reference endpoint of 15 August 2027. If due on 15 August 2025 but paid on 15 December 2026, the competing endpoints are 15 August 2027 and 15 December 2027; the later endpoint is **15 December 2027**. Submit before the endpoint and confirm exact deadline computation, form and receipt requirements; no holiday extension is assumed.
 
 SI regulation 5(2) substitutes a benefit-deduction provision for incorporated regulation 12: deduct relevant benefits paid because of the erroneous contributions, including amounts paid to another person on that basis. Accordingly, do not simply transplant the Employment Injuries regulation 12 employer/employee refund-recipient rule into an SI claim. Establish recipient, deductions and net refund under the applicable regime. [SI regulation 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+## UK–Gibraltar social-security coverage
+
+This is a **separate social-security agreement**, not the income-tax treaty's 183-day employment rule. Gibraltar's Social Security (United Kingdom) Order 2024 commenced on **1 June 2024** and modifies the listed domestic social-security legislation to implement the scheduled agreement. Article 2 covers qualifying legally resident persons whose situation is not confined wholly to one Party; establish its personal scope and applicable benefit branch before using a coordination rule. This section does not determine all transitional or third-country cases. [Order paragraphs 2–4; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+### Posting and the ordinary applicable-legislation rule
+
+Article 9(1) assigns a person to one Party's legislation under Part II. Subject to the specified exceptions, Article 9(4)(a) assigns employed/self-employed activity in one Party to that Party's legislation. Article 10 then provides:
+
+- An employee working for an employer normally carrying on activities in Party A, and performing work for that employer in Party B, remains under A's legislation where the **anticipated duration does not exceed 24 months**.
+- A person normally self-employed in A who goes to perform a **similar activity** in B remains under A's legislation where the anticipated duration is no more than **24 months**.
+
+The expected duration is a condition at assessment, not an automatic first-24-month allowance for a project known to last longer. Employer activity, the continuing employment relationship and actual assignment facts need evidence. Article 13(1) permits the relevant authorities or designated bodies to agree exceptions in the interests of particular persons/categories; an employer cannot approve its own extension. [Articles 9–10 and 13, printed pages 12–15](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+**Boundary examples:** a planned 24-month assignment can meet Article 10's duration limb if all other conditions are satisfied. A planned 25-month assignment does not meet that limb merely because its first payroll occurs within month one; assess the normal rules and any authority-agreed exception. A self-employed person moving to a different activity does not establish Article 10(2) eligibility solely by keeping the stay below 24 months. These are legal-condition examples, not certificates of coverage.
+
+### Normally working in both territories
+
+For employment normally pursued in both Parties, Article 11(1) applies residence-territory legislation if a substantial part of the activity is performed there. If not, paragraph (2) differentiates employer locations: all employers in one Party leads to that Party; employers in both Parties leads to the Party other than residence; the specified cases involving employers outside the agreement lead to residence. Establish the complete employer structure. This Guide has not verified a numerical administrative definition of **substantial**, so it does not invent a percentage. [Article 11(1)–(2), printed page 14](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+For self-employment in both Parties, paragraph (3) uses residence where a substantial part is pursued there, otherwise the stated centre-of-interest rule. For employment in one Party alongside self-employment in the other, paragraph (4) selects the employment Party; employment in both requires the provision's further cross-reference and a complete determination. Paragraph (6) treats all relevant activities and income as arising in the selected Party for that legislation. Do not split contributions between jurisdictions merely because there are two payers. [Article 11(3)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+**Mixed-work example:** assume an in-scope person normally employed in Gibraltar and self-employed in the UK, with no overriding exception. Article 11(4) selects Gibraltar legislation; paragraph (6) brings both activities and income into that selected system. This does not mean the UK self-employment is taxed as salary or that all receipts automatically use the employee contribution rate. Determine the domestic contribution classification/base separately. Income-tax allocation remains a separate analysis.
+
+### Employer obligations and specialist cases
+
+Article 14 requires an employer based in the other Party to meet the selected legislation's obligations, including contributions, as though based in that selected Party. Employer and employee can agree that the employee performs payment obligations on the employer's behalf, with notice to the relevant authority, but the employer's underlying obligations remain. This is not permission to deduct the employer's economic cost from wages. [Article 14, printed page 15](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+Civil servants, seafarers and aircrew have separate provisions in Articles 9 and 11. Article 12 treats voluntary/optional continued insurance separately, including a conditional pension exception to the general overlapping-insurance restriction. Do not apply the ordinary posting route to those cases without checking the relevant provision. [Articles 9, 11–12](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf).
+
+### Certificate and payroll evidence
+
+HMRC's [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland) identifies a certificate of coverage, also called a PDA1, as evidence of continued Gibraltar contributions and exemption from UK National Insurance. It directs applicants to the relevant social-security authority and distinguishes the certificate from a work permit. Retain the issued document and covered dates; an application is not an issued certificate. For Gibraltar's local detached-worker enquiries, the ITO publishes **paye.detachedworkers@gibraltar.gov.gi** and **20071071**. [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers).
+
+Keep assignment dates, expected duration and changes, employer activity evidence, employment/self-employment classification, work locations, residence, other employers, the authority determination and any exception agreement together. Reconcile the decision with the D1/DW payroll categories already shown above; a foreign address alone establishes neither. Certificate application mechanics in each direction, transitional history, third-country/Spain situations, benefit entitlement and special-category rulings remain open. No contact has been made or exemption obtained by preparing this Guide.
 
 ## Questions requiring an operational ruling
 
