@@ -84,6 +84,21 @@
     {
       "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwWlg4czhQckU5K3NETUtMdG5wZ1pxNUZVMXdldnFVbnVDd1MrcXI1TktsUkRlem1VUW5lVTVOSnZWeCs1ckJTWFlTdFBwYnFQMGFCZ1RBUEhkazFWL3RZZkM0WkZFYzUza1NneXJFbVN6RWhMd29RMGNxVStZZVdWTktPbS9EWEZRPT0=",
       "sha256": "5ac64930ce6b0c28bccec8d62b9cd39fc2d038be576bcfebaccbb8fdb71309a6"
+    },
+    {
+      "url": "https://npc.govt.lc/files/documents/gazettesx/2023/8/Extraordinary%20Gazette%20August%2014%202023.pdf",
+      "sha256": "bad16afd53ece5cab7372f8ae189d8172a2d4b9b355ffea40e49a61328aa2b5c",
+      "bytes": 226722
+    },
+    {
+      "url": "https://npc.govt.lc/files/documents/gazettes/2023/8/Gazette_August_28_2023.pdf",
+      "sha256": "c29d4628e0ef2ef18447a42bf968c26add4149bd46844edcd1169a8b44c46d78",
+      "bytes": 1588003
+    },
+    {
+      "url": "https://sports.govt.lc/news/health-and-security-levy-zero-rated-on-services-until-oct-2",
+      "sha256": "551c88194f1abb13669754bd091da76dc2a708c3eae8906f889d963f2eb4dee8",
+      "bytes": 93226
     }
   ]
 }

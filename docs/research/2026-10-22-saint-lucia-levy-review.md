@@ -25,3 +25,11 @@ Source extraction succeeded for Acts 16 and 21 and SIs 88, 95, 108, 160 and 165.
 Retrieve SI 103/2023 and the enacted SI 106/2023; compare the full schedules and any later orders. Verify current filing/payment forms, deadlines, credit treatment and VAT calculation interaction before providing an operational computation. Then draft the missing Guide with ordinary, exempt, related-party and imported-service examples; independently review and run repository checks. This source checkpoint does not count as an added Guide.
 
 The current shared-repo issue search returned no Saint Lucia parent issue. Ryan's queried Saint Lucia source folder returned HTTP 404; this establishes neither absence of private work nor an accepted issue assignment. Existing user allocation authorizes continuing Saint Lucia research; reconcile any later overlapping contribution before publication.
+
+## Draft checkpoint: missing operative schedule order retrieved
+
+Retrieved the full 14 August extraordinary gazette and read SI 103/2023 pages 1387–1391. Visually checked page 1387, confirming Schedule 2 item 36 (motor repairs), Chapter 27 addition and start of exemptions. Full text confirms certification requirements for manufacturing/agricultural materials. Closed the operative-order gap for SI 103. The 28 August ordinary gazette only announces SI 106; it does not reproduce the order, so do not mark that original-source gap closed.
+
+Fetched the complete government 23 August 2023 IRD explanation: monthly remittance 21 days after month-end, and VAT calculated after adding levy. Guide attributes this as dated guidance; current forms and exceptions remain unverified. Arithmetic checked: 1000*.025=25, 1000+25=1025, 10000*.025=250; related-party example uses fair market value, not invoice price.
+
+Added lc-health-and-citizen-security-levy.md as a pending source-cited draft. Earlier 'no Guide' wording records the prior checkpoint, not the current inventory. No independent review, no professional attestation, no comprehensive-coverage credit. Current form/credit/refund and later-order completeness remain open.
