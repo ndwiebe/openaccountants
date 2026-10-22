@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
@@ -39,19 +39,33 @@ Rule 8 permits the Registrar to send application information to Inland Revenue a
 
 ## Business-name deadlines and continuing duties
 
-The retrieved Registration of Business Names Act, Chapter 78:46, and Act 20 of 2001 establish the following business-name duties. These are distinct from company annual returns and tax filings. The full later amendment chain and current fee schedule remain unverified.
+The retrieved Registration of Business Names Act, Chapter 78:46, and Act 20 of 2001 establish the following business-name duties. These are distinct from company annual returns and tax filings. The CIPO law index lists the base Act, the 2001 and 2008 amendments, and the 2001 and 2012 Rules, all read for this topic. This is not proof that no other amendments exist. Act 4 of 2008 changes the definition of Registrar to the Registrar of Companies, with deemed effect from 1 November 2007; it does not alter the deadlines below. [CIPO law index](https://www.cipo.gov.dm/laws/business-names/); [Act 4 of 2008, sections 3–4](https://www.cipo.gov.dm/files/business-names-act4-2008.pdf#page=2).
 
 | Event | Statutory requirement | Source |
 |---|---|---|
 | Starting a business that requires registration | Furnish the registration particulars within **14 days** after commencement. If a name change triggers registration, count from that change. | [Act, section 7](https://www.cipo.gov.dm/files/business-names-act.pdf#page=7) |
 | Change in registered particulars | Furnish a prescribed written statement of the nature and date of the change within **14 days**. The Registrar can allow longer on application made before or after that period expires. Sign and, where required, verify it as for the original registration. | [Act, section 8](https://www.cipo.gov.dm/files/business-names-act.pdf#page=7) |
 | Annual business-name return | Every registered firm or business must submit its annual return **on or before 2 April each year**, with the prescribed filing fee. | [Act 20 of 2001, section 5 inserting section 23](https://www.cipo.gov.dm/files/business-name-registration.pdf#page=2) |
-| Annual register fee | A firm or business on the register on **31 December** must pay the annual fee **on or before 2 April of the following year**. The annual fee and the return's prescribed filing fee are separate statutory requirements; confirm the current payable amounts with CIPO. | [Act 20 of 2001, section 5 inserting sections 22–23](https://www.cipo.gov.dm/files/business-name-registration.pdf#page=2) |
+| Annual register fee | A firm or business on the register on **31 December** must pay the annual fee **on or before 2 April of the following year**. The annual fee and the return's prescribed filing fee are separate statutory requirements; see the separately identified fees below. | [Act 20 of 2001, section 5 inserting sections 22–23](https://www.cipo.gov.dm/files/business-name-registration.pdf#page=2) |
 | Registered firm or individual stops carrying on business | The partners at cessation, the individual, or the deceased individual's personal representatives must deliver the prescribed cessation notice within **three months**. Receipt permits the Registrar to remove the entry. | [Act, section 15](https://www.cipo.gov.dm/files/business-names-act.pdf#page=10) |
 
 The annual return includes partner or proprietor names, residential and business addresses, telephone/fax/email details if any, and a **statement of assets and liabilities**. Retain the submitted return, payment evidence and registry acknowledgement. [Inserted section 23(2)–(3)](https://www.cipo.gov.dm/files/business-name-registration.pdf#page=2).
 
 Do not treat a business-name cessation notice as evidence of tax deregistration or company winding-up. This section establishes only the business-name register procedure. Registration also does not authorise use of a name that could otherwise be prohibited. [Act, sections 15–16](https://www.cipo.gov.dm/files/business-names-act.pdf#page=10).
+
+## Published business-name fees
+
+The CIPO fee page retrieved on 22 October 2026 lists the following amounts in **EC dollars**. The legislation distinguishes the registration application amount from the statement fee, and the annual fee from the annual-return filing fee. Do not present any one line as an all-inclusive registration price.
+
+| Item | EC$ | Legislative basis |
+|---|---:|---|
+| Application for registration | 70 | Act 20 of 2001, section 3 amending section 5(1) |
+| Statement of particulars | 20 | SRO 35 of 2001, rule 3(a) |
+| Each deponent to a statutory declaration | 10 | SRO 35 of 2001, rule 3(b) |
+| Annual fee | 50 | Inserted section 22 and SRO 35 of 2001, rule 3(c) |
+| Annual-return filing | 10 | SRO 35 of 2001, rule 3(d) |
+
+Sources: [CIPO fee page](https://www.cipo.gov.dm/fees/business-names/), [Act 20 of 2001](https://www.cipo.gov.dm/files/business-name-registration.pdf#page=2), and [SRO 35 of 2001](https://www.cipo.gov.dm/files/business-names-rules-2001.pdf). These are registry charges, not professional fees or a quotation for all formation costs. This table does not establish company-incorporation charges or sector-permission fees.
 
 ## Ordinary company application
 
@@ -73,7 +87,7 @@ The IRD's [older startup page](https://www.ird.gov.dm/customer-service/starting-
 
 CIPO identifies ongoing company filings including director/registered-office changes, annual returns and accounts or solvency certification. Current statutory deadlines, entity-specific exceptions, beneficial ownership and fees require further checking before a compliance calendar is certified. [CIPO company guidance](https://www.cipo.gov.dm/businesses-and-companies/companies/).
 
-Remaining work: later business-name amendment reconciliation, corporate statute and eligibility review, company annual obligations, current Form 9A availability, fee schedules, online completion rules and independent review. Registration guidance is one topic, not comprehensive country coverage.
+Remaining work: later business-name amendment reconciliation, corporate statute and eligibility review, company annual obligations, current Form 9A availability, company and sector fee schedules, online completion rules and independent review. Registration guidance is one topic, not comprehensive country coverage.
 
 ## Disclaimer
 
