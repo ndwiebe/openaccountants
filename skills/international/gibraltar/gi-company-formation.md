@@ -7,7 +7,7 @@ category: formation
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
@@ -138,11 +138,25 @@ The director supplies the information and reasonably required supporting particu
 
 Keep the appointment instrument, voting-entitlement/board snapshot, any separate engagement, identity evidence and both internal and Registrar receipts. These ownership-regulation notifications are distinct from Companies House's officer-particulars filing. Historical commencement cases, access restrictions, enforcement and portal-specific verification requirements remain open.
 
+### Discrepancy reports and enforcement
+
+An **obliged entity** that obtains information under regulation 26 and discovers a material inconsistency with other information it holds must report the specified details to the Registrar **within 30 days of discovery**, or a later time agreed with the Registrar. Establish obliged-entity status and retain both evidence sets and the discovery date. This is distinct from the company's regulation 8 correction duty; it is not automatically a duty on every member of the public who notices a typo. The Registrar can seek clarification, require the company to issue the specified investigation notice, and place an appropriate notice on the register pending resolution. [Regulation 26A](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+For the specified failures listed in regulation 42(1), the Registrar can impose an appropriate civil penalty **up to £10,000** on a specified person. The list includes a Gibraltar corporate/legal entity, director, beneficial owner or nominee, and express trusts. The ceiling is not an automatic flat late-filing fee or a promise that every breach is covered by that provision. In particular, do not assume the regulation 26A discrepancy duty appears in regulation 42(1)'s list. [Regulation 42(1), (6)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+The Registrar must not impose that penalty where there are reasonable grounds to be satisfied the person took **all reasonable steps** to ensure compliance. Before imposing it, the Registrar must give written notice of the proposal, amount, reasons and a representation period of **at least 28 days**. A written decision follows, including reasons and appeal rights if a penalty is imposed. Preserve evidence of compliance efforts, the notice and representations; the safeguard is not a self-granted exemption. [Regulation 42(2)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+A regulation 42 penalty can be appealed to the **Magistrates' Court**, which can uphold, vary or quash it. The 28-day minimum above is the representation period, not a verified court appeal deadline. Regulation 43 does not itself state that deadline; obtain the applicable court procedure before lodging an appeal. [Regulation 43](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+Regulation 44 separately criminalises knowingly or recklessly providing the Registrar with a document or statement that is misleading, false or deceptive in a material particular. Regulation 45 addresses specified non-compliance offences and includes an all-reasonable-steps defence, consideration of relevant Registrar guidance when deciding whether an express trust or Gibraltar-incorporated corporate/legal entity committed the offence, and a bar on a regulation 42 penalty where the specified person is convicted under regulation 45. Do not add criminal and civil amounts mechanically or treat an innocent error as necessarily satisfying regulation 44. [Regulations 44–45](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+The published regulation 45(5) list repeats the corporate/legal-entity entry in paragraphs (d) and (e); it must not be silently rewritten to match regulation 42's director entry. Regulation 47 separately addresses officer consent, connivance or neglect where a company commits the specified offence. Particular criminal liability, current standard-scale amounts, court filing procedures, restriction notices and public-access exemptions require further verification. [Regulations 45(5)–47](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
 ### Current submission route
 
 The GFSC assumed the Registrar function on **1 September 2026**. Its announcement says the old UBO submissions portal closed on **31 August 2026**. GFSC-regulated entities use the UBO section of their GFSC Portal; other covered corporate/legal entities register at [the GFSC UBO portal](https://portal.fsc.gi/uboregister). The announced migration period ended **30 September 2026**; it is not a fresh extension for an October filing. [GFSC announcement, 4 September 2026](https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590).
 
-Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Access restrictions, additional exceptions, discrepancy reporting, sanctions and historical/portal-specific nominee cases remain open; these core duties do not complete the entire ownership-transparency regime.
+Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Core discrepancy reporting and civil-penalty safeguards are set out above; access restrictions, additional exceptions, detailed criminal/court procedures and historical/portal-specific nominee cases remain open; these core duties do not complete the entire ownership-transparency regime.
 
 ## Completion and handover
 
