@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://gov.gg/CHttpHandler.ashx?id=122165&p=0"
+    title: "Tribunal guidance: February 2022 law, reviewed April 2023"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/CHttpHandler.ashx?id=101103&p=0"
     title: "Leaving Guernsey, Alderney or Herm, RS-FRM-LVG-348-v1"
     as_of: "2026-10-22"
@@ -45,7 +48,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey individual income tax and residence v0.6
+# Guernsey individual income tax and residence v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -109,7 +112,7 @@ The withdrawal page says arrivals/departures require a proportionately reduced i
 
 A transfer requires unused allowance and the required agreement, not merely marriage or shared residence. The rates page requires **both parties to submit annual returns**, including leaving automatic assessment where needed. If the donor later needs the transferred allowance, the recipient's assessment changes. Transferred allowances are also subject to the recipient's high-income withdrawal. The guidance includes a separate cohabiting-with-children transfer route; use its form and conditions rather than treating every cohabiting couple as eligible. [Rates page, transfers](https://gov.gg/RStax-rates-and-allowances); [withdrawal FAQ, spouses](https://gov.gg/wopa).
 
-The charge-of-child route covers qualifying lone parents who are not cohabiting, with the specified family-allowance or higher-education condition. The alternative married/cohabiting route requires the stated whole-year total-incapacity and employed-childcarer conditions. The allowance must be requested each year and claimants must file a return. Check the family facts against the complete guidance rather than counting all parents. [Rates page, charge of child](https://gov.gg/RStax-rates-and-allowances).
+The charge-of-child route covers qualifying lone parents who are not cohabiting, with the specified family-allowance or higher-education condition. The alternative married/cohabiting route requires the stated whole-year total-incapacity and employed-childcarer conditions **and** the family-allowance or full-time higher-education condition. The allowance must be requested each year and claimants must file a return. Check the family facts against the complete guidance rather than counting all parents. [Rates page, charge of child](https://gov.gg/RStax-rates-and-allowances).
 
 For rent-a-room relief, the rates page permits up to **two furnished rooms** in the principal private residence, let to a **non-family member over 18**, with up to **£10,000 per room**. A self-contained unit, guesthouse or B&B business does not fit that stated route. Gross rent above the per-room allowance remains taxable under the page's rule; it is not an exemption for all receipts once the letting qualifies. Other rental deductions, allocation and interaction require separate review. [Rates page, rent a room](https://gov.gg/RStax-rates-and-allowances).
 
@@ -218,6 +221,14 @@ The linked Form 690(b), dated 12/21, gives a 30-day appeal period from the penal
 Collection is suspended only if the Director confirms it in writing; otherwise pay by the due date or arrange payment. This is distinct from stopping further daily penalties by filing. Page 2 expects filing within 14 days after the impediment ends and leaves disputed reasonable grounds to the Tribunal. The £50 no-liability restriction does not apply to companies. [Form, pages 1–2](https://gov.gg/CHttpHandler.ashx?id=101085&p=0).
 
 The form remains the authority's linked operational document but is dated 2021. Current statutory text, full late-appeal/Tribunal procedure, late-payment surcharges and interest remain unverified here. Do not extend the penalty-appeal clock to assessment appeals.
+
+### Tribunal preparation and further appeal
+
+The Tribunal's currently linked guidance states that it reflects February 2022 law, reviewed April 2023. Section 1 requires written grounds to the Director within 30 days of assessment/order issue, or notification of a surcharge/supplement. Preserve the relevant triggering document; these are different events. Check current legislation before relying on this older procedure. [Guidance, pages 2 and 8](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
+
+For a hearing, follow the Clerk's case-management directions for evidence, arguments, agreed facts and bundles. Do not treat the usual preparation periods as fixed deadlines. Check the proposed agreed facts before consenting. A late appeal needs an explanation and can be dismissed; new grounds have a separate discretion where omission was not wilful or unreasonable. [Pages 13–15](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
+
+Further appeal to the Royal Court is on law, not a rehearing of facts. The guidance requires notice to the Tribunal President within 21 days from issue of the full written decision, identifying legal grounds to the Clerk, followed by a case-stated process. This is not the original 30-day appeal clock. Verify the current court rules with an advocate before filing. [Page 19](https://gov.gg/CHttpHandler.ashx?id=122165&p=0).
 
 ## Cross-border residence evidence
 
