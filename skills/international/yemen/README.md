@@ -25,3 +25,5 @@ The withholding draft covers selected article 71 rules and distinguishes article
 [General sales tax](ye-general-sales-tax.md) adds the amended statutory baseline and separately identified Sana’a exemptions. VAT marks a consumption-tax topic started, not accepted coverage.
 
 [Social contributions](ye-social-contributions.md) records a material discrepancy between the institution’s law and service guidance on the employer injury charge. This draft is not ready for payroll use; SC indicates research started only.
+
+[Company formation and renewal](ye-company-formation-and-renewal.md) documents the Sana’a ministry’s LLC service requirements. Full statutory reporting, other administrations and ownership disclosures remain unresolved.
