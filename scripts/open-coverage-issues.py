@@ -15,6 +15,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 
 REPO = "openaccountants/openaccountants"
 MILESTONE = "Cover the world"
@@ -87,12 +88,22 @@ def main(argv=None):
             print(f"would open: {title}  [{labels}]  missing: {', '.join(row['missing']) or 'none'}")
             opened += 1
             continue
-        subprocess.run([
+        cmd = [
             "gh", "issue", "create", "-R", REPO, "--title", title, "--label", labels,
             "--milestone", MILESTONE, "--body", body_for(row),
-        ], check=True, stdout=subprocess.DEVNULL)
+        ]
+        # GitHub's GraphQL endpoint fails transiently under a burst of creates.
+        for attempt in range(4):
+            result = subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, text=True)
+            if result.returncode == 0:
+                break
+            time.sleep(5 * (attempt + 1))
+        else:
+            print("FAILED:", title, result.stderr.strip()[:200], file=sys.stderr)
+            continue
         print("opened:", title)
         opened += 1
+        time.sleep(1)
     print(f"{'would open' if args.dry_run else 'opened'} {opened}, skipped {skipped} already open")
     return 0
 
