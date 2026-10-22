@@ -31,7 +31,7 @@ Additional required topics are only partly drafted: [foreign-tax relief](gi-fore
 2. Close material source/interpretation questions recorded in each Guide and the dated Gibraltar files in [research](../../../docs/research/). The company accounts audit cross-reference and mixed-loss computation require specific conclusions, not generic disclaimers.
 3. Complete `sources:` frontmatter for the older baseline Guides. Body citations alone do not satisfy issue #398's metadata requirement. Recheck resolved sources and recompute examples on the exact reviewed revision.
 4. Obtain independent source review and the named accountant review required by GOAL.md. Record identity, date, exact revision and findings; do not promote tiers from automated checks.
-5. Run Guide and sync checks plus the owner coverage report. The report classifies indexed slugs/categories and can lag source changes; zero mechanically missing domains would still not establish legal completeness.
+5. Run Guide and sync checks plus the owner coverage report. The report reads the source tree in memory and classifies slugs/categories. This pass reports 12 Gibraltar Guides, zero reviewed and TAX-VAT, EI and TO mechanically missing. Targeted relief drafts do not necessarily match its TO classifier; zero mechanically missing domains would still not establish legal completeness.
 6. Merge only after required checks and reviews, then verify platform ingestion and served content. Keep issue #398 open until the whole acceptance scope is proved.
 
 The baseline issue lists five Guides. This branch contains twelve Guide files, but neither number is a comprehensive-coverage count. Do not create duplicate Guides merely to satisfy filename matching in the coverage script.
