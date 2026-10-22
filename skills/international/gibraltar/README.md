@@ -13,7 +13,7 @@ All ten programme domains remain in scope. No domain has a reviewed, source-back
 | Domain | Existing draft material | Work still required before acceptance |
 |---|---|---|
 | TAX-IT | [Company tax](gi-corporate-tax.md), [individual tax](gi-individual-income-tax.md) | Individual income/allowance depth; specialised company regimes and minimum taxes; resolve the company Guide's identified calculation and procedural questions |
-| TAX-VAT | [Goods transaction-tax transition](gi-transaction-tax-transition.md) | Operative charging law, commencement, valuation, commodity schedules and post-12-October relief position; the draft explicitly blocks operational reliance |
+| TAX-VAT | [Goods transaction-tax transition](gi-transaction-tax-transition.md) | Charging rules, valuation, rate calendar, transitional-stock routes and deductions rules now drafted from enacted sources; still verify commodity classifications, customs procedures, relief extensions, state-aid limits and operational deadlines |
 | TAX-SC | [Payroll and social insurance](gi-payroll-social-insurance.md) | Special classes, partial periods, self-employed procedure and cross-border coverage evidence |
 | BK | [Books and tax records](gi-bookkeeping-and-tax-records.md) | Posting examples and chart of accounts, full reconciliation workflow, electronic-original and sector requirements |
 | EI | No dedicated draft | Determine legal applicability, invoice fields, electronic format/transmission and retention; obtain positive primary evidence for any not-applicable conclusion |
@@ -27,7 +27,7 @@ Additional required topics are only partly drafted: [foreign-tax relief](gi-fore
 
 ## Next work and acceptance evidence
 
-1. Resolve the transaction-tax source and commencement gap before expanding its calculations. Complete the missing invoicing applicability research and payroll procedures.
+1. Complete transaction-tax operational procedures and remaining incorporated treaty conditions; the charging, valuation and baseline rate-date gaps have source-backed draft treatment. Complete the missing invoicing applicability research and payroll procedures.
 2. Close material source/interpretation questions recorded in each Guide and the dated Gibraltar files in [research](../../../docs/research/). The company accounts audit cross-reference and mixed-loss computation require specific conclusions, not generic disclaimers.
 3. Complete `sources:` frontmatter for the older baseline Guides. Body citations alone do not satisfy issue #398's metadata requirement. Recheck resolved sources and recompute examples on the exact reviewed revision.
 4. Obtain independent source review and the named accountant review required by GOAL.md. Record identity, date, exact revision and findings; do not promote tiers from automated checks.

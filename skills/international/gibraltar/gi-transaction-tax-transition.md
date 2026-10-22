@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009"
@@ -21,7 +21,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar goods transaction-tax transition v0.4
+# Gibraltar goods transaction-tax transition v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -58,7 +58,19 @@ For Gibraltar production, use open-market value when the goods leave production:
 
 ## Rate selection and period controls
 
-The enacted standard-rate sequence is 15% for year 1, 16% for year 2, and after 24 months 17% or the lowest Member State rate at that time. **The statutory periods refer to entry into force of the TGEU.** This Guide has not reconciled that trigger with provisional application and does not assign automatic July 2027/2028 rate-change dates. Section 99 permits rate/category amendments, subject to its conditions and exception. Check the current schedule and implementing measures on the transaction date. [Section 99 and Schedule 2, paragraph 3(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+The treaty date rule is now reconciled. Article 336(4) treats references in the agreement to entry into force as references to provisional application once provisional application begins. The Council register records **15 July 2026**. Domestic sections 6 and 10 give the treaty effect from the Implementation Date and require domestic law to operate consistently with it. Annex 24, Part II, paragraph 3(a), supplies the year-one/year-two/year-three rate sequence; domestic Schedule 2 paragraph 3 expresses the first two periods as 12 and 24 months. [Treaty, Articles 248 and 336](https://assets.publishing.service.gov.uk/media/6a56149a6d6d5c7e2845c8d1/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v1of2.pdf); [Annex 24](https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf); [domestic sections 6, 10 and Schedule 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
+
+The resulting calendar, derived from those provisions, is:
+
+| Period under the baseline enactment | Standard rate |
+|---|---|
+| 15 July 2026–14 July 2027 | 15% |
+| 15 July 2027–14 July 2028 | 16% |
+| From 15 July 2028 | 17% or the lowest Member State standard rate then applicable, as provided by the legislation |
+
+This calendar is a derivation from the current enactment and treaty, not a promise that future legislation stays unchanged. Section 99 permits amendments and contains conditions and an exception for consultative-body recommendations. Annex 24 also provides for recommendations affecting goods/categories. Check amendments and applicable category rates on the chargeable-event date. A later general ratification date does not restart the treaty's elapsed provisional-application period. [Article 336(3)–(4)](https://assets.publishing.service.gov.uk/media/6a56149a6d6d5c7e2845c8d1/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v1of2.pdf); [Annex 24, Part II, paragraph 3(a)](https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf).
+
+**Date-boundary illustration:** assuming the baseline law remains unchanged and the goods are standard-rated, an established £1,000 taxable amount charged on 14 July 2027 produces £150; the same amount charged on 15 July 2027 produces £160. Use the statutory chargeable event, not the order date. This is a future-period illustration, not a verified future rate ruling.
 
 The schedule's 5% categories include agricultural inputs subject to capital-goods exclusions and the chemical pesticide/fertiliser time limit; live equines; specified plants/floricultural goods; children's clothing, footwear and car seats; bicycles including electric bicycles; defined art, collectors' items and antiques; and qualifying rescue/first-aid equipment supplied to public or eligible nonprofit bodies. Classification depends on the full statutory description, recipient and any incorporated EU definition. [Paragraph 3(2), printed page 105](https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf).
 
@@ -127,7 +139,7 @@ Each claim requires OFT certification, payment documentation and the applicable 
 
 Rule 6 separately requires compliance with the applicable de minimis aid provisions. Declare and document de minimis and other state aid received during the **three years preceding the claim**. The Commissioner can reduce the deduction to the amount compatible with those provisions. This Guide does not establish the applicable monetary aid ceiling, aggregation rules or remaining headroom. [Rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
 
-**Outstanding verification:** verify any extension after 12 October and the applicable state-aid ceiling/aggregation; treaty entry-into-force versus provisional-application rate triggers; incorporated commodity definitions, customs procedures and traveller thresholds; remaining transitional-stock treaty conditions and boundary dates; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
+**Outstanding verification:** verify any extension after 12 October and the applicable state-aid ceiling/aggregation; incorporated commodity definitions, customs procedures and traveller thresholds; remaining transitional-stock treaty conditions and boundary dates; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
 
 ## Self-checks and output
 
