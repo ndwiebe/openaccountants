@@ -15,7 +15,7 @@ Owner Michael, confirmed in [issue #397](https://github.com/openaccountants/open
 | IT-IND | [Individual tax](gg-individual-income-tax.md) | Statutory source depth, reliefs/caps, special residence cases and complete filing/payment procedure |
 | IT-CORP | [Corporate tax/substance](gg-corporate-tax-substance.md) | Detailed bases, losses, activity rates, distributions, substance and minimum-tax rules |
 | VAT / consumption | [GST transition](gg-gst-transition.md), policy scope only | October 2026 adopted conditions and published 2029 timetable verified; current tax scope, enacted commencement, customs/excise, registration, returns and penalties remain open |
-| SC, PR | [Payroll/social insurance](gg-payroll-social-insurance.md) | Classification, dividend timing and employer procedures expanded; statutory penalty reconciliation, special periods, benefits, secondary pensions and international coverage still open |
+| SC, PR | [Payroll/social insurance](gg-payroll-social-insurance.md) | Classification, dividend timing, ordinary benefits and employer procedures expanded; statutory penalty reconciliation, special periods/benefit categories, secondary pensions and international coverage still open |
 | TP | [UK treaty adjustment rules](gg-uk-treaty-employment-and-relief.md#associated-enterprises-and-corresponding-adjustments), limited corridor coverage | Domestic connected-party rules and documentation remain unverified; official legal library access failed. Treaty material does not establish a complete domestic regime |
 | XB | [UK treaty employment and relief](gg-uk-treaty-employment-and-relief.md) | Claim operations; domestic PE implementation and remaining property/pension categories, other corridors and exit/non-resident rules |
 

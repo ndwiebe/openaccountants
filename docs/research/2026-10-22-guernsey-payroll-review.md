@@ -9,3 +9,9 @@ Added contract-specific construction classification, pension-age transition, his
 SIC1 narrows dividend apportionment to less-frequent dividends causing normally-below-cap wages to cross the cap. Its post-2024 interpretation uses declaration calendar year, not financial period. This was missing from the baseline.
 
 Two ordinary/cap arithmetic checks added. No new universal partial-period, annual allocation, qualifying-loan or cross-border formula is asserted. Penalty statutory reconciliation, surcharge intervals, exact appeal time trigger, pension eligibility/phasing, benefits, multiple employers, class 3 and full class 2 procedure remain gaps. Avoid the employer manual's blanket short-visit tax language; use the separately researched treaty Guide for its actual conditions.
+
+## v0.3 benefit valuation and payroll treatment
+
+Read the 2026 BIK guide sections 1–12 and cited Statements of Practice. Added the valuation hierarchy, £900 exceptions, group/individual medical distinction, IT-equipment exception, required versus voluntary homeworking, insufficient-cash return deadline, and employer-paid tax gross-up. The publication explicitly has no binding force; it is not substituted for the law. Specific classifications and benefit/contribution interaction still require independent and statutory review.
+
+Two additional checked examples reproduce the £100/month eligible benefit less annual £900 allowance and £5,000 taxable benefit gross-up at 20%. Their assumptions are stated; neither proves eligibility. Partial-year section 11 uses both days/365 and final-month days/month examples; no universal reconciliation was invented. Vehicle/accommodation scales, relocation, salary sacrifice, share schemes, controller treatment and preferential-loan detail remain open.
