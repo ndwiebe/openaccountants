@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.8
+version: 0.9
 verified_by: pending
 sources:
+  - url: "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf"
+    title: "Guernsey Dispute Resolution Profile, updated 17 March 2025, questions 2, 5–12 and 16–17"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/2021-uk-guernsey-exchange-of-letters-in-force"
     title: "December 2021 exchange of letters: Article 27 effective 1 January 2022"
     as_of: "2026-10-22"
@@ -292,6 +295,16 @@ Retain asset location and valuation support, ownership chains, trading evidence,
 Prepare the domestic returns and relief claims for each applicable year; retain residence evidence, employment-location records, payslips, assessments, proof of tax paid and credit allocation. Exact claim forms, deadlines, payroll clearance and treatment of later foreign refunds remain unverified. Do not stop withholding solely because this working paper identifies potential treaty relief.
 
 Under Article 25(1), a person can present a treaty-inconsistent taxation case to either competent authority within **three years from first notification of the action** producing that taxation, irrespective of domestic remedies. Record the actual notification and service evidence. Article 25 does not replace domestic appeal or payment deadlines; its competent-authority process is not a promise of immediate refund or suspension. The arbitration conditions and published implementation memorandum are examined below; an official status discrepancy remains unresolved. [Article 25](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+### Guernsey administrative profile: access and limits
+
+Guernsey's OECD-hosted profile, **updated 17 March 2025**, reports MAP access for transfer-pricing cases, treaty/domestic anti-abuse issues, audit settlements and bona-fide taxpayer-initiated foreign adjustments. It also reports access where domestic remedies were sought or decided. Access does not guarantee relief or override the separate arbitration exclusion for issues already judicially decided. [Profile, questions 5–12](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf).
+
+The profile reports no MAP request fee. Collection suspension requires a request: its stated usual conditions include an appeal against the assessment, payment of undisputed tax and reasonableness on the facts. Do not assume submission itself stops collection. [Questions 16–17](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf).
+
+For **bilateral advance pricing agreements**, the profile reports neither a formal legislative programme nor an informal procedure. Its contact list is not proof that such a programme exists. This is a dated administrative statement, not a source-backed determination that domestic transfer-pricing rules are inapplicable. [Question 2](https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/guernsey-dispute-resolution-profile.pdf).
+
+The linked Revenue MAP guidance could not be retrieved during this check. Current intake details, required documents and any changes since the profile date still need verification.
 
 ## Arbitration: separate clocks and conflicting status evidence
 
