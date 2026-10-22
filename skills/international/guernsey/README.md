@@ -12,7 +12,7 @@ Owner Michael, confirmed in [issue #397](https://github.com/openaccountants/open
 
 | Domain | Draft | Remaining work |
 |---|---|---|
-| IT-IND | [Individual tax](gg-individual-income-tax.md) | Statutory source depth, reliefs/caps, special residence cases and complete filing/payment procedure |
+| IT-IND | [Individual tax](gg-individual-income-tax.md) | Residence day-count law, ordered allowance withdrawal and selected reliefs expanded; full statutory base, caps, part-year rules and payment/penalty procedure remain open |
 | IT-CORP | [Corporate tax/substance](gg-corporate-tax-substance.md) | Registration/residence evidence, activity rates and filing/penalty guidance expanded; statutory bases, losses, distributions, substance and minimum-tax depth remain open |
 | VAT / consumption | [GST transition](gg-gst-transition.md), policy scope only | October 2026 adopted conditions and published 2029 timetable verified; current tax scope, enacted commencement, customs/excise, registration, returns and penalties remain open |
 | SC, PR | [Payroll/social insurance](gg-payroll-social-insurance.md), [secondary pensions](gg-secondary-pensions.md) | Classification, dividend timing, ordinary benefits, vehicle/housing rules and employer procedures expanded; statutory penalty reconciliation, special periods/benefit categories, specialist pension cases and international coverage still open |
@@ -23,4 +23,4 @@ The VAT entry is an unresolved programme consumption-tax scope, not an assertion
 
 Accounting milestone drafts: [formation](gg-company-formation.md) and [accounts/reporting](gg-company-accounts-and-reporting.md). The audit-exemption primary-source gap remains in the accounts Guide.
 
-Sources and access dates are recorded in the new Guides and [research](../../../docs/research/); the individual baseline tax Guide still needs structured source metadata. Independent review, required checks, merge and verified platform ingestion remain necessary before acceptance. Keep issue #397 open while these gaps remain.
+Sources and access dates are recorded in the new Guides and [research](../../../docs/research/); all eight Guides now have structured source metadata, which does not establish complete source verification. Independent review, required checks, merge and verified platform ingestion remain necessary before acceptance. Keep issue #397 open while these gaps remain.
