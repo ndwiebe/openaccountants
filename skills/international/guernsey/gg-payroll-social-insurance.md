@@ -1,17 +1,17 @@
 ---
 name: gg-payroll-social-insurance
 description: >
-  Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation and ETI reporting; vehicle and accommodation scales, secondary pensions and mixed-status cases still need further work. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GG
 category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=202739&p=0"
-    title: "Benefits in Kind Guide 2026, sections 1–12 and Statements of Practice E4, E12, E13, E35, E38, E46–48"
+    title: "Benefits in Kind Guide 2026, sections 1–12, Fact Sheets 1–2 and cited Statements of Practice"
     as_of: "2026-10-22"
   - url: "https://gov.gg/employers"
     title: "Employer webpage"
@@ -30,13 +30,13 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey payroll and social contributions v0.3
+# Guernsey payroll and social contributions v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Who this applies to
 
-Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation and ETI reporting; vehicle and accommodation scales, secondary pensions and mixed-status cases still need further work.
+Prepare ordinary 2026 Class 1 payroll and a Class 2 review checklist. Includes ordinary benefit valuation, vehicle and housing scales, and ETI reporting. Secondary pensions and mixed-status cases still need further work.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -109,7 +109,37 @@ Sources: [sections 6–7 and example 1](https://gov.gg/CHttpHandler.ashx?id=2027
 
 **Homeworking:** where the employer requires homeworking, the practice permits up to **£8 per week**, proportionately reduced for less than a week, without tax. Above that amount, the guidance requires the sums to be returned through ETI and the employee to claim expenses on their return. If homeworking is a choice, the full subsidy is taxable. Do not tax only the excess over £8 or infer an automatic £8 deduction. [SoP E48](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
 
-**Period gaps:** section 11 contains an annual days/365 approach and a final-month example using days in that month. Their reconciliation for all partial-year cases has not been established here. Vehicle and accommodation scales, controllers' company-deduction interaction, share schemes, relocation, salary sacrifice and preferential-loan computations require additional work. No generic benefit formula resolves those cases.
+### Employer vehicles: choose the category first
+
+Apply Fact Sheet 1's exemption tests before valuing a vehicle. Business-only use is exempt. Its second exemption includes business use and commuting where the vehicle is required for work outside normal employer hours, such as call-outs or going directly on site. Ordinary commuting alone does not meet that second test. Retain use records. [Fact Sheet 1, section 1](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+For non-exempt use, the **limited benefit** category covers cars with private use confined to commuting, cars with **more than 75%** business use, qualifying pool cars, and other motor vehicles available privately. Within that category the 2026 annual benefit is **£1,565 for cars**, and **nil for motorcycles, vans, lorries and other commercial vehicles**. A qualifying pool car must be available to and used by multiple employees, not used by one to the exclusion of others, with private use secondary to business use; calling a car a pool car is not sufficient. Commercial vehicles are defined by their main design for carrying goods/business items. [Fact Sheet 1, sections 2.1 and 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+Other non-exempt car use has a 2026 annual benefit of **20% of cost**. Cost is gross acquisition cost including extras, without deducting a trade-in. For a leased car use the purchase-equivalent amount in the Director's opinion. The published example deducts the employee's contribution to extras from the resulting cost basis; retain that contribution evidence. These figures are benefit values, not percentages of tax due. [Fact Sheet 1, sections 2.2 and 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+The scale covers fuel and other running costs even where the employer pays only some of them. Employee payment for private fuel is not itself a deductible reimbursement against the car benefit. For the **limited-charge** case, the Director accepts no taxable benefit where the employer certifies a record of all private mileage and the employee reimburses at least **77p per mile**, even if total reimbursement is below £1,565. Do not apply that concession to an ordinary 20%-of-cost car. [Fact Sheet 1, sections 2–3; SoP E18 and E20](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+An employee using their **own** vehicle on business is a separate rule. SoP E17 gives 2026 accepted mileage rates of **77p for an ordinary car, 69.6p hybrid, 59.6p electric, 38.5p motorcycle, 17p e-bike and 12p pedal bicycle** per mile. Keep business-mileage and vehicle-type evidence; this is not the private-mileage reimbursement test for an employer car. [SoP E17](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+### Accommodation: identify the employee and type of property
+
+For employees outside the hotel/guesthouse schedule, Fact Sheet 2 values unfurnished accommodation/dwellings or land at **15% of assessable emoluments**, furnished accommodation/dwellings at **17.5%**, and proprietary director/employee accommodation at **open-market rental value**. The latter status includes direct or indirect control of **more than 15%** of shares in the employing company. This is a specific housing classification, not a replacement definition for all director rules. [Fact Sheet 2, sections 1.3 and 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+An ordinary non-proprietary employee can elect for the benefit not to exceed a lower open-market rental value. The election must be made within **two years after the end of the relevant year**: for 2026, by **31 December 2028**. Do not automatically choose the lower number without the election. Establish the assessable-emoluments base separately rather than assuming cash salary is always the whole base. [Fact Sheet 2, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+Employee contributions reduce the housing benefit subject to the detailed rules. Under SoP E24, utilities are separate additional benefits for the percentage/open-market housing category; paying personal utility bills does not reduce the accommodation benefit. The hotel schedule charges under regulations 3(1) and 3(2) include those utilities. [SoP E24](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+For ordinary hotel/guesthouse employees, the 2026 schedule charges **£30 per week or part-week for accommodation** and separately **£30 for food**. It does not add spouses/dependants unless they too are employees. The employed-manager category adds the same charge for the first spouse/dependant; proprietary directors/employees instead require the detailed annual establishment/family schedule. Do not apply the ordinary £30 schedule to everyone. Non-hotel use requires the Director's agreement where Fact Sheet 2 provides for it. [Fact Sheet 2, section 1](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+SoP E28 includes emoluments from other employers when computing a percentage-based benefit. An employer reports on information reasonably available and Revenue Service handles any further recalculation. Where spouses work for the same employer, their own use/emoluments must be considered separately; accommodation is not automatically taxed once for the household. [SoP E28](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+### Salary sacrifice is not an automatic benefit saving
+
+Under SoP E15, deductions from salary for a benefit do not reduce gross emoluments; the employee contribution instead enters the benefit calculation. If salary sacrifice would otherwise produce a lower charge than the salary given up, the stated treatment preserves the tax charge on that salary. Review the contract and both calculations before describing a saving. [SoP E15](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+### Partial periods and remaining special cases
+
+Section 11 contains an annual days/365 approach and a final-month example using days in that month. Their reconciliation for all partial-year cases has not been established here. Controllers' company-deduction interaction, share schemes, relocation and preferential-loan computations require additional work. No generic benefit formula resolves those cases.
 
 ## Deadlines and filing
 
@@ -222,6 +252,60 @@ expected:
   tax_reimbursement: 1250
   total_tax: 1250
   after_tax_value: 5000
+```
+
+### Vehicle and housing boundary examples
+
+**Gross car cost.** A car costs £30,000 before a £5,000 trade-in, plus £3,000 extras. The employee contributes £2,000 to the extras. Following Fact Sheet 1's example, the benefit cost basis is £31,000. If no exemption or limited category applies, the annual benefit is **£6,200**. The cash paid after trade-in is not the benefit cost basis. [Fact Sheet 1, sections 2.2 and 4](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+```oa-check
+name: Guernsey ordinary car benefit cost includes trade-in value
+inputs:
+  gross_car_cost: 30000
+  extras: 3000
+  employee_extras_payment: 2000
+  benefit_rate: 0.20
+steps:
+  - benefit_cost: gross_car_cost + extras - employee_extras_payment
+  - annual_benefit: benefit_cost * benefit_rate
+expected:
+  benefit_cost: 31000
+  annual_benefit: 6200
+```
+
+**Strict business-use boundary.** Assume a £30,000 employer car, 10,000 total miles, no exemption, no qualifying pool arrangement, and private use beyond commuting. At 7,500 business miles the fraction is exactly 75%, which fails the **more-than-75%** test; the ordinary annual value is £6,000. At 7,510 miles it is 75.1%, satisfying that limb and giving the £1,565 limited value. Mileage evidence and the other assumptions decide classification; arithmetic alone does not. [Fact Sheet 1, section 2](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+```oa-check
+name: Guernsey car business-use strict percentage boundary
+inputs:
+  total_miles: 10000
+  boundary_business_miles: 7500
+  above_business_miles: 7510
+  gross_cost: 30000
+steps:
+  - boundary_percent: boundary_business_miles / total_miles * 100
+  - above_percent: above_business_miles / total_miles * 100
+  - ordinary_benefit: gross_cost * 0.20
+expected:
+  boundary_percent: 75
+  above_percent: 75.1
+  ordinary_benefit: 6000
+```
+
+**Furnished housing election.** Assume a full-year ordinary non-proprietary employee with an independently established £40,000 assessable-emoluments base, no contributions and a supported £6,000 annual open-market rental value. The percentage benefit is £7,000. With a valid timely election, the rental-value cap gives £6,000; without it, this calculation does not establish entitlement to the lower amount. Utilities remain separate. [Fact Sheet 2, section 2; SoP E24](https://gov.gg/CHttpHandler.ashx?id=202739&p=0).
+
+```oa-check
+name: Guernsey furnished accommodation with valid rental-value election
+inputs:
+  established_emoluments: 40000
+  furnished_rate: 0.175
+  verified_rental_value: 6000
+steps:
+  - percentage_benefit: established_emoluments * furnished_rate
+  - benefit_with_valid_election: min(percentage_benefit, verified_rental_value)
+expected:
+  percentage_benefit: 7000
+  benefit_with_valid_election: 6000
 ```
 
 ## Ask the client first

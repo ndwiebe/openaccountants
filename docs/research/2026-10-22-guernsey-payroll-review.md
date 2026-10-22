@@ -15,3 +15,9 @@ Two ordinary/cap arithmetic checks added. No new universal partial-period, annua
 Read the 2026 BIK guide sections 1–12 and cited Statements of Practice. Added the valuation hierarchy, £900 exceptions, group/individual medical distinction, IT-equipment exception, required versus voluntary homeworking, insufficient-cash return deadline, and employer-paid tax gross-up. The publication explicitly has no binding force; it is not substituted for the law. Specific classifications and benefit/contribution interaction still require independent and statutory review.
 
 Two additional checked examples reproduce the £100/month eligible benefit less annual £900 allowance and £5,000 taxable benefit gross-up at 20%. Their assumptions are stated; neither proves eligibility. Partial-year section 11 uses both days/365 and final-month days/month examples; no universal reconciliation was invented. Vehicle/accommodation scales, relocation, salary sacrifice, share schemes, controller treatment and preferential-loan detail remain open.
+
+## v0.4 vehicle and accommodation benefit depth
+
+Read Fact Sheets 1–2 and SoP E15, E17–E20, E24 and E28 in the same hashed 2026 BIK guide. Added exemption/limited/ordinary vehicle decision path, gross cost and trade-in treatment, strict >75% business-use boundary, distinct own-vehicle mileage versus private-mileage repayment, ordinary housing rates/election, utilities and split-employment rules. Added salary-sacrifice guidance.
+
+Three arithmetic checks cover £31,000 car basis/£6,200 benefit, exactly 75% versus 75.1%, and a conditional furnished housing election. Assessable emoluments is an established input, not assumed identical to cash salary. The detailed proprietary hotel family scale was read but is still not implemented; no claim of full benefits coverage. Direct legislation and independent review remain outstanding. The 2026 PDF remains the source version recorded in the manifest.
