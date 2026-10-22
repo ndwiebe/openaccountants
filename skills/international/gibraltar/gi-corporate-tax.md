@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.2
+# Gibraltar corporate tax and filing v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -31,6 +31,22 @@ The complete CT1 and balancing payment are due nine months after the end of the 
 
 For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
 
+## Payments on account and balancing payment
+
+Keep three fields separate: the **basis period** used to calculate an instalment, the **payment due date**, and the **accounting period receiving the credit**. Section 39(4) requires payments by **28 February and 30 September**. Each is 50% of the tax payable for the relevant basis period determined using Schedule 10. The basis period is not automatically the most recently completed accounts: its due-and-payable date must precede the first instalment date as prescribed by the table. [Section 39(4)(a)–(d) and Schedule 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The ITO publishes a 2022–2033 allocation table, but its footer still states **10%**. That is not the current standard company rate. Do not use that footer as rate authority or silently apply it to a 2026 computation. Check the basis liability, applicable rate provisions and any period spanning a rate change against the Act and the company's tax record. The table also has irregular month-end dates in certain rows; resolve any affected row before relying on it. [ITO allocation table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf); [current company rate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
+
+For a verified basis-period liability of **£20,000**, with no reduction or adjustment required, each instalment is **£10,000**. If the final tax for the credited accounting period is £26,000, the balance is £6,000. If final tax is £18,000, the £2,000 excess is repayable under section 39(4)(e); obtain the account reconciliation rather than automatically crediting another period. The normal company balance date is nine months after the end of the month containing the period end. Section 39(9) separately gives **60 days after the assessment date** for an assessment under section 33(1)(b); do not apply the normal balance date to every additional assessment. [Section 39(1)(b), (4)(e), (9)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For a changed accounting date, section 39(4)(f) retains the previous-date basis until an accounting period under the Act has been made up to the new date. An extended basis period within paragraph (g) is apportioned to an equivalent twelve months; a basis period shorter than twelve months is grossed up by time under paragraph (h). Example: a six-month basis liability of £6,000 annualises to £12,000, giving £6,000 per 50% instalment, before any other applicable adjustment. Keep the original period, time calculation and statutory basis in the working paper. [Section 39(4)(f)–(h)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Applying to reduce instalments
+
+If required payments on account will exceed the current period's liability, section 39(5) permits an application for full or partial discharge. The Commissioner decides whether to discharge or reduce the obligation under subsection (6); an internal forecast is not itself that decision. The ITO identifies **Form CT4** and says it is not valid for an accounting period that has already ended. Prepare the expected tax computation and supporting forecast, retain the application and decision, and update the payment schedule. The form's detailed fields and current submission channel have not been verified in this Guide. [Section 39(5)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO CT4 guidance and download](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
+
+Payments on account are themselves subject to late-payment surcharge. If an amount omitted following a discharge application is later found payable, section 39(7) treats the relevant shortfall as due on the original instalment date for surcharge purposes. Do not describe an approved reduction as protection against surcharge if the estimate proves insufficient. [Section 39(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
 ## Computation and examples
 
 1. Reconcile accounts to a profit bridge: accounting profit, non-chargeable items, disallowances, capital allowances and separately supported reliefs.
@@ -43,7 +59,17 @@ For **already established** ordinary taxable profit of £100,000, tax is **£15,
 
 ## Failure and boundary checks
 
-Section 64 applies a 10% late-payment surcharge, followed after 90 days by a further 20% on the outstanding tax plus surcharge. A fully outstanding £1,000 therefore becomes £1,100 and then £1,320 before other liabilities. Section 65 return penalties are separate and depend on company size. Check periods and payment dates before calculating either. [Income Tax Act, ss64–65](https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download).
+Section 64 charges **10% of unpaid tax on the day immediately after its due date**. If tax and that surcharge remain unpaid within 90 days from when the first surcharge becomes payable, a further **20% of the tax and surcharge still unpaid** becomes due. A fully unpaid £1,000 becomes £1,100, then £1,320. If the confirmed combined balance at the second trigger is £600 after intervening payments, the additional surcharge is £120, not £220; reconcile actual allocations before calculating it. These are payment surcharges, separate from return penalties. An appeal or collection postponement does not automatically remove them: section 36(10) retains the original due date for ultimately payable tax. [Sections 36(10), 39(7), 64](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [assessment appeals Guide](gi-income-tax-assessment-appeals.md).
+
+For current company return failures, section 65(3) provides these **additional** penalties, using Schedule 9 Companies Act size classification:
+
+| Company classification | Initial failure | Continuing after three months from filing date | Continuing after six months from filing date | Total if all three arise |
+|---|---:|---:|---:|---:|
+| Micro or small | £100 | £450 | £750 | £1,300 |
+| Medium | £750 | £1,250 | £2,000 | £4,000 |
+| Large | £1,500 | £3,500 | £5,000 | £10,000 |
+
+The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 **Open scope:** full deductibility/capital-allowance schedules, loss use, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
