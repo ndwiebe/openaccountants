@@ -1,17 +1,20 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, associated-enterprise adjustments and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, associated-enterprise adjustments, dividend/interest/royalty conditions and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
+    title: "HMRC DT8602 treaty summary, payment-category conditions"
+    as_of: "2026-10-22"
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–4, 9, 11–12, 14, 22–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–4, 9–12, 14, 22–25"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -21,7 +24,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey–UK: residence, employment and double-tax relief
+# Guernsey–UK: residence, employment, investment income and relief
 
 ## Who this applies to
 
@@ -64,6 +67,61 @@ For a Guernsey resident's income that the UK can tax under the Agreement, Articl
 Where income is taxable only in the UK under the treaty, Article 22(1)(c) instead allows Guernsey to include it when calculating tax on remaining income. Article 22(4) excludes the paragraph 1 credit where UK taxation is permitted solely because the income is also derived by a UK resident. Do not turn a dual-residence fact into an automatic credit. UK-side relief follows Article 22(2) and UK law; this Guide does not compute it. [Article 22(1)–(5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 Article 1(3) preserves residence-territory taxation subject to its listed exceptions, including Article 22. Article 23 can deny a benefit when obtaining it was a principal purpose, unless granting it accords with the relevant provisions' object and purpose; paragraph 2 provides a competent-authority request route. A residence certificate does not displace those rules. [Articles 1(3) and 23](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Dividends, interest and royalties
+
+Treaty limits constrain the source territory's permitted tax; they do not create a domestic charge or determine the residence territory's tax. Establish the domestic treatment, income category, beneficial owner, treaty residence and Article 23 entitlement before calculating relief. HMRC's summary expressly distinguishes treaty rates from domestic rates. [Articles 10–12](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf); [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602).
+
+### Dividends
+
+Article 10(2)(a) generally exempts a dividend from source-territory tax where its beneficial owner is resident in the other territory, subject to the article's exceptions. It does not set a minimum ownership percentage for this ordinary exemption. Residence-territory taxation and tax on the distributing company's profits remain separate. [Article 10(1)–(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+The exception in Article 10(2)(b) concerns dividends from an investment vehicle's directly or indirectly derived immovable-property income/gains where the vehicle distributes most of that income annually and the property income is exempt from tax. Source tax is capped at **15% of the gross dividend**. A pension scheme established in the other territory retains the paragraph (a) exemption. Do not apply 15% merely because a company owns a building; establish the vehicle and distribution conditions. [Article 10(2)(b)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+If the holding is effectively connected with the beneficial owner's permanent establishment in the payer's territory, Article 10(4) refers the matter to Article 7 instead. This is an asset-to-establishment connection test, not simply whether the shareholder has any business presence there. [Article 10(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Ceiling example:** for an established qualifying property-income dividend of £10,000, the treaty ceiling is **£1,500**. If independently verified domestic source tax would be £2,000, the treaty-limited amount is £1,500, subject to claim procedures. If domestic tax instead is £1,000, the treaty does not raise it to £1,500. No domestic rate is asserted by these assumed figures.
+
+```oa-check
+name: Property-income dividend treaty ceiling is not a minimum tax
+inputs:
+  gross_dividend: 10000
+  ceiling_rate: 0.15
+  higher_domestic_tax: 2000
+  lower_domestic_tax: 1000
+steps:
+  - ceiling: gross_dividend * ceiling_rate
+  - higher_case_tax: min(higher_domestic_tax, ceiling)
+  - lower_case_tax: min(lower_domestic_tax, ceiling)
+expected:
+  ceiling: 1500
+  higher_case_tax: 1500
+  lower_case_tax: 1000
+```
+
+### Interest and royalties: qualifying owners differ
+
+Articles 11(2) and 12(2) allow source taxation under domestic law unless at least one of their respective paragraph 3 conditions grants residence-only taxation. They do **not** supply a general reduced percentage for every non-qualifying recipient. For both categories, qualifying routes include an individual, a company with substantial regular trading in its principal share class on a recognised exchange, a company with **less than 25%** of shares/other rights owned directly or indirectly by non-residents of the recipient's territory, and specified public bodies. A further route requires the competent authority's determination regarding the purpose of establishing/acquiring/maintaining the recipient or conducting its operations. Do not replace that determination with an internal assurance. [Articles 11(2)–(4), 12(2)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Interest has additional express routes, including a pension scheme, bank/building society, the defined unrelated independently dealing financial institution, and specified public-sector payers. Those additional categories are not all repeated in the royalty article. A bank or pension label alone therefore does not establish royalty relief through the interest provision. Verify the exact recipient category under the correct article. Recognised exchanges are specified in Protocol paragraph 3; not every trading platform qualifies. [Article 11(3); Article 12(3); Protocol paragraph 3](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+For the ownership route, a company with 24% non-resident ownership passes the numeric limb; exactly 25% does not. Count direct and indirect shares or other rights using supported ownership records. Failure of this route does not rule out another paragraph 3 route. For example, 24 of 100 equal shares represent 24%, while 25 represent 25%; no alternative rights or indirect holdings are assumed in this illustration.
+
+```oa-check
+name: Non-resident ownership strict less-than boundary
+inputs:
+  total_equal_shares: 100
+  below_boundary_shares: 24
+  boundary_shares: 25
+steps:
+  - below_percentage: below_boundary_shares / total_equal_shares * 100
+  - boundary_percentage: boundary_shares / total_equal_shares * 100
+expected:
+  below_percentage: 24
+  boundary_percentage: 25
+```
+
+Interest and royalty source is generally the payer's residence, subject to the relevant permanent-establishment liability/cost-bearing provisions in paragraph 7. Effectively connected debt claims or IP rights require the paragraph 6/Article 7 analysis. Article 12(6)'s published wording refers specifically to paragraph 1; its interaction with paragraph 2 needs case-specific review rather than silently rewriting the treaty. The excessive related-party amount restrictions in paragraph 8 are addressed below. Classification, beneficial ownership, permanent-establishment connection and claim clearance are not established by a payment description alone. [Articles 11(5)–(8), 12(5)–(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 ## Associated enterprises and corresponding adjustments
 
@@ -152,7 +210,7 @@ expected:
 
 ## Sources and remaining work
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) and [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600), accessed 22 October 2026. The working paper does not cover all dividends, interest, royalties, property gains, business profits, pensions, treaty corridors or exit issues. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Property gains, business profits, pensions, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
 
 ## Disclaimer
 

@@ -17,7 +17,7 @@ Owner Michael, confirmed in [issue #397](https://github.com/openaccountants/open
 | VAT / consumption | Missing | Verify current absence/applicability and future GST commencement from primary sources before any not-applicable determination |
 | SC, PR | [Payroll/social insurance](gg-payroll-social-insurance.md) | Special classes, periods, benefits and reporting/penalty detail |
 | TP | [UK treaty adjustment rules](gg-uk-treaty-employment-and-relief.md#associated-enterprises-and-corresponding-adjustments), limited corridor coverage | Domestic connected-party rules and documentation remain unverified; official legal library access failed. Treaty material does not establish a complete domestic regime |
-| XB | [UK treaty employment and relief](gg-uk-treaty-employment-and-relief.md) | Claim operations, all other income categories, other corridors and exit/non-resident rules |
+| XB | [UK treaty employment and relief](gg-uk-treaty-employment-and-relief.md) | Claim operations; remaining business/property/pension categories, other corridors and exit/non-resident rules |
 
 The VAT entry is an unresolved programme consumption-tax scope, not an assertion of a current Guernsey VAT. No reviewed not-applicable finding has been made. Six Guides are present, zero independently reviewed or professionally attested in this work. A domain mapping establishes draft presence only.
 
