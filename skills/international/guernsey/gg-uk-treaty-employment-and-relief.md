@@ -1,20 +1,20 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
     title: "HMRC DT8602 treaty summary, payment-category conditions"
     as_of: "2026-10-22"
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–12, 14, 22–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–12, 14, 17–19, 22–25"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -207,6 +207,26 @@ expected:
   excess_interest: 10000
 ```
 
+## Pensions and government service
+
+**Ordinary pensions:** subject to Article 18, Article 17 allocates pensions and similar remuneration paid to an individual resident in one territory exclusively to that territory. Establish treaty residence and the payment's actual classification. A Guernsey-resident individual's qualifying ordinary UK pension therefore falls within residence-territory allocation; this does not itself complete a UK withholding-relief claim or establish the Guernsey domestic computation. Do not assume that every lump sum, annuity or withdrawal described as retirement money has the same classification. [Article 17](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Government-service payments:** Article 18 has a different structure. It concerns remuneration, expressly including pensions, paid by a territory's Government for services to that Government in discharging governmental functions. It exempts that payment in the other territory if the individual is **not ordinarily resident** there. For remuneration **other than a pension**, it also allows exemption where the individual is ordinarily resident in that other territory solely to perform those services. The second route is expressly unavailable to pensions. [Article 18(1)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Consequently, for a qualifying Guernsey Government pension paid to an individual ordinarily resident in the UK, Article 18 does not provide the UK exemption. Do not apply Article 17's ordinary-pension residence-only wording without resolving the government-service provision. Nor does failure of an exemption condition by itself establish the amount of tax payable: domestic liability and double-tax relief still require analysis. HMRC's UK-resident summary confirms this ordinary-residence distinction for Guernsey government pensions. [Article 18](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf); [HMRC DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602).
+
+Article 18(2) excludes payments for services connected with a Government's trade or business carried on for profit from its stated rule. Identify the actual payer, function and service, rather than treating every publicly owned enterprise's payment as government-service remuneration. The article does not introduce a nationality test; a passport is not a substitute for the ordinary-residence enquiry. [Article 18](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Classification examples:** assume the payer, function and ordinary residence are established. An employee ordinarily resident in the receiving territory solely to perform qualifying governmental services can meet the non-pension route. A pensioner with the same ordinary-residence status cannot use that route because it excludes pensions. These examples apply the treaty conditions; they do not define domestic ordinary residence or establish pension-scheme eligibility.
+
+For a claim, retain residence evidence, pension award and scheme documents, payment breakdown, government employer/service history where relevant, and both territories' deductions and assessments. This is a recommended evidence file, not a verified official document checklist. Domestic meaning of ordinary residence, lump-sum classification, scheme-specific treatment and actual relief forms/deadlines remain open.
+
+## Students and apprentices: foreign support only
+
+Article 19 covers a student or business apprentice who is, or immediately before visiting was, resident in the other territory, and is present solely for education or training. Payments for maintenance, education or training are exempt in the visited territory only where they arise from sources **outside** that territory. This does not establish an exemption for local wages or every payment received by someone enrolled on a course. [Article 19](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+For example, qualifying maintenance support from outside Guernsey and wages from work performed in Guernsey need separate classifications. The student article can cover the former when all its conditions are met; it does not establish relief for the latter. Record the prior residence, purpose of presence, payment source and payment purpose. Apply the employment provisions and domestic rules separately to any earnings.
+
 ## Filing, deadlines and disputes
 
 Prepare the domestic returns and relief claims for each applicable year; retain residence evidence, employment-location records, payslips, assessments, proof of tax paid and credit allocation. Exact claim forms, deadlines, payroll clearance and treatment of later foreign refunds remain unverified. Do not stop withholding solely because this working paper identifies potential treaty relief.
@@ -267,7 +287,7 @@ expected:
 
 ## Sources and remaining work
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Property gains, pensions, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Pension, government-service and student allocation conditions are now drafted; domestic definitions, pension lump sums and operational relief remain open. Property gains, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
 
 ## Disclaimer
 
