@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
@@ -52,6 +52,16 @@ Subject particularly to section 113, tax charged by an assessment is payable by 
 Act 10 section 5 replaces the **10%** in section 134(1) with **6%, or another rate prescribed by ministerial statutory order**. The provision concerns overdue section 113 instalments or section 114 remainder tax. It is not a six-percent annual interest rate and not a universal penalty for every tax breach. Section 134(2) preserves interest in addition. Historical liabilities, effective application and any overriding order or remission must be checked before a calculation. [Act 10](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=); [section 134](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-134).
 
 Section 115 separately ties interest to the prevailing prime rate with different uplifts for advance instalments and remainder tax, subject to ministerial orders. This draft has not established the operative order and prime-rate history, so it supplies no current numeric interest calculation. Filing an extension application is not proof that interest or penalties were waived. [Section 115](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-115).
+
+## Disputed assessments and payment suspension
+
+A written objection to the Comptroller must specify its grounds and be made **within 30 days of service** of the assessment or determination, unless the Comptroller allows more time for good cause. Section 106 covers disputes about income inclusions, deductions, assessed losses, tax credits and certain liability determinations. An additional or reduced assessment does not reopen every historic issue: further objection rights are limited to fresh liability. [Section 106](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-106).
+
+The Comptroller must notify the objection decision in writing; an assessment can increase as well as decrease. An appeal goes in writing to the **Secretary to the Appeal Commissioners**, with a copy to the Comptroller, within **30 days of service** of the decision or other appealable determination. The Commissioners can allow further time for good cause. [Section 107](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-107); [section 109](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-109).
+
+Section 112 suspends the payment obligation for assessed tax and the specified assessment-related penalties/interest when an objection or appeal against the assessment is notified, pending determination. **Undisputed tax remains enforceable.** The Comptroller can require payment of up to **50% of the disputed tax pending the appeal**; if the Commissioners allow the appeal, that payment is refundable. This is not a blanket right to stop all payments, nor a statement that interest ceases accruing. Do not infer that a dispute over one assessment suspends unrelated advance instalments or withholding remittances. [Section 112](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-112).
+
+Retain the assessment and service evidence, written grounds, lodging receipts, decision, disputed/undisputed breakdown, any payment demand and refund outcome. This income-tax provision must not be assumed to govern property-tax disputes under a different Act.
 
 ## Remaining checks
 

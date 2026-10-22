@@ -7,3 +7,7 @@ Section 113 fixed March/June/September instalment dates, previous chargeable-inc
 ## Records, accounts and principal officer
 
 Read sections 90–92 directly and archived HTML hashes. Section 90 English records, business location unless Comptroller approval, six years from income-year end plus written extension, shorter period only approved on application. No cloud-location or digital-original disposal permission invented. Section 91 requires final accounts and tax reconciliation and differentiates audited and externally prepared unaudited certification; no blanket audit exemption inferred. Section 92 local-resident principal officer, one month new-business appointment/notification, 15 days changes; liquidator succession and default liability noted. Historic commencement grace period omitted from new-business workflow. Later-amendment and company-law audit interaction remain checks, not attested coverage.
+
+## Income-tax dispute payment rules
+
+Read sections 106, 107, 109, 112. Objection/appeal notices have separate recipient and 30-day service triggers; fresh liability restriction preserved. Section 112 payment suspension expressly concerns assessment and specified penalties/interest; undisputed amount enforceable, up to 50% disputed tax can be required pending appeal, refund if Commissioners allow. No assertion that interest stops accruing, no automatic extension to unrelated instalments/withholding, and no transplant to property tax. Later amendments and court stages remain unverified.
