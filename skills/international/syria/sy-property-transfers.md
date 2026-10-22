@@ -31,7 +31,7 @@ sources:
 
 ## Evidence and limits
 
-The [full original Law 15/2021](https://archive.sana.sy/?p=1347631) is available from SANA's official archive. It took effect on 3 May 2021 (article 21); transactions with an established date before commencement are excluded by article 17. This Guide distinguishes that statutory baseline from later administrative reports. It is not a verified consolidation of every measure effective in October 2026.
+The [full original Law 15/2021](https://archive.sana.sy/?p=1347631) is available from SANA's official archive. It took effect on 3 May 2021 (article 21); property sales with an established date before commencement are excluded by article 17. This Guide distinguishes that statutory baseline from later administrative reports. It is not a verified consolidation of every measure effective in October 2026.
 
 The Ministry's [9 April 2026 meeting report](https://sana.sy/economy/2446227/) describes property-tax amendments still to be issued. It does not enact a replacement. Confirm subsequent instruments and the competent local administration before relying on a live assessment. Rental income, inheritance outside the provisions described below, registration fees, stamp duty and complete local additions remain outside this draft.
 
@@ -69,7 +69,7 @@ Article 9 requires a written sale/gift declaration on the finance-office form wi
 
 Article 13 requires financial clearance before registration/documentation of property rights. Its court-payment document for a disputed transaction is expressly **not** the final financial clearance needed to execute the judgment. The article separately provides a reimbursement route when a claim is dismissed or struck off, using a certified final judgment; do not confuse that with the 2025 mutual-abandonment procedure.
 
-Article 11 allows an objection within **30 days following notification of the collection order**, conditional on prior payment of the tax and additions in full and a **1% security deposit on imposed tax**. The deposit is returned for a wholly or partly justified objection and otherwise becomes treasury revenue. Article 12 separates classification objections from valuation review. Its committee consideration period does not create automatic acceptance or promise a refund within 30 days of filing. Refunds under that article go to the taxpayer's bank account, with its stated alternative for settling another tax liability. [Law 15/2021, articles 9, 11–13](https://archive.sana.sy/?p=1347631).
+Article 11 allows an objection within **30 days following notification of the collection order**, conditional on prior payment of the tax, additions and supplements in full and a **1% security deposit on imposed tax**. The deposit is returned for a wholly or partly justified objection and otherwise becomes treasury revenue. Article 12 separates classification objections from valuation review. Its committee consideration period does not create automatic acceptance or promise a refund within 30 days of filing. Refunds under that article go to the taxpayer's bank account, with its stated alternative for settling another tax liability. [Law 15/2021, articles 9, 11–13](https://archive.sana.sy/?p=1347631).
 
 As a working control, retain the property record, financial classification, adopted valuation, precise right transferred, transaction date, parties' relationship where relevant, declaration, assessment, payments, clearance and objection/cancellation evidence. This is a recommended evidence file, not a verified statutory retention period.
 

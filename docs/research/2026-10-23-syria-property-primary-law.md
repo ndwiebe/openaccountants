@@ -4,7 +4,7 @@ Research checkpoint on 23 October 2026. No property Guide or accepted property c
 
 ## Recovered original law
 
-The historical presidency channel links [SANA's original Law 15/2021 text](https://www.sana.sy/?p=1347631), which resolves successfully to [the official archive](https://archive.sana.sy/?p=1347631). The entire law, articles 1–21, was retrieved and read. Do not confuse it with unrelated Law 15/2024 on consumption tax. Article 21 sets commencement at 3 May 2021; article 17 excludes transactions with an established date before commencement.
+The historical presidency channel links [SANA's original Law 15/2021 text](https://www.sana.sy/?p=1347631), which resolves successfully to [the official archive](https://archive.sana.sy/?p=1347631). The entire law, articles 1–21, was retrieved and read. Do not confuse it with unrelated Law 15/2024 on consumption tax. Article 21 sets commencement at 3 May 2021; article 17 excludes property sales with an established date before commencement.
 
 Drafting locators:
 
@@ -15,7 +15,7 @@ Drafting locators:
 - Article 8: listed additions included, but local-administration addition excluded. A headline article 5 rate is not necessarily total payable.
 - Article 9: written declaration within 30 days of sale/gift event; payment within 30 days of declaration. Non-declaration penalty 10% of tax; delayed payment cross-refers to Decree 146/1968, not an invented flat penalty.
 - Article 10: enumerated exemptions and preserved statutory charity exemptions; articles 14–15 exclude economic public entities and licensed development-project company sales from this regime, leaving income-tax law applicable.
-- Articles 11–12: objection within 30 days after notice of collection order; full prior tax/additions payment and 1% security; classification/value procedures and bank-account refund mechanics. Committee consideration period does not mean automatic acceptance.
+- Articles 11–12: objection within 30 days after notice of collection order; full prior tax/additions/supplements payment and 1% security; classification/value procedures and bank-account refund mechanics. Committee consideration period does not mean automatic acceptance.
 - Article 13: financial clearance before registration; court payment document is expressly not final execution clearance. Court dismissal/striking-off has a separate reimbursement route.
 - Article 16: historical residential/non-residential rental rules, minimums and filing. Do not publish as current until proposed/actual rental changes reconciled.
 - Articles 19–21: repeals, executive-instruction power and commencement.
