@@ -26,5 +26,26 @@
     "as_of": "2026-10-22",
     "sha256": "bc4a6c728feafbd63d172115e6e6ef6c98b47324215a79d9e1c2c84ff252a2f8",
     "locators": "Printed pp63\u201365: budget propositions12 and13 individually carried"
+  },
+  {
+    "title": "Greffier registration and collection",
+    "url": "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds",
+    "as_of": "2026-10-22",
+    "locators": "Introduction and Registry duties",
+    "sha256": "3a5dd7a14d916a9b1bb389f532870e17dbc1cf9ce0de92ef6eba339af8c8e579"
+  },
+  {
+    "title": "Conveyances",
+    "url": "https://www.guernseyroyalcourt.gg/article/1919/Conveyances",
+    "as_of": "2026-10-22",
+    "locators": "Advocate and Contracts Court paragraph",
+    "sha256": "80300314e74cb5102808d276327554a8048a81779080df322cde2d12c7783fe7"
+  },
+  {
+    "title": "Contracts Court",
+    "url": "https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court",
+    "as_of": "2026-10-22",
+    "locators": "Witnessing and prior-to-registration sequence",
+    "sha256": "56c9b102c6427a5e4bd7139846477d77c034584ef621d4d97391690078d4bcdc"
   }
 ]

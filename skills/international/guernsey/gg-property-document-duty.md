@@ -7,9 +7,18 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds"
+    title: "HM Greffier: registration, duty assessment and collection"
+    as_of: "2026-10-22"
+  - url: "https://www.guernseyroyalcourt.gg/article/1919/Conveyances"
+    title: "Advocate preparation and presentation of conveyances"
+    as_of: "2026-10-22"
+  - url: "https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court"
+    title: "Contracts Court witnessing and registration sequence"
+    as_of: "2026-10-22"
   - url: "https://www.guernseyroyalcourt.gg/article/1921/Document-Duty"
     title: "Royal Court document-duty overview"
     as_of: "2026-10-22"
@@ -24,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey property document duty v0.1
+# Guernsey property document duty v0.2
 
 > **Source-cited draft.** Independent source review and professional attestation are pending. This is a working-paper calculation, not authority to complete a conveyance or make payment.
 
@@ -132,9 +141,35 @@ expected:
   above_boundary_duty: 13754
 ```
 
+## Direct conveyance: authority and completion evidence
+
+**HM Greffier** registers property transactions, assesses document duty and collects it as agent for the States. The Registry also collects applicable Court fees; these are separate from the duty bands above. Route assessment and collection questions through the Greffe/transaction advocate rather than assuming the income-tax return process applies. [Royal Court, Conveyances and Bonds](https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds).
+
+The Court describes a conveyance as a deed transferring land title. It must be prepared by an **Advocate** and presented in the Contracts Court; the published ordinary schedule is Tuesday or Thursday morning. Confirm the actual sitting and representation arrangements with the advocate. The page does not establish an unconditional right to complete on either day or settle power-of-attorney requirements. [Royal Court, Conveyances](https://www.guernseyroyalcourt.gg/article/1919/Conveyances).
+
+The Contracts Court witnesses conveyances, real-property agreements and bonds before public registration. Each document is witnessed by the presiding Lieutenant-Bailiff and two Jurats. A calculated duty amount alone therefore does not prove that the deed has been witnessed or registered. [Contracts Court procedure](https://www.guernseyroyalcourt.gg/article/3186/The-Contracts-Court).
+
+Suggested completion file:
+
+| Evidence | Purpose |
+|---|---|
+| Advocate-prepared deed, parties and representation instructions | Identify the actual conveyance and authorised participants |
+| Chargeable-value reconciliation and duty calculation | Explain the amount submitted for assessment |
+| Duty and Court-fee entries separately reconciled to receipts | Avoid describing all completion costs as tax |
+| Witnessed deed and registration confirmation | Establish completion of the Court/Registry stages |
+| Relief decision or claim correspondence | Distinguish eligibility asserted, accepted and money actually repaid |
+
+This is a recommended evidence file, not a prescribed filing form. The sources establish the institutional process; they do not establish every submission cut-off, payer obligation, payment method or penalty.
+
+## Property-company transaction: separate review route
+
+The Budget's anti-avoidance-duty explanation expressly includes indirect transfers through property-company shares. Obtain the share transaction documents and underlying property/ownership details before deciding which regime applies. Do not treat unchanged registered land title as proof of no duty. [2026 Budget, glossary: Anti-Avoidance Duty](https://parliament.gg/parliamentary-business/assets/propositions/P2025-121).
+
+The sources verified for this draft do **not** establish the complete indirect-transfer definition, exemption conditions, valuation formula, persons liable or self-assessment deadline. Those are required legal inputs, not optional assumptions. The ordinary conveyance examples must not be presented as share-transfer assessments. In particular, an agreed share price, net of company borrowing, is not established here to be the statutory duty base. Preserve property valuation and debt details for the separate analysis without mechanically deducting debt.
+
 ## Filing, payment, penalties and exclusions
 
-Before completion obtain the current registration and payment instructions, responsible payer, prescribed documents, relief application requirements and any penalty/appeal provisions. These have not yet been verified. Do not import corporate income-tax deadlines or penalties into document duty.
+The authority and Court/registration sequence above are verified from Court guidance. Before completion still obtain the detailed submission and payment instructions, responsible payer, prescribed declarations, relief application requirements and any penalty/appeal provisions. Those details have not yet been verified. Do not import corporate income-tax deadlines or penalties into document duty.
 
 A property-company share transaction requires the separate anti-avoidance regime: repeal of its additional-rate provision does not repeal its charging law. Gifts, inheritances, trusts, group transfers, partial interests and exemptions need their own statutory analysis. This Guide also excludes annual property taxes, rental income tax, capital-gains treatment and conveyancing/title advice. Their absence here is not evidence of an exemption.
 
