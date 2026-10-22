@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: 0.8
 verified_by: pending
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
@@ -23,14 +23,14 @@ sources:
     title: "Rates of Tax Rules 1989, rules 2–3C; 1 July 2024 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
-    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 24–24A and 29; 23 March 2026 consolidation"
+    title: "Income Tax (Allowances, Deductions and Exemptions) Rules 1992, rules 6–6C, 16B–16F, 20A–20B, 24–24A and 29; 23 March 2026 consolidation"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Income Tax Act 2010, sections 28, 39, 64–65 and 74; Schedule 1; 23 March 2026 consolidation"
     as_of: "2026-10-22"
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.7
+# Gibraltar individual income tax: ordinary assessment v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -75,6 +75,34 @@ First establish assessable income under the charging provisions. ABS taxable inc
 Amounts above are those in the 23 March 2026 consolidation, checked for 2026/27; [Allowances Rules, rules 6, 6A, 6C, 16B, 16C and 24A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). Rule 6A excludes its listed ABS deductions for a GIBS elector. Rule 6B separately restricts deductions where a spouse/civil partner elects GIBS, with specific historic-claim and insurance/pension exceptions and restrictions against duplicate spouse claims. Obtain both partners' elections and claim history before calculating either person's allowance entitlement; do not automatically add two personal allowances.
 
 For a full-year eligible ABS individual whose only other deduction is £3,455, the rule 16C top-up is £4,343 − £3,455 = **£888**, giving total deductions £4,343. If eligible other deductions already total £5,000, there is no top-up. Both examples assume no rule 6B restriction and no other adjustment; they are not final tax assessments.
+
+### Health-insurance deductions and family-policy restrictions
+
+For ABS, rule 20A permits a deduction for premiums or contributions payable during the assessment year to an insurance policy, scheme, society or fund **approved by the Commissioner for this rule**, providing health cover for the individual, spouse/civil partner or dependent children. The aggregate annual ceiling is **£5,395**. Rule 6A excludes this deduction for a GIBS elector; the separate rule 20B instead provides the GIBS health-insurance deduction, capped at **£3,000**, for the specified approved cover. These are deductions in calculating taxable income, not cash refunds or credits of those amounts. [Allowances Rules, rules 6A and 20A–20B, pages 16–17 and 30–31](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Both rules reduce the deduction otherwise allowable by **one twelfth for each complete calendar month of non-residence**. Establish the eligible premium and cap first, then reduce that deduction; do not simply reduce the cap and leave a smaller premium unreduced. For an otherwise allowable £2,400 deduction and three complete non-resident months, the result is **£2,400 × 9/12 = £1,800**. This illustration concerns the deduction alone; the Guide's unresolved partial-year rate-band issue still prevents treating it as a complete part-year tax calculation. [Rules 20A(2) and 20B(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+A spouse's or civil partner's GIBS election also requires checking rule 6B before claiming ABS health relief. Rule 6B(1) includes rule 20A in its restrictions; subsection (2) preserves specified claims for 2006/07 made and submitted by 30 June 2007. The separate exception in subsection (3) requires an otherwise eligible policy **held solely in the claimant's name and covering only that claimant**, plus the stated absence of a historic rule 20A claim by either partner in the manner described in subsection (2). A family policy is not within that self-only exception merely because one partner pays it. Retain both partners' elections, historic claims, policy ownership and covered-person details. [Rule 6B(1)–(3), pages 17–18](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+**Boundary examples:** assuming full-year eligibility and no spouse restriction, £6,000 of qualifying premiums reaches the ABS ceiling of £5,395. Separately, assume a GIBS individual's otherwise eligible health-insurance deduction is £3,000; three complete non-resident months reduce it to £2,250. These examples do not add ABS and GIBS deductions together. Keep the approval evidence, premium schedule, covered persons, residence calendar and rule 29 claim/supporting documents. The live claim channel and case-specific approval remain to be confirmed.
+
+```oa-check
+name: Health insurance deduction cap and non-resident month reduction
+inputs:
+  eligible_abs_premiums: 6000
+  abs_cap: 5395
+  otherwise_eligible_gibs_deduction: 3000
+  smaller_eligible_deduction: 2400
+  complete_nonresident_months: 3
+steps:
+  - full_year_abs: min(eligible_abs_premiums, abs_cap)
+  - part_year_gibs: otherwise_eligible_gibs_deduction * (12 - complete_nonresident_months) / 12
+  - part_year_smaller_deduction: smaller_eligible_deduction * (12 - complete_nonresident_months) / 12
+expected:
+  full_year_abs: 5395
+  part_year_gibs: 2250
+  part_year_smaller_deduction: 1800
+```
 
 ### Low-income exemption and taper relief
 
