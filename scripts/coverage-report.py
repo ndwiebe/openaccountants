@@ -2,7 +2,8 @@
 """
 Coverage report: how far each jurisdiction is from a complete pack.
 
-Reads the skill tree through build-index.py (in memory, so it never lags the
+Tax packs only (GOAL.md, 22 Oct 2026): a jurisdiction is complete when every
+applicable tax domain is present. Reads the skill tree through build-index.py (in memory, so it never lags the
 committed index.json), groups guides by jurisdiction code, and says for each
 real jurisdiction which taxonomy domains are present and which are missing.
 Pseudo-codes (GLOBAL, INTL, EU variants, templates) are reported separately
@@ -40,20 +41,20 @@ PSEUDO_CODES = {"NONE", "GENERAL", "GLOBAL", "INTL", "EU", "EU-27", "EU/EEA/CH/U
 # covering one: by category, or by tokens in its slug. Category is empty on
 # most guides, so the slug tokens do most of the work.
 DOMAINS = [
-    ("TAX-VAT", "VAT / GST / sales tax", {"vat", "gst", "sales-tax", "consumption"}, set()),
-    ("TAX-IT", "Income tax (individual and corporate)",
-     {"income-tax", "corporate", "corporation", "company-tax", "individual", "pit", "cit", "return", "capital-gain", "capital-gains"},
+    ("IT-IND", "Individual income tax",
+     {"income-tax", "individual", "personal", "pit", "self-employed", "freelance", "capital-gain", "capital-gains", "return"},
      {"federal-tax", "state"}),
-    ("TAX-SC", "Social contributions", {"social", "ssc", "contribution", "contributions", "nic", "superannuation", "super"}, set()),
-    ("BK", "Bookkeeping", {"bookkeeping"}, {"bookkeeping"}),
-    ("EI", "E-invoicing", {"invoicing", "e-invoicing", "einvoicing", "invoice"}, {"invoicing"}),
-    ("PR", "Payroll", {"payroll", "paye", "withholding"}, {"payroll"}),
-    ("CF", "Company formation", {"formation", "incorporation", "registration", "setup"}, {"formation"}),
-    ("FS", "Financial statements", {"financial-statements", "annual-accounts", "financial-reporting", "accounts"},
-     {"financial-statements", "financial-reporting"}),
+    ("IT-CORP", "Corporate income tax",
+     {"corporate", "corporation", "company-tax", "cit", "corporate-tax", "corporate-income"}, set()),
+    ("VAT", "VAT / GST / sales tax", {"vat", "gst", "sales-tax", "consumption"}, set()),
+    ("SC", "Social contributions", {"social", "ssc", "contribution", "contributions", "nic", "superannuation", "super"}, set()),
+    ("PR", "Payroll withholding", {"payroll", "paye", "withholding"}, {"payroll"}),
     ("TP", "Transfer pricing", {"transfer-pricing"}, {"transfer-pricing"}),
-    ("TO", "Tax optimisation", {"tax-optimization", "tax-optimisation", "optimization", "optimisation"}, {"tax-optimization"}),
+    ("XB", "Cross-border (exit, treaties, non-residents)",
+     {"exit", "departure", "treaty", "treaties", "non-resident", "nonresident", "expat", "leaving", "cross-border", "relocation"},
+     {"cross-border"}),
 ]
+# Later milestone, not counted as missing: BK bookkeeping, EI e-invoicing, FS financial statements, TO tax optimisation.
 DOMAIN_CODES = [d[0] for d in DOMAINS]
 
 STALE_DAYS = 365
@@ -86,19 +87,29 @@ def domains_of(guide):
 
 
 def read_pack_readme(pack_dir):
-    """Return (applicable, not_applicable) from a pack README frontmatter, or (None, {})."""
+    """Return (applicable, not_applicable, covered_by) from a pack README frontmatter.
+
+    covered_by maps a domain code to the slug that covers it when the slug
+    tokens would not say so (for example IT-CORP: mt-company-tax)."""
     if not pack_dir:
-        return None, {}
+        return None, {}, {}
     path = os.path.join(REPO_ROOT, pack_dir, "README.md")
     if not os.path.isfile(path):
-        return None, {}
+        return None, {}, {}
     with open(path, encoding="utf-8", errors="replace") as fh:
         text = fh.read()
     if not text.startswith("---"):
-        return None, {}
+        return None, {}, {}
     block = text.split("---", 2)[1] if text.count("---") >= 2 else ""
     applicable = None
     not_applicable = {}
+    covered_by = {}
+    m = re.search(r"^covered_by:\s*\n((?:[ \t]+.*\n?)+)", block, re.MULTILINE)
+    if m:
+        for line in m.group(1).splitlines():
+            km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
+            if km:
+                covered_by[km.group(1)] = km.group(2).strip().strip("'\"")
     m = re.search(r"^applicable:\s*\[([^\]]*)\]", block, re.MULTILINE)
     if m:
         applicable = [x.strip().strip("'\"") for x in m.group(1).split(",") if x.strip()]
@@ -108,7 +119,7 @@ def read_pack_readme(pack_dir):
             km = re.match(r"\s*([A-Z-]+):\s*(.*)", line)
             if km:
                 not_applicable[km.group(1)] = km.group(2).strip().strip("'\"")
-    return applicable, not_applicable
+    return applicable, not_applicable, covered_by
 
 
 def is_stale(guide, today):
@@ -145,7 +156,9 @@ def build_report(today=None):
         present = set()
         for g in guides:
             present |= domains_of(g)
-        applicable, not_applicable = read_pack_readme(pack_dir)
+        applicable, not_applicable, covered_by = read_pack_readme(pack_dir)
+        slugs = {g["slug"] for g in guides}
+        present |= {code for code, slug in covered_by.items() if slug in slugs}
         required = set(applicable) if applicable is not None else set(DOMAIN_CODES)
         required -= set(not_applicable)
         missing = sorted(required - present, key=DOMAIN_CODES.index)
