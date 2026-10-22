@@ -19,9 +19,19 @@ Do not publish a 2026 income-tax rate schedule from the proposed reform. The sou
 
 - Original SANA Decree30/2023 locator: https://sana.sy/?p=1955388 . Browser fetch timed out; separate bounded curl followed a redirect but timed out with no body. No full decree text verified from this URL.
 - State-newspaper archive: https://archive.thawra.sy/?p=490223 . Returned403. Search excerpts cannot substitute for complete provisions.
-- Customs-hosted page: https://syrianborders.org/المرسوم-التشريعي-رقم-30-لعام-2023-القاضي-بتع/ . Retrieved page labels the decree and supplies12 images; links initially returned300x251 thumbnails. Full-resolution text still needs inspection before claiming provision-level verification. The page identifies Customs supervision but a legacy/test-site title; authenticate against gazette or current official source where possible.
+- Customs-hosted page: https://syrianborders.org/المرسوم-التشريعي-رقم-30-لعام-2023-القاضي-بتع/ . Retrieved page labels the decree and supplies12 images; links initially returned300x251 thumbnails. Browser inspection subsequently established that the displayed images are presidential summary graphics, not full decree pages. The visible graphics describe selected rate/exemption changes only. Do not treat this gallery as recovered legislation. The page identifies Customs supervision but a legacy/test-site title; authenticate against gazette or current official source where possible.
 - Secondary reproductions and bank accounts found during discovery are leads, not an accepted current statutory rate source. Conflicting search references to decree15 versus30 are not reconciled by guessing.
 
 ## Next work
 
 Recover legible full Decree30/2023 and base Law24/2003 plus amendments; verify applicability by taxpayer class, deductions, rates, losses and filing obligations. Trace2025–2026 measures and actual gazette enactment before using proposed reform. Resolve payroll allowance and salary-rate interaction separately, accounting for denomination. Preserve source dates and article locators. A lack of search results does not prove absence of later legislation.
+
+## Follow-up source recovery and next route
+
+Browser inspection on 22 October loaded the customs page after its automatic loading screen. The first visible gallery panel contains three summary graphics: decree title, payroll-rate summary and exemption linkage. This corrects the earlier assumption that the gallery might contain decree scans. No full text was recovered.
+
+[Minister statement on the 2026 economy](https://sana.sy/en/economic/2335584/) describes the new tax framework as ready to present to the People's Assembly, with hoped-for commencement at the start of 2027. This reinforces the decision not to treat the proposed reform as operative; it does not itself prove the entire existing amendment chain.
+
+A more concrete consumption-tax lead was found: [Ministry announcement of updated executive instructions, 1 July 2026](https://sana.sy/economy/2515968/), expressly naming Consumption Expenditure Decree 11/2015 as amended by Law 15/2024. The ministry states the instructions clarify existing legislation rather than impose a new tax. Next retrieve those instruments and instructions. Do not substitute the proposed sales-tax regime for this named legislative baseline.
+
+No additional Guide or accepted tax-domain coverage resulted from this pass. Existing currency Guide remains the only Syria Guide.
