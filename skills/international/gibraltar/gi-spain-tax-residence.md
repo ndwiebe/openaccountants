@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf"
@@ -69,7 +69,7 @@ For the Gibraltar-connected legal persons, entities and arrangements described i
 
 ### Historical exception: narrow and cumulative
 
-Paragraph (b) disapplies **only management and control triggers (iii)/(iv)** for qualifying entities incorporated before **16 November 2018** satisfying its historical conditions at **31 December 2018**. It does not disapply the Spanish-asset or Spanish-income triggers. All the following need evidence:
+Paragraph (b) disapplies **only management and control triggers (iii)/(iv)** for qualifying entities incorporated before **16 November 2018** for which trigger (iii) or (iv) was met at **31 December 2018**, and which satisfied the other historical conditions at that date. It does not disapply the Spanish-asset or Spanish-income triggers. All the following need evidence:
 
 1. A fixed Gibraltar business place with adequate qualified employees and operating expenditure for its income-generating activities.
 2. Actual Gibraltar corporation-tax liability and payment at the applicable prevailing rate. The treaty's parenthetical 10%/20% is historical text, not the current general corporate rate schedule.

@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf"
+    title: "HM Customs Goods Transit Process, sections 2 and 4.2"
+    as_of: "2026-10-22"
   - url: "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009"
     title: "Council treaty register: provisional application from 15 July 2026"
     as_of: "2026-10-22"
@@ -21,7 +24,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar goods transaction-tax transition v0.6
+# Gibraltar goods transaction-tax transition v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -130,6 +133,16 @@ For commercial exports to the EU, section 102 requires proof satisfactory to the
 ## Working-paper procedure
 
 Record the goods, liable person, date/event, customs procedure and supporting documents. Establish exemption or rate classification; reconcile the valuation components; compute tax; match the declaration and payment evidence. Keep any export-refund claim and income-tax transition relief separate. Review bonded stock and other transitional procedures before using these rules for pre-commencement stock.
+
+## Published customs declaration route
+
+HM Customs' [Goods Transit Process, sections 2 and 4.2](https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf) describes these operational steps:
+
+- For home-use arrivals, present goods to Customs for NCTS arrival confirmation and controls, then submit an **IM4** in ASYCUDA, linking the consignment's movement reference number (MRN).
+- Clearance produces an assessment; transaction tax is payable before release. The note permits up to **30 days' deferral in some cases** where goods are not immediately marketed, notably transit-shed stock. This is not a general payment extension.
+- For exports of goods already marketed with transaction tax paid, section 4.2 calls for **EX1**, the original import invoice/MRN, and the relevant NCTS transit declaration. Spanish arrival confirmation supports proof of export.
+
+That guidance does not replace section 102's destination-tax and export conditions. Section 4.2 retains a reference to “Section 6 (iv) (A) to (D)” that does not match this note's headings; the destination-treatment cross-reference needs clarification. No live declaration, deferment approval or refund claim has been tested. Retain the assessment, payment/release evidence and linked movement records.
 
 ## Transitional goods: distinguish movement, certificates and storage
 
