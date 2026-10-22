@@ -20,11 +20,21 @@
       "url": "https://www.cipo.gov.dm/businesses-and-companies/companies/",
       "bytes": 15296,
       "sha256": "aeefb92bc0e0c3065277184895e95e5db7f910105bd8c5b93fcd28ea3a1dcd7c"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-act.pdf",
+      "bytes": 326951,
+      "sha256": "13bc7b7a63a85aea85d3ae88cb56e38176841b419096778dc7b1ed2feacf1a7a"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-name-registration.pdf",
+      "bytes": 776670,
+      "sha256": "742cb75fd8edfb717b967ea1708bf9f6886fb2532647c11a40a32707bfabe119"
     }
   ],
   "review_status": "independent review pending",
   "gaps": [
-    "Base Act and full amendment reconciliation",
+    "Full later business-name amendment reconciliation; base Act and 2001 annual duties now read",
     "Corporate eligibility, annual returns and beneficial ownership",
     "Current Form 9A and online submission completion",
     "Fees and sector permissions"
@@ -32,6 +42,7 @@
   "access_notes": [
     "Old images/forms URLs returned 404; current forms/bnc Form 1 resolved",
     "Form 9A returned 502 in web fetch; not substantively inspected",
-    "Act 4 of 2008 text extraction incomplete; no operative definition inferred"
+    "Act 4 of 2008 text extraction incomplete; no operative definition inferred",
+    "Base Act scanned: OCR checked against rendered pages 7 and 10; 2001 amendment page 2 visually checked. Current CIPO fee page returned 502; current amounts not certified."
   ]
 }
