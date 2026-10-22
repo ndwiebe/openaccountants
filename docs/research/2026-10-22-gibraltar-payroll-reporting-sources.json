@@ -8,6 +8,12 @@
     {
       "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf",
       "locators": "Pages7\u201311 identity/classes and split entries;13\u201314 payment reconciliation;16XML submission;17nil return"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf",
+      "sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
+      "locators": "Regulations2\u20138 pages3\u20136;11page7;13\u201313Apage9;16\u201317pages10\u201311",
+      "version_check": "Official parent page labels1July2023 current on22October2026"
     }
   ]
 }

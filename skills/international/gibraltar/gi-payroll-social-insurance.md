@@ -7,9 +7,12 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf"
+    title: "Income Tax (Pay As You Earn) Regulations 1989: 1 July 2023 consolidation"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers"
     title: "Income Tax Office: employer registration and obligations"
     as_of: "2026-10-22"
@@ -21,7 +24,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.2
+# Gibraltar payroll and social insurance v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -49,6 +52,37 @@ Reconcile tax deducted and both SI components to actual remittances, not amounts
 
 The completed declaration generates an XML file for submission through tax.egov.gi. Saving the workbook alone does not submit the return. Retain the submitted file and receipt. [P8 guidance, page 16](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf). Screenshots contain older year labels; use the explicit 2025/26 period and verify the selected filing year before submission.
 
+## PAYE deduction and certificate rules
+
+The PAYE Regulations define emoluments to include office/employment income, pensions, cash gratuities and benefits in kind. Payment includes credit to an account on which the employee can draw. Regulation 3 requires withholding even without an assessment and even where the payment relates to another assessment year. Do not postpone withholding solely because a bonus relates to earlier service. [Regulations 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+Regulation 8(1) uses gross emoluments, the employee's code and the official table on each payday. **If neither the required allowances certificate nor the applicable leaver certificate has been lodged, regulation 8(2) requires code X.** Do not substitute a guessed personal allowance or zero withholding while awaiting a code. Regulation 8(3) adds the proportionate money value of benefits to gross emoluments; valuation and exemptions require separate evidence. A Commissioner direction under 8(4) can specify a different deduction. An agreement not to deduct cannot override the duty. [Regulations 6, 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+For an employee taking employment without either relevant certificate, regulation 4(1) requires an allowances declaration within seven days. A change affecting allowances must be declared within 30 days under 4(5). Part II is lodged with the higher-paying employer if there are multiple employers; where the employee receives a pension, the pension payer receives it unless the Commissioner directs otherwise. Do not apply the same allowances independently to every job. [Regulations 4–5](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+On cessation, the employer must furnish the leaver certificate and send part 1 to the Commissioner immediately on cessation. The new employer can use the certificate's code pending the allowances certificate and must send part 3 immediately after engagement where parts 2 and 3 were lodged. Regulation 13 separately requires the annual certificate within one month after year-end for employees employed on 30 June from whose emoluments tax was deducted. [Regulations 13–13A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+## Monthly PAYE reporting, payment and default
+
+Regulation 11(1) requires reporting on the appropriate form and payment to the Treasury on or before the 15th of every month. It refers to amounts deducted during preceding months; maintain a period-by-period reconciliation so unpaid earlier deductions are not lost. An employer who wilfully or without reasonable excuse failed to deduct remains liable as if the deduction had been made. [Regulation 11(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+Regulation 11(3) permits the Commissioner, at discretion, to increase late-paid PAYE by **2% for each month of delay, compounded**. This is not an automatic flat 2% penalty, and these PAYE regulations do not establish the SI penalty. Assuming the discretion is exercised and two monthly increments apply to £1,000 with no intervening payment, the amount is **£1,000 × 1.02 × 1.02 = £1,040.40**, including £40.40 penalty. Confirm the actual delay periods, payments and determination before applying the example. Interaction with general Income Tax Act surcharge provisions remains unverified; do not stack penalties without resolving it. [Regulation 11(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+## Payroll records and late production/P8 penalties
+
+Regulation 17 requires production, when called for, of wage sheets and records relating to remuneration calculations/payments, deductions and accounting for deducted tax. Keep the notice and its specified date alongside the records. Regulation 17(2)–(2B) applies the following amounts for missing the specified production or P8 date, based on **average employees in the preceding assessment year**:
+
+| Employer size | Next day after specified date | Additional if failure continues after 30 days | Combined amount at that stage |
+|---|---:|---:|---:|
+| Below 10 | £50 | £250 | £300 |
+| 10 to below 50 | £100 | £500 | £600 |
+| 50 to below 250 | £250 | £1,250 | £1,500 |
+| 250 or more | £500 | £2,500 | £3,000 |
+
+Exactly 10 enters the second row; exactly 50 the third; exactly 250 the fourth. Use the preceding-year average, not today's payroll headcount. These administrative amounts are distinct from regulation 19 offences and from payment penalties. The Commissioner has a discretionary power to extend time limits under regulation 16; a requested extension is not an approved extension. [Regulations 16–17](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+This section does not establish the averaging method for unusual staffing histories, applicable standard-scale criminal fine values, or all penalty interactions. Record those as case-specific review questions rather than substituting company-size thresholds from the corporation-tax return rules.
+
 ## Monthly ordinary contribution table
 
 For the ordinary earnings-related class, the published schedule effective **1 July 2026** gives:
@@ -75,7 +109,7 @@ For the ordinary earnings-related class, the published schedule effective **1 Ju
 
 A detached-worker exemption needs the relevant coverage evidence. A pensioner, trainee, second job or self-employed worker needs the appropriate class. Refer to the complete schedule and the ITO's [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance).
 
-The annual P8 controls above do not resolve PAYE table selection, cumulative adjustments, corrections after submission or statutory penalties. No live return was submitted or tested. This draft does not calculate minimum wages, leave, redundancy, pension contributions or benefit-in-kind valuation. Preserve those as separate review lines rather than representing gross-plus-SI as total employer cost.
+The annual P8 controls above do not resolve PAYE table selection, cumulative adjustments, corrections after submission or all statutory penalty interactions. Selected PAYE penalties are sourced above. No live return was submitted or tested. This draft does not calculate minimum wages, leave, redundancy, pension contributions or benefit-in-kind valuation. Preserve those as separate review lines rather than representing gross-plus-SI as total employer cost.
 
 ## Self-checks and output
 
