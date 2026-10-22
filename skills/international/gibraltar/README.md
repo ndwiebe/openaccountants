@@ -25,7 +25,7 @@ The seven tax domains in current GOAL.md remain in scope. No domain has a review
 | EI | [Invoices and procurement e-invoicing](gi-einvoice.md) | Covered procurement receipt/processing law and core fields drafted; verify current procurement eligibility, standard/syntax versions, endpoints, general B2B/B2C scope and retention |
 | PR | [Payroll and social insurance](gi-payroll-social-insurance.md) | PAYE working examples, benefits in kind, starters/leavers, special cases and employment-cost boundaries |
 | CF | [Company formation](gi-company-formation.md) | Beneficial ownership, permissions, alternative entities and unresolved statutory cross-reference |
-| FS | [Accounts and reporting](gi-company-accounts-and-reporting.md) | Audit-exemption cross-reference, disclosure schedules, groups and specialised entities |
+| FS | [Accounts and reporting](gi-company-accounts-and-reporting.md) | Group consolidation duty, size tests and exemption conditions now drafted; audit-exemption cross-reference, complete disclosure schedules, regulated-entity successor provisions and case-specific group evidence remain open |
 | TP | [Connected-party pricing and interest](gi-connected-party-pricing-and-interest.md) | Remaining anti-avoidance/interest restrictions, documentation/reporting and cross-border application |
 | TO | [Training, planning and start-up reliefs](gi-training-planning-and-startup-reliefs.md), company loss/allowance sections | Remaining reliefs, elections, operational claims and interaction questions; historical relief windows must stay distinct from current eligibility |
 

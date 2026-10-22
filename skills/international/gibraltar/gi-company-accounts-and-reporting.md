@@ -1,13 +1,13 @@
 ---
 name: gi-company-accounts-and-reporting
 description: >
-  Gibraltar private mainstream company accounts and reporting reference covering books, accounting frameworks, company size, audit conditions, signed filings, annual returns and late filing charges. Includes two-of-three classification and tax audit boundary examples. Checked against the Companies Act consolidation dated August 2025 and Income Tax Act consolidation dated March 2026. Explicitly distinguishes turnover, assessable income and filing deadlines, with a stale audit-exemption cross-reference identified for legal review. This research draft is not accountant-attested.
+  Gibraltar private mainstream company accounts and reporting reference covering books, accounting frameworks, company size, audit conditions, signed filings, annual returns, group consolidation and exemption conditions, and late filing charges. Includes two-of-three classification and tax audit boundary examples. Checked against the Companies Act consolidation dated August 2025 and Income Tax Act consolidation dated March 2026. Explicitly distinguishes turnover, assessable income and filing deadlines, with a stale audit-exemption cross-reference identified for legal review. This research draft is not accountant-attested.
 jurisdiction: GI
 category: financial-statements
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106"
@@ -34,7 +34,7 @@ sources:
 
 ## Scope
 
-This Guide addresses ordinary private mainstream companies limited by shares. Section 237 distinguishes mainstream companies from non-profit companies, licensed banks and insurance companies. Public-interest entities are generally excluded from Part VII simplifications by section 237A. Group accounts, regulated entities and non-profit reporting require separate analysis; do not apply the ordinary-company workflow without checking that scope. [Companies Act, sections 237–237A](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+This Guide addresses ordinary private mainstream companies limited by shares. Section 237 distinguishes mainstream companies from non-profit companies, licensed banks and insurance companies. Public-interest entities are generally excluded from Part VII simplifications by section 237A. The group-accounts section below adds consolidation and exemption tests. Regulated entities and non-profit reporting require separate analysis; do not apply the ordinary-company workflow without checking that scope. [Companies Act, sections 237–237A](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
 ## Keep books and select the accounting basis
 
@@ -113,8 +113,61 @@ Two different extension limits apply:
 
 Before implementing a date change, record the old/new periods, earlier extensions, scope of any exception, notice and Registrar response, and recalculate the separate filing and tax calendars. The notice's present form, portal process and any special tax-period consequences require confirmation. Do not presume a company-law date change automatically amends a filed tax return or its payment dates.
 
+## Group accounts: identify control before testing exemptions
+
+A company that is a parent at year-end ordinarily prepares consolidated group accounts **as well as individual accounts**. The parent test includes majority voting rights, membership with board-appointment rights, contractual or constitutional dominant influence, voting agreements, actual control or unified management, and indirect subsidiary relationships. A percentage of nominal shares alone is not a complete control test. Record the group structure, voting arrangements and control rights under section 276 and Schedule 20. [Sections 276 and 281](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+For securities admitted to a regulated market in Gibraltar or the UK, section 281 requires UK-adopted international accounting standards for group accounts. Other parents have the stated Chapter 3/IAS choice; choosing IAS triggers continuing-use rules subject to the specified changes of circumstance. Chapter 3 accounts comprise a consolidated balance sheet and profit-and-loss account, with Schedules 21–22 governing form, content and notes. These group requirements do not replace individual accounts. [Sections 281–284](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+### Small and medium group exemption
+
+Section 292 exempts a qualifying small or medium group only if it is not an **ineligible group**. Its exclusions cover a member with regulated-market securities and the specified banking, insurance and designated public-interest categories. Check every member, not just the Gibraltar parent. For a medium group using the exemption, the auditors must report whether the company is entitled to it. The section retains named financial-services enactments: their successor-law application to a regulated entity requires separate verification. [Section 292](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+Section 293 requires at least **two of three** group conditions, with first-year and subsequent-year continuity rules:
+
+| Group | Turnover ceiling, net / gross | Balance-sheet ceiling, net / gross | Employees ceiling |
+|---|---:|---:|---:|
+| Small | £10.2m / £12.2m | £5.1m / £6.1m | 50 |
+| Medium | £36m / £43.2m | £18m / £21m | 250 |
+
+“Net” here means after consolidation set-offs and adjustments; “gross” means before them. It does not mean turnover before/after VAT. Aggregate each member's relevant figures, using Schedule 9 and the subsidiary-year rules in section 293(6)–(7). The statute allows the relevant turnover and balance-sheet requirements to be satisfied using net or gross figures. Do not calculate every gross threshold by adding 20%: the published table expressly says **£21m**, not £21.6m, for medium-group gross assets. [Section 293, particularly the table on printed page 237](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+**First-year example:** assume an ordinary eligible group, twelve-month figures and correctly identified consolidation adjustments. Parent and subsidiary turnover of £8m and £4m totals £12m gross; £2m intra-group turnover produces £10m net. Gross assets of £6m less £1m consolidation adjustments give £5m net. With 60 employees, the group passes the two financial small-group conditions and fails the employee condition. It therefore meets the first-year size test, subject to eligibility and the other conditions above. An established group also needs the section 293 continuity analysis.
+
+```oa-check
+name: Gibraltar first-year group size aggregation
+inputs:
+  parent_turnover: 8000000
+  subsidiary_turnover: 4000000
+  intra_group_turnover: 2000000
+  gross_assets: 6000000
+  asset_adjustments: 1000000
+steps:
+  - gross_turnover: parent_turnover + subsidiary_turnover
+  - net_turnover: gross_turnover - intra_group_turnover
+  - net_assets: gross_assets - asset_adjustments
+expected:
+  gross_turnover: 12000000
+  net_turnover: 10000000
+  net_assets: 5000000
+```
+
+### Intermediate parents included in larger group accounts
+
+Sections 285–286 provide separate larger-group exemptions. Section 285 concerns an immediate parent established in Gibraltar, the UK or an EEA state; section 286 addresses a parent outside those jurisdictions. Their ownership routes distinguish wholly owned companies, **at least 90%** ownership with remaining-shareholder approval, and **more than 50% but less than 90%** where no qualifying shareholder notice requires group accounts. For that last route, holders of at least **5% of total shares** can serve notice at least **six months before year-end**. Apply the statutory attribution rules, rather than looking only at registered direct holdings. [Sections 285–286](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+For example, exactly 90% ownership belongs to the approval route: silence from the other shareholders does not establish approval. At 89%, a timely notice by holders of exactly 5% defeats the no-notice condition. These examples test one condition only; neither establishes an exemption by itself.
+
+The exemptions also require inclusion of the company and all its subsidiaries in qualifying larger-group consolidated accounts, the specified reporting date, accounting and audit conditions, disclosure of the exemption and parent identity/address, and delivery of the required group accounts/reports within the individual-accounts filing period. Non-English documents require certified English translations. Section 286 has its own accounting-equivalence and auditor-authorisation conditions. Companies with securities admitted to a regulated market cannot use these exemptions. Retain the actual larger-group accounts, audit report, approvals/notices, disclosures and filing receipt. [Sections 285(2)–(6) and 286(2)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+### Excluding subsidiaries is a separate decision
+
+For Chapter 3 accounts, section 287 starts with all subsidiaries included. Individually immaterial subsidiaries cannot be excluded together if material collectively. Other grounds address severe long-term restrictions, extremely rare disproportionate-cost/delay cases and interests held exclusively for subsequent resale. These are specific conditions, not a general foreign-subsidiary or missing-records exemption. Where every subsidiary qualifies for exclusion, section 287(6) provides the corresponding group-account exemption. Document the ground for each exclusion and the collective materiality assessment; do not transplant these Chapter 3 rules into an IAS consolidation without the applicable standards analysis. [Section 287](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
+
+Full Schedule 20 control attribution, Schedules 21–22 disclosure and consolidation mechanics, regulated-entity successor legislation and case-specific exemption evidence still need review. This section supplies the statutory decision structure, not an exemption certificate.
+
 ## Working paper and review
 
 Retain reconciled books, the selected accounting basis, period dates, size-test calculation, audit analysis, board approval, signed accounts, filed copies and receipts. Keep separate calendar entries for accounts, annual return, tax and officer changes. See the [formation Guide](gi-company-formation.md) for initial officer and office filings.
 
-Independent review and professional attestation remain pending. Group exemptions, specialised entities, complete disclosure schedules and the section 259 cross-reference need further work before this topic is accepted as comprehensive.
+Independent review and professional attestation remain pending. Case-specific group exemptions, specialised entities, complete disclosure schedules and the section 259 cross-reference need further work before this topic is accepted as comprehensive.
