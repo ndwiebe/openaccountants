@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-22",
+  "guide": "skills/international/yemen/ye-individual-income-tax-and-payroll.md",
+  "sha256": "8dea4951b865f4efd0e17ec006a8b932eaa070f7cf6955bc768cda5f8ac0b410",
+  "sources": [
+    {
+      "url": "https://agoyemen.net/lib_details.php?id=198",
+      "locators": [
+        "3: alternative individual residence tests",
+        "40: original quarterly small-enterprise payroll",
+        "48–50: employment income and conditional exclusions/exemptions",
+        "62: annual resident bands",
+        "63(f): nonresident employment rate",
+        "98–102: assessment, withholding, employer and recipient duties"
+      ]
+    },
+    {
+      "url": "https://tax.gov.ye/8-2021/",
+      "locators": [
+        "Article 1 adding160(c): small/micro enterprise and employee exemption;application unresolved"
+      ]
+    }
+  ],
+  "checks": "Targeted schema passed without warnings;two executable blocks passed",
+  "review": "Independent review identified two article49–50 translation clarifications. Corrected pension contributions versus benefits, and occupational-injury scope versus separate medical-document condition. Other included claims and calculations passed. Final wording not separately re-reviewed.",
+  "limits": [
+    "Not validated monthly payroll engine",
+    "Administration-specific applicability unresolved",
+    "Current amendment chain unresolved",
+    "No complete individual/payroll coverage",
+    "No professional attestation or publication"
+  ]
+}
