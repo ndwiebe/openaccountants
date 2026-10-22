@@ -1,6 +1,6 @@
 # Gibraltar, Guernsey and Faroe Islands: first draft batch
 
-Requested by Michael on 22 October 2026. This batch contains **12 source-cited draft topic Guides**. It completes neither a country nor the worldwide goal. No professional attestation or independent review has been recorded. Do not merge this batch as comprehensive coverage.
+Requested by Michael on 22 October 2026. This batch contains **13 source-cited draft topic Guides**. It completes neither a country nor the worldwide goal. No professional attestation or independent review has been recorded. Do not merge this batch as comprehensive coverage.
 
 ## Scope and preserved work
 
@@ -12,7 +12,7 @@ Work is limited to these three jurisdictions. The previously drafted worldwide b
 
 | Area | Draft topics |
 |---|---|
-| Gibraltar | Individual income-tax comparison; corporate tax and filing; payroll/social insurance; transaction-tax transition research |
+| Gibraltar | Individual income-tax comparison; corporate tax and filing; payroll/social insurance; transaction-tax transition research; ordinary property conveyance stamp duty |
 | Guernsey | Individual tax/residence; payroll/social insurance; corporate tax/distributions/substance |
 | Faroe Islands | Individual national/municipal tax; payroll/contributions; VAT; company registration/reporting; cross-border royalty/dividend review |
 
@@ -24,8 +24,8 @@ All are `tier: 2`, `verified_by: pending`, dated 22 October 2026. Scope exclusio
 2. **Gibraltar transaction-tax evidence.** [Government's September notice](https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358) describes provisional application from 15 July 2026 and a 90-day relief window ending 12 October. The draft distinguishes this official account from verification of the charging legislation, commodity schedule and any extension. Those remain release blockers.
 3. **Guernsey contribution evidence.** Use the [Revenue Service 2026 leaflet](https://gov.gg/CHttpHandler.ashx?id=102818&p=0), pp19–20, for operative rates and limits. The parliamentary proposition initially found is a draft with unfilled resolution references; it is not the sole authority for enacted contributions.
 4. **Guernsey changes are prospective.** The [reform page](https://gov.gg/taxreform) describes an October 2026-approved package with corporate changes in 2027 and personal/consumption changes in 2029. Do not apply future figures to 2026; implementation instruments require separate checking.
-5. **Faroe VAT boundary conflict.** The [general page](https://www.taks.fo/en/business/vat/general-about-vat) uses “less than DKK 50.000”; [starting-business guidance](https://www.taks.fo/en/business/starting-a-business/starting-a-business) says “do not exceed”; [foreign-registration guidance](https://www.taks.fo/en/business/vat/how-to-register-for-vat) says “exceeds”. The exact threshold boundary remains unresolved pending the controlling statute.
-6. **Faroe VAT deadline conflict.** [Quarterly guidance](https://www.taks.fo/en/business/vat/quarterly-vat-returns) gives a general one-month-and-ten-days rule but separately lists 24 August for Q2. The draft preserves the specific list and flags verification against the actual period's due date.
+5. **Faroe VAT boundary resolved in the draft.** [VAT Act](https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24), section 4, exempts annual sales below DKK 50,000. Section 28 separately uses more than DKK 50,000 for specified foreign services. The revised Guide separates the statutory populations. Independent review of translation and application remains pending.
+6. **Faroe Q2 deadline resolved in the draft.** Section 20 expressly provides 24 August for Q2; the general rule applies to Q1, Q3 and Q4. Faroese TAKS guidance confirms the exception. Section 19's five-year records obligation was also added.
 7. **Faroe church-tax locality.** The [2026 municipal table](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) contains locality footnotes. Applying the Tórshavnar headline church rate throughout the municipality would miss them.
 8. **Faroe refund limitation changed.** [TAKS's dividend-refund page](https://www.taks.fo/en/business/tax/dividend-tax-refunds) states a three-year assessment-amendment practice from 1 May 2026. Transitional claims require specific review.
 
@@ -38,12 +38,12 @@ All are `tier: 2`, `verified_by: pending`, dated 22 October 2026. Scope exclusio
 | Tax-system scope and residence | Partial draft | Partial draft | Partial draft |
 | Individual income tax | Partial draft; relief-period conflict | Partial draft; special regimes open | Partial draft; detailed deductions open |
 | Corporate income tax | Partial draft; bases/losses/minimum tax open | Partial draft; special sectors/minimum tax open | Open; registration draft is not corporate tax |
-| Consumption/import taxes | Transition research; charging instruments open | Open; future GST not current computation | Partial VAT draft; threshold/statutory exceptions open |
+| Consumption/import taxes | Transition research; charging instruments open | Open; future GST not current computation | Partial VAT draft; statutory thresholds/deadline checked; sector/input exceptions open |
 | Payroll | Partial draft; benefits/leave/pensions open | Partial draft; secondary pensions/benefits open | Partial draft; bases/exceptions/collection open |
 | Social contributions | Partial ordinary-class draft | Partial Class 1/2 draft | Partial component draft |
 | Formation/reporting/ownership | Open | Open | Partial registration/reporting draft |
 | Cross-border/withholding | Open | Partial distributions; treaties open | Partial royalty/refund draft; treaty matrix open |
-| Capital/property/estate/transaction duties | Open | Open | Open |
+| Capital/property/estate/transaction duties | Partial ordinary conveyance draft; reliefs/other instruments open | Open | Open |
 | Compliance/records/appeals/penalties | Partial filing draft | Partial filing draft | Partial filing draft |
 | Special regimes and local exceptions | Open | Open | Partial locality checks; special regimes open |
 

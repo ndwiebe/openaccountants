@@ -245,6 +245,24 @@
       "download_ok": false,
       "sha256": null,
       "reading_note": "Official page text or relevant extract was retrieved through web search/open; a separate direct curl capture returned 403, so no downloadable snapshot is claimed."
+    },
+    {
+      "url": "https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Official consolidation amended 15 May 2026; ss4,5,19,20,28 read. No local checksum recorded in this pass."
+    },
+    {
+      "url": "https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Faroese guidance expressly confirms Q2 exception. No local checksum recorded in this pass."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/stamp-duties-act-2005-1262/download",
+      "retrieval_method": "web reader",
+      "download_ok": false,
+      "note": "Schedule 1 pp28-29; consolidation lists 23 December 2024 amendment. No local checksum recorded in this pass."
     }
   ]
 }
