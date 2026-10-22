@@ -17,7 +17,7 @@ Shared origin/main fetched at 5ba607f. This change stays on codex/world-coverage
 
 ## Acceptance gaps
 
-Independent source/editorial review requested. No legal attestation. Current forms, penalty amounts, retention duration, new-company two-year treatment, CbCR, thin capitalisation and treaty remedies are not completed here. No README domain acceptance or country-completion claim.
+Independent source/editorial review completed by review_gi_minimum; no material errors found within the stated scope. The reviewer suggested adding the §118a(5) approval safeguard; this was added after checking the statute text. The review covered the pre-addition hash b88d284703a59e94947269298be99b18a983a77ebed872c18b442452f99b4b46. Final writer-checked hash: 1a414ea11633cadd1d02845f60e81cc1001c339b16b45e04da0920165db0c73a. No legal attestation. Current forms, penalty amounts, retention duration, new-company two-year treatment, CbCR, thin capitalisation and treaty remedies are not completed here. No README domain acceptance or country-completion claim.
 
 Schema check: one Guide, no errors/warnings. Examples: two blocks, zero failures/missing. These checks test format and arithmetic, not legal completeness.
 

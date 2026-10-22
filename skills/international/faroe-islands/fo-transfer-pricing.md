@@ -54,7 +54,7 @@ Do not substitute the Danish documentation timetable. Retrieve the current Faroe
 
 ## Penalties and interest
 
-Missing required documentation permits estimated assessment under §118a(5). This Guide does not quantify fines or interest: their applicable provisions and current amounts remain unverified. Do not interpret that gap as absence of sanctions. [§118a(5)][law]
+Missing required documentation permits estimated assessment under §118a(5). That subsection also requires approval from Stýrið before the tax authority makes an arm’s-length income adjustment. This Guide does not quantify fines or interest: their applicable provisions and current amounts remain unverified. Do not interpret that gap as absence of sanctions. [§118a(5)][law]
 
 ## Cross-border points
 
