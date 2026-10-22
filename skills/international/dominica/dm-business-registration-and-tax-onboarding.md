@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 ---
 
@@ -18,6 +18,8 @@ verified_by: pending
 CIPO distinguishes a business name from a company's corporate name. A sole trader or partnership using a name different from the proprietor names, or a company trading under a different name, falls within its business-name guidance. CIPO states that these business names must be registered. A business-name application does not establish that a company has been incorporated. Identify the legal owner before selecting forms. [CIPO business-name guidance](https://cipo.gov.dm/businesses-and-companies/business-names/).
 
 This Guide covers domestic business names and the ordinary company application workflow. It does not certify the complete Companies Act amendment chain, beneficial-ownership duties, external-company or international-business-company regimes, all sector permissions, fees or processing times. No registration has been submitted as part of this research.
+
+The former IBC regime was repealed from 1 January 2022. See the [former-IBC Guide](dm-former-ibc-regime-and-records.md) for the primary repeal source, historical transition and surviving records duties. Older registry descriptions do not establish a current IBC incorporation route.
 
 ## Business-name application
 

@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
@@ -50,7 +50,7 @@ The 2012 Regulations separately prescribe Form 24 for external-company returns u
 
 ## Verification limits
 
-Sections 187–189 and 194 were visually checked in the scanned base Act. The listed 1996 amendment was read and does not amend that section; the 2001 amendment adds the annual fee. The 2012 regulations supply the return form. This does not certify the complete later amendment chain, current filing channels, holiday extensions, fee amounts, financial-statement obligations or beneficial-ownership rules. Independent review remains pending. Guide presence is not comprehensive country coverage.
+Sections 187–189 and 194 were visually checked in the scanned base Act. The listed 1996 amendment was read and does not amend that section; the 2001 amendment adds the annual fee. The 2012 regulations supply the return form. Act 7 of 2021 changes restoration provisions in sections 483 and 511, not the recordkeeping and annual-return sections discussed here. That amendment is absent from CIPO's company-law index, demonstrating that the index alone is incomplete. [Act 7 of 2021](https://www.dominica.gov.dm/laws/2021/companies_amendment_act_2021_7_of_2021.pdf). This does not certify the complete later amendment chain, current filing channels, holiday extensions, fee amounts, financial-statement obligations or beneficial-ownership rules. Independent review remains pending. Guide presence is not comprehensive country coverage.
 
 ## Disclaimer
 

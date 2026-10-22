@@ -30,6 +30,16 @@
       "url": "https://www.cipo.gov.dm/forms/bnc/From9A-director-of-company.pdf",
       "bytes": 77501,
       "sha256": "ea4058fc503538be2e4adfec305a0fc5cf2f5558f5c251c8225586561491485e"
+    },
+    {
+      "url": "https://www.dominica.gov.dm/laws/2021/international_business_companies_ibc_repeal_act_2021_6_of_2021.pdf",
+      "bytes": 548960,
+      "sha256": "78374bf12c112e136c01a0a222f4efec3cc914f61f2ae55bb5cae90f28d10331"
+    },
+    {
+      "url": "https://www.dominica.gov.dm/laws/2021/companies_amendment_act_2021_7_of_2021.pdf",
+      "bytes": 939028,
+      "sha256": "3eeee2c75bad26f08f09855499b5fd3ee7e8afa2a685010831b4775097410dd6"
     }
   ],
   "review_status": "independent review pending"
