@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.3"
+version: "0.4"
 verified_by: pending
 ---
 
@@ -68,6 +68,23 @@ If the required cost threshold is not met on completion or expiry of the investm
 Section 50(5) permits a lower deduction directed by the Comptroller where an applicable section 43 international agreement provides a lower rate. No treaty rate or entitlement is certified here. Obtain the agreement, recipient residence evidence and applicable direction before reducing tax. [Act, section 50(5)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf).
 
 Remaining work includes later amendment reconciliation, the deadline/accrual conflicts, current forms and filing route, section 52 prescriptions, interest exemptions, dividend classification, treaty eligibility and independent review. Guide presence does not establish comprehensive country coverage.
+
+## Executable check of the existing examples
+
+These checks reproduce the gross-payment examples above. They do not resolve the stated eligibility, amendment or procedural gaps.
+
+```oa-check
+name: Grenada existing gross fee example
+inputs:
+  gross: 10000
+  rate: 0.15
+steps:
+  - tax: gross * rate
+  - net: gross - tax
+expected:
+  tax: 1500
+  net: 8500
+```
 
 ## Disclaimer
 

@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.2"
+version: "0.3"
 verified_by: pending
 ---
 
@@ -53,6 +53,28 @@ Failure to deduct makes the payer personally liable for the undeducted tax withi
 ## Remaining checks
 
 Later amendments and orders, exemptions for each income type, treaty and permanent-establishment analysis, current forms/channels, interest and penalties, and independent review remain outstanding. These rules do not establish comprehensive country coverage.
+
+## Executable check of the existing examples
+
+These checks reproduce the gross-payment examples above. They do not resolve the stated eligibility, amendment or procedural gaps.
+
+```oa-check
+name: Saint Lucia existing royalty and interest examples
+inputs:
+  gross: 10000
+  royalty_rate: 0.25
+  interest_rate: 0.15
+steps:
+  - royalty_tax: gross * royalty_rate
+  - royalty_net: gross - royalty_tax
+  - interest_tax: gross * interest_rate
+  - interest_net: gross - interest_tax
+expected:
+  royalty_tax: 2500
+  royalty_net: 7500
+  interest_tax: 1500
+  interest_net: 8500
+```
 
 ## Disclaimer
 

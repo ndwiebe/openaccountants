@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.3"
+version: "0.4"
 verified_by: pending
 ---
 
@@ -44,6 +44,28 @@ Third Schedule paragraph 4 also requires calendar-year records of payment nature
 The 2007 replacement rate is expressly subject to section 50 on international agreements. Section 57(3) allows the Comptroller to direct a lower deduction when satisfied that the recipient is resident in a treaty country whose agreement provides the lower rate. Obtain the agreement, residence/entitlement evidence and the applicable direction; a recipient's request for a reduced rate is not itself that direction. [Section 57(3)](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=60). Special airline, pension, life-assurance, employment, exemption and local-business cases require their own statutory checks. Section 98 prints interest of **1% per month or part of a month** on unpaid deductions under the specified provisions, additional to penalties, and makes that interest the payer's debt, not recoverable from the recipient. The IRD corroborates the 1% monthly rate but its short summary omits the part-month wording. Preserve that distinction when checking an assessment. The later amendment chain and penalty provisions are not fully reconciled, so this Guide does not certify a final late-payment calculation. [Section 98](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=86).
 
 Before filing, verify recipient status, payment classification, relief evidence, gross amount, deduction timing, the approved remittance form and submission route. Keep contractual terms, invoices, accrual workings, certificate copies and IRD receipts. Full intervening-amendment reconciliation and independent review remain outstanding; this draft does not make Dominica comprehensive.
+
+## Executable check of the existing examples
+
+These checks reproduce the gross-payment examples above. They do not resolve the stated eligibility, amendment or procedural gaps.
+
+```oa-check
+name: Dominica existing gross payment examples
+inputs:
+  royalty_gross: 20000
+  fee_gross: 8000
+  rate: 0.15
+steps:
+  - royalty_tax: royalty_gross * rate
+  - royalty_net: royalty_gross - royalty_tax
+  - fee_tax: fee_gross * rate
+  - fee_net: fee_gross - fee_tax
+expected:
+  royalty_tax: 3000
+  royalty_net: 17000
+  fee_tax: 1200
+  fee_net: 6800
+```
 
 ## Disclaimer
 
