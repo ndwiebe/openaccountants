@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.5
+# Gibraltar corporate tax and filing v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -49,7 +49,28 @@ Paragraph 9(2)(e) covers assets sold, ceasing to exist, moved wholly outside the
 
 Do not apply that simple example to every exit. Paragraph 9(5) provides a full remaining-pool allowance on permanent discontinuance; paragraph 9(6) contains a separate restriction where the qualifying-expenditure balance is below disposed-asset value; and paragraph 9(12) excludes assets purchased and disposed of in the same period from subparagraph (2). No automatic balancing charge, same-period deduction or value for destruction/private transfer is established by this Guide. Obtain a reviewed computation for those cases. [Paragraph 9(5)–(6), (12)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-Paragraph 14A contains a separate start-up provision referring to capital allowances against first-year tax liability, with no duplicate claim and exclusions where the Commissioner identifies the specified connected prior business or artificial arrangement. Its application and interaction with ordinary deductions require separate review; do not turn the equipment deductions above into a pound-for-pound credit. Buildings, construction expenditure, extended accounting periods and special assets are outside these examples. [Paragraphs 8(5), 9(8), 14–14A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+Paragraph 14A contains a separate start-up provision referring to capital allowances against first-year tax liability, with no duplicate claim and exclusions where the Commissioner identifies the specified connected prior business or artificial arrangement. Its application and interaction with ordinary deductions require separate review; do not turn the equipment deductions above into a pound-for-pound credit. Building rules are addressed below; extended accounting periods and special assets are outside these equipment examples. [Paragraphs 8(5), 9(8), 14–14A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Buildings: separate eligibility and historical schemes
+
+Schedule 3 paragraph 6 permits the Commissioner to allow **4% per annum of cost excluding land** for wear and tear of a hotel, mill, factory or other qualifying similar premises used in the owner's trade, business, profession or vocation. “Mill, factory and other similar premises” has a specific manufacturing/process and powered-machinery definition in paragraph 6(6). An ordinary office does not qualify merely because it is a business asset. If the trader is not the owner, paragraph 6(2) permits allocation to either or apportionment between them; do not give both parties a full deduction. [Paragraph 6(1)–(3), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Example: assume qualifying premises cost £900,000, supported evidence allocates £250,000 to land, and the full-year deduction is allowed. The building cost is £650,000 and 4% gives **£26,000**. Retain the land allocation and the allowance history. Paragraph 6(4) prohibits a deduction exceeding written-down value: if only £20,000 remains, the £26,000 claim is not permitted. Do not automatically substitute a final £20,000 deduction without confirming the applicable treatment. [Paragraph 6(1), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For disposal of an industrial building, paragraph 6(5) provides a deduction for written-down value less amounts realised or expected on sale or recoverable under insurance/indemnity, and no deduction if recoveries exceed written-down value. With established written-down value of £100,000 and total qualifying recoveries of £70,000, the difference is **£30,000**; recoveries of £110,000 do not produce a deduction under that paragraph. This is not a conclusion about all other tax consequences of disposal. [Paragraph 6(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The broader **1% real-property allowance** in paragraph 6A is expressly limited to accounting periods or assessment years ending **1 July 2021 to 30 June 2023** and excludes a person qualifying under paragraph 6. Do not apply it to a 2026 period because the provision remains printed in the consolidated Act. Its disposal and historical-claim implications need separate review. [Paragraph 6A(1), (5)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Two construction schemes also have closed commencement windows:
+
+| Provision | Commissioner-approved qualifying project | Construction commencement window |
+|---|---|---|
+| Paragraph 12A | Wholly and exclusively offices for business use | 1 July 2013 to 31 March 2015 |
+| Paragraph 12B | High-value accommodation | 1 July 2014 to 31 December 2015 |
+
+Both provide 30% of qualifying construction costs in the first period following completion and 10% in each of the second through eighth periods. A completion certificate must accompany the claim. The developer can elect the deduction for itself, the occupier, or a 50:50 split. Costs exclude land but include the specified planning/design, foundations/services, demolition and installed-building fittings. A 2026 construction start does not satisfy either window; a qualifying historical start needs its completion date and claim history checked rather than being rejected solely because the claim is later. [Paragraphs 12A–12B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For £1,000,000 of established qualifying construction costs, the statutory sequence is £300,000 then seven deductions of £100,000, totalling £1,000,000. Under a valid 50:50 election, each claimant's first-period share is £150,000. Paragraphs 12A(6) and 12B(6) expressly allow these deductions in addition to other applicable relief for the same expenditure; retain separate legal grounds rather than extending that exception to ordinary equipment claims. Project approval, elections, implementing rules and any unresolved definition of high-value accommodation require verification for a live claim. [Paragraphs 12A(2)–(8), 12B(2)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Trade losses: eligibility and continuity
 
@@ -117,7 +138,7 @@ For current company return failures, section 65(3) provides these **additional**
 
 The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
-**Open scope:** remaining deductibility rules, building and special-case capital allowances, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
+**Open scope:** remaining deductibility rules, building-claim procedures and special-case capital allowances, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
 ## Self-checks and output
 
