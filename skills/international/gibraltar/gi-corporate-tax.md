@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.10"
+version: "0.11"
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.10
+# Gibraltar corporate tax and filing v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -55,7 +55,13 @@ For accounts exceeding twelve months, subsection (6) requires time apportionment
 
 ## Filing requirements
 
-The complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
+A company must file if it is **registered in Gibraltar or has assessable income** under the Act. A Gibraltar branch with assessable income files for the branch's income. The registration limb means that zero assessable income is not itself a filing exemption for a registered company. The obligation continues even if the Commissioner has not sent a return form. [Sections 29(1)–(2), 30(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Section 29(3) gives the normal deadline of nine months after the month containing the accounting-period end. **For an extended accounting period**, section 29(4) instead expressly measures the return deadline from the end of the month containing the extended period's end. Thus an extended set of accounts ending 30 June 2026 points to 31 March 2027 for that return rule. Keep the component tax computations and payment obligations separately checked; this return provision does not by itself postpone instalments or establish every payment deadline. [Section 29(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Section 30 requires the prescribed form and specified accompanying information, plus payment in accordance with the return computation, subject to its stated exceptions. For the below-threshold independent-report route, accounts must be signed for the board by two directors, or the sole director if there is only one. An unsigned accounts file, omitted required report or omitted attachment cannot be treated as a complete filing merely because a CT1 was submitted. Keep the signed submission set and proof of receipt; current submission-channel acceptance must be confirmed before filing. [Section 30(1)(a), (ca), (d)–(g)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For an ordinary accounting period, the complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
 
