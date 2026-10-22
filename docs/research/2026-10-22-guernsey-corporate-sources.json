@@ -22,5 +22,17 @@
     "url": "https://gov.gg/taxpenalties",
     "as_of": "2026-10-22",
     "sha256": "f4f9c04e665770a41ca4db017c4c8d12bac954c0e6127c58120b07283576bcd6"
+  },
+  {
+    "title": "2021 substance regulations",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=141223&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "de94050dbfd349be5712f8bdd119cdfc1811f861d8c6c37a38734b8717e4b6d2"
+  },
+  {
+    "title": "Official substance index",
+    "url": "https://gov.gg/economicsubstance",
+    "as_of": "2026-10-22",
+    "sha256": "1584654ad03b0a0f91b19b7c3df744008754130c0cfcd17cbd33826780abe112"
   }
 ]

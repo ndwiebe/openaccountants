@@ -7,9 +7,15 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–7, 9, 30, 37–40"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/economicsubstance"
+    title: "Revenue Service economic substance, current implementation and guidance links"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/RevenueService/Companies"
     title: "Company guidance"
     as_of: "2026-10-22"
@@ -24,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.2
+# Guernsey corporate tax, distributions and substance v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -91,6 +97,36 @@ An appeal must be submitted within **30 days of the Order imposing the penalty**
 ## Substance and cross-border distributions
 
 Screen the relevant activities and document direction/management, people, premises, expenditure and local core income-generating activities. Pure equity holding and high-risk IP require their own tests. [Economic substance guidance](https://gov.gg/economicsubstance).
+
+### Statutory substance scope
+
+Revenue Service currently links the **2021 Implementation Regulations** as the consolidation of the original rules and partnership amendments. Regulation 40 commenced them on **30 June 2021**, and regulation 38 revoked the listed 2018–2020 instruments. Read the 2021 text rather than combining the old instruments as though all remained independently operative. This source establishes the provisions below; a full search for subsequent amendments remains outstanding. [Regulations 38–40](https://gov.gg/CHttpHandler.ashx?id=141223&p=0); [official source index](https://gov.gg/economicsubstance).
+
+Regulation 1 includes resident companies and the specified exempt companies that would otherwise be resident. It excludes foundations and equivalent foreign bodies, and excludes collective investment vehicles **unless self-managed**. A self-managed collective investment vehicle is treated as carrying on fund management and receiving income from it. Thus tax exemption or a fund label alone is not a substance exemption. The foundation exclusion is specific to these regulations; it does not remove the corporate-tax treatment described above. [Regulation 1](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 3 identifies income from banking, insurance, fund management, financing/leasing, headquarters, shipping and distribution/service centres, with separate IP and pure-equity holding categories. Classification requires the defined activity and income facts. [Regulation 3](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Ordinary relevant activities: evidence for each accounting period
+
+Regulation 4 requires the activity to be directed/managed locally, local core income-generating activity, appropriately qualified people, operating expenditure and physical presence proportionate to the activity. It gives no universal minimum headcount or expenditure safe harbour. Evidence must support each applicable accounting period. [Regulation 4(1)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For direction and management, the governing board must meet in Guernsey sufficiently often for the decisions required; a quorum must be **physically present**. Strategic decisions must be taken at those meetings and recorded in minutes; the board collectively needs the expertise to decide; relevant minutes and records must be kept in Guernsey. A local registered office or a signed resolution alone does not establish all these tests. [Regulation 4(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Local outsourcing can satisfy the CIGA requirement only where the activity is performed **in Guernsey** and the body demonstrates adequate supervision. Retain the service agreement, actual work locations, responsible personnel, deliverables and supervision records. An offshore outsourced function is not converted into local CIGA merely by a Guernsey invoice. [Regulation 4(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). Specific activity-by-activity CIGA definitions under regulation 8 and the IP rules still require detailed treatment before this pack is complete.
+
+### Pure-equity holdings and periods without income
+
+The regulation 37 definition is narrower than ownership of any investment portfolio. It requires the specified legal-person status, a primary function of acquiring/holding shares or equitable interests, **no commercial activity**, and one of three control routes: majority voting rights; membership plus the right to appoint/remove a majority of the governing board; or membership plus an agreement giving sole control of a majority of votes. A minority portfolio is not automatically in this definition. [Regulation 37, pure equity holding body](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a qualifying pure-equity holding body, regulation 6 requires compliance with applicable company/partnership legislation and adequate people and physical presence in Guernsey proportionate to holding/managing the interests. Do not impose the entire ordinary regulation 4 test as though it were identical, or infer that reduced requirements mean no requirements. [Regulation 6](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 7 removes the requirements in **regulations 4–6** for a period with **no income from the relevant business/activity**. It does not use a zero-taxable-profit or loss test and does not repeal regulation 9 reporting. For example, activity receipts fully offset by expenses are not established to be 'no income' merely because the profit is nil. Preserve the income analysis and respond to required reporting notices. [Regulations 7 and 9](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 9 distinguishes reporting commencement for companies from partnerships and permits Director notices to set form, timing and electronic submission requirements. This corporate Guide does not apply a single company start date to all partnerships or infer a universal standalone substance-return deadline. [Regulation 9](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The official page also records withdrawal of temporary COVID-19 guidance for accounting periods commencing on or after **1 November 2022**; do not apply that historic relief to ordinary 2026 periods. [Official guidance index](https://gov.gg/economicsubstance).
+
+### A verified residence amendment, with the remaining gap explicit
+
+Regulation 30 replaced section 4(1)(a) with a test covering control in Guernsey **or** central management and control in Guernsey in the year of charge, and changed 'incorporated' to 'registered' in section 4(1)(b). This is direct evidence of that amendment, not the complete current section 4 or its non-residence exclusions. Reconcile the full provision and later amendments before giving a residence conclusion. [Regulation 30](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 A distribution from income taxed below 20% to a Guernsey-resident beneficial member requires a separate tax/reporting calculation. Keep evidence of non-residence before treating a payment to a non-resident member as outside the stated distribution charge. Loans are not automatically exempt alternatives. [Company distributions and qualifying loans](https://gov.gg/RevenueService/Companies).
 
@@ -163,7 +199,7 @@ This is not a company-incorporation checklist, document-duty calculation, treaty
 
 ## Sources
 
-Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Existing links to [economic substance](https://gov.gg/economicsubstance) and [reform timetable](https://gov.gg/taxreform) remain scope references. Source versions and limitations are recorded in the research file. Independent source review, domestic residence law, detailed deductions/losses, distribution computation, minimum tax and publication checks remain open.
+Read on 22 October 2026: [company guidance](https://gov.gg/RevenueService/Companies), [non-resident Form 707](https://gov.gg/CHttpHandler.ashx?id=118096&p=0), [foreign registration Form 706](https://gov.gg/CHttpHandler.ashx?id=183549&p=0) and [penalty FAQ](https://gov.gg/taxpenalties). Also read the [2021 substance regulations](https://gov.gg/CHttpHandler.ashx?id=141223&p=0) and [current substance index](https://gov.gg/economicsubstance); the [reform timetable](https://gov.gg/taxreform) remains a future-change reference. Source versions and limitations are recorded in the research file. Independent source review, domestic residence law, detailed deductions/losses, distribution computation, minimum tax and publication checks remain open.
 
 ## Disclaimer
 
