@@ -1,33 +1,33 @@
 ---
 name: gi-uk-investment-income-treaty
 description: >
-  UK–Gibraltar double-taxation agreement rules for dividends, interest and royalties in 2026. Covers treaty residence, beneficial ownership, the property investment vehicle dividend exception, qualifying interest and royalty recipients, the strict foreign ownership threshold, permanent establishment connections, excessive related-party payments and principal-purpose restrictions. Includes source-tax ceiling examples and an evidence checklist for relief. Use for UK payments to Gibraltar residents and the reverse corridor. Domestic withholding procedures, forms and repayment deadlines need separate verification. This source-cited draft does not establish complete treaty coverage, independent source review or professional attestation.
+  UK–Gibraltar double-taxation agreement rules for dividends, interest, royalties and capital gains in 2026. Covers treaty residence, beneficial ownership, the property investment vehicle dividend exception, qualifying interest and royalty recipients, the strict foreign ownership threshold, permanent establishment connections, excessive related-party payments and principal-purpose restrictions. Includes property-rich disposal boundaries, source-tax ceiling examples and an evidence checklist for relief. Use for UK payments to Gibraltar residents and the reverse corridor. Domestic withholding procedures, forms and repayment deadlines need separate verification. This source-cited draft does not establish complete treaty coverage, independent source review or professional attestation.
 jurisdiction: GI
 category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152"
     title: "HMRC DT8152: arbitration summary conflicts with published Article 24(5)"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
-    title: "HMRC: 2019 UK–Gibraltar Double Taxation Agreement in force, Articles 1–4, 10–12, 24, 28–29 and Protocol"
+    title: "HMRC: 2019 UK–Gibraltar Double Taxation Agreement in force, Articles 1–4, 6, 10–13, 21, 24, 28–29 and Protocol"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties"
     title: "HMRC: Gibraltar tax treaties, entry into force and effective dates"
     as_of: "2026-10-22"
 ---
 
-# UK–Gibraltar: dividends, interest and royalties
+# UK–Gibraltar: investment income and capital gains
 
 ## Scope and effective periods
 
 The agreement entered into force on **24 March 2020**. Withholding provisions apply to amounts paid or credited from **1 May 2020** in both territories. UK income tax and capital gains tax apply from the assessment year beginning **6 April 2020**, and corporation tax from the financial year beginning **1 April 2020**. Gibraltar income tax applies to assessment years beginning from **1 July 2020**, and corporation tax to accounting periods beginning from that date. These are different commencement tests. [HMRC status page](https://www.gov.uk/government/publications/gibraltar-tax-treaties); [Article 29](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-29-entry-into-force).
 
-This Guide covers investment-income source-tax restrictions, not all agreement articles. Determine the domestic charge first, then the agreement's restriction. An agreement ceiling does not impose a tax absent under domestic law. A source exemption does not establish residence-country exemption or eliminate the distributing company's tax. The existing named taxes are Gibraltar income and corporation tax and UK income, corporation and capital gains tax. [Articles 2 and 10–12](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+This Guide covers investment-income source-tax restrictions and capital-gain allocation, not all agreement articles. Determine the domestic charge first, then the agreement's restriction. An agreement ceiling does not impose a tax absent under domestic law. A source exemption does not establish residence-country exemption or eliminate the distributing company's tax. The existing named taxes are Gibraltar income and corporation tax and UK income, corporation and capital gains tax. [Articles 2 and 10–12](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
 
 ## Establish entitlement before using a rate
 
@@ -119,6 +119,42 @@ expected:
   excess_for_separate_analysis: 3000
 ```
 
+## Capital gains: classify the disposed asset before allocating tax
+
+Article 13(1) allows the territory where immovable property is situated to tax gains on its disposal by a resident of the other territory. Article 6 defines immovable property primarily by the law where it is situated, with specified inclusions such as usufruct and natural-resource payment rights; ships, boats and aircraft are excluded from that definition. Establish the legal interest sold and its location. Treaty permission to tax does not establish a domestic charge, allowable cost or filing deadline. [Articles 6 and 13(1)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+### Property-rich shares, partnerships and trusts
+
+Article 13(2) permits the property territory to tax gains from shares or comparable interests, including partnership or trust interests, deriving **more than 50% of their value directly or indirectly** from immovable property in that territory, unless paragraph (3)'s exclusion applies. This is an asset-value derivation test, not the seller's ownership percentage. Do not substitute turnover, rental-income share, or the dividend withholding ceiling. The paragraph does not specify a 365-day testing window; a time or valuation rule needs its own verified basis. [Article 13(2)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-13-capital-gains).
+
+Paragraph (3) excludes interests with **substantial and regular trading on a recognised stock exchange**, but removes that exclusion for interests in the specified investment vehicle distributing property-derived income/gains where most of that income is exempt and distributed annually. A bare listing is insufficient, and the investment-vehicle exception must still be checked for traded interests. Use the Protocol's recognised-exchange definition. [Article 13(3); Protocol paragraph 2](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+**Boundary example:** assume a verified £10 million value of the interests and a properly established value derivation of £5 million from property in the other territory. Exactly **50%** fails the more-than-50% limb. At £5.1 million, **51%** passes that limb. In both cases the denominator and attribution are assumed verified, not established by simply adding book values. Passing the limb alone does not settle the traded-interest exclusion or domestic tax.
+
+```oa-check
+name: UK Gibraltar property rich interest value boundary
+inputs:
+  established_interest_value: 10000000
+  property_derived_value_at_boundary: 5000000
+  property_derived_value_above_boundary: 5100000
+steps:
+  - at_boundary_percent: property_derived_value_at_boundary / established_interest_value * 100
+  - above_boundary_percent: property_derived_value_above_boundary / established_interest_value * 100
+expected:
+  at_boundary_percent: 50
+  above_boundary_percent: 51
+```
+
+**Classification example:** assume interests derive 70% of value from relevant property and trade substantially and regularly on a recognised exchange. An ordinary entity outside paragraph (3)'s investment-vehicle exception has excluded interests for paragraph (2). If it meets the specified property-investment-vehicle conditions instead, exchange trading does not provide that exclusion. Then paragraph (2) permits property-territory taxation, subject to the agreement's other rules. Do not apply the **15% dividend** ceiling to the disposal gain: Article 13 specifies taxing rights, not that percentage. [Articles 10(2)(b), 13(2)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+### Permanent establishments, ships and residual gains
+
+Article 13(4) permits the permanent-establishment territory to tax gains on movable property forming part of that establishment's business property, including disposal of the establishment itself, alone or with the enterprise. Article 13(5) allocates gains from international-traffic ships/aircraft, and movable property pertaining to their operation, exclusively to the territory of the enterprise operating them. A passive ownership case must not be assumed to satisfy the operating-enterprise condition. [Article 13(4)–(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-13-capital-gains).
+
+Other gains fall under Article 13(6)'s exclusive allocation to the alienator's residence territory only after excluding paragraphs (1), (2), (4) and (5). Also screen Article 21, which overrides other provisions for defined offshore activities and permits taxation of the specified exploration/exploitation rights, offshore property and related share gains. Article 28's anti-abuse and conditional remittance rules remain relevant. [Articles 13(6), 21(1)–(2), (6), 28](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+For every disposal, retain residence evidence, the sale contract, asset/right classification, ownership chain, supported value derivation, exchange/trading evidence where relevant, investment-vehicle facts, permanent-establishment/offshore analysis and both domestic computations. The [Gibraltar residential-disposals Guide](gi-residential-property-disposals.md) describes a particular domestic regime; neither it nor this treaty allocation establishes that all capital receipts are exempt or taxable. Treaty classification of that domestic regime, valuation dates/methods, domestic reporting, losses and relief claims require further verification.
+
 ## Anti-abuse and dispute procedure
 
 Article 28 denies an item-specific benefit where obtaining it was a principal purpose of an arrangement or transaction, unless granting it accords with the relevant provisions' object and purpose. Paragraph (2) provides a request for competent-authority consideration of benefits that would have arisen without the arrangement; it is not automatic reinstatement. Where an individual's residence-territory law taxes the income/gain by remittance or receipt rather than its full amount, paragraph (3) limits source relief to the amount taxed there. Apply this conditional text to verified current domestic facts, not an assumed continuing remittance regime. [Article 28](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-28-entitlement-to-benefits).
@@ -131,6 +167,6 @@ HMRC’s [DT8152 summary](https://www.gov.uk/hmrc-internal-manuals/double-taxati
 
 For each payment, retain: both parties and beneficial-owner evidence; residence analysis; payment date and classification; gross amount and domestic source tax; recipient-category proof, ownership chain and rights where relevant; any authority determination; permanent-establishment and independent-price analysis; principal-purpose assessment; and the actual relief application, authority response and repayment record. This is a recommended working-paper structure, not an official form list.
 
-Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. Capital gains, business profits, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
+Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. Domestic capital-gain computations and filing, business profits, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
 
 For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).
