@@ -13,6 +13,14 @@
     {
       "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers",
       "locators": "Detached-worker contact only; web retrieval"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822",
+      "locators": "Before you start; required information; agents; extensions; online route; retrieved with web tool"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837",
+      "locators": "Eligibility; required information; extensions; online route; retrieved with web tool"
     }
   ]
 }

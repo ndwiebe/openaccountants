@@ -7,9 +7,15 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.10"
+version: "0.11"
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822"
+    title: "HMRC CA3822: temporary overseas employment certificate application, including Gibraltar"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837"
+    title: "HMRC CA3837: temporary overseas self-employment certificate application, including Gibraltar"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf"
     title: "Social Security (United Kingdom) Order 2024, commencement and scheduled agreement Articles 2, 9–14, printed pages 10, 12–15"
     as_of: "2026-10-22"
@@ -51,7 +57,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.10
+# Gibraltar payroll and social insurance v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -298,7 +304,19 @@ Civil servants, seafarers and aircrew have separate provisions in Articles 9 and
 
 HMRC's [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland) identifies a certificate of coverage, also called a PDA1, as evidence of continued Gibraltar contributions and exemption from UK National Insurance. It directs applicants to the relevant social-security authority and distinguishes the certificate from a work permit. Retain the issued document and covered dates; an application is not an issued certificate. For Gibraltar's local detached-worker enquiries, the ITO publishes **paye.detachedworkers@gibraltar.gov.gi** and **20071071**. [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers).
 
-Keep assignment dates, expected duration and changes, employer activity evidence, employment/self-employment classification, work locations, residence, other employers, the authority determination and any exception agreement together. Reconcile the decision with the D1/DW payroll categories already shown above; a foreign address alone establishes neither. Certificate application mechanics in each direction, transitional history, third-country/Spain situations, benefit entitlement and special-category rulings remain open. No contact has been made or exemption obtained by preparing this Guide.
+Keep assignment dates, expected duration and changes, employer activity evidence, employment/self-employment classification, work locations, residence, other employers, the authority determination and any exception agreement together. Reconcile the decision with the D1/DW payroll categories already shown above; a foreign address alone establishes neither. Gibraltar-issued certificate application mechanics, multiple-territory application routes, transitional history, third-country/Spain situations, benefit entitlement and special-category rulings remain open. No contact has been made or exemption obtained by preparing this Guide.
+
+### Applying to HMRC for UK coverage during work in Gibraltar
+
+**Employees:** HMRC identifies **CA3822** for temporary employment in Gibraltar. Employers must first have HMRC confirmation of business eligibility, requested through **CA3821**; HMRC says this confirmation is needed once. Employer, employee or authorised agent can use the online route. Applications cannot be made more than **12 months in advance**. Prepare identity/nationality details, the sending employer's PAYE reference and applicable residence, work-right and employment-history information. An agent submits the client's **64-8** authority with the application. The current page has removed its postal application option. [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822).
+
+For an extension, supply the existing expiry date and changed circumstances. Where the combined duration exceeds the permitted period, the instructions require a signed explanation of why continued UK contributions are in the person's interests, subject to the applicable agreement. This is a request, not automatic permission. The page's healthcare paragraph does not list Gibraltar; do not promise an S1 solely from this application. [CA3822 extension and healthcare sections](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822).
+
+**Self-employed applicants:** use **CA3837** for temporary self-employment in Gibraltar, directly or through an agent. The same **12-month advance-application limit** applies. Prepare identity/nationality information, business address, the work performed in each country, and evidence of how the UK business is maintained, such as premises, equipment, registration or advertising. The form also asks for the UK start date where self-employment began less than **two months** before the overseas start; that question is not itself proof of a universal minimum qualifying period. [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837).
+
+Agents include **64-8** authority. Apply online with sign-in; identity verification can be requested, and answers can be saved. For extensions, provide current expiry and changes; the stated over-limit route requires the signed explanation under the relevant agreement. The page no longer offers a postal application. Its healthcare paragraph likewise does not establish Gibraltar S1 entitlement. [CA3837 application and extension sections](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837).
+
+These are UK-coverage application routes for the described temporary work, not Gibraltar-issued certificate forms or a complete multiple-territory work procedure. Use the official form selector where classification differs. Retain the submitted application, acknowledgement, issued certificate, dates, conditions and subsequent changes as distinct records. The Article 10 duration conditions and any Article 13 exception agreement above remain separate from the application's administrative lead time.
 
 ## Questions requiring an operational ruling
 
