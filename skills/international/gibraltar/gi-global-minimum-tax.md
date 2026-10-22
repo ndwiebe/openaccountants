@@ -7,9 +7,15 @@ category: international
 tax_year: 2024
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
+    title: "Allowances Rules 1992, rules 3(55) and 3AA, 23 March 2026 consolidation"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
+    title: "Income Tax Act 2010, section 40(6), 23 March 2026 consolidation"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf"
     title: "Global Minimum Tax Act 2024, sections 2–52"
     as_of: "2026-10-22"
@@ -21,7 +27,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar global minimum tax v0.1
+# Gibraltar global minimum tax v0.2
 
 > **Source-cited draft.** Independent source review and professional attestation are pending. This is a domestic-law calculation and compliance framework, not a complete Pillar Two engine.
 
@@ -34,6 +40,22 @@ The incorporated Model Rules' ordinary MNE threshold is consolidated UPE revenue
 Gibraltar additionally defines a **Wholly Domestic Group** by UPE and all constituent entities being located in Gibraltar and consolidated revenue of at least EUR750 million in two of the four preceding fiscal years. Section 15 treats it as an MNE group **for Part 4**, not automatically for every IIR provision. Location follows Model Rule 10.3, not incorporation alone. For four ordinary twelve-month years, revenues EUR740m, EUR750m, EUR760m and EUR730m meet the two-year revenue test; EUR740m, EUR749m, EUR760m and EUR730m do not. These examples assume unchanged group scope and do not establish each entity's inclusion. [Sections 3 and 15](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
 
 Map excluded entities and ownership before calculating. Part 4 expressly excludes **Investment Entities and Insurance Investment Entities**; a commercial label such as “investment company” is not proof of the defined classification. Section 12 charges specified parent entities under the IIR in accordance with the Model Rules. Section 13 excludes the UTPR charging articles from Part 3. Domestic constituent entities are jointly liable under section 16; domestic joint ventures/subsidiaries have the separate joint-liability rule in section 17. [Sections 12–18](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
+
+## Election affecting ordinary income-tax charges
+
+Rule 3AA permits a **Gibraltar Parent Entity within scope of both Acts** to elect for the specified minimum-tax-only treatment. The defined parent must be an **Ultimate Parent Entity**, and a constituent entity ordinarily resident under Income Tax Act section 74 or registered/otherwise established in Gibraltar. A Gibraltar subsidiary of a foreign UPE does not acquire this election merely because it pays domestic top-up tax. [Allowances Rules, rule 3AA(1)–(3), (16)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+The election must be submitted **in writing and approved in writing by the Commissioner**. Written approval is required where the rule's conditions are met; the election is valid from that approval date. Under an approved election, the ordinary Income Tax Act provisions levying a charge do not apply to the parent and group constituent entities for the basis periods specified in rule 3AA(9). Do not treat a submitted request as approval or infer that every administrative duty under every enactment disappears. [Rules 3(55), 3AA(2), (4)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Keep the **election date**, **approval date**, **basis-period start** and **ordinary return due date** separately. Rule 3AA(9) covers basis periods starting after the election date and any basis period whose section 28 return was **not yet due on the election date**. This permits an eligible earlier period to be covered once approved; it is not blanket reopening of all prior assessments. For example, if the election is made on 1 April and an earlier period's return is due on 30 April, that period meets this particular not-yet-due test; if its return was due on 31 March, it does not meet that limb. These dates are hypothetical and establish neither the statutory return deadline nor overall election eligibility. [Rule 3AA(5), (9)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+A rejection appeal must be written to **both the Commissioner and Tribunal**, state the grounds, and be made before the end of the **30-day period beginning with notification of rejection**. Do not substitute the ordinary assessment appeal deadline. [Rule 3AA(7)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Validity in relation to a constituent entity can cease through the parent's written notification, or unmet conditions together with the Commissioner's written reasons. If the group falls out of scope, the rule provides continuation for **no more than 18 months**, with notification when the parent first becomes aware and confirmation of reasonable steps taken to maintain validity within that period. The Commissioner determines continuing validity; this is not an unconditional eighteen-month extension. A further election is possible if the conditions are met. [Rule 3AA(10)–(14)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Rule 3AA(15) expressly permits use of Part VI and Schedule 4 anti-avoidance rules for elections after 1 March 2025. Income Tax Act section 40(6) separately permits counteraction/disregard of the specified election on its stated tax-advantage basis, considering substantive results, contrived steps and exploitation of shortcomings. Retain commercial and statutory-scope evidence; approval is not a blanket anti-avoidance clearance. [Rule 3AA(15)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf); [Income Tax Act, section 40(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The current submission address/form, approval workflow, consequences for returns already submitted, cessation mechanics and any case-specific anti-avoidance determination remain to be verified. No election is made by this Guide.
 
 ## Rates and computation rules
 
@@ -72,7 +94,7 @@ expected:
 
 Sections 26–27 set the ordinary GIR deadline at the **last day of the fifteenth month following fiscal-year end**. The eighteenth-month deadline applies only if this is the group's first fiscal year subject to the Act **and it has not been required to file a GIR elsewhere for a previous fiscal year**. First filing in Gibraltar alone does not prove eligibility for eighteen months. The UPE or designated filing entity files for the group under Part 3; Part 4 requires appointment of a designated local entity to file for the domestic entities/JVs. Required supporting information accompanies the return. [Sections 26–27](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
 
-Section 28 provides a local-filing exception where the GIR has been filed in a jurisdiction with a **qualifying competent authority agreement effective with Gibraltar for that reporting year**. A general tax treaty or an intention to file overseas is insufficient evidence that the exception is satisfied. The required notification that the GIR has or will be filed abroad is due **no later than three months before the GIR filing deadline**. Verify both the agreement and actual filing; identify who must notify under the relevant subsection. [Section 28](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
+Section 28 provides a local-filing exception where the GIR has been filed in a jurisdiction with a **qualifying competent authority agreement effective with Gibraltar for that reporting year**. A general tax treaty or an intention to file overseas is insufficient evidence that the exception is satisfied. The required notification that the GIR has or will be filed abroad is due **no later than three months before the GIR filing deadline**. Verify both the agreement and actual filing. For Part 3, section 28(1)(b) names the UPE or Designated Local Entity as notifier. For Part 4, section 28(2)(b) names the Designated Local Entity, Domestic Constituent Entity, Domestic Joint Venture or Domestic JV Subsidiary. Preserve the statutory “Local” designation in the Part 3 notification rule; do not silently substitute “Filing”. [Section 28](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
 
 Payment is due by the GIR filing deadline. The Part 3 parent pays for the group, with joint liability where more than one parent has liability; under Part 4 the designated local entity pays for the domestic entities/JVs. The foreign-filing exception does not itself remove payment. [Section 29](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).
 
@@ -110,7 +132,7 @@ Section 43 specifies a GBP1,000 failure-to-file/notify penalty, but the publishe
 
 Obtain the ownership/entity map, four-year consolidated revenue, fiscal-year dates, entity-location analysis, excluded-entity evidence, accounting standards, GloBE working papers, tax allocations, elections, prior overseas GIR obligations, filer appointments, exchange-agreement evidence, payment history and average exchange rate.
 
-The official index links the Act used here, while displaying both “Current Version” and an out-of-date version label. The same PDF is linked in both entries; that does not certify absence of later notices or changes. Remaining acceptance work includes a full fiscal-year OECD guidance/notice reconciliation, complete GloBE calculations and exclusions, safe harbours, parent allocations, current forms/portal access, payment and correction procedures, the Income Tax Act election interaction and independent/professional review. No live return or payment was made. No comprehensive coverage or professional attestation is claimed.
+The official index links the Act used here, while displaying both “Current Version” and an out-of-date version label. The same PDF is linked in both entries; that does not certify absence of later notices or changes. Remaining acceptance work includes a full fiscal-year OECD guidance/notice reconciliation, complete GloBE calculations and exclusions, safe harbours, parent allocations, current forms/portal access, payment and correction procedures, operational election/cessation handling and independent/professional review. No live return or payment was made. No comprehensive coverage or professional attestation is claimed.
 
 ## Self-checks
 
