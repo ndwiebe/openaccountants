@@ -7,17 +7,27 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf"
+    title: "Bill B05/2025: proposed changes only; enactment not verified"
+    as_of: "2026-10-22"
+  - url: "https://www.parliament.gi/uploads/contents/agenda/2026/Revised%20Agenda%20-%20Monday%2016%20March%202026.pdf"
+    title: "16 March 2026 agenda: B05/2025 listed, not proof of enactment"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf"
-    title: "Stamp Duties Act 2005, sections 19–19C and Schedule 1; 23 December 2024 consolidation"
+    title: "Stamp Duties Act 2005, sections 4A–4B, 11–16, 19–19C and Schedules 1–2; 23 December 2024 consolidation"
     as_of: "2026-10-22"
 ---
 
 # Gibraltar property conveyance and mortgage stamp duty
 
 **Source-cited draft. Independent review pending.** Scope: ordinary conveyances, the stated buyer relief, specified special duty and principal mortgage security. This is not a complete property-tax Guide. The official index identifies 23 December 2024 as the current consolidation on the access date.
+
+## Unresolved amendment status
+
+[Bill B05/2025](https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf) proposes changes to special-duty resales, senior downsizing, off-plan transactions and qualifying-buyer treatment above £800,000. It appears on the [16 March 2026 parliamentary agenda](https://www.parliament.gi/uploads/contents/agenda/2026/Revised%20Agenda%20-%20Monday%2016%20March%202026.pdf). The official Act index still identifies the December 2024 consolidation; an enacted amendment and its final commencement provisions have **not been verified**. A Bill and an agenda do not prove enactment. The computations below reproduce the cited consolidation, and must not be treated as confirmation of current transaction liability until this status gap is resolved, particularly for affected resale and buyer-relief cases.
 
 ## Statutory calculation
 
@@ -80,7 +90,7 @@ The Land Management Committee can direct non-payment for a forced sale or merito
 
 For an assumed covered sale at £400,000, within the ten-year period and without a direction or exempt seller, special duty is **£30,000**. An eligible buyer's £4,500 conveyance computation remains a separate item. Combining them for a transaction reconciliation gives £34,500 but does not change who owes the special £30,000.
 
-Section 19C separately exempts the **first assignment of an underlease** at qualifying Government-developed affordable housing estates from ad-valorem duty. The definition requires residential property prescribed by the Minister in writing. Obtain the relevant prescription; the phrase “affordable housing” in marketing or a later resale does not by itself establish this exemption. [Section 19C](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+Section 19C separately exempts the **first assignment of an underlease** at qualifying affordable housing estates developed by Government **after section 19C came into effect**, from ad-valorem duty. The definition requires residential property prescribed by the Minister in writing. Obtain the relevant prescription; the phrase “affordable housing” in marketing or a later resale does not by itself establish this exemption. [Section 19C](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
 
 ## Principal mortgage security
 
@@ -101,6 +111,37 @@ expected:
   higher_duty: 400.20
 ```
 
+## Stamping, responsibility and late instruments
+
+Sections 4A–4B provide for electronic stamp certificates. A certificate can record payment, that no duty is chargeable, or that the duty depends on duty paid on another instrument; issuing it constitutes the Commissioner's assessment and stamping for the specified duty or penalty. An electronic submission or bank payment alone is not the certificate. Retain the certificate corresponding to the actual instrument. Current portal access, payment instructions and attachment requirements remain to be tested. [Sections 4A–4B](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
+For Schedule 2 instruments chargeable with ad-valorem duty, section 16(3)(a) requires seeking a stamp certificate **before six months expire after first execution**. If the Commissioner's opinion is requested, the instrument must be stamped according to the assessment **within fourteen days after notice of it**. Section 11 permits a request for an opinion on an executed instrument on payment of the prescribed fee; section 13 permits the Commissioner to require evidence before proceeding. These are distinct steps and clocks. The six-month application limit is not described here as a penalty-free grace period: section 16(1) separately governs stamping after execution. [Sections 11, 13 and 16](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
+Schedule 2 identifies the purchaser/transferee for a conveyance on sale, grantor/transferor for a voluntary lifetime disposition and lessee for a lease. Its mortgage/security entry names the mortgagee or obligee, with separate treatment of transfers, reconveyances and redemption. Do not infer the statutory liable person solely from who economically funds the completion payment. Section 19B's vendor special duty remains a separate obligation. [Schedule 2 and section 19B](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
+Unless another provision applies, section 16(1) permits post-execution stamping on paying unpaid duty plus the **greater of 10% of duty payable and £100**. Where unpaid duty exceeds **£1,000**, it also provides interest as a further penalty at **5% a year**, or another rate prescribed by Gazette notice, from first execution until interest equals the unpaid duty. This Guide has not verified whether a later notice changes that statutory default or the administrative day-count convention. Do not apply interest at exactly £1,000 under this threshold or compute a live interest figure without those checks. [Section 16(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
+**Base-penalty examples only:** where duty payable and unpaid duty are both £800, the section 16(1) base penalty is £100; where both are £2,000, it is £200. The second case also crosses the interest threshold. These figures exclude interest, any further penalty, court fine or other charge and are not total settlement quotes.
+
+```oa-check
+name: Late stamping base penalty before interest or further charges
+inputs:
+  smaller_duty_payable: 800
+  larger_duty_payable: 2000
+steps:
+  - smaller_base_penalty: max(smaller_duty_payable * 0.10, 100)
+  - larger_base_penalty: max(larger_duty_payable * 0.10, 100)
+expected:
+  smaller_base_penalty: 100
+  larger_base_penalty: 200
+```
+
+Failure to comply with section 16(3)'s requirements can also trigger an offence with a level-4 maximum fine and a further penalty equal to unpaid duty. The subsection's reasonable-excuse qualification must be considered; do not present additional charges as an automatic calculation independent of the facts. Section 16(4) allows mitigation/remission of stamping penalties at the Commissioner's discretion with Ministerial consent, subject to other express provisions. Neither an application nor this Guide grants remission. [Section 16(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
+## Challenging a stamp-duty assessment
+
+Section 14 provides an appeal to the **Supreme Court within 21 days after the assessment date**, on payment of duty in conformity with that assessment. A person can require a signed case from the Commissioner; it can be set down for hearing within **seven days after delivery**. Do not substitute an income-tax tribunal route or assume an appeal suspends payment. The Court can correct the assessment, order repayment of excess duty and consequential fine/penalty, or require additional duty and unpaid charges; costs can also follow. Court filing forms, service requirements and deadline extensions remain to verify. [Section 14](https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf).
+
 ## Working-paper evidence
 
 Record the instrument date, parties, consideration, independently supported whole-property value and legal character of the transaction. Ask the reviewer to confirm the chosen Schedule 1 category before using the arithmetic. Do not substitute the cash paid at completion for the entire consideration without examining the contract.
@@ -109,4 +150,4 @@ Attach a copy of the executed instrument or proposed execution version to the ca
 
 ## Scope remaining
 
-Complete relief eligibility and prescribed estate evidence, other security types, leases, indirect property investments, gifts, electronic filing, payment timing and penalties remain unresolved. Income-tax treatment of rental profits and residential-property disposals is a separate question from stamp duty. Do not reuse this table for those transactions. A reviewer must check current amendments and the actual facts before filing or paying. No accountant attestation is claimed.
+Complete relief eligibility and prescribed estate evidence, other security types, leases, indirect property investments, gifts, live electronic filing/payment operations, current interest notices and case-specific penalties remain unresolved. Income-tax treatment of rental profits and residential-property disposals is a separate question from stamp duty. Do not reuse this table for those transactions. A reviewer must check current amendments and the actual facts before filing or paying. No accountant attestation is claimed.
