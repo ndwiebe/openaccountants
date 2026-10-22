@@ -61,7 +61,7 @@ TAKS describes ordinary-income losses as deductible in the capital-income return
 
 ### Group taxation
 
-Regulation 148/2015 requires eligible Faroese-registered entities, matching financial years and full subsidiary ownership throughout the subsidiary's income year. Application is written, ordinarily by 1 July following the first relevant year, with returns/accounts submitted before consideration. Treat approval as evidence, not an assumption. [Regulation §§1–5][group]
+Regulation 148/2015 requires eligible Faroese-registered entities, matching financial years and full subsidiary ownership throughout the subsidiary's income year. Application is written, ordinarily by 1 July following the first relevant year, with returns/accounts submitted before consideration. Companies in liquidation cannot obtain permission; liquidation ends their participation from that income year. Section 4(4) prohibits renewed permission after departure. Treat approval as evidence, not an assumption. [Regulation §§1–5][group]
 
 Each company computes its own result. Pre-group losses first offset its own profit; the regulation prescribes further ordering involving its own capital income and group-period losses before group allocation. Do not transfer an acquired company's pre-group loss directly to its parent. The parent reports the joint result; §9 requires intercompany tax/loss compensation to be paid or booked by 1 October following the income year. [§§6–9][group]
 

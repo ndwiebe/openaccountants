@@ -12,4 +12,8 @@
 
 ## Open scope
 
-Capital-income calculation and grouping, tax depreciation schedules, distributions, sectoral regimes, treaty relief and minimum-tax applicability remain gaps. This draft is not a completed corporate pack. Review requested from review_gi_minimum. Schema passed for one Guide; two arithmetic blocks passed. These do not verify completeness or current forms.
+Capital-income calculation and grouping, tax depreciation schedules, distributions, sectoral regimes, treaty relief and minimum-tax applicability remain gaps. This draft is not a completed corporate pack. Independent source/editorial review by review_gi_minimum found no material errors in the stated scope at SHA256 5443d43366b787ca3e9d19cc2e091944d8c7587f0792bcd6b984153f53b1ed09. Its optional liquidation/departure screening additions were incorporated against regulation §§4(4) and5. Final writer-checked SHA256: 26dafed777ef600dee879b75856c4c6d9cf7f164b9ea5c23b5dc02a59168610b. Review is not professional attestation. Schema passed for one Guide; two arithmetic blocks passed. These do not verify completeness or current forms.
+
+## Consolidated verification
+
+At 254ae74: schema passed for63 Guides (68 changed paths), with the existing Gibraltar2024 freshness warning;124 arithmetic blocks passed. The initial sync audit failed because newly fetched main included Italy changes absent locally (date-regression/error and apparent removal warnings). Merged origin/main without conflicts as9466cbe, preserving upstream changes; the repeated sync audit checked68 source files with zero errors/warnings/notices. Whitespace check passed. No generated files edited.
