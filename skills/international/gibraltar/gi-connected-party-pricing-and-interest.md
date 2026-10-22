@@ -7,7 +7,7 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
@@ -60,6 +60,35 @@ When the provision applies, the relevant interest is treated as a dividend and i
 
 Example: qualifying loan capital £600,000 divided by statutory equity £100,000 gives **6:1**. That meets the ratio limb; lender, security and arm's-length conditions still need examination. Exactly £500,000/£100,000 gives **5:1**, which does not exceed the ratio threshold, but paragraph 4 and other restrictions remain relevant. Check changes during the period, not just the closing balance.
 
+## Arm's-length loans secured by untaxed deposits or investments
+
+Schedule 4 paragraph 5 is a separate restriction from the 5:1 thin-capitalisation test. It applies where, at any time in a year, a person pays interest to an arm's-length lender and a substantial part or all of that loan is secured by the specified cash deposit or investments whose income or gains are not assessable under the Act. Paragraph 8 defines **substantial part as 50% or more**. Do not import paragraph 2's strict “more than 50%” wording into this test. [Schedule 4, paragraphs 5 and 8, printed pages 185–187](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The cash-deposit route covers a deposit with the lender or a person connected to that lender, made by the borrower or a person connected to the borrower. The investment route concerns investments and their income belonging to the borrower or a connected person over which the lender or its connected person has security. That route retains a cross-reference to section 3(2)(a) of the Financial Services Act 1989; the current successor definition has not been resolved here, so the cash-deposit example below does not determine which instruments qualify as investments. The requirement that the deposit/investment income or gains are not assessable must be checked separately from lender independence. [Paragraph 5](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Where the provision applies, **the interest is not deductible**. It does not say to disallow only the fraction matching the security percentage. Paragraph 7's exemption and decision/appeal provisions below remain relevant; a bank lender alone does not establish exemption. Confirm the loan, actual security coverage and income treatment before determining the adjustment. [Paragraphs 5 and 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Conditional boundary example:** assume a £200,000 loan, £12,000 interest, qualifying cash-deposit security covering £100,000 of the loan, non-assessable deposit income and no applicable paragraph 7 exemption. Security covers **50%**, meeting the substantial-part threshold, and the paragraph 5 adjustment is **£12,000**, not £6,000. If established security coverage is £99,999, it is **49.9995%** and does not alone meet this threshold. That second case is not proof of deductibility under other provisions. Security coverage is an assumed legal fact, not automatically the deposit's account balance.
+
+```oa-check
+name: Secured cash-deposit loan substantial-part boundary
+inputs:
+  loan: 200000
+  qualifying_security: 100000
+  below_boundary_security: 99999
+  interest_paid: 12000
+steps:
+  - security_percent: qualifying_security / loan * 100
+  - below_boundary_percent: below_boundary_security / loan * 100
+  - conditional_disallowance: interest_paid
+expected:
+  security_percent: 50
+  below_boundary_percent: 49.9995
+  conditional_disallowance: 12000
+```
+
+Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the deposit/investment income, and evidence supporting any paragraph 7 exemption. Allocation between multiple loans, disputed security coverage and the investment-definition cross-reference require further review.
+
 ## Aggregate connected-expense cap
 
 Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected parties, collectively the “Expense”. Subject to the applicable exemption and other provisions, the deduction is the least of:
@@ -104,9 +133,11 @@ If only £12,000 of that dividend is actually set off, this provision protects o
 
 Paragraph 7 states that paragraphs 2 and 4–6 do not apply where the person establishes the prescribed matters to the Commissioner's satisfaction. Its wording addresses absence of tax-avoidance purpose, bona-fide commercial transactions not designed to avoid tax, and the reasonableness and proportionality of the amount to the business. Review the complete provision and its decision/appeal route; commercial labelling alone is not proof of an exemption. Do not omit this provision when presenting the numerical restrictions. [Schedule 4, paragraph 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
+Paragraph 7(2) expressly applies the section 35 appeal route to the exemption decision as if it were an assessment, excluding Schedule 2 paragraph 13 and permitting the Tribunal to **confirm, vary or quash** that decision. This specific remedy differs from the section 43(3) confirm-or-remit rule below; identify which decision is challenged before selecting the remedy. [Schedule 4, paragraph 7(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
 A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and equity movements, security documents, aggregate connected expenses, profit/loss reconciliation and any Commissioner correspondence. These are preparation controls rather than a claim that a particular statutory local-file form or filing deadline has been verified.
 
-Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, secured-loan rules in paragraph 5, later-Part interest limitations and international reporting need further work before comprehensive coverage can be claimed.
+Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, the paragraph 5 investment-definition cross-reference and complex security allocations, later-Part interest limitations and international reporting need further work before comprehensive coverage can be claimed.
 
 ## Seeking clearance under section 42
 
@@ -117,11 +148,11 @@ The statutory sequence distinguishes several **21-day** periods:
 | Event | Required next step |
 |---|---|
 | Commissioner receives insufficient particulars or further information | Within 21 days, notify the applicant of further information required under subsection (2). |
-| Applicant receives that request | Supply it within 21 days, or the further time allowed; otherwise the Commissioner need not proceed under subsection (3). |
+| Applicant is notified of that request | Supply it within 21 days from notification, or the further time allowed; otherwise the Commissioner need not proceed under subsection (3). |
 | Commissioner receives particulars or all requested further information | Within 21 days, notify applicability/non-applicability or the need for a further 21 days to consider the information under subsection (4). |
 | No written decision by the relevant statutory period | The applicant can send a written subsection (6) notice seeking a decision within 21 days of the Commissioner's receipt of that notice. |
 
-[Section 42(2)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf). Keep receipt evidence and every information request; there is no universal 21-day approval promise measured from the first email. A further-information request under subsection (7)(c) is treated as a subsection (2) request, engaging the corresponding information and decision sequence.
+[Section 42(2)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf). Keep receipt and notification evidence and every information request; distinguish the statutory notification trigger from the date someone actually reads the request. See [section 10 service rules](gi-income-tax-assessment-appeals.md#establish-service-before-calculating-the-appeal-period). There is no universal 21-day approval promise measured from the first email. A further-information request under subsection (7)(c) is treated as a subsection (2) request, engaging the corresponding information and decision sequence.
 
 Subsection (8) permits reliance on failure to decide within the period specified by subsection (6), while preserving the Commissioner's general assessment powers for other reasons. **Silence after the initial application alone is not that rule.** Before relying on deemed acceptance, establish the qualifying written follow-up notice, receipt date, expiry and effect of any further-information request. This Guide does not establish the current submission channel or resolve disputed service/day-count facts. [Section 42(6)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
