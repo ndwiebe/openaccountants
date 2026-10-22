@@ -7,7 +7,7 @@ category: financial-statements
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0"
@@ -21,6 +21,12 @@ sources:
     as_of: "2026-10-22"
   - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0"
     title: "Guernsey Registry: Audit Exemption Waiver Resolutions"
+    as_of: "2026-10-22"
+  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0"
+    title: "Company annual validation questions and options: 2026 onwards"
+    as_of: "2026-10-22"
+  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0"
+    title: "Company Annual Validation Guidance: issued 4 December 2024"
     as_of: "2026-10-22"
 ---
 
@@ -59,6 +65,34 @@ The current Registry page requires annual validation between **1 January and the
 Thus an ordinary company already registered before December 2025 files its 2026 validation by **28 February 2026**, based on 31 December 2025 details. A company incorporated in December 2025 falls within the stated exception for that cycle. This does not waive accounts, tax or other notices.
 
 A company seeking removal needs to complete the appropriate strike-off or winding-up process before 31 December to avoid the following validation obligation under the Registry guidance. Ceasing trade alone is not that process. Late or missing validation attracts the civil-penalty process; this draft does not quote a penalty amount or assume automatic immediate strike-off. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
+
+## Prepare the 2026 validation evidence
+
+The Registry's **2026 onwards** question list is conditional. Company category, GFSC status and earlier answers determine which sections apply. Do not populate every conditional field with “no” just because the topic does not appear on another company's form. [Question list](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0).
+
+| Evidence to collect | Relevant questions |
+|---|---|
+| Company classification, purpose, economic activity, registered office and filed waiver records | 1–13a |
+| Current directors, licensing/exemption evidence and resident-agent details | 14–23 |
+| Trust or other legal-arrangement roles, governing law and beneficial-ownership information held | 24–27, for the specified company categories |
+| Assets, real-property type/location and other high-value tangible assets | 28–35, subject to the form's conditions |
+| Nature and location of commercial activities, including applicable named sectors | 36–38 |
+| Overseas subsidiaries, their assets, activities and locations | 39–52, subject to the subsidiary branching questions |
+| Banking jurisdictions, local professional relationships and where the company is directed and managed | 53–58a, for the specified company categories |
+
+Questions 33 and 47 ask about other tangible assets **over £5,000,000**, excluding stocks and shares. The how-to guidance defines a high-value asset as a single tangible item **or collection of items** reasonably expected to have market value greater than that amount. Use supported market value, not an assumed historic purchase price, and do not ignore a collection because each component is below the threshold. Property has separate questions. [2026 question list, questions 29–35 and 43–49](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0); [how-to guidance, page 12](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
+
+An exactly £5,000,000 supported value does not exceed this stated threshold; £5,000,001 does. A relevant collection valued at £5.2 million cannot be excluded solely because no individual item is worth £5 million. These examples illustrate the reporting question, not a tax charge or an exemption from other asset questions.
+
+## Correct the register before submitting
+
+The how-to guide requires an authorised filer, unless filing as a CSP or regulated presenter, and a payment method. Company details and director/resident-agent changes need separate filings before preparing the validation. The saved validation draft does **not** automatically update after those changes: redraft it. The form shows the previous 31 December position, so a genuine later change is not backdated merely to alter that snapshot. [How-to guidance, pages 2–6 and 10](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
+
+The resident-agent association date can precede formal appointment; establish the actual association rather than blindly accepting the appointment date. After review and payment, retain the submission reference, payment reference, filed copy and transaction receipt from the portal. Account payment is limited to CSPs and regulated presenters in the guidance. [How-to guidance, pages 6–9](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
+
+The how-to guide dated 4 December 2024 says on page 2 “unless they were incorporated in the previous year”, whereas the current annual-validation webpage specifies **December** of the previous year. Do not extend the exception to all newly incorporated companies based on the broader sentence. The discrepancy remains for statutory reconciliation; the December case is common to both descriptions. [How-to guidance](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0); [Registry annual-validation page](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
+
+The same how-to guide says annual-validation documents submitted from 2021 onwards are not available for purchase, while earlier public information remains available through a Statement of the Register. This does not establish that every register field is confidential. Avoid an unsupported promise of complete public disclosure or complete confidentiality. [How-to guidance, page 12](https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0).
 
 ## Working papers and checks
 
