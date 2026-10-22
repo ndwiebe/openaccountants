@@ -7,9 +7,15 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf"
+    title: "Social Security (Insurance) Act, 1 July 2025 consolidation: sections 5 and 7"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf"
+    title: "Employer guidance 2025/26, social-insurance sections 11.1–11.2"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf"
     title: "Income Tax (Pay As You Earn) Regulations 1989: 1 July 2023 consolidation"
     as_of: "2026-10-22"
@@ -24,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.4
+# Gibraltar payroll and social insurance v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -115,6 +121,24 @@ Select the issued class and its supporting eligibility evidence. The table is no
 
 The ER weekly limits are £14.34–£40.79 employee and £31.98–£56.22 employer, at 10% and 18%. Annual ER limits are £745.29–£2,121.21 employee and £1,662.57–£2,923.83 employer. At confirmed weekly earnings of £300, the amounts are £30 and £54. Do not derive an annual limit from rounded monthly figures: £176.76 × 12 = £2,121.12, whereas the published annual employee maximum is £2,121.21. Use the appropriate published frequency; this difference alone does not establish an entitlement to a year-end adjustment. [2026/27 schedule, ER row](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
 
+## Contribution liability: wages, absence and employer cost
+
+Section 7(1) places initial payment responsibility for both the employer's and the insured employee's contribution on the employer, unless regulations prescribe otherwise. **The employer's share cannot be deducted from wages or otherwise recovered from the employee, even by agreement.** Recovery of the employee's share is subject to the regulations and section 7(3): where there is no wage or other monetary remuneration from any person in respect of the employment, recovery is prohibited; where the employer pays wages, recovery must be by deduction from them. Do not assume unpaid deductions can be collected in any later payroll without checking the recovery rules. [Social Security (Insurance) Act, section 7(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).
+
+Section 5(2) disregards employment for a contribution week only under its combined test: no services are rendered, and no remuneration is paid wholly or partly for a day in the week other than the specified incapacity/non-working-day exceptions. A blank payment run alone does not establish the test. Identify the service dates, remuneration entitlement and period to which payments relate. Sick pay and holiday pay need that analysis; do not treat every absence as exempt. [Section 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).
+
+Section 7(4) separately provides that no contribution is payable in respect of an employee for a week during the whole **or any part** of which she is absent exercising her statutory maternity-leave right. Obtain the leave record and establish that statutory right; this is not a general exemption for every parental absence or a determination of benefit entitlement. [Section 7(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).
+
+Section 5(1) limits the insured person's and employer's contributions by the weekly maxima in Schedule 1. For multiple employments, establish the exemption/allocation procedure rather than independently treating each job as exempt or silently applying a separate unlimited aggregate cap. That operational allocation remains to be verified. [Section 5(1), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf).
+
+## Partial months and shared contribution weeks
+
+The 2025/26 employer notes use weekly minima/maxima multiplied by weeks or part-weeks actually worked for a partial month. They combine two paydays falling in the final contribution week before applying its cap. Their rates match the 2026/27 schedule checked here; retain the guidance's stated year and confirm its continued procedural application for the actual payroll. [Employer notes, pages 9–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+Assuming two confirmed contribution weeks and £100 earnings, employee SI is **max(£10, 2 × £14.34) = £28.68** and employer SI **max(£18, 2 × £31.98) = £63.96**. Assuming three weeks and £1,800 earnings, the caps give **3 × £40.79 = £122.37** and **3 × £56.22 = £168.66**. Each assumes ordinary ER liability and no exemption. [Partial-month method and limits](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+For two £300 paydays in one final contribution week, the first deductions are £30/£54; combined £600 reaches both caps, leaving **£10.79 employee and £2.22 employer** on the second payday. Do not apply a second weekly maximum. [Shared-week method](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
 ## Computation
 
 1. Confirm class, pay frequency, full/partial period, and earnings base before selecting a schedule.
@@ -123,7 +147,7 @@ The ER weekly limits are £14.34–£40.79 employee and £31.98–£56.22 employ
 4. Reconcile gross wages, PAYE, employee contributions, other deductions, net wages and employer cost separately.
 5. Reconcile payroll totals to remittances and the annual return. Never multiply a rounded monthly cap to substitute for an official annual table.
 
-**Examples:** full-month ordinary gross earnings £3,000 give employee SI **£176.76**, employer SI **£243.65** and gross-plus-employer-SI **£3,243.65**, before other employer costs. At £1,000, the respective amounts are **£100** and **£180**. A person with an exemption code must not be put through this formula. The formula alone does not determine liability for zero/very low earnings, unpaid weeks or a partial period; establish those conditions first.
+**Examples:** full-month ordinary gross earnings £3,000 give employee SI **£176.76**, employer SI **£243.65** and gross-plus-employer-SI **£3,243.65**, before other employer costs. At £1,000, the respective amounts are **£100** and **£180**. A person with an exemption code must not be put through this formula. The full-month formula does not determine liability for zero/very low earnings or unpaid weeks. Apply the statutory absence conditions and partial-month controls above; unresolved eligibility and recovery questions still require review.
 
 ## Evidence and exclusions
 

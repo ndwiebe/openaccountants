@@ -20,6 +20,16 @@
       "sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
       "locators": "Single page: all class rows and monthly/weekly/annual columns",
       "verification": "PDF rendered and visually inspected to resolve merged cells and class groupings"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf",
+      "sha256": "c0d17df7191c58288a98b452f8c1ad2456d8dcbbb9e504c2fbf4d21499a04368",
+      "locators": "Sections5 and7, printed pages12\u201314; official current version1July2025"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
+      "sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
+      "locators": "Socialinsurance11.1\u201311.2, printedpages9\u201310; dated2025/26 guidance"
     }
   ]
 }
