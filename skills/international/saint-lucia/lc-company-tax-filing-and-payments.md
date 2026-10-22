@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -24,6 +24,18 @@ Section 84's base rule requires a signed return within three months after the ye
 Act 10 of 2026 adds section 96(3), providing a company extension of **up to five months from the end of the year of assessment**. The inserted text also makes it subject to submission by the due date specified in the Act and says no further extension is granted under subsection (1). Those conditions, and the use of “year of assessment”, must be reconciled before certifying a specific company's deadline. This draft does not rewrite the provision as an unconditional five-month grace period. [Act 10, section 4](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=).
 
 Under section 96(1), the ordinary extension route requires a written application and written notice from the Comptroller. Section 96(2) expressly says that an extension under subsection (1) does not change the section 114 payment date. Act 10 does not amend section 113 or 114 or expressly grant a corresponding payment deferral. Do not infer one solely from the new filing provision. [Section 96](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-96); [Act 10](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwY3BZUU5uNEVJM3lpam1HV0lqRS9SRUNzTmp6YisvZFBmQTR2RUw1MFprRHJYRytQRkJMOUo0c0tWQ0YwY2ZoUzJNRUNWSVhnWjEvSll1MW9DSnBIUndsMTNkTDFVOWN0UHpZRk9XZmxhdWg=).
+
+## Accounts accompanying the return
+
+A business return must include **final accounts and a reconciliation from accounting income to chargeable income**. Section 91 distinguishes two certification cases: an auditor must identify themselves, describe the examination and state whether the books disclose the true nature of the transactions as far as ascertainable; an external preparer of unaudited accounts must identify themselves and state whether an examination was performed and its extent. The certificate is on the face of the accounts. This provision does not establish that every company is exempt from statutory audit, or that every return requires an audit. Check company-law audit duties separately. [Section 91](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-91).
+
+## Records and responsible officer
+
+Section 90 requires business records in **English**, sufficient to reflect transactions fully and accurately for the nature and scale of the business. Keep them at the place of business unless the Comptroller approves another location. Preserve the books and records needed to explain their entries for **six years after the relevant income year ends**; a written Comptroller notice can require longer retention. Liquidation, death or closure is not automatic permission for early disposal: the section provides an application-and-approval route for a shorter period. Do not infer general permission to discard originals or rely exclusively on overseas storage from ordinary software practice. [Section 90](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-90).
+
+A company carrying on business in Saint Lucia must have a duly appointed **principal officer resident in Saint Lucia** for income-tax purposes. A company starting business must appoint the officer and service address and notify the Comptroller **within one month of commencement**. Notify an officer or service-address change **within 15 days**. These are tax-administration requirements and should not be substituted for separate company-registry filings. [Section 92(1)–(3)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-92).
+
+The principal officer is answerable for the company's statutory acts and liable to the same penalties on default; failure to appoint one does not excuse the company. On liquidation, the liquidator assumes these functions and the previous officer ceases to hold that role. Retain the appointment, service address and notification evidence with the tax file. [Section 92(4)–(8)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-92).
 
 ## Advance payments
 
@@ -43,7 +55,7 @@ Section 115 separately ties interest to the prevailing prime rate with different
 
 ## Remaining checks
 
-Obtain the company's year-end, prior return, instalment ledger, assessment/service dates and written extension decisions. Resolve the new section 96(3) conditions, operative interest/penalty orders, any amnesty terms, return attachments, and current filing channels. Full subsequent amendment review and independent review remain pending.
+Obtain the company's year-end, prior return, instalment ledger, assessment/service dates and written extension decisions. Resolve the new section 96(3) conditions, operative interest/penalty orders, any amnesty terms, company-law audit interaction and current filing channels. Full subsequent amendment review and independent review remain pending.
 
 ## Disclaimer
 

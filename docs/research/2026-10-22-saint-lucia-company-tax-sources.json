@@ -37,6 +37,21 @@
       "kind": "enacted statute",
       "retrieval": "download via HTTP/1.1; pdftotext; key page visually inspected",
       "sha256": "04c6bd68e7651937b1764377cff098b3d797d4ac8c77b8fc5577ecb4876ad620"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-90",
+      "bytes": 152986,
+      "sha256": "1ac74b2d97d06fb7a97320f9cfee6f365d1892828f7fc024eb27b94096b2bd77"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-91",
+      "bytes": 151494,
+      "sha256": "486e489eeca9c90ec1982b93459162410c0a644dfa6ae87616252fb228009a82"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-92",
+      "bytes": 152465,
+      "sha256": "11aaa5e27d18ab6716e50f4f0c4e33f3b9850cf58bd47a643dce5ada2e1ac5bb"
     }
   ],
   "review_status": "independent review pending"
