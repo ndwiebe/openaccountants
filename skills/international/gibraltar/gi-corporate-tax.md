@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.8
+version: 0.9
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.8
+# Gibraltar corporate tax and filing v0.9
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -24,6 +24,24 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 ## Charge and rates
 
 Apply the source-of-profit analysis under section 11 and Schedule 1, not a blanket worldwide or tax-free-offshore assumption. The standard company rate is 15% from 1 July 2024. The higher rate is 20% for the statutory utility/dominant-position categories. Mixed activities require classification before rates are assigned. [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf); [Income Tax Act](https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download).
+
+## Interest, royalties and overseas movable-property income
+
+Do not treat an overseas payer as sufficient evidence of non-chargeable income. Schedule 1 Table C Class 1A covers loan/advance interest between companies and deems it Gibraltar-source where the recipient company is registered in Gibraltar. The exclusion applies where interest from any one company is **less than £100,000 per annum**. For this threshold, interest from companies connected with each other under Schedule 4 paragraph 9 is aggregated. The rule does not require the borrower and lender themselves to be connected before inter-company interest can fall within Class 1A. [Schedule 1, Table C, Class 1A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The amount is a threshold, not a £100,000 deduction. On a twelve-month case with all other conditions satisfied, £99,999 falls below it; **£100,000 does not**. If two connected borrower companies owe £60,000 and £45,000, their £105,000 aggregate fails the less-than threshold: do not test each in isolation or tax only the £5,000 excess. These examples classify gross income before allowable expenses and other applicable provisions. For shortened periods or unusual accrual arrangements, resolve the “per annum” computation before using these examples. [Class 1A(a)–(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Interest already constituting a trading receipt under Schedule 3 paragraph 15 and taxed accordingly is excluded from the separate Class 1A charge. Reconcile the two provisions so that the same receipt is not counted twice. Do not infer a blanket interest exemption merely because Class 1A's threshold is not reached. [Class 1A(b)(ii)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For accounting periods **beginning on or after 1 February 2024**, paragraph 15 covers interest and similar amounts for the specified non-individual businesses: public money lending (including holding out as such), the specified deposit-taking funds/investments, permitted insurance business and permitted distributed-ledger storage/transmission of another's value. It deems the covered amounts trading income accruing in and derived from Gibraltar. Identify the activity and permission; the rule does not apply to every company merely because it earns interest. [Schedule 3, paragraph 15(1), (2), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+“Similar amounts” includes the specified lending-linked instruments and derivatives, discounts, and qualifying virtual-asset lending or proof-of-stake arrangements. Paragraph 15(1B) also addresses assets held for others and facilitation producing a share of value. Read these inclusions together with the paragraph 15(2) business conditions. They do not establish that every crypto receipt is taxed, or that a company outside paragraph 15 is exempt under all other provisions. Token valuation, timing, trading classification and permission analysis require separate work. [Paragraph 15(1A)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Paragraph 15(3) restricts the deduction of interest expense incurred to generate interest not taxable under subparagraph (2). Its interaction with income charged separately under Class 1A needs case-specific review; do not automatically deduct funding costs whenever inter-company interest crosses the threshold. Paragraphs 15(4)–(5) can attribute income back to a chargeable transferor after a connected-person transfer of income-producing assets, unless evidence satisfies the Commissioner that tax avoidance was not a main purpose. Paragraph 15 also applies subject to section 18 on partnerships. [Paragraph 15(3)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Royalties:** Table C Class 3A covers royalties received or receivable by a company and deems them Gibraltar-source where the recipient is registered in Gibraltar. Class 3A contains no equivalent £100,000 interest threshold. Obtain the licence, rights granted, accrual calculation and recipient registration evidence; treaty relief and receipt classification must be assessed separately. [Schedule 1, Table C, Class 3A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Overseas movable-property rents:** Class 3B separately covers non-trading rental income from movable property outside Gibraltar received or receivable by a company, deeming it Gibraltar-source when that company is registered in Gibraltar. This is not a rule for every overseas real-estate receipt. Document the asset, location and trading/non-trading classification before applying it. [Schedule 1, Table C, Class 3B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Filing requirements
 
