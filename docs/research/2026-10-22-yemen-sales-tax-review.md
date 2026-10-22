@@ -11,3 +11,5 @@ Both examples recompute: output tax YER100,000; net payable YER70,000 with eligi
 Remaining substantive gaps: current threshold and amendment chain, administration-specific territorial application, full schedules, refund procedures including Decision 164/2020 regulation 90(b)(VIII), supply valuation/timing and detailed compliance. No nationwide current-law certification.
 
 Targeted schema and two example checks passed before the regulatory-threshold addition. Aggregate checks follow the local commit; this record does not predeclare their result.
+
+Post-commit checks at `e4a928e`: changed-only schema passed for 54 Guides (58 changed paths), with the existing Gibraltar 2024 freshness warning; 103 executable example blocks passed with zero missing; sync audit passed for 58 source files with zero errors/warnings; whitespace check passed. No push or publication performed.
