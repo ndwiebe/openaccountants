@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers",
+      "locators": "Employer registration, employee registration, termination, obligations;2025/26 deadline"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf",
+      "locators": "Pages7\u201311 identity/classes and split entries;13\u201314 payment reconciliation;16XML submission;17nil return"
+    }
+  ]
+}
