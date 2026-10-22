@@ -1,13 +1,13 @@
 ---
 name: gi-income-tax-assessment-appeals
 description: >
-  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications, overpayment claims and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court and Gibraltar MAP submission guidance, completeness requirements and the distinction between proceedings and collection suspension. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
+  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications, overpayment claims, statutory representatives and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court and Gibraltar MAP submission guidance, completeness requirements and the distinction between proceedings and collection suspension. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf"
@@ -17,7 +17,7 @@ sources:
     title: "UK–Gibraltar agreement Article 24: mutual agreement procedure"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38, 61–62 and Schedule 2"
+    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38, 45–52, 61–62 and Schedule 2"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf"
     title: "Supreme Court Rules 2000: 7 July 2026 consolidation, rules 25–31"
@@ -96,6 +96,26 @@ The rules provide these stages, read with those modifications:
 4. **Contents and hearing:** the case states the facts found and the legal questions. It must identify any finding challenged as unsupported by evidence; otherwise it must not contain a statement of evidence. Rule 30 applies the hearing provisions in rules 20, 22, 23 and 24 with necessary changes. Obtain the hearing notice and directions; this Guide is not a complete hearing or non-attendance checklist. [Rules 29–30](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
 
 The Supreme Court determines the legal question and either affirms the determination or remits the matter to the Tribunal with its opinion and directions. **Tax remains payable according to the Tribunal's determination while the case is requested or pending before the Supreme Court.** A case-stated request does not itself continue an earlier collection postponement. [Schedule 2, paragraph 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Non-residents and statutory representatives
+
+Section 45 allows a non-resident to be assessed directly or in the name of the specified trustee, attorney, agent, receiver, branch, manager or other representative. The representative need not actually receive the income for that provision to apply. The amount rule is expressly subject to rule 24 of the Income Tax (Allowances, Deductions and Exemptions) Rules; this section does not establish the non-resident's allowances or override an applicable treaty. Identify the underlying taxable income and representative capacity before deciding how the assessment should be addressed. [Section 45(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For non-resident partners, section 45(2) permits assessment in the partnership's name, an ordinarily resident partner's name or that of a Gibraltar partnership agent, with recovery from the specified partnership assets, partners or agent. A partnership agreement allocating tax internally does not alone resolve these statutory recovery routes. The person in whose name the non-resident is chargeable is answerable for the required assessment acts and tax payment under section 46. [Sections 45(2)–46](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Capacity example:** a local agent's statement that it never received the overseas principal's income does not, by itself, defeat section 45. Conversely, describing someone as a service provider does not establish the statutory agency relationship. Retain the appointment, activities, income route and assessment particulars. This is a scope test, not a finding that every accountant is personally liable for every client's tax.
+
+Section 49 separately makes a company's manager or other principal officer in Gibraltar answerable for the acts required for assessment and payment. Section 50 allows the Commissioner to declare a person an agent by written notice, and treats every company director or shadow director as the company's agent for that section. Its payment mechanism concerns tax due from money held for, or owed to, the principal; default can make it recoverable from the agent as a debt. Do not turn this into an unlimited statement that all company tax is automatically every director's personal debt. [Sections 49–50(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+A person aggrieved by a subsection 50(1) declaration can appeal using the assessment-appeal framework, subject to the modified remedy: Schedule 2 paragraph 13 does not apply, and the Tribunal can **confirm or quash the declaration**. Distinguish challenging the agency declaration from challenging the tax assessment itself. Keep both notices and their service evidence. [Section 50(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Section 51 permits a person answerable for another's tax to retain sufficient money received on that person's behalf and indemnifies payments made pursuant to the Act. This is not a general right to retain unrelated funds or charge an estimated fee as tax. Establish the tax, capacity, available funds and payment record. [Section 51](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Tax provision during liquidation
+
+Section 52 prevents a liquidator from distributing company assets to shareholders, or disposing of the company/assets to the specified connected persons, unless provision has been made for full payment of tax that may be payable. Subsection (2) defines that term by reference to sums due under the Act at the relevant Companies Act date. Verify that cross-reference and the liabilities; do not replace it with an unsupported reserve percentage or a claim that every ordinary third-party sale is prohibited. [Section 52](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Keep the statutory appointment/declaration, liability schedule, control/connection analysis, funds retained and payment evidence. Current notification channels, practical assessment naming, disputed agency facts and the Companies Act liquidation cross-reference remain to verify. These rules do not replace the underlying non-resident charge, treaty allocation or separate insolvency duties.
 
 ## Overpayment claims: a separate six-year period
 
