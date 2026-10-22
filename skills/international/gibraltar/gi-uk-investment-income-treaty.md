@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: "0.8"
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf"
@@ -200,3 +200,23 @@ For each payment, retain: both parties and beneficial-owner evidence; residence 
 Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. The company UK-interest route is partly documented above; other procedures, exact claim deadlines and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. [Business profits and permanent establishments](gi-corporate-tax.md#uk-treaty-permanent-establishments-and-business-profits) are separately drafted. Domestic capital-gain computations and filing, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
 
 For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [HMRC status page](https://www.gov.uk/government/publications/gibraltar-tax-treaties)
+- [Article 29](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-29-entry-into-force)
+- [Articles 2 and 10–12](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force)
+- [Article 4](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-4-resident)
+- [Article 10(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-10-dividends)
+- [Article 11(3)–(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-11-interest)
+- [Article 12(2)–(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-12-royalties)
+- [Article 13(2)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-13-capital-gains)
+- [Article 28](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-28-entitlement-to-benefits)
+- [Article 24](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure)
+- [DT8152 summary](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152)
+- [Company relief guidance](https://www.gov.uk/guidance/double-taxation-relief-for-companies)
+- [current DT Company entry page](https://www.gov.uk/government/publications/international-tax-double-taxation-treaty-relief-form-dt-company)
+- [ITO checklist](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf)

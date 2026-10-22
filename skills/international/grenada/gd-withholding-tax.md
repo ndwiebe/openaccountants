@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: "0.3"
 verified_by: pending
 ---
 
@@ -72,3 +72,17 @@ Remaining work includes later amendment reconciliation, the deadline/accrual con
 ## Disclaimer
 
 Source-cited research draft. Not accountant attestation or a transaction-specific filing instruction.
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [IRD's G-TAX FAQ](https://www.ird.gd/gtax/index.html)
+- [SRO 34](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf)
+- [Act, section 50](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf)
+- [Tax Administration Act, Schedule 2(4)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf#page=89)
+- [SRO 26 of 2016](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-26-of-2016-Income-Tax-Amendment-Act-Commencment-Order.pdf)
+- [Amendment, section 4](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-8-of-2016-Income-Tax-Amendment.pdf#page=5)
+- [Amendment, section 4](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-8-of-2016-Income-Tax-Amendment.pdf)
+- [Section 50(4B)–(4C), inserted by Act 8](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-8-of-2016-Income-Tax-Amendment.pdf#page=6)

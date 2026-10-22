@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: "0.5"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -125,3 +125,20 @@ A treaty allocation does not itself tell an employer to stop PAYE. Verify the cu
 Article 28 anti-abuse and conditional remittance limitations still require consideration. The [investment-income Guide](gi-uk-investment-income-treaty.md) sets out those rules and Article 24's dispute clocks. Detailed domestic procedures, day counting, employer/recharge interpretation, pension-source disputes, special statuses and the DT8152 discrepancy need further verification. Independent source review and named accountant attestation remain pending. This draft is not comprehensive cross-border coverage.
 
 For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [Articles 4 and 29; official commencement note](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force)
+- [Article 14(1)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-14-income-from-employment)
+- [Article 15](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-15-directors-fees)
+- [Article 16](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-16-artistes-and-sportsmen)
+- [Article 18](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-18-government-service)
+- [Articles 17–18](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-17-pensions)
+- [Gibraltar official copy](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf)
+- [DT8152](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152)
+- [Article 21(1)–(2), (5), (7)–(8)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities)
+- [Article 19](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-19-students)
+- [Article 22(1), (3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation)

@@ -23,6 +23,7 @@ Full independent AI source/editorial review records are listed below. Each recor
 | Connected-party lending and appeals | [Full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); notification deadline corrected |
 | Transaction-tax transition and Spain residence | [Full review](../../../docs/research/2026-10-22-gibraltar-transition-spain-full-review.md); historical-exception gate corrected |
 | Company formation and accounts | [Full review](../../../docs/research/2026-10-22-gibraltar-formation-accounts-full-review.md); audit-exemption cross-reference unresolved |
+| Bookkeeping, invoicing and selected business reliefs | [Full review](../../../docs/research/2026-10-22-gibraltar-records-invoices-reliefs-full-review.md); operational and specialist scope remains open |
 
 The seven tax domains in current GOAL.md remain in scope. No domain has a reviewed, source-backed not-applicable determination. VAT is the programme's consumption-tax category; the mapped goods transaction-tax Guide does not assert Gibraltar has retail VAT. The accounting topics below belong to the second milestone and do not count as missing tax domains. Explicit mappings identify existing drafts; they do not certify their completeness.
 

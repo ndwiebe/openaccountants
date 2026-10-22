@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: "0.3"
 verified_by: pending
 ---
 
@@ -48,3 +48,17 @@ Before filing, verify recipient status, payment classification, relief evidence,
 ## Disclaimer
 
 Source-cited research draft, not accountant attestation or a transaction-specific tax opinion.
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [IRD withholding page](https://ird.gov.dm/index.php?Itemid=105&id=17&option=com_content&view=article)
+- [Amendment, sections 5 and 7](https://dominica.gov.dm/laws/2007/act15-2007.pdf)
+- [Third Schedule, paragraph 1](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=119)
+- [Section 57(2)](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=60)
+- [Third Schedule, paragraph 2](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=120)
+- [Section 97](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=86)
+- [Official deduction certificate](https://ird.gov.dm/phocadownload/returns/whitholdingtax_certificate%20of%20deduction_fillable.pdf)
+- [Third Schedule, paragraphs 4–5](https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf#page=121)

@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.15"
+version: "0.16"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -33,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar corporate tax and filing v0.15
+# Gibraltar corporate tax and filing v0.16
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -425,6 +425,22 @@ The later amounts are added, not substituted. Establish the classification using
 **Open scope:** remaining deductibility rules, building-claim procedures and special-case capital allowances, administrative confirmation of the mixed-pool loss interpretation and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
 ## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [Rates of Tax Rules, rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf)
+- [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf)
+- [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf)
+- [Articles 4 and 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force)
+- [Article 5(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment)
+- [Article 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-7-business-profits)
+- [Article 9](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-9-associated-enterprises)
+- [Article 21(1)–(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities)
+- [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate)
+- [ITO entertainment guidance, printed pages 1 and 3](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf)
+- [ITO downloads page](https://www.gibraltar.gov.gi/income-tax-office/downloads-ito)
+- [ITO allocation table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf)
 
 All source URLs in the frontmatter were accessed on 22 October 2026. The dated research records retain statutory locators and source limitations. Inclusion of the allocation table or undated entertainment guidance does not remove the specific limitations noted above. The arithmetic blocks verify only the stated examples; they do not settle the mixed-loss cap interpretation or establish taxpayer eligibility.
 

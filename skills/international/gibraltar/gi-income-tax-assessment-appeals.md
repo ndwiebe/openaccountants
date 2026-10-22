@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: "0.8"
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
@@ -165,3 +165,14 @@ For example, a taxpayer contesting £8,000 of a £12,000 assessment must disting
 Article 24(5)'s arbitration clock begins with presentation to the **other territory's authority**, and its conditions include the absence of an existing court/administrative-tribunal decision on the issues. Preserve that date separately from first notification and domestic filing dates. The [UK investment-income Guide](gi-uk-investment-income-treaty.md) records the full conditions and the contradictory HMRC summary entry. The newly verified Gibraltar submission channel does not resolve that conflict or prove an agreed arbitration operating arrangement. [Article 24(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure).
 
 Independent source and legal review remain pending. Domestic appeal submission channels, disputed-service cases, calendar computation, adapted court filing requirements and case-specific directions require further verification. The Guide does not approve an appeal, extend a deadline or certify that collection has been postponed.
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf)
+- [rules 25–31](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf)
+- [Companies Act 2014, section 305(1), printed page 246](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf)
+- [Article 24](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure)
+- [MAP guidance, sections 6.2–6.3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf)

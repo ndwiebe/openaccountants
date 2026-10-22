@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: "0.2"
 verified_by: pending
 ---
 
@@ -57,3 +57,14 @@ Later amendments and orders, exemptions for each income type, treaty and permane
 ## Disclaimer
 
 Source-cited research draft, not accountant attestation.
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [Section 76](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-76)
+- [Schedule 3, paragraphs 1–3](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/schedule-3)
+- [Older brochure](https://irdstlucia.gov.lc/images/Documents/Publications/Know_Your_Taxes_view.pdf)
+- [Section 116](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-116)
+- [section 117](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-117)

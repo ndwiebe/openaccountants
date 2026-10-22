@@ -7,7 +7,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.11"
+version: "0.12"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822"
@@ -57,7 +57,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.11
+# Gibraltar payroll and social insurance v0.12
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -500,3 +500,25 @@ The annual P8 controls above do not resolve PAYE table selection, cumulative adj
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
+
+## Sources
+
+
+The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
+
+- [ITO employers, obligations section](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers)
+- [2025/26 P8 guidance, pages 7–11 and 17](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf)
+- [Regulations 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf)
+- [Employer notes, sections 3–5 and 9–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf)
+- [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf)
+- [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf)
+- [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf)
+- [Social Security (Insurance) Act, section 7(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf)
+- [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf)
+- [Employment Injuries regulations 5(1)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf)
+- [Order paragraphs 2–4; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf)
+- [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland)
+- [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers)
+- [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822)
+- [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837)
+- [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance)
