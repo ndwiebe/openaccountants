@@ -7,9 +7,15 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
+  - url: "https://gov.gg/taxpenalties"
+    title: "Revenue Service late-return penalties guidance"
+    as_of: "2026-10-22"
+  - url: "https://gov.gg/CHttpHandler.ashx?id=101085&p=0"
+    title: "Penalty appeal Form 690(b), 12/21, pages 1–2"
+    as_of: "2026-10-22"
   - url: "https://gov.gg/CHttpHandler.ashx?id=185595&p=0"
     title: "Monetary Values 2026, V2 16 July 2026, pages 5–6"
     as_of: "2026-10-22"
@@ -36,7 +42,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey individual income tax and residence v0.4
+# Guernsey individual income tax and residence v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -172,7 +178,33 @@ The personal-return guidance requires an agent for a non-resident individual's G
 
 ## Penalties and interest
 
-The return page confirms automatic late-filing penalties. A complete individual penalty, surcharge and interest calculation is not established here; follow the linked penalty notice/appeal procedure and verify its statutory basis. The dated filing deadline above belongs to the **2025 return**, not the 2026 income year. [Personal-return guidance](https://gov.gg/revenue-service/personal-tax-returns).
+Revenue Service currently describes an individual late-return penalty of £200 plus £10 daily. Filing within 30 days of the initial penalty removes the daily component; filing later triggers daily penalties back to the initial penalty date, not merely after day 30. The CRS/FATCA exception is outside this calculation. The page's displayed deadline concerns the 2023 return; use the year-specific notice for the actual filing deadline. [Penalty calculation guidance](https://gov.gg/taxpenalties).
+
+**Conditional arithmetic:** if the notice and receipt establish 40 chargeable days, the unreduced individual penalty is £200 + 40 × £10 = £600. If filing satisfies the 30-day grace condition, only £200 remains. Confirm the day count against the notice; this example does not decide inclusive-date counting. [Penalty guidance](https://gov.gg/taxpenalties).
+
+```oa-check
+name: Guernsey individual late return outside daily penalty grace
+inputs:
+  initial_penalty: 200
+  daily_rate: 10
+  confirmed_chargeable_days: 40
+steps:
+  - daily_penalty: confirmed_chargeable_days * daily_rate
+  - unreduced_total: initial_penalty + daily_penalty
+expected:
+  daily_penalty: 400
+  unreduced_total: 600
+```
+
+For income below the personal allowance, the guidance limits the late-filing penalty to £50 **after the return is received and assessment issued**. Low income does not dispense with filing. An appeal alone does not stop daily accrual: file and retain submission evidence. [Penalty FAQ](https://gov.gg/taxpenalties).
+
+### Appeal and collection are separate
+
+The linked Form 690(b), dated 12/21, gives a 30-day appeal period from the penalty order's issue date, citing section 76. Complete the year, charged amount, own calculation and grounds; sign and retain the order and filing evidence. Late applicants must explain lateness; acceptance is not automatic. For medical grounds, attach evidence connecting the condition to inability to file; for timely filing, attach the online submission number or paper receipt. An adviser needs signed authority. The form lists **taxpenaltyqueries@gov.gg** for penalty appeals. [Current linked appeal form, page 1](https://gov.gg/CHttpHandler.ashx?id=101085&p=0).
+
+Collection is suspended only if the Director confirms it in writing; otherwise pay by the due date or arrange payment. This is distinct from stopping further daily penalties by filing. Page 2 expects filing within 14 days after the impediment ends and leaves disputed reasonable grounds to the Tribunal. The £50 no-liability restriction does not apply to companies. [Form, pages 1–2](https://gov.gg/CHttpHandler.ashx?id=101085&p=0).
+
+The form remains the authority's linked operational document but is dated 2021. Current statutory text, full late-appeal/Tribunal procedure, late-payment surcharges and interest remain unverified here. Do not extend the penalty-appeal clock to assessment appeals.
 
 ## Cross-border residence evidence
 
