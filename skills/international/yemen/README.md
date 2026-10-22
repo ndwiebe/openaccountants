@@ -14,6 +14,8 @@ Middle East falls within Michael's regional scope in the shared repository's OWN
 
 The shared main tree and Ryan's untruncated main tree contained no Yemen country directory at the 22 October 2026 check. This is evidence of absence in those trees, not proof that no contributor has unpublished work.
 
-[Corporate income tax](ye-corporate-income-tax.md) [individual income tax/payroll](ye-individual-income-tax-and-payroll.md) and [property income/transfers](ye-property-income-and-transfers.md) are initial local drafts. The applicability list identifies topics started, not accepted or comprehensive coverage. Administration-specific applicability and later law remain unresolved. All other domains remain unassessed; no not-applicable determination or professional attestation is made.
+[Corporate income tax](ye-corporate-income-tax.md) [individual income tax/payroll](ye-individual-income-tax-and-payroll.md) [property income/transfers](ye-property-income-and-transfers.md) and [cross-border withholding](ye-cross-border-withholding.md) are initial local drafts. The applicability list identifies topics started, not accepted or comprehensive coverage. Administration-specific applicability and later law remain unresolved. All other domains remain unassessed; no not-applicable determination or professional attestation is made.
 
 The property draft adds selected rental and transfer rules; it does not establish complete property/capital coverage.
+
+The withholding draft covers selected article 71 rules and distinguishes article 68. It does not establish treaty coverage or complete XB acceptance.
