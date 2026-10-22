@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=141223&p=0"
-    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–9, 30, 37–40"
+    title: "Income Tax (Substance Requirements) (Implementation) Regulations 2021, regulations 1, 3–10, 17, 30, 37–40"
     as_of: "2026-10-22"
   - url: "https://gov.gg/economicsubstance"
     title: "Revenue Service economic substance, current implementation and guidance links"
@@ -30,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey corporate tax, distributions and substance v0.4
+# Guernsey corporate tax, distributions and substance v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -141,7 +141,33 @@ All four boundaries: [regulation 37](https://gov.gg/CHttpHandler.ashx?id=141223&
 
 ### IP requires an additional analysis
 
-Regulation 8(h) identifies research/development for patent-type assets and marketing, branding and distribution for marketing intangibles. Its exceptional alternative functions include the stated strategic decisions, risk management and underlying exploitation activity, but that exception is unavailable to high-risk IP bodies. Do not treat board-level risk discussion as a universal substitute for local development or marketing functions. [Regulation 8(h)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The full regulation 5/10/17 high-risk tests, rebuttal evidence and enforcement still require treatment before an IP case is accepted.
+Regulation 8(h) identifies research/development for patent-type assets and marketing, branding and distribution for marketing intangibles. Its exceptional alternative functions include the stated strategic decisions, risk management and underlying exploitation activity, but that exception is unavailable to high-risk IP bodies. Do not treat board-level risk discussion as a universal substitute for local development or marketing functions. [Regulation 8(h)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0). The specific IP and high-risk requirements follow; full enforcement calculations and subsequent amendments remain to be reconciled before accepting an IP case.
+
+### IP governance and high-risk classification
+
+Regulation 5 applies its own substance requirements to IP bodies: local direction/management and CIGA, with proportionate qualified people, expenditure and physical presence, demonstrated for each applicable accounting period. Its board test requires sufficiently frequent Guernsey meetings, a physically present quorum, locally made and minuted strategic decisions, collective expertise and local records. Periodic decisions of non-resident board members are not counted for the meeting-frequency test. Outsourced CIGA must be performed in Guernsey under adequate supervision. [Regulation 5](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For a company, apply the **cumulative** high-risk definition in regulation 37. The body must hold IP that it did not create; have acquired it either from an intra-group person **or** in consideration of funding research/development by another person outside Guernsey; **and** license it to non-resident intra-group persons or otherwise earn income from it through their activities. Retain the creation history, acquisition/funding agreements, group relationship, licence terms and actual income-generating arrangements. Partnership application also needs regulation 2 and is outside this corporate classification. [Regulation 37, high risk IP body](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+**Classification boundaries:** assuming all other definition conditions are established, purchased group IP licensed to a non-resident group company meets the stated high-risk limbs. Purchase from an unrelated seller does not by itself establish the acquisition limb: check the alternative overseas-R&D funding route. A sale to an unrelated customer does not by itself rule out high-risk status either, because income can result from non-resident group activities facilitating the sale. These are applications of the definition, not findings about an unidentified client's facts. [Regulation 37](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+### Rebuttal evidence and the return
+
+Regulation 17 presumes that a high-risk IP body does **not** meet the substance requirements, even when relevant CIGA occurs in Guernsey. The body must provide evidence satisfying the Director that the presumption is rebutted. A local office, board minutes or a service-provider invoice alone is not the complete evidential case. [Regulation 17(1)–(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Build the evidence file around each statutory item:
+
+- Current **and historical** high control over the IP's development, exploitation, maintenance, enhancement and protection, exercised by adequate qualified full-time employees permanently resident and working in Guernsey.
+- Detailed business plans explaining the commercial rationale for holding the IP in Guernsey.
+- Employee experience, contract type, qualifications and duration of employment.
+- Evidence that the body's decisions take place within Guernsey.
+- Any additional information required by the Director.
+
+These are regulation 17(2)'s evidence categories, not an automatic approval checklist. The ordinary outsourcing permission does not erase the high-risk employee/control evidence requirement. [Regulations 5(3) and 17(2)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+For each applicable regulation 9 return, regulation 17(3) requires either a declaration that regulation **5(1)(b)** is met, with sufficient rebuttal evidence included or accompanying it, **or** a declaration that the body cannot rebut the presumption and that 5(1)(b) is not met. Do not reduce this to an unsupported compliance tick. The provision refers to company periods beginning after **31 December 2018**, with the separate partnership commencement cross-reference; it is not a new universal filing deadline. [Regulation 17(3)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
+
+Regulation 10 requires the Director to disclose high-risk IP information to a competent authority under the applicable approved international agreement or international tax measure for spontaneous exchange, **whether or not substance requirements are met**. Successful rebuttal therefore does not remove that exchange provision. Regulation 17(4) also modifies enforcement: regulation 14's third-default-period references become second-period references and regulation 15's fourth-period references become third-period references. The full penalty, notice and appeal machinery requires separate reconciliation; do not use the ordinary corporate late-return penalty example below as a substance penalty calculation. [Regulations 10 and 17(4)](https://gov.gg/CHttpHandler.ashx?id=141223&p=0).
 
 ### Pure-equity holdings and periods without income
 
