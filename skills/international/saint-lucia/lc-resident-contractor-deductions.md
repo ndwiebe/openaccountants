@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -21,11 +21,13 @@ Employee deductions belong under the payroll rules. For non-residents, consult t
 
 ## Rate, contract exception and exemption evidence
 
-The payer or financial institution deducts **10% of the gross covered payment**, subject to the statutory exceptions. Section 78(1A), identified in the revised text as inserted by Act 20 of 2023, excludes a **contract valued at no more than EC$10,000**. This tests the contract value, not each instalment. Do not split payments and assume each benefits from a new EC$10,000 exception. The provision also does not describe a tax-free slice of a larger contract. [Section 78(1)–(1A)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-78).
+The payer or financial institution deducts **10% of the gross covered payment**, subject to the statutory exceptions. Section 78(1A), inserted by section 2 of the retrieved Act 20 of 2023, excludes a **contract valued at no more than EC$10,000**. This tests the contract value, not each instalment. Do not split payments and assume each benefits from a new EC$10,000 exception. The provision also does not describe a tax-free slice of a larger contract. [Section 78(1)–(1A)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-78).
 
 A contractor can apply for a Comptroller exemption where this income has been regularly declared and the tax paid or secured to the Comptroller's satisfaction. The payer can pay gross when the contractor produces evidence of that exemption. An application or a contractor's verbal assertion is not the exemption evidence specified by subsection (3). For a contractor operating for less than a year, the Comptroller can request an advance-tax deposit based on the information provided. [Section 78(2)–(4)](https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-78).
 
 Assuming section 78 applies and no exemption is evidenced, an EC$8,000 payment under a contract valued at EC$24,000 produces an **EC$800 deduction** and **EC$7,200 net payment**. The instalment being below EC$10,000 does not satisfy the whole-contract exception. VAT composition, mixed supplies and variations require their own verified treatment before applying this illustration to an invoice.
+
+The enacted amendment bears the date **17 August 2023** and independently confirms the EC$10,000 whole-contract wording. It contains no express retrospective clause or special rule for contracts spanning that date. Do not use the exception to reverse an earlier deduction without checking the relevant transaction dates and applicable commencement rules. [Act 20 of 2023, section 2](https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwYll6a2JaWDhXUi9EMWNHcTh2UVVEQ01NVTNldmxWRjE4NWxxcGdkUnNSZjlTZXFrYTlHSitGTldaSWNxTGg3djdlMGIvRnZsK2drVHBKeFZJSnFRYTIyVkRPeUp3NGVQb1dsVkR1Qko2dGU%3D).
 
 ## Remit and give credit
 
@@ -41,7 +43,7 @@ Section 117 separately governs interest, subject to the prime rate and ministeri
 
 ## Remaining verification
 
-This is based on the official 2023 revised-law text, whose authentication status and later amendments need checking. Obtain the original Act 20 of 2023 for commencement/transitional verification; confirm current remittance forms, contractor statements, mixed-invoice treatment, contract variations, exemption validity and any applicable orders. Independent review remains pending.
+This is based on the official 2023 revised-law text, whose authentication status and later amendments need checking. The original Act 20 of 2023 has been read; application to contracts spanning its introduction still requires checking. Confirm current remittance forms, contractor statements, mixed-invoice treatment, contract variations, exemption validity and any applicable orders. Independent review remains pending.
 
 ## Disclaimer
 
