@@ -23,3 +23,7 @@ Search located published EU treaty Article336(4), which treats entry-into-force 
 ## v0.5 rate-date reconciliation
 
 Resolved previous full-text retrieval blocker using FCDO MS9/2026 CP1645 volumesI/II, linked from GOV.UK14July publication. Read signed Article336(1)–(5), Article248(1)–(5), Annex24 PartII3(a), together with domestic sections6/10 and Schedule2 paragraph3.336(4) expressly substitutes provisional-application dates for treaty entry-into-force references. Council confirms15July2026. Calendar derived: first12months15July2026–14July2027; next12months15July2027–14July2028; thereafter15July2028. Date-boundary example1000×15%=150,1000×16%=160. Future periods explicitly conditional on no amendments; third-year EU minimum not fixed forever. Later ratification not treated as restarting period. Independent review pending.
+
+## Arithmetic checks, v0.6
+
+Added three oa-check blocks under the existing import/production and deduction examples: import base and duplicate-freight error, comparable-market-value versus cost, and weighted historic duty with prior-tax cap. These encode existing sourced rules and hypothetical inputs, not new classifications or legal conclusions. The check covers arithmetic only; source verification, applicability and independent review remain separate.

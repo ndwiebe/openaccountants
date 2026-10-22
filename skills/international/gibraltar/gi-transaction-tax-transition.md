@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
   - url: "https://www.consilium.europa.eu/en/documents/treaties-agreements/agreement/?docLanguage=en&id=2026009"
@@ -83,6 +83,42 @@ These are assumed classification/rate cases, not rulings on particular goods:
 1. **Import:** customs value £10,000 already includes £400 freight. Separately chargeable excise £1,000 and packing £200 are not included. Taxable amount = £10,000 + £1,000 + £200 = **£11,200**. At an established 15% rate, tax = **£1,680**. Adding the £400 again would overstate tax by £60.
 2. **Local production:** established comparable open-market value £8,000; production cost £6,000. At an established 15% rate, tax = **£1,200**, not £900. If disposal rights transfer before dispatch, leaving occurs on that transfer under paragraph 1(2)(b).
 3. **No comparable supply:** no purchase price is available and evidenced cost price is £6,000. That establishes a floor of £6,000, not proof that any lower invoice price is acceptable. At 15%, tax on the floor is £900; confirm the final taxable valuation before using that amount.
+
+These checks recompute the stated assumptions; they do not determine commodity classification, valuation or rate eligibility.
+
+```oa-check
+name: Import valuation without duplicate freight
+inputs:
+  customs_value: 10000
+  excise_not_included: 1000
+  packing_not_included: 200
+  freight_already_included: 400
+  rate: 0.15
+steps:
+  - taxable_amount: customs_value + excise_not_included + packing_not_included
+  - tax: taxable_amount * rate
+  - duplicate_freight_overstatement: freight_already_included * rate
+expected:
+  taxable_amount: 11200
+  tax: 1680
+  duplicate_freight_overstatement: 60
+```
+
+```oa-check
+name: Local production with comparable market value
+inputs:
+  comparable_value: 8000
+  cost: 6000
+  rate: 0.15
+steps:
+  - tax_on_comparable_value: comparable_value * rate
+  - tax_on_cost: cost * rate
+  - understatement_using_cost: tax_on_comparable_value - tax_on_cost
+expected:
+  tax_on_comparable_value: 1200
+  tax_on_cost: 900
+  understatement_using_cost: 300
+```
 4. **Rate sensitivity:** an independently established £1,000 taxable amount gives £150 at 15%, £50 at 5%, or £0 at 0%. The arithmetic does not prove eligibility for a reduced category.
 
 ## Exemptions and export refunds
@@ -128,6 +164,33 @@ Rule 4 covers transaction-tax costs within 90 days beginning on the Implementati
 This is a profit deduction. The deduction amount is not itself a tax credit, repayment or customs refund. [Rule 4(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
 
 **Mixed-import illustration:** assume an evidenced £100,000 historical duty base, with accepted value proportions of 60% at a historical 10% rate and 40% at 0%. The weighted rate is 60% × 10% + 40% × 0% = **6%**, giving counterfactual duty of **£6,000**. Eligible transaction tax actually paid is £15,000, so the difference is £9,000. If immediately preceding-period tax paid was £12,000, the cap is £6,000 and the provisional deduction is **min(£9,000, £6,000) = £6,000**, subject to all remaining conditions. Assuming sufficient taxable profits and an independently established 15% income-tax rate, the resulting tax reduction would be **£900**, not £6,000. The example does not establish any real commodity's historical rate, valuation or allocation basis.
+
+```oa-check
+name: Mixed imports deduction limited by prior tax paid
+inputs:
+  historical_base: 100000
+  taxable_proportion: 0.60
+  zero_rate_proportion: 0.40
+  historical_rate: 0.10
+  other_rate: 0
+  transaction_tax_paid: 15000
+  previous_period_tax_paid: 12000
+  income_tax_rate: 0.15
+steps:
+  - weighted_rate: taxable_proportion * historical_rate + zero_rate_proportion * other_rate
+  - historical_duty: historical_base * weighted_rate
+  - positive_difference: max(0, transaction_tax_paid - historical_duty)
+  - cap: previous_period_tax_paid * 0.50
+  - deduction: min(positive_difference, cap)
+  - assumed_tax_saving: deduction * income_tax_rate
+expected:
+  weighted_rate: 0.06
+  historical_duty: 6000
+  positive_difference: 9000
+  cap: 6000
+  deduction: 6000
+  assumed_tax_saving: 900
+```
 
 **Boundaries:** zero preceding-period tax paid gives a zero cap under the rule's formula. Equal transaction tax and counterfactual duty give no positive difference. These rules do not state a carry-forward entitlement for the excess above the cap; do not invent one. [Rule 4(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
 
