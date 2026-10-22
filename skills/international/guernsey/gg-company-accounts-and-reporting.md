@@ -7,9 +7,15 @@ category: financial-statements
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
+  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0"
+    title: "Limited Companies civil penalties, July 2026"
+    as_of: "2026-10-22"
+  - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0"
+    title: "Annual-validation civil penalties, July 2026"
+    as_of: "2026-10-22"
   - url: "https://www.guernseyregistry.com/companyfees"
     title: "Guernsey Registry: Limited Companies fee schedule, effective 1 December 2025"
     as_of: "2026-10-22"
@@ -67,7 +73,7 @@ The current Registry page requires annual validation between **1 January and the
 
 Thus an ordinary company already registered before December 2025 files its 2026 validation by **28 February 2026**, based on 31 December 2025 details. A company incorporated in December 2025 falls within the stated exception for that cycle. This does not waive accounts, tax or other notices.
 
-A company seeking removal needs to complete the appropriate strike-off or winding-up process before 31 December to avoid the following validation obligation under the Registry guidance. Ceasing trade alone is not that process. Late or missing validation attracts the civil-penalty process; this draft does not quote a penalty amount or assume automatic immediate strike-off. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
+A company seeking removal needs to complete the appropriate strike-off or winding-up process before 31 December to avoid the following validation obligation under the Registry guidance. Ceasing trade alone is not that process. Late or missing validation attracts the civil-penalty process; the civil-penalty section below gives the published bands without assuming automatic immediate strike-off. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
 
 ## Current filing fees and category checks
 
@@ -85,7 +91,36 @@ The current charge for filing a special, waiver or unanimous resolution is **£1
 
 The schedule separately lists **£15** for a change of registered office, directors or resident agent, and **£50** for each change of memorandum or articles. Its company-details submission for classification, purpose and economic activity code, and its personal-details submission, carry no charge. Choose the correct filing type rather than treating a free details update as a substitute for a charged corporate change. [Fee schedule](https://www.guernseyregistry.com/companyfees).
 
-The published **£5 per calendar day, capped at £500**, is expressly for late document filings **excluding** documents whose lateness incurs a Schedule 2 civil penalty. It is not the annual-validation penalty: the schedule directs late annual validations and specified late changes of registered particulars to the civil-penalty rules. Identify the applicable regime before calculating any late charge; this draft does not quantify those civil penalties. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+The published **£5 per calendar day, capped at £500**, is expressly for late document filings **excluding** documents whose lateness incurs a Schedule 2 civil penalty. It is not the annual-validation penalty: the schedule directs late annual validations and specified late changes of registered particulars to the civil-penalty rules. Identify the applicable regime before calculating any late charge; the separate civil-penalty guidance below applies. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+
+## Civil penalties: classification, breach and notice
+
+The July 2026 validation guidance distinguishes administered companies (GFSC licensed/authorised/registered under the supervisory laws, or administered, controlled or operated by an entity licensed by the GFSC under those laws in the course of its activities) from the residual non-administered category. Confirm that definition separately from a fee-category label. [Validation penalties, pages 1–2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
+
+| Published validation lateness band | Non-administered | Administered |
+|---|---:|---:|
+| Up to one week | £250 | £450 |
+| Between one week and one month | £500 | £900 |
+| More than one month | £1,000 | £1,800 |
+
+[General civil-penalty table, page 6, band 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0). Do not calculate this as £5 daily. The validation note supplies 7 March/30 March examples but overlaps its “one month” wording; exact boundary-date treatment needs the regulations or Registry confirmation. A company not filing is also exposed. [Validation note, page 2](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0).
+
+The validation note says the register becomes “In Default” until filing. A penalty is not automatically collected at online submission: the Registrar issues an order. Payment is due within **28 days of the order date**; an application to Court to set aside or modify it is due within **21 days of receipt**, with notice to the Registrar. Preserve both dates. Portal payment uses the Civil Penalty Payment submission; retain the reference and receipt. Unpaid penalties can be enforced as civil debt. [Validation note, pages 2–3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174583&p=0). Current court procedure and any suspension remain unverified.
+
+From **1 September 2026**, late director/resident-agent changes are charged per breach, not per combined submission. The general note's non-administered example has two director changes in the shortest band at £90 each and one resident-agent change at £250, totalling **£430**. Filing them together does not reduce this to one charge. Retain effective dates, individual changes and evidence of delay; this example assumes the stated classification and band. [General guidance, page 3](https://www.guernseyregistry.com/CHttpHandler.ashx?id=174582&p=0).
+
+```oa-check
+name: Guernsey September 2026 multiple late changes are separate breaches
+inputs:
+  director_changes: 2
+  director_penalty: 90
+  resident_agent_changes: 1
+  resident_agent_penalty: 250
+steps:
+  - total_penalty: director_changes * director_penalty + resident_agent_changes * resident_agent_penalty
+expected:
+  total_penalty: 430
+```
 
 ## Prepare the 2026 validation evidence
 
