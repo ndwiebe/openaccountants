@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 ---
 
@@ -103,7 +103,13 @@ Regulation 4(3) imposes the EC$3 million threshold on a facility qualifying thro
 
 Regulation 5(1)(d)–(e) separately includes percentages of specified engineering/study costs for the medical-equipment investments in regulation 4(1)(e), while regulation 5(2) excludes preparatory/professional costs. Their interaction requires reconciliation before counting these costs; no blanket professional-fee allowance is certified here. The mixed-sector formula in regulation 4(4) expressly concerns an **investment allowance**; this Guide does not transpose it into a property-transfer waiver calculation.
 
-**Remaining eligibility gap:** the original Investment Act and 2016 regulations have been retrieved, but subsequent amendments, the Investment Act's commencement and 2016 amendment, and the actual approval procedure remain to be reconciled. Obtain sector certification, project scope, written-down values, an itemised cost schedule and the waiver decision before applying relief. This Guide does not certify a currently available concession for a particular purchaser.
+### Investment-law framework and evidence
+
+The Investment Act 42 of 2014 commenced on **29 April 2016**, under [SRO 31 of 2016](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-31-of-2016-Proclamation.pdf). Its title year is not its commencement year. Act 7 of 2016 prints **15 April 2016** as its commencement date and replaces section 15 with express regulation-making powers for priority sectors, large-scale projects and projects with specified projected capital investment. The priority-sector regulations and the property-transfer waiver amendment then commenced on 1 May 2016. Keep these distinct dates when examining an older transaction. [Act 7 of 2016, sections 1–2](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-7-of-2016-Investment-Amendment-1.pdf).
+
+Section 6(2) of the Investment Act requires every investment entity to register with the investment agency. Section 8 entitles an entity to incentives for which it qualifies under the applicable incentive law; registration alone is not a waiver decision. Section 14 requires compliance with applicable Grenadian law, including labour, health and safety, and environmental law. Preserve agency registration and the separate permissions relevant to the project. [Investment Act, sections 6, 8 and 14](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-42-of-2014-Investment-Act.pdf).
+
+**Remaining eligibility gap:** subsequent amendments and the actual approval procedure remain to be reconciled. Obtain sector certification, project scope, written-down values, an itemised cost schedule and the waiver decision before applying relief. This Guide does not certify a currently available concession for a particular purchaser.
 
 ## Recording the transfer
 

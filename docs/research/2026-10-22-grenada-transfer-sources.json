@@ -30,6 +30,16 @@
       "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-42-of-2014-Investment-Act.pdf",
       "bytes": 389996,
       "sha256": "5d78a65970a07cfade0f01387164b204d736926065e0830a21cb6638e446b23a"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-7-of-2016-Investment-Amendment-1.pdf",
+      "bytes": 263956,
+      "sha256": "5c146a386222f80f1f401158394b4ff7d14507d79e2d49baec69f046e39f3612"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-31-of-2016-Proclamation.pdf",
+      "bytes": 38310,
+      "sha256": "998899845c8bb23d5640a8735a109d135a33ce19bbc0d2c7088817b7619ebb91"
     }
   ],
   "corroboration": {
@@ -38,7 +48,7 @@
   },
   "review_status": "independent review pending",
   "gaps": [
-    "Later amendments; Investment Act commencement and Act 7 of 2016; regulation 5 medical professional-cost interaction",
+    "Later amendments and current approval procedure; regulation 5 medical professional-cost interaction",
     "Tourism/investment approvals and concession computation",
     "Noncitizen gift-recipient threshold treatment above EC$150000",
     "Current forms, regional citizenship exceptions and closing process"
@@ -51,5 +61,12 @@
     "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf",
     "effective_date": "2016-05-01",
     "provision": "Section 2, Act 9 of 2016"
+  },
+  "investment_framework": {
+    "original_act_commencement": "2016-04-29",
+    "authority": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-31-of-2016-Proclamation.pdf",
+    "amending_act_printed_commencement": "2016-04-15",
+    "amending_act": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-7-of-2016-Investment-Amendment-1.pdf",
+    "priority_regulations_commencement": "2016-05-01"
   }
 }
