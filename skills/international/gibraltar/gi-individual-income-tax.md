@@ -1,13 +1,13 @@
 ---
 name: gi-individual-income-tax
 description: >
-  Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Category 2, HEPSS, pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes pre-death income obligations and specified allowance reductions under section 47. Category 2, HEPSS, pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed"
@@ -144,6 +144,36 @@ expected:
 ```
 
 The live submission form/channel for the 2026/27 return and special assessment payment cases remain to be verified. Keep return delivery, individual tax payments and employer PAYE remittances separate. See the [payroll Guide](gi-payroll-social-insurance.md) for employer reporting. The self-employed webpage labels its allowance table 2021/22 and 2022/23; that table is not used here to establish current allowance figures.
+
+## Death during the tax year
+
+Section 47 transfers the deceased individual's rights, duties and tax liabilities concerning **income arising before death** to the executor, subject to its assessment limit. Tax payable by the executor under that section is a debt payable out of the deceased's estate. The section does not by itself classify income arising to the estate after death or establish inheritance-tax treatment. Separate pre-death income from later estate income and retain the executor's authority. [Section 47(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+An assessment or additional assessment on that pre-death income must not be made later than the **end of the third year of assessment following the year in which death occurred**. This is not a three-year anniversary measured from the death date, nor a three-year extension for submitting every return. Keep ordinary return, payment, appeal and refund deadlines separately. [Section 47(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Assessment-period example:** a death on 15 October 2026 falls in the year ending 30 June 2027. The three following years end on 30 June 2028, 2029 and 2030, so the section 47(2) endpoint is **30 June 2030**. This does not say that an existing tax debt disappears on that date or that no return is required until then.
+
+Section 47(3) reduces deductions allowable under **rules 6–19** of the Income Tax (Allowances, Deductions and Exemptions) Rules 1992 by **one twelfth for each complete calendar month** by which death precedes the assessment-year end. Check the particular deduction's legal basis and eligibility first. Do not extend this specific cross-reference to every relief, calculate a daily fraction, or apply it as a reduction of gross income under both tax systems. [Section 47(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Allowance example:** assume a deduction within that rule range has an otherwise established annual amount of £6,000. For death on 15 October in a year ending the following 30 June, November–June gives eight complete calendar months. The reduction is **£6,000 × 8/12 = £4,000**, leaving **£2,000**. For death on 15 June, there are no complete calendar months before 30 June and this particular reduction is zero. The £6,000 is an illustrative input, not a published allowance amount.
+
+```oa-check
+name: Gibraltar specified deduction reduction after death
+inputs:
+  otherwise_allowable_annual_deduction: 6000
+  complete_months_october_case: 8
+  complete_months_june_case: 0
+steps:
+  - october_reduction: otherwise_allowable_annual_deduction * complete_months_october_case / 12
+  - october_remaining: otherwise_allowable_annual_deduction - october_reduction
+  - june_reduction: otherwise_allowable_annual_deduction * complete_months_june_case / 12
+expected:
+  october_reduction: 4000
+  october_remaining: 2000
+  june_reduction: 0
+```
+
+Recommended records: death date, executor authority, income cut-off, year-by-year assessments/payments, each deduction's governing rule and complete-month computation. Notification and final-return channels, post-death estate income and treatment of each specialised deduction still require verification. See [assessment appeals and refund claims](gi-income-tax-assessment-appeals.md) for the separate procedural clocks; no estate-wide tax clearance is established by this section.
 
 ## Penalties and interest
 
