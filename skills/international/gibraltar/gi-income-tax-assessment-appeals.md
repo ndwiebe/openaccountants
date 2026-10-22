@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
+    title: "Companies Act 2014: section 305 is merger terms, not the cited liquidation provision"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf"
     title: "Gibraltar Income Tax Office MAP guidance: sections 6.2–6.3, 7.1–7.2 and scope"
     as_of: "2026-10-22"
@@ -114,6 +117,8 @@ Section 51 permits a person answerable for another's tax to retain sufficient mo
 ## Tax provision during liquidation
 
 Section 52 prevents a liquidator from distributing company assets to shareholders, or disposing of the company/assets to the specified connected persons, unless provision has been made for full payment of tax that may be payable. Subsection (2) defines that term by reference to sums due under the Act at the relevant Companies Act date. Verify that cross-reference and the liabilities; do not replace it with an unsupported reserve percentage or a claim that every ordinary third-party sale is prohibited. [Section 52](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Specific cross-reference mismatch:** Income Tax Act section 52(2) refers to Companies Act section 305(1), but section 305(1) in the current Companies Act 2014 consolidation concerns directors adopting draft merger terms. It does not provide the liquidation rule or relevant-date definition needed here. The correct successor provision and applicable transitional/interpretation rules have not been established. Do not infer a liquidation tax cut-off from current section 305 or assume that the mismatch removes section 52(1)'s obligation. [Companies Act 2014, section 305(1), printed page 246](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
 Keep the statutory appointment/declaration, liability schedule, control/connection analysis, funds retained and payment evidence. Current notification channels, practical assessment naming, disputed agency facts and the Companies Act liquidation cross-reference remain to verify. These rules do not replace the underlying non-resident charge, treaty allocation or separate insolvency duties.
 
