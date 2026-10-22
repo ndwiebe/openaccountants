@@ -28,5 +28,19 @@
     "Treaties/exemptions and business-presence application",
     "Remittance form and electronic procedure",
     "Holiday adjustments and current penalties"
-  ]
+  ],
+  "visual_verification": {
+    "document": "https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf",
+    "pages": [
+      60,
+      86,
+      119,
+      120
+    ],
+    "findings": [
+      "Section 57 payer obligation, overseas-address presumption and Comptroller treaty direction",
+      "Section 97 deducted OR deductible month-end deadline",
+      "Section 98 monthly OR part-month interest; payer bears interest"
+    ]
+  }
 }
