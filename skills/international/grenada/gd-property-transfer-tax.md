@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
@@ -15,7 +15,7 @@ verified_by: pending
 
 ## Scope and source limits
 
-This Guide covers ordinary land transfers under the Property Transfer Tax Act, Chapter 257C, using Parliament's published consolidation and the [IRD property-transfer summary](https://ird.gd/taxes/property-transfer-tax). The consolidation lists amendments through 2010; it is not represented as a complete 2026 consolidation. The 2015 and 2016 amendments were retrieved separately and read alongside it. The 2015 Act prints commencement as 14 August 2015. Full amendment and commencement reconciliation, current forms and independent review remain outstanding.
+This Guide covers ordinary land transfers under the Property Transfer Tax Act, Chapter 257C, using Parliament's published consolidation and the [IRD property-transfer summary](https://ird.gd/taxes/property-transfer-tax). The consolidation lists amendments through 2010; it is not represented as a complete 2026 consolidation. The 2015 and 2016 amendments were retrieved separately and read alongside it. The 2015 Act prints commencement as 14 August 2015. The 2016 amendment commenced on **1 May 2016**, established by [SRO 27 of 2016, section 2](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf). Full amendment reconciliation, current forms and independent review remain outstanding.
 
 The ordinary rates and thresholds below agree with the current official indexed IRD summary. This Guide does not certify eligibility for investment or tourism concessions, treaty or regional-nationality treatment, or complete closing costs.
 
@@ -65,7 +65,28 @@ The same amendment preserves the former sections 5A–5B for approved tourism de
 
 Section 4 of the 2015 amendment also repeals the old section 7(5) discretionary remission/refund provision. Do not rely on that paragraph merely because it remains printed in the older consolidation. [Act 23 of 2015, section 4](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-23-of-2015-Property-Transfer-Tax-Amendment.pdf#page=5).
 
-[Act 9 of 2016](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf) separately changes qualifying-investment waivers and contains commencement and clawback provisions. This Guide does not operationalise those waivers: the complete intervening amendments, commencement order, qualifying investment instruments and approval evidence have not been verified together.
+## Qualifying-investment waiver and recovery
+
+Act 9 of 2016 substitutes section 5(6)–(7) and adds subsections (8)–(9). Its effective date is **1 May 2016**, not the assent or Gazette publication date. [Commencement Order, section 2](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf).
+
+The waiver concerns a **noncitizen purchaser** acquiring land for a qualifying investment under the Investment Act 2014 or its regulations. The following is the statutory waiver schedule, conditional on establishing qualifying-investment status, priority sector, qualifying costs and location. The percentages reduce the **tax payable**, not the property's value or the vendor's separate liability. [Act 9 of 2016, section 2, substituted section 5(6)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf#page=4).
+
+| Qualifying costs in a priority sector | Location | Purchaser tax waived |
+|---|---|---:|
+| Up to EC$30 million, inclusive | Any parish | 50% |
+| Over EC$30 million, up to EC$80 million inclusive | Parish of St. George | 75% |
+| Over EC$30 million | Outside the parish of St. George | 100% |
+| Over EC$80 million | Any parish | 100% |
+
+At exactly EC$30 million, the printed schedule gives 50%; at exactly EC$80 million in St. George, it gives 75%. A project outside St. George needs costs **exceeding**, not merely equal to, EC$30 million for the 100% band. These are threshold checks, not a finding that a particular project qualifies. [Act 9 of 2016, section 2](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf#page=4).
+
+The purchaser must repay the waived tax within **two months** after any of these recovery triggers: failure to commence within **two years of the waiver grant**; failure to meet the relevant qualifying-cost threshold by completion or the investment-agreement deadline, whichever occurs first; or transfer to another party of the property where the qualifying investment has not been completed. Interest and penalties under the Tax Administration Act 2016 apply after the repayment period. “Commence” means commencement of **infrastructural work**. [Act 9 of 2016, substituted section 5(7) and added section 5(9)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf#page=5).
+
+The Comptroller, consulting the investment-promotion agency, can extend the commencement or qualifying-cost time limits by no more than **twelve months**. This is a granted extension, not an automatic grace period; subsection (8) does not extend the unfinished-project transfer trigger. Preserve the waiver date, agreement, location evidence, qualifying-cost records, infrastructure commencement evidence and any written extension. [Act 9 of 2016, section 5(8)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf#page=5).
+
+**Eligibility gap:** the Investment Act and regulations defining qualifying investments, costs and priority sectors, the full amendment chain and the actual approval procedure have not been verified together. Do not apply this schedule to a purchase merely because its price crosses a threshold. The table records the amendment's rules; it does not certify a currently available concession for a particular purchaser.
+
+## Recording the transfer
 
 Sections 7 and 18 require evidence of payment or no-tax treatment for recording the transfer. Obtain the Comptroller's stamp/receipt and the required evidence before treating the conveyance as ready for recording. Do not invent a universal payment deadline from a deadline that concerns reassessment or appeal. Stamp duty and landholding permissions are separate questions. [Act, sections 7 and 18](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap257C-PROPERTY-TRANSFER-TAX-ACT.pdf#page=6).
 

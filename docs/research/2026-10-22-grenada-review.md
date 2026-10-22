@@ -26,3 +26,10 @@ Retrieved Parliament's Chapter 257C consolidation and Act 9 of 2016; hashes reco
 ## Corrective amendment reconciliation
 
 Retrieved Act 23 of 2015, which prints commencement 14 August 2015. This corrected the draft's overly broad statement of old sections 5A–5B: they survive only for pre-commencement Cabinet-approved developments; the amendment creates a distinct tourism-complex definition, first developer-transfer vendor rate of 1%, and the four-week owner-occupation limit. Added the section 5(5) whole-property/connected-transaction threshold aggregation and a co-owner example; removed reliance on the repealed general-remission paragraph. Read 2016 Gazette notice 16, which lists SRO 27 but does not reproduce its commencement order; no effective date inferred. Four-Guide count unchanged: this is a substantive correction, not another Guide. Independent review still pending.
+
+
+### 2016 investment-waiver commencement resolved
+
+Retrieved Parliament's actual [SRO 27 of 2016](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-27-of-2016-Property-Transfer-Tax-Amendment-Act-Commencement-Order.pdf), hashed in the transfer-source manifest. Section 2 brings Act 9 of 2016 into force on 1 May 2016. The earlier Gazette cover notice alone was insufficient; this operative Order resolves that specific gap.
+
+Read Act 9 section 2 against the Guide: added the conditional purchaser-waiver schedule (50/75/100 percent), exact 30m/80m boundary checks, two-year infrastructure commencement requirement, qualifying-cost deadline, unfinished-project transfer clawback, two-month repayment period and discretionary extension capped at twelve months. The extension only references section 5(7)(a) and (b). No Investment Act eligibility, priority-sector classification, complete amendment chain or individual waiver approval is certified. Independent review remains pending.
