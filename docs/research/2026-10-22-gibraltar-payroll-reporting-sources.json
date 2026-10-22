@@ -36,6 +36,11 @@
       "sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
       "locators": "Regulations4(7),4A\u20134C printedpages7\u20138;17A printedpages16\u201317",
       "version": "Parent current-version date1July2015; consolidation includes2017/156 retrospective amendment"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf",
+      "sha256": "820c1ee74ebed75fa6b0110f66d6a340e5d7a6821867c4659b52159a74b9fdd0",
+      "locators": "Regulations3\u20135 pages2\u20135;7\u201312 pages6\u20137; read with SIregulations4(1),5\u20136"
     }
   ]
 }

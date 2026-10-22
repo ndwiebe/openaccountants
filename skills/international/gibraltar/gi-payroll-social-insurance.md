@@ -7,9 +7,12 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf"
+    title: "Employment Injuries (Contributions) Regulations 2001, incorporated contribution procedures"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf"
     title: "Social Insurance (Contributions) Regulations: regulations 4, 4A–4C and 17A"
     as_of: "2026-10-22"
@@ -33,7 +36,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.6
+# Gibraltar payroll and social insurance v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -161,6 +164,35 @@ Where an employed contribution is payable and the same person is also liable as 
 ## Contribution assessments and appeals
 
 The Director can assess unpaid or underpaid contributions under regulation 4C. The notice must identify the amount, payment place and appeal rights. A dispute is made by written notice addressed to the Director **within fourteen days from service**. Late permission requires a specified reasonable impediment and an application without unreasonable delay once it ends. Additional contributions under an amended assessment are payable in full within one month after service of that notice. Keep the notice and evidence of service; do not substitute the 28-day income-tax assessment appeal period. [Regulation 4C(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+## Employer contribution records and cessation
+
+Social Insurance (Contributions) regulation 4(1) incorporates Employment Injuries (Contributions) regulations 2–8 except where expressly varied or inconsistent with the Act or the SI regulations. Read those limits before applying the cross-reference. [SI regulation 4(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+Under the incorporated regulation 5, both weekly-paid and monthly-paid remuneration require recording the contribution class, number and amount within seven days after the **week** in which remuneration is paid. The monthly-paid provision also says week; do not replace it with month. Contributions are payable within fifteen days after the month, and remuneration paid in advance requires contributions in advance for that period. The self-employed monthly-recording rule above is different. [Employment Injuries regulations 5(1)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).
+
+Regulation 4 requires the employer's contribution schedule to reach the Director within fifteen days after each relevant contribution quarter. Regulation 8 separately requires the schedule and contribution remittance forthwith on termination, or within seven days where the employee terminates without notice/intimation; death also requires forthwith return and payment. Do not assume the usual monthly cycle overrides this cessation requirement. Confirm the current electronic process for satisfying it. [Regulations 4(7), 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).
+
+Regulation 7 prohibits unauthorised alteration, erasure, defacement or destruction of the contribution schedule. Preserve the original and obtain the authorised correction route. Regulation 4(8)'s employer-schedule declaration text unexpectedly refers to a self-employed signatory; this drafting mismatch needs administrative confirmation and is not authority to omit a declaration. [Regulations 4(8), 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).
+
+## Contributions paid in error
+
+SI regulation 5 incorporates Employment Injuries regulations 9–12, subject to its express substitution. Regulation 9 requires a written application to the Director for contributions paid under an erroneous belief that they were payable. Regulation 10 gives these periods:
+
+- Paid on the due date: apply within **two years of payment**.
+- Paid late: apply within **two years of the due date or twelve months of actual payment, whichever ends later**.
+
+Use actual due/payment dates and the required application form/manner. This is not permission to deduct a disputed amount from the next remittance. SI regulation 6 separately lets the Director allocate wrong-rate payments against the contributions properly payable. [SI regulations 5–6](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf); [Employment Injuries regulations 9–10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf).
+
+**Date example:** a contribution due and paid on 15 August 2025 has a two-year reference endpoint of 15 August 2027. If due on 15 August 2025 but paid on 15 December 2026, the competing endpoints are 15 August 2027 and 15 December 2027; the later endpoint is **15 December 2027**. Submit before the endpoint and confirm exact deadline computation, form and receipt requirements; no holiday extension is assumed.
+
+SI regulation 5(2) substitutes a benefit-deduction provision for incorporated regulation 12: deduct relevant benefits paid because of the erroneous contributions, including amounts paid to another person on that basis. Accordingly, do not simply transplant the Employment Injuries regulation 12 employer/employee refund-recipient rule into an SI claim. Establish recipient, deductions and net refund under the applicable regime. [SI regulation 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
+
+## Questions requiring an operational ruling
+
+Employment Injuries regulation 3(7), incorporated subject to SI regulation 4(1), identifies the first employer in a contribution week where a person has multiple employers. The employer notes instead instruct contributions in each employment unless an ITO exemption certificate has been issued. Their operational relationship, concurrent-job allocation and weekly maximum administration remain unresolved. Obtain the ITO allocation/certificate before ceasing deductions; neither an employer's guess nor the mere existence of a second job settles it. [Regulation 3(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf); [SI regulation 4(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf); [employer notes, page 10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+The detailed authority for recovering a missed employee deduction from later wages has not been established by these cross-references. Section 7 of the Act's restrictions remain controlling; this Guide does not authorise an arrears deduction.
 
 ## Computation
 
