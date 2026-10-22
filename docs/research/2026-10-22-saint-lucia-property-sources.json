@@ -1,0 +1,51 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-7",
+      "bytes": 64432,
+      "sha256": "4481ca1178dd0c183ff32fc805ab09b485ac5f42a37628a8f40db597af52e435"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/schedule-2",
+      "bytes": 62162,
+      "sha256": "903de135866e0c5965a6e5dbbee96635afa9e5e5848ca9a004e44500c5afd4fc"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-35",
+      "bytes": 62199,
+      "sha256": "58cdf0fd4a18be3f4712db981536127a4b5740cd9e6bd2293c8358a48f5ab25b"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-14",
+      "bytes": 62790,
+      "sha256": "a22ba22ff901cfaedf1f30e5957b6820f2741368e90a557434a7772d547ec378"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-28",
+      "bytes": 62346,
+      "sha256": "6482948a48b0b8aac2c2b62936bb1dd2e44b277edee38884149fcdf31e9fb1bc"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-13",
+      "bytes": 62646,
+      "sha256": "8f0f36b118890cb8ccac37b2bb0f6210ceef4e7afe8b9b2c905b36641b691e64"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-12",
+      "bytes": 61186,
+      "sha256": "eea0c158be7a5383e1af6e5309d092cfeae9575629a0fba7d6a715da0a3c2a44"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-21",
+      "bytes": 61369,
+      "sha256": "5764599d149f53937cc4b44c36d03f8eef6796a61550ebacbf36158d377c0557"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "Post-2023 amendment and remission chain",
+    "Commercial partial waiver and current relief forms",
+    "Land classification, penalties, appeals and amnesty terms"
+  ]
+}
