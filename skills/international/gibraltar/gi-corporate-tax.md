@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.14"
+version: "0.15"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -33,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar corporate tax and filing v0.14
+# Gibraltar corporate tax and filing v0.15
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -303,7 +303,42 @@ expected:
 
 The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)–(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-For a claim mixing protected and restricted losses, retain separate pools and obtain review of the cap computation after the mandatory ordering; this Guide does not assume whether the 50% base is reduced by the protected pool. Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Check any applicable regulations and the taxpayer's status before filing; the consolidation's definition alone does not establish every entity's treatment. [Section 20(10)–(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+### Mixed protected and restricted losses: statutory working-paper interpretation
+
+**Interpretation, not published Commissioner guidance:** section 20(6) measures the 50% cap by profits computed under Schedule 3. Subsection (9) excludes protected-period losses from that restriction, and subsection (10) requires their use first. Read together, these provisions support keeping the cap at **50% of the original Schedule 3 profit measure**, while limiting the subsequent restricted-loss claim to the profits remaining after protected losses. They do not expressly direct a second calculation of 50% on that smaller remainder. This is the Guide's reasoned statutory reading; no official mixed-pool worked example or case-specific ruling has been verified. [Section 20(1), (6), (9)–(11); Schedule 3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For a reviewable working paper, let **P** be the positive Schedule 3 profit measure, **A** eligible unused protected losses and **B** eligible unused restricted losses. On that reading, protected losses used are `min(A, P)`, the cap is `0.5 × P`, and restricted losses used are the smallest of B, the cap and the remaining profit. Keep unused amounts in their respective pools. Assume all general eligibility and continuity conditions hold, no insolvency exception applies and no applicable regulations change the treatment. This illustration does not determine a taxpayer's designated status or the eligibility of a loss.
+
+With P = £100,000, A = £40,000 and B = £80,000, use £40,000 protected losses first and £50,000 restricted losses next. The remaining profit component is **£10,000**, with £30,000 restricted losses unused. If A instead equals £70,000, only **£30,000** of restricted losses can be used, despite the £50,000 cap; remaining profit is zero and £50,000 restricted losses remain. If protected losses equal or exceed P, restricted losses are not used. These are loss-set-off examples, not final tax assessments.
+
+```oa-check
+name: Mixed loss pools using the original Schedule 3 cap interpretation
+inputs:
+  schedule3_profit: 100000
+  protected_pool: 40000
+  larger_protected_pool: 70000
+  restricted_pool: 80000
+steps:
+  - cap: schedule3_profit * 0.5
+  - protected_used: min(protected_pool, schedule3_profit)
+  - restricted_used: min(restricted_pool, cap, schedule3_profit - protected_used)
+  - residual_profit: schedule3_profit - protected_used - restricted_used
+  - restricted_left: restricted_pool - restricted_used
+  - larger_protected_used: min(larger_protected_pool, schedule3_profit)
+  - second_restricted_used: min(restricted_pool, cap, schedule3_profit - larger_protected_used)
+  - second_residual_profit: schedule3_profit - larger_protected_used - second_restricted_used
+  - second_restricted_left: restricted_pool - second_restricted_used
+expected:
+  cap: 50000
+  restricted_used: 50000
+  residual_profit: 10000
+  restricted_left: 30000
+  second_restricted_used: 30000
+  second_residual_profit: 0
+  second_restricted_left: 50000
+```
+
+Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Before filing, verify applicable regulations and obtain review of this interpretation for the actual claim. Retain the Schedule 3 computation, separate loss-period roll-forwards, protected-first ordering and the reason for the selected cap base. The arithmetic test checks the stated reading; it does not prove administrative acceptance. [Section 20(10)–(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Losses transferred in a group restructure
 
@@ -387,7 +422,7 @@ For current company return failures, section 65(3) provides these **additional**
 
 The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
-**Open scope:** remaining deductibility rules, building-claim procedures and special-case capital allowances, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
+**Open scope:** remaining deductibility rules, building-claim procedures and special-case capital allowances, administrative confirmation of the mixed-pool loss interpretation and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
 ## Sources
 
