@@ -21,7 +21,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar–Spain tax residence v0.1
+# Gibraltar–Spain tax residence v0.2
 
 > **Source-cited draft.** Independent source review and professional attestation are pending. Residence, source and relief conclusions require the actual facts and applicable domestic laws.
 
