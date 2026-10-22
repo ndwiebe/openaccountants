@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://www.guernseyroyalcourt.gg/article/1638/Conveyances-and-Bonds"
@@ -33,9 +33,9 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey property document duty v0.2
+# Guernsey property document duty v0.3
 
-> **Source-cited draft.** Independent source review and professional attestation are pending. This is a working-paper calculation, not authority to complete a conveyance or make payment.
+> **Source-cited draft.** Independent source review is recorded in the pack README; professional attestation remains pending. This is a working-paper calculation, not authority to complete a conveyance or make payment.
 
 ## Scope and evidence
 

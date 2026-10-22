@@ -20,8 +20,20 @@ Owner Michael, confirmed in [issue #397](https://github.com/openaccountants/open
 | Capital / property | [Property document duty](gg-property-document-duty.md) | Graduated rates, surcharge repeal, conditional downsizing calculations and Court/registration procedure; full charging law, exemptions, anti-avoidance scope, payment/claims/penalties and other property taxes remain open |
 | XB | [UK treaty employment and relief](gg-uk-treaty-employment-and-relief.md) | Pension/government-service and student allocation conditions now drafted; claim operations, domestic ordinary-residence and pension lump-sum treatment, domestic PE implementation; capital-gains/offshore allocation now drafted, with domestic valuation/disposal filing open; published arbitration procedure and conflicting effective-status evidence now recorded; other corridors and exit/non-resident rules |
 
-The VAT entry is an unresolved programme consumption-tax scope, not an assertion of a current Guernsey VAT. No reviewed not-applicable finding has been made. Nine Guides are present, zero independently reviewed or professionally attested in this work. A domain mapping establishes draft presence only.
+The VAT entry is an unresolved programme consumption-tax scope, not an assertion of a current Guernsey VAT. No reviewed not-applicable finding has been made. Nine Guides are present. Eight have received independent AI source/editorial review within their stated scopes; none is professionally attested in this work. The UK treaty Guide still needs a full review. A domain mapping establishes draft presence only.
 
 Accounting milestone drafts: [formation](gg-company-formation.md) and [accounts/reporting](gg-company-accounts-and-reporting.md). The audit-exemption primary-source gap remains in the accounts Guide.
 
-Sources and access dates are recorded in the new Guides and [research](../../../docs/research/); all nine Guides now have structured source metadata, which does not establish complete source verification. Independent review, required checks, merge and verified platform ingestion remain necessary before acceptance. Keep issue #397 open while these gaps remain.
+Sources and access dates are recorded in the new Guides and [research](../../../docs/research/); all nine Guides now have structured source metadata, which does not establish complete source verification. Remaining review, resolution of source gaps, required checks, merge and verified platform ingestion remain necessary before acceptance. Keep issue #397 open while these gaps remain.
+
+## Independent source-review records
+
+These records identify versions, evidence used, findings corrected and limitations. Several official sites blocked fresh reviewer access, so those checks used saved primary-source copies. Review does not establish complete current legislation or professional attestation.
+
+| Guides | Review record |
+|---|---|
+| Individual income tax | [Broader review and correction](../../../docs/research/2026-10-22-guernsey-individual-full-review.md), supplemented by the earlier scoped cap, penalty and departure records |
+| Corporate tax/substance | [Full source review](../../../docs/research/2026-10-22-guernsey-corporate-full-review.md) |
+| Payroll/social insurance and secondary pensions | [Full source review](../../../docs/research/2026-10-22-guernsey-payroll-pensions-full-review.md) |
+| Formation and accounts/reporting | [Full source review and civil-penalty addition](../../../docs/research/2026-10-22-guernsey-registry-full-review.md) |
+| Property document duty and GST transition | [Full source review](../../../docs/research/2026-10-22-guernsey-property-gst-full-review.md) |

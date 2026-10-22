@@ -1,13 +1,13 @@
 ---
 name: gg-gst-transition
 description: >
-  Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft does not establish a current GST liability, a complete consumption-tax regime, customs treatment or a reviewed not-applicable determination. Enacted rules and independent review remain outstanding.
+  Prepare Guernsey and Alderney GST transition working papers from the October 2026 approved tax reform package. Distinguish the published 2029 timetable and illustrative price calculations from enacted charging, registration and return requirements. Covers the adopted commencement safeguards, operational evidence needed before implementation, and the relationship with income-tax, social-security and benefit changes. Use for GST readiness, planned pricing and review of reform assumptions. This source-cited draft does not establish a current GST liability, a complete consumption-tax regime, customs treatment or a reviewed not-applicable determination. Enacted rules remain outstanding; the source-review record states the scope reviewed.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://gov.gg/taxreform"
@@ -47,7 +47,7 @@ The verified evidence does not establish comprehensive taxable supplies, valuati
 
 Before treating GST as operational, obtain the legislation, commencement instrument, territorial scope and current registration/return guidance. Record their dates and applicability to the transaction. The adopted resolution requires the associated income-tax and social-security mitigations, benefit increases and Essential Costs Relief Payment arrangements to be operational before GST becomes chargeable. Retrospective compensation or later systems completion does not satisfy that requirement. [Proposition 1(a)](https://statesvoting-records.gov.gg/Propositions/Details/2682).
 
-The resolution directs deferral if those conditions are unmet, a revised timetable, and a joint implementation assurance report before a commencement instrument is made or submitted. Where a required event occurs after the report, confirmation must precede chargeability. The implementing legislation is to preserve these conditions without an administrative waiver. [Proposition 1(b)–(f)](https://statesvoting-records.gov.gg/Propositions/Details/2682).
+The resolution directs deferral if those conditions are unmet, a revised timetable, and publication of a joint implementation assurance report by the Policy & Resources Committee and the Committee for Employment & Social Security before a commencement instrument is made or submitted. Where a required event occurs after the report, the Committees must publish confirmation before chargeability. The implementing legislation is to preserve these conditions without an administrative waiver. [Proposition 1(b)–(f)](https://statesvoting-records.gov.gg/Propositions/Details/2682).
 
 For the working paper, retain the report, any subsequent confirmation and the legal commencement evidence. The report alone is not a substitute for the law. Registration deadlines, return periods, payment dates and forms remain unverified here.
 
@@ -103,7 +103,7 @@ expected:
 
 ## Sources and acceptance gaps
 
-All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. Current domestic tax scope, customs/excise, enacted implementation, operational rules and independent review remain open.
+All three sources in frontmatter were read on 22 October 2026: [official timetable](https://gov.gg/taxreform), [adopted commencement conditions](https://statesvoting-records.gov.gg/Propositions/Details/2682) and [legislation direction](https://statesvoting-records.gov.gg/Propositions/Details/2787). The latter two record votes carried on 2 October 2026. This draft records a verified policy transition, not comprehensive VAT/GST coverage, professional attestation or a determination that consumption taxes are inapplicable. Current domestic tax scope, customs/excise, enacted implementation, operational rules and current-law reconciliation remain open. Independent source review is recorded in the pack README.
 
 ## Disclaimer
 
