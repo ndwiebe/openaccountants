@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: "0.11"
+version: "0.12"
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.11
+# Gibraltar corporate tax and filing v0.12
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -24,6 +24,18 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 ## Charge and rates
 
 Apply the source-of-profit analysis under section 11 and Schedule 1, not a blanket worldwide or tax-free-offshore assumption. The standard company rate is 15% from 1 July 2024. The higher rate is 20% for the statutory utility/dominant-position categories. Mixed activities require classification before rates are assigned. [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf); [Income Tax Act](https://www.gibraltarlaws.gov.gi/legislations/income-tax-act-2010-2627/download).
+
+## Company residence and the source of profits
+
+Section 74 defines an ordinarily resident company by **management and control in Gibraltar**, or management and control exercised outside Gibraltar by persons ordinarily resident in Gibraltar. It adds a control rule for investment companies, including power through shares, votes or constitutional documents to secure that affairs follow the resident controller's wishes. “Investment company” here concerns a company whose income mainly falls outside trade, business or employment profits. Do not replace these tests with place of incorporation alone. Collect the decision-making history, directors' and controllers' residence, constitutional powers and actual conduct; no single meeting or registered address settles the factual analysis. [Section 74, company residence and investment-company definitions](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Residence and source answer different questions. Section 11(1) charges the specified Schedule 1 income accruing in or derived from Gibraltar. Section 11(2)'s additional charge on specified foreign income of ordinarily resident persons expressly excludes companies. That does not create an exemption for every foreign receipt of a company: apply the statutory source definition and the interest, royalty and movable-property deeming rules below. [Section 11(1)–(2); Schedule 1, Table C](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Under section 74, source is determined by the location of the activities giving rise to profits. The definition also deems those activities to take place in Gibraltar where the underlying income-producing activity requires licensing and regulation under Gibraltar law, or falls within the specified lawful passporting branch/permanent-establishment case. A foreign customer, overseas payment account or contract signature abroad is therefore not by itself a non-chargeability test. For example, a Gibraltar team supplying services to an overseas customer must analyse its profit-producing work rather than classify the invoice as exempt because the customer is abroad. [Section 74, definition of accrued in and derived from](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The licensing deeming rule has an express exception for a Gibraltar company's overseas branch or permanent establishment, to the extent of activities conducted outside Gibraltar. This disapplies that deeming limb for the stated activities; it is not a blanket exemption for all overseas receipts or proof that a foreign establishment exists. Keep the establishment evidence and attributable activities separate from Gibraltar work. [Section 74, same definition, paragraph (c)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For a non-ordinarily-resident company trading through a Gibraltar branch or agency, section 11(4) measures chargeable profits by trading income through or from it and, insofar as chargeable, property/right income connected with assets used or held by or for it. Treaty residence, permanent-establishment thresholds, dual-residence resolution and profit attribution need the applicable agreement and facts; this domestic-law section does not resolve them. [Section 11(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Interest, royalties and overseas movable-property income
 
