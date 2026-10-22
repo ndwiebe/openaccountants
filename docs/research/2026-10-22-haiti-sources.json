@@ -19,6 +19,8 @@
     57,
     59,
     60,
+    84,
+    86,
     169
   ],
   "text_checked_articles": [
@@ -35,7 +37,8 @@
     "174\u2013193",
     "75(p), 76(7)",
     "95\u201397",
-    "175"
+    "175",
+    "268\u2013284"
   ],
   "review_status": "independent source and accountant review pending",
   "gaps": [
@@ -50,7 +53,9 @@
     "Current TCA form and bordereau payment procedure; foreign-provider collection",
     "Article 97 reference to article 175(3): authoritative correction/interpretation absent",
     "Service withholding tax-inclusive base, forms and transition reporting",
-    "Treaty inventory and relief procedure not established"
+    "Treaty inventory and relief procedure not established",
+    "CFPNB operational valuation/classification and mixed-parcel treatment",
+    "Built-property calculation interpretation and complete coverage"
   ],
   "allocation_check": {
     "shared_main": "no Haiti source paths",
