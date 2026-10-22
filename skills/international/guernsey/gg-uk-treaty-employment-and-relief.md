@@ -1,17 +1,17 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, associated-enterprise adjustments and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–4, 14, 22–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–4, 9, 11–12, 14, 22–25"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -64,6 +64,33 @@ For a Guernsey resident's income that the UK can tax under the Agreement, Articl
 Where income is taxable only in the UK under the treaty, Article 22(1)(c) instead allows Guernsey to include it when calculating tax on remaining income. Article 22(4) excludes the paragraph 1 credit where UK taxation is permitted solely because the income is also derived by a UK resident. Do not turn a dual-residence fact into an automatic credit. UK-side relief follows Article 22(2) and UK law; this Guide does not compute it. [Article 22(1)–(5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 Article 1(3) preserves residence-territory taxation subject to its listed exceptions, including Article 22. Article 23 can deny a benefit when obtaining it was a principal purpose, unless granting it accords with the relevant provisions' object and purpose; paragraph 2 provides a competent-authority request route. A residence certificate does not displace those rules. [Articles 1(3) and 23](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Associated enterprises and corresponding adjustments
+
+Article 9(1) applies where one territory's enterprise participates directly or indirectly in the management, control or capital of the other territory's enterprise, or the same persons participate in both. If their commercial or financial conditions differ from independent-enterprise conditions, profits that would otherwise have accrued can be included and taxed. The article supplies no numeric ownership-percentage safe harbour; identify management/control/capital facts rather than inventing a minimum shareholding. [Article 9(1)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Article 9(2) addresses resulting double taxation: where one territory includes and taxes profits already taxed in the other, and those profits satisfy the independent-enterprise condition, the other territory must make an appropriate adjustment to its tax on those profits, considering the Agreement. Authorities consult if necessary. This is not a right to copy a foreign adjustment into a return without establishing its basis, nor a promise that both territories' tax changes will be numerically equal. The domestic claim procedure, evidence standard and deadlines remain to be verified; preserve the Article 25 dispute deadline separately. [Article 9(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Recommended evidence:** identify the transaction and both enterprises, ownership/control links, contracts and actual conduct, the pricing method and comparables, each territory's original profit and tax computations, the assessment adjustment and the amount of overlapping profit. These are working-paper controls, not a verified Guernsey statutory master-file/local-file requirement. Domestic anti-avoidance and deduction rules still need primary-source verification before this constitutes a Guernsey transfer-pricing Guide.
+
+Articles 11(8) and 12(8) separately limit their interest/royalty provisions to the amount that would have been agreed without the stated special relationship. The excess remains subject to domestic law with regard to the Agreement's other provisions. Do not apply an otherwise available treaty exemption to the entire related-party payment without testing the amount. No blanket withholding rate is established by this section. [Articles 11(8) and 12(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Adjustment illustration:** assume an accepted pricing analysis establishes independent-enterprise remuneration of £120,000 for a service priced at £90,000 and that the Article 9 conditions are met. The profit adjustment under review is **£30,000**. If the same profit was already included in the counterparty's tax base, identify that overlap for the corresponding-adjustment request; do not treat £30,000 as the tax refund. Likewise, if a £50,000 related-party interest payment has an established independent amount of £40,000, separate the **£10,000 excess** before testing the relevant treaty article. The benchmark figures are assumed evidence, not published safe-harbour prices or rates.
+
+```oa-check
+name: Associated-enterprise profit adjustment and excess interest
+inputs:
+  supported_service_price: 120000
+  actual_service_price: 90000
+  actual_interest: 50000
+  supported_independent_interest: 40000
+steps:
+  - profit_adjustment: supported_service_price - actual_service_price
+  - excess_interest: actual_interest - supported_independent_interest
+expected:
+  profit_adjustment: 30000
+  excess_interest: 10000
+```
 
 ## Filing, deadlines and disputes
 
@@ -125,7 +152,7 @@ expected:
 
 ## Sources and remaining work
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) and [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600), accessed 22 October 2026. The working paper does not cover all dividends, interest, royalties, property gains, business profits, pensions, treaty corridors or exit issues. Claim operations, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) and [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600), accessed 22 October 2026. The working paper does not cover all dividends, interest, royalties, property gains, business profits, pensions, treaty corridors or exit issues. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
 
 ## Disclaimer
 
