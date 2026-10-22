@@ -30,3 +30,7 @@ Only PDF pages 1, 2, 19 and 20 have been visually inspected in this pass. These 
 Read all 20 instruction pages, map the remaining annexes, and recover the base decree and amending law. Verify surrounding exceptions, declaration/payment periods, electronic invoicing, penalties, refund conditions and later changes. The instruction repeal clause does not itself settle the treatment of past import declarations. Search results also surfaced a later state-newspaper report about retrospective import charges; its page could not be retrieved in this pass, so no relief rule is accepted from that lead.
 
 Next productive drafting route: the service and air-ticket provisions in the recovered instructions, after completing the surrounding-provision review. Keep imports separate until the later administrative treatment is reconciled. No country completion, operational rate schedule, professional attestation or publication is claimed.
+
+## Drafting follow-up
+
+All opening 20 instruction pages have now been visually read. Annex pages 21–235 remain unreviewed. A local services Guide has been drafted from the differentiated rates, air-ticket rules, commencement/return/payment obligations, exemptions and record controls, with three passing arithmetic examples. Independent source review is pending. The earlier four-page inspection limit above records the initial recovery pass only. See `2026-10-22-syria-consumption-services-sources.json` for the claim map and exact source hash. No accepted domain or country completion follows from this draft.
