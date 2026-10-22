@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
@@ -22,7 +22,23 @@ sources:
 
 ## Scope and first checks
 
-This Guide concerns appeals against income-tax assessments under section 35. It does not establish the route for every penalty, customs decision, transaction-tax dispute or treaty procedure. Read the actual notice and identify the statutory decision, assessed period, amount, service method and appeal information. Section 35(1) requires the assessment notice to state assessed profits or gains, tax payable, payment place and the subsection (2) appeal rights. [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+This Guide covers income-tax enquiries and assessment limits, section 32 information-notice appeals and section 35 assessment appeals. It does not establish the route for every penalty, customs decision, transaction-tax dispute or treaty procedure. Read the actual notice and identify the statutory decision, assessed period, amount, service method and appeal information. Section 35(1) requires the assessment notice to state assessed profits or gains, tax payable, payment place and the subsection (2) appeal rights. [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Enquiries and assessment limits are different clocks
+
+Section 31 permits assessment on a complete return and best-judgment assessment where chargeable income is omitted or the Commissioner is dissatisfied. A section 31 enquiry can concern a return or its amendment. Its ordinary time limit is **one year after receipt of the return**, not one year after the accounting-period end. Section 31(5) removes that limit in its specified case of fraudulent or wilful default or negligent conduct in failing to comply with a notice under that section. Record the actual return-receipt date and each notice; do not treat silence after filing as approval. [Section 31(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Section 31A separately sets an ordinary assessment limit of **six years after the relevant assessment year or accounting period ends**, subject to the Act. Section 34 permits additional/discovery assessments and amendments, with subsection (3) setting the six-year amendment limit. Where fraud, wilful default or neglect was committed by or on behalf of the taxpayer in connection with taxation, subsection (4) permits assessments or additional assessments up to **twenty years after period end**, notwithstanding section 38 finality. The extended provision is not limited to deliberate fraud. [Sections 31A, 34](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For an accounting period ending 31 December 2025, the six-year period-end boundary is 31 December 2031; the twenty-year boundary is 31 December 2045 if section 34(4) applies. These dates illustrate the separate statutory clocks, not an automatic conclusion that a particular assessment is valid or barred. A one-year enquiry limit is not a one-year expiry of all assessment powers. Keep the conduct findings and statutory basis with the chronology. [Sections 31(4)–(5), 31A, 34(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Information notices: response and appeal
+
+Following notice of an intention to enquire under section 31, section 32 permits a written requirement for relevant documents within the taxpayer's possession or power, accounts, audited accounts or particulars. The specified response time must be **at least 30 days**. Photographic, facsimile or PDF copies can be supplied, but a further written demand for originals is possible with a specified time of at least 30 days. Preserve originals and an indexed copy of what was delivered. Section 32A makes intentional falsification, concealment, destruction or disposal of a required document an offence. [Sections 32(1)–(4), (10), 32A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+An appeal against a requirement in a section 32(2) notice is to the Tribunal by **writing addressed to the Commissioner within 30 days beginning with the date the notice is given**. This is not the 28-day assessment-appeal period below. Section 32(7) excludes documents or particulars relating to conduct of the taxpayer's pending appeal from that notice obligation. This does not exempt all underlying tax records merely because an appeal exists. The Tribunal can confirm the requirement or set it aside to the necessary extent, applying the statutory relevance test; Schedule 2 paragraph 13's assessment powers are excluded for this appeal. [Section 32(5)–(9)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Keep the notice-response deadline and appeal deadline separately. An objection letter does not by itself establish an agreed extension or suspension of the information requirement; obtain and retain any applicable direction. Service disputes, time computation and privilege questions require legal review. This section does not describe every information power under the Act, including section 6 notices.
 
 ## Establish service before calculating the appeal period
 
