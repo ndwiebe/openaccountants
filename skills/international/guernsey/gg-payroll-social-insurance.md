@@ -7,7 +7,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=202739&p=0"
@@ -30,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Guernsey payroll and social contributions v0.4
+# Guernsey payroll and social contributions v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -165,6 +165,10 @@ If there is no or insufficient cash pay to deduct the required tax, submit the s
 The Employer Guide currently linked by the Revenue Service is labelled **2025**. Its p18 states an initial late-payment surcharge of **5% for tax deductions** and **2.5% for contribution deductions**, with no surcharge where its amount is below **£50**. Part-payment leaves the unpaid balance exposed; a correction increasing liability runs from the original due date. It also states a **£300** automatic late-return penalty and possible **£50 per day** until submission. Additional surcharges apply at intervals to outstanding amounts, including earlier charges, but this Guide has not verified the intervals or a complete statutory calculation. [Employer Guide, p18](https://gov.gg/CHttpHandler.ashx?id=175677&p=0).
 
 The same guidance describes a written surcharge appeal to the Director within **30 days**, limited to legal liability or calculation, not an employer's error or oversight. Check the assessment notice and statutory appeal provisions for the exact time trigger and procedure. The underlying current penalty legislation remains an explicit source gap; these figures are attributed guidance, not a complete verified penalty opinion.
+
+## Secondary pensions
+
+Use the [secondary-pensions Guide](gg-secondary-pensions.md) for 2026 eligibility, enrolment, minimum contributions, opt-outs and provider payments. These obligations are separate from Class 1 social insurance; specialist cases and statutory reconciliation remain open.
 
 ## Cross-border points
 
