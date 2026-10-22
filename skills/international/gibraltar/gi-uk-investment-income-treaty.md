@@ -1,15 +1,24 @@
 ---
 name: gi-uk-investment-income-treaty
 description: >
-  UK–Gibraltar double-taxation agreement rules for dividends, interest, royalties and capital gains in 2026. Covers treaty residence, beneficial ownership, the property investment vehicle dividend exception, qualifying interest and royalty recipients, the strict foreign ownership threshold, permanent establishment connections, excessive related-party payments and principal-purpose restrictions. Includes property-rich disposal boundaries, source-tax ceiling examples and an evidence checklist for relief. Use for UK payments to Gibraltar residents and the reverse corridor. Domestic withholding procedures, forms and repayment deadlines need separate verification. This source-cited draft does not establish complete treaty coverage, independent source review or professional attestation.
+  UK–Gibraltar double-taxation agreement rules for dividends, interest, royalties and capital gains in 2026. Covers treaty residence, beneficial ownership, the property investment vehicle dividend exception, qualifying interest and royalty recipients, the strict foreign ownership threshold, permanent establishment connections, excessive related-party payments and principal-purpose restrictions. Includes property-rich disposal boundaries, source-tax ceiling examples and an evidence checklist for relief. Use for UK payments to Gibraltar residents and the reverse corridor. Includes the published company-interest relief evidence checklist; other withholding procedures and repayment deadlines need separate verification. This source-cited draft does not establish complete treaty coverage, independent source review or professional attestation.
 jurisdiction: GI
 category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf"
+    title: "Gibraltar ITO: supporting documentation for company UK-interest treaty relief"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/guidance/double-taxation-relief-for-companies"
+    title: "HMRC: company double-tax relief, certified claims and royalty exception"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/government/publications/international-tax-double-taxation-treaty-relief-form-dt-company"
+    title: "HMRC: DT Company application entry point"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152"
     title: "HMRC DT8152: arbitration summary conflicts with published Article 24(5)"
     as_of: "2026-10-22"
@@ -163,10 +172,31 @@ A person alleging taxation contrary to the agreement can present a case to eithe
 
 HMRC’s [DT8152 summary](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152) records no arbitration, conflicting with Article 24(5) in the published agreement. The [employment and pensions Guide](gi-uk-employment-pensions-treaty.md) records this and related pension discrepancies. The agreement provision above is verified, but its operational arrangement and the reason for the summary entry remain unresolved.
 
+## Company UK-interest relief: published application evidence
+
+HMRC states that company treaty withholding relief is not automatic: the ordinary certified route uses **DT Company** with residence certification, unless the Treaty Passport Scheme applies. Relief at source and repayment of prior deductions are distinct requests; retain tax vouchers even where not submitted initially. HMRC decides entitlement and authorises the allowed treatment. [Company relief guidance](https://www.gov.uk/guidance/double-taxation-relief-for-companies).
+
+The [current DT Company entry page](https://www.gov.uk/government/publications/international-tax-double-taxation-treaty-relief-form-dt-company) links its interactive form and warns that progress cannot be saved. Assemble the evidence before starting. This Guide verifies that published entry route, not every field or the final submission instructions inside a completed interactive application. No form has been submitted here.
+
+Gibraltar's [ITO checklist](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf) concerns its processing of **DT Company requests for relief at source on UK interest**. It calls for incorporation and constitutional documents, Registrar-issued good standing, and the finance agreement. Directors must provide a letter with an affidavit or equivalent sworn statement covering:
+
+- Board meetings for the relevant accounting period held in/from Gibraltar and directors' ordinary Gibraltar residence under section 74.
+- Territorial taxation, Article 4 residence, sole Gibraltar residence and absence of another similar claim or treaty-residence position elsewhere.
+- Treaty-person/resident status, beneficial ownership and the particular **Article 11(3)(a)** recipient classification relied upon.
+- Where borrowing funds the loan, an arm's-length interest spread, including the stated contemporaneous OECD-method basis for connected-party arrangements.
+
+Read the full two-page checklist before preparing declarations. Do not sign facts that have not been established, or infer that this administrative checklist rewrites Article 4 for every taxpayer. Its stated scope does not establish the procedure for individuals, royalties, other relief categories or reverse-direction payments. [ITO checklist](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf).
+
+A Gibraltar evidence packet and an HMRC application are not the same as an issued relief direction. Retain each decision, its covered payments and dates, and the payer's resulting treatment. For a funded related-party loan, reconcile the declared spread with the Article 11(8) independent-amount analysis above; a company label or an affidavit alone does not prove eligibility.
+
+**Separate royalty route:** HMRC says a UK company can give royalty relief without prior HMRC authorisation where it reasonably believes the overseas payee qualifies under a double-taxation arrangement, with payment details included in its Company Tax Return. This does not remove Article 12 eligibility requirements or authorise the same approach for interest. Detailed statutory conditions, return fields and correction steps remain to be verified before applying that route. [HMRC royalty section](https://www.gov.uk/guidance/double-taxation-relief-for-companies).
+
+Exact Gibraltar lodgement mechanics, claim limitation periods, Treaty Passport operation, individual/REIT procedures and treatment of inconsistent residence facts remain open. The directors' declaration must be supported by records and reviewed for the particular company; it is not a form of professional attestation of this Guide.
+
 ## Relief file and remaining verification
 
 For each payment, retain: both parties and beneficial-owner evidence; residence analysis; payment date and classification; gross amount and domestic source tax; recipient-category proof, ownership chain and rights where relevant; any authority determination; permanent-establishment and independent-price analysis; principal-purpose assessment; and the actual relief application, authority response and repayment record. This is a recommended working-paper structure, not an official form list.
 
-Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. [Business profits and permanent establishments](gi-corporate-tax.md#uk-treaty-permanent-establishments-and-business-profits) are separately drafted. Domestic capital-gain computations and filing, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
+Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. The company UK-interest route is partly documented above; other procedures, exact claim deadlines and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. [Business profits and permanent establishments](gi-corporate-tax.md#uk-treaty-permanent-establishments-and-business-profits) are separately drafted. Domestic capital-gain computations and filing, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
 
 For the verified Gibraltar MAP submission route and its distinction from domestic appeals and collection postponement, see [assessment appeals and MAP](gi-income-tax-assessment-appeals.md#treaty-map-a-separate-submission-and-collection-decision).

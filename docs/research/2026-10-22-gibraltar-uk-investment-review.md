@@ -11,3 +11,7 @@ Three executable checks cover property dividend ceiling, strict ownership bounda
 ## Capital-gain expansion, 22 October 2026
 
 Read Article 13 against Articles 6, 21 and 28 and Protocol exchange definition. Added direct property, property-rich interests (strict >50% value derivation, not shareholder stake), traded-interest exclusion and investment-vehicle exception, PE business assets, international-traffic operating enterprises and residual allocation. No dividend-rate import, invented 365-day testing window or domestic gain tax calculation. One executable boundary check and a distinct traded-interest classification example. Valuation method/date, domestic filing and regime classification remain open. Writer verification only.
+
+## Company interest application evidence
+
+Read the ITO supporting-document PDF linked from its current Businesses page, and HMRC company-relief and DT Company entry pages. Added a scoped procedural section; no claim of completing the interactive form, signing declarations or obtaining relief. Distinguishes interest clearance from the published royalty route. Exact lodgement, limitation periods and other applicant/payment routes remain open. Writer verification only; no new arithmetic.

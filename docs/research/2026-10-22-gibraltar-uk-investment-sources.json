@@ -10,6 +10,19 @@
       "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties",
       "locators": "Details: 2019 agreement status and effective dates",
       "retrieval": "web tool; no local hash"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf",
+      "sha256": "63574bf7f10f68a0393a5b61e3bef905dd85b0ba9b19c4a0d94cd44e94600867",
+      "locators": "Both pages; company UK-interest relief only"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/double-taxation-relief-for-companies",
+      "locators": "Certified claim route and royalties without prior authorisation; web retrieval"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/international-tax-double-taxation-treaty-relief-form-dt-company",
+      "locators": "Form link and save-progress limitation; web retrieval"
     }
   ]
 }
