@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.4
+# Gibraltar corporate tax and filing v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -30,6 +30,26 @@ Apply the source-of-profit analysis under section 11 and Schedule 1, not a blank
 The complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
+
+## Capital allowances: equipment purchases and pools
+
+For ordinary 2026 periods, Schedule 3 paragraph 8 provides first-year deductions for qualifying expenditure up to **£30,000 for plant and machinery** and **£50,000 for computer equipment**. These are expenditure deductions, not tax credits. The expenditure must meet the wholly-and-exclusively income-producing condition and the ownership requirement, subject to the specified user and eventual-ownership contract provisions. Keep invoice, acquisition date, business purpose and ownership/contract evidence. Do not assume a separate cap for each invoice. The enhanced amounts for periods ending between 1 July 2021 and 30 June 2023 are historical and do not apply simply because an asset is still in use in 2026. [Schedule 3, paragraph 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Plant and machinery includes fixtures and fittings. Ordinary passenger cars are excluded from that paragraph's definition unless they meet the stated goods-carrying, unsuitable-for-private-use or public-hire/carriage exceptions. Computer equipment includes peripherals and software. Motor vehicles are separately addressed in the pool provisions, so exclusion from the first-year plant definition does not itself settle every vehicle allowance. Mixed-use vehicles and the special electric-vehicle provisions need separate review; this Guide does not treat all cars or all software expenditure as automatically qualifying. [Paragraphs 8(1)(c), 8(2)(c), 9(2)(c), 9(11)–(11B)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Build the paragraph 9 pool from qualifying current additions **after subtracting first-year deductions**, plus the eligible brought-forward pool, less the statutory disposal values. Do not deduct the same cost both in full and again through the pool. For a twelve-month period, the ordinary company pool rate is **15%**; paragraph 9(3)(a) instead provides **20%** for non-companies and companies chargeable under Schedule 6. The temporary 25%/30% rates apply only to the specified periods ending from 1 July 2021 to 30 June 2023. Identify the taxpayer category before choosing the rate. [Paragraph 9(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Example: assume an ordinary company has a twelve-month 2026 period, no opening pool, no disposals and £40,000 of qualifying plant expenditure. A £30,000 first-year deduction leaves £10,000 in the pool. The 15% pool allowance is £1,500, giving total deductions of £31,500 and a £8,500 closing pool. For £60,000 of qualifying computer equipment on the same assumptions, the £50,000 first-year deduction and £1,500 pool allowance leave £8,500. These are separate alternative examples, not a combined claim. [Paragraphs 8–9](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For a period shorter than twelve months, paragraph 9(4) time-apportions the **pool allowance**. A six-month period with an otherwise eligible £10,000 pool therefore gives £10,000 × 15% × 6/12 = £750. This does not assert a corresponding reduction to the paragraph 8 first-year limits. Paragraph 9(7) allows the full residual pool if it is **less than £1,000**. On a normal twelve-month calculation, £999 qualifies for full deduction; exactly £1,000 does not qualify under that rule and instead gives £150 at the ordinary company pool rate, assuming no other provision applies. [Paragraph 9(4), (7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Disposals and special capital-allowance cases
+
+Paragraph 9(2)(e) covers assets sold, ceasing to exist, moved wholly outside the trade, or affected by permanent trade discontinuance. Its value rule uses sale proceeds; where these are not at arm's length, it substitutes **net book value at disposal**. Do not silently replace that statutory wording with market value or tax written-down value. For a continuing ordinary company with £20,000 of pool/additions before disposal and £5,000 of established arm's-length proceeds, the resulting £15,000 pool gives a £2,250 allowance over twelve months, subject to the other rules. [Paragraph 9(2)(e), (3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Do not apply that simple example to every exit. Paragraph 9(5) provides a full remaining-pool allowance on permanent discontinuance; paragraph 9(6) contains a separate restriction where the qualifying-expenditure balance is below disposed-asset value; and paragraph 9(12) excludes assets purchased and disposed of in the same period from subparagraph (2). No automatic balancing charge, same-period deduction or value for destruction/private transfer is established by this Guide. Obtain a reviewed computation for those cases. [Paragraph 9(5)–(6), (12)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Paragraph 14A contains a separate start-up provision referring to capital allowances against first-year tax liability, with no duplicate claim and exclusions where the Commissioner identifies the specified connected prior business or artificial arrangement. Its application and interaction with ordinary deductions require separate review; do not turn the equipment deductions above into a pound-for-pound credit. Buildings, construction expenditure, extended accounting periods and special assets are outside these examples. [Paragraphs 8(5), 9(8), 14–14A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Trade losses: eligibility and continuity
 
@@ -97,7 +117,7 @@ For current company return failures, section 65(3) provides these **additional**
 
 The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
-**Open scope:** full deductibility/capital-allowance schedules, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
+**Open scope:** remaining deductibility rules, building and special-case capital allowances, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
 ## Self-checks and output
 
