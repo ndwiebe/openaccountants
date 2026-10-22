@@ -15,13 +15,31 @@
       "url": "https://grenadaparliament.gd/wp-content/uploads/2021/10/Act-No.-10-of-2020-Tax-Administration-Amendment-Act-2020-1.pdf",
       "bytes": 494444,
       "sha256": "d516a53fef3b72cc77824251ae930cf97c40f1c8fbd38627cc2ac8ac41a774b6"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/07/S.R.O.-75-of-2020-Tax-Administration-Amendment-Act-2020-Commencement-Order.pdf",
+      "bytes": 253694,
+      "sha256": "88cbc2cb0d6e6194845779c2e0e6c8a70371a1caee440b5b8eef2bbe63fb9262"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2025/06/Act-No.-6-of-2025-Tax-Administration-Post-Hurricane-Beryl-Fiscal-Support-Special-Measures-Act-2025.pdf",
+      "bytes": 457372,
+      "sha256": "b5e8bf485cdf90425b8916b655c09faf6a4ff7e4e6279be21d9851b6fb909062"
     }
   ],
   "review_status": "independent review pending",
   "gaps": [
-    "2020 amendment commencement and later amendments",
-    "2025 post-Hurricane Beryl special measures",
+    "Later amendments and Beryl extensions",
+    "Current Beryl claim procedures",
     "Electronic storage and filing directions",
     "Assessment time-limit exceptions"
-  ]
+  ],
+  "verified_dates": {
+    "2020_amendment_commencement": "2020-12-31",
+    "beryl_deemed_commencement": "2024-07-01",
+    "beryl_relevant_period": [
+      "2024-06-01",
+      "2025-01-31"
+    ]
+  }
 }
