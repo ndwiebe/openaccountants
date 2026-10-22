@@ -7,9 +7,15 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
+  - url: "https://www.legislation.gov.uk/uksi/2010/51"
+    title: "Inheritance Tax (Qualifying Non-UK Pension Schemes) Regulations 2010, revised regulations 2–7 and Schedule"
+    as_of: "2026-10-22"
+  - url: "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm17025"
+    title: "HMRC IHTM17025: identification of the section 271A regulations"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed"
     title: "Income Tax Office self-employed guidance: payments on account and balance payment"
     as_of: "2026-10-22"
@@ -24,7 +30,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.6
+# Gibraltar individual income tax: ordinary assessment v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -155,7 +161,26 @@ Section 14A instead taxes its specified imported-pension income at **2.5% insofa
 
 Approval requires irrevocably binding fund rules restricting commutation to **30%** of the relevant assets, subject to a higher/lower percentage set by the Commissioner having regard to origin-country law; preventing benefits before **55** except qualifying ill-health retirement; and restricting onward transfers to approved funds or funds containing equivalent irrevocable provisions. For ill health, the administrator needs registered-medical-practitioner evidence of inability to carry on the occupation through mental or physical illness. These are Gibraltar approval conditions, not certification of UK transfer eligibility or freedom from UK charges. [Section 14A(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-Section 14B provides a separate 2.5% route for an approved fund conforming to the UK statutory instrument made under section 271A of the Inheritance Tax Act 1984, with its own stated fund restrictions. The currently applicable UK instrument and any particular fund's conformity have **not** been verified here, so no section 14B eligibility conclusion is made. [Section 14B(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+Section 14B provides a separate 2.5% route for an approved fund conforming to the UK statutory instrument made under section 271A of the Inheritance Tax Act 1984, with its own stated fund restrictions. The referenced instrument is the **Inheritance Tax (Qualifying Non-UK Pension Schemes) Regulations 2010, SI 2010/51**: the official revised text and HMRC IHTM17025 identify its requirements. Identification of that instrument does not establish any particular fund's conformity or Gibraltar approval. [Section 14B(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+### Section 14B: evidence for the UK scheme requirements
+
+Use the [revised SI 2010/51](https://www.legislation.gov.uk/uksi/2010/51) when checking the cross-reference. The original 2010 PDF is an as-made text; the retrieved revised XML records a version effective from 31 December 2020. [HMRC IHTM17025](https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm17025) also identifies SI 2010/51 as the regulations under section 271A. This Guide checks the instrument's qualification structure, not a fund's status or UK inheritance-tax liability.
+
+Regulation 4 provides two routes. The ordinary route requires **both** tax recognition under regulation 5 and compliance with regulation 6. The international-organisation route requires an organisation within regulation 4(2), a scheme for benefits relating to past employment with that organisation, and regulation 7. Do not replace the ordinary route with a general assertion that the scheme is regulated. [Regulations 3–4](https://www.legislation.gov.uk/uksi/2010/51/regulation/4).
+
+For the ordinary route, prepare an evidence schedule:
+
+| Test | Evidence and conditions |
+|---|---|
+| Regulation 5, Primary Condition 1 | Scheme is open to residents of its country or territory of establishment. |
+| Regulation 5, Primary Condition 2 | Country has the specified personal-income-tax system providing pension relief, plus one of the statutory alternatives: no member contribution relief of the stated kind; taxable scheme income/gains **and** a Schedule-specified scheme; or taxation of all/most benefits paid to members not in serious ill-health. Tax relief includes exemption. |
+| Regulation 5, Condition A or B | A: approval, recognition or registration by the relevant tax authority. B applies where no such system exists and requires local scheme residence, at least 70% of relevant scheme funds designated for lifetime income, and benefits/lump sums no earlier than pension rule 1 permits. For a deceased member the designation condition looks immediately before death. |
+| Regulation 6 | The relevant local regulator regulates this occupational or non-occupational scheme. If neither regulatory route applies **solely because no such body exists**, regulation 6(4) provides its specified geographical alternative or the lifetime-income/benefit-timing alternative. Failure to obtain registration where a regulator exists is not that exception. |
+
+Source: [regulations 5–6 and Schedule](https://www.legislation.gov.uk/uksi/2010/51). The Schedule's specified scheme is an Australian complying superannuation plan as defined there; the taxable-income/gains alternative is not open to every taxed pension fund. The geographical alternative in regulation 6(4)(a) names an EU member State, Norway, Iceland or Liechtenstein; do not read the as-made phrase “another member State” as proof that Gibraltar qualifies. Regulation 7 separately imposes the 70% lifetime-income and pension-rule-1 timing requirements on the international-organisation route. [Regulation 7](https://www.legislation.gov.uk/uksi/2010/51/regulation/7).
+
+The **70% test is route-specific**, rather than a universal stand-alone certification of QNUPS status. It uses “relevant scheme funds” as defined in regulation 2, not automatically every asset in a member's pension portfolio. Where pension rule 1 is incorporated, verify its applicable version and any relevant protection before selecting a benefit date; Gibraltar's domestic age-55 condition alone does not resolve that UK cross-reference. Keep the scheme's establishment, tax recognition, regulation, rules and chosen statutory route on file. Actual scheme conformity, Gibraltar section 14B approval, UK transfer eligibility/charges and inheritance-tax consequences remain separate determinations.
 
 **Computation example:** assume an individual's established taxable amount within section 14A is £20,000. Tax on that component is **£20,000 × 2.5% = £500**. If a different £20,000 pension satisfies rule 3A and is outside the overriding imported-pension provisions, its rule 3A tax is £0. These are alternative classifications; the taxpayer cannot elect the cheaper result simply by describing the same pension differently. Neither figure is the person's total tax bill.
 
