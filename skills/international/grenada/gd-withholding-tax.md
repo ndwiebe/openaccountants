@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -15,7 +15,7 @@ verified_by: pending
 
 ## Scope and source status
 
-This Guide reads Parliament's published Income Tax Act, Chapter 149, with Act 8 of 2016. The [IRD's G-TAX FAQ](https://www.ird.gd/gtax/index.html) corroborates a 15% rate for income paid by residents to nonresidents. The older consolidation is not certified as complete for 2026. Later amendments, administrative practice, forms, treaty relief and the timing conflicts below remain outstanding. Do not use this draft alone to set a remittance deadline.
+This Guide reads Parliament's published Income Tax Act, Chapter 149, with Act 8 of 2016. The [IRD's G-TAX FAQ](https://www.ird.gd/gtax/index.html) corroborates a 15% rate for income paid by residents to nonresidents. The Tax Administration Act commenced on 1 May 2016 under [SRO 34](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf). The older income-tax consolidation is not certified as complete for 2026. Later amendments, administrative practice, forms, treaty relief and the timing conflicts below remain outstanding. Do not use this draft alone to set a remittance deadline.
 
 ## Classify the payment before applying a rate
 
@@ -48,7 +48,7 @@ These are not interchangeable deadlines. A month-end rule gives a later date tha
 
 Third Schedule paragraph 4 requires a certificate to the recipient showing gross payment and tax deducted. Keep a calendar-year record of payment nature, gross amount, deduction, and recipient name/address. Paragraph 5 requires a remittance return with certificate copies and an annual return within **two months after year-end**, unless the Comptroller allows further time. Confirm the current approved submission method before filing. Reconcile deductions to actual remittances and account for any difference. [Third Schedule, paragraphs 4–5](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf).
 
-Section 50(3) provides expense disallowance for unpaid withholding. Third Schedule paragraph 6 makes the payer personally liable for tax it failed to deduct, subject to its provisions. Do not copy the old section 97 interest rate into a current calculation: the 2016 administrative legislation expressly repeals that section. Current interest, penalties and administrative commencement/amendments require separate verification. [Act, section 50(3) and Third Schedule paragraph 6](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf); [Tax Administration Act, Schedule 2(4)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf#page=89).
+Section 50(3) provides expense disallowance for unpaid withholding. Third Schedule paragraph 6 makes the payer personally liable for tax it failed to deduct, subject to its provisions. Do not copy the old section 97 interest rate into a current calculation: the 2016 administrative legislation expressly repeals that section. The administrative Act commenced on 1 May 2016 under [SRO 34](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf); later amendments and current interest/penalty calculations require separate verification. [Act, section 50(3) and Third Schedule paragraph 6](https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap149-INCOME-TAX-ACT.pdf); [Tax Administration Act, Schedule 2(4)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf#page=89).
 
 ## Investment relief is narrower than the property-transfer waiver
 

@@ -20,6 +20,11 @@
       "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-14-of-2016-Tax-Administration-Act.pdf",
       "bytes": 625095,
       "sha256": "c5b8f4ae6bb87968bb0e1ce86817a0ccb486a8eeb8eb015de8f949a794c21e2c"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-34-of-2016-Tax-Administration-Act-Commencement-Order-2016.pdf",
+      "bytes": 51448,
+      "sha256": "674e68eae606bbc781a2918f9dbe56d3d1440abbf71ac2ffea642d086e79cd23"
     }
   ],
   "corroboration": {
@@ -30,7 +35,7 @@
   "gaps": [
     "Section 50 versus section 96 remittance timing",
     "Section 50(2) versus Third Schedule accrual timing",
-    "Later amendments and administrative commencement",
+    "Later amendments and current penalty calculations",
     "Resident exceptions, interest exemptions, treaty and dividend treatment",
     "Current filing forms and route"
   ]
