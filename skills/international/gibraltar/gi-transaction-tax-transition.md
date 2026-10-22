@@ -21,7 +21,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar goods transaction-tax transition v0.5
+# Gibraltar goods transaction-tax transition v0.6
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
