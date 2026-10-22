@@ -1,6 +1,6 @@
 # Saint Lucia batch: source and author review
 
-Three draft Guides: NIC, VAT and imported-services VAT. Not independent accountant review or comprehensive country coverage.
+Five draft Guides: NIC, VAT, imported-services VAT, personal deductions and first-time land interest. Not independent accountant review or comprehensive country coverage.
 
 ## Duplication check
 
@@ -17,3 +17,9 @@ No Saint Lucia/LC paths found in shared origin/main or Ryan main tree 2d2e198012
 ## Remaining work
 
 Current-law amendment audit; full personal/company income tax and PAYE; Health and Citizen Security Levy; formation/reporting; property; withholding/treaties; remaining VAT exemptions, deductions and administration. An independent reviewer must verify source applicability and calculations before merge. Structural CI is not substantive tax verification.
+
+## 2026 income-tax depth pass
+
+Retrieved Acts 2 and 10 of 2026 from the National Printing Corporation. Initial HTTP/2 downloads failed; HTTP/1.1 downloads succeeded as actual PDFs. Text extracted and key cap/land pages visually inspected; hashes recorded. Added two bounded Guides based on the enacted amendments. The 40,000 amount is an aggregate deduction cap, not an automatic or personal allowance. The land-interest provision has its own 2 May 2026 deed condition and an explicit cap exclusion.
+
+The original “locate actual amendments” task is now partly resolved: both 2026 Acts were read. Full income-tax computation, remission regulations, pension treatment, PAYE and all later instruments still need completion. SI 3/2026 was listed but its attempted download returned HTML; no verification claim is made. The corporate extension wording and amended section 134 rate in Act 10 need their own contextual review before drafting. Page titles in the revised-laws site sometimes mismatch the section body; the body and the enacted PDFs were used for these deduction checks.
