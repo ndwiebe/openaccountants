@@ -7,9 +7,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: 0.8
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/2021-uk-guernsey-exchange-of-letters-in-force"
+    title: "December 2021 exchange of letters: Article 27 effective 1 January 2022"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement"
     title: "UK–Guernsey arbitration memorandum: procedure and effective-date clause"
     as_of: "2026-10-22"
@@ -17,7 +20,7 @@ sources:
     title: "HMRC DT8602 treaty summary, payment-category conditions"
     as_of: "2026-10-22"
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–14, 17–19, 21–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–14, 17–19, 21–28"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -61,7 +64,7 @@ Article 5(1) defines a PE as a fixed place of business through which the enterpr
 |---|---|
 | Building/construction/installation project | A PE under Article 5(3) only if it lasts **more than twelve months**. Establish commencement, completion, interruptions and project identity; do not substitute a fixed 365-day test without authority. |
 | Limited activities | Article 5(4) lists facilities/stock solely for storage, display or delivery, stock solely for processing by another enterprise, and a place solely for purchasing or collecting information. Its other-activity limb requires preparatory/auxiliary character; combined listed activities require that character overall. Read the exact limb rather than importing a different treaty's wording. |
-| Fragmented operations | Article 5(5) can disapply the paragraph 4 exception for complementary functions forming a cohesive business operation, where the same/closely related enterprise operates at the same or another place and the specified PE or non-auxiliary combined-activity condition is met. |
+| Fragmented operations | Article 5(5) can disapply the paragraph 4 exception for complementary functions forming a cohesive business operation, where the same/closely related enterprise operates at the same or another place **in the same territory** and the specified PE or non-auxiliary combined-activity condition is met. |
 | Contract-concluding agent | Article 5(7) covers a person acting for the enterprise who has and habitually exercises authority to conclude contracts on its behalf, subject to its stated exclusions. Contract practice and authority matter, not just job title. |
 | Independent agent | Article 5(8) protects business through an independent-status broker/commission agent/other agent acting in the ordinary course of its business. Verify both independence and ordinary-course conduct. |
 | Parent/subsidiary | Control alone does not make one company a PE of the other under Article 5(9). Other fixed-place or agency facts still need assessment. |
@@ -303,6 +306,24 @@ Article 25(2) requires implementation of an agreement reached notwithstanding do
 The published procedure requires a written identifying request to one or both authorities and each requesting/directly affected person's statement that no court or tribunal has decided the same issues. Part 2 requires identities, treaty grounds, facts, years, amounts/calculations, supporting analysis and records of parallel or earlier proceedings. Part 11 requires written acceptance and withdrawal/termination of resolved court issues before implementation. These are published requirements, not evidence that a particular application is accepted. [Memorandum, Parts 1–2 and 11](https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement).
 
 Before relying on arbitration, obtain the current authority instructions, resolve the status discrepancy, document both treaty clocks, identify any decided issues, and review litigation consequences with the taxpayer. Current submission addresses, case acceptance and any later amendment/termination of the memorandum remain to verify.
+
+## Assistance in collecting tax claims
+
+The December 2021 exchange of letters makes Article 27 effective **1 January 2022**. Article 28(2)(b) applies it without regard to the taxable period concerned; do not limit assistance to debts for 2022 onwards. This commencement is separate from the unresolved arbitration-status issue above. [Exchange of letters](https://www.gov.uk/government/publications/guernsey-tax-treaties/2021-uk-guernsey-exchange-of-letters-in-force); [Article 28(2)(b)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Article 27 is not restricted by Articles 1 and 2. Its revenue-claim definition includes taxes of every kind imposed by the territories or their subdivisions/local authorities, provided taxation is compatible with the relevant instruments, plus related interest, administrative penalties and collection/conservancy costs. This broader assistance scope does not create an exemption or alter the substantive tax allocation rules. [Article 27(1)–(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Distinguish two requests:
+
+- **Collection:** the requesting territory's claim must be enforceable and owed by someone who cannot prevent collection under its law. The other territory collects under its own enforcement laws as if its own claim.
+- **Conservancy:** the requesting territory must be able to take measures to secure collection under its law. Such measures in the other territory can apply even before enforceability or while the debtor has a right to prevent collection.
+
+[Article 27(3)–(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf). For example, a right to prevent ordinary collection does not alone prove that asset-preservation assistance is unavailable; check paragraph 4 separately.
+
+Disputes about the claim's existence, validity or amount belong in the originating territory, not the assisting territory's courts or administrative bodies. Under paragraph 5, the assisting territory’s tax-specific time limits and priorities do not apply to an accepted claim, and the originating territory’s priorities are not imported. If the request conditions cease before collection/remittance, the requesting authority must promptly notify the other and suspend or withdraw at that other's option. [Article 27(5)–(7)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Paragraph 8 limits mandatory assistance, including incompatible administrative measures, public policy, failure to pursue all reasonable domestic collection/conservancy measures, clearly disproportionate burden, and taxes considered contrary to generally accepted taxation principles. Do not treat a foreign debt notice as proof that every condition is met. Retain the assessment, challenge/collection status and notices; current domestic enforcement procedure and case-specific authority decisions need separate legal review. [Article 27(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
 
 ## Penalties and interest
 
