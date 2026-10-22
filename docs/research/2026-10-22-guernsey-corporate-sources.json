@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Company guidance",
+    "url": "https://gov.gg/RevenueService/Companies",
+    "as_of": "2026-10-22",
+    "sha256": "928344632411ada1aae721f6e8935cc16c61b99b1948c429dc8a023d75e4ee1f"
+  },
+  {
+    "title": "Form 707 non-resident status 02/26",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=118096&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "fc964c7acc63559aa84a8c95a5c91743126400c13a845ac3ff4a31b3cbb7b8b9"
+  },
+  {
+    "title": "Form 706 foreign-company registration 08/21",
+    "url": "https://gov.gg/CHttpHandler.ashx?id=183549&p=0",
+    "as_of": "2026-10-22",
+    "sha256": "6082f50679984062db0479e00ae58b535c67bce6bc129879987cacb58804665b"
+  },
+  {
+    "title": "Penalty FAQ, current figures with stale introductory deadline",
+    "url": "https://gov.gg/taxpenalties",
+    "as_of": "2026-10-22",
+    "sha256": "f4f9c04e665770a41ca4db017c4c8d12bac954c0e6127c58120b07283576bcd6"
+  }
+]
