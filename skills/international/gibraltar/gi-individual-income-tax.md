@@ -1,13 +1,13 @@
 ---
 name: gi-individual-income-tax
 description: >
-  Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes pre-death income obligations and specified allowance reductions under section 47. Category 2, HEPSS, pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes pre-death income obligations and specified allowance reductions under section 47. Includes specified approved/imported pension rules; Category 2, HEPSS, other pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed"
@@ -24,13 +24,13 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.4
+# Gibraltar individual income tax: ordinary assessment v0.5
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Who this applies to
 
-Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Category 2, HEPSS, pension cases, frontier-worker treaty residence and special deductions require separate review.
+Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes specified approved/imported pension rules; Category 2, HEPSS, other pension cases, frontier-worker treaty residence and special deductions require separate review.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -144,6 +144,34 @@ expected:
 ```
 
 The live submission form/channel for the 2026/27 return and special assessment payment cases remain to be verified. Keep return delivery, individual tax payments and employer PAYE remittances separate. See the [payroll Guide](gi-payroll-social-insurance.md) for employer reporting. The self-employed webpage labels its allowance table 2021/22 and 2022/23; that table is not used here to establish current allowance figures.
+
+## Approved pensions and imported-pension exceptions
+
+Rule 3A covers pensions from a statutory scheme or provident/other fund approved by the Commissioner where the individual is **60 or over**, or meets one of the specified earlier-retirement categories. Those include the stated compulsory Pensions Act retirement, Royal Gibraltar Regiment retirement at 55 or over, and listed customs, port, fire/rescue and defence-police retirements between 55 and 60. Do not turn the list into an exemption for every retired person aged 55. [Rule 3A(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Qualifying pension income is taxed at **0%**, subject to the section 14A exception. Other chargeable income remains separately taxable under the prescribed bands after applicable apportioned allowances/deductions. The pension rule does not exempt rental, trading or employment income merely because its recipient is retired. Verify the fund approval and individual category, not just the payer's description of the transfer. [Rule 3A(2)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
+
+Section 14A instead taxes its specified imported-pension income at **2.5% insofar as it forms part of taxable income**, notwithstanding contrary provisions of the Act/allowance rules. The source must be a Commissioner-approved fund receiving the relevant funds or benefit entitlement transferred from the specified overseas pension scheme. Although subsection (2) uses European Union terminology, subsection (5) expressly defines it for this section as **the United Kingdom**. Do not extend this rule to every EU or foreign pension from the heading alone. [Section 14A(1)–(2), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Approval requires irrevocably binding fund rules restricting commutation to **30%** of the relevant assets, subject to a higher/lower percentage set by the Commissioner having regard to origin-country law; preventing benefits before **55** except qualifying ill-health retirement; and restricting onward transfers to approved funds or funds containing equivalent irrevocable provisions. For ill health, the administrator needs registered-medical-practitioner evidence of inability to carry on the occupation through mental or physical illness. These are Gibraltar approval conditions, not certification of UK transfer eligibility or freedom from UK charges. [Section 14A(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Section 14B provides a separate 2.5% route for an approved fund conforming to the UK statutory instrument made under section 271A of the Inheritance Tax Act 1984, with its own stated fund restrictions. The currently applicable UK instrument and any particular fund's conformity have **not** been verified here, so no section 14B eligibility conclusion is made. [Section 14B(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Computation example:** assume an individual's established taxable amount within section 14A is £20,000. Tax on that component is **£20,000 × 2.5% = £500**. If a different £20,000 pension satisfies rule 3A and is outside the overriding imported-pension provisions, its rule 3A tax is £0. These are alternative classifications; the taxpayer cannot elect the cheaper result simply by describing the same pension differently. Neither figure is the person's total tax bill.
+
+```oa-check
+name: Gibraltar approved versus imported pension component
+inputs:
+  established_taxable_pension_component: 20000
+steps:
+  - section_14a_component_tax: established_taxable_pension_component * 0.025
+  - qualifying_rule_3a_component_tax: established_taxable_pension_component * 0
+expected:
+  section_14a_component_tax: 500
+  qualifying_rule_3a_component_tax: 0
+```
+
+Keep approval evidence, scheme rules, origin and transfer history, age/retirement evidence, any commutation variation and the taxable-income calculation. Actual lump-sum treatment, amounts outside these provisions, UK transfer restrictions, approval/claim channels and treaty interactions require separate verification. See the [UK employment and pensions treaty Guide](gi-uk-employment-pensions-treaty.md); a domestic rate does not settle treaty allocation.
 
 ## Death during the tax year
 
