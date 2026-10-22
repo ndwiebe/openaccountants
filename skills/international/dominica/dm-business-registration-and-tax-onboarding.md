@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 ---
 
@@ -75,6 +75,8 @@ The retrieved Form 1 requests the company type, proposed name, registered office
 
 The form requires confirmation that no incorporator is under eighteen, adjudged of unsound mind or bankrupt, and includes an undertaking to notify Social Security of employees. Its declaration uses “less than 18”, whereas the registry narrative says “over eighteen”; this draft follows the actual form wording without certifying the full eligibility law. [Form 1, declaration](https://www.cipo.gov.dm/forms/bnc/Application-Incorporation-companies-act.pdf#page=2).
 
+The retrieved [Form 9A](https://www.cipo.gov.dm/forms/bnc/From9A-director-of-company.pdf) records director identity, National Insurance number, occupation, address and signed, dated consent to act. It instructs applicants to leave the company number and appointment date blank for a new company. Its fields do not establish director eligibility.
+
 ## Tax and employer onboarding
 
 CIPO says company-incorporation information is shared with Inland Revenue for automatic taxpayer registration and that tax confirmation accompanies the incorporation certificate. It separately states that taking on employees still requires **PAYE registration**. Where employees are intended, information is also shared with Social Security for employer registration. Check the actual confirmations and PAYE status rather than treating one certificate as proof of every tax enrolment. [CIPO company instructions, tax and social security](https://www.cipo.gov.dm/businesses-and-companies/companies/).
@@ -85,9 +87,9 @@ The IRD's [older startup page](https://www.ird.gov.dm/customer-service/starting-
 
 ## Continuing obligations and remaining work
 
-CIPO identifies ongoing company filings including director/registered-office changes, annual returns and accounts or solvency certification. Current statutory deadlines, entity-specific exceptions, beneficial ownership and fees require further checking before a compliance calendar is certified. [CIPO company guidance](https://www.cipo.gov.dm/businesses-and-companies/companies/).
+CIPO identifies ongoing company filings including director/registered-office changes, annual returns and accounts or solvency certification. The [company annual-return Guide](dm-company-annual-returns.md) distinguishes the 1 April return deadline from the 2 April annual fee. Other statutory deadlines, entity-specific exceptions, beneficial ownership and company fees require further checking before a complete compliance calendar is certified. [CIPO company guidance](https://www.cipo.gov.dm/businesses-and-companies/companies/).
 
-Remaining work: later business-name amendment reconciliation, corporate statute and eligibility review, company annual obligations, current Form 9A availability, company and sector fee schedules, online completion rules and independent review. Registration guidance is one topic, not comprehensive country coverage.
+Remaining work: later business-name amendment reconciliation, corporate statute and eligibility review, company annual obligations, company and sector fee schedules, online completion rules and independent review. Registration guidance is one topic, not comprehensive country coverage.
 
 ## Disclaimer
 
