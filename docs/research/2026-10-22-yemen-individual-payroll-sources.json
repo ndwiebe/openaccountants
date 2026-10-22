@@ -1,7 +1,7 @@
 {
   "date": "2026-10-22",
   "guide": "skills/international/yemen/ye-individual-income-tax-and-payroll.md",
-  "sha256": "8dea4951b865f4efd0e17ec006a8b932eaa070f7cf6955bc768cda5f8ac0b410",
+  "sha256": "9cf772fa4c4f22e0dc5558a18e3c8e65b820c4045122e44831fab9019b4d9943",
   "sources": [
     {
       "url": "https://agoyemen.net/lib_details.php?id=198",
@@ -11,7 +11,8 @@
         "48–50: employment income and conditional exclusions/exemptions",
         "62: annual resident bands",
         "63(f): nonresident employment rate",
-        "98–102: assessment, withholding, employer and recipient duties"
+        "98–102: assessment, withholding, employer and recipient duties",
+        "Articles 65–67: resident payroll 15% cap; single/prorated exemption; specified other benefits at 15%; monthly one-twelfth bands"
       ]
     },
     {
@@ -22,12 +23,14 @@
     }
   ],
   "checks": "Targeted schema passed without warnings;two executable blocks passed",
-  "review": "Independent review identified two article49–50 translation clarifications. Corrected pension contributions versus benefits, and occupational-injury scope versus separate medical-document condition. Other included claims and calculations passed. Final wording not separately re-reviewed.",
+  "review": "v0.2 full independent re-review completed, including adjacent articles62–71. No further material defect; prior v0.1 approval explicitly withdrawn. Corrected hash verified by reviewer.",
   "limits": [
     "Not validated monthly payroll engine",
     "Administration-specific applicability unresolved",
     "Current amendment chain unresolved",
     "No complete individual/payroll coverage",
-    "No professional attestation or publication"
-  ]
+    "No professional attestation or publication",
+    "Interaction of nonresident63(f) and additional-payment66 remains unresolved; regular salary example excludes66payments"
+  ],
+  "version": "0.2"
 }
