@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.7
+version: 0.8
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.7
+# Gibraltar corporate tax and filing v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -47,7 +47,11 @@ For the defined apportioned branch head-office expenses, paragraph 2(1)(p) exclu
 
 Paragraph 2(1)(g) permits the specified bad debts, qualifying released debts and doubtful debts to the extent estimated bad for the period. Retain debtor-specific support, the recoverable amount and any relevant arrangement or compromise. The provision does not establish that a general accounting provision qualifies in full. Amounts recovered on previously deducted debts and the specified sale, assignment or capitalisation proceeds must be brought into profits under paragraph 3; avoid both omission and double counting if already recognised in the accounts. [Paragraphs 2(1)(g), 3(a)–(c)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-Business entertainment, including hospitality and incidental costs, is generally disallowed under paragraph 2(1)(o). Bona fide staff provision is outside its entertainment definition unless incidental to provision for others. The provision also contains an ordinary-course supplier exception and a separate client-entertainment exception requiring Gazette guidelines and the Commissioner's satisfaction that the claimant's benefit is merely incidental. Those guidelines have not been verified here: do not approve client hospitality merely because a client attended. The latter exception also has a statutory exclusion following refused claims in three of the preceding ten years, lasting the specified five-year period. [Paragraph 2(1)(o)(i)–(ii), (iv)–(vi)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+Business entertainment, including hospitality and incidental costs, is generally disallowed under paragraph 2(1)(o). Bona fide staff provision is outside its entertainment definition unless incidental to provision for others. The provision also contains an ordinary-course supplier exception and a separate client-entertainment exception requiring Gazette guidelines and the Commissioner's satisfaction that the claimant's benefit is merely incidental. The ITO interpretation and evidence requirements are summarised below; the specific Gazette publication has not been identified, so its formal publication requirement remains unverified. Do not approve client hospitality merely because a client attended. The latter exception also has a statutory exclusion following refused claims in three of the preceding ten years, lasting the specified five-year period. [Paragraph 2(1)(o)(i)–(ii), (iv)–(vi)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The ITO's published entertainment guidance covers existing and prospective clients and business introducers, with acceptance depending on the facts and the Commissioner's satisfaction. It calls for documentary support and a detailed record identifying the expense's purpose and staff involved; insufficient evidence leads to refusal. Prepare an event record linking the invoice to attendees, business purpose and the claimant's incidental benefit. Those practical fields support the statutory test; they do not guarantee approval. [ITO entertainment guidance, printed pages 1 and 3](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf).
+
+The guidance also says promotional branding must appear on the **gift itself**, not only its wrapping. For staff events, it suggests asking whether the employer would have funded the event if only employees attended when assessing incidental entertainment. Treat this as an administrative aid, not a substitute for the Act, and check employee benefit taxation separately. The PDF remains linked from the [ITO downloads page](https://www.gibraltar.gov.gi/income-tax-office/downloads-ito), but contains no verified current revision date. [ITO guidance, printed pages 3–4](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf).
 
 The gift restriction has an exception for an article carrying a conspicuous advertisement for the donor, excluding food, drink, tobacco and goods-exchange tokens/vouchers, where qualifying articles to the **same recipient in the period cost no more than £100 in total**. Two eligible branded articles costing £60 and £40 meet that cost boundary; adding another £1 article takes the total outside this exception. It is not an automatic £100 deduction from an over-limit gift total. The general business-purpose test still applies. [Paragraph 2(1)(o)(iii)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
