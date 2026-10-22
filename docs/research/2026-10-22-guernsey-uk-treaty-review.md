@@ -1,0 +1,5 @@
+# Guernsey–UK treaty guide, v0.1
+
+Writer check only, 22 October 2026. Issue397 confirms Michael ownership. No existing Guernsey treaty guide found. Official treaty PDF downloaded and hashed; current HMRC status page and DT8600 corroborate entry into force/effective dates. Article3 territory limited to Guernsey/Alderney/Herm; no blanket Bailiwick/Sark inference. Individual tie-break has no nationality step. Entity no-agreement rule retains22/24/25 exceptions. Article14 rolling twelve-month presence test and both employer/cost conditions retained; no 183-day blanket exemption. Article22 Guernsey credit cap and dual-resident exclusion included; domestic amounts assumed in example. Article1 residence reservation and Article23 principal-purpose test included. Article25 three-year first-notification period distinguished from domestic deadlines and unverified arbitration availability.
+
+Two arithmetic blocks check presence boundary and credit ceiling. No UK/Guernsey domestic tax calculation, payroll clearance, claim form or actual return tested. Wider payment categories, PE/corporate treatment and other corridors remain open. No independent review or attestation.
