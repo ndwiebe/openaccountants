@@ -1,7 +1,8 @@
 ---
 jurisdiction: YE
-applicable: [IT-CORP, IT-IND, PR, VAT]
+applicable: [IT-CORP, IT-IND, PR, VAT, SC]
 covered_by:
+  SC: ye-social-contributions
   VAT: ye-general-sales-tax
   IT-IND: ye-individual-income-tax-and-payroll
   PR: ye-individual-income-tax-and-payroll
@@ -22,3 +23,5 @@ The property draft adds selected rental and transfer rules; it does not establis
 The withholding draft covers selected article 71 rules and distinguishes article 68. It does not establish treaty coverage or complete XB acceptance.
 
 [General sales tax](ye-general-sales-tax.md) adds the amended statutory baseline and separately identified Sana’a exemptions. VAT marks a consumption-tax topic started, not accepted coverage.
+
+[Social contributions](ye-social-contributions.md) records a material discrepancy between the institution’s law and service guidance on the employer injury charge. This draft is not ready for payroll use; SC indicates research started only.
