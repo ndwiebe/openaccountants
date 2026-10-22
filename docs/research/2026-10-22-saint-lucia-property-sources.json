@@ -40,12 +40,42 @@
       "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-21",
       "bytes": 61369,
       "sha256": "5764599d149f53937cc4b44c36d03f8eef6796a61550ebacbf36158d377c0557"
+    },
+    {
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwU0NPSS8vK3JVRWhHTmJjYURkYVRKeVZadTdDWEJwc3JQMGlJY0gwS3VNb241UjlqNzNzRlRrT0QxVzNCMmlVZmlKMkNsbjl5MFhEZGNSekJZdDBVT2w1QTRGdjREZmFQdTNrRlJRMHJFRk0%3D",
+      "bytes": 68770,
+      "sha256": "d889f8137b66d9215d06fdc8b3055ce1fc54ce6a8780a716ffac5072344b30c8"
+    },
+    {
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwYkpaVkVzQUIyeXVXTzVVRWhMQ21tQU9Nck9Jam5ENjBQRUlRSnl4ajlBL3RKOXVuWWdZQUlFMzZIOVlEYkRHMk9ia2dFdk5xcm9XZ3l5WVlVcktrM289",
+      "bytes": 74128,
+      "sha256": "328458a71216c647138dc713883c12a4e1778e143fd9db9411251ad457abc75c"
+    },
+    {
+      "url": "https://npc.govt.lc/laws/download/UjVlcXRvZTd3RG93ODVaQ0tsbWNwZUl4bHE1VzdyWWhhODZjMmpLOGRwSWNnNXVHbktKa2Z5VkUvNkl3TE1lajR6VUcrR3VoMkt5Vjg0ekRMMlg3ZFNNTXVrSXlsMEpDWis0VkdYWUJTdVhvdVdqaEVEVURhQ3E0K1lvSkpUUlg%3D",
+      "bytes": 101523,
+      "sha256": "b509e20abc636983b66957efc88849002072968a7c1457825d7938ed9c3f52ea"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-7a",
+      "bytes": 62827,
+      "sha256": "8f52b68f3f5b5e52eb1d125aef6b8189b6b27540ea5c0f60ec8482db26bced0b"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-7b",
+      "bytes": 62006,
+      "sha256": "6ab72c3512461a621c6a2f44369d64f098a6c3c093606416631a8ff0e56cc07c"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-7c",
+      "bytes": 62523,
+      "sha256": "69e0dfe788bfb13c426094acd849d6a44bd94040bc46dd1d543bd613e6962fb6"
     }
   ],
   "review_status": "independent review pending",
   "gaps": [
-    "Post-2023 amendment and remission chain",
-    "Commercial partial waiver and current relief forms",
+    "Any further amendments beyond the instruments read",
+    "Current forms and acceptance of historical commercial claims",
     "Land classification, penalties, appeals and amnesty terms"
   ]
 }

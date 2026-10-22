@@ -7,3 +7,9 @@ Important reconciliation: old IRD exemption form still lists pensionable age, fi
 Section 13 supersedes old residential rental-value basis with market value. Its paragraph lettering is awkward in the web text; Guide does not fabricate a missing formula. Section 21 gives Comptroller combination-property apportionment. Section 14 page title mismatches VAT but actual section body and Act navigation are property-tax text; actual body read. Payment deadline runs from notice date; objection from service. No assumed payment stay. Conditional numerical examples checked arithmetically: 300000 * .0025 = 750; 1000000 * .004 = 4000.
 
 IRD 2021 PDF URL returned 404. Government news about extension of tax amnesty to end-2027 is a lead, not enacted terms; not applied to principal tax. Later amendments, partial commercial waivers, current forms, land rates/classification, appeals and independent review remain open.
+
+## Enacted residential extension resolved
+
+Fetched and read Acts 2/2024, 19/2024 and 25/2025 from NPC using HTTP/1.1; valid PDFs, hashes saved. Visually checked Act 25 page 4: section 2 replaces 7(1)(l) with years 2017 through 2026. This resolves the original draft's 2026 residential uncertainty. Guide now leads with exemption, removes conditional residential calculation as an operative example, and separates commercial rates. Act 2 also adds Sports Saint Lucia Incorporated property exemption; not generalized to other entities.
+
+Read sections 7A–7C: historic 2020 tenant concession condition, 50% waiver against unpaid 2019 or 2020 if 2019 paid, compliant applicant, Schedule 3 and supporting proof, discretionary decision and written refusal reasons. Not a blanket 2026 commercial discount. New claim acceptance/current form not yet verified. Section 7C cached page displays 2023 revised-laws authentication warning; Guide flags source status and independently sources residential relief to enacted PDF.
