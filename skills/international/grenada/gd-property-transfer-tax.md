@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 ---
 
@@ -84,7 +84,26 @@ The purchaser must repay the waived tax within **two months** after any of these
 
 The Comptroller, consulting the investment-promotion agency, can extend the commencement or qualifying-cost time limits by no more than **twelve months**. This is a granted extension, not an automatic grace period; subsection (8) does not extend the unfinished-project transfer trigger. Preserve the waiver date, agreement, location evidence, qualifying-cost records, infrastructure commencement evidence and any written extension. [Act 9 of 2016, section 5(8)](https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf#page=5).
 
-**Eligibility gap:** the Investment Act and regulations defining qualifying investments, costs and priority sectors, the full amendment chain and the actual approval procedure have not been verified together. Do not apply this schedule to a purchase merely because its price crosses a threshold. The table records the amendment's rules; it does not certify a currently available concession for a particular purchaser.
+### Establish qualifying investment and qualifying costs
+
+The [2016 priority-sector regulations](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-32-of-2016-Investment-Priority-Sectors-Regulations.pdf) also commenced on 1 May 2016. Regulation 3 names tourism accommodation; agriculture, agribusiness and agricultural research; restauranteering; tourism; manufacturing; education; health and wellness; medical services; sports; business processing outsourcing; creative arts; energy; and information technology/telecommunication services. Apply the detailed activity definitions in regulation 2, including sector-specific certification requirements. The exclusion of IT and telecommunications in regulation 3(2) expressly concerns Income Tax Act section 36A; do not silently apply that exclusion to property-transfer tax.
+
+Regulation 4 covers new priority-sector facilities, new buildings within them, expansion and qualifying reconstruction. Reconstruction costs must **exceed 40%** of the reconstructed building's or structure's written-down value. Medical equipment in a new medical facility is separately covered; installation in an existing medical facility requires equipment cost **exceeding 75%** of existing equipment's written-down value. An acquisition of land alone does not establish one of these project conditions. [Regulation 4(1)](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-32-of-2016-Investment-Priority-Sectors-Regulations.pdf#page=7).
+
+The minimum cumulative qualifying costs in regulation 4(2) are strict “exceeds” tests:
+
+| Sector group | Required costs |
+|---|---:|
+| Agriculture/agribusiness/agricultural research, manufacturing, creative arts | Over EC$1 million |
+| Restauranteering, tourism, education, health/wellness, sports, outsourcing, energy, IT/telecommunications | Over EC$3 million |
+
+Regulation 4(3) imposes the EC$3 million threshold on a facility qualifying through both groups. Tourism accommodation and medical services are not listed in those two minimum-cost groups; their own definitions and project conditions still require checking. These eligibility thresholds are distinct from the EC$30 million/EC$80 million waiver bands. [Regulation 4(2)–(3)](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-32-of-2016-Investment-Priority-Sectors-Regulations.pdf#page=8).
+
+**Land price is excluded from qualifying costs.** Regulation 5 includes specified construction materials/equipment, construction labour and management, and operating capital goods, subject to its exclusions. Exclusions include land, financing costs, legal/professional fees, preparatory planning/design costs, office equipment/furnishings and vehicles/aircraft/boats. Do not treat the total purchase price or project budget as the qualifying-cost amount. [Regulation 5](https://grenadaparliament.gd/wp-content/uploads/2021/08/S.R.O.-32-of-2016-Investment-Priority-Sectors-Regulations.pdf#page=9).
+
+Regulation 5(1)(d)–(e) separately includes percentages of specified engineering/study costs for the medical-equipment investments in regulation 4(1)(e), while regulation 5(2) excludes preparatory/professional costs. Their interaction requires reconciliation before counting these costs; no blanket professional-fee allowance is certified here. The mixed-sector formula in regulation 4(4) expressly concerns an **investment allowance**; this Guide does not transpose it into a property-transfer waiver calculation.
+
+**Remaining eligibility gap:** the original Investment Act and 2016 regulations have been retrieved, but subsequent amendments, the Investment Act's commencement and 2016 amendment, and the actual approval procedure remain to be reconciled. Obtain sector certification, project scope, written-down values, an itemised cost schedule and the waiver decision before applying relief. This Guide does not certify a currently available concession for a particular purchaser.
 
 ## Recording the transfer
 
