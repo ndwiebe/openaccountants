@@ -1,20 +1,20 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, associated-enterprise adjustments, dividend/interest/royalty conditions and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
     title: "HMRC DT8602 treaty summary, payment-category conditions"
     as_of: "2026-10-22"
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–4, 9–12, 14, 22–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–12, 14, 22–25"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -45,6 +45,63 @@ For an individual resident in both territories under Article 4(1), apply Article
 There is **no nationality tie-break step** in this treaty's individual rule. Retain home availability, family/economic ties and living-pattern evidence rather than treating a passport or one year's day count as decisive. [Article 4(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 For a dual-resident non-individual, Article 4(3) calls for competent-authority agreement taking account of effective management, incorporation/constitution and other factors. Without agreement, treaty benefits are unavailable except those under Articles **22, 24 and 25**. Do not apply an automatic effective-management tie-break or deny every benefit indiscriminately. [Article 4(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Business profits and permanent establishments
+
+Article 7 generally reserves enterprise profits to its residence territory unless business is carried on through a permanent establishment (PE) in the other territory; that other territory can tax profits attributable to the PE. Establish treaty residence and entitlement before this allocation. A treaty restriction is not itself proof of a domestic exemption or a substitute for domestic filing obligations. [Article 7(1)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Article 5(1) defines a PE as a fixed place of business through which the enterprise's business is wholly or partly carried on. Listed examples include management premises, branches, offices, factories, workshops and extraction sites. Assess actual premises use and activity rather than concluding from a registered address or customer location alone. [Article 5(1)–(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+| Issue | Treaty rule and evidence |
+|---|---|
+| Building/construction/installation project | A PE under Article 5(3) only if it lasts **more than twelve months**. Establish commencement, completion, interruptions and project identity; do not substitute a fixed 365-day test without authority. |
+| Limited activities | Article 5(4) lists facilities/stock solely for storage, display or delivery, stock solely for processing by another enterprise, and a place solely for purchasing or collecting information. Its other-activity limb requires preparatory/auxiliary character; combined listed activities require that character overall. Read the exact limb rather than importing a different treaty's wording. |
+| Fragmented operations | Article 5(5) can disapply the paragraph 4 exception for complementary functions forming a cohesive business operation, where the same/closely related enterprise operates at the same or another place and the specified PE or non-auxiliary combined-activity condition is met. |
+| Contract-concluding agent | Article 5(7) covers a person acting for the enterprise who has and habitually exercises authority to conclude contracts on its behalf, subject to its stated exclusions. Contract practice and authority matter, not just job title. |
+| Independent agent | Article 5(8) protects business through an independent-status broker/commission agent/other agent acting in the ordinary course of its business. Verify both independence and ordinary-course conduct. |
+| Parent/subsidiary | Control alone does not make one company a PE of the other under Article 5(9). Other fixed-place or agency facts still need assessment. |
+
+All rules: [Article 5(3)–(9)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf). For paragraph 5, Article 5(6) defines close relationship by factual control and adds a **more-than-50%** direct/indirect beneficial-interest test, with the specified vote/value/equity measures for companies. Exactly 50% fails that automatic percentage limb but is not a safe harbour from factual control. Do not apply Article 5(6)'s definition as a universal threshold for Article 9 or the investment-income articles.
+
+### Attribute profit from evidence, not a fixed turnover fraction
+
+Article 7(2) treats the PE as a separate independent enterprise in the same/similar activities and conditions, considering functions performed, assets used and risks assumed through it and the rest of the enterprise. Prepare a supported attribution calculation, including internal dealings; neither all worldwide profit nor an arbitrary share of turnover is automatically the PE base. Article 7(3) provides an appropriate corresponding tax adjustment where an attribution adjustment causes the specified double taxation, with authority consultation if needed. [Article 7(2)–(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Other articles continue to govern separately covered income/gains under Article 7(4). For example, Article 6 permits the property territory to tax income from immovable property, including enterprise property and letting income; absence of an Article 5 PE does not by itself exempt that rent. [Articles 6 and 7(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Ownership boundary example:** assume 100 equal beneficial interests with no special rights or indirect interests. Holding 50 is 50%; holding 51 is 51%. Only the latter necessarily meets the more-than-50% numerical limb. Both still require the paragraph 5 business facts, and the first can be closely related through factual control. The arithmetic does not decide a PE.
+
+```oa-check
+name: PE anti-fragmentation ownership boundary
+inputs:
+  total_equal_interests: 100
+  at_boundary: 50
+  above_boundary: 51
+steps:
+  - boundary_percentage: at_boundary / total_equal_interests * 100
+  - above_percentage: above_boundary / total_equal_interests * 100
+expected:
+  boundary_percentage: 50
+  above_percentage: 51
+```
+
+**Attribution working-paper illustration:** assume a separately supported Article 7 analysis attributes £200,000 revenue and £130,000 allowable costs to a PE. Attributed profit is **£70,000**. If review of an internal dealing establishes an additional £10,000 attributable profit adjustment, the revised base is **£80,000**. These are hypothetical evidence inputs, not a treaty-prescribed margin, cost deduction or tax rate. Apply domestic tax law and corresponding-adjustment procedures separately.
+
+```oa-check
+name: Supported PE profit bridge before domestic tax
+inputs:
+  attributed_revenue: 200000
+  established_allowable_costs: 130000
+  supported_profit_adjustment: 10000
+steps:
+  - initial_profit: attributed_revenue - established_allowable_costs
+  - revised_profit: initial_profit + supported_profit_adjustment
+expected:
+  initial_profit: 70000
+  revised_profit: 80000
+```
+
+Unresolved: detailed project aggregation/timing, remote-worker premises analysis, agency interpretation, domestic PE registration/returns, branch deductions and current competent-authority procedures. The examples do not settle these points.
 
 ## Employment allocation and thresholds
 
@@ -210,7 +267,7 @@ expected:
 
 ## Sources and remaining work
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Property gains, business profits, pensions, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Property gains, pensions, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
 
 ## Disclaimer
 
