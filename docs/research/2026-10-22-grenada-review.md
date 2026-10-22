@@ -18,3 +18,7 @@ No Grenada/GD paths in shared origin/main or Ryan main tree 2d2e198012cfd827357e
 ## Next verification
 
 Obtain and inspect current Acts/amendments and restored source pages; resolve contribution age/period rules, VAT effective dates and rates, annual stamp tax exemptions/minimum, and special Hurricane Beryl measures. Income tax, full payroll, corporate tax, formation, reporting, property and cross-border topics remain to be written. CI proves schema only, not tax accuracy. No independent accountant attestation has occurred.
+
+## Property-transfer addition, next consolidated batch
+
+Retrieved Parliament's Chapter 257C consolidation and Act 9 of 2016; hashes recorded in the transfer source record. Read sections 2, 4–8 and 18. The official indexed IRD summary corroborates ordinary vendor/purchaser rates and thresholds. The Guide treats citizenship as the statutory definition, including control tests, not merely incorporation or residence. The nongift land threshold applies to the ordinary section 5(1) computation. Gift subsection 5(2) names vendor paragraphs only; no blanket extension of the gift threshold to every noncitizen recipient above the exemption is asserted. Tourism and investment concessions are excluded from calculations pending complete amendment/commencement and approval checks. Decimal checks passed for EC$500000 examples, combined liabilities and the EC$20000 boundary. Independent review and full country coverage remain outstanding.

@@ -1,0 +1,26 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Cap257C-PROPERTY-TRANSFER-TAX-ACT.pdf",
+      "bytes": 156445,
+      "sha256": "28f22376613f369390fd69dee8a0bec9a70f6b58d182c212301aa3dea1ea130f"
+    },
+    {
+      "url": "https://grenadaparliament.gd/wp-content/uploads/2021/08/Act-No.-9-of-2016-Property-Transfer-Tax-Amendment-Act.pdf",
+      "bytes": 300535,
+      "sha256": "a3ea42326bd2acffa7b3d26d3ad09db49d916e2635c22e8fa3b7e4c7a31f6c7c"
+    }
+  ],
+  "corroboration": {
+    "url": "https://ird.gd/taxes/property-transfer-tax",
+    "access": "official indexed text; no local capture/hash claimed"
+  },
+  "review_status": "independent review pending",
+  "gaps": [
+    "Full post-2010 amendment chain and 2016 commencement",
+    "Tourism/investment approvals and concession computation",
+    "Noncitizen gift-recipient threshold treatment above EC$150000",
+    "Current forms, regional citizenship exceptions and closing process"
+  ]
+}
