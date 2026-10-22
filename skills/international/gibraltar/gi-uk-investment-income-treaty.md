@@ -7,9 +7,12 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152"
+    title: "HMRC DT8152: arbitration summary conflicts with published Article 24(5)"
+    as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "HMRC: 2019 UK–Gibraltar Double Taxation Agreement in force, Articles 1–4, 10–12, 24, 28–29 and Protocol"
     as_of: "2026-10-22"
@@ -122,8 +125,10 @@ Article 28 denies an item-specific benefit where obtaining it was a principal pu
 
 A person alleging taxation contrary to the agreement can present a case to either competent authority within **three years from the first notification** of the relevant action, irrespective of domestic remedies. Authorities endeavour to resolve justified cases; an agreed solution overrides domestic time limits. Article 24(5) provides requested arbitration for unresolved issues after **two years from presentation to the other territory's authority**, excluding issues already decided by a court or administrative tribunal. It also specifies acceptance/binding-effect conditions and requires authorities to settle its mode of application. This Guide has not verified that operational arrangement; neither clock is an automatic payment suspension or a domestic refund deadline. [Article 24](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure).
 
+HMRC’s [DT8152 summary](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152) records no arbitration, conflicting with Article 24(5) in the published agreement. The [employment and pensions Guide](gi-uk-employment-pensions-treaty.md) records this and related pension discrepancies. The agreement provision above is verified, but its operational arrangement and the reason for the summary entry remain unresolved.
+
 ## Relief file and remaining verification
 
 For each payment, retain: both parties and beneficial-owner evidence; residence analysis; payment date and classification; gross amount and domestic source tax; recipient-category proof, ownership chain and rights where relevant; any authority determination; permanent-establishment and independent-price analysis; principal-purpose assessment; and the actual relief application, authority response and repayment record. This is a recommended working-paper structure, not an official form list.
 
-Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. Employment, pensions as receipts, capital gains, business profits, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
+Before applying relief at payment or requesting repayment, verify the current domestic form, authorisation, evidence and deadline in the source territory. Those procedures and penalties are not established by this Guide. [Employment and pensions](gi-uk-employment-pensions-treaty.md) are now separately drafted with remaining questions explicit. Capital gains, business profits, full double-tax-credit coordination and other treaty topics remain separate work. See [domestic Gibraltar foreign-tax relief](gi-foreign-tax-relief.md) and [Spain residence agreement](gi-spain-tax-residence.md), which have different scope. Independent source review and professional attestation remain pending; this draft does not establish comprehensive Gibraltar coverage.
