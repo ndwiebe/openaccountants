@@ -33,7 +33,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar corporate tax and filing v0.13
+# Gibraltar corporate tax and filing v0.14
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
