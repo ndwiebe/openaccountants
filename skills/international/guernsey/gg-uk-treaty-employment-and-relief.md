@@ -1,20 +1,20 @@
 ---
 name: gg-uk-treaty-employment-and-relief
 description: >
-  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
+  Apply the UK–Guernsey treaty's residence and ordinary employment-income tests and prepare a Guernsey foreign-tax-credit working paper. Covers territorial scope, individual and entity residence conflicts, the three short-visit employment conditions, the credit ceiling, permanent establishments, business-profit attribution, associated-enterprise adjustments, dividend/interest/royalty conditions, pensions and government-service distinctions, student support, capital-gains allocation, offshore overrides and mutual-agreement time limits. Contains checked day-count and credit examples. Based on the official 2018 Agreement and Protocol and current HMRC treaty-status evidence checked in October 2026. This source-cited draft does not establish payroll clearance, all withholding categories, claim forms or complete cross-border coverage; independent professional review remains pending.
 jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.5
+version: 0.6
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602"
     title: "HMRC DT8602 treaty summary, payment-category conditions"
     as_of: "2026-10-22"
   - url: "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf"
-    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–12, 14, 17–19, 22–25"
+    title: "UK–Guernsey Agreement and Protocol 2018, Articles 1–7, 9–14, 17–19, 21–25"
     as_of: "2026-10-22"
   - url: "https://www.gov.uk/government/publications/guernsey-tax-treaties"
     title: "HMRC Guernsey tax treaties, entry into force and effective dates"
@@ -33,6 +33,8 @@ The Agreement applies to residents of one or both territories. Article 3 defines
 Article 4 residence requires liability by domicile, residence, management, incorporation or a similar criterion; source-only taxation does not suffice. Establish domestic residence first, using the [individual Guide](gg-individual-income-tax.md) and appropriate UK rules. Transparent entities need Article 1(2)'s income/resident attribution test. The Protocol supplies additional Article 4 interpretation, including a specified Guernsey exempt investment-fund provision; do not infer that a zero liability alone proves either eligibility or ineligibility. [Articles 1 and 4; Protocol paragraph 2](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 The Agreement entered into force on **7 January 2019**. Ordinary effective dates are **1 March 2019** for withholding in both territories, **1 January 2020** for Guernsey income tax, **6 April 2019** for UK income tax and **1 April 2019** for UK corporation tax. Historical transactions require the appropriate earlier agreement. HMRC currently identifies this Agreement as in force. [Treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties); [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600).
+
+Article 1(3) preserves each territory's taxation of its residents except for the expressly listed benefits in Article 7(3), Article 9(2), and Articles 18, 19, 22, 24 and 25. Apply that reservation alongside residence and allocation rules; a statement about source-territory limits is not a universal exemption from residence taxation. [Article 1(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
 
 ## Residence conflicts
 
@@ -227,6 +229,58 @@ Article 19 covers a student or business apprentice who is, or immediately before
 
 For example, qualifying maintenance support from outside Guernsey and wages from work performed in Guernsey need separate classifications. The student article can cover the former when all its conditions are met; it does not establish relief for the latter. Record the prior residence, purpose of presence, payment source and payment purpose. Apply the employment provisions and domestic rules separately to any earnings.
 
+## Capital gains: asset and value tests
+
+Article 13 allocates taxing rights; it does not create a domestic tax charge, valuation method, rate or filing deadline. A resident disposing of immovable property in the other territory can be taxed there. The article also permits that territory to tax gains on shares or comparable interests deriving **more than 50% of their value**, directly or indirectly, from immovable property there, subject to the traded-share exception. This measures the interests' underlying property value, not the seller's ownership percentage. The article states no 365-day lookback; do not import another treaty's testing period. [Article 13(1)–(2)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+The exception concerns shares with **substantial and regular trading on a recognised stock exchange**. Listing alone does not establish that condition. Protocol paragraph 3 names the recognised exchanges, including the London Stock Exchange/AIM and the International Stock Exchange, and allows authority-agreed additions. Unlike the Gibraltar agreement, this paragraph does not state a property-investment-vehicle carve-out from its traded-share exception. Apply this treaty's text and the separate offshore override below. [Article 13(2); Protocol paragraph 3](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Value boundary:** assume supported valuations, ordinary untraded shares, no offshore activity and no other applicable allocation rule. With total value of £1m and £500,000 derived from relevant property, the ratio is exactly 50% and does not exceed the threshold. At £510,000 of relevant property value, the ratio is 51%, so this value condition is met. Neither result establishes the domestic gain or tax payable.
+
+```oa-check
+name: Guernsey UK property-rich interest value boundary
+inputs:
+  total_value: 1000000
+  boundary_property_value: 500000
+  higher_property_value: 510000
+steps:
+  - boundary_percent: boundary_property_value / total_value * 100
+  - higher_percent: higher_property_value / total_value * 100
+expected:
+  boundary_percent: 50
+  higher_percent: 51
+```
+
+Movable business property of a PE, including disposal of the PE itself, can be taxed in the PE territory. Gains of an enterprise operating ships or aircraft in international traffic from those vessels/aircraft and associated operating movables are allocated exclusively to its territory. Other gains fall to the alienator's residence territory under Article 13(5), subject to the agreement's other applicable provisions. [Article 13(3)–(5)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+## Offshore activities override the ordinary allocation
+
+Article 21 applies notwithstanding other agreement provisions. Its scope is offshore activity connected with exploration or exploitation of the territory's seabed, subsoil and natural resources; it is not a rule for every overseas company or offshore bank account. The ordinary enterprise rule deems a PE, subject to paragraphs 4–5. [Article 21(1)–(3)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+The paragraph 4 exception applies where relevant activity totals **no more than 30 days** in any twelve-month period beginning or ending in the fiscal year concerned. Aggregate substantially similar activity by associated enterprises, excluding simultaneous activity from double counting. Association here concerns participation in management, control or capital, including common participation; the article does not supply a universal 50% ownership threshold. [Article 21(4)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+**Aggregation boundary:** assume one enterprise has 22 days and an associated enterprise has 14 substantially similar days, with six overlapping days, in a tested twelve-month window. The total is **22 + 14 − 6 = 30** days. One additional non-overlapping day gives 31 and defeats this particular exception. Check every relevant window and the actual activity facts before reaching a PE conclusion.
+
+```oa-check
+name: Guernsey UK offshore associated activity overlap
+inputs:
+  enterprise_days: 22
+  associated_days: 14
+  simultaneous_days: 6
+steps:
+  - aggregated_days: enterprise_days + associated_days - simultaneous_days
+  - additional_nonoverlapping_day: aggregated_days + 1
+expected:
+  aggregated_days: 30
+  additional_nonoverlapping_day: 31
+```
+
+Paragraph 5 instead allocates specified supply/personnel transport and towing/anchor-handling profits exclusively to the resident's territory. Paragraph 6 allows the activity territory to tax the specified exploration/exploitation-rights income and disposal gains, relevant property gains, and shares whose value or greater part of value derives from those rights/property. The paragraph 4 enterprise-duration exception is not a blanket exemption from paragraph 6. [Article 21(5)–(6)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Offshore employment remuneration can be taxed where the duties are performed offshore under paragraph 7; paragraph 8 allocates the specified transport/towing/anchor-handling crew remuneration to the employee's residence territory. Do not substitute the enterprise's 30-day condition for an employee exemption or automatically use the ordinary employment 183-day exception. [Article 21(7)–(8)](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf).
+
+Retain asset location and valuation support, ownership chains, trading evidence, PE records, rights/contracts, activity dates and overlap, and each territory's domestic computations and filings. This is a recommended evidence structure. Domestic charging rules, valuation dates, disposal reporting and specific offshore fact patterns remain to verify.
+
 ## Filing, deadlines and disputes
 
 Prepare the domestic returns and relief claims for each applicable year; retain residence evidence, employment-location records, payslips, assessments, proof of tax paid and credit allocation. Exact claim forms, deadlines, payroll clearance and treatment of later foreign refunds remain unverified. Do not stop withholding solely because this working paper identifies potential treaty relief.
@@ -287,7 +341,7 @@ expected:
 
 ## Sources and remaining work
 
-Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Pension, government-service and student allocation conditions are now drafted; domestic definitions, pension lump sums and operational relief remain open. Property gains, other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
+Official [Agreement and Protocol](https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf), [HMRC treaty-status page](https://www.gov.uk/government/publications/guernsey-tax-treaties) [DT8600](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8600) and [DT8602](https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8602), accessed 22 October 2026. Dividend, interest and royalty allocation conditions are drafted, but full domestic withholding/claim operations remain open. Business-profit allocation and PE tests are drafted, with domestic implementation still open. Pension, government-service and student allocation conditions are now drafted; domestic definitions, pension lump sums and operational relief remain open. Capital-gains and offshore allocation are now drafted; domestic charging, valuation and disposal filing remain open. Other treaty corridors and exit issues are not comprehensively covered. Claim operations, domestic related-party and deduction rules, domestic relief interactions and independent source/professional review remain pending.
 
 ## Disclaimer
 
