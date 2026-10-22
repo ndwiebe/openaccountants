@@ -7,15 +7,18 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf"
+    title: "Transaction Tax (Deductions) Rules 2026, LN 2026/338, rules 3–6"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/treaty-on-gibraltar/2026-11/2026-11(15-07-26).pdf"
     title: "Treaty on Gibraltar and the European Union Act 2026: 15 July 2026 consolidation, sections 98–102 and Schedule 2"
     as_of: "2026-10-22"
 ---
 
-# Gibraltar goods transaction-tax transition v0.2
+# Gibraltar goods transaction-tax transition v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -77,11 +80,35 @@ For commercial exports to the EU, section 102 requires proof satisfactory to the
 
 Record the goods, liable person, date/event, customs procedure and supporting documents. Establish exemption or rate classification; reconcile the valuation components; compute tax; match the declaration and payment evidence. Keep any export-refund claim and income-tax transition relief separate. Review bonded stock and other transitional procedures before using these rules for pre-commencement stock.
 
-## Transitional business relief
+## Transitional business relief: eligibility
 
-The September announcement describes relief for qualifying certified retail/wholesale businesses for the first 90 days from 15 July, ending 12 October 2026: the excess of transaction tax over the counterfactual import duty, capped at 50% of preceding-period tax. It specifies exclusions, compliance conditions, OFT certification, payment evidence, state-aid limits and incompatibility with another support scheme. An extension requires its own evidence. [Government announcement](https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358); [Transaction Tax (Deductions) Rules 2026](https://www.gibraltarlaws.gov.gi/legislations/transaction-tax-deductions-rules-2026-8890).
+The enacted Transaction Tax (Deductions) Rules commenced on 23 September 2026. Rule 3 covers companies, partnerships, sole traders and other incorporated or unincorporated retail/wholesale traders certified by the Office of Fair Trading. It excludes trades principally selling food, beverages and household groceries, tobacco, wine or spirits, fuel, or vehicles. Obtain certification of the actual business; an ordinary business licence alone does not establish eligibility. [Rules 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
 
-**Outstanding verification:** reconcile the deductions rules themselves and any extension after 12 October; treaty entry-into-force versus provisional-application rate triggers; incorporated commodity definitions, customs procedures and traveller thresholds; transitional stock; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
+Rule 4 covers transaction-tax costs within 90 days beginning on the Implementation Date and measures the deduction by tax paid in that period. The official announcement identifies the initial window as **15 July–12 October 2026**. Do not substitute an invoice date for proof of tax payment. Rule 5 permits a further 90 days by Gazette notice following the specified independent committee advice and provides for advice on subsequent extensions. No extension notice has been verified for this Guide; post-12-October payments must remain outside its supported calculation unless that evidence is obtained. [Rules 4(1), 5](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf); [official period explanation](https://www.gibraltar.gov.gi/press-releases/minister-arias-vasquez-publishes-transaction-tax-deductions-rules-2026-6922026-12358).
+
+## Compute the deduction, separately from tax saved
+
+1. Establish eligible transaction tax **paid** in the supported period.
+2. Calculate the import duty that would previously have applied in that same period. For imports subject to multiple historical rates, rule 4(2) requires a weighted average using broad goods categories and their proportions of total imports. Retain the categories, allocation basis, historical rates, customs declarations and purchase records. The Commissioner must be satisfied with the calculation and can require more evidence or withhold/adjust it.
+3. Calculate the positive difference between transaction tax and counterfactual duty. If transaction tax is not higher, no deduction arises under rule 4(1).
+4. Limit that amount to **50% of tax paid in the immediately preceding accounting period or year of assessment**. Use evidence of payment, not merely the assessed liability.
+5. Apply eligibility, aid and other-support restrictions below. Deduct the permitted amount in computing assessable profits for the accounting period/year commencing on or after the Implementation Date; do not automatically put it into the period containing an import date. The announcement describes the first such period.
+
+This is a profit deduction. The deduction amount is not itself a tax credit, repayment or customs refund. [Rule 4(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
+
+**Mixed-import illustration:** assume an evidenced £100,000 historical duty base, with accepted value proportions of 60% at a historical 10% rate and 40% at 0%. The weighted rate is 60% × 10% + 40% × 0% = **6%**, giving counterfactual duty of **£6,000**. Eligible transaction tax actually paid is £15,000, so the difference is £9,000. If immediately preceding-period tax paid was £12,000, the cap is £6,000 and the provisional deduction is **min(£9,000, £6,000) = £6,000**, subject to all remaining conditions. Assuming sufficient taxable profits and an independently established 15% income-tax rate, the resulting tax reduction would be **£900**, not £6,000. The example does not establish any real commodity's historical rate, valuation or allocation basis.
+
+**Boundaries:** zero preceding-period tax paid gives a zero cap under the rule's formula. Equal transaction tax and counterfactual duty give no positive difference. These rules do not state a carry-forward entitlement for the excess above the cap; do not invent one. [Rule 4(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
+
+## Compliance, competing assistance and claim evidence
+
+At the Implementation Date the claimant must meet all applicable filing and payment obligations for corporation/income tax, PAYE and social insurance. The Commissioner has discretion for a person who becomes compliant within 30 days after the Rules commenced, but only with a written application, supporting evidence and **written approval**. Catching up on filings alone does not establish approval. [Rule 4(6)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
+
+Each claim requires OFT certification, payment documentation and the applicable weighted-average evidence. The Commissioner can adjust or disregard an inaccurate, overstated or non-genuine claim and must notify the determination in writing. Rule 4(11) excludes a person granted assistance under a scheme prescribed or published since the Implementation Date aimed at financially supporting modernisation of premises, processes/procedures, IT or staff training. Check assistance actually granted and the scheme's purpose and publication date; do not describe this only as a prohibition on double-claiming the same invoice. [Rule 4(9)–(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
+
+Rule 6 separately requires compliance with the applicable de minimis aid provisions. Declare and document de minimis and other state aid received during the **three years preceding the claim**. The Commissioner can reduce the deduction to the amount compatible with those provisions. This Guide does not establish the applicable monetary aid ceiling, aggregation rules or remaining headroom. [Rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2026s338/2026s338.pdf).
+
+**Outstanding verification:** verify any extension after 12 October and the applicable state-aid ceiling/aggregation; treaty entry-into-force versus provisional-application rate triggers; incorporated commodity definitions, customs procedures and traveller thresholds; transitional stock; declaration/payment deadlines, refund procedure and subsequent amendments. The charging provisions, statutory commencement table and valuation rules above have now been checked, but the operational transition is not fully verified.
 
 ## Self-checks and output
 

@@ -7,3 +7,9 @@ Read enacted sections 98–102 and Schedule 2 paragraphs 1–3 against the offic
 Arithmetic checked: 10,000+1,000+200=11,200; 15%=1,680; duplicate400 freight overstates tax60. Local8,000 at15%=1,200 versus cost6,000 at15%=900. Rate sensitivity1,000 at15/5/0%=150/50/0. Examples assume classification; none proves transaction-specific liability.
 
 Commencement evidence is the statutory consolidation table referencing LN2026/148, not an independently read copy of that notice. No automatic calendar rate-change date: schedule expressly refers to TGEU entry into force; provisional application interaction unresolved. Deductions rules, extensions, treaty annexes, operational customs deadlines/refunds and transitional stocks still require verification. No new claim of full consumption-tax coverage or review acceptance.
+
+## v0.3 deductions rules
+
+Read all five pages of LN2026/338 fetched from the official iframe PDF. Rule4(2)–(4) mixed-import weighting and Commissioner evidence control;4(5) prior tax PAID cap and profit deduction distinguished from credit;4(6)–(8) written discretionary compliance approval;4(11) competing assistance exclusion;rule6 three-year aid disclosure and partial reduction. Worked example assumes accepted value proportions and historical bases/rates, not a statutory ruling on how heterogeneous goods must be valued. Weighted6%, duty6000, difference9000, cap6000, conditional15% tax saving900. Zero-cap and no-positive-difference boundaries checked.
+
+Official-domain search for extension returned the September announcement but no verified Gazette extension; absence in search is not proof none exists. Extension remains unresolved. Current-version webpage identifies23September but also contains an out-of-date label for a duplicated version section; no unsupported assertion that the search exhausts later instruments. Aid ceiling and scheme-specific classification remain open. Independent review still pending.
