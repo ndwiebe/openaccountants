@@ -1,25 +1,28 @@
 ---
 name: gi-foreign-tax-relief
 description: >
-  Gibraltar domestic foreign-tax relief under Income Tax Act section 37. Covers same-income evidence, source and residence-only exclusions, proportional allocation of Gibraltar tax, overseas relief interaction, six-year claims and later adjustments. Includes recomputable credit examples and a claim working-paper checklist. Based on the official March 2026 consolidation checked in October 2026. Does not decide treaty residence, source disputes or foreign-country entitlement. Independent source review and professional attestation are pending.
+  Gibraltar domestic foreign-tax relief under Income Tax Act section 37 and UK treaty Article 22 coordination. Covers same-income evidence, source and residence-only exclusions, proportional allocation of Gibraltar tax, overseas relief interaction, six-year claims and later adjustments. Includes recomputable credit examples and a claim working-paper checklist. Based on the official March 2026 consolidation checked in October 2026. Does not decide treaty residence, source disputes or foreign-country entitlement. Professional attestation is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
+    title: "UK–Gibraltar agreement, Articles 1, 4, 22, 28 and 29"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: consolidation dated 23 March 2026, section 37"
     as_of: "2026-10-22"
 ---
 
-# Gibraltar: domestic relief for foreign income tax
+# Gibraltar: foreign income-tax relief and UK treaty coordination
 
 ## Scope and eligibility
 
-This Guide addresses **section 37 domestic relief**, not entitlement under a tax treaty. Begin with the actual Gibraltar charge, foreign charge and the profits or gains to which each relates. Section 37(1) requires proof satisfactory to the Commissioner that the person has paid, by deduction or otherwise, or is liable to pay tax in both jurisdictions on the **same profits or gains**. It is not enough that a group company paid tax elsewhere on unrelated income. [Income Tax Act, section 37(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+The first sections address **section 37 domestic relief**. The separate UK treaty section below has its own entitlement conditions. Begin with the actual Gibraltar charge, foreign charge and the profits or gains to which each relates. Section 37(1) requires proof satisfactory to the Commissioner that the person has paid, by deduction or otherwise, or is liable to pay tax in both jurisdictions on the **same profits or gains**. It is not enough that a group company paid tax elsewhere on unrelated income. [Income Tax Act, section 37(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 The basic amount is the lesser of Gibraltar tax attributable to those profits or gains and foreign income tax on that income, subject to the further limitations below. Foreign “income tax” includes a tax calculated on a similar basis or of a similar nature to Gibraltar income tax. Do not treat a foreign payment as creditable merely because its name includes “tax”; establish its legal character. [Section 37(1) and (7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -52,6 +55,40 @@ Continuing the £6,000 initial-relief example, if the relevant foreign unilatera
 An ordinary section 37 claim must be made no later than **six years after the end of the assessment year or accounting period** concerned. For an accounting period ending 31 December 2025, that gives **31 December 2031**. This claim limit does not defer the ordinary return or payment deadline. [Section 37(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [corporate tax Guide](gi-corporate-tax.md).
 
 A later adjustment to Gibraltar tax, foreign tax or relevant foreign relief can make the original credit excessive or insufficient. Section 37(6) provides a special assessment/claim route within six years from the time all material assessments, adjustments and determinations have been made. Record those events; do not assume the ordinary deadline alone closes the case or that every foreign payment restarts it. [Section 37(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## UK treaty: Article 22 coordination
+
+Establish entitlement under Articles 1, 4 and 28 and the applicable Article 29 commencement before applying the credit article. Use the [UK investment-income Guide](gi-uk-investment-income-treaty.md) for residence, beneficial ownership and payment categories, and the [employment/pensions Guide](gi-uk-employment-pensions-treaty.md) for those income types. A domestic section 37 claim is not itself proof of treaty eligibility. [UK–Gibraltar agreement](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force).
+
+For a **Gibraltar resident**, Article 22(1)(a) permits Gibraltar to include income that the agreement allows the UK to tax in its tax base. Paragraph (1)(b) then requires a deduction from tax equal to the **lesser of Gibraltar tax due and UK tax due on the same income**, under their respective laws, where the agreement permits UK taxation. This is relief from tax, not a deduction of the foreign tax from gross income. Paragraph (3) excludes this Gibraltar relief where UK taxation is permitted by the agreement **solely because the income, profits or gains are also derived by a UK resident**. Record the treaty basis of the UK's charge; evidence that UK tax was paid does not settle this exclusion. [Article 22(1), (3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation).
+
+**Conditional example:** assume treaty eligibility, permitted UK taxation, no paragraph (3) exclusion and independently established tax on the same income of £6,000 in Gibraltar and £8,000 in the UK. The Article 22(1) deduction is **£6,000**, leaving zero Gibraltar tax on that component. If UK tax due instead is £4,500, the deduction is £4,500 and the Gibraltar balance on that component is **£1,500**. The excess £2,000 UK tax in the first case is not a Gibraltar refund under this formula. The inputs are assumed liabilities, not prescribed domestic rates or proof that foreign withholding complied with the treaty.
+
+```oa-check
+name: Gibraltar resident Article 22 same-income credit limits
+inputs:
+  gibraltar_tax_on_same_income: 6000
+  higher_uk_tax_due: 8000
+  lower_uk_tax_due: 4500
+steps:
+  - first_credit: min(gibraltar_tax_on_same_income, higher_uk_tax_due)
+  - first_gibraltar_balance: gibraltar_tax_on_same_income - first_credit
+  - second_credit: min(gibraltar_tax_on_same_income, lower_uk_tax_due)
+  - second_gibraltar_balance: gibraltar_tax_on_same_income - second_credit
+expected:
+  first_credit: 6000
+  first_gibraltar_balance: 0
+  second_credit: 4500
+  second_gibraltar_balance: 1500
+```
+
+For the **UK side**, Article 22(2) is expressly subject to UK credit/exemption law, without affecting the stated general principle. Paragraph (a) provides credit for Gibraltar tax payable under Gibraltar law **and in accordance with the agreement**, on the same Gibraltar-source profits, income or gains, directly or by deduction. Its dividend rule initially excludes tax on the underlying company profits. Paragraphs (b) and (c) provide for UK exemption of qualifying company dividends and Gibraltar permanent-establishment profits **when the applicable UK-law exemption conditions are met**. They do not make every Gibraltar dividend or branch exempt. [Article 22(2)(a)–(c)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation).
+
+For a dividend paid by a Gibraltar-resident company and not exempt under paragraph (b), paragraph (d) extends the credit to take account of underlying Gibraltar company tax where the UK-resident recipient company controls, directly or indirectly, **at least 10% of the payer's voting power**. Exactly 10% meets that threshold; 9.99% does not meet this particular underlying-tax route. Voting power, rather than a nominal shareholding percentage alone, controls this test. Income and gains of a UK resident that the agreement allows Gibraltar to tax are deemed Gibraltar-source for paragraph (2). Actual UK exemption elections, credit limits, underlying-tax allocation, claim deadlines and return fields require separate UK-law verification. [Article 22(2)(d) and final sentence](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation).
+
+Article 22(4) supplies the opposite-direction exclusion: paragraph (2) does not apply where Gibraltar taxation is permitted by the agreement solely because the relevant income, profits or gains are also income derived by a Gibraltar resident. Check this separately from paragraph (3), which limits the Gibraltar-side relief. [Article 22(3)–(4)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-22-elimination-of-double-taxation).
+
+Keep a single reconciliation of domestic relief, treaty relief and foreign repayments. Do not add the section 37 result to the treaty result as two independent credits for the same tax. Identify the legal route, same-income allocation, treaty-compliant source charge, residence-only exclusion and any later revision. The filing mechanism and interaction between particular domestic restrictions and treaty obligations remain to verify; this section does not apply every section 37 condition or its six-year deadline automatically to a treaty claim.
 
 ## Claim working paper
 

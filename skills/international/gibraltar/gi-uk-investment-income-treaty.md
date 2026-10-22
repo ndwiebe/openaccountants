@@ -7,7 +7,7 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf"
@@ -180,7 +180,7 @@ The [current DT Company entry page](https://www.gov.uk/government/publications/i
 
 Gibraltar's [ITO checklist](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf) concerns its processing of **DT Company requests for relief at source on UK interest**. It calls for incorporation and constitutional documents, Registrar-issued good standing, and the finance agreement. Directors must provide a letter with an affidavit or equivalent sworn statement covering:
 
-- Board meetings for the relevant accounting period held in/from Gibraltar and directors' ordinary Gibraltar residence under section 74.
+- All Board meetings for the relevant accounting period held in/from Gibraltar and directors' ordinary Gibraltar residence under section 74.
 - Territorial taxation, Article 4 residence, sole Gibraltar residence and absence of another similar claim or treaty-residence position elsewhere.
 - Treaty-person/resident status, beneficial ownership and the particular **Article 11(3)(a)** recipient classification relied upon.
 - Where borrowing funds the loan, an arm's-length interest spread, including the stated contemporaneous OECD-method basis for connected-party arrangements.
