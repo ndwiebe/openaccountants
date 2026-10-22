@@ -1,15 +1,21 @@
 ---
 name: gi-company-formation
 description: >
-  Gibraltar private company formation reference covering subscribers, constitution, capital disclosures, registered office, director and secretary requirements, compliance declarations and incorporation fees. Includes a capital reconciliation example and first-officer filing controls. Based on the official Companies Act consolidation and current Registry forms and guidance checked in October 2026. Beneficial ownership, sector permissions and operational registration remain separate review work; this source-cited draft is not professionally attested.
+  Gibraltar private company formation reference covering subscribers, constitution, capital disclosures, registered office, director and secretary requirements, compliance declarations and incorporation fees. Includes a capital reconciliation example and first-officer filing controls. Based on the official Companies Act consolidation and current Registry forms and guidance checked in October 2026. Includes core corporate beneficial-ownership duties and the September 2026 registrar transition; detailed nominee/appointor cases, sector permissions and submission verification remain open; this source-cited draft is not professionally attested.
 jurisdiction: GI
 category: formation
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 sources:
+  - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
+    title: "UBO, Nominators and Appointors Regulations 2017, 15 July 2026 consolidation"
+    as_of: "2026-10-22"
+  - url: "https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590"
+    title: "GFSC registrar transition and new UBO submission route, 4 September 2026"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106"
     title: "Gibraltar: Companies Act version index"
     as_of: "2026-10-22"
@@ -84,10 +90,36 @@ The 2025 fee regulations, effective **1 August 2025**, set incorporation at **£
 
 The fee table lists a £200 same-day urgency fee where correct documents arrive before noon and a £500 two-hour service with correct documents lodged between 9am and 3pm. Confirm the selected service and total payable; the general business page's older “24 hours” wording is not a guaranteed turnaround. [Companies House fee table, page 1](https://www.companieshouse.gi/publications/C0019.pdf).
 
+## Beneficial-ownership reporting after incorporation
+
+The July 2026 consolidation requires a Gibraltar-incorporated corporate or legal entity to obtain and hold **adequate, accurate and current** beneficial-ownership information, including interests held, and submit it as the Registrar requires. If the company has a secretary, supply the secretary with a copy of the information submitted. Do not treat the register of members or incorporation application as the completed beneficial-ownership return. [UBO Regulations, regulation 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+For an ordinary unlisted company, regulation 3 examines ultimate direct/indirect ownership or control, then control through other means after the stated investigation conditions, and finally its specified fallback. The ownership indications include a shareholding of **25% plus one share** or an ownership interest of **more than 25%**, including the specified controlled-corporate chains. These are indications, not a rule that a person below the threshold can never control the company. Listed entities, majority-owned listed subsidiaries and the statutory fallback have specific treatment; do not substitute an automatic director designation without completing the regulation 3 analysis. [Regulation 3(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+**Boundary example:** with 100 equal shares, 25 shares is exactly 25% and does not meet the 25%-plus-one-share indication; 26 shares does. This does not clear the 25-share holder of reporting if other control facts apply. Trace voting arrangements, controlled intermediaries and actual control before identifying the reportable owner.
+
+Regulation 6(4) permits the Registrar to specify identity particulars including names/aliases, birth details, nationality, usual residence, residential/service addresses and occupation, alongside acquisition/cessation dates and the nature, extent and holding method of the beneficial interest. A beneficial owner who is also a shareholder must report the percentage legally owned under regulation 6(5). Collect evidence securely; this Guide does not imply every field is public. [Regulation 6(4)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+| Obligation | Statutory timing |
+|---|---|
+| New company's beneficial-ownership submission | Within 30 days of incorporation, regulation 8(3). |
+| Company material change or significant inaccuracy | Within 30 days beginning with occurrence of the change or discovery of the inaccuracy, or a later time agreed with the Registrar; include the event/discovery date, regulation 8(4). |
+| New UBO tells the company of their status and provides reasonably required information | Within 15 days of becoming a UBO, regulation 8A. This is separate from the company's Registrar filing. |
+
+Source: [regulations 8–8A](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf). Retain trigger dates, evidence supplied and submission receipts. Regulation 8(6) contains a limited-information route where a relevant trust's trustees have supplied the required information under the Trusts (Information) Regulations 2025; it is not a general exemption for trust ownership. Establish that separate regime before using the limitation.
+
+Nominee arrangements and director appointors have **additional information duties** under regulations 6A–6B and 8B–8C. The Registrar can require those particulars; a UBO submission alone does not prove compliance. Regulations 8B(3) and 8C(3) prescribe 30 days from incorporation for their new-entity submissions, and their paragraph (4) provisions address subsequent changes/inaccuracies. Detailed definitions, nominee/director-to-company notifications, exceptions and historical transitional cases remain separate verification work. [Regulations 6A–6B, 8B–8C](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+### Current submission route
+
+The GFSC assumed the Registrar function on **1 September 2026**. Its announcement says the old UBO submissions portal closed on **31 August 2026**. GFSC-regulated entities use the UBO section of their GFSC Portal; other covered corporate/legal entities register at [the GFSC UBO portal](https://portal.fsc.gi/uboregister). The announced migration period ended **30 September 2026**; it is not a fresh extension for an October filing. [GFSC announcement, 4 September 2026](https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590).
+
+Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Access restrictions, exceptions, discrepancy reporting, sanctions and full nominee/appointor procedures remain open; these core duties do not complete the entire ownership-transparency regime.
+
 ## Completion and handover
 
 Registration produces a certificate recording the company name, number, date and type. The statutory effects begin on incorporation, not merely on submitting papers. Keep the certificate, filed constitution, subscriber allocations, consents, compliance statement and filing receipts together. [Companies Act, sections 14–16](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
-Arrange a separate assessment of beneficial-ownership reporting, business and sector permissions, tax registration and employment requirements. This Guide does not establish completion of those processes. Use the existing [corporate-tax Guide](gi-corporate-tax.md) and [payroll Guide](gi-payroll-social-insurance.md) for those topics, with their own scope and sources.
+Complete the ownership-reporting checks above and arrange a separate assessment of business and sector permissions, tax registration and employment requirements. This Guide does not establish completion of those processes. Use the existing [corporate-tax Guide](gi-corporate-tax.md) and [payroll Guide](gi-payroll-social-insurance.md) for those topics, with their own scope and sources.
 
 Independent source review and professional attestation are pending. Special-name approvals, full ownership-reporting requirements, regulated-sector formation and the section 12 cross-reference require further work. Guide presence is not comprehensive Gibraltar coverage.
