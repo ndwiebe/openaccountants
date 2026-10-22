@@ -7,9 +7,15 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.8
+version: 0.9
 verified_by: pending
 sources:
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf"
+    title: "Daily Part 1 codes 19–36, linked under 2026/27 employer tables"
+    as_of: "2026-10-22"
+  - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf"
+    title: "Monthly Part 1 codes 19–36, linked under 2026/27 employer tables"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf"
     title: "Employment Injuries (Contributions) Regulations 2001, incorporated contribution procedures"
     as_of: "2026-10-22"
@@ -36,7 +42,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.8
+# Gibraltar payroll and social insurance v0.9
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -73,6 +79,68 @@ Regulation 8(1) uses gross emoluments, the employee's code and the official tabl
 For an employee taking employment without either relevant certificate, regulation 4(1) requires an allowances declaration within seven days. A change affecting allowances must be declared within 30 days under 4(5). Part II is lodged with the higher-paying employer if there are multiple employers; where the employee receives a pension, the pension payer receives it unless the Commissioner directs otherwise. Do not apply the same allowances independently to every job. [Regulations 4–5](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
 
 On cessation, the employer must furnish the leaver certificate and send part 1 to the Commissioner immediately on cessation. The new employer can use the certificate's code pending the allowances certificate and must send part 3 immediately after engagement where parts 2 and 3 were lodged. Regulation 13 separately requires the annual certificate within one month after year-end for employees employed on 30 June from whose emoluments tax was deducted. [Regulations 13–13A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf).
+
+## Selecting the PAYE table and handling irregular payments
+
+The employer page's **2026/27** section links daily, weekly, monthly and annual tables. The daily/monthly files checked here still use a **20252026 URL folder**; preserve both the current linking page and PDF, rather than inferring a document's applicable year from its path alone. The employer notes remain explicitly grouped under 2025/26. Confirm any mismatch affecting the actual payroll with ITO before reliance. [Current employer table index](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers).
+
+The notes distinguish **Part 1, Allowances Based System**, with the employee's code column, from **Part 2, Gross Income Based System**, with its tax-deduction column. A code identifies a table column; it is not a percentage. Retain the P3, code/system and pay frequency before looking up tax. Their ordinary method uses the frequency of payment, even if wages are calculated at a daily rate. [Employer notes, sections 3–5 and 9–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+For partial weekly/monthly service, the notes divide pay by days worked, look up the daily amount and multiply that daily tax by the days worked. They use weekly tables for fortnightly/four-weekly pay (divide and multiply by two/four), monthly tables for quarterly/half-yearly pay (three/six), and annual tables for annual pay. These are the dated notes' methods, not permission to average arbitrary bonuses or allocate every lump sum over a chosen period. Confirm continued application and the precise day count/rounding for the case. [Sections 4–5](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+For cessation lump sums, the notes require an **ITO directive before payment**, including loss-of-office compensation, ex-gratia payments, pension commutation and pay in lieu of notice. Do not calculate the deduction using an ordinary monthly example without that direction. Section 8 separately distinguishes part-time/occasional payments and separately paid spare-time commission from commission included with normal monthly salary; uncertain classification is referred to ITO. This Guide does not establish a blanket tax exemption for termination payments. [Sections 6 and 8](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf).
+
+### Table-versus-guidance discrepancies
+
+Two numerical discrepancies were checked against the rendered tables:
+
+| Case | Employer-note illustration | Current-linked table |
+|---|---|---|
+| Daily pay £35, code 24 | £0.98 daily PAYE in section 4 | £0.96 in Daily Part 1, page 1 |
+| Monthly £1,623.50, code 35, ordinary ER | £144.82 PAYE and £176.66 employee SI in section 9 | £125.89 PAYE and £162.35 employee SI in Monthly Part 1, page 14, £1,623–£1,624 row |
+
+Sources: [employer notes](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf), [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf), [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf). Do not copy the notes' historical illustration as a current table cell or silently blend the two. The table-linked calculations below are conditional on confirmation of the applicable table/code. The monthly SI cell also agrees with 10% of £1,623.50; that arithmetic does not resolve every PAYE discrepancy.
+
+The daily table's footer directs the reader to contact PAYE where a tax amount is **grey**. Its £31 row is grey in the rendered page. Preserve this visual instruction when extracting data: a numeric value in grey is not an ordinary cleared-for-use lookup, and plain text extraction loses that distinction. [Daily table, page 1 and footer](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf).
+
+### Conditional current-linked table examples
+
+Assume confirmed code 24, three relevant worked days and £105 pay, with ITO/table applicability established. The daily equivalent is £35; the table cell is £0.96; the deduction is **£2.88**, not the notes' £2.94. This is a PAYE calculation only; SI uses its separate contribution-period rules.
+
+```oa-check
+name: Gibraltar daily code24 current-linked table example
+inputs:
+  gross_pay: 105
+  confirmed_days: 3
+  verified_daily_table_tax: 0.96
+steps:
+  - daily_equivalent: gross_pay / confirmed_days
+  - paye: verified_daily_table_tax * confirmed_days
+expected:
+  daily_equivalent: 35
+  paye: 2.88
+```
+
+Assume a confirmed full monthly period, code 35/Part 1, ER liability and no other benefits or deductions at gross pay £1,623.50. The table gives PAYE £125.89; SI is £162.35 employee and £243.65 employer. Pay after those deductions is **£1,335.26** and salary plus employer SI is **£1,867.15**. Any further deduction or employer cost must be added separately. [Monthly table, page 14](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf).
+
+```oa-check
+name: Gibraltar monthly code35 current-linked table reconciliation
+inputs:
+  gross_pay: 1623.50
+  verified_paye_table_tax: 125.89
+steps:
+  - employee_si: min(176.76, max(62.11, gross_pay * 0.10))
+  - employer_si: min(243.65, max(138.55, gross_pay * 0.18))
+  - pay_after_specified_deductions: gross_pay - verified_paye_table_tax - employee_si
+  - salary_plus_employer_si: gross_pay + employer_si
+expected:
+  employee_si: 162.35
+  employer_si: 243.65
+  pay_after_specified_deductions: 1335.26
+  salary_plus_employer_si: 1867.15
+```
+
+These checks validate arithmetic after a table lookup; they do not independently validate every table cell, settle the published discrepancy, or implement a complete PAYE engine. Retain the exact table page, row, code and any ITO direction with the payroll working paper.
 
 ## Monthly PAYE reporting, payment and default
 
