@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 ---
 
@@ -60,9 +60,19 @@ Sources: [section 14](https://attorneygeneralchambers.com/laws-of-saint-lucia/la
 
 Retain the notice and service evidence, title/transfer documents, valuation, property-use evidence, relief decision, written returns, objection grounds and payment receipt. This is a practical evidence checklist, not a statutory expansion of filing requirements.
 
+## From objection to appeal
+
+The Comptroller must consider a valid objection, decide whether to allow it wholly or partly or disallow it, and notify the objector in writing. If the decision changes the assessment, a reduction or increase notice must accompany it or follow as soon as practicable. An objection is not necessarily a route only to a reduction. [Section 29](https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-29).
+
+An aggrieved person can lodge a **written notice of appeal with the secretary to the Appeal Commissioners**, copying the Comptroller. The deadline is **30 days from service** of the objection decision or other appealable determination; the Commissioners can allow more time for good cause. This is a separate step after an objection, with a different recipient. Preserve evidence of service and lodging. [Section 31](https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-31).
+
+The appellant bears the burden of proof. The Commissioners can confirm, increase or reduce an assessment or make another appropriate order. Each side normally bears its own costs unless the Commissioners direct otherwise. The secretary must give written hearing notice at least **30 days beforehand**, and both sides can appear personally or through a representative. [Section 32(1)–(5)](https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-32).
+
+Section 33 provides a further **30-day** appeal route to the High Court, and then from the High Court to the Court of Appeal, for decisions involving law or mixed fact and law. It is not an unrestricted second factual valuation hearing. The retrieved section does not specify the precise service/date trigger for those further periods; applicable court rules and filing requirements must be checked before calculating a case deadline. Either the Comptroller or appellant can appeal, and the court can alter the assessment and award costs. [Section 33](https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-33).
+
 ## Remaining verification
 
-Any subsequent amendments, current forms and acceptance of historical commercial waiver claims, land classification, collection/penalty rules, appeal stages and the legal terms of any tax amnesty remain to reconcile. A government announcement of penalty/interest relief must not be treated as proof that the underlying property tax is forgiven. Independent review remains pending; this Guide does not establish comprehensive Saint Lucia coverage.
+Any subsequent amendments, current forms and acceptance of historical commercial waiver claims, land classification, collection/penalty rules, court appeal procedure and the legal terms of any tax amnesty remain to reconcile. A government announcement of penalty/interest relief must not be treated as proof that the underlying property tax is forgiven. Independent review remains pending; this Guide does not establish comprehensive Saint Lucia coverage.
 
 ## Disclaimer
 

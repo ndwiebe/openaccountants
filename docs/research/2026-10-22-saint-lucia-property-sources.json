@@ -70,12 +70,32 @@
       "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-7c",
       "bytes": 62523,
       "sha256": "69e0dfe788bfb13c426094acd849d6a44bd94040bc46dd1d543bd613e6962fb6"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-29",
+      "bytes": 61966,
+      "sha256": "91de72e01256a33439f462f77f22747f1c3fe61a90c4552702230f594554469d"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-31",
+      "bytes": 62182,
+      "sha256": "e443dc898cf2150ea269b75a2f9cf816c769205370ba75bc2cc22de48c5c7153"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-32",
+      "bytes": 63038,
+      "sha256": "040377ad3322bde250bbc785698184a2111a1920135b7d45d561479e4c2a4bcb"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/land-and-house-tax-act/section-33",
+      "bytes": 62333,
+      "sha256": "51efd0ecc24b4244d0d15faa711b97c043df137cc39ff3ac14eea7f2dd5f63be"
     }
   ],
   "review_status": "independent review pending",
   "gaps": [
     "Any further amendments beyond the instruments read",
     "Current forms and acceptance of historical commercial claims",
-    "Land classification, penalties, appeals and amnesty terms"
+    "Land classification, penalties, court appeal procedure and amnesty terms"
   ]
 }
