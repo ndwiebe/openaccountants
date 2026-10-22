@@ -1,17 +1,17 @@
 ---
 name: gi-connected-party-pricing-and-interest
 description: >
-  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap, Commissioner-satisfied exemption and shareholder-loan deemed distributions. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Complex control attribution, other interest limits, international reporting and independent professional review remain outstanding.
+  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap, Commissioner-satisfied exemption and shareholder-loan deemed distributions and statutory advance-clearance procedure. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Complex control attribution, other interest limits, international reporting and independent professional review remain outstanding.
 jurisdiction: GI
 category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 22 and 40 and Schedule 4"
+    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 22, 40, 42–43 and Schedule 4"
     as_of: "2026-10-22"
 ---
 
@@ -107,3 +107,28 @@ Paragraph 7 states that paragraphs 2 and 4–6 do not apply where the person est
 A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and equity movements, security documents, aggregate connected expenses, profit/loss reconciliation and any Commissioner correspondence. These are preparation controls rather than a claim that a particular statutory local-file form or filing deadline has been verified.
 
 Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, secured-loan rules in paragraph 5, later-Part interest limitations and international reporting need further work before comprehensive coverage can be claimed.
+
+## Seeking clearance under section 42
+
+An applicant seeking confirmation that an effected or proposed arrangement is not taxable under section 40 or Schedule 4 must furnish full particulars **in writing** and agree to publication of the arrangement and decision in anonymised form. This is a clearance about the stated anti-avoidance provisions, not a certificate that every tax consequence is approved. [Section 42(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The statutory sequence distinguishes several **21-day** periods:
+
+| Event | Required next step |
+|---|---|
+| Commissioner receives insufficient particulars or further information | Within 21 days, notify the applicant of further information required under subsection (2). |
+| Applicant receives that request | Supply it within 21 days, or the further time allowed; otherwise the Commissioner need not proceed under subsection (3). |
+| Commissioner receives particulars or all requested further information | Within 21 days, notify applicability/non-applicability or the need for a further 21 days to consider the information under subsection (4). |
+| No written decision by the relevant statutory period | The applicant can send a written subsection (6) notice seeking a decision within 21 days of the Commissioner's receipt of that notice. |
+
+[Section 42(2)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf). Keep receipt evidence and every information request; there is no universal 21-day approval promise measured from the first email. A further-information request under subsection (7)(c) is treated as a subsection (2) request, engaging the corresponding information and decision sequence.
+
+Subsection (8) permits reliance on failure to decide within the period specified by subsection (6), while preserving the Commissioner's general assessment powers for other reasons. **Silence after the initial application alone is not that rule.** Before relying on deemed acceptance, establish the qualifying written follow-up notice, receipt date, expiry and effect of any further-information request. This Guide does not establish the current submission channel or resolve disputed service/day-count facts. [Section 42(6)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Boundary examples:** a taxpayer who sent only an initial application and received no answer cannot infer subsection (8) acceptance merely because 21 days passed. A taxpayer who receives a valid further-information request must track the response/restarted decision sequence; the original application date is no longer a sufficient deadline model. These are procedural distinctions, not findings that an unreviewed claim has deemed clearance.
+
+A notification is void where the disclosure omits material facts or is not full and accurate, or where those facts and circumstances change. Clearance for one arrangement does not prevent section 40 or Schedule 4 applying to a wider arrangement incorporating it. Maintain the submitted factual record and compare implementation with it. Sections 42(11)–(12) also condition advance interpretation/clearance on willingness to accept anonymised publication. [Section 42(9)–(12)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Anti-avoidance decisions and appeal scope
+
+Section 43 requires a written decision identifying the person assessed, affected/disregarded parts of the arrangements, reasons and proposed assessment amount. Section 35 appeal provisions apply, subject to section 43(3): Schedule 2 paragraph 13 does not apply, and the Tribunal can confirm the decision or remit it for reconsideration on its findings of law and fact. Do not assume every ordinary assessment-appeal power carries over unchanged. Preserve the decision and service evidence and use the [appeals Guide](gi-income-tax-assessment-appeals.md) for the general deadline framework. [Section 43(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
