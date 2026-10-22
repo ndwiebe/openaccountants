@@ -1,13 +1,13 @@
 ---
 name: dm-company-annual-returns
 description: >
-  Dominica ordinary-company annual-return reference covering the section 194 deadline, preceding December reporting date, certification, prescribed Form 12A and activity codes. Distinguishes the annual company fee from filing the return and from business-name obligations. Uses the Companies Act and the 2001 and 2012 instruments, with explicit limits on amendment completeness, financial statements, beneficial ownership and external companies.
+  Dominica ordinary-company annual-return reference covering the section 194 deadline, preceding December reporting date, certification, prescribed Form 12A, activity codes and company accounting-record controls. Distinguishes the annual company fee from filing the return and from business-name obligations. Uses the Companies Act and the 2001 and 2012 instruments, with explicit limits on amendment completeness, financial statements, beneficial ownership and external companies.
 jurisdiction: DM
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
@@ -32,6 +32,16 @@ Form 12A requests the return date, company number and name, any different busine
 
 A director or officer must certify the return under section 194(2). Form 12A provides the name, signature and date of the director or secretary authorising it. Prepare the return from the company's records and reconcile changes during the reporting year before signature. Retain the signed return, registry receipt and separately identified payment evidence. [Section 194](https://www.cipo.gov.dm/files/companies/companies-act21.pdf#page=105); [Form 12A](https://www.cipo.gov.dm/files/companies/companies-regulation-2012.pdf).
 
+## Accounting records supporting compliance
+
+Section 187 requires adequate accounting records and records of directors' and directors' committee meetings and resolutions, in addition to the corporate records under section 177. Keep the section 187 records at the registered office or another place **in Dominica designated by the directors**, available for inspection by directors and shareholders at all reasonable times. [Companies Act, section 187(1)–(2)](https://www.cipo.gov.dm/files/companies/companies-act21.pdf#page=102).
+
+Where accounting records are kept outside Dominica, the company must also keep records at its registered office or another directors-designated location in Dominica sufficient for directors to ascertain its financial position with reasonable accuracy **on a quarterly basis**. This is a local-record requirement; it is not a statutory quarterly filing obligation. Do not assume overseas storage alone satisfies it. [Section 187(3)](https://www.cipo.gov.dm/files/companies/companies-act21.pdf#page=102).
+
+Section 188 permits electronic data processing and other storage capable of reproducing the required information in intelligible written form within a reasonable time. Permission to use electronic records does not itself remove section 187's location requirement. Section 189 requires the company and its agents to take reasonable precautions against loss, destruction and falsification and to facilitate detecting and correcting inaccuracies. [Sections 188–189](https://www.cipo.gov.dm/files/companies/companies-act21.pdf#page=102).
+
+Practical controls derived from these duties include recording the directors' chosen local records location, testing readable exports and backups, restricting editing access, and retaining a traceable correction history. These are implementation suggestions, not a claim that the Act specifies a particular software product or backup frequency. This draft has not established a universal retention period; do not infer permission to destroy records after filing an annual return.
+
 ## What this return does not settle
 
 The annual return lists shareholders but does not by itself establish compliance with every beneficial-ownership disclosure requirement. Financial statements, audit requirements, solvency certifications, meetings, tax returns and event-driven director or office changes need their own legal checks. Section 194(3) makes non-compliance an offence for the company and each defaulting director/officer; this draft does not certify current penalty amounts. [Section 194(3)](https://www.cipo.gov.dm/files/companies/companies-act21.pdf#page=105).
@@ -40,7 +50,7 @@ The 2012 Regulations separately prescribe Form 24 for external-company returns u
 
 ## Verification limits
 
-Section 194 was visually checked in the scanned base Act. The listed 1996 amendment was read and does not amend that section; the 2001 amendment adds the annual fee. The 2012 regulations supply the return form. This does not certify the complete later amendment chain, current filing channels, holiday extensions, fee amounts, financial-statement obligations or beneficial-ownership rules. Independent review remains pending. Guide presence is not comprehensive country coverage.
+Sections 187–189 and 194 were visually checked in the scanned base Act. The listed 1996 amendment was read and does not amend that section; the 2001 amendment adds the annual fee. The 2012 regulations supply the return form. This does not certify the complete later amendment chain, current filing channels, holiday extensions, fee amounts, financial-statement obligations or beneficial-ownership rules. Independent review remains pending. Guide presence is not comprehensive country coverage.
 
 ## Disclaimer
 

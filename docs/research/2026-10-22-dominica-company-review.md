@@ -7,3 +7,9 @@ Read all six pages of 1996 amendment via OCR; it changes sections 54, 62, 91, 93
 Current Form 9A direct fetch succeeded and was read, superseding earlier web 502. It asks director identity, National Insurance number, occupation, address and signed dated consent; company number/appointment date blank for new companies. Scheduled 2012 form says Social Security number. No eligibility opinion inferred from fields.
 
 Remaining: full later amendments, company fee schedule, current channels, financial reporting, event notices, beneficial ownership and independent review. No publication or attestation claim.
+
+## Accounting records extension
+
+Visually checked sections 187–189 on base Act PDF pages 102–103 against OCR. Local record location and reasonable-time director/shareholder inspection are explicit. Offshore accounting records trigger local records sufficient to ascertain financial position with reasonable accuracy quarterly; this is not quarterly filing. Electronic storage permitted by section 188, but no inference that remote cloud access alone satisfies local-location requirements. Section 189 covers loss, destruction, falsification and detecting/correcting errors. Guide implementation suggestions explicitly distinguished from statutory technology requirements; no invented retention period.
+
+Official-domain amendment searches did not establish a complete later amendment chain. Search also surfaced a possible 2021 IBC repeal; do not use stale CIPO/FSU IBC descriptions as evidence of a current incorporation route. Primary repeal instrument and transition remain to fetch and read.
