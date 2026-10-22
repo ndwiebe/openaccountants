@@ -29,7 +29,7 @@ The seven tax domains in current GOAL.md remain in scope. No domain has a review
 | TP | [Connected-party pricing and interest](gi-connected-party-pricing-and-interest.md) | Shareholder-loan deemed distributions and later dividend set-off now drafted; remaining anti-avoidance/interest restrictions, claim mechanics, documentation/reporting and cross-border application |
 | TO | [Training, planning and start-up reliefs](gi-training-planning-and-startup-reliefs.md), company loss/allowance sections | Remaining reliefs, elections, operational claims and interaction questions; historical relief windows must stay distinct from current eligibility |
 
-Additional required topics are only partly drafted: [foreign-tax relief](gi-foreign-tax-relief.md), [property stamp duty](gi-property-stamp-duty.md), [residential disposals](gi-residential-property-disposals.md), and [enquiries and appeals](gi-income-tax-assessment-appeals.md). Named treaty corridors, withholding, complete property reliefs and procedural submission channels remain open. A domestic foreign-tax-credit example is not a treaty corridor.
+Additional required topics are only partly drafted: [foreign-tax relief](gi-foreign-tax-relief.md), [property stamp duty](gi-property-stamp-duty.md), [residential disposals](gi-residential-property-disposals.md), and [enquiries and appeals](gi-income-tax-assessment-appeals.md). Named treaty corridors, withholding, complete property reliefs and procedural submission channels remain open. Domestic overpayment entitlement and its six-year claim period are now drafted separately from appeals; operational refund channels and interest remain open. A domestic foreign-tax-credit example is not a treaty corridor.
 
 ## Next work and acceptance evidence
 

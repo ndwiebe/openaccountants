@@ -1,13 +1,13 @@
 ---
 name: gi-income-tax-assessment-appeals
 description: >
-  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court and Gibraltar MAP submission guidance, completeness requirements and the distinction between proceedings and collection suspension. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
+  Gibraltar income-tax assessment appeal reference covering service dates, written grounds, the 28-day appeal period, late-appeal applications, overpayment claims and separate collection-postponement rules. Explains Tribunal procedure, assessment increases and the effect of settlement, with a disputed-tax allocation example. Based on the March 2026 Income Tax Act consolidation checked in October 2026. Includes the statutory case-stated route to the Supreme Court and Gibraltar MAP submission guidance, completeness requirements and the distinction between proceedings and collection suspension. Operational filing channels and case-specific procedural directions require further verification; independent legal review is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.4
+version: 0.5
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Dispute-Resolution-Guidance-Double-Taxation/Gibraltar%20MAP%20Guidance.pdf"
@@ -17,7 +17,7 @@ sources:
     title: "UK–Gibraltar agreement Article 24: mutual agreement procedure"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38 and Schedule 2"
+    title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 10, 35–38, 61–62 and Schedule 2"
     as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf"
     title: "Supreme Court Rules 2000: 7 July 2026 consolidation, rules 25–31"
@@ -96,6 +96,31 @@ The rules provide these stages, read with those modifications:
 4. **Contents and hearing:** the case states the facts found and the legal questions. It must identify any finding challenged as unsupported by evidence; otherwise it must not contain a statement of evidence. Rule 30 applies the hearing provisions in rules 20, 22, 23 and 24 with necessary changes. Obtain the hearing notice and directions; this Guide is not a complete hearing or non-attendance checklist. [Rules 29–30](https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf).
 
 The Supreme Court determines the legal question and either affirms the determination or remits the matter to the Tribunal with its opinion and directions. **Tax remains payable according to the Tribunal's determination while the case is requested or pending before the Supreme Court.** A case-stated request does not itself continue an earlier collection postponement. [Schedule 2, paragraph 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Overpayment claims: a separate six-year period
+
+Section 61 entitles a person to repayment where it is proved to the Commissioner's satisfaction that tax paid for a year of assessment or accounting period, by deduction or otherwise, exceeds the amount properly chargeable. The Commissioner certifies the amount and causes repayment. An unexplained credit in the taxpayer's ledger is not proof of the correct liability or of an accepted refund. [Section 61(1), (3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+A claim under section 61 must be made **within six years from the end of the year of assessment or accounting period to which it relates**. Record the relevant period end, rather than starting that clock from discovery of the error, payment date or a later letter. This repayment period is distinct from the assessment appeal deadline and the treaty MAP deadline. It does not state that a late appeal automatically becomes valid or that every final assessment can be reopened. Resolve any section 38 finality issue separately. [Sections 38 and 61(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Period example:** for a company accounting period ending 31 December 2025, six years from that end reaches 31 December 2031. A later discovery in 2028 does not restart the statutory six-year clock. Confirm the applicable receipt/submission rules and lodge in advance; this example does not establish a weekend extension, portal acceptance or exception for late claims.
+
+**Amount example:** assume verified payments/deductions of £18,000 for the relevant period and properly chargeable tax of £14,500, with no refund already made. The excess is **£3,500**, subject to proof and certification under section 61. A payment belonging to a different period must not be included merely to increase this claim.
+
+```oa-check
+name: Gibraltar same-period overpayment claim
+inputs:
+  verified_tax_paid: 18000
+  properly_chargeable_tax: 14500
+steps:
+  - excess_paid: verified_tax_paid - properly_chargeable_tax
+expected:
+  excess_paid: 3500
+```
+
+For employer/pension-payer deduction directions, section 62(3) preserves the individual's appeal rights but expressly continues deductions pending final determination. Any overpayment established on that determination is refunded to the individual. An appeal alone does not authorise the payer to stop deductions under the direction. [Section 62(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Recommended claim file: taxpayer/period identifiers, original and corrected computations, assessments, deduction certificates, payment allocation, prior refunds and proof of claim delivery. The current claim form/channel, any administrative set-off, refund timing and interest entitlement/rate are not established here. Keep the specific section 36 appeal-overpayment interest rule separate; do not infer universal interest from section 61.
 
 ## Treaty MAP: a separate submission and collection decision
 
