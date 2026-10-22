@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.1
+version: 0.2
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.1
+# Gibraltar corporate tax and filing v0.2
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -29,7 +29,7 @@ Apply the source-of-profit analysis under section 11 and Schedule 1, not a blank
 
 The complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
-The August 2025 guidance states an assessable-income audit threshold of £1,750,000 for periods ending on or after 1 July 2024; below it, an Independent Accountant's Report accompanies unaudited accounts. Confirm the exact boundary and any applicable exemption in section 30. This tax-return test is separate from company-law filing and audit tests. [Guidance Notes, p2](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf).
+For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
 
 ## Computation and examples
 
