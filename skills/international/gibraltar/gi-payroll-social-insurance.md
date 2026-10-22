@@ -7,7 +7,7 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf"
@@ -24,7 +24,7 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar payroll and social insurance v0.3
+# Gibraltar payroll and social insurance v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -95,15 +95,35 @@ For the ordinary earnings-related class, the published schedule effective **1 Ju
 
 [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf). The schedule contains separate pensioner, married-woman, trainee and exemption classes. Do not assign them from age or job title without confirming the issued class and eligibility.
 
+### Other confirmed contribution classes
+
+For a confirmed full monthly contribution period, the same official schedule provides:
+
+| Issued class | Employee contribution | Employer contribution |
+|---|---:|---:|
+| D1, detached worker paying SI | 10%, minimum £62.11, maximum £176.76 | 18%, minimum £138.55, maximum £243.65 |
+| MW, married-woman option | £69.12 | 20%, minimum £78.65, maximum £173.98 |
+| PN, pensioner (60 / 5E entries) | Exempt | 18%, minimum £138.55, maximum £243.65 |
+| T2, trainee second employment (E272) | 10%, maximum £16.99 | Exempt |
+| Exempt group: DW, SM, SP, SW, SX, EZ, XX | Exempt | Exempt |
+
+Select the issued class and its supporting eligibility evidence. The table is not authority to self-award an exemption. D1 and DW differ; PN employment and XX pension income differ. T2 has no minimum printed in its row. [2026/27 schedule, monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
+
+**Class examples:** with confirmed monthly earnings of £1,000, MW gives £69.12 employee plus **min(£173.98, max(£78.65, £200)) = £173.98** employer. PN gives zero employee and £180 employer. T2 gives **min(£16.99, £100) = £16.99** employee and zero employer. An applicable DW exemption gives zero for both. These compare issued classes, not eligibility choices.
+
+### Use the correct frequency
+
+The ER weekly limits are £14.34–£40.79 employee and £31.98–£56.22 employer, at 10% and 18%. Annual ER limits are £745.29–£2,121.21 employee and £1,662.57–£2,923.83 employer. At confirmed weekly earnings of £300, the amounts are £30 and £54. Do not derive an annual limit from rounded monthly figures: £176.76 × 12 = £2,121.12, whereas the published annual employee maximum is £2,121.21. Use the appropriate published frequency; this difference alone does not establish an entitlement to a year-end adjustment. [2026/27 schedule, ER row](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
+
 ## Computation
 
 1. Confirm class, pay frequency, full/partial period, and earnings base before selecting a schedule.
-2. For a confirmed full-month ordinary class, compute employee `min(176.76, max(62.11, earnings × 10%))` and employer `min(243.65, max(138.55, earnings × 18%))`.
+2. For a confirmed full-month ordinary class with an established contribution liability, compute employee `min(176.76, max(62.11, earnings × 10%))` and employer `min(243.65, max(138.55, earnings × 18%))`.
 3. Use the employee's tax code and correct-year official tax tables for PAYE. Contribution rates are not income-tax rates.
 4. Reconcile gross wages, PAYE, employee contributions, other deductions, net wages and employer cost separately.
 5. Reconcile payroll totals to remittances and the annual return. Never multiply a rounded monthly cap to substitute for an official annual table.
 
-**Examples:** full-month ordinary gross earnings £3,000 give employee SI **£176.76**, employer SI **£243.65** and gross-plus-employer-SI **£3,243.65**, before other employer costs. At £1,000, the respective amounts are **£100** and **£180**. A person with an exemption code must not be put through this formula.
+**Examples:** full-month ordinary gross earnings £3,000 give employee SI **£176.76**, employer SI **£243.65** and gross-plus-employer-SI **£3,243.65**, before other employer costs. At £1,000, the respective amounts are **£100** and **£180**. A person with an exemption code must not be put through this formula. The formula alone does not determine liability for zero/very low earnings, unpaid weeks or a partial period; establish those conditions first.
 
 ## Evidence and exclusions
 

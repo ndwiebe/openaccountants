@@ -14,6 +14,12 @@
       "sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
       "locators": "Regulations2\u20138 pages3\u20136;11page7;13\u201313Apage9;16\u201317pages10\u201311",
       "version_check": "Official parent page labels1July2023 current on22October2026"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+      "sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
+      "locators": "Single page: all class rows and monthly/weekly/annual columns",
+      "verification": "PDF rendered and visually inspected to resolve merged cells and class groupings"
     }
   ]
 }
