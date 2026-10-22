@@ -7,11 +7,11 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.6
+version: 0.7
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.6
+# Gibraltar corporate tax and filing v0.7
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -30,6 +30,28 @@ Apply the source-of-profit analysis under section 11 and Schedule 1, not a blank
 The complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
+
+## From accounting profit to deductible expenses
+
+Schedule 3 paragraph 1 starts with profits under the permitted accounting standards, subject to statutory adjustments, and excludes capital gains and capital losses from that measure. Establish whether a receipt is genuinely capital; a ledger label does not settle a trading-property or other classification. Pre-trading expenditure incurred with a view to carrying on the business is treated as incurred on its first trading day for the relevant profit or capital-allowance computation. That timing rule does not make every start-up expense deductible. [Schedule 3, paragraph 1](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The general expense test is money wholly and exclusively expended to produce the trade's income, subject to the specified exclusions. Reconcile the ledger to a tax-adjustment schedule and retain the invoice, business purpose, period and legal treatment. Key exclusions include accounting depreciation, capital withdrawals and improvements, recoverable insurance/indemnity amounts, tax under this Act or tax eligible for section 37 relief, and contributions to unapproved employee pension/provident funds. Assess statutory capital allowances separately instead of deducting book depreciation. [Paragraph 2(1)(d)–(f), (i), (k), (m)–(n)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Interest needs its own checks: paragraph 2(1)(j) excludes interest to a non-resident to the extent it exceeds a reasonable commercial rate, while paragraph 2(1)(l) restricts borrowing outside the stated income-producing business or acquisition purposes. Apply the [connected-party interest restrictions](gi-connected-party-pricing-and-interest.md) as well; passing one provision does not establish deductibility under all others. [Paragraph 2(1)(j), (l)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Where income is partly chargeable and partly non-chargeable, paragraph 2(2)(a) requires pro-rata apportionment of deductions between them. For a simple established allocation of 75% to chargeable income, £12,000 of otherwise allowable shared expense gives £9,000 against chargeable income. This example assumes the income classification and allocation basis have been verified; do not use turnover mechanically where the facts require a different analysis. [Paragraph 2(2)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For the defined apportioned branch head-office expenses, paragraph 2(1)(p) excludes the amount exceeding **5% of the Gibraltar branch's gross income**. If the relevant expense is £40,000 and branch gross income is £500,000, the ceiling is £25,000 and £15,000 is disallowed under that restriction, before other conditions. This is not a deduction of 5% without expenditure and is separate from connected-company expense restrictions. [Paragraph 2(1)(p)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Bad debts, entertainment and gifts
+
+Paragraph 2(1)(g) permits the specified bad debts, qualifying released debts and doubtful debts to the extent estimated bad for the period. Retain debtor-specific support, the recoverable amount and any relevant arrangement or compromise. The provision does not establish that a general accounting provision qualifies in full. Amounts recovered on previously deducted debts and the specified sale, assignment or capitalisation proceeds must be brought into profits under paragraph 3; avoid both omission and double counting if already recognised in the accounts. [Paragraphs 2(1)(g), 3(a)–(c)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Business entertainment, including hospitality and incidental costs, is generally disallowed under paragraph 2(1)(o). Bona fide staff provision is outside its entertainment definition unless incidental to provision for others. The provision also contains an ordinary-course supplier exception and a separate client-entertainment exception requiring Gazette guidelines and the Commissioner's satisfaction that the claimant's benefit is merely incidental. Those guidelines have not been verified here: do not approve client hospitality merely because a client attended. The latter exception also has a statutory exclusion following refused claims in three of the preceding ten years, lasting the specified five-year period. [Paragraph 2(1)(o)(i)–(ii), (iv)–(vi)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The gift restriction has an exception for an article carrying a conspicuous advertisement for the donor, excluding food, drink, tobacco and goods-exchange tokens/vouchers, where qualifying articles to the **same recipient in the period cost no more than £100 in total**. Two eligible branded articles costing £60 and £40 meet that cost boundary; adding another £1 article takes the total outside this exception. It is not an automatic £100 deduction from an over-limit gift total. The general business-purpose test still applies. [Paragraph 2(1)(o)(iii)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Example tax bridge: start with £100,000 accounting profit after £10,000 book depreciation and £2,000 client entertainment that does not qualify for an exception. Add back both amounts and deduct £8,000 of independently established capital allowances: **£104,000** before losses and other adjustments. This example assumes no other differences; it does not turn a partial reconciliation into a complete tax computation. [Paragraph 2(1)(k), (o) and Part II](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Capital allowances: equipment purchases and pools
 
