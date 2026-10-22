@@ -1,23 +1,23 @@
 ---
 name: gi-corporate-tax
 description: >
-  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions, losses or treaty permanent establishments. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
+  Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions or treaty permanent establishments. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.3
+version: 0.4
 verified_by: pending
 ---
 
-# Gibraltar corporate tax and filing v0.3
+# Gibraltar corporate tax and filing v0.4
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
 ## Scope
 
-Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions, losses or treaty permanent establishments.
+Prepare a corporate tax working paper for accounting periods wholly after 1 July 2024, checked in 2026. This draft covers ordinary rates and filing controls; it does not compute Pillar Two, specialised exemptions or treaty permanent establishments.
 
 Sources were accessed on 22 October 2026. A dated rate table controls its stated period; an undated guidance page does not prove that all later amendments have been incorporated.
 
@@ -30,6 +30,32 @@ Apply the source-of-profit analysis under section 11 and Schedule 1, not a blank
 The complete CT1 and balancing payment are due nine months after the end of the month containing the accounting-period end. The return includes accounts, a tax computation where assessable income exists, and a PAYE reconciliation where required for a non-June year-end. Instalments are due on 28 February and 30 September; allocate them to the correct accounting period using Schedule 10. Ceasing trade does not itself end returns. [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
 For a twelve-month accounting period, current section 30(1)(b) requires audited accounts where assessable income is **at least £1,750,000**; paragraph (bb) requires accounts and an independent accountant's report below that amount. Shorter periods use the monthly proportion: six months gives £875,000, with equality on the audited side. The report issuer must satisfy the approval, independence and practising-certificate requirements in paragraph (cb). This tax-return attachment rule does not itself establish company-law audit exemption. [Income Tax Act, section 30, consolidation dated 23 March 2026](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [company accounts and reporting Guide](gi-company-accounts-and-reporting.md).
+
+## Trade losses: eligibility and continuity
+
+Section 20(1) provides for losses to be set against assessable profits or gains of subsequent periods, subject to its restrictions. Establish the **tax loss**, rather than copying an accounting deficit. A loss is excluded if the corresponding profit would not have been taxable under the Act, and the same loss cannot be used twice. At the claim date, the loss must relate to a period for which an assessment could then be made if the loss had been a profit. Do not treat an old ledger balance as proof that a loss remains claimable. [Section 20(1), (2), (4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Maintain a roll-forward by originating period: established tax loss, prior utilisation, current claim and balance. For a company outside the designated-person restriction, assume £80,000 of eligible unused losses and £50,000 of otherwise assessable profits, with all continuity and claim conditions satisfied. Set off £50,000, leaving zero on that profit component and £30,000 of unused losses. A separate £10,000 loss from an activity whose profits would not be taxable is not added to the eligible pool. These assumptions must be proved in an actual claim. [Section 20(1)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+A company loses the specified relief where, within any three-year period, there is **both** a change of ownership and a major change in the nature or conduct of its trade. The trade change can precede, follow or coincide with the ownership change. The restriction concerns losses in a basis period beginning before the ownership change set against profits of a basis period ending after it. Ownership means a change in effective control through direct or indirect voting-share ownership together with changed beneficial ownership. Record the control history and changes in customers, activities and operating model; the last items are evidence prompts, not statutory tests of a major change. [Section 20(3), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Designated persons: 50% loss limit and exceptions
+
+For accounting periods ending **on or after 31 July 2024**, section 20(6) limits a designated person's loss set-off to **50% of the Schedule 3 measure of profits or gains**. Section 20(7) covers persons carrying on regulated activities within section 5 of the Financial Services Act 2019, activities licensable under section 3(1) of the Gambling Act, and their connected persons. A company outside the regulated industry can therefore still fall within the rule through connection. Check the statutory activity definitions and [connected-person rules](gi-connected-party-pricing-and-interest.md) before classifying it. [Section 20(6)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Example: assume a designated company has a Schedule 3 profit measure of £100,000 and £80,000 of eligible carried-forward losses, all outside the protected periods below, with no insolvency exception. The cap is £50,000; set off £50,000, leaving £50,000 of profits before other applicable adjustments and £30,000 of unused losses. At exactly £50,000 of eligible losses the entire pool fits the cap. This calculation does not establish the company's status or eligibility. [Section 20(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)–(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For a claim mixing protected and restricted losses, retain separate pools and obtain review of the cap computation after the mandatory ordering; this Guide does not assume whether the 50% base is reduced by the protected pool. Section 20(11) permits regulations changing the percentage, designations and treatment of reliefs. Check any applicable regulations and the taxpayer's status before filing; the consolidation's definition alone does not establish every entity's treatment. [Section 20(10)–(11)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+## Losses transferred in a group restructure
+
+Section 20A permits corresponding unrelieved trade losses to be available against the recipient entity's future profits when the trade or business transfers to a separate entity as part of a group restructure. The provision includes reorganisations, takeovers, mergers and sales of a trade or business. It is not a general permission to pool losses between companies merely because they share an owner. The transferred business must have been taxable had it made profits. [Section 20A(1), (2), (6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Only the proportion attributable to the transferred part is available, measured by **income attributable to each share of the trade**. For example, if eligible unrelieved losses are £100,000 and a supported income-based allocation attributes 40% to the transferred part, the potential transferred pool is £40,000, subject to the remaining conditions. A 40% asset-value share alone does not establish that result. [Section 20A(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+No set-off is given under section 20A(1) if, within the specified three-year period from transfer, there is both a change in ultimate company ownership and a major change in the nature or conduct of the trade. The effective-control and beneficial-ownership definition appears in subsection (5). Retain the transfer agreement, income allocation, loss history and post-transfer ownership/trade monitoring. Interaction with section 20 restrictions, evidence required for a claim and any advance clearance needs case-specific review. [Section 20A(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Payments on account and balancing payment
 
@@ -71,7 +97,7 @@ For current company return failures, section 65(3) provides these **additional**
 
 The later amounts are added, not substituted. Establish the classification using the [accounts and reporting Guide](gi-company-accounts-and-reporting.md) and Schedule 9; do not classify size solely by tax payable. The ITO states that this company penalty schedule applies from **1 January 2025**. Historical defaults need the applicable earlier provisions. Section 65(4) gives the Commissioner power to set aside penalties where a reasonable excuse existed throughout the statutory default period; relief is not automatic. Keep evidence covering the whole period, not just the filing day. [Section 65(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [ITO filing-penalty guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate).
 
-**Open scope:** full deductibility/capital-allowance schedules, loss use, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
+**Open scope:** full deductibility/capital-allowance schedules, mixed-pool loss computations and restructuring interactions, connected-party adjustments, minimum tax, all filing exemptions, and registry reporting must be completed before calling corporate coverage comprehensive.
 
 ## Self-checks and output
 
