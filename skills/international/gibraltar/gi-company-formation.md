@@ -1,13 +1,13 @@
 ---
 name: gi-company-formation
 description: >
-  Gibraltar private company formation reference covering subscribers, constitution, capital disclosures, registered office, director and secretary requirements, compliance declarations and incorporation fees. Includes a capital reconciliation example and first-officer filing controls. Based on the official Companies Act consolidation and current Registry forms and guidance checked in October 2026. Includes core corporate beneficial-ownership duties and the September 2026 registrar transition; detailed nominee/appointor cases, sector permissions and submission verification remain open; this source-cited draft is not professionally attested.
+  Gibraltar private company formation reference covering subscribers, constitution, capital disclosures, registered office, director and secretary requirements, compliance declarations and incorporation fees. Includes a capital reconciliation example and first-officer filing controls. Based on the official Companies Act consolidation and current Registry forms and guidance checked in October 2026. Includes core corporate beneficial-ownership duties and the September 2026 registrar transition; historical nominee/appointor cases, sector permissions and submission verification remain open; this source-cited draft is not professionally attested.
 jurisdiction: GI
 category: formation
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
@@ -108,13 +108,41 @@ Regulation 6(4) permits the Registrar to specify identity particulars including 
 
 Source: [regulations 8–8A](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf). Retain trigger dates, evidence supplied and submission receipts. Regulation 8(6) contains a limited-information route where a relevant trust's trustees have supplied the required information under the Trusts (Information) Regulations 2025; it is not a general exemption for trust ownership. Establish that separate regime before using the limitation.
 
-Nominee arrangements and director appointors have **additional information duties** under regulations 6A–6B and 8B–8C. The Registrar can require those particulars; a UBO submission alone does not prove compliance. Regulations 8B(3) and 8C(3) prescribe 30 days from incorporation for their new-entity submissions, and their paragraph (4) provisions address subsequent changes/inaccuracies. Detailed definitions, nominee/director-to-company notifications, exceptions and historical transitional cases remain separate verification work. [Regulations 6A–6B, 8B–8C](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+Nominee arrangements and director appointors have **additional information duties** under regulations 6A–6B and 8B–8C. The Registrar can require those particulars; a UBO submission alone does not prove compliance. Regulations 8B(3) and 8C(3) prescribe 30 days from incorporation for their new-entity submissions, and their paragraph (4) provisions address subsequent changes/inaccuracies. The core nominee/director-to-company rules are set out below; historical transitional cases and portal-specific verification remain open. [Regulations 6A–6B, 8B–8C](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+### Nominees: internal records and notification
+
+Regulation 6A's nominee arrangement requires all four stated features: the nominee is the registered member under Companies Act section 182; dealings in the shares require the nominator's direction; share rights can only be exercised as directed by the nominator; and the holding is at least **25% plus one share**. Test the actual arrangement, not its label. A holding outside this particular definition does not eliminate the separate beneficial-ownership/control investigation. [Regulation 6A(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+The nominee must hold adequate, accurate and current nominator information. Regulation 6A(2) differentiates natural-person identity particulars, company existence/legal-status/registered-office evidence, equivalent particulars for other arrangements, and the special listed-entity or authorised-regulated-firm particulars. Record the arrangement date. The nominee must notify the company and provide those particulars and reasonably required further information **within 15 days of entering the arrangement**. [Regulation 6A(2)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+After submission, material changes or discovered significant inaccuracies must be reported to the company **within 15 days beginning with the change/discovery**, or a later time agreed with the company, with the event date stated. Termination or ceasing to satisfy the regulation's nominee definition also requires company notification **within 15 days**, stating the termination/cessation date. The company then has its own Registrar obligations under regulation 8B; an internal notice is not a filing receipt. Historic arrangements have a separate commencement-based transition, not a new grace period each year. [Regulations 6A(4)–(6), 8B](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+### Director appointors: identify everyone the rule specifies
+
+Regulation 6B requires the director to obtain and hold the prescribed information about the appointor(s), including identity/entity particulars and the appointment date. Use the actual appointment mechanism:
+
+| Appointment mechanism | Appointors under regulation 6B(2) |
+|---|---|
+| Named in the stated proposed-officers statement | Subscribers. The formation cross-reference issue identified above still needs resolution. |
+| Board appointment | All directors at the appointment time, including absentees and those who did not support it. |
+| Appointment by member resolution | All members entitled to vote on the appointment, regardless of attendance or support. |
+| Constitutional appointment by majority holders of a share class | All holders of that class at appointment, regardless of attendance or support. |
+| Other constitutional right, limb (e) | The person(s) exercising that right where limbs (b)–(d) do not apply. |
+| Contractual right, limb (f) | The person(s) exercising that right where limbs (b)–(e) do not apply. |
+| Person engaging the director to represent their interests without a contractual or constitutional appointment right | That person **in addition** to the appointors identified under the preceding limbs. |
+
+Source: [regulation 6B(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf). For example, a five-member board appoints a director with three votes in favour, one against and one absent. All **five** directors are appointors for this limb; reporting only the three supporters is incorrect. Being an appointor under this rule does not itself attribute control or influence over the director or company: regulation 6B(8) expressly preserves that distinction.
+
+The director supplies the information and reasonably required supporting particulars to the company **within 15 days of appointment**. A discovered significant inaccuracy requires correction **within 15 days beginning with discovery**, unless a later time is agreed with the company, and the discovery date must be stated. Regulation 6B(5) addresses inaccuracies; do not silently restate it as the nominee rule's broader material-change trigger. Appointments include **reappointments**. Regulation 6B(7) excludes directors appointed before that regulation commenced; assess later reappointments separately. The company has its own regulation 8C Registrar obligations, including the linked exception in regulation 8C(6). [Regulation 6B(3)–(8); regulation 8C](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
+
+Keep the appointment instrument, voting-entitlement/board snapshot, any separate engagement, identity evidence and both internal and Registrar receipts. These ownership-regulation notifications are distinct from Companies House's officer-particulars filing. Historical commencement cases, access restrictions, enforcement and portal-specific verification requirements remain open.
 
 ### Current submission route
 
 The GFSC assumed the Registrar function on **1 September 2026**. Its announcement says the old UBO submissions portal closed on **31 August 2026**. GFSC-regulated entities use the UBO section of their GFSC Portal; other covered corporate/legal entities register at [the GFSC UBO portal](https://portal.fsc.gi/uboregister). The announced migration period ended **30 September 2026**; it is not a fresh extension for an October filing. [GFSC announcement, 4 September 2026](https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590).
 
-Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Access restrictions, exceptions, discrepancy reporting, sanctions and full nominee/appointor procedures remain open; these core duties do not complete the entire ownership-transparency regime.
+Verify account authority, required attachments and successful receipt before treating a filing as complete. No login, submission or migration was performed for this Guide. Access restrictions, additional exceptions, discrepancy reporting, sanctions and historical/portal-specific nominee cases remain open; these core duties do not complete the entire ownership-transparency regime.
 
 ## Completion and handover
 
