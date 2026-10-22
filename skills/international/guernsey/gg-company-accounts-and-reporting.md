@@ -1,15 +1,18 @@
 ---
 name: gg-company-accounts-and-reporting
 description: >
-  Guernsey company accounting and reporting reference for ordinary local trading companies limited by shares. Covers transaction records, retention, annual accounts, financial periods, member circulation, audit-waiver timing and the separate annual validation. Includes December-incorporation and advance-waiver examples, a document workflow and explicit gaps for audit-excluded companies, fees and specialised entities. Prepared for 2026 from Guernsey Registry primary guidance, including the current annual-validation page and directors handbook. The underlying consolidated law was inaccessible during this pass; this is a source-cited research draft requiring legal and independent review before filing or relying on audit relief.
+  Guernsey company accounting and reporting reference for ordinary local trading companies limited by shares. Covers transaction records, retention, annual accounts, financial periods, member circulation, audit-waiver timing and the separate annual validation. Includes December-incorporation and advance-waiver examples, a document workflow and explicit gaps for audit-excluded companies and specialised entities. Prepared for 2026 from Guernsey Registry primary guidance, including the current annual-validation page and directors handbook. The underlying consolidated law was inaccessible during this pass; this is a source-cited research draft requiring legal and independent review before filing or relying on audit relief.
 jurisdiction: GG
 category: financial-statements
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://www.guernseyregistry.com/companyfees"
+    title: "Guernsey Registry: Limited Companies fee schedule, effective 1 December 2025"
+    as_of: "2026-10-22"
   - url: "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0"
     title: "Guernsey Registry: Guidance for directors of new local trading companies"
     as_of: "2026-10-22"
@@ -66,6 +69,24 @@ Thus an ordinary company already registered before December 2025 files its 2026 
 
 A company seeking removal needs to complete the appropriate strike-off or winding-up process before 31 December to avoid the following validation obligation under the Registry guidance. Ceasing trade alone is not that process. Late or missing validation attracts the civil-penalty process; this draft does not quote a penalty amount or assume automatic immediate strike-off. [Annual validation guidance](https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies).
 
+## Current filing fees and category checks
+
+The Registry's fee schedule effective **1 December 2025**, checked on 22 October 2026, lists the following annual-validation charges relevant to local trading companies. Establish the company's category before budgeting; incorporation through a CSP alone does not establish ongoing CSP administration. [Fee schedule](https://www.guernseyregistry.com/companyfees); [formation Guide](gg-company-formation.md).
+
+| Category | Published annual-validation fee | Classification condition |
+|---|---|---|
+| 5: CSP administered | £525 | The resident agent holds a fiduciary licence, or a fiduciary licensee is involved in ongoing administration or management; the company is not in an earlier category. |
+| 6: non-licensed, not CSP administered | £260 | Residual category for companies outside every other category; the Registry gives local trading/holding companies with a Guernsey-resident director as resident agent as examples. |
+| 7: GCRA regulated | £1,050 | Applies irrespective of whether the company would otherwise fall within a preceding category. |
+
+Do not use this table for primary or secondary GFSC licensees, cell companies, charities or NPOs; categories 1–4 have separate rules and fees in the same schedule. A local trading description alone does not prove category 6. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+
+The current charge for filing a special, waiver or unanimous resolution is **£15**. An eligible category-6 company filing one audit-waiver resolution and its annual validation therefore budgets **£15 + £260 = £275** in these Registry charges. For an otherwise qualifying category-5 company the corresponding arithmetic is **£15 + £525 = £540**. These examples assume one resolution filing and no late charges; they do not establish audit-waiver eligibility or include professional fees. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+
+The schedule separately lists **£15** for a change of registered office, directors or resident agent, and **£50** for each change of memorandum or articles. Its company-details submission for classification, purpose and economic activity code, and its personal-details submission, carry no charge. Choose the correct filing type rather than treating a free details update as a substitute for a charged corporate change. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+
+The published **£5 per calendar day, capped at £500**, is expressly for late document filings **excluding** documents whose lateness incurs a Schedule 2 civil penalty. It is not the annual-validation penalty: the schedule directs late annual validations and specified late changes of registered particulars to the civil-penalty rules. Identify the applicable regime before calculating any late charge; this draft does not quantify those civil penalties. [Fee schedule](https://www.guernseyregistry.com/companyfees).
+
 ## Prepare the 2026 validation evidence
 
 The Registry's **2026 onwards** question list is conditional. Company category, GFSC status and earlier answers determine which sections apply. Do not populate every conditional field with “no” just because the topic does not appear on another company's form. [Question list](https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0).
@@ -102,6 +123,6 @@ The same how-to guide says annual-validation documents submitted from 2021 onwar
 4. Compare the validation snapshot with the company registers; retain the submitted validation and receipt.
 5. Preserve the records and make them available to the directors preparing the accounts.
 
-Check the six-year retention starting point, the financial-period length, the December-incorporation boundary, the advance waiver date and separate 30-day filing date. Current fee schedules, prohibited audit-exemption categories, voting mechanics, approval/signature requirements and specialised-company rules remain to verify before this topic is accepted as complete.
+Check the six-year retention starting point, the financial-period length, the December-incorporation boundary, the advance waiver date and separate 30-day filing date. Prohibited audit-exemption categories, voting mechanics, approval/signature requirements and specialised-company rules remain to verify before this topic is accepted as complete.
 
 General reference only. A qualified Guernsey professional must review the facts and current law before filing or relying on relief. This draft is not accountant-attested.

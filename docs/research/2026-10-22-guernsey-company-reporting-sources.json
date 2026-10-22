@@ -32,6 +32,10 @@
     {
       "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0",
       "sha256": "5fde7dc4ccc4f738a63b91a94f1d59df68565dbeb7ccbee4275571515453ab5d"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/companyfees",
+      "sha256": "796d82d45ed32444f780c0dbf129390a6b1585c3bcb151135e61ad73209660d4"
     }
   ]
 }
