@@ -7,9 +7,15 @@ category: invoicing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-22
-version: 0.2
+version: 0.3
 verified_by: pending
 sources:
+  - url: "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108934/Required%2Bsyntaxes"
+    title: "European Commission: Required syntaxes, updated 2 February 2026"
+    as_of: "2026-10-22"
+  - url: "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108661/European%2BStandard%2Band%2BSpecifications"
+    title: "European Commission: European Standard and Specifications, migration notice updated 24 June 2026"
+    as_of: "2026-10-22"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/electronic-commerce/2001-07/2001-07(01-01-21).pdf"
     title: "Electronic Commerce Act 2001, sections 19–22, 1 January 2021 consolidation"
     as_of: "2026-10-22"
@@ -34,6 +40,14 @@ The official legislation index presents the 20 December 2018 text as current on 
 ## What counts as an electronic invoice
 
 Regulation 2 requires a structured electronic format issued, transmitted and received so that automatic electronic processing is possible. A scanned image or ordinary unstructured PDF alone does not demonstrate that requirement. Regulation 5(2) requires the European semantic data-model standard and a syntax on the published Official Journal list, together with the minimum core information. Before implementation, obtain the current standard/version, syntax profile, validation rules and buyer submission route. This Guide does not certify a particular XML schema, network or portal. [Regulations 2, 5(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/public-finance/2018s290/2018s290.pdf).
+
+## Standard editions and syntax migration
+
+Gibraltar regulation 5(2) requires both the semantic standard and a compliant syntax on the Official Journal list. The Commission's February 2026 technical page identifies the **2017 framework** as UBL 2.1 invoice/credit-note messages (ISO/IEC 19845:2015) and UN/CEFACT CII D16B. Its binding references are CEN/TS 16931-3-2:2017 and 16931-3-3:2017 respectively. Syntax bindings are version-specific: selecting a newer XML version does not itself establish conformity. [Commission syntax guidance](https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108934/Required%2Bsyntaxes).
+
+There is now a migration question. The Commission's June 2026 notice says EN 16931-1:2026 was published in May, the 2017 edition was formally withdrawn, and the older edition remains compliant during migration. It says migration plans are being developed and directs users to the relevant authority. That page is explicitly under review. It does **not** supply a Gibraltar cutover date. [Commission migration notice](https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108661/European%2BStandard%2Band%2BSpecifications).
+
+For implementation, record the semantic edition, syntax/version, binding, validation-artifact release, buyer profile and delivery route as separate fields. Obtain evidence of the applicable Gibraltar migration arrangements before choosing the 2026 edition or rejecting a 2017 invoice. These are recommended controls; neither Commission page proves a Gibraltar buyer endpoint is ready. This Guide has not verified a replacement Official Journal list, local transition instrument or live submission. The 2017 syntax identifiers above are a dated baseline, not certification of the complete current Gibraltar implementation.
 
 ## Required information
 
