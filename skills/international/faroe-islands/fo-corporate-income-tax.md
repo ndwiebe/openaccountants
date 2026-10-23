@@ -11,12 +11,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands corporate income tax v0.2
+# Faroe Islands corporate income tax v0.3
 
 ## Who this applies to
 
@@ -62,6 +62,21 @@ Separately, an eligible item costing **DKK 20,000 or less** can be deducted imme
 A proved disposal loss has special treatment: compare proceeds with that asset's cost less prior tax depreciation. Deduct the loss in the disposal year and remove the asset's remaining tax value from the pool. Do not both remove that tax value and deduct the proceeds again from the pool. Keep asset-level records even though ordinary annual depreciation uses a pool. [§4(1)][depreciation]
 
 If proceeds create a negative pool, stop the positive-pool calculation. Section 5 allows inclusion in taxable income in the current year and requires settlement by the following income year unless offset through qualifying acquisitions or a permitted extension. Record the negative balance and its deadline; it is not a negative depreciation deduction. The full reinvestment/extension procedure remains outside this Guide. [§5][depreciation]
+
+### Business buildings
+
+Classify each building under Depreciation Act §17 before selecting a rate. Category (a) covers exclusive craft/industrial use, including necessary offices/storage; (b) covers exclusive hotel use or rental buildings with at least ten apartments, including necessary offices/storage. Category (c), including other office/storage buildings, requires at least **75%** business floor area. Residential use is excluded except within the express §17(1) exceptions. [§17][depreciation]
+
+| Classification | Acquisition year and next nine income years | Later income years |
+|---|---:|---:|
+| §17(1)(a) or (b) | Up to 7% of eligible acquisition cost annually | Up to 2% |
+| §17(1)(c) | Up to 4% of eligible acquisition cost annually | Up to 1% |
+
+These are cost-based rates, not the equipment pool method. The acquisition-year definition in §20(1) includes acquisition/completion and use for a qualifying purpose. Keep that date and accumulated deductions in the schedule; do not start a new ten-year period merely because this year's return is the first one being prepared. [§20][depreciation]
+
+Exclude land acquisition, site preparation and surrounding-area costs from the depreciable building basis. Where only part qualifies, allocate cost by qualifying floor area under §18; where business uses span the rate classes, apply §20(4)'s area allocation. Test eligibility before allocation: a 74% business-use office building does not meet the 75% test merely by reducing its deduction to 74%. Keep separate schedules for each building and its reconstruction/improvement expenditure. [§§18–22, 27][depreciation]
+
+No annual depreciation is allowed in the disposal or demolition year. Section 24 provides a separate demolition deduction for unrelieved amounts less material-sale proceeds only where ownership and qualifying use lasted at least five years before demolition. Disposal gains, indexation, reinvestment and insurance relief under §§25–26 need separate computations; an accounting disposal loss is not automatically deductible. [§§21, 24–26][depreciation]
 
 ### Losses
 
@@ -192,6 +207,55 @@ expected:
   total_deduction: 62000
 ```
 
+### 5. Building eligibility at the floor-area boundary
+
+Assume a §17(1)(c) office building in its first ten-year period, DKK 4 million eligible building cost after excluding land/site costs, and 1,000 square metres total floor area. At 750 square metres of qualifying business use, the 75% eligibility test is met, allocated basis is DKK 3 million and the maximum annual deduction is DKK 120,000. At 740 square metres, category (c) fails. Assume no other qualifying category, relief or exceptional facts.
+
+```oa-check
+name: Faroese building floor-area boundary
+inputs:
+  building_cost: 4000000
+  total_area: 1000
+  eligible_area: 750
+  below_area: 740
+  threshold: 0.75
+  rate: 0.04
+steps:
+  eligible_share: eligible_area / total_area
+  boundary_margin: eligible_share - threshold
+  basis: building_cost * eligible_share
+  deduction: basis * rate
+  below_margin: below_area / total_area - threshold
+expected:
+  eligible_share: 0.75
+  boundary_margin: 0
+  basis: 3000000
+  deduction: 120000
+  below_margin: -0.01
+```
+
+### 6. Demolition deduction is separate from annual depreciation
+
+Assume a qualifying building is demolished after six years of continuous ownership and qualifying use. Verified unrelieved cost is DKK 600,000 and material-sale proceeds DKK 40,000. The separate §24 deduction is DKK 560,000; no ordinary annual depreciation is added in the demolition year. With only four years of ownership/use, the five-year condition would fail.
+
+```oa-check
+name: Faroese separate demolition deduction
+inputs:
+  unrelieved_cost: 600000
+  material_proceeds: 40000
+  years: 6
+  minimum_years: 5
+  short_ownership: 4
+steps:
+  deduction: unrelieved_cost - material_proceeds
+  qualifying_margin: years - minimum_years
+  failing_margin: short_ownership - minimum_years
+expected:
+  deduction: 560000
+  qualifying_margin: 1
+  failing_margin: -1
+```
+
 ## Ask the client first
 
 - What are the legal form, relevant capital, registration and actual management location?
@@ -203,7 +267,7 @@ expected:
 
 ## Review limits
 
-Source-cited draft, not professional attestation. Building, ship, vehicle and mixed-use depreciation, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
+Source-cited draft, not professional attestation. Building disposal/indexation and special reliefs, ship, vehicle and mixed-use depreciation, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
 
 ## Sources
 
@@ -215,7 +279,7 @@ All read 23 October 2026.
 | Assessment Act | [§5][rate] |
 | TAKS company tax | [Rates, losses and payment guidance][taks] |
 | Group taxation regulation 148/2015 | [§§1–9][group] |
-| Current Depreciation Act | [§§1–5a, ordinary equipment scope and computations][depreciation] |
+| Current Depreciation Act | [§§1–5a and 17–27, equipment and building computations][depreciation] |
 | TAKS returns | [Company filing procedure][returns] |
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
