@@ -1,6 +1,6 @@
 ---
 jurisdiction: FI
-version: 0.4
+version: 0.5
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -31,3 +31,5 @@ The [country-by-country reporting draft](fi-country-by-country-reporting.md) dis
 The [employer-payroll draft](fi-employer-payroll.md) adds reporting and employer health-contribution preparation. It does not complete employee withholding or employer insurance coverage.
 
 The [individual residence draft](fi-individual-cross-border-residence.md) adds arrival/departure and treaty-screening work. It does not establish comprehensive cross-border coverage.
+
+The [property-transfer tax draft](fi-property-transfer-tax.md) adds acquisition-tax preparation for real estate and housing-company shares. Annual property taxation, rental income, gains and full statutory/exception review remain open.
