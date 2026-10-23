@@ -1,7 +1,7 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.5
+version: 2.6
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -166,6 +166,22 @@ Article 35 of the VAT Act makes the Icelandic buyer pay VAT on services bought f
 3. For a liable purchaser, calculate `foreign-service VAT = liable VAT-exclusive consideration × applicable Icelandic rate`. The Act applies domestic rules, so this is normally 24%; a service that would be 11% if bought in Iceland is self-assessed at 11%. For a registered buyer with a partly deductible service, the liable part is the non-deductible part; apply the established attribution method above and retain the non-deductible share. Hold the result if the needed attribution evidence is missing. Complete **RSK 10.24** with the service line(s), supplier and buyer details, the VAT-exclusive consideration, the VAT, and the stated use purpose (the form prints 24%; show a lower applicable rate separately). Submit with payment by the fifth day of the second month after the ordinary two-month period in which the purchase falls. Late payment carries the same 1% daily surcharge, up to 10%, as domestic VAT. Retain the form, invoice and input-credit analysis.
 
 This is a purchaser-liability payment route. Do not also claim the same amount as ordinary input VAT. [VAT Act, Article 35](https://www.althingi.is/lagas/nuna/1988050.html) and [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf)
+
+### VOES return and separate foreign-business refund
+
+Use this branch after the seller/customer/supply screening above. VAT Act **Article 5B** permits qualifying foreign B2C suppliers to choose simplified rather than ordinary registration; the simplified scheme is not compulsory merely because Icelandic VAT is due. Preserve the registration approval, activity and effective date. The authority's registration booklet says a company approved for simplified registration can apply in its own name without an Icelandic representative. That exception does not remove the representative requirement for a different ordinary foreign-service registration. [Article 5B][voes-law]; [registration booklet, section 4.3.6][voes-booklet]
+
+1. **Prepare the application evidence.** Record company/trading name, address/country, activity, contact/email/web address, home TIN, relevant supply category, Icelandic start date and expected twelve-month sales. Obtain the home-country company-registration certificate and any name-change evidence. The public application begins with a contact email and an emailed application link; retain the eventual authority approval and access details. No application or email was submitted in preparing this method. [Current application instructions][voes-registration]; [public application](https://voes.rsk.is/Application/Register)
+2. **Build the B2C sales schedule.** Identify actual customer status/location, supply, period, price including/excluding VAT and the applicable rate. Electronic delivery alone does not make every supply 24%: Article 14 expressly includes qualifying electronic books at 11%. Keep unrelated goods/imports, business customers and supplies by an Icelandic establishment out of an assumed simplified branch. The authority says VAT on a VOES invoice cannot be treated as a business input credit; resolve misclassified customers and invoicing instead. [Articles 5B, 14, 34–35][voes-law]; [registration restrictions][voes-registration]
+3. **File and pay output only.** VOES uses January–February and the subsequent aligned two-month periods. Return and payment are due one month and five days after period end, moving to the next working day on an Icelandic holiday/weekend. Report in ISK using the authority's specified VAT foreign-exchange reference for the due date; retain the dated rate and conversion. **Do not offset purchase VAT in this return.** Reconcile output to the portal statement, payment and receipt. Actual accepted portal fields, late corrections and disputed FX need their own evidence. [VOES return instructions](https://www.skatturinn.is/english/companies/value-added-tax/)
+
+**A separate refund application is conditional.** Regulation 1243/2019 Article 2 expressly extends the foreign-business refund route to simplified Article 5B registrants, and to the stated nonregistrable Icelandic-establishment case. This is not input credit in a VOES return. Establish all Article 3 conditions: foreign taxable-business use, no ordinary Article 5 registered/registrable activity in the claim period, domestic-equivalent input entitlement and a vendor registered when the purchase occurred. Exclude purchases for **resale and final consumption in Iceland**, including the regulation's foreign travel-operator example; preserve the narrow combined-import-VAT/subcontractor exception separately. Meals/employee benefits, entertainment/gifts and blocked vehicle expenditure do not become refundable through foreign status. [Regulation, Articles 2–3][foreign-refund-reg]; [Icelandic refund guidance][foreign-refund-is]
+
+Build an invoice/customs-document register showing vendor status, actual VAT paid, use, exclusions and the resulting eligible amount. Use **RSK 10.29**, with compliant document copies and a home competent-authority business certificate valid for one year, plus any additional requested evidence. A representative needs written authority; follow the authority's RSK 10.36 instruction where applicable. Preserve submission and the decision, rather than treating the schedule total as an approved refund. [Regulation, Articles 5–6 and 9][foreign-refund-reg]; [current application/document instructions][foreign-refund-is]
+
+For ordinary processing, apply by **the fifteenth of the month after the aligned two-month period**, or the stated year/remainder period. A late application moves to the next processing cycle; the ultimate statutory limit is **six years from the right arising**. Article 8's printed 75,000/15,000 are **December 2019 CPI 473.3 base amounts**, indexed at each year's start. The English page quotes **2025** thresholds of 101,000/20,200; neither those nor the unindexed base amounts establish the **2026** minimum. Obtain the applicable indexed minimum before submitting. [Regulation, Articles 4–8][foreign-refund-reg]; [Icelandic timetable][foreign-refund-is]; [English page with dated amounts][foreign-refund-en]
+
+**Keep these source discrepancies explicit:** the English page says applications are at least fifteen days after the period and six years after calendar-year end, whereas the current regulation and Icelandic page say by the fifteenth of the following month for normal processing and six years from the right arising. Its broad no-Iceland-sales summary also omits the express simplified-registration extension. Use the current regulation's separate gates and resolve an actual deadline/eligibility dispute before filing. A refund decision, collection, overpayment or appeal requires its own notice: Article 10 requires repayment of an excess within thirty days of decision and applies statutory surcharge/interest rules; Article 11 gives three months from decision to appeal. [Regulation, Articles 2, 5, 7 and 10–11][foreign-refund-reg]; [conflicting English summary][foreign-refund-en]
 
 ## Deadlines and filing
 
@@ -431,12 +447,51 @@ expected:
   total_supported_refund_claim: 7440000
 ```
 
+### VOES output and refund controls
+
+Assume a foreign seller already holds valid VOES approval, supplies Icelandic consumers and has supported VAT-exclusive sales of ordinary software subscriptions 1,000,000 at 24% and qualifying electronic books 500,000 at 11% in one period. Output payable is **295,000**. Even supported purchase VAT is not offset in that return. Eligibility, a particular product's classification, any foreign-currency conversion and actual submission remain separate checks. [Articles 5B and 14][voes-law]; [VOES instructions](https://www.skatturinn.is/english/companies/value-added-tax/)
+
+```oa-check
+name: Iceland VOES mixed rates with no input offset
+inputs:
+  software_sales_net: 1000000
+  qualifying_e_book_sales_net: 500000
+  standard_rate: 0.24
+  reduced_rate: 0.11
+steps:
+  - software_output: software_sales_net * standard_rate
+  - book_output: qualifying_e_book_sales_net * reduced_rate
+  - voes_payable: software_output + book_output
+expected:
+  software_output: 240000
+  book_output: 55000
+  voes_payable: 295000
+```
+
+Separately assume a foreign-business refund register contains **150,000 of actual VAT**, including 12,000 on employee meals, 24,000 of blocked passenger-car costs and 60,000 on tourist services bought for resale/final consumption in Iceland. These categories are disjoint, and the remaining 54,000 meets the stated business-use/document/vendor tests. The eligible arithmetic amount is **54,000**. This is not an approved refund or a finding that a 2026 minimum/period/application test is met. It is not subtracted from the VOES output above. [Regulation, Articles 2–3 and 8][foreign-refund-reg]; [blocked costs][foreign-refund-is]
+
+```oa-check
+name: Iceland separate foreign-business refund excludes blocked and resale costs
+inputs:
+  total_vat_in_register: 150000
+  employee_meal_vat: 12000
+  blocked_car_vat: 24000
+  iceland_resale_consumption_vat: 60000
+steps:
+  - excluded_vat: employee_meal_vat + blocked_car_vat + iceland_resale_consumption_vat
+  - eligible_vat_before_application_gates: total_vat_in_register - excluded_vat
+expected:
+  excluded_vat: 96000
+  eligible_vat_before_application_gates: 54000
+```
+
 ## Ask the client first
 
 - What do the Icelandic VAT registration record and current settlement period say? Has the business ever been removed from the VAT register and re-registered?
 - What invoice, supplier/customer status, business use and rate/exemption facts support each transaction?
 - Are imports, foreign services, VOES, mixed exempt activity, property, vehicles or a correction involved?
 - For property, which exact premises/parts, actual use, approvals/start dates, leases, registered consents/declarations, construction costs, guarantee and prior input-adjustment balances support the claimed route?
+- For VOES or a foreign-business refund, which registration/establishment/customer facts, sales and FX records, home certificate, vendor/use/exclusion register, applicable indexed minimum, claim period and prior decisions prove the separate routes?
 - Has a statement already been filed or an assessment/penalty notice been issued?
 
 ## When to refuse or refer
@@ -460,7 +515,7 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
-The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording, mixed input attribution/capital adjustments, stated property registration/construction rules and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
+The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording, mixed input attribution/capital adjustments, stated property registration/construction rules, VOES/separate foreign-business refund methods and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
 
 | Official source | Read on |
 | --- | --- |
@@ -474,3 +529,17 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [Own-cost construction VAT Regulation 576/1989, current reproduction](https://files.reglugerd.is/pdf/0576-1989/current) | 2026-10-23 |
 | [Current registration procedure, property applications, changes and guarantees](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra) | 2026-10-23 |
 | [Registration Regulation 515/1996, Articles 4–5, conditions referred to for the property guarantee waiver](https://files.reglugerd.is/pdf/0515-1996/current) | 2026-10-23 |
+| [VOES self-application and representative exception, registration booklet section 4.3.6][voes-booklet] | 2026-10-23 |
+| [Public VOES application entry; no application started](https://voes.rsk.is/Application/Register) | 2026-10-23 |
+| [Foreign-business refund Regulation 1243/2019, current operative text, Articles 1–13][foreign-refund-reg] | 2026-10-23 |
+| [Icelandic foreign-business refund conditions, documents and timetable][foreign-refund-is] | 2026-10-23 |
+| [English refund page; dated amounts and discrepancies retained][foreign-refund-en] | 2026-10-23 |
+
+The VOES/refund addition is outside the benefits/options review snapshot. Its arithmetic, scope, dated minimum and administrative discrepancies require independent review before publication; actual registrations, returns and refund claims remain untested.
+
+[voes-law]: https://www.althingi.is/lagas/nuna/1988050.html
+[voes-booklet]: https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf
+[voes-registration]: https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra
+[foreign-refund-reg]: https://files.reglugerd.is/pdf/1243-2019/current
+[foreign-refund-is]: https://www.skatturinn.is/atvinnurekstur/skattamal/endurgreidslur-virdisaukaskatts/erlendir-adilar/
+[foreign-refund-en]: https://www.skatturinn.is/english/companies/vat/
