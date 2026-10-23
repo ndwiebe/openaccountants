@@ -1,10 +1,11 @@
 ---
 jurisdiction: FI
-version: 0.3
+version: 0.4
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  XB: fi-individual-cross-border-residence
   PR: fi-employer-payroll
   VAT: finland-vat-return
   SC: fi-yel-social
@@ -16,7 +17,7 @@ partial:
   SC: "YEL draft does not establish all employer or social contribution coverage."
   PR: "New employer reporting/health-contribution draft; withholding, insurance, exceptions, statutes and independent review open."
   TP: "New documentation draft; statutes, methods, reporting and independent review open."
-  XB: "Dedicated cross-border coverage missing."
+  XB: "New individual residence screening draft; statutes, income categories, treaties, companies, PE and independent review open."
 ---
 
 # Finland tax pack
@@ -28,3 +29,5 @@ The new [transfer-pricing documentation Guide](fi-transfer-pricing.md) addresses
 The [country-by-country reporting draft](fi-country-by-country-reporting.md) distinguishes notification and full-report preparation. Local-filing exceptions, statutory reconciliation, live exchange checks and independent review remain open.
 
 The [employer-payroll draft](fi-employer-payroll.md) adds reporting and employer health-contribution preparation. It does not complete employee withholding or employer insurance coverage.
+
+The [individual residence draft](fi-individual-cross-border-residence.md) adds arrival/departure and treaty-screening work. It does not establish comprehensive cross-border coverage.
