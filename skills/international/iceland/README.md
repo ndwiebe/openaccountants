@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.16
+version: 0.17
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -67,3 +67,5 @@ The same country delta now adds conditional domestic mergers/splits and sole-tra
 The local VAT extension distinguishes voluntary commercial-rent registration from special construction registration, tenant/buyer declarations, continued adjustment obligations, per-property construction statements and guarantee/cancellation/refund reconciliation. Two controls cover required rental security and avoiding a second refund of unpaid cancelled output. Approval dates, actual use, construction valuation and current indexed repair/calculated-price inputs still require their stated evidence; all domains remain partial.
 
 The resident-relief extension adds a full-year individual progressive-tax ceiling after personal credit, using current 2026 annual figures and a supported treaty credit branch. The official 2026 return handbook demonstrates the method on 2025 income; its figures are not reused as 2026 parameters. One further control covers foreign tax above/below the ceiling. Multiple-country/category, unused-credit, spouse and part-year cases remain separately open.
+
+The independent delta review identified two clarifications: the authority-approved property guarantee waiver under Regulation 577 Article 5 with Regulation 515 conditions, and the foreign-municipal-tax requirement for Municipal Revenue Act Article 34 relief. The writer added both with sources; these corrections still require the reviewer's confirmation before the country push.

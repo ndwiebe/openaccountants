@@ -16,10 +16,10 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.5
+version: 0.6
 ---
 
-# Iceland cross-border tax screening v0.5
+# Iceland cross-border tax screening v0.6
 
 ## Who this applies to
 
@@ -129,7 +129,7 @@ Build and retain:
 
 The per-country control is supported by [Tax Appeals Board decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912), which rejected the taxpayer's requested unrestricted overall offset. That decision concerns older years and rates; its historical 15% figure is not a 2026 corporate rate.
 
-**No treaty.** Article 119 permits an application to reduce Icelandic income tax with regard to foreign tax paid on income taxable in Iceland. It does not prescribe an automatic unrestricted refund. The same historical decision upheld limiting relief and rejected a more favourable unrestricted offset. Municipal relief has its own application basis in Municipal Revenue Act Article 34; do not infer automatic municipal credit from an income-tax request. Identify the current legal basis, evidence and authority decision for each actual charge. [Municipal Revenue Act, Article 34](https://www.althingi.is/lagas/nuna/1995004.html); [Article 119][law], [decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912)
+**No treaty.** Article 119 permits an application to reduce Icelandic income tax with regard to foreign tax paid on income taxable in Iceland. It does not prescribe an automatic unrestricted refund. The same historical decision upheld limiting relief and rejected a more favourable unrestricted offset. Municipal Revenue Act Article 34 separately permits an application by an individual liable under Article 19, where no applicable municipal double-tax agreement exists and the individual has paid **foreign municipal tax to a public body on income also municipally taxable in Iceland**. A foreign national income-tax payment alone does not establish that municipal condition. Keep the foreign tax's legal character, public collector, payment and matching income in the evidence file; the authority's discretionary reduction is not automatic municipal credit from an income-tax request. Identify the current legal basis, evidence and authority decision for each actual charge. [Municipal Revenue Act, Article 34](https://www.althingi.is/lagas/nuna/1995004.html); [Article 119][law], [decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912)
 
 ### Current UK treaty credit illustration
 
