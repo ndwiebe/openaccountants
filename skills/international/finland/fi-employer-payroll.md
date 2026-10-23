@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Finland employer payroll reporting v0.1
+# Finland employer payroll reporting v0.2
 
 ## Who this applies to
 
@@ -28,6 +28,14 @@ Vero publishes a **1.91% employer health-insurance contribution for 2026**, comp
 The employer contribution can apply even when withholding is zero or remuneration consists of benefits. The employee's insured-person health contribution is included in the withholding rate; do not deduct it again as a separate item. Vero distinguishes trade income from wages for this contribution. [Social insurance contributions][insurance]
 
 The same official page lists pension, unemployment, occupational accident/disease and group life contributions separately. Their inclusion depends on the applicable coverage and other conditions. This Guide supplies no universal all-in employer percentage. [Social insurance contributions][insurance]
+
+## Withholding instructions and income ceilings
+
+For ordinary wage withholding, obtain the current tax-card data electronically or from the employee. The card gives a basic rate, additional rate and income ceiling. Apply the additional rate to the part exceeding the applicable ceiling unless a valid revised card changes the instruction. Vero's wage-card guidance states **60% withholding when no wage tax card is available**; distinguish missing paper from valid data already received electronically. [Wage tax-card guidance][card]
+
+Each employer monitors the wages it has paid against the annual ceiling; employees with multiple employers must monitor their overall position and obtain revised cards where needed. Asking for a higher withholding rate does not increase the ceiling. A lower rate requires a revised card based on updated income/deduction information. [Rate and ceiling guidance][ceiling]
+
+Retain the card's effective dates, source, rates, ceiling and the employer's cumulative payroll values. Confirm how a revised card applies to its validity period before changing the payroll calculation. These records are a preparation control; this draft does not prescribe every revised-card or cumulative-withholding algorithm. Cross-border tax-at-source cards and special remuneration require separate classification.
 
 ## Reports and deadlines
 
@@ -76,6 +84,47 @@ expected:
   employer_health_contribution: 382
 ```
 
+### 2. A payment crosses the applicable ceiling
+
+Assume ordinary wage withholding, a valid card with a EUR 30,000 ceiling, EUR 28,000 previously paid by this employer within the relevant card calculation, a EUR 4,000 current payment, and card rates of 20% basic and 40% additional. EUR 2,000 remains at the basic rate and EUR 2,000 falls above the ceiling: withholding totals EUR 1,200. Rates are invented card assumptions. Employee insurance deductions and the final cash payment require separate calculations.
+
+```oa-check
+name: Finland assumed tax card ceiling crossing
+inputs:
+  card_ceiling: 30000
+  previous_employer_payments: 28000
+  current_wages: 4000
+  assumed_basic_rate: 0.20
+  assumed_additional_rate: 0.40
+steps:
+  remaining_ceiling: card_ceiling - previous_employer_payments
+  basic_rate_wages: min(current_wages, max(0, remaining_ceiling))
+  additional_rate_wages: current_wages - basic_rate_wages
+  withheld_tax: basic_rate_wages * assumed_basic_rate + additional_rate_wages * assumed_additional_rate
+expected:
+  remaining_ceiling: 2000
+  basic_rate_wages: 2000
+  additional_rate_wages: 2000
+  withheld_tax: 1200
+```
+
+### 3. No available wage-card instruction
+
+Assume an ordinary EUR 2,000 wage payment to which Vero's missing-card rule applies and no valid electronic withholding data. Withholding at 60% is EUR 1,200. The EUR 800 remainder is before separate employee insurance and other valid deductions, not a final payslip net amount.
+
+```oa-check
+name: Finland assumed missing wage card withholding
+inputs:
+  ordinary_wages: 2000
+  missing_card_rate: 0.60
+steps:
+  withheld_tax: ordinary_wages * missing_card_rate
+  remainder_before_other_deductions: ordinary_wages - withheld_tax
+expected:
+  withheld_tax: 1200
+  remainder_before_other_deductions: 800
+```
+
 ## Ask the client first
 
 - Who is paid, for what work, where, and on which payment dates?
@@ -91,9 +140,13 @@ Official text retrieved through the search index on 23 October 2026:
 - [Vero social insurance contributions][insurance], 2026 table and scope.
 - [Incomes Register deadlines][deadlines].
 - [Vero wage reporting and employer contributions][reporting].
+- [Wage tax-card guidance][card], updated 14 April 2026; [rate and ceiling guidance][ceiling], updated 1 January 2026, retrieved as indexed official text.
 
 Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, pension/unemployment/accident and group-life conditions and rates, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
 
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [reporting]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/
+
+[card]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/wage-earners/
+[ceiling]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/
