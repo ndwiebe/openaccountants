@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.11
+version: 0.12
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -14,7 +14,7 @@ covered_by:
   VAT: iceland-vat
 partial:
   IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper added; progressive individual relief, special regimes, source conflicts, live filing and professional review remain open."
-  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, sector/incentives, restructurings, operational and independent review remain open."
+  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D credit method and four controls added locally; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, restructurings, operational and independent review remain open."
   VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment and nine controls added; voluntary registration, special schemes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
@@ -57,3 +57,5 @@ The CFC extension adds ownership/substance, profit/loss and reporting steps; the
 The independent source review of snapshot `355b3194` identified five corrections. The local correction pass clarifies eligible temporary employees’ day-based personal credit, replaces the payroll six-month shorthand with the common residence method, preserves the permanent-establishment and initial-stay qualifications for foreign-expert relief, screens Article 10 exempt bodies before the ordinary VAT shared-input method, and excludes wage-paying activities from the simplified RSK 4.10 route. This records findings addressed, not a completed professional review.
 
 The review’s primary-source clarifications also establish the inclusive 700,000 full-year own-remuneration withholding boundary under Regulation 591/1987, while retaining any registration dispute separately, and identify the municipal percentage range as the ordinary Article 23 rule subject to checking the actual municipality and Article 24.
+
+The next local country pass adds the approved R&D credit method, its 2026 amendment, signed project costs, purchased-cost and related-applicant ceilings, public-aid cumulation, approval/claim sequence, refundable balance and surcharge base. Four additional controls are preparation pending independent country review. This extension is not included in the prior published source-review snapshot and does not establish complete corporate coverage.

@@ -8,21 +8,22 @@ description: >
   screen group taxation and related-party finance, and reconcile assessment
   payments. Includes the separately identified 2026 filing cycle for 2025
   income. Use for ehf., hf., taxable partnerships, RSK 1.04 and annual tax
-  reconciliations. Sector taxes, foreign credits, restructurings, some financial
+  reconciliations and approved research/development credits, cost ceilings and
+  public-aid limits. Sector taxes, foreign credits, restructurings, some financial
   instruments and independent Icelandic legal review require further work;
   this source-cited draft is not comprehensive country coverage.
 jurisdiction: IS
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.5
+version: 0.6
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.5
+# Iceland corporate income tax v0.6
 
 ## Who this applies to
 
@@ -46,6 +47,10 @@ Amounts are ISK. The rates below concern the ordinary statutory computation, bef
 | Immediate expensing of an asset or asset group | Acquisition cost **below 600,000**, not equal to it | [Article 39][law] |
 | Ordinary office equipment depreciation | 20%–35% of the statutory depreciation base | [Article 37(4)(a)][law] |
 | Related-party financing, absent an exception | Excess above 100,000,000 limited to 30% of statutory profit; first 100,000,000 retained subject to ordinary deductibility | [Article 57b][law]; [2020 amendment](https://www.althingi.is/altext/stjt/2020.033.html) |
+| Approved R&D credit | 35% for a supported small/medium classification; 25% for large enterprises; aid cumulation can reduce it | [Act 152/2009, Articles 3, 10 and 15][rd-law] |
+| R&D annual eligible-cost ceiling | 1,100,000,000 across related applicants; the same ceiling applies to a qualifying cooperation project as a whole | [Article 10][rd-law] |
+| Purchased R&D sublimit | 20% of the statutory ceiling, calculated as 220,000,000; supplier/project conditions also apply | [Article 10(5)][rd-law] |
+| Special small-enterprise project approval | A project with planned annual cost no greater than 125,000,000 can receive two-year approval, subject to the statutory plans/report | [Article 9, amended by Act 27/2026][rd-law] |
 | Ordinary domestic group-tax ownership screen | At least 90%, with approval and further conditions | [Article 55][law] |
 | 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; current guidance describes eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
 
@@ -140,6 +145,32 @@ If taxable, allocate the Icelandic-rule profit to the supported ownership share.
 The regulation reproduction says the official Gazette prevails if texts differ. Read it with the current Article 57a, not as authority to override later legislation.
 
 
+### 9. Approved research and development credit
+
+**Establish entitlement before calculating a percentage.** Act 152/2009 concerns a qualifying legal-entity owner of a Rannís-confirmed project who bears its financial risk. Retain the approval, project/year, ownership and funding contracts. Universities and public institutions are outside the applicant definition. Test financial distress, including the controlling parent's position under the 2026 amendment, and outstanding unlawful-state-aid recovery. A contractor paid to deliver results for someone else's use does not acquire its own credit merely by calling that work R&D. [Articles 2–5 and 10][rd-law]; [Act 27/2026][rd-amendment]
+
+Document enterprise size using the applicable Annex I assessment, including linked/partner enterprises and the economic unit. Do not select 35% from the Icelandic subsidiary's headcount alone. The August 2026 handbook requires an auditor-confirmed size self-assessment for the relevant group/parent/subsidiary SME applicants. Its Icelandic size shorthand and the Commission's summary differ at some exact staff/financial boundaries; resolve a borderline classification under the applicable legal definition before using the higher rate. [Article 3][rd-law]; [Rannís handbook, pages 8, 10–11][rd-handbook]; [Commission SME definition][rd-sme]
+
+**Cost workpaper, by approved project.** Reconcile actual eligible operating expenditure to the ledger, payroll, invoices and signed project statement. Project payroll includes the supported employer levy and only time worked on the project, not a customer billing rate. Equipment/building costs use eligible depreciation attributable to project use and duration; an asset's whole purchase price is not automatically an R&D credit base. Exclude finance, sales/marketing, application-preparation costs and ordinary operations such as routine software updates, training, production and ordinary quality control. A general expense deduction is not proof of eligibility for this credit. [Act, Articles 3(5) and 10][rd-law]; [Regulation 758/2011, Articles 3 and 5][rd-reg]
+
+For purchased R&D, establish the work's inclusion in the approved project, an unrelated supplier, and its location in the EEA or a state with an Icelandic double-tax or information-exchange agreement. The current Article 10(5) sublimit is **220 million**, derived from 20% of the 1.1-billion ceiling; it is not 20% of a small project's actual cost and is not a separate addition to the overall ceiling. Do not claim the same work as both the supplier's own project and the customer's purchase. [Article 10][rd-law]; [2026 amendment, Article 6][rd-amendment]
+
+Apply the **1.1-billion annual ceiling once**, aggregating related applicants under Article 10's ownership/control definition. Where the combined eligible costs exceed it, allocate the capped base proportionately; separate companies or project numbers do not multiply the allowance. An unrelated cooperation project also shares one project ceiling, with the participants' supported shares. Keep the related-enterprise and project-cap calculations together where both apply; resolve overlapping limits before finalising a claim. [Articles 7 and 10][rd-law]; [Regulation, Article 7][rd-reg]
+
+**Other public support limits the credit.** Match domestic and foreign public funding to the same project and supported eligible costs. The following are maximum **combined public-aid percentages**, including this credit, not alternative credit rates:
+
+| Supported enterprise size | Research, ordinary / qualifying enhanced case | Development, ordinary / qualifying cooperation | Source |
+|---|---|---|---|
+| Small | 70% / 80% | 45% / 60% | [Article 15][rd-law] |
+| Medium | 60% / 75% | 35% / 50% | [Article 15][rd-law] |
+| Large | 50% / 65% | 25% / 40% | [Article 15][rd-law] |
+
+Use an enhanced ceiling only after proving the relevant Article 15 branch. Company cooperation requires actual collaboration between independent enterprises, no participant above 70% of eligible costs, and the prescribed SME or two-EEA-country condition. The research-institution branch requires at least 10% institutional cost participation and publication rights. Research-only public dissemination is a separate enhancement branch. Subcontracting alone is not cooperation; the large-enterprise enhancement has its own cross-border/SME condition. Keep the collaboration agreement, cost shares and the branch relied on. [Article 15][rd-law]; [Regulation, Article 6][rd-reg]
+
+For a single supported project below the cost ceiling, compare the nominal credit with the residual permitted aid after other project grants. Do not simply deduct grants from the cost base and multiply the remainder by 35%/25%. A zero additional credit does not cure other grants already above the aid ceiling. Rannís's worked illustration uses 10 million eligible research cost, a small enterprise, a 70% total-aid limit and 6 million other grants: the nominal 3.5-million credit becomes **1 million**. [Handbook, page 15][rd-handbook]; [Articles 10 and 15][rd-law]
+
+The credit reduces **assessed tax**, after the ordinary taxable-profit computation; do not deduct the credit again as an expense. Eligible underlying costs follow the ordinary tax rules once. Article 11 provides for the excess credit to be paid when it exceeds assessed income tax or there is a tax loss, subject to public-debt setoff. Regulation Article 8 orders the offsets before any cash balance, so a calculated refund is not a promised payment date or bank receipt. [Articles 10–11][rd-law]; [Regulation, Articles 7–8][rd-reg]
+
 ## Deadlines and filing
 
 ### Return and assessment workflow
@@ -151,6 +182,14 @@ For **2025 income filed in 2026**, the 30 January 2026 notice states a general d
 Calendar year is the ordinary income period; another accounting year needs the Article 59 permission. For approved foreign-currency accounts, Article 91 requires the supporting accounts and statutory ISK conversion statement; it distinguishes income/expense average rates from balance-sheet closing rates. Check its detailed tax-basis rules before using a single year-end rate for the whole return. [Articles 59, 90–91][law]
 
 Compare assessment with the return, tax calculation and payment ledger. Article 99 gives legal entities a **one-month** initial assessment-complaint period measured from the specified assessment announcement; do not substitute the different individual period or assume every later reassessment follows the same trigger. [Article 99][law]
+
+### R&D approval and claim records
+
+New-project applications reach Rannís by **1 October** for the application year; ordinary extensions are due by **1 April**, with no more than three extensions of the same project. Keep submission receipts, cost/work plans, business plan, staff expertise, funding and collaboration evidence. The dated 2026 notice specified **1 October 2026 at 23:59 Icelandic time** through Rannís's electronic system; that deadline had passed at this Guide's research date. Do not assume an unsubmitted 2026 application can be created retrospectively. [Articles 4–5 and 9][rd-law]; [20 August 2026 notice][rd-notice]
+
+The 2026 amendment permits the stated small-company two-year approval with both years' plans and a first-year progress report. Obtain the actual approval rather than treating every small project as automatically covered for two years. Current statutory processing time is **three months**; the older regulation reproduction still says two months, so do not promise that older interval. Approval does not settle the tax authority's cost/aid calculation. [Articles 8–9][rd-law]; [Amendment, Articles 4–5][rd-amendment]; [Handbook, pages 3 and 6–8][rd-handbook]
+
+Prepare a separate signed cost statement and **RSK 4.21 for each project**, with **RSK 4.22** for cooperation and reconciled participant shares. The statutory signatory is an auditor, examiner or recognised bookkeeper. The handbook links a 2026 RSK 4.21 and a 2025-labelled RSK 4.22: these establish the published layout, not the accepted 2027 form for 2026 income. In particular, the older 4.21 explanation's land-financing wording must not override the current Act's financing-cost exclusion. Confirm current-year forms and upload acceptance before filing; retain the submission and assessment evidence. [Article 10][rd-law]; [Handbook, pages 7–8 and 11][rd-handbook]; [Published RSK 4.21][rd-form]; [Published RSK 4.22][rd-coop-form]
 
 ### Payment-year reconciliation
 
@@ -173,13 +212,15 @@ Article 108 increases **tax bases**, rather than imposing the listed percentages
 
 Article 114 links assessment late interest to the Central Bank rate. Regulation 1370/2025 Article 4 says unpaid 2026 advances/assessments after a month attract interest from the due date and addresses acceleration after partial nonpayment. Use the actual collection basis, due dates and period-specific rate; no undated floating rate is quoted here. Documentation fines, payroll/VAT collection penalties and criminal sanctions are separate regimes. [Article 114][law]; [Regulation, Article 4][payment-reg]
 
+For R&D overstatement, Article 12 permits a **25% surcharge on the reduction of the credit**, not 25% of all project costs. Its no-fault and criminal-case exceptions must be considered; this is not an automatic charge in every correction. Article 5 permits approval revocation for materially false/misleading application information, reaching the current and preceding two income years. False/fabricated claims also require the separate Article 15a criminal-law analysis. [Articles 5, 12 and 15a][rd-law]
+
 ## Cross-border points
 
 Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Use the [resident foreign-income relief workpaper](is-cross-border.md) for country/category matching, tax attribution and the conditional current-UK credit example. Other treaty-specific limitations and exemption methods still need the actual treaty analysis. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
 
 For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
 
-Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. Sector taxes, incentives/R&D credits, financial instruments and any other applicable group minimum-tax regime require a separate applicability audit; nothing in this ordinary computation establishes their absence.
+Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. The R&D method above includes the foreign-supplier and foreign-public-aid screens; territory alone does not establish purchase eligibility. Other sector taxes/incentives, financial instruments and any applicable group minimum-tax regime still need their own applicability audit; this ordinary computation does not establish their absence.
 
 ## Worked examples that recompute
 
@@ -352,6 +393,105 @@ expected:
   gross_iceland_tax_before_separate_relief: 1600000
 ```
 
+### 8. R&D purchased-cost sublimit and annual ceiling
+
+Assume approved research owned by a supported SME, eligible internal project costs 900 million and otherwise eligible purchased R&D 300 million from qualifying unrelated suppliers. There are no other projects/related applicants, no other public aid, and no further eligibility restriction. Purchased cost is limited to **220 million**; the combined 1.12-billion amount then meets the separate **1.1-billion overall ceiling**. Nominal credit is **385 million**. These assumptions establish neither project approval nor SME classification for a real company. [Article 10][rd-law]
+
+```oa-check
+name: Iceland R&D purchased subcap before overall annual ceiling
+inputs:
+  internal_eligible: 900000000
+  qualifying_purchased: 300000000
+  annual_cap: 1100000000
+  purchased_fraction: 0.20
+  credit_rate: 0.35
+steps:
+  - purchased_cap: annual_cap * purchased_fraction
+  - allowed_purchased: min(qualifying_purchased, purchased_cap)
+  - eligible_before_overall_cap: internal_eligible + allowed_purchased
+  - credit_base: min(eligible_before_overall_cap, annual_cap)
+  - nominal_credit: credit_base * credit_rate
+expected:
+  purchased_cap: 220000000
+  allowed_purchased: 220000000
+  eligible_before_overall_cap: 1120000000
+  credit_base: 1100000000
+  nominal_credit: 385000000
+```
+
+### 9. R&D public-aid ceiling and tax/refund split
+
+Use the handbook's stated small-enterprise ordinary research assumptions: 10 million eligible cost, 6 million other public grants, 35% nominal credit and a 70% total-aid ceiling. Credit is limited to **1 million**. With assumed assessed income tax of 600,000, it offsets that tax and leaves **400,000 before other public-debt offsets**. This is not a second deduction from the underlying business profit or a promised cash payment. [Handbook, page 15][rd-handbook]; [Articles 10–11 and 15][rd-law]
+
+```oa-check
+name: Iceland R&D grant cap and excess credit before debt setoff
+inputs:
+  eligible_cost: 10000000
+  other_public_grants: 6000000
+  nominal_rate: 0.35
+  aid_ceiling_rate: 0.70
+  assessed_income_tax: 600000
+steps:
+  - nominal_credit: eligible_cost * nominal_rate
+  - total_aid_limit: eligible_cost * aid_ceiling_rate
+  - remaining_aid_capacity: max(0, total_aid_limit - other_public_grants)
+  - allowed_credit: min(nominal_credit, remaining_aid_capacity)
+  - income_tax_offset: min(allowed_credit, assessed_income_tax)
+  - excess_before_other_debts: allowed_credit - income_tax_offset
+expected:
+  nominal_credit: 3500000
+  total_aid_limit: 7000000
+  allowed_credit: 1000000
+  income_tax_offset: 600000
+  excess_before_other_debts: 400000
+```
+
+### 10. R&D related-applicant ceiling shared once
+
+Assume two related applicants, both within the supported SME classification, each has 700 million otherwise eligible approved internal research cost, no purchased work, no other grants or projects and no further aid restriction. Aggregate cost **1.4 billion** exceeds one **1.1-billion** ceiling. Each receives a proportionate **550-million** credit base and **192.5-million** nominal credit; total credit is **385 million**, not 490 million. [Article 10][rd-law]; [Handbook, page 14][rd-handbook]
+
+```oa-check
+name: Iceland R&D related applicants proportionate annual cap
+inputs:
+  first_cost: 700000000
+  second_cost: 700000000
+  shared_cap: 1100000000
+  supported_sme_rate: 0.35
+steps:
+  - aggregate_cost: first_cost + second_cost
+  - capped_total: min(aggregate_cost, shared_cap)
+  - first_base: capped_total * first_cost / aggregate_cost
+  - second_base: capped_total * second_cost / aggregate_cost
+  - first_credit: first_base * supported_sme_rate
+  - second_credit: second_base * supported_sme_rate
+  - combined_credit: first_credit + second_credit
+expected:
+  aggregate_cost: 1400000000
+  first_base: 550000000
+  second_base: 550000000
+  first_credit: 192500000
+  second_credit: 192500000
+  combined_credit: 385000000
+```
+
+### 11. R&D surcharge uses the credit reduction
+
+Assume an originally allowed 5-million credit is corrected to 3.5 million, the authority applies the permitted 25% surcharge, and neither statutory exception applies. The credit reduction is **1.5 million** and surcharge **375,000**. Project-cost totals are not the surcharge base. [Article 12][rd-law]
+
+```oa-check
+name: Iceland R&D overstatement surcharge on reduced credit
+inputs:
+  original_credit: 5000000
+  corrected_credit: 3500000
+  applied_surcharge_rate: 0.25
+steps:
+  - credit_reduction: original_credit - corrected_credit
+  - surcharge: credit_reduction * applied_surcharge_rate
+expected:
+  credit_reduction: 1500000
+  surcharge: 375000
+```
+
 ## Ask the client first
 
 - What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
@@ -360,6 +500,7 @@ expected:
 - Which loss vintages, ownership/business changes, group approvals or reorganisations affect use of losses?
 - What filing extension, assessment, advance notices, reductions, withholding and actual payments already exist?
 - Are there regulated financial activities, foreign holdings, incentives, related parties or planned asset/company moves?
+- For R&D, who owns and funds the project, what timely approval covers the year, what enterprise-size/group evidence applies, and which signed cost statements, supplier-country/relationship records, collaboration terms and domestic/foreign public grants reconcile to the claim?
 
 <!-- openaccountants-cta-block -->
 
@@ -369,7 +510,7 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -386,6 +527,14 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | CFC Regulation 1102/2013, computation, substance, losses and reports | [Regulation](https://files.reglugerd.is/pdf/1102-2013/current) | 2026-10-23 |
 | Skatturinn, CFC report and identifier requirements | [Reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/) | 2026-10-23 |
 
+| Act 152/2009, current R&D entitlement, costs, credit, aid, procedure and sanctions | [Current statute][rd-law] | 2026-10-23 |
+| Act 27/2026, 2026 R&D procedural and purchased-cost amendments | [Enacted amendment][rd-amendment] | 2026-10-23 |
+| Regulation 758/2011, project costs, aid and debt setoff; older decision period distinguished | [Current reproduction][rd-reg] | 2026-10-23 |
+| Rannís, August 2026 application handbook, linked from the official grants portal | [Official handbook][rd-handbook] | 2026-10-23 |
+| Rannís, 20 August 2026 application notice | [Dated notice][rd-notice] | 2026-10-23 |
+| Skatturinn, published RSK 4.21 (2026 return) and RSK 4.22 (2025 label) | [4.21][rd-form]; [4.22][rd-coop-form] | 2026-10-23 |
+| European Commission, SME definition and group-data warning | [Definition][rd-sme] | 2026-10-23 |
+
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
 [rates]: https://www.skatturinn.is/einstaklingar/helstutolur/2026
@@ -394,3 +543,12 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 [filing-notice]: https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026
 [payment-reg]: https://island.is/reglugerdir/nr/1370-2025
 [advances]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/fyrirframgreidsla-thinggjalda/
+
+[rd-law]: https://www.althingi.is/lagas/nuna/2009152.html
+[rd-amendment]: https://www.althingi.is/altext/stjt/2026.027.html
+[rd-reg]: https://files.reglugerd.is/pdf/0758-2011/current
+[rd-handbook]: https://assets.ctfassets.net/8k0h54kbe6bj/2RRCQujMqAjymTTMW8B5rb/5c12a20c7dcaf5b905f629c6805dcc57/6588aab1-6369-4453-9990-35a7c22eab13.pdf
+[rd-notice]: https://island.is/frett/opid-fyrir-nyjar-umsoknir-um-skattfradratt-vegna-rannsokna-og-throunarverkefna-a-arinu-2026
+[rd-form]: https://www.skatturinn.is/media/rsk04/rsk_0421_2026.is.pdf
+[rd-coop-form]: https://www.skatturinn.is/media/rsk04/rsk_0422_2025.is.pdf
+[rd-sme]: https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_en
