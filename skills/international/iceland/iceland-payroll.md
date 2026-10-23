@@ -1,7 +1,7 @@
 ---
 name: iceland-payroll
 description: Use this skill whenever asked about Iceland payroll processing for employed persons. Trigger on phrases like "Iceland payroll", "Icelandic payroll", "staðgreiðsla", "PAYE Iceland", "withholding Iceland", "tryggingagjald", "social security contribution Iceland", "persónuafsláttur", "personal tax credit Iceland", "lífeyrissjóður", "mandatory pension Iceland", "séreignarsparnaður", "supplementary pension", "launagreiðendaskrá", "employer registry Iceland", "RSK 5.02", "launamiði", "skilagreining", "net salary Iceland", "tax withholding Iceland", "employer social cost Iceland", "kjarasamningur", "minimum wage Iceland", "municipal income tax Iceland", "gross to net Iceland", "salary calculation Iceland", or any question about computing employee pay, withholding income tax (state + municipal), or social contributions for Iceland-based employees. This skill covers PAYE (staðgreiðsla) income tax withholding, the personal tax credit, employer social security contribution (tryggingagjald), mandatory occupational pension (employee 4% + employer 11.5%), supplementary private pension, no statutory minimum wage (collective-agreement minimums), 2026 benefit valuation for vehicles, meals, housing, commuting, fitness and employee loans, and filing obligations to Skatturinn. ALWAYS read this skill before processing any Iceland payroll.
-version: 0.5
+version: 0.6
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -85,7 +85,7 @@ Full private availability is valued **regardless of actual kilometres**. Multipl
 |---|---|---|
 | Employer-owned car acquired in 2014 or later | 28% of the supported value for fossil-fuel cars; 20% for the stated electricity/hydrogen/methane clean-energy cars. A hybrid label alone does not establish that latter class. | [Section 2.3][benefit-notice] |
 | Permitted value reduction for that category | 10% of the previous year's value each year, starting **after** the employer's acquisition year; never below 50% of original acquisition price. This is reducing balance, not ten percentage points of original price each year. | [Section 2.3][benefit-notice]; [Authority explanation][benefit-guidance] |
-| Employer-owned car acquired in 2013 or earlier | Separate 30% of original acquisition-price rule; do not automatically extend the later-acquisition reduction method. | [Section 2.3][benefit-notice] |
+| Employer-owned car acquired in 2013 or earlier | Current annual rule: 30% of original acquisition price. The operational page instead refers to the first-use-year vehicle register; retain this source conflict and resolve a specific old-car base before filing. Do not automatically extend the later-acquisition reduction method. | [Section 2.3][benefit-notice]; [conflicting operational base][benefit-guidance] |
 | Car not owned by the employer | The stated dealer-list price when employer availability begins or lessor reference value when yearly/monthly rent is set; 28%/20% power-type rule. Apply the supported 10% annual reduction/floor from its own start year. Lease instalments are not automatically the valuation base. | [Section 2.3][benefit-notice] |
 | Employee pays the defined running costs | Reduce the fossil percentage by **six points**, or the stated clean-energy percentage by **three points**, of the supported car value. These are not 6%/3% discounts on the already calculated benefit. | [Section 2.3][benefit-notice] |
 | Pure electric, employee pays charging alone while employer pays other running costs | The stated **19%** annual rate; do not claim 17% solely because the employee charges at home. | [Section 2.3][benefit-notice] |
@@ -120,6 +120,22 @@ Other motor vehicles/trailers under **section 2.4**, including the stated motorc
 
 Roll forward each benefit schedule by employee and period; reconcile employee charges, annual exclusions, PAYE value, pension base, levy base and bank pay. Do not assume a category is outside monthly reporting merely because it is noncash. The published wage-statement **2026 layout concerns 2025 wages** and separately identifies car, clothing, housing and food benefits; it is evidence of the category layout, not an accepted 2027 return for 2026 wages. Match the actual wage year's live fields before submission, preserve acceptance, and correct the original affected periods under the existing procedure. An insufficient-cash or benefit-only pay run requires a documented withholding/settlement decision before release; do not turn a negative calculated bank balance into a fictitious payment or simply omit the benefit. [Withholding Act, Articles 5 and 20](https://www.althingi.is/lagas/nuna/1987045.html); [Annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/); [Published 2026 statement][benefit-wage-form]
 
+### Share options: classification, valuation and separate tax dates
+
+Obtain the instrument and amendments, employment/director/service relationship, company/group details, grant and exercise dates, strike/payment, market-value evidence, share register and every subsequent ownership change. Separate actual share options from cash bonuses, phantom shares, restricted-share awards and direct discounted purchases; the option provisions alone do not establish those other instruments' treatment. Cross-border work, residence and treaty allocation need the [cross-border method](is-cross-border.md) before applying these domestic examples.
+
+**Ordinary Article 9 option.** Record employment income as **market value at exercise less the contract purchase price**. Use the quoted exchange/organised-market price, otherwise actual unlisted dealings, otherwise book equity from the last audited annual or interim accounts. Income taxation is deferred until **ownership changes**, not remeasured using the later sale price. The Article 9 director extension expressly concerns qualifying innovation companies; do not assume every director or contractor fits the ordinary employee example. [Income Tax Act, Article 9][option-act]
+
+Keep the two taxes and reporting events separate. Skatturinn expressly says the employer pays the **levy at exercise**, does **not deduct PAYE from the option wage then**, and reports the exercise particulars and option income in the following year's information submission. If the shares remain held, the individual reports the asset and carries the deferred tax position forward until ownership changes. Article 18 then gives ordinary Article 9 shares an **exercise-market-value capital basis**, subject to its same-class average-cost rule. A later capital loss is not automatically a reduction of the fixed option wage. Non-sale transfers, losses, mobility and the actual later collection/reporting procedure need their specific determination. [Employee guidance, option section][benefit-guidance]; [levy timing](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/); [Articles 9, 18 and 24][option-act]
+
+**Article 10 employee plan.** Apply capital treatment only after documenting every condition: offered to all staff with equal share rights; permanent employment in the company/group; at least 12 months before exercise; grant price at least the preceding ten whole trading days' weighted quotation, otherwise the Article 9 market measure; at least two years' share ownership after exercise; nontransferable option; annual contract **purchase-price** total no more than **1,500,000**; and advance authority plan confirmation. The cap is not a gain allowance. Contractors and directors are not employees for this route. The authority says premature disposal loses this capital treatment. At sale, qualifying income is **sale proceeds less original contract purchase price**. Do not apply the ordinary Article 9 basis uplift to that capital amount. Maintain the year-end employee/exercise/purchase-price report. [Article 10][option-act]; [authority plan conditions][benefit-guidance]; [published plan/report instructions][option-form]
+
+**Article 10a startup alternative.** Establish the Article 18 startup definition separately: qualifying innovation company under Act 152/2009 Article 3(3), formed for recognised R&D and spending **more than 10% of turnover** on it, within Article 30B's specifically referenced size test: **no more than 25 employees**, turnover **under 650 million and/or balance sheet under 650 million**, using the consolidated group where applicable. This is not the R&D-credit SME test. Obtain Rannís project confirmation **before the option contract** and prove the recipient's work exclusively concerns that project. Require at least **18 months** to exercise, grant-market-value strike (last approved annual book equity if no market value), nontransferability and term no longer than **eight years**. The individual service-provider extension caps total services at **2 million per twelve months**, with clear contractual pricing. Preserve the statutory restriction on obligatory cash settlement/company or related-party buyback, including its narrow normal/customary-transaction exception; a buyback promise is not automatically eligible. Report issued contracts and exercises annually. Qualifying capital income at sale is sale less contract purchase price. Article 10a is currently scheduled to lapse on **1 January 2034**; recheck future transactions. [Articles 10a, 18 and 30B][option-act]; [Innovation Act, Articles 3 and 5](https://www.althingi.is/lagas/nuna/2009152.html)
+
+For Articles 10 and 10a, the stated gain is expressly **not Article 31 operating expenditure**, and the share purchase gives no Article 30B share-subscription deduction. Preserve the employer's book-to-tax bridge rather than assuming an accounting share-payment charge is tax deductible. Proved capital-plan classification is a separate branch from the ordinary wage-option levy/PAYE sequence above; obtain the applicable contribution/reporting treatment rather than applying an undifferentiated option flag. [Articles 10 and 10a][option-act]
+
+**Form conflict.** Published RSK 2.085, dated 5 November 2024, identifies the Article 9/10/10a route and acquisition details, but its reverse describes Article 9 income as original price to later sale. That conflicts with current Article 9's exercise spread and Article 18's exercise-value basis. Use the Act for the computation and retain this discrepancy for the actual reporting decision. This published layout does not establish accepted 2027 fields or a completed filing. [Current Act][option-act]; [RSK 2.085][option-form]
+
 ### Pension and gross-to-net calculation
 
 By law the minimum pension contribution is at least 15.5% of the contribution base, and workers are covered from age 16 to 70. The split between employee and employer follows the collective agreement for the trade (or special law), and fund membership must be stated in the written employment contract. A transitional rule lets 12% be used instead of 15.5% where the current collective agreement still uses 12%, until a new agreement takes effect. [Act 129/1997, art. 1-2](https://www.althingi.is/lagas/nuna/1997129.html)
@@ -146,7 +162,7 @@ A noncash benefit can increase taxable income without adding money to the bank p
 
 ### Employer pension and payroll tax
 
-Calculate employer pension separately from the employee deduction. General 2026 payroll tax (`tryggingagjald`) is 6.35%, made up of 4.90% general levy, 1.35% employment-insurance levy, 0.05% wage-guarantee fund fee and 0.05% market fee. For wages of seamen on fishing vessels add 0.65%, giving 7.00%. Its base includes taxable benefits (food, housing, clothing, car use) at their tax valuation, all vehicle allowances, taxable per diems and share-option gains in the year of exercise, as well as wages. Do not reduce this employer base by the employee's pension deduction. Payments that are not taxable to the employee, such as qualifying commuting payments, are outside the base. [Payroll tax](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald) [Seamen rate](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
+Calculate employer pension separately from the employee deduction. General 2026 payroll tax (`tryggingagjald`) is 6.35%, made up of 4.90% general levy, 1.35% employment-insurance levy, 0.05% wage-guarantee fund fee and 0.05% market fee. For wages of seamen on fishing vessels add 0.65%, giving 7.00%. Its base includes taxable benefits (food, housing, clothing, car use) at their tax valuation, all vehicle allowances, taxable per diems and ordinary wage-option gains in the year of exercise, as well as wages. Apply the option classification and separate tax dates above; this levy timing is not immediate option PAYE or a rule for every capital plan. Do not reduce this employer base by the employee's pension deduction. Payments that are not taxable to the employee, such as qualifying commuting payments, are outside the base. [Payroll tax](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald) [Seamen rate](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
 
 Special cases, each needing evidence before use:
 
@@ -518,12 +534,58 @@ expected:
   taxable_fitness: 15000
 ```
 
+### Option examples: ordinary wage component versus qualifying capital plan
+
+These domestic resident examples assume one unlisted share holding, no other shares of the same class, no sale costs or capital losses, no applicable capital exemption and supported values. They distinguish computation from eligibility and collection. The 22% capital rate follows the [individual Guide's capital method](iceland-income-tax.md); the deferred wage component still needs the person's applicable earned-income computation.
+
+For an ordinary Article 9 option, assume exercise in 2025 at a total strike of 600,000 and market value of 1,000,000. The wage component is 400,000, fixed at exercise. If the first ownership change is a 2026 sale for 1,300,000, the wage tax charge arises then, while the separate capital gain is 300,000 and capital tax is 66,000. The exercise-year levy and exercise reporting remain separate; this illustration does not calculate wage tax or assert a 2025 levy payment was made. [Articles 9 and 18][option-act]; [exercise reporting and levy guidance][benefit-guidance]
+
+```oa-check
+name: Iceland ordinary option fixed exercise wage and later capital gain
+inputs:
+  contract_purchase_price: 600000
+  exercise_market_value: 1000000
+  later_sale_proceeds: 1300000
+  capital_rate: 0.22
+steps:
+  - deferred_wage: exercise_market_value - contract_purchase_price
+  - capital_basis: exercise_market_value
+  - capital_gain: later_sale_proceeds - capital_basis
+  - capital_tax: capital_gain * capital_rate
+  - economic_gain: later_sale_proceeds - contract_purchase_price
+  - separated_gain: deferred_wage + capital_gain
+expected:
+  deferred_wage: 400000
+  capital_basis: 1000000
+  capital_gain: 300000
+  capital_tax: 66000
+  economic_gain: 700000
+  separated_gain: 700000
+```
+
+If instead **all Article 10 conditions are proved**, assume the same 600,000 contract price and 1,300,000 sale proceeds, with exercise in 2024 and sale after the full two-year holding period in 2026. The capital amount is 700,000 and tax 154,000. The intermediate 1,000,000 exercise value does not become the basis for this qualifying sale. This is not a claim that the two regimes have the same eligibility, dates, employer charges or total tax. [Article 10][option-act]; [published conditions][option-form]
+
+```oa-check
+name: Iceland qualifying employee option capital gain uses original purchase price
+inputs:
+  contract_purchase_price: 600000
+  sale_proceeds: 1300000
+  capital_rate: 0.22
+steps:
+  - qualifying_capital_gain: sale_proceeds - contract_purchase_price
+  - capital_tax: qualifying_capital_gain * capital_rate
+expected:
+  qualifying_capital_gain: 700000
+  capital_tax: 154000
+```
+
 ## Ask the client first
 
 - What are the employee identity, age, residence, work location, wage period and pay date?
 - What contract, collective agreement, pension fund and contribution arrangement apply?
 - Which cash wages, benefits, reimbursements and other deductions are supported?
 - For benefits, which availability/use agreements, vehicle values and running costs, housing assessments/days, meal/employee-payment records, signed commuting evidence, annual reimbursement totals and loan benchmarks establish the classification and valuation?
+- For equity, which actual instrument, grant/exercise/ownership-change records, market and cost basis, prior plan/project confirmations, eligibility and reporting records prove the Article 9, 10 or 10a branch?
 - What current bracket, own-credit and spouse-credit instructions and prior usage apply?
 - Which prior returns, payment claims, bank payments and pension statements require reconciliation or correction?
 
@@ -540,7 +602,7 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
-The following primary sources were accessed on 23 October 2026. This pass checked the contribution-base and penalty corrections, the stated 2026 benefit valuation methods and example inputs; it does not attest to all remaining scope or operational questions.
+The following primary sources were accessed on 23 October 2026. This pass checked the contribution-base and penalty corrections, the stated 2026 benefit and option methods and example inputs; it does not attest to all remaining scope or operational questions.
 
 | Official source | Read on |
 | --- | --- |
@@ -570,6 +632,9 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [Regulation 591/1987, withholding exclusions and travel evidence](https://files.reglugerd.is/pdf/0591-1987/current) | 2026-10-23 |
 | [Central Bank, monthly bank/general-rate portal; no permanent rate asserted][loan-benchmarks] | 2026-10-23 |
 | [2026 wage statement, expressly for 2025 wages; layout only][benefit-wage-form] | 2026-10-23 |
+| [Current Income Tax Act, option classification, basis and startup definition][option-act] | 2026-10-23 |
+| [Innovation Act 152/2009, Articles 3 and 5](https://www.althingi.is/lagas/nuna/2009152.html) | 2026-10-23 |
+| [RSK 2.085, 5 November 2024; statutory computation discrepancy retained][option-form] | 2026-10-23 |
 
 The authority's linked [2026 Gazette entry](https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f) returned HTTP 403 in the web reader. The six-page official employer-notice reproduction and current authority text were read; no successful Gazette retrieval is claimed. This addition is outside the earlier country-review snapshots and needs independent source review. Actual benefit classification, values, contractual pension terms, changing monthly loan/travel benchmarks, insufficient-cash settlement and accepted reporting remain case/operational evidence requirements. Weekly rounding, A1 and other specialist gaps remain open.
 
@@ -577,3 +642,5 @@ The authority's linked [2026 Gazette entry](https://island.is/stjornartidindi/nr
 [benefit-guidance]: https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/
 [loan-benchmarks]: https://sedlabanki.is/gagnatorg/vextir
 [benefit-wage-form]: https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf
+[option-act]: https://www.althingi.is/lagas/nuna/2003090.html
+[option-form]: https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf

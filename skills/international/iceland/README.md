@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.19
+version: 0.20
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -17,7 +17,7 @@ partial:
   IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
   VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment and stated property registration/construction methods have eleven controls; other special schemes, property start-date/valuation disputes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
-  PR: "Twelve arithmetic controls, levy/PAYE penalty distinction and stated 2026 benefit valuation methods added; special workers, A1, disputed benefit/contractual bases, weekly rounding, operational and independent review remain open."
+  PR: "Fourteen arithmetic controls, levy/PAYE penalty distinction, stated 2026 benefits and Article 9/10/10a option classification, valuation, separate tax dates and basis methods added; special workers, A1, disputed benefit/contractual bases, form conflicts, weekly rounding, operational and independent review remain open."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
   XB: "2026 cross-border screening draft added; residence boundary, treaty-specific PE/attribution and relief beyond the UK company/full-year individual credit examples, assessment categories outside the added annualisation and positive-tax credit methods, exit cases outside the added company/asset migration method, operational checks and independent review remain open."
 ---
@@ -73,3 +73,5 @@ The independent delta review identified two clarifications: the authority-approv
 The [independent country-delta review](../../../docs/research/2026-10-23-iceland-incentives-sector-restructuring-review.md) covers the incentives, three financial-sector charges, restructuring and property-VAT additions at `a82c59b0`, the individual-relief follow-on at `c6ada9af`, and the verified corrections at `9de5b54d`. It closes that source-review scope with all 56 controls passing. It complements the earlier core-pack review and does not attest to unchanged legacy content, live filing, every remaining specialist case or named-accountant review. All seven domains remain partial and issue #404 remains open.
 
 A subsequent local country pass, based on published `ad570bbc`, adds 2026 employee-benefit classification, vehicle value/running-cost rules, ordinary versus owner housing, food, commuting, fitness, loan benchmarks and reporting controls. Six new arithmetic blocks supplement the prior 56. Social contributions refers to the same valuation method while preserving separate pension/levy bases. The prior review does not cover this new delta; it stays local for independent country review and does not establish complete payroll coverage.
+
+The same local delta adds Article 9 ordinary option wage measurement, income-tax deferral, exercise-year employer levy/no immediate option PAYE, later capital basis and annual reporting; it distinguishes the cumulative Article 10 employee plan and Article 10a startup alternative. Two controls compare the ordinary wage/capital split with qualifying capital-plan sale-minus-original-price treatment. The individual Guide links the same method. The RSK 2.085 computation discrepancy and the pre-2014 car-base conflict remain explicit. There are now 64 country controls; arithmetic does not settle eligibility, disputed administration or the remaining country gaps. See the [new source preparation record](../../../docs/research/2026-10-23-iceland-payroll-benefits-sources.md); independent review of this delta is pending.
