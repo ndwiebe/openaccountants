@@ -9,17 +9,17 @@ description: >
   foreign contractors, royalties, dividends, interest, remote work, branches
   and international moves. This source-cited draft flags inconsistent official
   residence summaries. It does not complete treaty corridors, foreign-tax
-  credits, individual final assessments, exit-tax computations or live filing
+  credits, individual final assessments, all exit-tax cases or live filing
   procedures. Independent Icelandic legal review remains required before reliance.
 jurisdiction: IS
 category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Iceland cross-border tax screening v0.1
+# Iceland cross-border tax screening v0.2
 
 ## Who this applies to
 
@@ -47,6 +47,8 @@ These are **2026 national statutory rates before exclusions or relief**, not a u
 | Legal entity's Article 3(7) share/dividend income | 20%, before applicable relief | [Article 70(7)(b)][law] |
 | Legal entity's taxable interest | 12%; check Article 3(8) exclusions first | [Article 70(8)(b)][law] |
 | Domestic construction/installation PE duration | Longer than six months; other domestic and treaty tests also require review | [Article 3a(2)][law] |
+| Qualifying company migration payment deferral | Up to five calendar years; annual principal at least one fifth of original deferred sum; 1 November due, final fifteen days later | [Articles 51(5)–(6), 56a][law] |
+| Migration security/report screens | Above 50 million, subject to exceptions; collection-assistance test can require security at any amount; report before 1 October | [Article 51(7)][law] |
 | Individual resident-like treatment screen | Qualifying EEA/EFTA/Faroe residence and at least 75% of total annual income from Iceland; further requirements apply | [Article 70a][law] |
 
 The dividend and interest guidance identifies 21% and 13% as **2024 exceptions**. Do not import them into 2026. [Dividend guidance][dividends]; [Interest guidance][interest]
@@ -97,7 +99,23 @@ Retain the exact treaty, effective dates, recipient residence, income article, e
 
 For foreign income of Iceland residents, collect gross receipts, foreign assessments, withholding, payment/refund evidence and conversion support. The actual treaty's exemption/credit mechanism and domestic relief require review before netting foreign tax against Icelandic tax. A complete foreign-credit method is outside this draft.
 
-For company/asset moves, Article 56a refers to Article 51(3)–(9)'s cross-border computation, filing, deferral, instalment and security rules. Its opening language is not a blanket tax-free-move rule. Preserve tax bases, values, destination and retained Icelandic activity for the separate computation. Individual departure and gain/exit consequences require transaction-specific review too. [Articles 51, 56a][law]
+### Company/asset migration and deemed realisation
+
+Article 56a addresses a qualifying company's residence or asset move to another EEA state, an EFTA Convention state or the Faroe Islands, where company law permits it. A low-tax destination requires sufficient evidence of genuine business under Article 57a. Article 51(9) also requires the treaty/international-agreement authority to obtain necessary information; prove that condition before invoking this regime. Its reference to Article 51(3)–(9) imports the computation and payment rules below; the opening language does not exempt all unrealised gains. Splits and sole-trader incorporation have their own qualifying conditions under Articles 52 and 56. [Articles 51–56a][law]
+
+**Valuation workpaper.** Fix the relevant closing date and obtain expert market valuations certified by the company's licensed auditors. List operating assets, shares, intangibles, other assets and eligible liabilities; reconcile market values to tax bases after prior depreciation. Article 51 permits excluding assets retained in Iceland that could belong to the merged company's **registered Icelandic PE**. Evidence that retained property meets that condition is required. Liabilities must satisfy Article 75; book pension or deferred-income-tax provisions are not automatically allowable liabilities. [Article 51(3)–(4)][law]
+
+For mergers, **RSK 4.27** provides two controls: fair-value net assets less tax net assets, and the sum of category differences. Reconcile both to the same base, then apply the company's applicable Article 71 rate. Keep valuation and tax-basis adjustments separate from book equity. This published form is dated 31 August 2021; confirm its accepted current route and any additional migration-specific report before submission. [RSK 4.27](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf)
+
+**Assessment and payment.** For Article 51's confirmed cross-border merger, the statutory assessment period is within two months of confirmation notified to the company registry, with payment due ten days later. Apply the incorporated rule to the actual Article 56a transaction with professional/authority confirmation of the event and date. Do not substitute the ordinary annual corporate-return deadline. [Article 51(4), Article 56a(2)][law]
+
+**Requested deferral.** Article 51 permits deferring the due tax principal for up to five calendar years. It bears the Central Bank's published ordinary non-indexed claim interest through payment; the request requires the earlier returns and the relevant current-year part-period return. Annual principal payment after the merger must be at least one fifth of the original deferred amount, due 1 November with a final due date fifteen days later. Ordinary late interest applies if unpaid at the final date. This is interest-bearing collection relief, not cancellation of the taxable gain. [Article 51(5)–(6)][law]
+
+**Security and continuing reports.** Article 51(7) requires bank security above 50 million, subject to its information-access exception. It separately requires security regardless of amount where the destination lacks the specified collection-assistance agreement. Information access and collection assistance are different treaty checks. Retain the security decision covering principal, interest and costs. The receiving company must provide annual accounts and the required transferred-asset report **before 1 October** while deferral continues. Missing the report makes the deferred amount due from the next due date; moving assets/rights/obligations outside the qualifying area also ends deferral from the next due date. [Article 51(5)–(9)][law]
+
+For a company retaining Icelandic residence but moving assets, Article 56a places the transfer-tax liability on the Icelandic transferor. Incoming mergers also need the Article 51(8) basis rule: a foreign market-value uplift is not automatically an Icelandic step-up without proof of the corresponding foreign tax settlement. Keep the transaction documents, continuing PE records, valuation and basis register, returns, assessment, deferral/security decision, annual reports and payment/interest ledger together. [Articles 51 and 56a][law]
+
+**Remaining boundary:** ordinary individual departure, transactions outside the qualifying regime, disputed valuations, losses and treaty-specific outcomes need their own supported calculation. This workpaper does not establish universal exit-tax treatment for every person or destination.
 
 For actual or prospective double taxation, prepare a treaty MAP screen with years, adjustments and domestic proceedings. Agreement is not guaranteed. Check the treaty's deadline and preserve domestic remedy deadlines separately. [MAP guidance][map]
 
@@ -165,6 +183,34 @@ expected:
   surcharge: 20000
 ```
 
+### 4. Qualifying migration, retained PE and deferred principal
+
+Assume the statutory conditions and registered Icelandic PE exclusion are established. An asset moved out has market value 200 million and adjusted tax basis 120 million; another asset with market value 100 million and basis 70 million remains within the qualifying registered Icelandic PE and is excluded. No liability, other gain/loss, loss-relief or valuation adjustment applies. At an established 20% company rate, exit base is **80 million** and tax **16 million**, not 22 million on both assets. If the authority grants deferral of that whole principal, annual principal must be at least **3.2 million**; separately add the applicable interest. [Articles 51(3)–(7), 56a and 71][law]
+
+```oa-check
+name: Iceland qualifying company migration with retained registered PE
+inputs:
+  moved_market_value: 200000000
+  moved_adjusted_tax_basis: 120000000
+  retained_pe_market_value: 100000000
+  retained_pe_adjusted_basis: 70000000
+  established_company_rate: 0.20
+steps:
+  - moved_gain: moved_market_value - moved_adjusted_tax_basis
+  - excluded_pe_difference: retained_pe_market_value - retained_pe_adjusted_basis
+  - migration_base: moved_gain
+  - assessed_tax: migration_base * established_company_rate
+  - minimum_annual_principal: assessed_tax / 5
+expected:
+  moved_gain: 80000000
+  excluded_pe_difference: 30000000
+  migration_base: 80000000
+  assessed_tax: 16000000
+  minimum_annual_principal: 3200000
+```
+
+This block establishes neither eligibility for deferral nor the security result. Even below 50 million, missing collection assistance can require security. Annual reports, interest and acceleration conditions still apply.
+
 ## Ask the client first
 
 - What are the individual's domicile, rolling presence/absence dates, departure and foreign-tax evidence, or the entity's registration, legal form and actual management?
@@ -182,7 +228,7 @@ For professional review of the facts, [contact OpenAccountants](https://www.open
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local direct retrieval returned HTTP 403; the statutory text was read through the web reader. Administrative residence, historic-rate and instrument-exemption discrepancies are identified above. Independent Icelandic legal review, treaty corridors, PE regulation reconciliation, foreign credits, final individual assessments, exit computations and operational filing remain open. Invented example inputs are not client facts. This is partial XB coverage.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local direct retrieval returned HTTP 403; the statutory text was read through the web reader. Administrative residence, historic-rate and instrument-exemption discrepancies are identified above. Independent Icelandic legal review, treaty corridors, PE regulation reconciliation, foreign credits, final individual assessments, exit cases outside the stated statutory method and operational filing remain open. Invented example inputs are not client facts. This is partial XB coverage.
 
 | Official source | URL | Read on |
 |---|---|---|
@@ -197,6 +243,7 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local
 | Skatturinn, royalties and rights | [Guidance][royalties] | 2026-10-23 |
 | Skatturinn, treaty exemption procedure | [Procedure][exemption] | 2026-10-23 |
 | Skatturinn, treaties and MAP | [Treaties][treaties], [MAP][map] | 2026-10-23 |
+| RSK 4.27, merger base reconciliation; current-route check required | [Published form](https://www.skatturinn.is/media/rsk04/rsk_0427.is.pdf) | 2026-10-23 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [withholding]: https://www.althingi.is/lagas/nuna/1987045.html

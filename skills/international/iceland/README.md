@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.5
+version: 0.6
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -14,12 +14,12 @@ covered_by:
   VAT: iceland-vat
 partial:
   IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; detailed foreign relief, special regimes, source conflicts, live filing and professional review remain open."
-  IT-CORP: "2026 primary-source workpaper method added; full interest-cap, foreign-credit, sector/incentive/minimum-tax applicability, restructurings, operational and independent legal review remain open."
+  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap method and CFC statutory screen added; negative-profit financing, CFC implementation, foreign credits, sector/incentives, restructurings, operational and independent review remain open."
   VAT: "Five arithmetic controls and source records added; mixed attribution, property adjustment, special schemes, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; 2026 A1 rate, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
-  XB: "2026 cross-border screening draft added; residence boundary, treaties, PE regulations, foreign credits, final assessments, exit computations, operational checks and independent review remain open."
+  XB: "2026 cross-border screening draft added; residence boundary, treaties, PE regulations, foreign credits, final assessments, exit cases outside the added company/asset migration method, operational checks and independent review remain open."
 ---
 
 # Iceland tax pack
@@ -47,3 +47,5 @@ For the new transfer-pricing draft, read 23 October 2026: [Income Tax Act 90/200
 The seven domain Guides now have the deep-tax section order and at least two recomputable examples each. The 23 October pass preserves the existing VAT, payroll and individual methods, adds their executable examples and source records, and replaces the stale social-contribution method. It corrects the employer-pension levy base, historical A1 reuse, the pension payment cycle and the distinction between PAYE surcharges and levy interest. This is preparation for a whole-country independent review, not professional attestation or completion of issue #404.
 
 Remaining work is declared in `partial` above. Source access or passing arithmetic does not establish that every source conflict, special regime or live filing path has been resolved. Follow Michael's country batching instruction: finish and review the country batch locally before its next push.
+
+The local finance/migration extension adds the Article 57b positive-profit interest method, CFC statutory screening and the Article 51/56a company/asset migration valuation, deferral, security and reporting method. The migration example excludes a supported retained Icelandic PE and separates interest from principal. No taxpayer-specific entitlement or professional review is claimed.

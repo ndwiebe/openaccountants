@@ -15,14 +15,14 @@ jurisdiction: IS
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.2
+# Iceland corporate income tax v0.3
 
 ## Who this applies to
 
@@ -45,6 +45,7 @@ Amounts are ISK. The rates below concern the ordinary statutory computation, bef
 | Eligible closing business receivables/loans; inventory | Optional reductions up to 5%; reverse previously expensed prior-year reductions | [Article 31(3)–(4)][law] |
 | Immediate expensing of an asset or asset group | Acquisition cost **below 600,000**, not equal to it | [Article 39][law] |
 | Ordinary office equipment depreciation | 20%–35% of the statutory depreciation base | [Article 37(4)(a)][law] |
+| Related-party financing, absent an exception | Excess above 100,000,000 limited to 30% of statutory profit; first 100,000,000 retained subject to ordinary deductibility | [Article 57b][law]; [2020 amendment](https://www.althingi.is/altext/stjt/2020.033.html) |
 | Ordinary domestic group-tax ownership screen | At least 90%, with approval and further conditions | [Article 55][law] |
 | 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; current guidance describes eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
 
@@ -96,7 +97,38 @@ Separate share-loss restrictions, foreign CFC losses and pre-group losses. Merge
 
 Article 55 group taxation requires authority approval, at least 90% ownership, the same accounting year and all-year ownership subject to the stated new-entity/closure exceptions. It normally lasts at least five years; the statute also restricts restarting after termination. Apply at least **30 days before the applicable return deadline**. Current-year results are settled before brought-forward losses; losses from before group taxation remain usable only in their originating company. Do not consolidate separate returns merely because management prepares group accounts. [Article 55][law]
 
-For related-party loans, separately apply arm's-length pricing and Article 57b. The latter addresses related-party interest/discounts above ISK 100 million and a 30% statutory profit measure. Its domestic-group, equity-ratio and financial-entity exceptions require evidence; statutory profit differs from an unadjusted EBITDA label. No complete interest-cap calculation is asserted here. See the [transfer-pricing method](is-transfer-pricing.md). [Articles 57, 57b][law]
+### 7. Related-party interest limitation
+
+First establish that a financing cost is otherwise deductible under Articles 31 and 49, then apply arm's-length terms under Article 57 and the separate Article 57b limitation. The limitation covers related-party interest and discounts; do not net unrelated interest income against that gross pool without a legal basis. Keep principal, counterparty, related status, dates, rates, discounts and charges in the financing schedule. See the [transfer-pricing method](is-transfer-pricing.md). [Articles 31, 49, 57–57b][law]
+
+For the **amount above ISK 100 million**, deduction is limited to 30% of Article 57b profit. The first 100 million is not made subject to the cap merely because the pool exceeds it. This reading is confirmed by the enacted 2020 amendment and its official explanation: interest 300 million and statutory profit 400 million produce allowed interest **220 million** and disallowed interest **80 million**. [Article 57b][law], [Act 33/2020, Article 6](https://www.althingi.is/altext/stjt/2020.033.html), [bill 626/150, section 3.5](https://www.althingi.is/altext/150/s/0626.html)
+
+Prepare these stages:
+
+1. **Statutory profit:** start from annual-accounts profit; add income tax, the finance-item adjustment, depreciation and fixed-asset write-downs. Subtract within-group equity-method income and add distributed dividends from that same company where paid. Reconcile every signed adjustment to the accounts; a management “EBITDA” label is insufficient.
+2. **Domestic-group exception:** establish Article 55 approval or eligibility and that every company in the relevant group is Iceland-resident. One resident lender alone is insufficient.
+3. **Equity exception:** establish that the taxpayer's equity ratio is no more than two percentage points below its group's ratio. Use cost rather than equity-method carrying value for a group holding where Article 57b requires it. The exception does not apply to an equity increase less than six months before balance-sheet date reversed by a corresponding decrease less than six months afterwards.
+4. **Financial-sector exception:** document whether the taxpayer falls within the statutory financial undertaking, insurer or specified owned similar-business category; do not exempt every group finance company by name.
+5. **If no exception:** deduct the otherwise-eligible first 100 million plus the allowed part of the excess, capped at the actual interest pool. Record the disallowed amount as a tax adjustment. Article 57b states that excess is not deductible and supplies no carryforward permission; do not create an automatic deferred interest deduction.
+
+[Article 57b(1)–(3)][law]
+
+For a nonnegative established statutory profit, the arithmetic control is:
+
+```text
+excess_pool = max(0, related_interest_and_discounts − 100,000,000)
+allowed = min(pool, 100,000,000) + min(excess_pool, statutory_profit × 30%)
+disallowed = pool − allowed
+```
+
+A loss/negative statutory-profit case needs a documented local interpretation before a final calculation; this positive-profit control does not resolve that boundary.
+
+### 8. Controlled foreign holdings
+
+Article 57a's low-tax comparison is **less than two thirds of the Icelandic tax that would apply to the foreign entity's profit**, not simply a country's headline rate. Establish direct/indirect ownership or control throughout the year: the provision addresses at least half held by Icelandic taxpayers or management control during the year. Trace the taxpayer's proportionate interest and recompute the foreign profit under Icelandic rules, without waiting for distribution. [Article 57a][law]
+
+Test the exceptions from evidence: a qualifying treaty/information-exchange case whose income is not mainly passive, or qualifying EEA/EFTA/Faroe establishment carrying on genuine business with the required information access or taxpayer disclosure. Location alone does not establish genuine activity. Ring-fence losses to that entity's profits and retain adequate loss support; do not use them against unrelated Icelandic operations. Keep a previously taxed-income/distribution ledger to avoid taxing the same included profit again, subject to Article 57a's excess-distribution rule. The implementing regulation's substance and detailed foreign-tax-relief work remain part of the independent review. [Article 57a][law]
+
 
 ## Deadlines and filing
 
@@ -133,7 +165,7 @@ Article 114 links assessment late interest to the Central Bank rate. Regulation 
 
 ## Cross-border points
 
-Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Treaty corridors and full foreign-credit limitations remain open. [Articles 2, 119][law]
+Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Treaty corridors and full foreign-credit limitations remain open. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
 
 For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
 
@@ -237,6 +269,49 @@ expected:
   assessment_balance: 200000
 ```
 
+### 5. Related-party financing, official positive-profit illustration
+
+Assume all 300 million of related-party interest/discounts is otherwise eligible, statutory profit is 400 million, and no exception applies. The official amendment explanation's result is 220 million deductible, 80 million disallowed. [Bill 626/150, section 3.5](https://www.althingi.is/altext/150/s/0626.html); current [Article 57b][law]. This is a deduction adjustment, not a claim that 80 million itself is tax due.
+
+```oa-check
+name: Iceland related-party interest, first 100 million plus capped excess
+inputs:
+  related_interest: 300000000
+  statutory_profit: 400000000
+  protected_slice: 100000000
+steps:
+  - excess_pool: max(0, related_interest - protected_slice)
+  - profit_capacity: statutory_profit * 0.30
+  - allowed_interest: min(related_interest, protected_slice) + min(excess_pool, profit_capacity)
+  - disallowed_interest: related_interest - allowed_interest
+expected:
+  excess_pool: 200000000
+  profit_capacity: 120000000
+  allowed_interest: 220000000
+  disallowed_interest: 80000000
+```
+
+### 6. Financing threshold and equity-ratio boundaries
+
+With otherwise eligible interest exactly 100 million, no amount enters the capped excess pool. Separately, taxpayer equity ratio 28% and group ratio 30% meet the two-percentage-point numeric boundary; 27.9% does not. The latter is only an arithmetic screen: timing, valuation and the other conditions still require evidence. [Article 57b][law]
+
+```oa-check
+name: Iceland interest exact threshold and equity-ratio distance
+inputs:
+  related_interest: 100000000
+  taxpayer_ratio: 28
+  lower_ratio: 27.9
+  group_ratio: 30
+steps:
+  - excess_pool: max(0, related_interest - 100000000)
+  - boundary_distance_points: group_ratio - taxpayer_ratio
+  - failing_distance_points: group_ratio - lower_ratio
+expected:
+  excess_pool: 0
+  boundary_distance_points: 2
+  failing_distance_points: 2.1
+```
+
 ## Ask the client first
 
 - What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
@@ -254,7 +329,7 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, full interest-cap/foreign-credit methods, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, detailed CFC implementation/foreign-credit methods, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -266,6 +341,8 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | Skatturinn, 30 January 2026 corporate filing notice | [Filing notice][filing-notice] | 2026-10-23 |
 | Regulation 1370/2025, 2026 payment cycle | [Regulation][payment-reg] | 2026-10-23 |
 | Skatturinn, corporate advance-tax guidance | [Advance payments][advances] | 2026-10-23 |
+| Act 33/2020, Article 6, excess-interest wording | [Enacted amendment](https://www.althingi.is/altext/stjt/2020.033.html) | 2026-10-23 |
+| Bill 626/150, section 3.5, positive-profit interest calculation | [Official explanation](https://www.althingi.is/altext/150/s/0626.html) | 2026-10-23 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
