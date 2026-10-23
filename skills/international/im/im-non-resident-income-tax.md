@@ -10,10 +10,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 ---
 
-# Isle of Man non-resident individual income tax v0.2
+# Isle of Man non-resident individual income tax v0.3
 
 ## Who this applies to
 
@@ -78,6 +78,18 @@ Article 18 contains a separate government-service rule. For remuneration includi
 
 Article 23 denies benefits where obtaining them was one of an arrangement's principal purposes, unless granting them accords with the relevant treaty provisions' object and purpose. Its competent-authority relief mechanism requires a request and assessment; residence documentation alone does not resolve every entitlement question. [Article 23][treaty]
 
+### UK corridor: employment and the 183-day exception
+
+Article 14(1) permits taxation where employment is exercised, subject to its specified exceptions. Article 14(2) reserves taxation to the residence territory only when **all three conditions** hold:
+
+- Presence in the work territory totals no more than 183 days in any twelve-month period commencing or ending in the fiscal year concerned.
+- The employer paying, or on whose behalf remuneration is paid, is not resident in the work territory.
+- That remuneration is not borne by the employer's PE there.
+
+[2018 agreement, Article 14][treaty]. Exactly 183 days satisfies the presence limb; it does not establish the other two conditions. A calendar-year reset does not replace the treaty's twelve-month test. Collect travel records, employer residence, contracts and payroll/recharge evidence. Apply this after treaty residence and entitlement are established, alongside the payroll-clearance procedure above.
+
+Directors' fees have their own Article 15 rule. Article 14(3) separately addresses employment aboard ships/aircraft in international traffic. Offshore activities require Article 21 review. Do not apply this ordinary-employment checklist to those categories without classification. [Articles 14–15 and 21][treaty]
+
 ### Disputed treaty treatment
 
 Article 25(1) permits presenting a case to either competent authority within **three years of the first notification** of the action producing treaty-inconsistent taxation, independently of domestic remedies. Record that notification and protect domestic appeal deadlines separately. This Guide does not establish that a treaty request suspends payment or collection. [Article 25][treaty]
@@ -138,6 +150,25 @@ expected:
   amount_to_reconcile_for_repayment: 2520
 ```
 
+### 4. Aggregate visits before testing the employment exception
+
+Assume non-overlapping visits of 70, 65 and 50 days all fall within one relevant twelve-month period. Their total is 185 days, exceeding 183 by two. The presence limb fails for that assumed period; a complete conclusion still requires the remaining treaty and domestic analysis. This example does not prescribe a legal day-count convention or determine residence.
+
+```oa-check
+name: Isle of Man UK employment aggregate presence
+inputs:
+  first_visit: 70
+  second_visit: 65
+  third_visit: 50
+  treaty_presence_limit: 183
+steps:
+  total_presence: first_visit + second_visit + third_visit
+  days_over_limit: total_presence - treaty_presence_limit
+expected:
+  total_presence: 185
+  days_over_limit: 2
+```
+
 ## Ask the client first
 
 - What establishes non-residence, and on what dates did residence change?
@@ -153,7 +184,7 @@ Read 23 October 2026. The rates, budget, receiving-income, departure and employm
 - [Current and historical rates][rates]; [Budget 2026][budget].
 - [Receiving Manx-source income][receiving]; [Leaving the Island][leaving].
 - [Making payments to non-residents][payments]; [Non-resident employees][employment].
-- [HMRC Isle of Man treaty collection][uk]; [2018 agreement, Articles 4, 17, 18, 23 and 25][treaty]; [2024 arbitration memorandum][mou]. The treaty text was retrieved from legislation.gov.uk and cross-checked against HMRC's PDF.
+- [HMRC Isle of Man treaty collection][uk]; [2018 agreement, Articles 4, 14–15, 17–18, 21, 23 and 25][treaty]; [2024 arbitration memorandum][mou]. The treaty text was retrieved from legislation.gov.uk and cross-checked against HMRC's PDF.
 
 Not yet confirmed: residence tests, statutory amendment chain, detailed deductions, additional sanctions and payment deadlines, live forms, treaty-by-treaty entitlement, company/PE rules, foreign-tax credits and wider reporting. Cross-border country coverage remains partial. Existing corporate withholding summaries must not be used to infer individual treatment.
 
