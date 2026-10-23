@@ -21,3 +21,11 @@ Directly retrieved https://www.atk-ks.org/en/transferimi-i-cmimit/ on 23 October
 Added the instruction's loan-balance inclusion and income/expense non-netting rule; loan measurement and form reconciliation remain open. Added the distinction between instruction-permitted physical/electronic delivery as TAK determines and FAQ-described physical submission. This is evidence of guidance, not a tested live filing channel. FAQ master/local-file and request guidance is attributed as administrative guidance without inventing universal annual full-file submission.
 
 A third executable example verifies EUR 220,000 income plus EUR 100,000 expense gives EUR 320,000 reportable-category total rather than EUR 120,000 net. No independent legal review or full amendment verification is claimed.
+
+## Group services and adjustment range, v0.4
+
+Read Instruction 02/2017 Article 24(1)–(11), including the eligibility exclusions, actual-service/benefit and duplication tests, cost allocation and specific supporting records. Compared Article 24(9)'s three language columns: the English “overdrafts” wording is inconsistent with the Albanian and Serbian pass-through/transitional-cost wording. Recorded the translation limitation and did not extend the markup to disputed reimbursements. Current TAK FAQ question 37 corroborates the 7% figure, but not universal eligibility.
+
+Added the instruction's cost-base 7% simplified-service markup, scope and exclusions, documentation and distinction from a general safe harbour. Read Article 27(2) for the outside-range median adjustment and alternative-point exception; did not assert the old procedural approval text is fully reconciled to current administration law.
+
+Fourth executable example: EUR 80,000 eligible shared pool times 25% supported recipient allocation equals EUR 20,000; 7% markup equals EUR 1,400; charge EUR 21,400. Eligibility and tax treatment are explicit assumptions; arithmetic is not source verification or professional attestation. Independent review remains outstanding.

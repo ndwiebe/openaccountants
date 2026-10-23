@@ -12,10 +12,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 ---
 
-# Kosovo transfer pricing v0.3
+# Kosovo transfer pricing v0.4
 
 ## Who this applies to
 
@@ -47,6 +47,24 @@ Article 28 allows taxable profit to include profit that would have arisen betwee
 The statute lists comparable uncontrolled price, resale price and cost-plus methods, and permits transactional net margin and profit split in the specified circumstances. Its selection criteria address method strengths/weaknesses, transaction nature and functions/assets/risks, reliable information and comparability including reliable adjustments. Explain the selected method and rejected alternatives against those criteria; a group policy or invoice label is not the analysis. [Article 28(3)–(4)][law]
 
 A practical workpaper should connect the transaction description, functional analysis, comparable evidence, adjustments, selected result and ledger reconciliation. These are preparation steps supporting the statutory requirements, not a claim that this draft supplies a complete local-file checklist or a prescribed markup. The instruction-based checklist below develops documentation content; amendment reconciliation and adjustment-range rules remain open before an audit response.
+
+### Group services: eligibility before the markup
+
+Instruction Article 24(1) requires an actual service, economic benefit or expected benefit to the recipient, willingness of an independent party to pay or perform it itself, and a comparable market price. Keep deliverables and evidence of the recipient's benefit alongside the contract and invoice. Merely duplicating an existing service does not satisfy the group-service test; paragraph 2 describes a limited temporary-duplication exception connected to reorganisation and business-decision risk. [Instruction, Article 24(1)–(2)][instruction]
+
+Where individual services can be identified, test their prices individually. Shared services that cannot be separately identified for each recipient require reasonable allocation among actual or expected beneficiaries. Explain the service, benefits and measurable allocation variables under Article 24(3)–(5); a group-wide percentage without that evidence is insufficient. [Instruction, Article 24(3)–(5)][instruction]
+
+For the instruction's simplified low-value service approach, the activities must be supportive rather than core business, without unique valuable intangibles or significant risk assumption/control. The exclusions include research, development, production, sales, marketing, financial transactions, insurance and reinsurance. An inexpensive service is not automatically an eligible low-value service. [Instruction, Article 24(6)–(7)][instruction]
+
+The calculation starts with annual costs by service category, separates costs for services supplied solely to one recipient, and allocates shared costs to beneficiaries. Article 24(9) specifies a **7% markup on the relevant cost base**, excluding the pass-through costs described there; it is not 7% of revenue. The English translation calls those excluded amounts “overdrafts”, while the Albanian and Serbian passages describe transitional/pass-through expenditure. Resolve any disputed classification against the authoritative text rather than automatically marking up every reimbursement. [Instruction, Article 24(8)–(9)][instruction]
+
+The simplified markup does not need a benchmarking study under paragraph 9, but eligibility and documentation remain necessary. Paragraph 10 says TAK need not accept the simplified approach above 7% and can require full functional and comparability analysis. TAK's current FAQ question 37 also states 7%; neither source makes it a universal markup for management, financing or IP charges. [Instruction, Article 24(9)–(10)][instruction]; [TAK FAQ][faq]
+
+Keep the service categories, beneficiary identities, eligibility and benefit explanations, allocation-key rationale, written agreements and amendments, itemised costs, markup calculation and recipient allocations available to TAK. This is the specific simplified-service evidence required by Article 24(11), in addition to the general documentation analysis. The instruction predates the 2019 law; full amendment reconciliation and independent review remain open. [Instruction, Article 24(11)][instruction]
+
+### Adjustment range
+
+Instruction Article 27(2) permits an adjustment to the market-range median when the controlled result is outside that range, unless TAK or the taxpayer establishes that the circumstances justify another point. A median is not automatically a required price for every transaction or a universal profit percentage. Preserve the comparable selection, reliability adjustments, range and reasons for any alternative point. The instruction's approval and statistical-range procedures still require current procedural reconciliation. [Instruction, Article 27][instruction]
 
 ### Documentation file under Instruction 02/2017
 
@@ -145,6 +163,26 @@ expected:
   gross_transaction_total: 320000
   incorrect_net_total: 120000
   understatement_from_netting: 200000
+```
+
+### 4. Eligible low-value shared service allocation
+
+Assume the Article 24 eligibility and benefit tests are met, the fully reconciled shared cost pool is EUR 80,000 after removing direct-recipient and excluded pass-through items, and a supported allocation key assigns 25% to the Kosovo recipient. The allocated cost is EUR 20,000; the instruction's 7% markup is EUR 1,400, giving a EUR 21,400 charge. This calculation does not establish eligibility, deductibility, VAT or withholding treatment.
+
+```oa-check
+name: Kosovo qualifying low value shared service
+inputs:
+  eligible_shared_costs: 80000
+  supported_recipient_share: 0.25
+  markup_rate: 0.07
+steps:
+  allocated_cost: eligible_shared_costs * supported_recipient_share
+  markup: allocated_cost * markup_rate
+  service_charge: allocated_cost + markup
+expected:
+  allocated_cost: 20000
+  markup: 1400
+  service_charge: 21400
 ```
 
 ## Ask the client first
