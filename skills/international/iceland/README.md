@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.17
+version: 0.18
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -14,7 +14,7 @@ covered_by:
   VAT: iceland-vat
 partial:
   IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper and full-year positive-tax individual credit method added; other individual relief cases, special regimes, source conflicts, live filing and professional review remain open."
-  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added locally with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
+  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
   VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment and stated property registration/construction methods have eleven controls; other special schemes, property start-date/valuation disputes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
@@ -60,7 +60,7 @@ The review’s primary-source clarifications also establish the inclusive 700,00
 
 The next local country pass adds the approved R&D credit method, its 2026 amendment, signed project costs, purchased-cost and related-applicant ceilings, public-aid cumulation, approval/claim sequence, refundable balance and surcharge base. Four additional controls are preparation pending independent country review. This extension is not included in the prior published source-review snapshot and does not establish complete corporate coverage.
 
-The same unpublished country pass adds the financial remuneration, additional-profit and bank-liability tax methods, separate bases and deductions, filing/payment controls and three further arithmetic checks. It preserves special classification/exception and live-filing limits; the previous source review does not cover this extension.
+The same 23 October country pass adds the financial remuneration, additional-profit and bank-liability tax methods, separate bases and deductions, filing/payment controls and three further arithmetic checks. It preserves special classification/exception and live-filing limits; the previous source review does not cover this extension.
 
 The same country delta now adds conditional domestic mergers/splits and sole-trade incorporation, separate cumulative loss-transfer conditions, continued tax/share bases despite accepted book revaluation, formation versus document-lodging dates and three further controls. The individual Guide refers sole-trader incorporation to that workpaper. Atypical structures, disputed valuations/losses, live procedure and independent review remain open.
 
@@ -68,4 +68,6 @@ The local VAT extension distinguishes voluntary commercial-rent registration fro
 
 The resident-relief extension adds a full-year individual progressive-tax ceiling after personal credit, using current 2026 annual figures and a supported treaty credit branch. The official 2026 return handbook demonstrates the method on 2025 income; its figures are not reused as 2026 parameters. One further control covers foreign tax above/below the ceiling. Multiple-country/category, unused-credit, spouse and part-year cases remain separately open.
 
-The independent delta review identified two clarifications: the authority-approved property guarantee waiver under Regulation 577 Article 5 with Regulation 515 conditions, and the foreign-municipal-tax requirement for Municipal Revenue Act Article 34 relief. The writer added both with sources; these corrections still require the reviewer's confirmation before the country push.
+The independent delta review identified two clarifications: the authority-approved property guarantee waiver under Regulation 577 Article 5 with Regulation 515 conditions, and the foreign-municipal-tax requirement for Municipal Revenue Act Article 34 relief. The writer added both with sources, and the reviewer independently confirmed them at exact corrected snapshot `9de5b54d`.
+
+The [independent country-delta review](../../../docs/research/2026-10-23-iceland-incentives-sector-restructuring-review.md) covers the incentives, three financial-sector charges, restructuring and property-VAT additions at `a82c59b0`, the individual-relief follow-on at `c6ada9af`, and the verified corrections at `9de5b54d`. It closes that source-review scope with all 56 controls passing. It complements the earlier core-pack review and does not attest to unchanged legacy content, live filing, every remaining specialist case or named-accountant review. All seven domains remain partial and issue #404 remains open.
