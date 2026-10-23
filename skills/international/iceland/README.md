@@ -1,21 +1,23 @@
 ---
 jurisdiction: IS
-version: 0.4
+version: 0.5
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: iceland-income-tax
+  IT-CORP: is-corporate-income-tax
   XB: is-cross-border
   TP: is-transfer-pricing
   SC: iceland-social-contributions
   PR: iceland-payroll
   VAT: iceland-vat
 partial:
-  IT-IND: "Existing draft needs current-year primary-source and scope review."
+  IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; detailed foreign relief, special regimes, source conflicts, live filing and professional review remain open."
   IT-CORP: "2026 primary-source workpaper method added; full interest-cap, foreign-credit, sector/incentive/minimum-tax applicability, restructurings, operational and independent legal review remain open."
-  VAT: "Existing draft requires current source, scope and example verification."
-  SC: "Existing draft requires current source, scope and example verification."
-  PR: "Existing draft requires current source, scope and example verification."
+  VAT: "Five arithmetic controls and source records added; mixed attribution, property adjustment, special schemes, operational and independent review remain open."
+  SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; 2026 A1 rate, conflicting annual payment dates, fund-specific and independent review remain open."
+  PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
   XB: "2026 cross-border screening draft added; residence boundary, treaties, PE regulations, foreign credits, final assessments, exit computations, operational checks and independent review remain open."
 ---
@@ -26,11 +28,11 @@ Accountable owner: Michael Cutajar. Assigned writer: ChatGPT under [OWNERS.md](.
 
 | Tax domain | Existing Guide | Status |
 |---|---|---|
-| Individual income tax | [Income tax](iceland-income-tax.md) | Source-cited draft; verification open |
+| Individual income tax | [Income tax](iceland-income-tax.md) | Source-cited draft; stated scope and review gaps open |
 | Corporate income tax | [Corporate income tax](is-corporate-income-tax.md) | Source-cited draft; 2026 method, stated specialist and review gaps open |
-| VAT | [VAT](iceland-vat.md) | Source-cited draft; verification open |
-| Social contributions | [Social contributions](iceland-social-contributions.md) | Source-cited draft; verification open |
-| Payroll | [Payroll](iceland-payroll.md) | Source-cited draft; verification open |
+| VAT | [VAT](iceland-vat.md) | Source-cited draft; stated scope and review gaps open |
+| Social contributions | [Social contributions](iceland-social-contributions.md) | Source-cited draft; stated scope and review gaps open |
+| Payroll | [Payroll](iceland-payroll.md) | Source-cited draft; stated scope and review gaps open |
 | Transfer pricing | [Transfer pricing](is-transfer-pricing.md) | Source-cited draft; independent review and stated gaps open |
 | Cross-border | [Cross-border screening](is-cross-border.md) | Source-cited draft; stated substantive and review gaps remain open |
 
@@ -39,3 +41,9 @@ Formation, the overview and tax optimisation are supplementary and do not establ
 ## Official sources
 
 For the new transfer-pricing draft, read 23 October 2026: [Income Tax Act 90/2003](https://www.althingi.is/lagas/nuna/2003090.html), [Regulation 1180/2014](https://island.is/reglugerdir/nr/1180-2014), [Regulation 766/2019](https://island.is/reglugerdir/nr/0766-2019), and [Skatturinn transfer-pricing guidance](https://www.skatturinn.is/atvinnurekstur/skattskylda/milliverdlagning/). The Guide records additional sources, access methods and administrative discrepancies. This source check does not reverify the legacy Guides.
+
+## Local country-batch validation
+
+The seven domain Guides now have the deep-tax section order and at least two recomputable examples each. The 23 October pass preserves the existing VAT, payroll and individual methods, adds their executable examples and source records, and replaces the stale social-contribution method. It corrects the employer-pension levy base, historical A1 reuse, the pension payment cycle and the distinction between PAYE surcharges and levy interest. This is preparation for a whole-country independent review, not professional attestation or completion of issue #404.
+
+Remaining work is declared in `partial` above. Source access or passing arithmetic does not establish that every source conflict, special regime or live filing path has been resolved. Follow Michael's country batching instruction: finish and review the country batch locally before its next push.

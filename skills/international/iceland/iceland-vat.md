@@ -1,10 +1,10 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.0
+version: 2.1
 jurisdiction: IS
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -18,33 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Figures are for tax year 2026. Alþingi lists bills to amend the VAT Act that were tabled in September 2026; before relying on a rate, threshold or deadline for a period after this skill was written, check the current consolidated Act.
 
-## Source figures
-
-| Figures used below | Status | Official source |
-| --- | --- | --- |
-| 2026; ISK 2,000,000; 24%; 11%; 12-month; one month and five days; 5 April; ISK 4,000,000; 15 February; eight days; seven years; ISK 5,000; 1%; 10%; 30 days; 5,000 kg; 19.35%; 9.91% | Published administrative figures or periods. Apply only under the conditions stated in the method. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
-| 5 February; 1 March; 1 September | Annual and agricultural due dates. | [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) |
-| ISK 10,000; ISK 6,000; ISK 100,000 (input-VAT correction cap); 15 days | Statutory thresholds and periods in Articles 20, 24, 26 and 35. | [VAT Act No. 50/1988](https://www.althingi.is/lagas/nuna/1988050.html) |
-| ISK 100,000; ISK 24,000; ISK 20,000; ISK 4,800; ISK 19,200; ISK 50,000; ISK 5,500; ISK 250,000; ISK 10,000; ISK 2,400; ISK 1,950,000; ISK 12,000; ISK 8,000; ISK 300,000; ISK 11,000; 5 June | Hypothetical inputs or arithmetic outputs in the labelled worked cases, not authority figures. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
-| RSK 5.02 | Official registration form identifier. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
-| 0% | Case-only mathematical output for the zero-rated cases; the zero-rate category still requires its stated conditions. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
-| RSK 10.24 | Official foreign-service VAT report identifier. | [Skatturinn form RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) |
-| RSK 10.26; RSK 10.01 | Official annual-reconciliation correction form and VAT statement identifiers. | [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) |
-
-## The method, step by step
-
-1. Confirm the entity, registration status, settlement period and prior statement.
-2. Build invoice-backed sales, purchases and import schedules, then classify each line.
-3. Reconcile output and supported input VAT, file the current electronic statement, pay the stated amount (or claim the refund) and retain confirmation.
-
-## Ask the client first
-
-- What do the Icelandic VAT registration record and current settlement period say? Has the business ever been removed from the VAT register and re-registered?
-- What invoice, supplier/customer status, business use and rate/exemption facts support each transaction?
-- Are imports, foreign services, VOES, mixed exempt activity, property, vehicles or a correction involved?
-- Has a statement already been filed or an assessment/penalty notice been issued?
-
-## 1. Establish the filing route before calculating VAT
+## Who this applies to
 
 Obtain the legal seller, Icelandic ID (`kennitala`), VAT registration number, registration certificate, settlement period, start date and any prior return. Keep separate facts for each supply: customer identity and location, what was supplied, supply date, amount excluding VAT, invoice, rate/exemption reason, and import or foreign-service evidence.
 
@@ -61,14 +35,33 @@ Registration is a factual test, not a rate election. A foreign company without a
 
 **VOES is separate.** It is an optional simplified, pay-only registration for qualifying foreign suppliers to non-taxable Icelandic customers. It covers listed electronic, telecom, paper/magazine-subscription, broadcasting and certain tourist services; it cannot be used where an Icelandic permanent establishment supplies the goods/services. A VOES seller cannot deduct input tax. A foreign B2C supplier of electronic services exceeding ISK 2,000,000 in a 12-month period must register/account for VAT, while a registered Icelandic B2B buyer that can count the VAT as input tax is not a trigger for the seller's registration. Establish the seller, customer status and supply before choosing ordinary registration, VOES or a different route. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Articles 4(3) and 35](https://www.althingi.is/lagas/nuna/1988050.html)
 
-## 2. Classify every supply from evidence
+## Rates, bands and thresholds
+
+| Figures used below | Status | Official source |
+| --- | --- | --- |
+| 2026; ISK 2,000,000; 24%; 11%; 12-month; one month and five days; 5 April; ISK 4,000,000; 15 February; eight days; seven years; ISK 5,000; 1%; 10%; 30 days; 5,000 kg; 19.35%; 9.91% | Published administrative figures or periods. Apply only under the conditions stated in the method. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
+| 5 February; 1 March; 1 September | Annual and agricultural due dates. | [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) |
+| ISK 10,000; ISK 6,000; ISK 100,000 (input-VAT correction cap); 15 days | Statutory thresholds and periods in Articles 20, 24, 26 and 35. | [VAT Act No. 50/1988](https://www.althingi.is/lagas/nuna/1988050.html) |
+| ISK 100,000; ISK 24,000; ISK 20,000; ISK 4,800; ISK 19,200; ISK 50,000; ISK 5,500; ISK 250,000; ISK 10,000; ISK 2,400; ISK 1,950,000; ISK 12,000; ISK 8,000; ISK 300,000; ISK 11,000; 5 June | Hypothetical inputs or arithmetic outputs in the labelled worked cases, not authority figures. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
+| RSK 5.02 | Official registration form identifier. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
+| 0% | Case-only mathematical output for the zero-rated cases; the zero-rate category still requires its stated conditions. | [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) |
+| RSK 10.24 | Official foreign-service VAT report identifier. | [Skatturinn form RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) |
+| RSK 10.26; RSK 10.01 | Official annual-reconciliation correction form and VAT statement identifiers. | [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) |
+
+## The base
+
+1. Confirm the entity, registration status, settlement period and prior statement.
+2. Build invoice-backed sales, purchases and import schedules, then classify each line.
+3. Reconcile output and supported input VAT, file the current electronic statement, pay the stated amount (or claim the refund) and retain confirmation.
+
+### Classify every supply from evidence
 
 Iceland VAT is generally charged on domestic business transactions and imports unless a direct exemption applies. The published rates are **24% standard** and **11% reduced** (plus a temporary 11% rate on listed fuels from 1 May 2026 to 31 August 2026, shown in the reduced-rate row below). Do not choose a rate from a merchant name, product label or the customer's country alone. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/)
 
 | Classification | Operational treatment | Evidence to retain |
 | --- | --- | --- |
 | Standard taxable supply | Apply 24% to the VAT-exclusive consideration once the domestic taxable supply is confirmed. | Contract/order, invoice, customer/location and rate calculation. |
-| Reduced taxable supply | Apply 11% only when the actual supply fits the statutory list. The conditions matter: hotel/guest rooms at 11%, and other commercial accommodation (private homes, lodges, cottages, hostels) only where the rent period is **less than one month**; campground facilities; food and other products for human consumption as defined in the Act's annex, including alcohol, and catering; passenger transport that is not exempt, including organised tours; travel-agent services for 11%-rated or exempt services; tour guiding; spas, saunas and baths that are not athletic facilities; access to tunnels and road structures; radio/TV subscriptions; books, newspapers and magazines (printed or electronic); music recordings without pictures; **hot water, electricity and oil for heating houses and swimming pools**; and listed contraceptives, reusable and children's diapers and menstrual products. Electricity, toilets and showers at a campground are 11% only where connected to the camping fee; otherwise 24%. **Temporary fuel rate (dated):** fuel under customs tariff numbers 2710.1221, 2710.1229, 2710.1930, 2710.2021, 2710.2029, 2710.2065 and 3826.0000 is 11% on import and taxable sale from 1 May 2026 to 31 August 2026 inclusive, and 24% before and after that window. Sellers must pass the reduction on in full to the final retail price. Input VAT on fuel bought in that window is the 11% shown on the invoice or Customs document (the usual input-VAT conditions and the vehicle block still apply). [VAT Act, temporary provision XLIX](https://www.althingi.is/lagas/nuna/1988050.html) | What was supplied, duration/location where relevant, and invoice description. |
+| Reduced taxable supply | Apply 11% only when the actual supply fits the statutory list. The conditions matter: hotel/guest rooms at 11%, and other commercial accommodation (private homes, lodges, cottages, hostels) only where the rent period is **less than one month**; campground facilities; food and other products for human consumption as defined in the Act's annex, including alcohol, and catering; passenger transport that is not exempt, including organised tours; travel-agent services for 11%-rated or exempt services; tour guiding; spas, saunas and baths that are not athletic facilities; access to tunnels and road structures; radio/TV subscriptions; books, newspapers and magazines (printed or electronic); music recordings without pictures; **hot water, electricity and oil for heating houses and swimming pools**; and listed contraceptives, reusable and children's diapers and menstrual products. Access to campground electricity, toilets and showers supplied to campsite guests is 11% whether included in the camping fee or billed separately; access unconnected to camping is 24%. [Administrative campground guidance](https://www.skatturinn.is/english/companies/value-added-tax/) **Temporary fuel rate (dated):** fuel under customs tariff numbers 2710.1221, 2710.1229, 2710.1930, 2710.2021, 2710.2029, 2710.2065 and 3826.0000 is 11% on import and taxable sale from 1 May 2026 to 31 August 2026 inclusive, and 24% before and after that window. Sellers must pass the reduction on in full to the final retail price. Input VAT on fuel bought in that window is the 11% shown on the invoice or Customs document (the usual input-VAT conditions and the vehicle block still apply). [VAT Act, temporary provision XLIX](https://www.althingi.is/lagas/nuna/1988050.html) | What was supplied, duration/location where relevant, and invoice description. |
 | Zero-rated supply | Charge 0% only after meeting a stated zero-rate condition. See the services test below. Other examples include exported goods, international goods transport and domestic legs of it, passenger transport to/from Iceland, qualifying supplies to inter-country vessels/aircraft (not pleasure boats or private aircraft), and sale, lease, building and repair of ships and aircraft (not ships under 6 metres, pleasure boats or private aircraft). A zero-rated supply remains within VAT scope. | Export/customs or transport evidence; customer establishment and use evidence for services. |
 | Exempt supply | Do not charge output VAT. Skatturinn lists, among others, health, social/education, certain culture/sport, listed public transport, postal, qualifying property rental (more than one month) and property sale, insurance, banking/financial, lotteries and certain artistic activities. Exempt-business purchases do not give input VAT credit. | Legal/service facts and any voluntary property-registration evidence. |
 | Import of goods | VAT is collected by Customs on the customs value plus duties. A registered business may count import VAT as input tax for goods used in its taxable activity, on the Customs payment document. Blocked categories below still apply. | Customs declaration and payment document, supplier invoice, use. |
@@ -82,7 +75,7 @@ Iceland VAT is generally charged on domestic business transactions and imports u
 
 For ordinary calculations, use `output VAT = taxable VAT-exclusive sales × confirmed rate`. Keep 24%, 11%, zero-rated and exempt sales in separate schedules. A zero rate is not an exemption: zero-rated supplies keep the right to deduct input VAT, while exempt activities do not. A transfer of inventory and operating assets on the sale of a business to a buyer whose business is registered or required to register is not taxable turnover; the seller must notify the Director of Internal Revenue within eight days of the transfer. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/)
 
-## 3. Test input VAT before deducting it
+### Test input VAT before deducting it
 
 Input VAT is deductible only for VAT on goods, business assets and services bought for a VAT-liable business activity. The VAT must be verified by a sales invoice (or, for imports, the Customs payment document), and the vendor must have charged VAT and been VAT-registered at the transaction date. Check the invoice and vendor registration; a bank line alone is not sufficient. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Articles 15, 16 and 20](https://www.althingi.is/lagas/nuna/1988050.html)
 
@@ -116,7 +109,7 @@ Article 35 of the VAT Act makes the Icelandic buyer pay VAT on services bought f
 
 This is a purchaser-liability payment route. Do not also claim the same amount as ordinary input VAT. [VAT Act, Article 35](https://www.althingi.is/lagas/nuna/1988050.html) and [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf)
 
-## 4. Prepare the return for the correct period
+## Deadlines and filing
 
 The ordinary settlement periods are Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct and Nov–Dec. The electronic VAT statement and payment are due **one month and five days after period end**: for example, Jan–Feb is due 5 April, moved to the next business day if the date is a weekend or Icelandic public holiday. A registered person must file electronically even with no sales; otherwise Skatturinn estimates the VAT. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/)
 
@@ -132,15 +125,13 @@ Use this working sequence:
 6. Compute `net VSK = total output VAT − deductible input VAT`. A positive difference is payable. A negative difference is refundable: file the credit statement by the same deadline. If the statement is filed on time and accepted, the refund is paid within twenty-one days after the filing deadline. Unpaid public charges and taxes are set off against it first, and no refund is paid while an earlier period's VAT rests on an estimate. [VAT Act, Articles 15, 24 and 25](https://www.althingi.is/lagas/nuna/1988050.html)
 7. Enter the totals in the live electronic statement, review the confirmation, pay any stated liability or record the refund, and archive the submission, ledger and support.
 
-## 5. Period choices, amendments and record controls
+### Period choices, amendments and record controls
 
 A taxpayer with taxable sales below **ISK 4,000,000 in a whole calendar year** may request annual settlement for the following year; apply before 15 February for that year. The annual due date is 5 February. Six-month settlement is available only to agriculture, with due dates of 1 September (January–June) and 1 March (July–December). Monthly settlement can be available where input VAT is generally higher than output VAT because a major share of turnover is exempt, or where reduced-rate sales dominate but standard-rate input VAT dominates; apply at least one month before the next period. A changed settlement period must start at the beginning of a two-month period and applies for at least two years. These are application-based alternatives, not automatic selections. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/), [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) and [VAT Act, Article 24](https://www.althingi.is/lagas/nuna/1988050.html)
 
 A business re-registered after Skatturinn removed it from the VAT register must use **monthly** periods for at least two years, with the due date 15 days after each month ends. The same applies on registration where the individual, or an owner, board member or manager of the company, was bankrupt, or was involved in a company that went bankrupt, within the previous five years (the Act sets the exact tests). Confirm the period on the registration record before applying the ordinary timetable. [VAT Act, Article 24](https://www.althingi.is/lagas/nuna/1988050.html)
 
 Notify Skatturinn of a post-registration change in operations, including a different activity or VAT-taxable cessation, within eight days. Keep VAT accounts, sales documents and vouchers available to the authority. Every taxable person must keep the books, settlements and documents behind its VAT returns for seven years from the end of the accounting year. For a foreign company using an Icelandic representative, the representative must keep the complete VAT accounts and supporting documents in Iceland for at least seven years after the accounting year. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Article 17](https://www.althingi.is/lagas/nuna/1988050.html)
-
-Failure to file permits an estimated assessment. Filing a statement after an estimate adds an ISK 5,000 charge for each statement not filed on time. Late payment has a 1% penalty for each started day after the due date, up to 10%; the same penalty applies to estimated VAT and to an excessive refund. If the VAT is still unpaid one month after the due date, late-payment interest is also charged, and the interest runs from the original due date. Sufficient cause can support cancellation of the penalty. An appeal to the Director of Internal Revenue is generally due within 30 days of the decision; a further written appeal to the Internal Revenue Board is due within three months of the decision letter. Use the live account/notice and current procedural instructions for an actual dispute. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Articles 27 to 29](https://www.althingi.is/lagas/nuna/1988050.html)
 
 ### Correct a filed ordinary statement
 
@@ -151,7 +142,15 @@ Failure to file permits an estimated assessment. Filing a statement after an est
 
 [Skatturinn VAT-register correction guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) and [VAT Act, Article 26](https://www.althingi.is/lagas/nuna/1988050.html)
 
-## 6. Worked mechanical cases
+## Penalties and interest
+
+Failure to file permits an estimated assessment. Filing a statement after an estimate adds an ISK 5,000 charge for each statement not filed on time. Late payment has a 1% penalty for each started day after the due date, up to 10%; the same penalty applies to estimated VAT and to an excessive refund. If the VAT is still unpaid one month after the due date, late-payment interest is also charged, and the interest runs from the original due date. Sufficient cause can support cancellation of the penalty. An appeal to the Director of Internal Revenue is generally due within 30 days of the decision; a further written appeal to the Internal Revenue Board is due within three months of the decision letter. Use the live account/notice and current procedural instructions for an actual dispute. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Articles 27 to 29](https://www.althingi.is/lagas/nuna/1988050.html)
+
+## Cross-border points
+
+Classify outbound services using the current Article 12 business/nonbusiness tests in the base section; a customer's foreign address alone does not prove zero rating. For foreign purchases use the Article 35 purchaser workflow above, including registration, credit entitlement, service class and the specific 10,000-per-period test where applicable. A foreign seller must establish whether ordinary registration, a representative or VOES applies before filing. Imports require Customs evidence and the import-base rule, separately from services. [VAT Act, Articles 4, 12 and 35–36](https://www.althingi.is/lagas/nuna/1988050.html)
+
+## Worked examples that recompute
 
 These cases are arithmetic illustrations from the cited rules, not filing results. They assume the evidence and eligibility stated in each case; they do not establish VAT treatment for a different supply. Rules applied: [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/), [VAT Act No. 50/1988](https://www.althingi.is/lagas/nuna/1988050.html) and [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf).
 
@@ -170,6 +169,88 @@ These cases are arithmetic illustrations from the cited rules, not filing result
 | Temporary fuel rate | A registered fuel retailer sells diesel under tariff number 2710.1930 for ISK 100,000 excluding VAT in July 2026, and the same again in September 2026. | July sale: **ISK 11,000 output VAT** (`100,000 × 11 ÷ 100`). September sale: **ISK 24,000** (`100,000 × 24 ÷ 100`). A registered buyer deducts the VAT actually invoiced, subject to the usual conditions. |
 | Correction before assessment | A Mar–Apr electronic statement omitted a supported ISK 100,000 standard-rate domestic sale. The period's assessment is not complete. | Preserve the correction schedule and submit the electronic correction for that period. The missing **ISK 24,000 output VAT** (`100,000 × 24 ÷ 100`) is included in the revised period data; do not invent a separate delta box. |
 
+### Recomputable arithmetic controls
+
+The blocks below test the stated ordinary sale, reduced-rate room, supported zero-rated refund, foreign-service boundary and dated fuel cases. Inputs require the eligibility/evidence in the corresponding table row. A passing block does not establish that eligibility.
+
+```oa-check
+name: Iceland standard sale less supported input VAT
+inputs:
+  net_sale: 100000
+  supported_purchase_net: 20000
+steps:
+  - output_vat: net_sale * 0.24
+  - deductible_input: supported_purchase_net * 0.24
+  - net_payable: output_vat - deductible_input
+expected:
+  output_vat: 24000
+  deductible_input: 4800
+  net_payable: 19200
+```
+
+```oa-check
+name: Iceland qualifying reduced-rate room and zero-rated export
+inputs:
+  room_net: 50000
+  export_net: 250000
+  export_supported_input: 4800
+steps:
+  - room_output: room_net * 0.11
+  - export_output: export_net * 0
+  - export_net_payable: export_output - export_supported_input
+expected:
+  room_output: 5500
+  export_output: 0
+  export_net_payable: -4800
+```
+
+```oa-check
+name: Iceland foreign service, confirmed blocked purpose
+inputs:
+  foreign_service_net: 50000
+  allowed_input: 0
+steps:
+  - buyer_vat: foreign_service_net * 0.24
+  - liability: buyer_vat - allowed_input
+expected:
+  buyer_vat: 12000
+  liability: 12000
+```
+
+The statutory non-registered-buyer threshold is 10,000 or more, with VAT on the whole qualifying consideration. The following block assumes that exact boundary has already been met; it does not replace the purchaser/status/service tests.
+
+```oa-check
+name: Iceland qualifying foreign advertising at exact threshold
+inputs:
+  period_net_consideration: 10000
+steps:
+  - vat_on_whole_consideration: period_net_consideration * 0.24
+expected:
+  vat_on_whole_consideration: 2400
+```
+
+```oa-check
+name: Iceland listed fuel, July and September 2026
+inputs:
+  july_net_sale: 100000
+  september_net_sale: 100000
+steps:
+  - july_output: july_net_sale * 0.11
+  - september_output: september_net_sale * 0.24
+  - combined_output: july_output + september_output
+expected:
+  july_output: 11000
+  september_output: 24000
+  combined_output: 35000
+```
+
+## Ask the client first
+
+- What do the Icelandic VAT registration record and current settlement period say? Has the business ever been removed from the VAT register and re-registered?
+- What invoice, supplier/customer status, business use and rate/exemption facts support each transaction?
+- Are imports, foreign services, VOES, mixed exempt activity, property, vehicles or a correction involved?
+- Has a statement already been filed or an assessment/penalty notice been issued?
+
 ## When to refuse or refer
 
 - Registration, rate, exemption, place, Customs or input-VAT evidence is missing.
@@ -177,26 +258,25 @@ These cases are arithmetic illustrations from the cited rules, not filing result
 - A required invoice, vendor-registration check, Customs document, prior statement or assessment notice is unavailable.
 - The business was re-registered after removal, or is under the bankruptcy-linked monthly regime, and the settlement period on the registration record is not available.
 
-## 7. Stop conditions
+### Stop conditions
 
 Use a separate sourced method or professional review for mixed taxable/exempt attribution, voluntary real-property registration, imported goods/customs valuation and import-VAT deferral, VOES eligibility, foreign representative arrangements, special investment/fishing schemes, vehicle-resale margin rules, a missing VAT invoice, a supplier that was not registered, and an estimated assessment or appeal. The normal method above handles confirmed domestic taxable rates, zero-rated evidence (including services to foreign businesses under current Article 12), exempt outputs, supported input VAT, invoice controls, the Article 35 foreign-service purchaser route, refunds of excess input VAT, corrections before assessment and the ordinary return timetable.
 
-Official sources: [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/); [VAT Act No. 50/1988, current consolidated text](https://www.althingi.is/lagas/nuna/1988050.html); [RSK 10.24 foreign-service purchase report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf); [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/). Source snapshots, evidence ledger and cases are retained in the controlled editorial packet.
+Original editorial source record: [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/); [VAT Act No. 50/1988, current consolidated text](https://www.althingi.is/lagas/nuna/1988050.html); [RSK 10.24 foreign-service purchase report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf); [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/). Source snapshots, evidence ledger and cases are retained in the controlled editorial packet.
 
 <!-- openaccountants-cta-block -->
 
----
+## Talk to an accountant
 
-## Talk to a verified accountant
+For advice on your facts, [contact OpenAccountants](https://www.openaccountants.com/contact).
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+## Sources
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+| Official source | Read on |
+| --- | --- |
+| [VAT Act 50/1988, current 1 October 2026 compilation](https://www.althingi.is/lagas/nuna/1988050.html) | 2026-10-23 |
+| [VAT administrative guidance](https://www.skatturinn.is/english/companies/value-added-tax/) | 2026-10-23 |
+| [Registration, periods and corrections](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) | 2026-10-23 |
+| [RSK 10.24 foreign-service report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) | 2026-10-23 |
