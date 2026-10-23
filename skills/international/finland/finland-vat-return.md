@@ -1,7 +1,7 @@
 ---
 name: finland-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Finland VAT return (ALV-ilmoitus) for any client. Trigger on phrases like "prepare VAT return", "do the ALV", "fill in ALV", "Finnish VAT", "OmaVero", or any request involving Finland VAT filing. This skill covers Finland only and standard ALV registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Finnish VAT work.
-version: 2.3
+version: 2.4
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland VAT return v2.3 — 2026 editorial draft
+# Finland VAT return v2.4 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified, or an attestation.
 
@@ -90,7 +90,7 @@ If any fact is absent, leave the transaction in a reconciliation exception and o
 | Quarter | January–March → 12 May; April–June → 12 August; July–September → 12 November; October–December → 12 February |
 | Calendar year | End of February of the following year. For 2026 this is 28 February 2027, a Sunday, so the due date moves to Monday 1 March 2027 (Vero's own example: 2025 was due 2 March 2026). |
 
-A return filed after the due date attracts a late-filing penalty; late payment attracts late-payment charges. Quantifying them is out of scope here. The MyTax period and deadline shown for the business are controlling. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
+A return filed after the due date attracts a late-filing penalty; late payment attracts late-payment charges. The scoped original/replacement late-filing example below quantifies that filing charge only; late-payment interest and other sanctions require separate assessment. The MyTax period and deadline shown for the business are controlling. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
 
 ## 3. Classify domestic sales before choosing a rate
 
@@ -115,11 +115,13 @@ Reconcile the return to the accounts, invoices, credit notes, import documents a
 | --- | --- |
 | Domestic taxable sale | Calculate VAT from the tax base in the workpaper, then enter the **VAT amount** by domestic rate (25.5%, 13.5% or 10%). Domestic sales can include own use, private withdrawal or other deemed domestic supply when Vero’s rules apply. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
 | Goods acquired from another EU country for the Finnish business | Enter “Purchases of goods from other EU countries”; calculate Finnish acquisition VAT under “Tax on purchases of goods from other EU countries”; claim the corresponding deductible VAT only if ordinary deduction conditions are met. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
-| General service purchased by a Finnish business from another EU business | Enter “Purchases of services from other EU countries”; calculate Finnish reverse-charge VAT under “Tax on purchases of services from other EU countries”; take input VAT only to the qualifying business-use extent. This row is **only** for services taxed under the general place-of-supply rule. A service from an EU business that is not under the general rule but is supplied in Finland (for example a service relating to Finnish real estate, passenger transport, or travel agency services) goes in “Tax on domestic sales by tax rate”, with no entry in the EU-services rows. Construction services (including leased construction workers) bought from an EU seller go in the construction/scrap-metal reverse-charge rows, not here. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
-| Service bought from a business established outside the EU | Calculate Finnish VAT from the supported purchase base and enter that **VAT amount** in “Tax on domestic sales by tax rate”, whether or not the service is under the general place-of-supply rule. The purchase base is **not** entered anywhere on the return. This applies to every business supplier established outside the EU, whatever its size: Vero's English page says “small business”, but the Finnish original says *elinkeinonharjoittaja* (any business operator) and the Finnish version prevails. If deductible, also enter the VAT in “Tax deductible for the tax period”. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/); [Vero return instructions in Finnish](https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/ilmoitus-ja-maksuohjeet/) |
+| General service purchased by a Finnish business from another EU business | **Only after establishing Finnish place of supply and purchaser liability**, enter the purchase base in “Purchases of services from other EU countries”, reverse-charge VAT in “Tax on purchases of services from other EU countries”, and qualifying input VAT. These fields apply only to services under the general place-of-supply rule. For a special-rule service supplied in Finland, use the domestic-sales VAT row only if the purchaser is liable. Passenger transport and event admission are excluded from this foreign-seller reverse charge; do not self-account merely because the supplier is foreign. Construction/scrap reverse charge needs its own determination and rows. [VAT Act, sections 9 and 65](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero cross-border services, sections 6–6.1](https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/); [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
+| Service bought from a business established outside the EU | **Only for a taxable service supplied in Finland for which the purchaser is liable**, calculate Finnish VAT and enter the VAT amount in “Tax on domestic sales by tax rate”; the purchase base is not entered on the return. This field route covers qualifying general- and special-rule services from business operators of any size. If deductible, also enter qualifying input VAT. Foreign establishment alone establishes neither Finnish supply nor purchaser liability: for example, accommodation at a hotel abroad is outside the Finnish place-of-supply rule. [VAT Act, sections 9, 65 and 67](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero return instructions in Finnish](https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/ilmoitus-ja-maksuohjeet/) |
 | Goods imported into Finland | Enter the customs-supported base in “Imports of goods from outside the EU”, VAT in “Tax on imports of goods from outside the EU”, and qualifying input VAT in “Tax deductible for the tax period”. Report it in the return for the tax period in which the customs clearance decision was issued (the date printed on the decision), and put the deduction in the same month. If the customs decision later changes, correct the return. For a tax-exempt import, retain the import-base entry and leave the import-tax/deduction entries blank. Goods moving between the Åland Islands and mainland Finland are imports/exports for VAT: refer them. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
 | Export/other zero-rate sale or exempt sale | Use the named treatment only after preserving conditions and evidence. Sales of goods to VAT-liable buyers in other EU countries (goods transported out of Finland) go in “Sales of goods to other EU Member States”; B2B services taxed in the buyer's EU country under the general rule go in “Sales of services to other EU Member States”; exports outside the EU and other zero-rate sales go in “Turnover taxable at zero VAT rate”. EU goods and service sales must also be reported on the VAT recapitulative statement. Sales to consumers in other EU countries are not zero-rated EU sales; whether Finnish VAT or the other country's VAT applies depends on distance-selling and OSS rules, which this skill refers. Exempt sales with no deduction right (health, social services) are not reported as zero-rate turnover. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
 | Construction reverse charge, property, margin scheme, OSS/IOSS or special place-of-supply result | **Refer for a transaction-specific determination.** Do not force it into an ordinary domestic or EU-purchase row. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/) |
+
+**Foreign-service gate:** establish the receiving establishment and applicable general/special place-of-supply rule, then determine who owes Finnish VAT. A participating Finnish fixed establishment or the foreign seller's voluntary Finnish VAT registration prevents the ordinary foreign-seller reverse charge; statutory transaction exceptions also apply. If the seller owes VAT, obtain its correctly issued invoice and test any input deduction. If the service is supplied outside Finland, do not create Finnish reverse-charge VAT merely from the supplier's country. [VAT Act, sections 9, 65 and 67](https://www.finlex.fi/fi/lainsaadanto/1993/1501); [Vero cross-border services, sections 6–6.1](https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/)
 
 The ordinary net result is:
 
@@ -206,7 +208,7 @@ Enter the purchase base and acquisition VAT in their EU-goods fields, then the d
 
 ### Case F — EU general service purchase, mixed use
 
-A €1,000 ordinary general service is bought from an EU business. The business can support 70% VAT-liable use and 30% non-deductible use.
+A €1,000 general-rule service is supplied to the Finnish establishment of a Finnish business by an EU business. The purchaser-liability gate above is confirmed, with no participating Finnish seller establishment, voluntary Finnish seller registration or statutory reverse-charge exclusion. The buyer supports 70% VAT-liable use and 30% non-deductible use.
 
     Reverse-charge VAT = €1,000 × 25.5% = €255
     Deductible input VAT = €255 × 70% = €178.50
@@ -216,7 +218,7 @@ Report both the EU-service purchase base and €255 self-accounted VAT, then cla
 
 ### Case G — service bought from a business outside the EU
 
-A €1,000 general-rate service invoice is from a business established outside the EU (any size). Do not enter the €1,000 purchase base anywhere on the return. Calculate Finnish VAT at the supported domestic rate and enter €255 in “Tax on domestic sales” at 25.5%. Enter €255 in “Tax deductible for the tax period” only if business-use conditions are met. Keep the invoice showing where the supplier is established. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/); [Vero purchase deductions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/)
+A €1,000 general-rate consulting service is supplied to the Finnish establishment of a Finnish business by a business established outside the EU. Finnish place of supply and purchaser liability are confirmed under the gate above; no seller-establishment, registration or transaction exception displaces reverse charge. Do not enter the €1,000 purchase base anywhere on the return. Calculate Finnish VAT at the supported domestic rate and enter €255 in “Tax on domestic sales” at 25.5%. Enter €255 in “Tax deductible for the tax period” only if business-use conditions are met. Keep the invoice and evidence supporting the Finnish place of supply and purchaser liability. A hotel service supplied abroad does not fit this case. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/); [Vero purchase deductions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/)
 
 ### Case H — import
 
@@ -282,7 +284,7 @@ expected:
 
 ### Supported mixed business use
 
-This recomputes Case F on its assumptions: a general-rule reverse-charge service with a verified EUR 1,000 base and supported 70% deductible use. It supplies no universal partial-exemption formula.
+This recomputes Case F on its assumptions: a general-rule service with confirmed Finnish place of supply and purchaser liability, a verified EUR 1,000 base and supported 70% deductible use. It supplies no universal partial-exemption formula.
 
 ```oa-check
 name: Finland assumed reverse charge mixed use
@@ -335,10 +337,11 @@ This draft deliberately does not resolve:
 - VAT groups, margin schemes, travel schemes, second-hand goods, agriculture and construction reverse charge;
 - partial exemption, fixed-establishment allocation and complex mixed use;
 - a vehicle that may fit a rental/taxi/tuition/resale or commercial-vehicle exception; and
-- late-payment consequences, penalties, taxable-period changes or a disputed registration effective date.
+- late-payment consequences, sanctions beyond the scoped late-filing example above, taxable-period changes or a disputed registration effective date.
 
 ## Sources
-- [VAT Act 1501/1993](https://www.finlex.fi/fi/lainsaadanto/1993/1501), sections 3, 84–85a, 102 and 114. Read directly from embedded official Finnish statutory text on 23 October 2026; country research records contain retrieval hashes. Full statute/amendment and specialist-scope review remains open.
+- [VAT Act 1501/1993](https://www.finlex.fi/fi/lainsaadanto/1993/1501), sections 3, 9, 65, 67, 84–85a, 102 and 114. Read directly from embedded official Finnish statutory text on 23 October 2026; country research records contain retrieval hashes. Full statute/amendment and specialist-scope review remains open.
+- [Vero: cross-border supply/acquisition of services, sections 6–6.1](https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/), read 23 October 2026
 - [Vero: VAT registration](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/how-to-register-for-vat/)
 - [Vero: VAT exemption for small businesses](https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/)
 - [Vero: VAT rates](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/)

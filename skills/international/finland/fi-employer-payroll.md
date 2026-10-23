@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.5
+version: 0.6
 ---
 
-# Finland employer payroll reporting v0.5
+# Finland employer payroll reporting v0.6
 
 ## Who this applies to
 
@@ -39,7 +39,7 @@ For covered employees in 2026, the published employee share is **7.30%**. Deduct
 
 ## Unemployment insurance: classify before calculating
 
-The Employment Fund's liability guidance identifies employees aged 18 to under 65 and employer annual wages exceeding EUR 1,500, subject to exclusions. It excludes the specified self-employed/agricultural categories and flags ownership, entity type and international circumstances for assessment. The threshold is not a general exemption from payroll reporting. Birthday-month transitions and international coverage still need detailed checks. [Employment Fund liability][unemployment-liability]
+The Employment Fund's liability guidance identifies employees aged 18 to under 65 and employer annual wages exceeding EUR 1,500, subject to exclusions. It excludes the specified self-employed/agricultural categories and flags ownership, entity type and international circumstances for assessment. The EUR 1,500 threshold concerns payment to the Fund, not whether to deduct a liable employee's contribution. Deduct the employee share even if annual payroll does not exceed EUR 1,500; in that case the employer keeps the deducted amount. Report the wages and deduction to the Incomes Register. [Employment Fund payment guidance][unemployment-payment] Birthday-month transitions and international coverage still need detailed checks. [Employment Fund liability][unemployment-liability]
 
 Its 2026 payment guidance states:
 
