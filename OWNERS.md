@@ -2,6 +2,8 @@
 
 Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
 
+**Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** Until PR [#514](https://github.com/openaccountants/openaccountants/pull/514) merges, use the [assignment on its branch](https://github.com/openaccountants/openaccountants/blob/codex/world-coverage-consolidated/OWNERS.md#europe-writing-assignments); `main` does not yet contain the Europe split.
+
 | Owner | Regions | Jurisdictions | Thin (7 or fewer skills) |
 |---|---|---|---|
 | Jeff Watts | Americas: US federal and states, Canada and provinces, Latin America, Caribbean | 105 | 91 |
@@ -39,6 +41,18 @@ To take an open role, comment on the coverage report issue or open a PR changing
 Approved by Michael on 23 October 2026. Michael remains the accountable owner for Europe; the assignments below divide writing work between his agents. They do not transfer professional responsibility or certify coverage. This section is maintained manually and must be preserved when regenerating the jurisdiction report below.
 
 **Claude: retain the recent European workstream (22 jurisdictions). ChatGPT: take the other European packs (33 jurisdictions).** Country allocations cover all topics in each pack, so two writers do not independently expand the same country.
+
+### Claude: start here
+
+Your countries are **Albania, Austria, Belgium, Switzerland, Cyprus, Czech Republic, Germany, Denmark, France, United Kingdom, Greece, Hungary, Ireland, Italy, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Serbia and Sweden**. Continue filling and re-verifying their applicable topics, including existing Guides. Keep the country issue and pack README current with the remaining evidence and review gaps. Do not restart a pack because its earlier work came from another agent.
+
+ChatGPT owns the other 33 countries in the table below. Current ChatGPT work includes Norway and Finland; a separate ChatGPT support chat is the active Iceland writer. Iceland remains in the ChatGPT allocation. Guernsey and Gibraltar are parked. Leave these packs with their assigned writer unless Michael records a handover.
+
+Before choosing a topic, fetch `origin`, inspect that country's files on `main`, and check its issue and open PRs, including consolidated PR #514. Some work landed before this assignment reached `main`: Bulgaria transfer pricing and cross-border ([#731](https://github.com/openaccountants/openaccountants/pull/731), [#732](https://github.com/openaccountants/openaccountants/pull/732)), Croatia transfer pricing ([#730](https://github.com/openaccountants/openaccountants/pull/730)), and Slovakia cross-border and transfer pricing ([#727](https://github.com/openaccountants/openaccountants/pull/727), [#728](https://github.com/openaccountants/openaccountants/pull/728)) are already merged as checked on 23 October 2026. Preserve and build on those changes. Their merge does not transfer those countries to Claude or establish comprehensive coverage.
+
+Continue within your allocation without waiting for a new country-by-country instruction. Record any proposed transfer with its current branch/PR, unfinished topics and next action before another writer starts. Source verification, repository checks and independent review remain required before merge.
+
+### Country allocation
 
 | Code | Country or territory | Assigned writer |
 |---|---|---|
