@@ -52,6 +52,10 @@ Before choosing a topic, fetch `origin`, inspect that country's files on `main`,
 
 Continue within your allocation without waiting for a new country-by-country instruction. Record any proposed transfer with its current branch/PR, unfinished topics and next action before another writer starts. Source verification, repository checks and independent review remain required before merge.
 
+**Next action for Claude:** finish the country you are already writing. Reconcile its existing Guides and recent commits with the country issue, identify the remaining applicable topics, and work through those gaps. If no country is active, choose one of your 22 assigned countries and record it on its issue before writing. Keep the README explicit about what remains unverified; do not declare a country complete because its core domain files exist.
+
+**Publish by country:** prepare and validate the whole country batch locally, obtain an independent review of the full pack, fix the findings, then push the reviewed batch. Keep local commits as useful checkpoints; do not push or open a PR for every Guide. Reuse the active consolidated PR for that workstream. A country batch can still have documented partial coverage; publication does not replace the evidence or professional review required for comprehensive coverage.
+
 ### Country allocation
 
 | Code | Country or territory | Assigned writer |
