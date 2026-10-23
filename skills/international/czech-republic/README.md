@@ -3,9 +3,7 @@ jurisdiction: CZ
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial:
-  IT-IND: cz-income-tax covers the self-employed (OSVČ) only, tax year 2025
-  SC: cz-social-health covers the self-employed (OSVČ) only, not employee or employer contributions
+partial: {}
 ---
 
 # Czech Republic: tax pack
@@ -16,12 +14,12 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cz-income-tax (self-employed only, tax year 2025; employment income under ITA § 6 is not covered) | partial, source-cited draft |
-| IT-CORP, corporate income tax | cz-corporate-income-tax | source-cited draft |
-| VAT | cz-vat-return, czech-republic-vat-return | source-cited draft |
-| SC, social contributions | (missing: cz-social-health covers the self-employed (OSVČ) only, not employee and employer contributions) | |
-| PR, payroll withholding | (missing: employer advances, tax declaration, annual reconciliation, employee social and health insurance) | |
-| TP, transfer pricing | (missing: arm's length rule in ITA § 23(7), documentation, advance pricing agreements) | |
+| IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | source-cited draft |
+| IT-CORP, corporate income tax | cz-corporate-income-tax (2026: residence, 21% rate, base and non-deductible costs, tax depreciation, losses, participation exemption, § 23e borrowing cost limit, advances, deadlines, penalties; top-up tax for large groups not covered) | source-cited draft |
+| VAT | czech-republic-vat-return (2026: registration at CZK 2,000,000 and CZK 2,536,500, 21% and 12% rates, return, control statement and EC sales list, reverse charge, unreliable payers, penalties; partial exemption, special schemes, VAT groups and OSS not covered); cz-vat-return is a pointer to it | source-cited draft |
+| SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed OSVČ, 2026) | source-cited draft |
+| PR, payroll withholding | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, sick pay, annual reconciliation and vyúčtování; deductions under court orders not covered) | source-cited draft |
+| TP, transfer pricing | cz-transfer-pricing | source-cited draft |
 | XB, cross-border | cz-cross-border | source-cited draft |
 
 Also in the pack: cz-tax-overview, cz-company-formation, references.md.
@@ -31,5 +29,7 @@ Also in the pack: cz-tax-overview, cz-company-formation, references.md.
 - Income Taxes Act (586/1992 Coll.): https://www.zakonyprolidi.cz/cs/1992-586 (read 2026-10-22)
 - Tax Code (280/2009 Coll.): https://www.zakonyprolidi.cz/cs/2009-280 (read 2026-10-22)
 - VAT Act (235/2004 Coll.): https://www.zakonyprolidi.cz/cs/2004-235
-- Finanční správa: https://financnisprava.gov.cz (read 2026-10-22)
-- ČSSZ: https://www.cssz.gov.cz (read 2026-10-22)
+- Income Taxes Act, official e-Sbírka text in force for 2026: https://e-sbirka.gov.cz/sb/1992/586/2026-08-01 (read 2026-10-23)
+- Finanční správa: https://financnisprava.gov.cz (read 2026-10-23)
+- ČSSZ: https://www.cssz.gov.cz (read 2026-10-23)
+- VZP: https://www.vzp.cz (read 2026-10-23)

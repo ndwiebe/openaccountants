@@ -4,11 +4,7 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: ie-prsi-class-s
-partial:
-  IT-IND: no non-resident or PAYE-only (Form 12) method, no Case V rental method, and ie-cgt and ie-non-dom still give CGT at 33% after the 31% rate from 7 October 2026
-  IT-CORP: ie-corporation-tax has no rules for a non-resident company's Irish branch (s.25), its description contradicts its body (R&D 30%, KDB 6.25%), and gains are grossed up at 33% after 7 October 2026
-  SC: posted and cross-border workers (A1 and bilateral certificates) and Class K are referred out
-  XB: no treaty withholding-rate table, no foreign tax credit (Schedule 24) mechanics, no method for non-resident companies on Irish income
+partial: {}
 ---
 
 # Ireland: tax pack
@@ -19,13 +15,13 @@ Calendar tax year. Authority: the Revenue Commissioners; returns and payments go
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ie-income-tax-form11, ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
-| IT-CORP, corporate income tax | ie-corporation-tax | source-cited draft |
+| IT-IND, individual income tax | ie-income-tax-form11, ie-paye-rental-nonresident (Form 12, Case V rental income, non-residents), ie-usc, ie-cgt, ie-non-dom, ie-preliminary-tax | source-cited draft |
+| IT-CORP, corporate income tax | ie-corporation-tax (resident companies; non-resident branches with ie-foreign-tax-and-withholding) | source-cited draft |
 | VAT | ireland-vat-return, ie-vat-return | source-cited draft |
-| SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI) | source-cited draft |
+| SC, social contributions | ie-prsi-class-s (self-employed, Class S), ie-payroll (employee and employer PRSI), ie-prsi-cross-border (posted and cross-border workers, A1, bilateral agreements, Class K) | source-cited draft |
 | PR, payroll withholding | ie-payroll | source-cited draft |
 | TP, transfer pricing | ie-transfer-pricing | source-cited draft |
-| XB, cross-border | ie-cross-border, ie-non-dom | source-cited draft |
+| XB, cross-border | ie-cross-border, ie-non-dom, ie-foreign-tax-and-withholding | source-cited draft |
 
 ## Official sources
 
