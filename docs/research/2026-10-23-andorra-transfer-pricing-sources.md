@@ -12,3 +12,9 @@ Law and regulation are portal consolidations explicitly without official legal s
 Draft distinctions: 15%/3% shareholder tests are separate from 25% indirect/common-ownership tests and control/director/PE categories. Article 16(6) places a proof requirement on specified related-party financing deductions. Regulation Article 7(4) supplies a general evidence obligation; Article 8's detailed group/taxpayer application documents are not mislabelled as a universal annual filing. The six-month deemed-acceptance provision is qualified by a reasoned proposal and receipt/correction evidence.
 
 Two executable examples pass: EUR 40,000 supported service charge and EUR 8,000 shortfall; EUR 8,000 supported annual interest and EUR 4,000 excess. Prices/rates are assumptions requiring independent evidence, not safe harbours. Independent source review, professional attestation and completeness remain outstanding.
+
+## CbCR expansion, v0.2
+
+Read Law 95/2010 Articles 16 bis–quater and regulation Articles 13–14 in full. The law version register https://www.portaljuridicandorra.ad/L2010095_F identifies the current twenty-first consolidation, shown effective 13 February 2026; application dates still require the underlying provisions.
+
+Added preceding-year consolidated EUR 750 million threshold and exact-boundary distinction, ultimate-parent/local-filing triggers, surrogate conditions, notification via corporate return, separate 12-month report deadline, electronic filing and content requirements. Preserved the regulation's investment-property exclusion in the tangible-asset measure rather than importing a generic template. Live exchange agreements, systemic-failure notices, electronic form and monetary sanctions remain unverified. Independent review remains outstanding.

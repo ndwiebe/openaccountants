@@ -1,6 +1,6 @@
 ---
 jurisdiction: AD
-version: 0.3
+version: 0.4
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -14,7 +14,7 @@ partial:
   VAT: "Existing IGI Guide is present; full current scope and source review remain open."
   SC: "Shared payroll/social Guide requires current source and full scope review."
   PR: "Shared payroll/social Guide requires current source and full scope review."
-  TP: "New draft; independent review, method application, enforcement, CbCR and treaty-dispute procedures remain open."
+  TP: "New draft; independent review, method application, enforcement, live CbCR exchange/submission and treaty-dispute procedures remain open."
   XB: "New non-resident draft; independent review, treaty, full PE, special property and enforcement work remain open."
 ---
 
@@ -28,7 +28,7 @@ Accountable owner: Michael, [issue #376](https://github.com/openaccountants/open
 | Corporate income | [Corporate tax](ad-corporate-income-tax.md) | Replace approximate claims with verified rules |
 | VAT / IGI | [IGI](andorra-igi.md) | Current source and full scope review |
 | Payroll / social | [Payroll and social](ad-payroll-social.md) | Current source and full scope review |
-| Transfer pricing | [Transfer pricing](ad-transfer-pricing.md) | Review, methods, enforcement, CbCR and treaty disputes |
+| Transfer pricing | [Transfer pricing](ad-transfer-pricing.md) | Review, methods, enforcement, live CbCR exchange/submission and treaty disputes |
 | Cross-border | [Non-resident income](ad-non-resident-income-tax.md) | Review; treaty, PE, special property and enforcement expansion |
 | Formation | [Company formation](ad-company-formation.md) | Separate current-law completeness audit |
 | Overview | [Tax overview](ad-tax-overview.md) | Reconcile approximate statements against detailed Guides |

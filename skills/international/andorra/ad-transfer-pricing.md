@@ -6,22 +6,23 @@ description: >
   services and financing, reconcile pricing adjustments, and prepare an
   advance-pricing request and annual agreement report. Use for Andorra
   intercompany charges, shareholder loans and related-party pricing.
-  Country-by-country reporting and treaty dispute procedures need separate work.
+  Includes country-by-country reporting scope and deadlines; live exchange
+  eligibility and treaty dispute procedures need separate verification.
 jurisdiction: AD
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Andorra transfer pricing v0.1
+# Andorra transfer pricing v0.2
 
 ## Who this applies to
 
 Article 16 of Law 95/2010 requires related-party transactions to use normal market value: the value independent parties would agree in free competition. The provision is not limited to international transactions. Begin with the relationship test, then the actual transaction and its pricing evidence. A related-party invoice alone does not establish a market value. [Article 16(1)–(3)][law]
 
-This source-cited draft uses the legal portal's current law and regulation consolidations, both expressly labelled as lacking official legal status. Full underlying-amendment reconciliation and independent review remain open. It covers company transaction pricing and advance-pricing agreements, not a complete country-by-country reporting or treaty-dispute procedure.
+This source-cited draft uses the legal portal's current law and regulation consolidations, both expressly labelled as lacking official legal status. Full underlying-amendment reconciliation and independent review remain open. It covers company transaction pricing and advance-pricing agreements, the statutory country-by-country reporting framework; live filing/exchange eligibility and treaty-dispute procedures remain open.
 
 ## Rates, bands and thresholds
 
@@ -73,7 +74,25 @@ Pricing adjustments and failure to substantiate the specified financing deductio
 
 Andorran PEs and foreign head offices are included in the related-party rules. IRNR Article 16 also refers non-resident controlled transactions to the corporate-tax provision. Reconcile any pricing adjustment with source classification, withholding and PE attribution; pricing alone does not determine treaty relief. [IRNR, Article 16][irnr]
 
-Country-by-country reporting is a separate obligation under Articles 16 bis–quater. The ministry cannot use that report alone to adjust transfer prices. A CbCR filing or group size below its threshold does not replace the transaction-level market-value analysis above. Detailed reporting triggers, notifications, exchanges and deadlines remain separate work. [Articles 16 bis–ter][law]
+### Country-by-country reporting (CbCR)
+
+Test the multinational group using consolidated revenue for the **immediately preceding fiscal year**, not the Andorran subsidiary's turnover. A group with revenue below EUR 750 million, or the specified local-currency equivalent determined at January 2015, is excluded. Exactly EUR 750 million does not satisfy the below-threshold exclusion. The definition covers cross-jurisdiction entities and an enterprise with a foreign PE; consolidation scope and the constituent-entity definition must also be checked. [Article 16 quater(a)–(d)][law]
+
+An Andorran-resident ultimate parent of an in-scope group files the report. An Andorran-resident constituent entity that is not the ultimate parent has a local filing obligation if one of these statutory conditions applies:
+
+- The ultimate parent's jurisdiction does not require CbCR.
+- An international agreement is in force with that jurisdiction, but a qualifying competent-authority agreement with Andorra is not in force at the report deadline.
+- The ministry has notified the Andorran entity of systemic failure in the ultimate parent's jurisdiction.
+
+If multiple Andorran entities are affected, the group can designate one to file and notify that the filing fulfils their obligations. Do not infer exchange eligibility merely from an ordinary tax treaty or a country appearing on an international list. [Article 16 bis(1)–(2)][law]
+
+Surrogate-parent filing removes the local filing obligation only if the statutory package is satisfied: timely filing with equivalent report content, an equivalent reporting obligation in the surrogate jurisdiction, a qualifying agreement with Andorra effective at the deadline, the required absence of notified systemic failure, notification of surrogate status in that jurisdiction, and the Andorran notification. Obtain evidence for each condition rather than accepting a statement that another group entity filed. Live exchange relationships and failure notices have not been verified by this Guide. [Article 16 bis(3)][law]
+
+The report is due **within 12 months after the last day of the group's reporting fiscal year** and is filed electronically using the approved model. A 31 December 2026 year-end therefore gives a statutory report deadline of 31 December 2027, subject to any separately verified extension/non-working-day rule. The notification has a different timetable: disclose ultimate/surrogate-parent status, or the reporting entity's identity and tax residence, during the corporate-tax return filing period. The regulation also requires every company to state in its tax return whether it is subject to the report obligation. [Article 16 bis(4)–(7)][law]; [Regulation, Articles 13–14][reg]
+
+Prepare jurisdiction totals for revenue, profit/loss before tax, tax paid and accrued, stated capital, accumulated earnings, employees and the specified tangible-asset measure. The regulation uses average employees during the period and excludes cash/cash equivalents and investment properties from the specified tangible assets. Identify each constituent entity, tax identifier, residence, incorporation jurisdiction and principal activities. Reconcile the reporting perimeter and source accounts before uploading; this draft does not certify the live electronic schema. [Article 16 bis(6)][law]; [Regulation, Article 14][reg]
+
+Failure to meet these information duties is an offence referred to Article 127(2)(c) of Law 21/2014; the current monetary sanction needs separate verification. The ministry uses CbCR for risk assessment and cannot base transfer-pricing adjustments on the report. Reporting or exemption from reporting does not replace transaction-level pricing evidence. [Articles 16 bis(8), 16 ter][law]
 
 ## Worked examples that recompute
 
@@ -125,10 +144,11 @@ expected:
 
 ## Sources and review limits
 
-Read 23 October 2026. Source-cited draft; independent review and professional attestation remain outstanding. Current general enforcement rules, full method application, CbCR and treaty dispute procedures remain open. The topic's presence does not establish comprehensive TP or country coverage.
+Read 23 October 2026. Source-cited draft; independent review and professional attestation remain outstanding. Current general enforcement rules, full method application, live CbCR exchange eligibility/submission and treaty dispute procedures remain open. The topic's presence does not establish comprehensive TP or country coverage.
 
 - [Law 95/2010, Article 16 and reporting provisions][law].
-- [Current corporate-tax regulation, Articles 7–12][reg].
+- [Current corporate-tax regulation, Articles 7–14][reg].
+- [Corporate-law version register](https://www.portaljuridicandorra.ad/L2010095_F): current twenty-first consolidation, shown effective 13 February 2026; entry into force and tax application may differ.
 - [Law 94/2010, non-resident controlled transactions][irnr].
 
 [law]: https://www.portaljuridicandorra.ad/L2010095
