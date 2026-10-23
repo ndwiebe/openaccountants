@@ -12,10 +12,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Kosovo transfer pricing v0.1
+# Kosovo transfer pricing v0.2
 
 ## Who this applies to
 
@@ -40,7 +40,29 @@ Article 28 allows taxable profit to include profit that would have arisen betwee
 
 The statute lists comparable uncontrolled price, resale price and cost-plus methods, and permits transactional net margin and profit split in the specified circumstances. Its selection criteria address method strengths/weaknesses, transaction nature and functions/assets/risks, reliable information and comparability including reliable adjustments. Explain the selected method and rejected alternatives against those criteria; a group policy or invoice label is not the analysis. [Article 28(3)–(4)][law]
 
-A practical workpaper should connect the transaction description, functional analysis, comparable evidence, adjustments, selected result and ledger reconciliation. These are preparation steps supporting the statutory requirements, not a claim that this draft supplies a complete local-file checklist or a prescribed markup. Documentation content, response periods, language, refresh frequency and adjustment-range rules need full verification against the applicable instruction before an audit response.
+A practical workpaper should connect the transaction description, functional analysis, comparable evidence, adjustments, selected result and ledger reconciliation. These are preparation steps supporting the statutory requirements, not a claim that this draft supplies a complete local-file checklist or a prescribed markup. The instruction-based checklist below develops documentation content; amendment reconciliation and adjustment-range rules remain open before an audit response.
+
+### Documentation file under Instruction 02/2017
+
+Article 29(6) identifies the following components. Tie each to the taxpayer and actual controlled transactions rather than providing an unadapted group report:
+
+- Business history, market trends and business-unit/department structure.
+- Group members, legal forms, ownership percentages, operating structure and each relevant member's role.
+- Controlled transactions, comparability factors and relevant pricing policies.
+- Selection of the most appropriate method and financial indicator where needed.
+- Comparable search, reasons for rejecting potential internal comparables, comparability analysis and explanations of adjustments.
+- Economic analysis and supporting work, applicable foreign advance-pricing or similar arrangements, and the conclusion on market compliance including adjustments.
+- Other information materially relevant to compliance.
+
+[Instruction, Article 29(6)][instruction]. Preparing the file does not prevent TAK from adjusting a transaction whose terms are not at market value. Incomplete, inaccurate or non-objective material does not satisfy the documentation requirement. [Article 29(5), (12)][instruction]
+
+Article 29(3) of the retrieved instruction requires availability within **30 days after receipt of TAK's request**. Record the actual receipt and requested scope, and check the applicable current procedure before calculating the response date. The instruction's penalty cross-reference is to the older Law 03/L-222; this draft does not import that historical penalty as current law. [Article 29(3)–(4)][instruction]
+
+Where business operating conditions remain unchanged, the instruction distinguishes a database/comparable search refreshed every **three years** from comparable financial-indicator information refreshed **annually**. Do not treat an old search as permission to leave annual financial information unchanged, or continue it after material changes without reassessment. [Article 29(8)–(10)][instruction]
+
+The instruction calls for an official Kosovo language and allows English in special cases, electronically or physically. Confirm acceptance for the actual request rather than assume any English-only group file will be accepted. [Article 29(11)][instruction]
+
+Article 29(8)'s below-EUR-300,000 documentation wording requires reconciliation with the newer law's general preparation duty. No blanket exemption is asserted here, and the notification threshold must not be used to erase the pricing evidence. This checklist is sourced to the retrieved instruction; a complete current amendment/procedure audit remains outstanding.
 
 ## Deadlines and filing
 
@@ -52,7 +74,7 @@ Retain the reconciliation of annual transaction totals, the submitted statement,
 
 ## Penalties and interest
 
-Unsupported pricing exposes taxable profit to adjustment under Article 28. This draft does not quote a penalty, interest rate or response deadline that has not been checked against current tax-administration legislation and the applicable request. The notification's information-statement classification must be considered when reviewing enforcement rules. [Article 28][law]; [TAK notice][notice]
+Unsupported pricing exposes taxable profit to adjustment under Article 28. This draft does not quote a current penalty or interest rate. The instruction-based response period above still needs checking against current tax-administration legislation and the applicable request. The notification's information-statement classification must be considered when reviewing enforcement rules. [Article 28][law]; [TAK notice][notice]
 
 ## Cross-border points
 

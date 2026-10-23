@@ -7,3 +7,9 @@ Read Articles 3(1.18) and 28 in the previously retrieved official English Law 06
 A current indexed TAK notice at https://www.atk-ks.org/njoftim-per-tatimpagues-raporto-transaksionet-e-kontrolluara-2/ confirms over-EUR-300,000 qualifying cross-border notification for 2025 due 31 March 2026, still citing the instruction. Direct browser retrieval returned 502. The draft expressly distinguishes that historical notice from an unverified 2026-year filing notice.
 
 Two examples pass: EUR 15,000 supported-revenue adjustment and EUR 310,000 qualifying notification total. All pricing/comparability assumptions are explicit. The statutory documentation duty is kept separate from notification threshold. Independent review, instruction/amendment reconciliation, live form, special-jurisdiction rules, enforcement and treaty procedures remain open.
+
+## Documentation expansion, v0.2
+
+Downloaded the official three-language instruction PDF from TAK: https://www.atk-ks.org/wp-content/uploads/2017/07/Udh%C3%ABzimi-Administrativ-MF-Nr.-02-2017-p%C3%ABr-Transferimin-e-%C3%87mimit.pdf . SHA256: `6d3906253e246bf81b0a8ff0ed8d826596212f0699ee736b719045dede80522d`. Read Article 29 including the complete 6.1–6.9 checklist, response period, refresh distinction, language and incomplete-file provisions.
+
+The draft attributes the 30-day response period to the retrieved instruction and leaves current procedure reconciliation explicit. It does not quote the instruction's older tax-administration-law penalty as current. It preserves the unresolved relationship between Article 29(8)'s below-threshold wording and the newer statute's documentation duty. No independent review or full amendment audit is claimed.
