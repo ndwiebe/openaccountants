@@ -1,22 +1,22 @@
 {
   "read_on": "2026-10-23",
   "checked_at_utc": "2026-10-23T17:55:07.942001+00:00",
-  "scope": "All unique non-CTA HTTP URLs in the Finland source pack and README. HTTP reachability does not establish the legal content or currency.",
+  "scope": "All current unique non-CTA HTTP URLs in the Finland source pack and README. Existing URL results retain their original timestamps; only new URLs are checked in the expansion. HTTP reachability does not establish legal content or currency.",
   "base": "915c5118",
   "worktree_source_sha256": {
-    "skills/international/finland/README.md": "efc0d4676953c10127e2c142c7be525154455f22beddb0cb58ecaf1d65c0da7e",
-    "skills/international/finland/fi-company-formation.md": "4fb7ee85bf63bc2980c4caa8ffbb1e68f6e70975cb5bd3260cc16688042761b6",
-    "skills/international/finland/fi-corporate-income-tax.md": "f2dbe58736cc091c1d0fe11dccd0556f2819c44b4728e01a4595c8d1b8e04eb3",
-    "skills/international/finland/fi-country-by-country-reporting.md": "0455d4c5e8a14a10cdfe78f0403624451378065c17b66e821b80be5a938fbdd3",
-    "skills/international/finland/fi-employer-payroll.md": "4167634ac012469489949ca6b4d2db07908fb4cfb225a7c84f7e43e964a5a5d3",
-    "skills/international/finland/fi-income-tax.md": "e4f3df3af9644221761db75e0eb5cd2db6b44faa733548e4b4c81da8e723fefd",
-    "skills/international/finland/fi-individual-cross-border-residence.md": "fd7c92866b6ec7cec837ffe39ebf000fb2a621511d8a817ab89880f49ec83a66",
+    "skills/international/finland/README.md": "157a116419687e866ebb52f585bbd853521ea13a9271f309abc8bdb6d3dc6cb7",
+    "skills/international/finland/fi-company-formation.md": "bdc4f0f2418f85250c052cb8617313f6f5ad3bda73a8b1ff1230f97c7969bd58",
+    "skills/international/finland/fi-corporate-income-tax.md": "b3ee6655437a782034aa65a16600ffbd9af10295ac9188ddd07f65a6292b1365",
+    "skills/international/finland/fi-country-by-country-reporting.md": "b2930d26c47449e83e97861132988a47c29444004a9690dd2013a21defe2bf37",
+    "skills/international/finland/fi-employer-payroll.md": "789a135fa95f8e84cdd5400dc2a3cba510e7177cbee16676616f02a61aa09ec8",
+    "skills/international/finland/fi-income-tax.md": "e8c5280808819b51638644722c94832202a0d2e91261613b9a83344cec3c1219",
+    "skills/international/finland/fi-individual-cross-border-residence.md": "75b37b5976342ef55a620e5539317e315bcde91ade4892d5ee1d7b6623d5b67e",
     "skills/international/finland/fi-prepayments.md": "e06de60c74430fbdb5acd21849f8f59280f1a93b4ff6145cc1a19e2383ec4e7c",
-    "skills/international/finland/fi-property-transfer-tax.md": "8eaf1450ada0eacad572612c58142e10191a4dc0430b26578d00454de7d980da",
-    "skills/international/finland/fi-tax-overview.md": "92c6e28cf1adefd7de61f7ed4c7423e8070937c4d28fa189d34ab6b0f4426def",
-    "skills/international/finland/fi-transfer-pricing.md": "787ea1e5551c3fedb33088fd4dbb43e15d3b834d4724dd11ba6eaedf24c24a4f",
-    "skills/international/finland/fi-yel-social.md": "4506d949319eae55a59217d3b23a37891934d03b9513082adbc639debf67d19e",
-    "skills/international/finland/finland-vat-return.md": "22619b1427e4723c88e8cceb61941b667fd6b865a026bf4e69bc59e87d1d3c87"
+    "skills/international/finland/fi-property-transfer-tax.md": "a071205e80f803028b258a36c5c8eac163a3bf0afd2dd60b8e06eb36c0182cdd",
+    "skills/international/finland/fi-tax-overview.md": "2602f845e0272f13acd05f756f2a51b2ad52f3e0d4348545da8dc6717286f56a",
+    "skills/international/finland/fi-transfer-pricing.md": "3ce935adeb468bba0f19dfbc1dae0b4e1098e7caf7d4139b435ce68a9456c294",
+    "skills/international/finland/fi-yel-social.md": "d756f27087ff43081014815b1b7ff0cc6b7a82dd25955c40302edb5032b8a3f0",
+    "skills/international/finland/finland-vat-return.md": "554393e102026c8c7ef1832cbe18d802173acc6bb11b66fec4302d65250fae39"
   },
   "results": [
     {
@@ -454,6 +454,13 @@
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
+      "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-is-the-current-years-total-of-prepayments-calculated/",
+      "status": 200,
+      "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-is-the-current-years-total-of-prepayments-calculated/",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:29:56.741852+00:00"
+    },
+    {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
@@ -545,6 +552,13 @@
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
+      "url": "https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/",
+      "status": 200,
+      "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/48679/value-added-taxation-of-cross-border-supply-and-acquisition-of-services/",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:29:56.735648+00:00"
+    },
+    {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/",
@@ -578,6 +592,13 @@
       "final_url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/",
       "content_type": "text/html; charset=utf-8",
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
+    },
+    {
+      "url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/detailed-guidance/64633/reporting-data-to-the-incomes-register-insurance-related-data10/",
+      "status": 200,
+      "final_url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/detailed-guidance/64633/reporting-data-to-the-incomes-register-insurance-related-data10/",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:29:56.735205+00:00"
     },
     {
       "url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/employers/earnings-payment-data/employers-are-obliged-to-insure-their-employees/health-insurance-contribution/",
@@ -706,6 +727,6 @@
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     }
   ],
-  "snapshot_note": "Earlier checked URLs retained with their timestamps. New formation URLs checked directly; removed legacy-only links are excluded. Source hashes match this worktree.",
-  "expanded_at_utc": "2026-10-23T18:17:01.966786+00:00"
+  "snapshot_note": "Earlier checked URLs retain their timestamps; formation and review-fix URL expansions have separate timestamps. Removed legacy-only links are excluded. Source hashes identify the current local source revision.",
+  "expanded_at_utc": "2026-10-23T18:33:01.682600+00:00"
 }

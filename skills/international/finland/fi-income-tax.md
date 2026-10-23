@@ -9,8 +9,8 @@ description: >
   deduction ordering, capital-income allocation, personal filing sanctions or MyTax
   reconciliation. Includes executable examples and primary-source read dates. Municipal
   and church amounts, detailed deductions, asset-specific income rules, international
-  cases and full statutory and independent review remain open.
-version: 1.2
+  cases and full statutory and named Finnish accountant review remain open.
+version: 1.3
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -23,7 +23,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.2
+# Finland individual income tax v1.3
 
 ## Who this applies to
 
@@ -187,7 +187,7 @@ Read on 23 October 2026. Direct Vero earned/capital pages and indexed official i
 - [Self-employed filing page][filing]; [personal return instructions][personal-return]; [individual reporting timeline][timeline].
 - [Individual sanctions][sanctions]; [official interest calculator][interest].
 
-Not yet confirmed: full statutory/amendment chain; all deductions, credits, municipal/church amounts and income-specific exclusions; business asset valuation and exceptional allocations; 2027 filing dates; specialist cross-border treatment; live filing; independent pack review and named accountant review. The individual-tax domain remains partial.
+Not yet confirmed: full statutory/amendment chain; all deductions, credits, municipal/church amounts and income-specific exclusions; business asset valuation and exceptional allocations; 2027 filing dates; specialist cross-border treatment; live filing; named Finnish accountant review. The individual-tax domain remains partial.
 
 [scale-law]: https://www.finlex.fi/fi/lainsaadanto/2025/1140
 [income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535

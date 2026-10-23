@@ -10,16 +10,16 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 ---
 
-# Finland country-by-country reporting v0.3
+# Finland country-by-country reporting v0.4
 
 ## Who this applies to
 
 Vero's guidance uses preceding-period consolidated net sales of **at least EUR 750 million**, together with the relevant international structure, for CbCR screening. The full-report instructions also address Finnish-resident standalone enterprises with a foreign PE. This is a group reporting test, distinct from the documentation-size rules in the [transfer-pricing Guide](fi-transfer-pricing.md). [Full-report instructions][report]
 
-Read the source and limits below before using this draft for a filing. Assessment Procedure Act sections 14d–14e, 32 and 32a were directly checked in the official Finnish statutory text on 23 October 2026. Live exchange relationships, detailed application and independent review remain open. [Assessment Procedure Act][law]
+Read the source and limits below before using this draft for a filing. Assessment Procedure Act sections 14d–14e, 32 and 32a were directly checked in the official Finnish statutory text on 23 October 2026. Live exchange relationships, detailed application and named Finnish accountant review remain open. [Assessment Procedure Act][law]
 
 ## Filing roles and the threshold
 
@@ -120,7 +120,7 @@ Official Vero text retrieved through the search index on 23 October 2026:
 - [Reporting-entity notification instructions][notification].
 - [MyTax service-change notice][service].
 
-Not yet confirmed: remaining amendment/procedural interactions; case-specific secondary/surrogate eligibility and live exchange relationships; detailed data-category definitions; current transmission schemas and authorisations; actual extension decisions and calendar application. Independent pack review and named accountant review remain outstanding. Reporting and country coverage remain partial.
+Not yet confirmed: remaining amendment/procedural interactions; case-specific secondary/surrogate eligibility and live exchange relationships; detailed data-category definitions; current transmission schemas and authorisations; actual extension decisions and calendar application. Named Finnish accountant review remains outstanding; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). Reporting and country coverage remain partial.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1995/1558
 

@@ -1,7 +1,7 @@
 ---
 name: fi-yel-social
 description: Use this skill whenever asked about Finland YEL pension insurance or social security for self-employed persons. Trigger on phrases like "YEL", "YEL insurance", "yrittäjän eläkelaki", "self-employed pension Finland", "Finnish pension insurance", "entrepreneur pension", "YEL income", "YEL contribution", "sickness allowance Finland", "disability pension self-employed Finland", "new entrepreneur discount", or any question about mandatory social insurance obligations for Finnish self-employed. Covers YEL contribution rates, income thresholds, provider selection, tax deductibility, and social security benefits. ALWAYS read this skill before advising on Finnish self-employed social insurance.
-version: 1.3
+version: 1.4
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland YEL and self-employed social insurance v1.3 — 2026 editorial draft
+# Finland YEL and self-employed social insurance v1.4 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
 
@@ -172,7 +172,7 @@ expected:
 
 ## Executable contribution examples
 
-The standard rate and new-entrepreneur reduction below were rechecked against [ETK's self-employed page](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) on 23 October 2026. The other source references and specialist rules in this earlier editorial draft still need full pack review. These controls reproduce existing illustrative amounts; they do not establish eligibility or insurer billing terms.
+The standard rate and new-entrepreneur reduction below were rechecked against [ETK's self-employed page](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) on 23 October 2026. The independent source review and its selected verification limits are recorded in the [country README](README.md#evidence-and-next-action); remaining specialist and named accountant review are separate. These controls reproduce existing illustrative amounts; they do not establish eligibility or insurer billing terms.
 
 ### Standard full-year contribution
 
@@ -221,7 +221,7 @@ expected:
 
 ## Sources
 
-Direct statutory check, 23 October 2026: [Self-Employed Persons' Pensions Act 1272/2006](https://www.finlex.fi/fi/lainsaadanto/2006/1272), sections 4, 89, 109, 112–112a, 114–115, 122 and 143, plus the displayed review-transition provisions. Official HTML statutory text was extracted after the browser reader proved incomplete; hashes are in the country research record. This closes selected statutory gaps, not every annual decree, social-benefit rule or exception in the earlier operational draft. Full independent pack and named accountant review remain open.
+Direct statutory check, 23 October 2026: [Self-Employed Persons' Pensions Act 1272/2006](https://www.finlex.fi/fi/lainsaadanto/2006/1272), sections 4, 89, 109, 112–112a, 114–115, 122 and 143, plus the displayed review-transition provisions. Official HTML statutory text was extracted after the browser reader proved incomplete; hashes are in the country research record. This closes selected statutory gaps, not every annual decree, social-benefit rule or exception in the earlier operational draft. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action).
 
 - [Finnish Centre for Pensions: FAQs on YEL insurance](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/)
 - [Finnish Centre for Pensions: self-employed](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/)

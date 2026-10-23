@@ -3,17 +3,17 @@ name: fi-property-transfer-tax
 description: >
   Prepare Finnish property-transfer tax calculations for real estate and
   housing-company shares, distinguish contract and ownership-transfer dates,
-  and reconcile the debt-free price. Statutory, exception and independent review
+  and reconcile the debt-free price. Statutory, exception and named Finnish accountant review
   remain outstanding.
 jurisdiction: FI
 category: property
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 ---
 
-# Finland property transfer tax v0.2
+# Finland property transfer tax v0.3
 
 ## Who this applies to
 
@@ -149,7 +149,7 @@ Official Vero text retrieved in the search index on 23 October 2026:
 - [Deadline table][deadlines].
 - [Corporate-stock/non-resident distinction][stock].
 
-Not yet confirmed: remaining Transfer Tax Act/amendment scope; detailed consideration and reorganisation cases; indirect/foreign property-company transfers; exemptions and other historical transitions; refunds, penalties, interest, supplemental filing mechanics and holiday rules. Independent pack review and named accountant review remain outstanding. Property and country coverage remain partial.
+Not yet confirmed: remaining Transfer Tax Act/amendment scope; detailed consideration and reorganisation cases; indirect/foreign property-company transfers; exemptions and other historical transitions; refunds, penalties, interest, supplemental filing mechanics and holiday rules. Named Finnish accountant review remains outstanding; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). Property and country coverage remain partial.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1996/931
 [amendment]: https://www.finlex.fi/api/media/statute/896509/mainPdf/main.pdf?timestamp=2025-12-11T05%3A12%3A12.000Z

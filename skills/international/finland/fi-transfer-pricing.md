@@ -4,22 +4,22 @@ description: >
   Screen Finnish transfer-pricing documentation obligations, prepare
   cross-border related-party evidence, distinguish Form 78 from the full
   documentation, and track authority requests. Detailed statutory, method,
-  reporting and independent review remain outstanding.
+  reporting and named Finnish accountant review remain outstanding.
 jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.4
+version: 0.5
 ---
 
-# Finland transfer-pricing documentation v0.4
+# Finland transfer-pricing documentation v0.5
 
 ## Who this applies to
 
 The Finnish Tax Administration's guidance addresses foreign related-party transactions of Finnish taxpayers and dealings between a foreign enterprise and its Finnish PE. The pricing principle also applies to small enterprises outside the full documentation obligation. [Obligation guidance][obligation]
 
-This draft uses official administrative guidance read on 23 October 2026. The obligation page says it will be updated and displays a 2022 update date. Consolidated Finnish sections 14a–14c, 31, 32 and 32a have now been read directly from the official Finlex page's embedded statutory text; the earlier indexed and 2016-amendment work is preserved. Full specialist scope, procedural interaction and independent review remain open.
+This draft uses official administrative guidance read on 23 October 2026. The obligation page says it will be updated and displays a 2022 update date. Consolidated Finnish sections 14a–14c, 31, 32 and 32a have now been read directly from the official Finlex page's embedded statutory text; the earlier indexed and 2016-amendment work is preserved. Full specialist scope, procedural interaction and named Finnish accountant review remain open.
 
 ## Related parties and the actual transaction
 
@@ -150,7 +150,7 @@ Read 23 October 2026. The obligation page was opened directly; detailed guidance
 - [Detailed documentation guidance][detailed], SME definition and related calculations.
 - [Form 78 instructions][form]; [documentation FAQ][faq].
 
-Not yet confirmed: remaining amendment/procedural scope, detailed application of master/local content and simplification eligibility, benchmark searches and transaction-specific method application, financing/intangibles/restructuring cases, dispute/APA procedures and live filing. Independent pack review and named accountant review remain outstanding. TP and the country pack remain partial.
+Not yet confirmed: remaining amendment/procedural scope, detailed application of master/local content and simplification eligibility, benchmark searches and transaction-specific method application, financing/intangibles/restructuring cases, dispute/APA procedures and live filing. Named Finnish accountant review remains outstanding; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). TP and the country pack remain partial.
 
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/

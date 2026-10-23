@@ -9,7 +9,7 @@ description: >
   Finnish Trade Register registration, setup fees, directors, deputy directors,
   financial statement filing or audit thresholds. Includes statutory and authority
   sources, read dates and worked controls. Other entities, exemptions, specialist
-  sectors and independent review remain open.
+  sectors and named Finnish accountant review remain open.
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -17,11 +17,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 category: formation
 ---
 
-# Finland company formation and entity screening v0.1
+# Finland company formation and entity screening v0.2
 
 ## Who this applies to
 
@@ -152,7 +152,7 @@ Read 23 October 2026. PRH's startup page was directly opened. Permit, general fi
 - [Auditing Act 1141/2015][audit-law], chapter 2 section 2. The statutory positive omission test is used rather than ambiguous English summaries of the two-period condition.
 - [PRH financial statements][statements]; [2026 late-filing notice][late].
 
-Not yet confirmed: complete company/accounting/Trade Register and fee-law chains; entity comparisons, share rights and non-cash subscriptions, all foreign-person exemptions, beneficial-owner specifics, group/sector audit and sustainability rules, actual late-fee cases and live filing. Independent pack and named accountant review remain open. This secondary formation topic does not establish any core tax domain as complete.
+Not yet confirmed: complete company/accounting/Trade Register and fee-law chains; entity comparisons, share rights and non-cash subscriptions, all foreign-person exemptions, beneficial-owner specifics, group/sector audit and sustainability rules, actual late-fee cases and live filing. Named Finnish accountant review remains open; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). This secondary formation topic does not establish any core tax domain as complete.
 
 [startup]: https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html
 [permits]: https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html

@@ -4,16 +4,16 @@ description: >
   Screen Finnish individual residence on arrival and departure, distinguish
   domestic status from treaty residence, assemble a nonresidency claim and
   reconcile foreign-tax credits and confirmed carryovers.
-  Income-specific taxation, treaties, statutes and independent review remain open.
+  Income-specific taxation, treaties, statutes and named Finnish accountant review remain open.
 jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 ---
 
-# Finland individual cross-border residence v0.3
+# Finland individual cross-border residence v0.4
 
 ## Who this applies to
 
@@ -143,7 +143,7 @@ Official Vero text retrieved through the search index on 23 October 2026:
 - [Treaty articles guidance][treaties].
 - [Individual double-tax relief][relief]; [detailed individual relief guidance][relief-detail], section 3.2.6.
 
-Not yet confirmed: remaining source-income and amendment scope, exact day-count and temporary-absence application, full substantial-ties and special-position cases, each treaty, income-specific source/rate rules, complete foreign-tax relief law, forms and current procedures. Independent pack review and named accountant review remain outstanding. Cross-border coverage remains partial.
+Not yet confirmed: remaining source-income and amendment scope, exact day-count and temporary-absence application, full substantial-ties and special-position cases, each treaty, income-specific source/rate rules, complete foreign-tax relief law, forms and current procedures. Named Finnish accountant review remains outstanding; the independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action). Cross-border coverage remains partial.
 
 [law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 

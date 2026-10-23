@@ -9,7 +9,7 @@ description: >
   tax-year allocation and outbound-payment triage. Includes primary-source links,
   read dates and executable arithmetic examples. It does not complete participation
   exemptions, financing restrictions, reorganisations, group relief, international
-  minimum tax, treaty eligibility, live filing or independent pack review.
+  minimum tax, treaty eligibility, live filing or named Finnish accountant review.
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -17,11 +17,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
 category: international
 ---
 
-# Finland corporate income tax v1.1
+# Finland corporate income tax v1.2
 
 ## Who this applies to
 
@@ -180,7 +180,7 @@ Read on 23 October 2026. Corporate tax, loss, return and sanctions pages were op
 - [Instalment table][instalments]; [corporate sanctions][sanctions]; [interest calculator][interest].
 - [Corporate residence][residence]; [nonresident investment income][outbound]; [future changes][changes].
 
-Not yet confirmed: complete current legal chain; participation exemptions, interest restrictions, group relief, restructurings, incentives, CFC/exit/minimum-tax rules; treaty/EU entitlement and withholding procedures; detailed PE attribution and foreign relief; exceptional entity and source cases; live filing; independent pack review and named accountant review. Corporate and cross-border domains remain partial.
+Not yet confirmed: complete current legal chain; participation exemptions, interest restrictions, group relief, restructurings, incentives, CFC/exit/minimum-tax rules; treaty/EU entitlement and withholding procedures; detailed PE attribution and foreign relief; exceptional entity and source cases; live filing; named Finnish accountant review. Corporate and cross-border domains remain partial.
 
 [income]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/
 [income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535

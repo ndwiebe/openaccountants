@@ -9,7 +9,7 @@ description: >
   calculation, when checking which workpaper applies, or when reconciling the
   country pack's partial coverage. This overview supplies no standalone tax
   calculation or current formation fee, and the country remains a source-cited
-  draft pending independent pack and named accountant review.
+  draft pending named Finnish accountant review.
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -17,11 +17,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 category: international
 ---
 
-# Finland tax overview v0.2
+# Finland tax overview v0.3
 
 ## Start with the question and the taxpayer
 
@@ -67,4 +67,4 @@ version (and the professional behind it) is at
 
 This router was reconciled to the existing Finland source pack on 23 October 2026. Tax rules and official URLs belong to the linked topic Guides; no independent legal conclusion is supplied by this index. Earlier 2025 summary figures remain in Git history and must not substitute for current topic-source checks.
 
-The current batch remains local pending source reconciliation and independent full-pack review. See [OWNERS.md](../../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
+The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.

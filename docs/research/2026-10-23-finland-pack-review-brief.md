@@ -1,6 +1,6 @@
 # Finland independent full-pack review brief
 
-Status: **requested review not yet performed**. This is a writer-prepared handoff, not a review result or accountant approval.
+Status: **historical writer-prepared handoff** for checkpoint `b7b4a75f`. The subsequent independent report and correction closure are recorded in [2026-10-23-finland-pack-review.md](2026-10-23-finland-pack-review.md). The preparation evidence below describes the original checkpoint, not final publication evidence or accountant approval.
 
 Source checkpoint: `b7b4a75f53c5a0aba3cb5ff994ece7cae6f20bf4` on local branch `codex/finland-country-completion` in `/private/tmp/oa-world-support`. Compare the country batch with published shared baseline `915c5118`. Reuse consolidated draft PR #514 after review; country issue #392 remains open. The primary chat is currently writing Bosnia and Herzegovina. Norway and Iceland remain parked. No Finland content has been pushed.
 
