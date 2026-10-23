@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Norway employer payroll preparation v0.1
+# Norway employer payroll preparation v0.2
 
 ## Who this applies to
 
@@ -24,6 +24,16 @@ This draft covers the ordinary business-employer payroll workflow. Establish the
 The authority states that the tax-deduction account scheme ends from 2026. Employers must pay withholding directly to the Tax Administration no later than the **first working day after salary payment**. A monthly report does not defer that payment. [Employer withholding obligations][obligations]
 
 Retrieve the employee's tax-card data electronically, update it for each payroll run, apply it to the correct base and document the deduction to the employee. The obligation page describes a limited cross-border deferral application; it requires the specified circumstances and an authority decision, not merely the employer's preference. [Employer withholding obligations][obligations]
+
+## Tax-card decision branches
+
+The deduction guidance directs the main employer to use the table and secondary employers to use the card's percentage; clarify the employer role. If the role is unknown, it directs percentage deduction. PAYE cards use their fixed percentage, including holiday and pre-Christmas pay. [Deduction guidance][deductions]
+
+For ordinary salary without an available tax card, it states **50% withholding**; pensions and specified benefits have a different 30% rule. January use of a prior-year card has separate correction rules. Do not extend the salary rule to every payment or treat an old card as indefinitely valid. [Deduction guidance][deductions]
+
+The employer card-information page requires retrieval of an amended card before payroll. For exemption cards, use the amount allocated to this employer. Salary above that allocation is subject to 50% withholding; a zero allocation means 50% on the whole salary. An employee with several employers must allocate the exemption amount. [Employer card information][cards]
+
+Store card source, version, type, employer role, allocated amount and cumulative use with the pay-run record. No general 2026 exemption ceiling is asserted here: use the actual valid card. The guidance's displayed 2025 amount must not be silently presented as a verified 2026 threshold.
 
 ## Reporting is a separate clock
 
@@ -75,6 +85,45 @@ expected:
 
 Do not use this percentage example to replace a table-based tax card. A payday calendar must be checked separately against Norwegian working days before scheduling remittance.
 
+### 2. Ordinary salary without a card
+
+Assume an ordinary NOK 10,000 salary payment to which the missing-card rule applies, no January exception and no other deductions. At 50%, withholding is NOK 5,000. This is not a final annual tax assessment.
+
+```oa-check
+name: Norway assumed missing salary tax card
+inputs:
+  ordinary_salary: 10000
+  missing_card_rate: 0.50
+steps:
+  withholding: ordinary_salary * missing_card_rate
+  cash_before_other_deductions: ordinary_salary - withholding
+expected:
+  withholding: 5000
+  cash_before_other_deductions: 5000
+```
+
+### 3. Employer allocation on an exemption card
+
+Assume a valid employer allocation with NOK 1,000 remaining and a NOK 4,000 ordinary salary payment. The NOK 3,000 excess gives NOK 1,500 withholding at 50%. Other deductions remain separate. The example assumes correct allocation and cumulative records.
+
+```oa-check
+name: Norway assumed exemption allocation excess
+inputs:
+  current_salary: 4000
+  remaining_allocated_exemption: 1000
+  excess_rate: 0.50
+steps:
+  exempt_part: min(current_salary, remaining_allocated_exemption)
+  excess_part: current_salary - exempt_part
+  withholding: excess_part * excess_rate
+  cash_before_other_deductions: current_salary - withholding
+expected:
+  exempt_part: 1000
+  excess_part: 3000
+  withholding: 1500
+  cash_before_other_deductions: 2500
+```
+
 ## Ask the client first
 
 - What employment, work-location, insurance and tax-card facts apply?
@@ -90,11 +139,13 @@ Official authority text retrieved through the search index on 23 October 2026:
 - [Employer withholding obligations][obligations].
 - [A-melding deadlines][deadlines].
 - [Dedicated payment guidance][payments].
-- [Correct deduction guidance][deductions].
+- [Correct deduction guidance][deductions]; [employer card information][cards], retrieved in indexed official text on 23 October 2026.
 
-Not yet confirmed: full statutory/amendment chain, missing-card rules, table calculations, benefit valuation, holiday pay, pension and insurance conditions, zone exceptions, attachments, special foreign-employer schemes, sanctions and live filing/payment. Independent review and professional attestation remain outstanding. Payroll and country coverage remain partial.
+Not yet confirmed: full statutory/amendment chain, complete missing-card/January application, table calculations, benefit valuation, holiday pay, pension and insurance conditions, zone exceptions, attachments, special foreign-employer schemes, sanctions and live filing/payment. Independent review and professional attestation remain outstanding. Payroll and country coverage remain partial.
 
 [obligations]: https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/as-an-employer-you-are-obliged-to-make-withholding-tax-deductions/
 [deadlines]: https://www.skatteetaten.no/en/business-and-organisation/employer/the-a-melding/deadlines-and-payment/
 [payments]: https://www.skatteetaten.no/en/business-and-organisation/employer/employers-national-insurance-contributions/payment-of-withholding-tax-and-employers-national-insurance-contributions/
 [deductions]: https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/how-to-deduct-the-correct-amount-of-tax/
+
+[cards]: https://www.skatteetaten.no/en/business-and-organisation/employer/tax-deduction-cards-and-tax-deductions/tax-deduction-cards/about-tax-deduction-cards-for-you-as-an-employer/
