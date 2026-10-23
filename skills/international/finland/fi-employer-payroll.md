@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 ---
 
-# Finland employer payroll reporting v0.3
+# Finland employer payroll reporting v0.4
 
 ## Who this applies to
 
@@ -28,6 +28,14 @@ Vero publishes a **1.91% employer health-insurance contribution for 2026**, comp
 The employer contribution can apply even when withholding is zero or remuneration consists of benefits. The employee's insured-person health contribution is included in the withholding rate; do not deduct it again as a separate item. Vero distinguishes trade income from wages for this contribution. [Social insurance contributions][insurance]
 
 The same official page lists pension, unemployment, occupational accident/disease and group life contributions separately. Their inclusion depends on the applicable coverage and other conditions. This Guide supplies no universal all-in employer percentage. [Social insurance contributions][insurance]
+
+## Employee pension insurance: TyEL eligibility and shares
+
+Ilmarinen's Finnish eligibility page specifies employment, monthly wages of at least **EUR 71.72 in 2026**, and the age conditions. Insurance begins from the month after turning 17 and ends at the end of the month of reaching the upper age: 68 for birth years through 1957, 69 for 1958–1961, and 70 for 1962 onwards. Its English eligibility page contains an inconsistent final birth-year phrase; the Finnish text and contribution page agree on 1962 onwards. [Finnish TyEL eligibility][tyel-eligibility]; [Contribution page][tyel-contributions]
+
+Confirm the actual scheme, employment, insured earnings, birthday month, international coverage and any owner/entrepreneur classification. The existence of a YEL Guide does not settle employee TyEL status.
+
+For covered employees in 2026, the published employee share is **7.30%**. Deduct that share from pay and remit the full insurer contribution as employer. The published average total of 24.40% and average employer share of 17.10% are not every employer's invoice rate: administration, employer characteristics and bonuses can affect the actual charge. Obtain the current insurer-specific rate and reconcile it separately. [Ilmarinen contribution calculation][tyel-calculation]
 
 ## Unemployment insurance: classify before calculating
 
@@ -168,6 +176,32 @@ expected:
   employer_total: 13812.60
 ```
 
+### 5. Employee deductions versus employer contribution
+
+Assume ordinary cash wages of EUR 3,000, valid assumed tax-card withholding of 20%, full TyEL eligibility at 7.30%, ordinary employee unemployment eligibility at 0.89%, and no other deductions. Cash pay is EUR 2,154.30 after EUR 600 tax, EUR 219 pension and EUR 26.70 unemployment. If the same EUR 3,000 is the employer-health base, its EUR 57.30 contribution is an additional employer liability, not another employee deduction. The example does not establish eligibility or total employer cost.
+
+```oa-check
+name: Finland assumed employee payroll deduction reconciliation
+inputs:
+  cash_wages: 3000
+  assumed_card_rate: 0.20
+  employee_pension_rate: 0.073
+  employee_unemployment_rate: 0.0089
+  employer_health_rate: 0.0191
+steps:
+  tax_withheld: cash_wages * assumed_card_rate
+  employee_pension: cash_wages * employee_pension_rate
+  employee_unemployment: cash_wages * employee_unemployment_rate
+  employee_cash: cash_wages - tax_withheld - employee_pension - employee_unemployment
+  employer_health_separately: cash_wages * employer_health_rate
+expected:
+  tax_withheld: 600
+  employee_pension: 219
+  employee_unemployment: 26.7
+  employee_cash: 2154.3
+  employer_health_separately: 57.3
+```
+
 ## Ask the client first
 
 - Who is paid, for what work, where, and on which payment dates?
@@ -181,12 +215,13 @@ expected:
 Official text retrieved through the search index on 23 October 2026:
 
 - [Vero social insurance contributions][insurance], 2026 table and scope.
+- [TyEL eligibility in Finnish][tyel-eligibility], [contribution page][tyel-contributions] and [contribution calculation][tyel-calculation], retrieved in indexed insurer text on 23 October 2026.
 - [Employment Fund liability][unemployment-liability] and [payment/rate guidance][unemployment-payment], retrieved as indexed official text on 23 October 2026.
 - [Incomes Register deadlines][deadlines].
 - [Vero wage reporting and employer contributions][reporting].
 - [Wage tax-card guidance][card], updated 14 April 2026; [rate and ceiling guidance][ceiling], updated 1 January 2026, retrieved as indexed official text.
 
-Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, pension/accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
+Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, full pension statutory/coverage review, accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
 
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
@@ -197,3 +232,7 @@ Not yet confirmed: complete current statutory chain, employee withholding and be
 
 [unemployment-liability]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/
 [unemployment-payment]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/
+
+[tyel-eligibility]: https://www.ilmarinen.fi/tyonantaja/tyel-vakuutus/
+[tyel-contributions]: https://www.ilmarinen.fi/en/employer/tyel-contributions/
+[tyel-calculation]: https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/

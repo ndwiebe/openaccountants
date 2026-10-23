@@ -13,3 +13,9 @@ Two further examples pass: assumed ceiling crossing produces EUR 1,200 withholdi
 ## Unemployment insurance expansion, v0.3
 
 Read Employment Fund liability and payment guidance in indexed official text on 23 October 2026; links retained in the Guide. Added ordinary/part-owner distinction and employer banding without asserting that any shareholder is automatically a part-owner. Scope exclusions, birthdays, international coverage and statutory reconciliation remain open. Fourth executable example tests band arithmetic and produces EUR 13,812.60 employer contribution on the assumed ordinary payroll; actual invoice/rounding reconciliation remains separate.
+
+## TyEL expansion, v0.4
+
+Read Ilmarinen's Finnish eligibility page, contribution page and contribution-calculation page through indexed insurer text on 23 October 2026. Source links are retained in the Guide. Cross-checked the final birth-year cohort against Finnish text because the English insurance page says “in or before 1962” where its contribution page says “1962 or later”. Kept actual insurer pricing distinct from a published average; full statutory and international-coverage review remain open.
+
+Fifth executable example reconciles assumed employee deductions to cash and keeps employer health insurance separate. The ordinary cash wage base, eligibility and tax-card percentage are assumptions. No full employer-cost claim or independent legal review is made.
