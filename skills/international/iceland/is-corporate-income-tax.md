@@ -15,14 +15,14 @@ jurisdiction: IS
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.3
+version: 0.5
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.3
+# Iceland corporate income tax v0.5
 
 ## Who this applies to
 
@@ -127,7 +127,17 @@ A loss/negative statutory-profit case needs a documented local interpretation be
 
 Article 57a's low-tax comparison is **less than two thirds of the Icelandic tax that would apply to the foreign entity's profit**, not simply a country's headline rate. Establish direct/indirect ownership or control throughout the year: the provision addresses at least half held by Icelandic taxpayers or management control during the year. Trace the taxpayer's proportionate interest and recompute the foreign profit under Icelandic rules, without waiting for distribution. [Article 57a][law]
 
-Test the exceptions from evidence: a qualifying treaty/information-exchange case whose income is not mainly passive, or qualifying EEA/EFTA/Faroe establishment carrying on genuine business with the required information access or taxpayer disclosure. Location alone does not establish genuine activity. Ring-fence losses to that entity's profits and retain adequate loss support; do not use them against unrelated Icelandic operations. Keep a previously taxed-income/distribution ledger to avoid taxing the same included profit again, subject to Article 57a's excess-distribution rule. The implementing regulation's substance and detailed foreign-tax-relief work remain part of the independent review. [Article 57a][law]
+Test the exceptions from evidence: a qualifying treaty/information-exchange case whose income is not mainly passive, or qualifying EEA/EFTA/Faroe establishment carrying on genuine business with the required information access or taxpayer disclosure. Location alone does not establish genuine activity. Ring-fence losses to that entity's profits and retain adequate loss support; do not use them against unrelated Icelandic operations. Keep a previously taxed-income/distribution ledger to avoid taxing the same included profit again, subject to Article 57a's excess-distribution rule. The following implementation stages apply alongside the current statute. [Article 57a][law]
+
+**CFC workpaper under Regulation 1102/2013.** Reconcile the foreign accounts to Icelandic income/deduction rules for the comparable legal form, then compare actual foreign income tax with two thirds of the resulting hypothetical Icelandic tax. Multiply ownership along each indirect chain, aggregating the relevant Icelandic holdings/control for the trigger. The regulation distinguishes a control/ownership trigger at any time in the year from the year-end share used to allocate profit/loss; preserve acquisitions/disposals and refer a disputed timing case rather than assuming continuous ownership. [Regulation, Articles 2–5 and 8](https://files.reglugerd.is/pdf/1102-2013/current)
+
+The substance file addresses actual premises/equipment, local management and staff, their decision-making authority and expertise, local economic connections and demonstrable value from intragroup services. For the Article 7 outside-EEA/EFTA/Faroe exception, establish the information-access agreement and that more than half of income arises from genuine business. For the within-area exception, prove genuine activity and the required information access/disclosure. A registered-office service or treaty listing alone does not settle these tests. [Regulation, Articles 6–7](https://files.reglugerd.is/pdf/1102-2013/current); [Article 57a][law]
+
+If taxable, allocate the Icelandic-rule profit to the supported ownership share. Keep losses by **owner, foreign entity and origin year**: only proved losses arising during that owner's holding period, verified at year end, offset that owner's later share of the same entity's profit. The regulation excludes pre-2010 losses, permits a ten-year period and does not transfer the unused owner loss to a buyer. Keep distributions and previously taxed inclusions in a separate roll-forward; only the specified excess distribution is taxable again. Any underlying or distribution-level foreign-tax relief needs its own legal basis and claim. [Regulation, Articles 8–9](https://files.reglugerd.is/pdf/1102-2013/current)
+
+**Reporting.** Skatturinn specifies an Icelandic identifier for the CFC, applied for through RSK 17.90 if needed; the annual entity report RSK 4.24 with accounts; and each owner's RSK 4.25 with the owner's return. Multiple Icelandic owners coordinate the entity report. Current general guidance describes the entity report as a paper form and owner reporting as electronically available; confirm the accepted current-year route before submission. Do not substitute a foreign annual report for both filings. [CFC reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/)
+
+The regulation reproduction says the official Gazette prevails if texts differ. Read it with the current Article 57a, not as authority to override later legislation.
 
 
 ## Deadlines and filing
@@ -165,7 +175,7 @@ Article 114 links assessment late interest to the Central Bank rate. Regulation 
 
 ## Cross-border points
 
-Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Treaty corridors and full foreign-credit limitations remain open. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
+Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Use the [resident foreign-income relief workpaper](is-cross-border.md) for country/category matching, tax attribution and the conditional current-UK credit example. Other treaty-specific limitations and exemption methods still need the actual treaty analysis. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
 
 For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
 
@@ -312,6 +322,36 @@ expected:
   failing_distance_points: 2.1
 ```
 
+### 7. CFC indirect ownership, tax comparison and owner loss
+
+Assume the taxpayer owns 60% of an intermediate company which owns 90% of the foreign entity throughout the year, with a combined 54% indirect interest and no applicable exemption. The foreign entity's profit has already been reconciled to an Icelandic comparable-company base of 20 million; at 20%, hypothetical Icelandic tax is 4 million, so the two-thirds comparison is 2,666,666.67. Actual foreign income tax of 1 million is below that threshold. The owner's profit share is **10.8 million**. A proved eligible same-owner/same-entity carried loss of 2.8 million leaves an **8 million** inclusion; gross Icelandic tax at 20% is **1.6 million before any separately established relief**. No unrelated domestic income is reduced by the ring-fenced CFC loss. [Article 57a][law], [Regulation 1102/2013, Articles 2, 4 and 8](https://files.reglugerd.is/pdf/1102-2013/current)
+
+```oa-check
+name: Iceland CFC indirect share and owner-specific same-entity loss
+inputs:
+  intermediate_share: 0.60
+  intermediate_cfc_share: 0.90
+  foreign_profit_reconciled_to_iceland_rules: 20000000
+  comparable_iceland_rate: 0.20
+  actual_foreign_income_tax: 1000000
+  proved_owner_same_entity_loss: 2800000
+steps:
+  - indirect_share: intermediate_share * intermediate_cfc_share
+  - hypothetical_iceland_tax: foreign_profit_reconciled_to_iceland_rules * comparable_iceland_rate
+  - low_tax_comparison: hypothetical_iceland_tax * 2 / 3
+  - owner_profit_share: foreign_profit_reconciled_to_iceland_rules * indirect_share
+  - loss_used: min(owner_profit_share, proved_owner_same_entity_loss)
+  - inclusion: owner_profit_share - loss_used
+  - gross_iceland_tax_before_separate_relief: inclusion * comparable_iceland_rate
+expected:
+  indirect_share: 0.54
+  hypothetical_iceland_tax: 4000000
+  low_tax_comparison: 2666666.67
+  owner_profit_share: 10800000
+  inclusion: 8000000
+  gross_iceland_tax_before_separate_relief: 1600000
+```
+
 ## Ask the client first
 
 - What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
@@ -329,7 +369,7 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, detailed CFC implementation/foreign-credit methods, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -343,6 +383,8 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | Skatturinn, corporate advance-tax guidance | [Advance payments][advances] | 2026-10-23 |
 | Act 33/2020, Article 6, excess-interest wording | [Enacted amendment](https://www.althingi.is/altext/stjt/2020.033.html) | 2026-10-23 |
 | Bill 626/150, section 3.5, positive-profit interest calculation | [Official explanation](https://www.althingi.is/altext/150/s/0626.html) | 2026-10-23 |
+| CFC Regulation 1102/2013, computation, substance, losses and reports | [Regulation](https://files.reglugerd.is/pdf/1102-2013/current) | 2026-10-23 |
+| Skatturinn, CFC report and identifier requirements | [Reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/) | 2026-10-23 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/

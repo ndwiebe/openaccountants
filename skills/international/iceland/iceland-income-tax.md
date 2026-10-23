@@ -1,7 +1,7 @@
 ---
 name: iceland-income-tax
 description: Use this skill whenever asked about Iceland (Ísland) personal income tax for self-employed individuals and employees. Trigger on phrases like "how much tax do I pay in Iceland", "skattframtal", "RSK 1.01", "income tax return Iceland", "staðgreiðsla", "reiknað endurgjald", "calculated remuneration", "persónuafsláttur", "personal tax credit", "útsvar", "municipal tax", "tryggingagjald", "lífeyrissjóður pension", "capital income tax 22%", "VSK / VAT registration", "Skatturinn", or any question about filing or computing income tax for a self-employed (sjálfstætt starfandi) or employed individual resident in Iceland. Also trigger when preparing or reviewing an annual return (skattframtal) or business income statement (rekstrarframtal RSK 4.11), computing deductible expenses, or advising on monthly withholding (staðgreiðsla). This skill covers the 3-bracket combined state + municipal income tax, personal tax credit, capital income tax, mandatory occupational pension, tryggingagjald, calculated remuneration, penalties, and interaction with VAT (VSK). ALWAYS read this skill before touching any Icelandic income tax work.
-version: 0.2
+version: 0.3
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -139,7 +139,7 @@ Late or defective returns carry statutory surcharges on the tax base, not a flat
 
 Foreign income is not omitted because no Icelandic withholding occurred. Report the corresponding foreign income, year-end asset and foreign tax with documentary exchange-rate and treaty-relief support. A private asset disposal needs its own gain/exemption classification; this guide does not establish a universal exemption for property, cryptocurrency or private-company transactions. [Official source](https://www.skatturinn.is/english/individuals/tax-liability/) [Published return layout](https://www.skatturinn.is/media/rsk01/rsk_0110_2026.en.pdf)
 
-Use the [cross-border Guide](is-cross-border.md) for residence, treaty, source-payment and departure screening. A treaty or foreign-tax credit needs its own country, income-category and documentary analysis; this resident ordinary method does not establish one universal foreign-credit amount.
+Use the [cross-border Guide](is-cross-border.md) for residence, treaty, source-payment and departure screening. The cross-border Guide also supplies the resident foreign-relief workpaper. Use the actual treaty's income category, tax attribution and supporting documents; its flat-rate corporate example does not determine an individual's progressive-tax credit or exemption.
 
 ## Worked examples that recompute
 

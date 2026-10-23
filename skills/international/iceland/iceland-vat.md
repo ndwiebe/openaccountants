@@ -1,7 +1,7 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.1
+version: 2.2
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -65,7 +65,7 @@ Iceland VAT is generally charged on domestic business transactions and imports u
 | Zero-rated supply | Charge 0% only after meeting a stated zero-rate condition. See the services test below. Other examples include exported goods, international goods transport and domestic legs of it, passenger transport to/from Iceland, qualifying supplies to inter-country vessels/aircraft (not pleasure boats or private aircraft), and sale, lease, building and repair of ships and aircraft (not ships under 6 metres, pleasure boats or private aircraft). A zero-rated supply remains within VAT scope. | Export/customs or transport evidence; customer establishment and use evidence for services. |
 | Exempt supply | Do not charge output VAT. Skatturinn lists, among others, health, social/education, certain culture/sport, listed public transport, postal, qualifying property rental (more than one month) and property sale, insurance, banking/financial, lotteries and certain artistic activities. Exempt-business purchases do not give input VAT credit. | Legal/service facts and any voluntary property-registration evidence. |
 | Import of goods | VAT is collected by Customs on the customs value plus duties. A registered business may count import VAT as input tax for goods used in its taxable activity, on the Customs payment document. Blocked categories below still apply. | Customs declaration and payment document, supplier invoice, use. |
-| Foreign-service purchase from abroad | Apply the Article 35 buyer-liability test in section 3 and report on RSK 10.24 where it applies. | Supplier invoice/contract, service description, supplier country/Iceland VAT registration or agent status, purchaser's registration and input-credit facts, transaction date and full VAT-exclusive total consideration. [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) |
+| Foreign-service purchase from abroad | Apply the Article 35 buyer-liability test in the foreign-service purchaser workflow and report on RSK 10.24 where it applies. | Supplier invoice/contract, service description, supplier country/Iceland VAT registration or agent status, purchaser's registration and input-credit facts, transaction date and full VAT-exclusive total consideration. [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) |
 
 **Services sold to customers outside Iceland (current law).** Skatturinn's English page still describes the older rule that services must be wholly used abroad. The VAT Act as amended by Act No. 63/2024 (in force since June 2024) says:
 
@@ -92,7 +92,45 @@ Do **not** include input VAT for the listed blocked categories:
 
 The vehicle block has a statutory exception: a registered business that sells or rents out vehicles, and an operator of passenger cars holding a special Icelandic Transport Authority (Samgöngustofa) licence for passenger transport in tourism, may deduct input VAT on inputs for that business. Such vehicles must be marked as the regulations require, and a later change to a use with less or no deduction must be notified before the change. Do not deduct car VAT merely because the car is used mostly for business. [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/) and [VAT Act, Article 16](https://www.althingi.is/lagas/nuna/1988050.html)
 
-Mixed taxable/exempt activity needs a separate supportable attribution method under the input-VAT regulation; this draft does not invent one.
+### Mixed taxable/exempt activity and private use
+
+Use [Input VAT Regulation 192/1993, Articles 3–9](https://files.reglugerd.is/pdf/0192-1993/current), after testing invoice evidence and statutory blocks. Keep each activity identifiable in the ledger:
+
+1. **Direct taxable use:** deduct supported VAT on inputs bought solely for the taxable part, subject to the other deduction restrictions. Zero-rated supplies remain taxable activity for input-credit purposes; do not put them in the Article 2 exempt denominator merely because output VAT is zero.
+2. **Direct exempt use:** no deduction for inputs solely serving the exempt activity.
+3. **Genuinely shared inputs:** multiply their otherwise-eligible VAT by annual VAT-exclusive taxable sales divided by annual total turnover. Exclude operating-asset sales and the other Article 11(3) items from this ratio. Do not apply the shared ratio to every purchase or use an asset disposal to inflate it.
+4. **Provisional periods:** the preceding accounting year's ratio may be used during the year; reconcile to the actual annual ratio in the last settlement period. In the first year, calculate a provisional ratio for each period and reconcile in the last period. Use the authority's reconciliation form for that year; a historic form does not establish current box labels.
+5. **Private/nonbusiness use:** Article 6 instead limits deduction to the evidenced taxable-business use. Turnover apportionment does not prove private use. Blocked inputs stay blocked even when a business-use percentage is high.
+
+[Regulation 192/1993, Articles 3–6](https://files.reglugerd.is/pdf/0192-1993/current); [VAT Act, Articles 12 and 16](https://www.althingi.is/lagas/nuna/1988050.html)
+
+**Buildings and vehicles have special rules.** For separately identified building parts, Article 7 uses construction-cost attribution, with floor area permitted where the parts are comparable in quality. Attribute repair/improvement work directly where possible and require the invoice to identify the worked-on part; shared exterior/services work can use the specified floor-area method. A rented building is not taxable-use property merely because the tenant is a business: establish the landlord's voluntary registration. For the same building part used for both activities, Article 8 refers to Articles 3–6 where Article 7 cannot allocate it. Owner/staff residential accommodation remains blocked. [Regulation 192/1993, Articles 2 and 7–8](https://files.reglugerd.is/pdf/0192-1993/current)
+
+Article 9's listed vehicles have an exclusive-taxable-use acquisition rule, subject to its narrow documented commuting exception for qualifying goods vehicles and its output-tax/notification conditions. Do not claim a turnover percentage of a passenger car merely because it has some taxable business use. A final vehicle result needs the vehicle category, equipment, use, registration and applicable exception. [Regulation 192/1993, Articles 2 and 9](https://files.reglugerd.is/pdf/0192-1993/current)
+
+**Specified blocked-input exceptions.** The regulation permits certain structural cafeteria/dining-room building inputs and fixtures, and ordinary eligible raw materials/energy/services for taxable food sales to staff; loose dining-room furniture/equipment remains blocked. It also distinguishes low-value items plainly intended for advertising from blocked gifts. Establish each exception from the actual supply rather than reclassifying restaurant entertainment as advertising. [Regulation 192/1993, Article 2](https://files.reglugerd.is/pdf/0192-1993/current)
+
+### Capital-input adjustments when use changes
+
+Maintain a separate asset adjustment register. [Regulation 192/1993, Articles 12–16](https://files.reglugerd.is/pdf/0192-1993/current) supplies the following method:
+
+| Screen | Rule | Source |
+| --- | --- | --- |
+| Movable asset or asset group | Cost at least ISK 250,000 excluding VAT | Regulation Article 12(1)(1) |
+| Building/structure works | Total relevant works at least ISK 500,000 excluding VAT | Article 12(1)(2) |
+| Mixed-use ratio change | A fall of at least 10 percentage points triggers the specified clawback; a rise of at least 10 points can support an additional deduction, relative to acquisition or the previous specified adjustment | Articles 12(3), 13(3) |
+| Movable change-of-use window | Five years from the end of the ordinary two-month period of acquisition | Article 14(1) |
+| Property change of use | Clawback window twenty years; increased-deduction window six years, measured under the distinct Article 14 rules | Article 14(2) |
+| Later-year remaining share, movables | 80% next calendar year, 60% second following year, falling by 20 percentage points per year | Article 14(3)(1) |
+| Later-year remaining share, property | 95% next calendar year, 90% second following year, falling by 5 percentage points per year | Article 14(3)(2) |
+| Same-calendar-year changes | Use Article 14's ordinary two-month factors, rather than the later-year percentages | Article 14(3) |
+| Ratio-change annual correction | One fifth for movables or one twentieth for structures of the indexed VAT amount to be adjusted, under the statutory ratio-change method | Article 14(4) |
+
+For a change within the acquisition/works settlement period, compute input VAT on the changed basis in that period. For a later change, first index the VAT under Article 14 using the construction index at the specified period ends, then apply the appropriate adjustment share. Identify a full change of use separately from an annual ratio change; the schedules are not interchangeable. Post the adjustment to the input account for the adjustment period and complete the authority's required adjustment report. Keep original VAT, original deduction ratio, dates, prior adjustments, actual new use, index values and the calculation together. [Regulation 192/1993, Article 14](https://files.reglugerd.is/pdf/0192-1993/current)
+
+Before reversing, test Article 12's exceptions, including taxable disposals, qualifying zero-rated disposals, specified forced sales and voluntarily registered rental. For a property/business transfer, Article 15 permits assumption of adjustment obligations only to the extent of the buyer's entitlement; the seller adjusts any balance. Both parties notify Skatturinn within eight days, with the year/period amounts, proportions and the buyer's assumption statement. A sale described as “VAT-free” does not extinguish an adjustment obligation. [Regulation 192/1993, Articles 12 and 15](https://files.reglugerd.is/pdf/0192-1993/current)
+
+This method does not establish voluntary-registration eligibility, a property's actual use or the special vehicle exception without their documents. Those determinations and the actual accepted reporting route remain for review.
 
 Build a purchase schedule with supplier, date, invoice number, VAT-exclusive amount, VAT shown, vendor VAT status, business use, classification and deduction result. Reconcile the deductible total to the purchase ledger and evidence before netting it against output VAT.
 
@@ -105,7 +143,7 @@ Article 35 of the VAT Act makes the Icelandic buyer pay VAT on services bought f
    - **Buyer in exempt activity** (for example a bank, insurer, clinic or school): pays VAT on the full consideration of any taxable-type service bought from abroad for that activity. No threshold.
    - **VAT-registered buyer**: pays VAT only **to the extent** that VAT on the service could not be deducted if it had been bought in Iceland, for example a service used for a blocked purpose (entertainment, staff perquisites) or the exempt share of mixed activity. A registered buyer who could deduct all of it pays nothing on this route. VAT must always be paid under this article where the service is supplied or used in connection with an import of goods, even if it would otherwise be deductible; report it on RSK 10.24.
    - **Any other buyer** (for example a private person, or a business below the registration limit and not registered) who buys rights, advertising, consulting/engineering/legal/accounting and similar services, data processing, non-exempt financial services, employment agency, rental of movables (other than means of transport) or related obligations: pays only if these purchases total **ISK 10,000 or more excluding VAT in the ordinary two-month period**.
-3. For a liable purchaser, calculate `foreign-service VAT = liable VAT-exclusive consideration × applicable Icelandic rate`. The Act applies domestic rules, so this is normally 24%; a service that would be 11% if bought in Iceland is self-assessed at 11%. For a registered buyer with a partly deductible service, the liable part is the non-deductible part; use a supportable mixed-use method and hold the case if there is none. Complete **RSK 10.24** with the service line(s), supplier and buyer details, the VAT-exclusive consideration, the VAT, and the stated use purpose (the form prints 24%; show a lower applicable rate separately). Submit with payment by the fifth day of the second month after the ordinary two-month period in which the purchase falls. Late payment carries the same 1% daily surcharge, up to 10%, as domestic VAT. Retain the form, invoice and input-credit analysis.
+3. For a liable purchaser, calculate `foreign-service VAT = liable VAT-exclusive consideration × applicable Icelandic rate`. The Act applies domestic rules, so this is normally 24%; a service that would be 11% if bought in Iceland is self-assessed at 11%. For a registered buyer with a partly deductible service, the liable part is the non-deductible part; apply the established attribution method above and retain the non-deductible share. Hold the result if the needed attribution evidence is missing. Complete **RSK 10.24** with the service line(s), supplier and buyer details, the VAT-exclusive consideration, the VAT, and the stated use purpose (the form prints 24%; show a lower applicable rate separately). Submit with payment by the fifth day of the second month after the ordinary two-month period in which the purchase falls. Late payment carries the same 1% daily surcharge, up to 10%, as domestic VAT. Retain the form, invoice and input-credit analysis.
 
 This is a purchaser-liability payment route. Do not also claim the same amount as ordinary input VAT. [VAT Act, Article 35](https://www.althingi.is/lagas/nuna/1988050.html) and [RSK 10.24](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf)
 
@@ -244,6 +282,89 @@ expected:
   combined_output: 35000
 ```
 
+### Mixed-activity annual reconciliation
+
+Assume taxable turnover 12 million and exempt turnover 8 million, excluding a separate 2 million operating-asset sale from the ratio. Supported direct taxable input VAT is 120,000, direct exempt VAT 48,000, genuinely shared VAT 240,000 and separately blocked VAT 24,000. The annual ratio is **60%** and total allowable input is **264,000**. If provisional deductions already claimed in earlier periods total 280,000 and there are no other annual inputs, the final-period reconciliation reverses **16,000**. Map the reconciliation to the current form rather than inventing a delta box. [Regulation 192/1993, Articles 2–5](https://files.reglugerd.is/pdf/0192-1993/current)
+
+```oa-check
+name: Iceland mixed VAT direct attribution and annual shared-cost reconciliation
+inputs:
+  taxable_turnover: 12000000
+  exempt_turnover: 8000000
+  operating_asset_sale_excluded_from_ratio: 2000000
+  direct_taxable_vat: 120000
+  direct_exempt_vat: 48000
+  shared_vat: 240000
+  blocked_vat: 24000
+  earlier_provisional_claims: 280000
+steps:
+  - annual_ratio: taxable_turnover / (taxable_turnover + exempt_turnover)
+  - shared_deduction: shared_vat * annual_ratio
+  - direct_exempt_deduction: direct_exempt_vat * 0
+  - blocked_deduction: blocked_vat * 0
+  - annual_allowed: direct_taxable_vat + shared_deduction + direct_exempt_deduction + blocked_deduction
+  - final_period_reconciliation: annual_allowed - earlier_provisional_claims
+expected:
+  annual_ratio: 0.60
+  shared_deduction: 144000
+  annual_allowed: 264000
+  final_period_reconciliation: -16000
+```
+
+### Partly creditable foreign service
+
+Assume an ordinary shared foreign consultancy service with VAT-exclusive consideration 100,000, applicable rate 24%, an established **60%** deductible share under the above method, and no import-of-goods override or seller Icelandic registration. Article 35 purchaser liability applies to the 40% non-deductible part: **9,600**. Do not also deduct that amount as ordinary input VAT. The supported split and Article 35 eligibility must precede this calculation. [VAT Act, Article 35](https://www.althingi.is/lagas/nuna/1988050.html), [Regulation 192/1993, Article 5](https://files.reglugerd.is/pdf/0192-1993/current)
+
+```oa-check
+name: Iceland foreign service purchaser liability for an established exempt share
+inputs:
+  foreign_service_net: 100000
+  rate: 0.24
+  established_deductible_share: 0.60
+steps:
+  - nondeductible_share: 1 - established_deductible_share
+  - buyer_liability: foreign_service_net * rate * nondeductible_share
+expected:
+  nondeductible_share: 0.40
+  buyer_liability: 9600
+```
+
+### Private use is a separate test
+
+An otherwise eligible purchase carries VAT 120,000. Evidence establishes 75% taxable-business use and 25% private use, without a category-specific block. Deduct **90,000**, under the actual-use test rather than an assumed turnover ratio. [Regulation 192/1993, Article 6](https://files.reglugerd.is/pdf/0192-1993/current)
+
+```oa-check
+name: Iceland VAT private-use attribution on otherwise eligible input
+inputs:
+  input_vat: 120000
+  evidenced_taxable_business_share: 0.75
+steps:
+  - deductible: input_vat * evidenced_taxable_business_share
+  - nondeductible: input_vat - deductible
+expected:
+  deductible: 90000
+  nondeductible: 30000
+```
+
+### Movable asset changes wholly to non-creditable use
+
+Assume a qualifying movable asset acquired in 2024 with original deductible VAT 240,000, full original credit, and a full change to non-creditable use in 2026, with no Article 12 exception. Established construction-index values for the relevant period ends are 100 and 120. The indexed VAT is **288,000**; the second-following-calendar-year remaining share is 60%, so clawback is **172,800**. The index inputs are hypothetical, not published index figures. This is a full change-of-use case, not the distinct annual ratio-change computation. [Regulation 192/1993, Articles 12 and 14](https://files.reglugerd.is/pdf/0192-1993/current)
+
+```oa-check
+name: Iceland movable capital input full change of use, indexed remaining share
+inputs:
+  original_deductible_vat: 240000
+  original_index: 100
+  adjustment_index: 120
+  established_remaining_share: 0.60
+steps:
+  - indexed_vat: original_deductible_vat * adjustment_index / original_index
+  - clawback: indexed_vat * established_remaining_share
+expected:
+  indexed_vat: 288000
+  clawback: 172800
+```
+
 ## Ask the client first
 
 - What do the Icelandic VAT registration record and current settlement period say? Has the business ever been removed from the VAT register and re-registered?
@@ -254,13 +375,13 @@ expected:
 ## When to refuse or refer
 
 - Registration, rate, exemption, place, Customs or input-VAT evidence is missing.
-- The matter requires VOES conclusion, mixed attribution, property analysis, special scheme, or the non-deductible share of a partly creditable foreign-service purchase without a supportable method.
+- VOES eligibility, a special scheme, property/vehicle legal classification or an attribution/adjustment input is unresolved. The ordinary mixed-activity method above requires source documents and a supported allocation.
 - A required invoice, vendor-registration check, Customs document, prior statement or assessment notice is unavailable.
 - The business was re-registered after removal, or is under the bankruptcy-linked monthly regime, and the settlement period on the registration record is not available.
 
 ### Stop conditions
 
-Use a separate sourced method or professional review for mixed taxable/exempt attribution, voluntary real-property registration, imported goods/customs valuation and import-VAT deferral, VOES eligibility, foreign representative arrangements, special investment/fishing schemes, vehicle-resale margin rules, a missing VAT invoice, a supplier that was not registered, and an estimated assessment or appeal. The normal method above handles confirmed domestic taxable rates, zero-rated evidence (including services to foreign businesses under current Article 12), exempt outputs, supported input VAT, invoice controls, the Article 35 foreign-service purchaser route, refunds of excess input VAT, corrections before assessment and the ordinary return timetable.
+Use a separate sourced method or professional review for disputed mixed-use attribution, voluntary real-property registration, imported goods/customs valuation and import-VAT deferral, VOES eligibility, foreign representative arrangements, special investment/fishing schemes, vehicle-resale margin rules, a missing VAT invoice, a supplier that was not registered, and an estimated assessment or appeal. The method above includes ordinary direct/shared attribution, annual reconciliation and the stated capital-adjustment rules, alongside confirmed domestic taxable rates, zero-rated evidence (including services to foreign businesses under current Article 12), exempt outputs, supported input VAT, invoice controls, the Article 35 foreign-service purchaser route, refunds of excess input VAT, corrections before assessment and the ordinary return timetable.
 
 Original editorial source record: [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/); [VAT Act No. 50/1988, current consolidated text](https://www.althingi.is/lagas/nuna/1988050.html); [RSK 10.24 foreign-service purchase report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf); [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/). Source snapshots, evidence ledger and cases are retained in the controlled editorial packet.
 
@@ -272,7 +393,7 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
-The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
+The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording, mixed input attribution/capital adjustments and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
 
 | Official source | Read on |
 | --- | --- |
@@ -280,3 +401,5 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [VAT administrative guidance](https://www.skatturinn.is/english/companies/value-added-tax/) | 2026-10-23 |
 | [Registration, periods and corrections](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/) | 2026-10-23 |
 | [RSK 10.24 foreign-service report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) | 2026-10-23 |
+| [Input VAT Regulation 192/1993, Articles 2–16, current PDF](https://files.reglugerd.is/pdf/0192-1993/current) | 2026-10-23 |
+| [Skatturinn, VAT overview and mixed activity](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/almennt-um-vsk/) | 2026-10-23 |

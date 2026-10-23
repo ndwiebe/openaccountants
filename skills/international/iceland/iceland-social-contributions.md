@@ -6,7 +6,7 @@ description: >
   filing, separate pension deadlines and A1 evidence. Use for payroll social
   costs, pension deductions, employer pension, seamen and contribution
   remittance reconciliation. Includes source conflicts and recomputable cases.
-version: 0.2
+version: 0.3
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -19,7 +19,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland social contributions and mandatory pension v0.2
+# Iceland social contributions and mandatory pension v0.3
 
 **Source-cited draft.** Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension. It produces contribution workpapers for professional review; it carries no Icelandic accountant attestation. The [payroll Guide](iceland-payroll.md) handles income-tax withholding and net pay. Sources were read on 23 October 2026; the linked statutes are Alþingi's 1 October 2026 compilation.
 
@@ -111,6 +111,9 @@ Pension contributions have their own due dates and provider collection rules. Ob
 ## Cross-border points
 
 Social-security coverage, pension coverage and income-tax residence are distinct determinations. Skatturinn describes an A1 route for qualifying EEA workers with home-state coverage; retain the valid certificate, authority, named worker and covered dates. Its page gives reduced rates only through 2025. **No 2026 reduced levy is computed here.** Obtain current confirmation and the accepted reporting treatment before applying a reduced rate. Report qualifying non-Iceland-insured remuneration separately. [A1 guidance](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald), [annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/)
+
+
+**2026 component inference, awaiting confirmation.** Current Act 113/1990 Article 3(2)(4) allocates 0.325% to pension-fund disability equalisation. Transitional III reduces that component to 0.193% explicitly for **2024 and 2025**, not 2026. Applying the published A1 exemption's component logic with the two current 0.05% fees gives a candidate residual **0.425%** for 2026. This is a derived legal reading, not a newly published 2026 A1 rate table. Confirm the continuing exemption scope and accepted payroll category before using it; the authority's current A1 table still ends at 2025. [Act 113/1990, Article 3 and transitional III](https://www.althingi.is/lagas/nuna/1990113.html), [A1 administrative rule](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald), [2026 fee components](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf)
 
 For outbound work, Article 7(5) includes remuneration paid by Icelandic parties to Iceland-domiciled people for work abroad. Do not exclude it solely because the workdays are foreign. A social-security agreement, coverage determination and occupational pension treatment must be considered for the actual countries and dates before calculating a final cross-border result. The [cross-border Guide](is-cross-border.md) supplies income-tax screening, not a substitute coverage decision. [Act 113/1990, Article 7](https://www.althingi.is/lagas/nuna/1990113.html)
 
