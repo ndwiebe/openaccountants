@@ -1,10 +1,10 @@
 ---
 name: finland-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Finland VAT return (ALV-ilmoitus) for any client. Trigger on phrases like "prepare VAT return", "do the ALV", "fill in ALV", "Finnish VAT", "OmaVero", or any request involving Finland VAT filing. This skill covers Finland only and standard ALV registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Finnish VAT work.
-version: 2.0
+version: 2.1
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland VAT return — 2026 editorial draft
+# Finland VAT return v2.1 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified, or an attestation.
 
@@ -252,6 +252,76 @@ A quarterly filer's January–March 2026 return and payment are due 12 May 2026.
 ### Case O — former small-business VAT relief
 
 A sole trader registered for VAT with a calendar-year accounting period asks to claim the old small-business VAT relief (turnover under €30,000) on the last 2026 return. Refuse: the relief is not available for accounting periods starting on or after 1 January 2025. File the return with the full VAT. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
+
+## Executable VAT controls and filing sanctions
+
+The [Vero rate table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/) and [self-assessed-tax late-filing page](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/late-penalty-charges/) were directly read on 23 October 2026 for this addition. Existing September source work is preserved; this is not a fresh full statutory or classification review of every earlier paragraph.
+
+### Separate food and wine rates
+
+This recomputes Case B's assumed supported 2026 classifications. It does not decide a mixed supply or establish whether prices include VAT.
+
+```oa-check
+name: Finland assumed 2026 restaurant separate rates
+inputs:
+  net_food_price: 700
+  net_wine_price: 100
+  food_rate: 0.135
+  wine_rate: 0.255
+steps:
+  food_vat: net_food_price * food_rate
+  wine_vat: net_wine_price * wine_rate
+  output_vat: food_vat + wine_vat
+expected:
+  food_vat: 94.50
+  wine_vat: 25.50
+  output_vat: 120
+```
+
+### Supported mixed business use
+
+This recomputes Case F on its assumptions: a general-rule reverse-charge service with a verified EUR 1,000 base and supported 70% deductible use. It supplies no universal partial-exemption formula.
+
+```oa-check
+name: Finland assumed reverse charge mixed use
+inputs:
+  established_service_base: 1000
+  vat_rate: 0.255
+  established_deductible_share: 0.70
+steps:
+  reverse_charge_vat: established_service_base * vat_rate
+  deductible_vat: reverse_charge_vat * established_deductible_share
+  net_vat_cost: reverse_charge_vat - deductible_vat
+expected:
+  reverse_charge_vat: 255
+  deductible_vat: 178.50
+  net_vat_cost: 76.50
+```
+
+### Original late return versus replacement return
+
+Vero's self-assessed-tax guidance charges EUR 3 per day for an original late return, capped at EUR 135 for that daily component. Beyond 45 days, the original-return charge adds 2% of the tax reported late, subject to EUR 15,000 per tax. A replacement within 45 days has no late-filing penalty; a later replacement instead uses the 2% incremental-tax route. Non-filing/estimated assessment and late payment have separate consequences. Apply the correct original/replacement route before calculating. [Vero late-filing guidance](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/late-penalty-charges/)
+
+Assume an original VAT return 50 days late reporting EUR 4,000 tax, with no special waiver or other issue. Its EUR 215 filing penalty excludes late-payment interest.
+
+```oa-check
+name: Finland assumed original VAT return late filing penalty
+inputs:
+  days_late: 50
+  daily_rate: 3
+  daily_component_cap: 135
+  tax_reported_late: 4000
+  additional_rate: 0.02
+  total_cap: 15000
+steps:
+  daily_component: min(days_late * daily_rate, daily_component_cap)
+  percentage_component: tax_reported_late * additional_rate
+  filing_penalty: min(total_cap, daily_component + percentage_component)
+expected:
+  daily_component: 135
+  percentage_component: 80
+  filing_penalty: 215
+```
 
 ## When to refuse or refer
 

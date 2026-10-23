@@ -10,10 +10,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Finland country-by-country reporting v0.1
+# Finland country-by-country reporting v0.2
 
 ## Who this applies to
 
@@ -72,6 +72,21 @@ expected:
   before_eliminations: 800000000
   consolidated_revenue: 760000000
   excess_over_threshold: 10000000
+```
+
+### 2. Exact threshold boundary
+
+The [full-report instructions][report] were opened directly on 23 October 2026 and say EUR 750 million **or more**. Assume established preceding-period euro consolidated net sales of exactly EUR 750 million and the required international structure. The numerical threshold is met at equality; filer identity and exceptional local-filing conditions still need their separate tests.
+
+```oa-check
+name: Finland CbCR exact assumed euro threshold
+inputs:
+  established_consolidated_revenue: 750000000
+  threshold: 750000000
+steps:
+  difference_from_threshold: established_consolidated_revenue - threshold
+expected:
+  difference_from_threshold: 0
 ```
 
 ## Ask the client first

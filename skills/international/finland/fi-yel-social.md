@@ -1,10 +1,10 @@
 ---
 name: fi-yel-social
 description: Use this skill whenever asked about Finland YEL pension insurance or social security for self-employed persons. Trigger on phrases like "YEL", "YEL insurance", "yrittäjän eläkelaki", "self-employed pension Finland", "Finnish pension insurance", "entrepreneur pension", "YEL income", "YEL contribution", "sickness allowance Finland", "disability pension self-employed Finland", "new entrepreneur discount", or any question about mandatory social insurance obligations for Finnish self-employed. Covers YEL contribution rates, income thresholds, provider selection, tax deductibility, and social security benefits. ALWAYS read this skill before advising on Finnish self-employed social insurance.
-version: 1.0
+version: 1.1
 jurisdiction: FI
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-23
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland YEL and self-employed social insurance — 2026 editorial draft
+# Finland YEL and self-employed social insurance v1.1 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
 
@@ -145,6 +145,46 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 **Midyear start:** a qualifying business begins in July. Estimate confirmed income as the annual value of the work using the outsider-wage/work-input method; do not halve that assessment solely because the start date is midyear. The provider’s decision and actual policy-period terms control.
 
 **Changed business:** the provider has indexed confirmed income at the start of the year, then the business operations materially change. Give the change facts to the provider and obtain its new decision; do not seek a retrospective amendment to confirmed income. A late-policy arrangement is a different rule.
+
+## Executable contribution examples
+
+The standard rate and new-entrepreneur reduction below were rechecked against [ETK's self-employed page](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) on 23 October 2026. The other source references and specialist rules in this earlier editorial draft still need full pack review. These controls reproduce existing illustrative amounts; they do not establish eligibility or insurer billing terms.
+
+### Standard full-year contribution
+
+Assume EUR 30,000 confirmed income and ordinary full-year liability, without flexibility or other adjustments. The monthly equivalent is arithmetic, not a provider payment schedule.
+
+```oa-check
+name: Finland 2026 assumed standard YEL contribution
+inputs:
+  confirmed_annual_income: 30000
+  contribution_rate: 0.244
+  months: 12
+steps:
+  annual_contribution: confirmed_annual_income * contribution_rate
+  monthly_equivalent: annual_contribution / months
+expected:
+  annual_contribution: 7320
+  monthly_equivalent: 610
+```
+
+### Confirmed new-entrepreneur reduction
+
+Assume the same base and confirmed entitlement to the 22% reduction for the full period. An insurer must establish that entitlement separately.
+
+```oa-check
+name: Finland assumed eligible YEL startup reduction
+inputs:
+  confirmed_annual_income: 30000
+  contribution_rate: 0.244
+  eligible_reduction: 0.22
+steps:
+  standard_contribution: confirmed_annual_income * contribution_rate
+  contribution_after_reduction: standard_contribution * (1 - eligible_reduction)
+expected:
+  standard_contribution: 7320
+  contribution_after_reduction: 5709.60
+```
 
 ## When to refuse or refer
 
