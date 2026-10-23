@@ -16,7 +16,7 @@ Four added arithmetic controls test the purchased/annual cap sequence, public-gr
 
 ## Remaining country work
 
-Corporate sector taxes, other incentives, minimum-tax applicability, restructuring and the other gaps in the country README remain open. No country issue is closed and no comprehensive-coverage claim follows from this local extension. Complete the country delta, validate it, obtain independent review, fix findings and publish once as a country batch.
+Other corporate sector taxes/incentives, minimum-tax applicability, disputed restructuring cases and the other gaps in the country README remain open. No country issue is closed and no comprehensive-coverage claim follows from this local extension. Complete the country delta, validate it, obtain independent review, fix findings and publish once as a country batch.
 
 ## Financial-sector evidence
 
@@ -31,3 +31,11 @@ The payroll Guide's earlier “5.5% on all wages” shorthand was reconciled to 
 ## Minimum-tax status evidence still does not establish applicability
 
 The [government's programme for the 158th parliamentary session, 2026–2027](https://www.stjornarradid.is/page/03008eff-e41e-4535-a8e3-75ddeb4d6002/), finance-ministry item 21, describes a proposed top-up-tax bill and a March presentation plan. This is a legislative programme, not an enacted charging provision or proof of a 2026 exemption. No minimum-tax calculation or effective date is asserted from that evidence. Current Icelandic enactment/commencement and any foreign-group obligations still require a separate documented determination. The same programme also lists further planned R&D changes; the enacted Act 27/2026 and current statute were used for the method, without treating future proposals as law.
+
+## Restructuring evidence
+
+Reopened current Income Tax Act Articles 51–56a, the full [Regulation 223/2003 reproduction](https://files.reglugerd.is/pdf/0223-2003/current), and [current ehf. registry guidance](https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/). The method separates transaction qualification, tax succession, Article 54 cumulative loss transfer, Article 52 book-net-asset allocation and Article 56 domestic incorporation. It preserves prior public-levy liability, the original loss vintage and tax asset/share bases, and distinct 30 April formation/30 June document-lodging dates. Current Article 54(2)'s same-year start/approval rule is used rather than an old unrestricted backdating assumption. Cross-border cases refer to the existing exit workpaper with their own statutory/joint-liability conditions.
+
+The registry's linked [procedure page](https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur) was read in full. It retains historical 20%/46.21% figures and broad no-succession language. It is not a current-rate source, and its outside-Article-56 discussion does not override the current Act's conditional incorporation succession. The Guide discloses that source conflict and uses the current statute, regulation and current registry page for the method.
+
+Three additional hypothetical controls test conditional merger-loss use versus denial, an already-qualified split's positive book-net-asset allocation and no tax-basis step-up from an accepted incorporation book revaluation. Their legal eligibility is an explicit evidence assumption, not decided by arithmetic. Wholly owned/no-new-share and other atypical structures, nonpositive-net-asset allocations, disputed purpose/continuity/valuation and live registry/tax submission remain open for independent review. No professional attestation or complete-country claim is made.

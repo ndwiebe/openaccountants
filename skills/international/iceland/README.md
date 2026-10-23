@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.13
+version: 0.14
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -14,7 +14,7 @@ covered_by:
   VAT: iceland-vat
 partial:
   IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper added; progressive individual relief, special regimes, source conflicts, live filing and professional review remain open."
-  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D credit and three financial-sector tax methods added locally with seven new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, restructurings, operational and independent review remain open."
+  IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added locally with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
   VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment and nine controls added; voluntary registration, special schemes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
@@ -61,3 +61,5 @@ The review’s primary-source clarifications also establish the inclusive 700,00
 The next local country pass adds the approved R&D credit method, its 2026 amendment, signed project costs, purchased-cost and related-applicant ceilings, public-aid cumulation, approval/claim sequence, refundable balance and surcharge base. Four additional controls are preparation pending independent country review. This extension is not included in the prior published source-review snapshot and does not establish complete corporate coverage.
 
 The same unpublished country pass adds the financial remuneration, additional-profit and bank-liability tax methods, separate bases and deductions, filing/payment controls and three further arithmetic checks. It preserves special classification/exception and live-filing limits; the previous source review does not cover this extension.
+
+The same country delta now adds conditional domestic mergers/splits and sole-trade incorporation, separate cumulative loss-transfer conditions, continued tax/share bases despite accepted book revaluation, formation versus document-lodging dates and three further controls. The individual Guide refers sole-trader incorporation to that workpaper. Atypical structures, disputed valuations/losses, live procedure and independent review remain open.

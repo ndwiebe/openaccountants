@@ -10,21 +10,23 @@ description: >
   income. Use for ehf., hf., taxable partnerships, RSK 1.04 and annual tax
   reconciliations and approved research/development credits, cost ceilings and
   public-aid limits, and the stated financial-sector remuneration, additional
-  profit and bank-liability taxes. Other sector taxes, foreign credits, restructurings, some financial
-  instruments and independent Icelandic legal review require further work;
+  profit and bank-liability taxes, conditional domestic mergers/splits and
+  sole-trade incorporation. Other sector taxes, foreign credits, disputed
+  restructuring cases, some financial instruments and independent Icelandic
+  legal review require further work;
   this source-cited draft is not comprehensive country coverage.
 jurisdiction: IS
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.7
+version: 0.8
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.7
+# Iceland corporate income tax v0.8
 
 ## Who this applies to
 
@@ -189,6 +191,31 @@ Keep taxable/exempt operations separate in the ledger and financial-activities r
 
 This liability tax is **not deductible** as operating expenditure under Act 155/2010 Article 6. If book profit before income tax includes it as an expense, add it back in the ordinary CIT bridge and the corresponding additional-profit-tax reconciliation. This differs from the conditional wage-cost deduction for the 5.5% remuneration tax. Preserve three distinct schedules and payment-credit balances rather than combining the percentages. [Act 155/2010, Article 6][bank-law]; [Act 165/2011, Article 15][fat-law]; [Income Tax Act, Article 71(3)][law]
 
+### 11. Restructuring: transaction, tax succession and loss tests
+
+**Classify the legal transaction before carrying balances forward.** Record each entity's legal form, separate-taxpayer status and residence; the dissolution/succession documents; consideration; shareholder proportions; effective date; and approvals. Articles 51–53a have different conditions for company mergers, splits, partnerships, cooperatives and funds. A sale of assets, a sale of shares and a qualifying statutory merger are different transactions. Do not treat common ownership or a company-registry entry alone as tax-neutral treatment. [Articles 51–54][law]
+
+For the ordinary domestic company-merger route in Article 51(1), document the disappearing company's full merger into the recipient and the shareholders' shares-only consideration. The qualifying exchange itself does not create taxable income for the exchanging shareholder; the recipient succeeds to tax rights and obligations. Keep an asset-by-asset tax-cost/depreciation roll-forward and liability history rather than creating a tax step-up from the merger valuation. Wholly owned mergers without new shares, cash consideration, nonstandard legal forms and disputed continuity require a separate documented determination; this ordinary route does not decide them. [Articles 33–51][law]
+
+For an Article 52 company split, reconcile all assets/liabilities across the remaining and recipient companies, shares-only consideration, and each shareholder's unchanged relative ownership proportions. Assets and liabilities transfer at book value. Allocate supported tax rights and duties in the ratio of **transferred book assets less liabilities**, not an arbitrary ratio of issued shares. Losses first require Article 54 qualification; an allocation percentage does not make an ineligible loss transferable. Zero/negative net-asset or valuation disputes need resolution before using the simple positive-net-assets example below. [Article 52(1)–(2), Article 54][law]
+
+A qualifying Article 53 partnership merger/conversion also requires the specified equity/shares-only consideration and tax succession. Establish the partnership's separate-taxpayer status and the precise statutory route. The former partners retain unlimited liability for public levies relating to accounting years before the dissolution/conversion. Cooperative transactions under Article 51 and equal-value fund mergers under Article 53a require their own legal-form conditions; do not extend the ordinary company method automatically. [Articles 2, 51, 53–53a][law]
+
+**Loss succession is a separate cumulative decision.** For an Article 51–53a merger/split loss, retain evidence for every Article 54 condition:
+
+- The recipient carries on activity related to the transferor's activity.
+- The transferor had actual operations and more than insignificant assets before dissolution.
+- The transaction has a normal and ordinary business purpose.
+- The loss arose in the same kind of business that the recipient carries on.
+
+Retain contracts, actual operations/assets, business-purpose approvals, the loss-generating activity and the Article 31(8) vintage/use schedule. A loss-company purchase or a qualifying share exchange does not prove all four conditions. Reject an unsupported transfer from the computation pending determination; do not silently use it because the merger itself qualifies. Incoming cross-border cases also require Article 54(3)'s genuine foreign activity and adequate proof concerning unusability/prior use of the loss. [Articles 31(8), 54][law]
+
+**Domestic sole-trade incorporation under Article 56.** The individual must have unlimited Icelandic tax liability and form a new Iceland-registered ehf. with unlimited Icelandic tax liability. It must take **all** business assets and liabilities and continue the same kind of activity; the owner receives **only shares**. Obtain the audited, unqualified **31 December** business balance sheet, no older than **four months at formation**, and the auditor's confirmation that owner withdrawals have not depleted the business between that date and formation. This is a conditional statutory route, not a blanket exemption for every owner-to-company transfer. [Article 56(1)][law]; [Regulation 223/2003, Articles 1–5][incorp-reg]
+
+On qualification the company succeeds to the business's tax rights and obligations from the balance-sheet date, including unused losses only where Article 31(8) permits them; the owner retains unlimited liability for pretransfer public levies. Reconcile transferred assets/debts at book values and the minimum capital supported by transferred net equity. If a properly supported revaluation is accepted for company-registry/accounts purposes, keep a separate tax schedule: original asset tax cost and remaining depreciation basis **do not increase**. The owner's shares have the statutory book-equity basis, taking extra depreciation into account; for a later share-gain computation the regulation specifies **tax book equity**. Do not substitute revalued accounting equity for that tax basis. [Article 56(2)][law]; [Regulation, Articles 2 and 6–8][incorp-reg]; [Current incorporation guidance][incorp-guidance]
+
+**Cross-border is a separate branch.** Articles 52 and 56 invoke Article 51(3)–(9)'s valuation, reporting, assessment, payment-deferral and security rules for their qualifying cross-border transactions. Use the [cross-border valuation/payment workpaper](is-cross-border.md) with the actual transaction's provisions; domestic carryover does not establish an exit-tax exemption. Article 52 imposes the stated joint tax liability on the split participants, or recipients where the original company dissolves; Article 56 makes the individual and recipient jointly liable for incorporation taxes. Territory, substance, information-assistance and retained-PE evidence remain necessary. [Articles 51–52, 54 and 56–56a][law]
+
 ## Deadlines and filing
 
 ### Return and assessment workflow
@@ -216,6 +243,12 @@ For remuneration tax, Act 165/2011 Article 7 requires notification **at least ei
 The Act gives separate annual due dates for specified benefit/non-withheld amounts: **1 June for individuals and 1 November for legal entities**, with final payment one month later. This is not permission to defer ordinary monthly remuneration tax. Correct an omission by the original payment periods under Article 11 rather than assigning all arrears to the annual date. Confirm applicable calendar shifts and the issued notice. [Act 165/2011, Articles 10–11][fat-law]
 
 For the **2026 assessment on 2025 income/year-end liabilities**, Regulation 1370/2025 Article 2 expressly includes additional financial activities tax and bank-liability tax alongside ordinary CIT in the advance public levies. The authority describes eight 8.5% advances and settlement against the assessment. Keep those payment-year credits separate from the 2026-income computation; do not reuse the 2012 launch notice's transitional advance timetable or infer the unissued 2027 timetable. The existing final-date conflict and reduction conditions below remain relevant. [Regulation, Articles 1–4][payment-reg]; [Advance guidance][advances]; [2026 assessment][assessment]
+
+### Restructuring dates and return evidence
+
+For an Article 54 merger/split, retain the effective date under the approved documents and the corresponding operation/return cut-off. The current rule requires the start date to fall **within the income year** and approval in **all participating companies in that year**; do not apply an old unrestricted backdating assumption. Reconcile the transferor/recipient returns and loss/asset schedules to those dates. [Article 54(2), as amended in 2023][law]
+
+For the domestic Article 56 route, Skatturinn specifies **formation by 30 April** and delivery of formation documents to the company registry **by 30 June of the same year**. June is the document-lodging deadline, not an extension of the four-month balance-sheet condition. The 2026 dates have already passed at this research date. Include the audited opening balance and transfer declaration with the first company return, and retain the formation/registration evidence, tax-cost roll-forward, owner-drawings confirmation and continuing pretransfer-liability record. Confirm the applicable year's accepted forms before submission. [Article 56][law]; [Regulation, Articles 3–5][incorp-reg]; [Current registry guidance][incorp-guidance]
 
 ### Payment-year reconciliation
 
@@ -591,12 +624,89 @@ expected:
   combined_income_taxes: 195770000
 ```
 
+### 15. A qualifying merger does not itself prove the loss transfer
+
+Assume a resident ehf. has 20 million current taxable profit before a proposed transferred loss. The other company's unused, unexpired loss is 30 million. If a documented determination confirms **all Article 54 conditions** and no other restriction, 20 million is used and 10 million remains in its original vintage. If that loss-transfer test fails, none of that loss is available: ordinary tax on the assumed 20-million base is **4 million at 20%**. Both outcomes assume the merger route has separately been established; the arithmetic cannot decide legal eligibility. [Articles 31(8), 51, 54 and 71][law]
+
+```oa-check
+name: Iceland merger loss computation depends on separate qualification
+inputs:
+  recipient_profit_before_loss: 20000000
+  unused_unexpired_loss: 30000000
+  ordinary_rate: 0.20
+steps:
+  - qualified_loss_used: min(recipient_profit_before_loss, unused_unexpired_loss)
+  - qualified_remaining_vintage: unused_unexpired_loss - qualified_loss_used
+  - qualified_tax: max(0, recipient_profit_before_loss - qualified_loss_used) * ordinary_rate
+  - failed_loss_test_tax: recipient_profit_before_loss * ordinary_rate
+expected:
+  qualified_loss_used: 20000000
+  qualified_remaining_vintage: 10000000
+  qualified_tax: 0
+  failed_loss_test_tax: 4000000
+```
+
+### 16. Split allocation uses transferred book net assets
+
+Assume every Article 52 condition is proved, including each shareholder retaining the same relative ownership, and all relevant Article 54 conditions are separately met. Recipient A receives book assets of 90 million and liabilities of 30 million; recipient B receives 65 million and 25 million. Their positive book net assets are **60 million and 40 million**, giving **60%/40%** of the total. An established transferable tax-loss balance of 10 million is therefore allocated **6 million/4 million**, preserving the original vintage. The example assumes no other recipient/remaining company, valuation dispute or restriction; it does not establish the transferability of a loss or resolve nonpositive net assets. [Articles 52(2), 54][law]
+
+```oa-check
+name: Iceland qualifying split net book asset allocation
+inputs:
+  a_book_assets: 90000000
+  a_book_liabilities: 30000000
+  b_book_assets: 65000000
+  b_book_liabilities: 25000000
+  established_transferable_loss: 10000000
+steps:
+  - a_net_assets: a_book_assets - a_book_liabilities
+  - b_net_assets: b_book_assets - b_book_liabilities
+  - combined_net_assets: a_net_assets + b_net_assets
+  - a_ratio: a_net_assets / combined_net_assets
+  - b_ratio: b_net_assets / combined_net_assets
+  - a_allocated_loss: established_transferable_loss * a_ratio
+  - b_allocated_loss: established_transferable_loss * b_ratio
+expected:
+  a_net_assets: 60000000
+  b_net_assets: 40000000
+  combined_net_assets: 100000000
+  a_ratio: 0.6
+  b_ratio: 0.4
+  a_allocated_loss: 6000000
+  b_allocated_loss: 4000000
+```
+
+### 17. Incorporation revaluation does not step up tax basis
+
+Assume all domestic Article 56 conditions are met, the accepted opening balance has business assets of 40 million and liabilities of 15 million before revaluation, and those book amounts equal the supported tax amounts after all depreciation adjustments. Assume a properly accepted accounting revaluation increases an asset by 20 million without changing liabilities. Accounting equity then becomes **45 million**, while the owner's share basis for a later gain remains **25 million tax book equity**. The transferred assets' aggregate remaining tax carrying amount stays **40 million**, and original tax cost/depreciation bases continue unchanged in their own schedules; the 20 million is not new tax depreciation basis. This simplified example assumes no other book/tax differences or owner withdrawals. [Article 56][law]; [Regulation 223/2003, Articles 7–8][incorp-reg]; [Current guidance][incorp-guidance]
+
+```oa-check
+name: Iceland incorporation preserves tax basis despite book revaluation
+inputs:
+  pre_revaluation_book_and_tax_assets: 40000000
+  supported_liabilities: 15000000
+  accepted_accounting_revaluation: 20000000
+steps:
+  - tax_book_equity_share_basis: pre_revaluation_book_and_tax_assets - supported_liabilities
+  - revalued_book_assets: pre_revaluation_book_and_tax_assets + accepted_accounting_revaluation
+  - revalued_accounting_equity: revalued_book_assets - supported_liabilities
+  - remaining_transferred_tax_carrying_amount: pre_revaluation_book_and_tax_assets
+  - tax_carrying_amount_increase: remaining_transferred_tax_carrying_amount - pre_revaluation_book_and_tax_assets
+expected:
+  tax_book_equity_share_basis: 25000000
+  revalued_book_assets: 60000000
+  revalued_accounting_equity: 45000000
+  remaining_transferred_tax_carrying_amount: 40000000
+  tax_carrying_amount_increase: 0
+```
+
 ## Ask the client first
 
 - What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
 - Which accounts, ledgers, contracts, payroll reports, asset registers, inventory and receivable schedules reconcile to the return?
 - What dividends, share disposals, financing, FX and foreign items need distinct adjustments?
 - Which loss vintages, ownership/business changes, group approvals or reorganisations affect use of losses?
+- For restructuring, what legal transaction, taxpayer status, consideration, shareholder proportions, approvals/effective dates, book/tax asset values, loss-purpose/activity evidence and audit/formation records establish the claimed route?
 - What filing extension, assessment, advance notices, reductions, withholding and actual payments already exist?
 - Are there regulated financial activities, foreign holdings, incentives, related parties or planned asset/company moves?
 - For financial-sector taxes, what actual licences/services and exemptions apply, which wage/benefit/pension allocations support the remuneration base, what stand-alone profit base precedes losses, and which year-end tax-return liabilities and payment notices reconcile to the separate charges?
@@ -610,8 +720,7 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The financial-sector addition supplies the stated three-charge computation and reporting method; disputed classifications, foreign-branch attribution, reserve/winding-up exceptions and actual submission acceptance still need their evidence and independent review. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
-
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, disputed restructuring/valuation/loss cases and current filing-system verification remain open. The restructuring addition covers the stated domestic routes and their separate loss/basis/date controls; it does not resolve every atypical transaction or company-law procedure. The official linked procedure page retains historical rates and broad no-succession wording; current Article 56, Regulation 223/2003 and the current registry page control the conditional incorporation method. The financial-sector addition supplies the stated three-charge computation and reporting method; disputed classifications, foreign-branch attribution, reserve/winding-up exceptions and actual submission acceptance still need their evidence and independent review. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 | Source | URL | Read on |
 |---|---|---|
 | Income Tax Act 90/2003, Articles 2–4, 7–8, 12–61, 70–71, 90–99, 108, 112–114, 119 | [Alþingi][law] | 2026-10-23 |
@@ -626,7 +735,6 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | Bill 626/150, section 3.5, positive-profit interest calculation | [Official explanation](https://www.althingi.is/altext/150/s/0626.html) | 2026-10-23 |
 | CFC Regulation 1102/2013, computation, substance, losses and reports | [Regulation](https://files.reglugerd.is/pdf/1102-2013/current) | 2026-10-23 |
 | Skatturinn, CFC report and identifier requirements | [Reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/cfc-felog/) | 2026-10-23 |
-
 | Act 152/2009, current R&D entitlement, costs, credit, aid, procedure and sanctions | [Current statute][rd-law] | 2026-10-23 |
 | Act 27/2026, 2026 R&D procedural and purchased-cost amendments | [Enacted amendment][rd-amendment] | 2026-10-23 |
 | Regulation 758/2011, project costs, aid and debt setoff; older decision period distinguished | [Current reproduction][rd-reg] | 2026-10-23 |
@@ -634,10 +742,12 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | Rannís, 20 August 2026 application notice | [Dated notice][rd-notice] | 2026-10-23 |
 | Skatturinn, published RSK 4.21 (2026 return) and RSK 4.22 (2025 label) | [4.21][rd-form]; [4.22][rd-coop-form] | 2026-10-23 |
 | European Commission, SME definition and group-data warning | [Definition][rd-sme] | 2026-10-23 |
-
 | Act 165/2011, financial remuneration tax scope, bases, exclusions, collection and deduction | [Current statute][fat-law] | 2026-10-23 |
 | Act 155/2010, bank-liability scope/base/rate and nondeductibility | [Current statute][bank-law] | 2026-10-23 |
 | Skatturinn, January 2026 employer notice, financial remuneration rate | [Dated notice][fat-notice] | 2026-10-23 |
+| Regulation 223/2003, sole-trade incorporation, audit, succession and continued tax/share bases | [Current reproduction][incorp-reg] | 2026-10-23 |
+| Skatturinn, current ehf. incorporation and sole-trade conversion dates | [Registry guidance][incorp-guidance] | 2026-10-23 |
+| Skatturinn, linked procedure page; historical rates/overbroad succession wording distinguished | [Procedure page][incorp-procedure] | 2026-10-23 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
@@ -660,3 +770,7 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 [fat-law]: https://www.althingi.is/lagas/nuna/2011165.html
 [bank-law]: https://www.althingi.is/lagas/nuna/2010155.html
 [fat-notice]: https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf
+
+[incorp-reg]: https://files.reglugerd.is/pdf/0223-2003/current
+[incorp-guidance]: https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/
+[incorp-procedure]: https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur
