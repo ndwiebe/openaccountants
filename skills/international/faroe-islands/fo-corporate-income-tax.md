@@ -11,12 +11,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands corporate income tax v0.3
+# Faroe Islands corporate income tax v0.4
 
 ## Who this applies to
 
@@ -62,6 +62,16 @@ Separately, an eligible item costing **DKK 20,000 or less** can be deducted imme
 A proved disposal loss has special treatment: compare proceeds with that asset's cost less prior tax depreciation. Deduct the loss in the disposal year and remove the asset's remaining tax value from the pool. Do not both remove that tax value and deduct the proceeds again from the pool. Keep asset-level records even though ordinary annual depreciation uses a pool. [§4(1)][depreciation]
 
 If proceeds create a negative pool, stop the positive-pool calculation. Section 5 allows inclusion in taxable income in the current year and requires settlement by the following income year unless offset through qualifying acquisitions or a permitted extension. Record the negative balance and its deadline; it is not a negative depreciation deduction. The full reinvestment/extension procedure remains outside this Guide. [§5][depreciation]
+
+### Passenger cars used exclusively for business
+
+Depreciation Act §5a applies to passenger cars used exclusively for business but registered for private passenger transport when acquisition cost **exceeds DKK 150,000**. Registration class and actual use are separate tests. Do not assume a company-owned car qualifies for ordinary pooling merely because its use is entirely business-related. Exactly DKK 150,000 does not trigger this particular above-threshold exclusion; other classification conditions still apply. [§5a(1)][depreciation]
+
+For an affected car, keep a separate DKK 150,000 depreciable balance. Record the excess purchase cost and improvement expenditure as a separate non-depreciable asset item in the accounts accompanying the return. Apply the compatible Chapter 1 rules to the depreciable portion, including the 30% annual ceiling, without adding this car to the ordinary equipment pool. No depreciation is allowed in its disposal year. [§5a(2)–(4), (6)][depreciation]
+
+On disposal, compare proceeds with full acquisition cost plus improvements less prior depreciation. A positive gain is taxable. A loss is deductible only to the extent it exceeds the amount that §5a(2) excluded from depreciation. This differs from deducting the full accounting loss. Preserve original cost, improvements, prior tax deductions and the excluded balance separately. [§5a(4)][depreciation]
+
+Private or mixed use requires a separate analysis under Chapter 2 and the change-of-use provisions; employee benefits and payroll valuation are also separate. This section does not determine them. [§§5a(5), 7–10, 31][depreciation]
 
 ### Business buildings
 
@@ -256,6 +266,49 @@ expected:
   failing_margin: -1
 ```
 
+### 7. Passenger-car cost cap
+
+Assume an exclusively business-used passenger car registered for private passenger transport, purchased for DKK 250,000, with no improvements or disposal in the year. The separately depreciable portion is DKK 150,000 and the excluded cost DKK 100,000. Electing the 30% maximum gives DKK 45,000 depreciation and a DKK 105,000 closing depreciable balance. Depreciating the full purchase price would overstate the deduction by DKK 30,000.
+
+```oa-check
+name: Faroese passenger-car separate cost cap
+inputs:
+  cost: 250000
+  cap: 150000
+  rate: 0.30
+steps:
+  excluded_cost: cost - cap
+  depreciation: cap * rate
+  closing_balance: cap - depreciation
+  overstatement: cost * rate - depreciation
+expected:
+  excluded_cost: 100000
+  depreciation: 45000
+  closing_balance: 105000
+  overstatement: 30000
+```
+
+### 8. Passenger-car disposal loss restriction
+
+Assume that same car is sold in the following year for DKK 80,000, with DKK 45,000 prior tax depreciation and no improvements. Full cost less prior depreciation is DKK 205,000, giving a DKK 125,000 loss before the restriction. Subtract the DKK 100,000 non-depreciable amount: only DKK 25,000 is deductible. No annual depreciation is added in the disposal year.
+
+```oa-check
+name: Faroese passenger-car restricted disposal loss
+inputs:
+  full_cost: 250000
+  prior_depreciation: 45000
+  excluded_cost: 100000
+  proceeds: 80000
+steps:
+  adjusted_full_cost: full_cost - prior_depreciation
+  loss_before_restriction: adjusted_full_cost - proceeds
+  deductible_loss: max(0, loss_before_restriction - excluded_cost)
+expected:
+  adjusted_full_cost: 205000
+  loss_before_restriction: 125000
+  deductible_loss: 25000
+```
+
 ## Ask the client first
 
 - What are the legal form, relevant capital, registration and actual management location?
@@ -267,7 +320,7 @@ expected:
 
 ## Review limits
 
-Source-cited draft, not professional attestation. Building disposal/indexation and special reliefs, ship, vehicle and mixed-use depreciation, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
+Source-cited draft, not professional attestation. Building disposal/indexation and special reliefs, ship and mixed-use depreciation, vehicle change-of-use and benefit treatment, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
 
 ## Sources
 
@@ -279,7 +332,7 @@ All read 23 October 2026.
 | Assessment Act | [§5][rate] |
 | TAKS company tax | [Rates, losses and payment guidance][taks] |
 | Group taxation regulation 148/2015 | [§§1–9][group] |
-| Current Depreciation Act | [§§1–5a and 17–27, equipment and building computations][depreciation] |
+| Current Depreciation Act | [§§1–5a, 7–10, 17–27 and 31, equipment and building computations][depreciation] |
 | TAKS returns | [Company filing procedure][returns] |
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
