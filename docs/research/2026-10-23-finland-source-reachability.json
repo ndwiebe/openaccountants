@@ -8,10 +8,10 @@
     "skills/international/finland/fi-company-formation.md": "bdc4f0f2418f85250c052cb8617313f6f5ad3bda73a8b1ff1230f97c7969bd58",
     "skills/international/finland/fi-corporate-income-tax.md": "b3ee6655437a782034aa65a16600ffbd9af10295ac9188ddd07f65a6292b1365",
     "skills/international/finland/fi-country-by-country-reporting.md": "b2930d26c47449e83e97861132988a47c29444004a9690dd2013a21defe2bf37",
-    "skills/international/finland/fi-employer-payroll.md": "789a135fa95f8e84cdd5400dc2a3cba510e7177cbee16676616f02a61aa09ec8",
+    "skills/international/finland/fi-employer-payroll.md": "82f860d523968bddbdd741b55d4769e815131229884d12ae088eafc1de9c8faf",
     "skills/international/finland/fi-income-tax.md": "e8c5280808819b51638644722c94832202a0d2e91261613b9a83344cec3c1219",
     "skills/international/finland/fi-individual-cross-border-residence.md": "75b37b5976342ef55a620e5539317e315bcde91ade4892d5ee1d7b6623d5b67e",
-    "skills/international/finland/fi-prepayments.md": "e06de60c74430fbdb5acd21849f8f59280f1a93b4ff6145cc1a19e2383ec4e7c",
+    "skills/international/finland/fi-prepayments.md": "24d8ba227276f4395bec49c762a59813935007bd8896d91f2cf03c6f8d8f64e8",
     "skills/international/finland/fi-property-transfer-tax.md": "a071205e80f803028b258a36c5c8eac163a3bf0afd2dd60b8e06eb36c0182cdd",
     "skills/international/finland/fi-tax-overview.md": "2602f845e0272f13acd05f756f2a51b2ad52f3e0d4348545da8dc6717286f56a",
     "skills/international/finland/fi-transfer-pricing.md": "3ce935adeb468bba0f19dfbc1dae0b4e1098e7caf7d4139b435ce68a9456c294",
@@ -728,5 +728,5 @@
     }
   ],
   "snapshot_note": "Earlier checked URLs retain their timestamps; formation and review-fix URL expansions have separate timestamps. Removed legacy-only links are excluded. Source hashes identify the current local source revision.",
-  "expanded_at_utc": "2026-10-23T18:33:01.682600+00:00"
+  "expanded_at_utc": "2026-10-23T18:33:49.314292+00:00"
 }

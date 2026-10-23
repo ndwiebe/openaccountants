@@ -1,7 +1,7 @@
 ---
 name: fi-prepayments
 description: Use this skill whenever asked about Finland prepayment tax (ennakkovero) for self-employed individuals. Trigger on phrases like "ennakkovero", "ennakkoverot", "prepayment tax Finland", "Finnish tax prepayments", "residual tax Finland", "jäännösvero", "tax instalments Finland", "OmaVero prepayment", "prepayment certificate", "ennakkoperintä", or any question about paying tax during the year as a Finnish self-employed person. Covers prepayment calculation, payment schedules, adjustment requests, residual tax, and penalties. ALWAYS read this skill before advising on Finnish tax prepayments.
-version: 1.1
+version: 1.2
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland prepayments v1.1 — 2026 operational method
+# Finland prepayments v1.2 — 2026 operational method
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation. Sources were retrieved from the Finnish Tax Administration (Vero) for this editorial update.
 
@@ -104,7 +104,7 @@ If advances and any additional prepayment are too small, the shortfall is back t
 
 ## Executable instalment examples
 
-The [official instalment table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) was re-read as indexed Vero text on 23 October 2026. Other operational source work above is preserved from the earlier draft and remains subject to pack review. These examples assume an ordinary individual schedule with no monthly/seasonal election or midyear change; the actual decision controls.
+The [official instalment table](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/) was re-read as indexed Vero text on 23 October 2026. Other operational source work above is preserved from the earlier draft and retains specialist and named Finnish accountant review gaps; see the [country README](README.md#evidence-and-next-action) for the independent source-review scope. These examples assume an ordinary individual schedule with no monthly/seasonal election or midyear change; the actual decision controls.
 
 ### Six instalments
 

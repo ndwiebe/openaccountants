@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.6
+version: 0.7
 ---
 
-# Finland employer payroll reporting v0.6
+# Finland employer payroll reporting v0.7
 
 ## Who this applies to
 
@@ -249,7 +249,7 @@ Official text retrieved through the search index on 23 October 2026:
 - [Vero wage reporting and employer contributions][reporting].
 - [Wage tax-card guidance][card], updated 14 April 2026; [rate and ceiling guidance][ceiling], updated 1 January 2026, retrieved as indexed official text.
 
-Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, full pension statutory/coverage review, accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
+Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, full pension statutory/coverage review, accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent source-review scope is recorded in the [country README](README.md#evidence-and-next-action); named Finnish accountant review remains outstanding. Payroll and social-contribution coverage remain partial.
 
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [prepayment-law]: https://www.finlex.fi/fi/lainsaadanto/1996/1118
