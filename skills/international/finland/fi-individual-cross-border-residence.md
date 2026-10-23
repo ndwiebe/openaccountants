@@ -2,17 +2,18 @@
 name: fi-individual-cross-border-residence
 description: >
   Screen Finnish individual residence on arrival and departure, distinguish
-  domestic status from treaty residence, and assemble a nonresidency claim.
+  domestic status from treaty residence, assemble a nonresidency claim and
+  reconcile foreign-tax credits and confirmed carryovers.
   Income-specific taxation, treaties, statutes and independent review remain open.
 jurisdiction: FI
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Finland individual cross-border residence v0.1
+# Finland individual cross-border residence v0.2
 
 ## Who this applies to
 
@@ -38,7 +39,17 @@ Domestic nonresidency and treaty residence are separate decisions. Vero's treaty
 
 A person can remain subject to domestic residence rules while a treaty limits Finland's taxing rights. Conversely, nonresidency does not itself remove taxation of every Finnish-source receipt. Classify employment, pensions, rent, investments and business income separately and verify the applicable source and treaty article. [Nonresident-income guidance][nonresident]; [Treaty-article guidance][treaties]
 
-No universal withholding rate, treaty exemption or foreign-tax credit is supplied here. See the [payroll draft](fi-employer-payroll.md) for the ordinary wage-reporting preparation framework; it does not settle cross-border payroll eligibility.
+No universal withholding rate or treaty exemption is supplied here. The relief section below concerns preparation under the credit/exemption framework; it does not determine the applicable treaty result. See the [payroll draft](fi-employer-payroll.md) for the ordinary wage-reporting preparation framework; it does not settle cross-border payroll eligibility.
+
+## Relief for foreign tax: claim and reconciliation
+
+Vero describes credit and exemption as separate double-tax-relief methods. Identify the applicable treaty/income treatment first. Report the foreign income, income category, source country and foreign tax even where Finnish withholding or prepayments have already been reduced to anticipate relief. [Individual double-tax relief][relief]
+
+Under the credit method, the foreign tax credit cannot exceed the Finnish tax attributable to the income concerned. Establish the eligible foreign tax and the Finnish limitation calculation before reconciling the result; do not deduct the entire foreign assessment automatically. This Guide does not calculate that limitation from gross receipts. [Individual double-tax relief][relief]
+
+The detailed guidance says unused credits can be used during the next five tax years for the same income source and category, within the relevant limitation. Once confirmed for carryover, the authority applies them automatically, oldest first, before current-year creditable foreign taxes. Preserve the original claim/decision and a vintage-by-vintage schedule; automatic later use does not remove the need to establish the original credit. [Detailed relief guidance, section 3.2.6][relief-detail]
+
+Prepare a reconciliation of each year's eligible tax, limitation, credit used and unused balance. Keep foreign assessments, evidence of payment, income/expense allocation, currency conversion and treaty analysis. This is a practical workpaper, not a conclusion that every foreign levy qualifies. Refunds, amended assessments, loss years and changes of income category need separate review.
 
 ## Preparation checklist
 
@@ -70,6 +81,45 @@ expected:
   year_after_window: 2030
 ```
 
+### 2. Credit ceiling with an unused balance
+
+Assume EUR 1,600 is eligible creditable foreign tax and EUR 1,200 is the correctly computed Finnish limitation, with no earlier unused credits. The current credit is EUR 1,200 and the unused amount is EUR 400. This assumes the credit method applies and does not establish eligibility or calculate the limitation itself.
+
+```oa-check
+name: Finland assumed foreign tax credit ceiling
+inputs:
+  eligible_foreign_tax: 1600
+  established_finnish_limit: 1200
+steps:
+  credit_used: min(eligible_foreign_tax, established_finnish_limit)
+  unused_credit: eligible_foreign_tax - credit_used
+expected:
+  credit_used: 1200
+  unused_credit: 400
+```
+
+### 3. Earlier unused credit is used first
+
+Assume the same source/category, a valid confirmed EUR 400 carryover still within its permitted years, EUR 500 current eligible foreign tax and EUR 700 current limitation. The earlier credit uses EUR 400, leaving EUR 300 capacity for current tax. Current unused credit is EUR 200. No claim is made about other credits or income baskets.
+
+```oa-check
+name: Finland assumed credit vintage ordering
+inputs:
+  confirmed_prior_credit: 400
+  current_eligible_foreign_tax: 500
+  current_limit: 700
+steps:
+  prior_used: min(confirmed_prior_credit, current_limit)
+  remaining_limit: current_limit - prior_used
+  current_used: min(current_eligible_foreign_tax, remaining_limit)
+  current_unused: current_eligible_foreign_tax - current_used
+expected:
+  prior_used: 400
+  remaining_limit: 300
+  current_used: 300
+  current_unused: 200
+```
+
 ## Ask the client first
 
 - What citizenships and prior residence decisions apply?
@@ -87,6 +137,7 @@ Official Vero text retrieved through the search index on 23 October 2026:
 - [Finnish citizens and the three-year rule][three].
 - [Taxation of nonresident individuals][nonresident].
 - [Treaty articles guidance][treaties].
+- [Individual double-tax relief][relief]; [detailed individual relief guidance][relief-detail], section 3.2.6.
 
 Not yet confirmed: complete current Income Tax Act sections 9–11 and amendments, exact day-count and temporary-absence application, full substantial-ties and special-position cases, each treaty, income-specific source/rate rules, foreign-tax relief, forms and current procedures. Independent review and professional attestation remain outstanding. Cross-border coverage remains partial.
 
@@ -94,3 +145,6 @@ Not yet confirmed: complete current Income Tax Act sections 9–11 and amendment
 [three]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/finnish_citizens_and_the_3year_rul/
 [nonresident]: https://vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/
 [treaties]: https://www.vero.fi/en/detailed-guidance/guidance/85707/articles-of-tax-treaties3/
+
+[relief]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/tax-treaties/elimination_of_double_taxation__receipt/
+[relief-detail]: https://vero.fi/en/detailed-guidance/guidance/77657/relief-for-international-double-taxation-in-natural-persons-tax-assessment/
