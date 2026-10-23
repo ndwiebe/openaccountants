@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.21
+version: 0.22
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -15,7 +15,7 @@ covered_by:
 partial:
   IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper and full-year positive-tax individual credit method added; other individual relief cases, special regimes, source conflicts, live filing and professional review remain open."
   IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
-  VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment, stated property registration/construction and VOES/separate foreign-business refund methods have thirteen controls; other special schemes, current indexed refund minimum, source conflicts, property start-date/valuation disputes, actual use/evidence, operational and independent review remain open."
+  VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment, stated property registration/construction and VOES/separate foreign-business refund methods have thirteen controls, with 2026 refund minima and repair threshold confirmed; other special schemes, source conflicts, property start-date/valuation disputes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Fourteen arithmetic controls, levy/PAYE penalty distinction, stated 2026 benefits and Article 9/10/10a option classification, valuation, separate tax dates and basis methods added; special workers, A1, disputed benefit/contractual bases, form conflicts, weekly rounding, operational and independent review remain open."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
@@ -79,3 +79,5 @@ The same local delta adds Article 9 ordinary option wage measurement, income-tax
 The still-local country batch also adds the VOES application/output-return sequence and the separate conditional foreign-business refund under Regulation 1243/2019. Two further controls cover mixed-rate VOES output without input offset and refund exclusions, bringing the country total to 66. The current indexed refund minimum and English-versus-regulation deadline/eligibility discrepancies remain explicit. This VAT addition is outside the benefits/options review snapshot and requires its own source review before the combined country batch is published. See the [VAT source preparation record](../../../docs/research/2026-10-23-iceland-voes-refund-sources.md).
 
 The [independent benefits/options review](../../../docs/research/2026-10-23-iceland-payroll-benefits-review.md) is now closed at corrected snapshot `e7241273`. It identified the Article 10 contractual pledge prohibition and a versioning omission; the writer fixed both and the reviewer independently confirmed closure with all 64 controls at that snapshot passing. This does not review the later two VAT controls or establish complete payroll/country coverage. The combined country batch remains local pending the additional VAT review and publication checks.
+
+A follow-up primary-source search found Skatturinn letter 1/2026, dated 20 January and effective 1 January. It confirms the 2026 refund minimums of 105,500 for two months and 21,100 for the year/remainder, resolving the previously recorded missing-current-minimum gap. It also confirms the Regulation 576 Article 5 annual repair threshold of 3,457,000; actual scope/value and calculated-price support remain required. The refund control now distinguishes the two period minimums. These updates require review with the VOES/refund delta before the combined country publication.

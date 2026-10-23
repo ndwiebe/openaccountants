@@ -1,7 +1,7 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.6
+version: 2.7
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -148,7 +148,7 @@ Eligible post-registration property maintenance, operations and administration i
 
 **B. Construction for qualifying sale/rental, sérstök skráning.** For the sold-property route, obtain the executed contract with the VAT-registered buyer, approved plans/identified commercial part, the buyer's intended-use declaration and its undertaking to assume the input-adjustment obligation. Register the declarations on the property and quantify the obligation. Registration of the buyer alone does not prove full deduction or extinguish the seller's residual adjustment: use the Article 15 transfer workpaper above. For an unsold commercial project, Article 3 requires approved taxable-use intentions and the unconditional bank guarantee indexed to the construction index. A landlord constructing for approved taxable rental also needs the lease/registered-consent and special-registration evidence; do not invent a buyer where the rental branch applies. **Guarantee waiver for that rental branch:** Regulation 577 Article 5 permits Skatturinn to waive the Article 3 bank guarantee where Regulation 515/1996 Article 4(2) and Article 5 conditions are met. Support the genuine profit-seeking development, substantial investment linked to future taxable activity, foreseeable revenue and business/financing evidence, and retain the authority's waiver decision. This is not an automatic exemption or a general waiver for every unsold developer. [Regulation 515/1996, Articles 4–5](https://files.reglugerd.is/pdf/0515-1996/current) [VAT Act, Article 6](https://www.althingi.is/lagas/nuna/1988050.html); [Regulation 577/1989, Articles 1–5](https://files.reglugerd.is/pdf/0577-1989/current); [Current procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
 
-Keep a separate construction workpaper for **each property**. First test the developer/self-construction scope under Regulation 576/1989, including owner/employee design/construction work and equipment use. Its ordinary construction method has limited input deductions; special registration must be established before treating the additional contractor/material inputs as recoverable. Output is based on the supported ordinary market value, or the specified calculated selling value including overhead/profit if market value is unavailable, not bare payroll cost. Article 5's printed repair threshold is annually construction-indexed; the historic printed amount is **not** a verified 2026 threshold. Current calculated-price rates and that indexed threshold require separate confirmation if material to the case. Preserve labour/time, equipment, materials, contractor invoices, valuations and direct/shared allocation. [Regulation 576/1989, Articles 1–7](https://files.reglugerd.is/pdf/0576-1989/current)
+Keep a separate construction workpaper for **each property**. First test the developer/self-construction scope under Regulation 576/1989, including owner/employee design/construction work and equipment use. Its ordinary construction method has limited input deductions; special registration must be established before treating the additional contractor/material inputs as recoverable. Output is based on the supported ordinary market value, or the specified calculated selling value including overhead/profit if market value is unavailable, not bare payroll cost. For Article 5 repairs/maintenance, the **2026 annual total-cost (taxable-value) threshold is at least ISK 3,457,000**, effective 1 January under Skatturinn's letter 1/2026. This gates the relevant Article 2/4 repair work; it is not a VAT amount or a per-invoice allowance. Do not use the regulation's historic printed 648,100 as the current threshold. The actual Article 6 value and applicable calculated-price instructions still require their own support. Preserve labour/time, equipment, materials, contractor invoices, valuations and direct/shared allocation. [Regulation 576/1989, Articles 1–7](https://files.reglugerd.is/pdf/0576-1989/current); [2026 indexed amounts][annual-vat-amounts]
 
 Under Regulation 577 Article 2, show the required construction output and supported input on the separate property statement, **submitted without payment**. On approval, the stated output collection is cancelled and eligible input refund is authorised. Already paid qualifying construction VAT has separate refund treatment: reconcile paid output, unpaid/cancelled output and input so a cancellation does not become a second cash refund. Keep the approval, property statements, payment ledger and refund/offset decision; this is not an ordinary rent-period netting shortcut or proof of bank receipt. Guarantee release also needs the documented statutory event and the remaining indexed adjustment balance; it is limited to qualifying parts. [Regulation 577/1989, Articles 2–3](https://files.reglugerd.is/pdf/0577-1989/current); [Current guarantee-release procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
 
@@ -179,7 +179,7 @@ Use this branch after the seller/customer/supply screening above. VAT Act **Arti
 
 Build an invoice/customs-document register showing vendor status, actual VAT paid, use, exclusions and the resulting eligible amount. Use **RSK 10.29**, with compliant document copies and a home competent-authority business certificate valid for one year, plus any additional requested evidence. A representative needs written authority; follow the authority's RSK 10.36 instruction where applicable. Preserve submission and the decision, rather than treating the schedule total as an approved refund. [Regulation, Articles 5–6 and 9][foreign-refund-reg]; [current application/document instructions][foreign-refund-is]
 
-For ordinary processing, apply by **the fifteenth of the month after the aligned two-month period**, or the stated year/remainder period. A late application moves to the next processing cycle; the ultimate statutory limit is **six years from the right arising**. Article 8's printed 75,000/15,000 are **December 2019 CPI 473.3 base amounts**, indexed at each year's start. The English page quotes **2025** thresholds of 101,000/20,200; neither those nor the unindexed base amounts establish the **2026** minimum. Obtain the applicable indexed minimum before submitting. [Regulation, Articles 4–8][foreign-refund-reg]; [Icelandic timetable][foreign-refund-is]; [English page with dated amounts][foreign-refund-en]
+For ordinary processing, apply by **the fifteenth of the month after the aligned two-month period**, or the stated year/remainder period. A late application moves to the next processing cycle; the ultimate statutory limit is **six years from the right arising**. Effective **1 January 2026**, Skatturinn's letter 1/2026 confirms the Article 8 minimums: **105,500** for a two-month claim, or **21,100** for a full calendar year or its remainder. Apply the correct period before testing the amount. The regulation's printed 75,000/15,000 are December 2019 CPI 473.3 bases; the English page's 101,000/20,200 are expressly 2025 figures. Neither supersedes the dated 2026 letter. Recheck the next year's indexed amounts. [Regulation, Articles 4–8][foreign-refund-reg]; [2026 authority letter][annual-vat-amounts]; [Icelandic timetable][foreign-refund-is]; [older English amounts][foreign-refund-en]
 
 **Keep these source discrepancies explicit:** the English page says applications are at least fifteen days after the period and six years after calendar-year end, whereas the current regulation and Icelandic page say by the fifteenth of the following month for normal processing and six years from the right arising. Its broad no-Iceland-sales summary also omits the express simplified-registration extension. Use the current regulation's separate gates and resolve an actual deadline/eligibility dispute before filing. A refund decision, collection, overpayment or appeal requires its own notice: Article 10 requires repayment of an excess within thirty days of decision and applies statutory surcharge/interest rules; Article 11 gives three months from decision to appeal. [Regulation, Articles 2, 5, 7 and 10–11][foreign-refund-reg]; [conflicting English summary][foreign-refund-en]
 
@@ -468,7 +468,7 @@ expected:
   voes_payable: 295000
 ```
 
-Separately assume a foreign-business refund register contains **150,000 of actual VAT**, including 12,000 on employee meals, 24,000 of blocked passenger-car costs and 60,000 on tourist services bought for resale/final consumption in Iceland. These categories are disjoint, and the remaining 54,000 meets the stated business-use/document/vendor tests. The eligible arithmetic amount is **54,000**. This is not an approved refund or a finding that a 2026 minimum/period/application test is met. It is not subtracted from the VOES output above. [Regulation, Articles 2–3 and 8][foreign-refund-reg]; [blocked costs][foreign-refund-is]
+Separately assume a foreign-business refund register contains **150,000 of actual VAT**, including 12,000 on employee meals, 24,000 of blocked passenger-car costs and 60,000 on tourist services bought for resale/final consumption in Iceland. These categories are disjoint, and the remaining 54,000 meets the stated business-use/document/vendor tests. The eligible arithmetic amount is **54,000**: **51,500 below** the 2026 two-month minimum, but **32,900 above** the year/remainder minimum. The latter numeric test does not itself prove the claim period, other conditions or an approved refund. Do not submit the same invoices twice or subtract the amount from VOES output. [Regulation, Articles 2–3 and 8][foreign-refund-reg]; [2026 minima][annual-vat-amounts]; [blocked costs][foreign-refund-is]
 
 ```oa-check
 name: Iceland separate foreign-business refund excludes blocked and resale costs
@@ -477,12 +477,18 @@ inputs:
   employee_meal_vat: 12000
   blocked_car_vat: 24000
   iceland_resale_consumption_vat: 60000
+  two_month_minimum_2026: 105500
+  year_or_remainder_minimum_2026: 21100
 steps:
   - excluded_vat: employee_meal_vat + blocked_car_vat + iceland_resale_consumption_vat
   - eligible_vat_before_application_gates: total_vat_in_register - excluded_vat
+  - shortfall_for_two_month_minimum: max(0, two_month_minimum_2026 - eligible_vat_before_application_gates)
+  - excess_over_year_remainder_minimum: max(0, eligible_vat_before_application_gates - year_or_remainder_minimum_2026)
 expected:
   excluded_vat: 96000
   eligible_vat_before_application_gates: 54000
+  shortfall_for_two_month_minimum: 51500
+  excess_over_year_remainder_minimum: 32900
 ```
 
 ## Ask the client first
@@ -534,8 +540,9 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [Foreign-business refund Regulation 1243/2019, current operative text, Articles 1–13][foreign-refund-reg] | 2026-10-23 |
 | [Icelandic foreign-business refund conditions, documents and timetable][foreign-refund-is] | 2026-10-23 |
 | [English refund page; dated amounts and discrepancies retained][foreign-refund-en] | 2026-10-23 |
+| [Skatturinn letter 1/2026, dated 20 January, amounts effective 1 January: refund minima and repair threshold][annual-vat-amounts] | 2026-10-23 |
 
-The VOES/refund addition is outside the benefits/options review snapshot. Its arithmetic, scope, dated minimum and administrative discrepancies require independent review before publication; actual registrations, returns and refund claims remain untested.
+The VOES/refund addition is outside the benefits/options review snapshot. Its arithmetic, scope, confirmed 2026 minimums and administrative discrepancies require independent review before publication; actual registrations, returns and refund claims remain untested. The annual authority letter's operative table was read; its linked Word memorandum was not retrieved by the web reader and is not claimed as read.
 
 [voes-law]: https://www.althingi.is/lagas/nuna/1988050.html
 [voes-booklet]: https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf
@@ -543,3 +550,4 @@ The VOES/refund addition is outside the benefits/options review snapshot. Its ar
 [foreign-refund-reg]: https://files.reglugerd.is/pdf/1243-2019/current
 [foreign-refund-is]: https://www.skatturinn.is/atvinnurekstur/skattamal/endurgreidslur-virdisaukaskatts/erlendir-adilar/
 [foreign-refund-en]: https://www.skatturinn.is/english/companies/vat/
+[annual-vat-amounts]: https://www.skatturinn.is/fagadilar/akvardandi-bref/obeinir-skattar/akvardandi-bref-1-2026
