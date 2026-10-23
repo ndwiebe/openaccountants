@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.15
+version: 0.16
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,13 +13,13 @@ covered_by:
   PR: iceland-payroll
   VAT: iceland-vat
 partial:
-  IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper added; progressive individual relief, special regimes, source conflicts, live filing and professional review remain open."
+  IT-IND: "2026 resident salary, sole-trader and capital methods have nine arithmetic controls; resident foreign-relief workpaper and full-year positive-tax individual credit method added; other individual relief cases, special regimes, source conflicts, live filing and professional review remain open."
   IT-CORP: "2026 primary-source workpaper method added; positive-profit interest-cap and CFC implementation methods added; R&D, three financial-sector taxes and stated restructuring methods added locally with ten new controls; negative-profit financing, CFC timing/substance disputes, remaining treaty-specific relief, other sector/incentives, disputed restructuring/valuation/loss cases, operational and independent review remain open."
   VAT: "Direct/shared and private-use attribution, annual reconciliation, capital adjustment and stated property registration/construction methods have eleven controls; other special schemes, property start-date/valuation disputes, actual use/evidence, operational and independent review remain open."
   SC: "2026 ordinary employer and self-employed method rebuilt with three arithmetic controls; confirmation of the derived 2026 A1 component result, conflicting annual payment dates, fund-specific and independent review remain open."
   PR: "Six arithmetic controls and levy/PAYE penalty distinction added; special workers, A1, benefits, weekly rounding, operational and independent review remain open."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
-  XB: "2026 cross-border screening draft added; residence boundary, treaty-specific PE/attribution and relief beyond the UK credit example, assessment categories outside the added annualisation method, exit cases outside the added company/asset migration method, operational checks and independent review remain open."
+  XB: "2026 cross-border screening draft added; residence boundary, treaty-specific PE/attribution and relief beyond the UK company/full-year individual credit examples, assessment categories outside the added annualisation and positive-tax credit methods, exit cases outside the added company/asset migration method, operational checks and independent review remain open."
 ---
 
 # Iceland tax pack
@@ -65,3 +65,5 @@ The same unpublished country pass adds the financial remuneration, additional-pr
 The same country delta now adds conditional domestic mergers/splits and sole-trade incorporation, separate cumulative loss-transfer conditions, continued tax/share bases despite accepted book revaluation, formation versus document-lodging dates and three further controls. The individual Guide refers sole-trader incorporation to that workpaper. Atypical structures, disputed valuations/losses, live procedure and independent review remain open.
 
 The local VAT extension distinguishes voluntary commercial-rent registration from special construction registration, tenant/buyer declarations, continued adjustment obligations, per-property construction statements and guarantee/cancellation/refund reconciliation. Two controls cover required rental security and avoiding a second refund of unpaid cancelled output. Approval dates, actual use, construction valuation and current indexed repair/calculated-price inputs still require their stated evidence; all domains remain partial.
+
+The resident-relief extension adds a full-year individual progressive-tax ceiling after personal credit, using current 2026 annual figures and a supported treaty credit branch. The official 2026 return handbook demonstrates the method on 2025 income; its figures are not reused as 2026 parameters. One further control covers foreign tax above/below the ceiling. Multiple-country/category, unused-credit, spouse and part-year cases remain separately open.

@@ -8,8 +8,7 @@ description: >
   rates, residence boundaries, payer evidence and departure checks. Use for
   foreign contractors, royalties, dividends, interest, remote work, branches
   and international moves. This source-cited draft flags inconsistent official
-  residence summaries. It includes a resident foreign-relief workpaper and a conditional UK credit
-  example. It does not complete every treaty corridor, individual final
+  residence summaries. It includes a resident foreign-relief workpaper and conditional UK company/individual credit examples. It does not complete every treaty corridor, individual final
   assessment, exit-tax case or live filing
   procedures. Independent Icelandic legal review remains required before reliance.
 jurisdiction: IS
@@ -17,10 +16,10 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.4
+version: 0.5
 ---
 
-# Iceland cross-border tax screening v0.4
+# Iceland cross-border tax screening v0.5
 
 ## Who this applies to
 
@@ -130,7 +129,7 @@ Build and retain:
 
 The per-country control is supported by [Tax Appeals Board decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912), which rejected the taxpayer's requested unrestricted overall offset. That decision concerns older years and rates; its historical 15% figure is not a 2026 corporate rate.
 
-**No treaty.** Article 119 permits an application to reduce Icelandic income tax with regard to foreign tax paid on income taxable in Iceland. It does not prescribe an automatic unrestricted refund. The same historical decision upheld limiting relief and rejected a more favourable unrestricted offset. Identify the current legal basis, evidence and authority decision for the actual case. [Article 119][law], [decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912)
+**No treaty.** Article 119 permits an application to reduce Icelandic income tax with regard to foreign tax paid on income taxable in Iceland. It does not prescribe an automatic unrestricted refund. The same historical decision upheld limiting relief and rejected a more favourable unrestricted offset. Municipal relief has its own application basis in Municipal Revenue Act Article 34; do not infer automatic municipal credit from an income-tax request. Identify the current legal basis, evidence and authority decision for each actual charge. [Municipal Revenue Act, Article 34](https://www.althingi.is/lagas/nuna/1995004.html); [Article 119][law], [decision 520/2012](https://yskn.is/urskurdir/skoda-urskurd/?nr=2912)
 
 ### Current UK treaty credit illustration
 
@@ -139,6 +138,24 @@ For Iceland-resident income which the UK may tax under the current Convention, A
 Use the **2013** Convention with applicable MLI modifications for 2026. The official publication confirms its current status and effective periods; an older UK treaty PDF remains searchable and uses different article numbering and relief. The authentic Convention and MLI prevail over the synthesised reading aid. [Official treaty publication](https://www.gov.uk/government/publications/iceland-tax-treaties)
 
 The example below assumes a single Iceland-resident company, UK-source taxable profit within established UK taxing rights, matched paid UK income tax, no domestic exemption, no other adjustments and a supported proportional Icelandic tax attribution. It does not determine UK liability or extend this mechanism to every treaty.
+
+### Resident individual: progressive earned-income credit ceiling
+
+First establish a **full-year Iceland-resident adult**, the treaty residence/covered-person position, the foreign country's taxing right over the particular earned income, actual qualifying foreign income tax paid and the applicable relief branch. Use the actual treaty, not a generic exemption assumption. The current UK Convention includes both state income tax and municipal income tax as covered Icelandic taxes. Its Article 21(1)(a)–(b) is the paid-tax credit branch; UK-only income under (c) is a different branch. The method below assumes one foreign country/category, a positive state-tax amount after personal credit and supported comparable earned-income bases. [UK Convention, Articles 2 and 21](https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force)
+
+The authority's **2026 return handbook, page 20, reports 2025 income**. It demonstrates proportional relief by computing tax on combined domestic/foreign earned income **after personal credit**, then reducing state tax and municipal tax by the foreign-income share. Its credit-method paragraph limits relief to matched paid foreign tax if that is lower than attributable Icelandic tax. This establishes the stated method; its old-year thresholds, exchange rate and personal credit are not 2026 income-year parameters. [Official handbook, page 20][individual-handbook]
+
+Prepare the following workpaper for the stated positive-tax case:
+
+1. Reconcile domestic and foreign **taxable earned-income bases after supported deductions**, rather than net foreign bank receipts. Attribute deductions consistently; record currency conversions and any mismatch between the foreign assessment and Icelandic base. Keep separately taxed capital income outside this simplified same-category example.
+2. Compute annual state tax on the combined base using the **2026 annual bands** and subtract the supported annual personal credit **once**. Compute municipal tax with the actual applicable municipal rate/allocation; 14.94% is an assumed case rate in the example, not a universal final rate. Preserve the state/municipal columns.
+3. Compute the eligible foreign base divided by the combined comparable base. Allocate the after-personal-credit state tax and municipal tax by that ratio to establish the attributable ceiling for this supported case. Do not instead charge only domestic income, assign all foreign income to the highest marginal band, or subtract full personal credit again after relief.
+4. Under the established credit branch, limit the **total** reduction to the lower of qualifying paid foreign tax and that attributable covered-tax ceiling. Reconcile the state/municipal allocation to the actual assessment; do not deduct the whole foreign tax separately from both charges. Actual Icelandic withholding is a separate payment credit after the tax calculation.
+5. Retain the treaty analysis, proof of payment/refunds, income/deduction/currency schedule, allocation and submitted claim/assessment. Later foreign refunds or reassessments need reconsideration. An excess above the ceiling has no automatic Icelandic refund or carryforward established by this method.
+
+[Income Tax Act, Articles 66–67 and 119][law]; [2026 annual notice](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d); [Handbook, page 20][individual-handbook]; [UK Convention, Article 21](https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force)
+
+This does not settle several foreign countries/categories, foreign-source losses, mixed capital income, spouse transfers, unused personal credit, part-year/Article 70a elections or contested attribution/foreign taxing rights. Resolve those inputs under their own law before extending the simple proportional workpaper. For exemption-with-progression, use the treaty's actual exemption clause and computation rather than capping relief at foreign tax paid merely because this credit example does so.
 
 ### Company/asset migration and deemed realisation
 
@@ -315,6 +332,58 @@ expected:
   period_tax_before_payments: 415023.68
 ```
 
+### 7. Full-year individual: progressive tax, proportional ceiling and paid-tax cap
+
+Assume a full-year adult treaty resident of Iceland has **12 million domestic and 8 million UK taxable earned income**, after all permitted deductions. The UK income is proved taxable in the UK under the current treaty, the Article 21(1)(a)–(b) credit branch applies, qualifying UK income tax paid is an invented **3 million**, full annual personal credit is supported, and the established municipal rate is **14.94%** throughout. There is no capital income, spouse transfer, other country, loss, unused-credit issue or other adjustment.
+
+On the 20-million combined base, 2026 state tax before personal credit is **4,488,608.499**; after the **869,898** credit it is **3,618,710.499**. Municipal tax is **2,988,000**, so tax before foreign relief is **6,606,710.499**. The foreign-income share is **40%**, giving an attributable ceiling of **2,642,684.1996**. The 3-million paid foreign tax is capped at that amount; Icelandic tax after relief is **3,964,026.2994**, before withholding/payment credits and the accepted filing rounding. The uncredited excess is **357,315.8004**. If qualifying paid UK tax were instead **1.5 million**, the credit would be 1.5 million and remaining Icelandic tax **5,106,710.499**. Neither result is computed by removing the foreign income before applying the bands or using its highest marginal rate. Keep unrounded workpaper figures and reconcile the authority's final rounding/allocation before filing. [2026 annual notice](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d); [Handbook, page 20][individual-handbook]; [UK Convention, Articles 2 and 21](https://www.gov.uk/government/publications/iceland-tax-treaties/synthesised-text-of-the-multilateral-instrument-and-the-2013-iceland-uk-double-taxation-convention-in-force)
+
+```oa-check
+name: Iceland full year individual UK credit uses progressive after credit proportional ceiling
+inputs:
+  domestic_taxable_earned_income: 12000000
+  uk_taxable_earned_income: 8000000
+  first_annual_ceiling: 5977470
+  second_annual_ceiling: 16781397
+  supported_annual_personal_credit: 869898
+  supported_municipal_rate: 0.1494
+  qualifying_uk_income_tax_paid: 3000000
+  alternative_lower_paid_uk_tax: 1500000
+steps:
+  - combined_taxable_base: domestic_taxable_earned_income + uk_taxable_earned_income
+  - first_state_band_tax: min(combined_taxable_base, first_annual_ceiling) * 0.1655
+  - second_state_band_tax: max(0, min(combined_taxable_base, second_annual_ceiling) - first_annual_ceiling) * 0.2305
+  - third_state_band_tax: max(0, combined_taxable_base - second_annual_ceiling) * 0.3135
+  - state_tax_before_personal_credit: first_state_band_tax + second_state_band_tax + third_state_band_tax
+  - state_tax_after_personal_credit: state_tax_before_personal_credit - supported_annual_personal_credit
+  - municipal_tax: combined_taxable_base * supported_municipal_rate
+  - tax_before_foreign_relief: state_tax_after_personal_credit + municipal_tax
+  - foreign_income_ratio: uk_taxable_earned_income / combined_taxable_base
+  - attributable_state_tax: state_tax_after_personal_credit * foreign_income_ratio
+  - attributable_municipal_tax: municipal_tax * foreign_income_ratio
+  - attributable_ceiling: attributable_state_tax + attributable_municipal_tax
+  - credit: min(qualifying_uk_income_tax_paid, attributable_ceiling)
+  - remaining_iceland_tax: tax_before_foreign_relief - credit
+  - uncredited_excess: qualifying_uk_income_tax_paid - credit
+  - lower_paid_tax_credit: min(alternative_lower_paid_uk_tax, attributable_ceiling)
+  - lower_paid_case_remaining_tax: tax_before_foreign_relief - lower_paid_tax_credit
+expected:
+  combined_taxable_base: 20000000
+  state_tax_before_personal_credit: 4488608.499
+  state_tax_after_personal_credit: 3618710.499
+  municipal_tax: 2988000
+  tax_before_foreign_relief: 6606710.499
+  foreign_income_ratio: 0.4
+  attributable_state_tax: 1447484.1996
+  attributable_municipal_tax: 1195200
+  attributable_ceiling: 2642684.1996
+  credit: 2642684.1996
+  remaining_iceland_tax: 3964026.2994
+  uncredited_excess: 357315.8004
+  lower_paid_tax_credit: 1500000
+  lower_paid_case_remaining_tax: 5106710.499
+```
+
 ## Ask the client first
 
 - What are the individual's domicile, rolling presence/absence dates, departure and foreign-tax evidence, or the entity's registration, legal form and actual management?
@@ -332,7 +401,7 @@ For professional review of the facts, [contact OpenAccountants](https://www.open
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local direct retrieval returned HTTP 403; the statutory text was read through the web reader. Administrative residence, historic-rate and instrument-exemption discrepancies are identified above. Notice 1521/2025 was checked through the Gazette's indexed HTML and the ministry's matching 2026 notice; direct Gazette PDF access returned HTTP 403. Independent Icelandic legal review, treaty-specific PE/attribution, foreign-relief cases beyond the stated workpaper/example, individual assessment categories outside the stated annualisation case, exit cases outside the stated statutory method and operational filing remain open. Invented example inputs are not client facts. This is partial XB coverage.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local direct retrieval returned HTTP 403; the statutory text was read through the web reader. Administrative residence, historic-rate and instrument-exemption discrepancies are identified above. Notice 1521/2025 was checked through the Gazette's indexed HTML and the ministry's matching 2026 notice; direct Gazette PDF access returned HTTP 403. Independent Icelandic legal review, treaty-specific PE/attribution, foreign-relief cases beyond the stated workpaper/example, individual assessment categories outside the stated annualisation and full-year positive-tax credit examples, exit cases outside the stated statutory method and operational filing remain open. Invented example inputs are not client facts. This is partial XB coverage.
 
 | Official source | URL | Read on |
 |---|---|---|
@@ -354,6 +423,7 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local
 | UK treaty publication and effective periods | [Official publication](https://www.gov.uk/government/publications/iceland-tax-treaties) | 2026-10-23 |
 | PE Regulation 1165/2016, Articles 2–8 | [Regulation](https://files.reglugerd.is/pdf/1165-2016/current) | 2026-10-23 |
 | 2026 annual state bands and credit, notice 1521/2025 | [Gazette HTML](https://island.is/stjornartidindi/nr/34903c0c-a215-46e9-878c-b1ecff73af7d) | 2026-10-23 |
+| Skatturinn 2026 individual-return handbook, page 20, method demonstrated on 2025 income | [Official handbook][individual-handbook] | 2026-10-23 |
 | Municipal Revenue Act 4/1995 | [Alþingi](https://www.althingi.is/lagas/nuna/1995004.html) | 2026-10-23 |
 
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
@@ -368,3 +438,5 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Local
 [exemption]: https://www.skatturinn.is/english/companies/exemption/
 [treaties]: https://island.is/en/o/skatturinn/double-taxation-agreements
 [map]: https://island.is/en/o/skatturinn/mutual-agreement-procedure-for-double-taxation
+
+[individual-handbook]: https://www.skatturinn.is/media/baeklingar/rsk_0801_2026.is.pdf
