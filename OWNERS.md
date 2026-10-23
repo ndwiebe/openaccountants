@@ -56,6 +56,16 @@ Continue within your allocation without waiting for a new country-by-country ins
 
 **Publish by country:** prepare and validate the whole country batch locally, obtain an independent review of the full pack, fix the findings, then push the reviewed batch. Keep local commits as useful checkpoints; do not push or open a PR for every Guide. Reuse the active consolidated PR for that workstream. A country batch can still have documented partial coverage; publication does not replace the evidence or professional review required for comprehensive coverage.
 
+### Active handover, 23 October 2026
+
+| Writer | Current work and next action | Other writers |
+|---|---|---|
+| Claude | Continue the country already in progress within the 22-country allocation above. Record the active country and branch/PR on its issue before the next writing batch. If none is active, select an assigned country after checking existing work and open PRs. | Do not start Norway, Iceland or another ChatGPT country without a recorded handover. |
+| ChatGPT, primary chat | Norway: deepen missing topics and re-verify the existing pack. The next topic under research is VAT input allocation and capital adjustments. Norway additions remain local pending full-pack independent review. | Leave Norway writing in this chat. Finland remains allocated to ChatGPT. |
+| ChatGPT, support chat | Iceland: the seven-domain preparation batch and its independent source review are on PR #514 at commit `5cf68500`. Continue the remaining corporate incentives and special-regime gap, starting R&D Act 152/2009 and 2026 claim requirements. | Leave Iceland writing in the support chat. The pack remains partial, source-cited drafts; publication is not professional attestation or complete coverage. |
+
+Update this handover when the active country, writer or next action changes. Keep each country's remaining gaps in its README and issue; the allocation table below remains the authority for who writes each pack.
+
 ### Country allocation
 
 | Code | Country or territory | Assigned writer |
