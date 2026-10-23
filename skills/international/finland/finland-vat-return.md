@@ -1,7 +1,7 @@
 ---
 name: finland-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Finland VAT return (ALV-ilmoitus) for any client. Trigger on phrases like "prepare VAT return", "do the ALV", "fill in ALV", "Finnish VAT", "OmaVero", or any request involving Finland VAT filing. This skill covers Finland only and standard ALV registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Finnish VAT work.
-version: 2.1
+version: 2.2
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland VAT return v2.1 — 2026 editorial draft
+# Finland VAT return v2.2 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified, or an attestation.
 
@@ -335,7 +335,7 @@ This draft deliberately does not resolve:
 - a vehicle that may fit a rental/taxi/tuition/resale or commercial-vehicle exception; and
 - late-payment consequences, penalties, taxable-period changes or a disputed registration effective date.
 
-## Official sources
+## Sources
 - [Vero: VAT registration](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/how-to-register-for-vat/)
 - [Vero: VAT exemption for small businesses](https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/)
 - [Vero: VAT rates](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/)

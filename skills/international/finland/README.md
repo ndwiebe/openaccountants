@@ -40,6 +40,6 @@ The [property-transfer tax draft](fi-property-transfer-tax.md) adds acquisition-
 
 ## Evidence and next action
 
-The local 23 October country batch adds executable controls to the older YEL, VAT and prepayment Guides and a second CbCR threshold-boundary control. Source reachability is recorded separately from legal-content verification in `docs/research/2026-10-23-finland-source-reachability.json`; a successful HTTP response does not prove the rule is correct or current.
+The local 23 October country batch has 27 passing executable controls across ten source Guides, including the older YEL, VAT and prepayment Guides and a second CbCR threshold-boundary control. All 86 unique non-CTA source URLs returned HTTP 200 without redirects; 129 repository unit tests pass. These checks do not establish legal accuracy or independent review. Source reachability is recorded separately from legal-content verification in `docs/research/2026-10-23-finland-source-reachability.json`; a successful HTTP response does not prove the rule is correct or current.
 
-Next: resolve source failures, finish source/legal reconciliation across the existing pack, obtain one independent full-pack review, fix its findings and publish one reviewed country content batch. A named Finnish accountant review is still required separately. Keep this issue open and the consolidated PR in draft while these gates remain open.
+Next: finish statutory/source-content reconciliation across the existing pack, obtain one independent full-pack review, fix its findings and publish one reviewed country content batch. A named Finnish accountant review is still required separately. Keep this issue open and the consolidated PR in draft while these gates remain open.
