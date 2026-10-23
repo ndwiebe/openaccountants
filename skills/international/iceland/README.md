@@ -1,10 +1,11 @@
 ---
 jurisdiction: IS
-version: 0.2
+version: 0.3
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  XB: is-cross-border
   TP: is-transfer-pricing
   SC: iceland-social-contributions
   PR: iceland-payroll
@@ -16,7 +17,7 @@ partial:
   SC: "Existing draft requires current source, scope and example verification."
   PR: "Existing draft requires current source, scope and example verification."
   TP: "2026 pricing and documentation draft added; independent Icelandic legal review, litigation, live filing and case-specific CbC/treaty procedures remain open."
-  XB: "No dedicated deep-tax Guide; residence, non-residents, treaties, PE, withholding and exit require scope and source review."
+  XB: "2026 cross-border screening draft added; residence boundary, treaties, PE regulations, foreign credits, final assessments, exit computations, operational checks and independent review remain open."
 ---
 
 # Iceland tax pack
@@ -31,7 +32,7 @@ Accountable owner: Michael Cutajar. Assigned writer: ChatGPT under [OWNERS.md](.
 | Social contributions | [Social contributions](iceland-social-contributions.md) | Source-cited draft; verification open |
 | Payroll | [Payroll](iceland-payroll.md) | Source-cited draft; verification open |
 | Transfer pricing | [Transfer pricing](is-transfer-pricing.md) | Source-cited draft; independent review and stated gaps open |
-| Cross-border | Missing dedicated Guide | Existing overview is not comprehensive coverage |
+| Cross-border | [Cross-border screening](is-cross-border.md) | Source-cited draft; stated substantive and review gaps remain open |
 
 Formation, the overview and tax optimisation are supplementary and do not establish completion of the tax domains. All existing Guides and provenance are preserved.
 
