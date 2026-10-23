@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.8
+version: 0.9
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -53,3 +53,5 @@ The local finance/migration extension adds the Article 57b positive-profit inter
 The local relief/VAT extension adds country/category foreign-income matching, a current-UK credit example, mixed-activity attribution and annual reconciliation, private-use and partly creditable foreign-service controls, and indexed capital-input adjustment rules. The Guide preserves the different property periods for clawbacks and additional deductions.
 
 The CFC extension adds ownership/substance, profit/loss and reporting steps; the PE extension reconciles the domestic implementing regulation; the individual extension supplies the qualifying partial-year/short-stay annualisation method. The A1 note identifies the expired 2024–2025 component and a derived 2026 residual rate for independent confirmation, rather than treating an old rate table as current.
+
+The independent source review of snapshot `355b3194` identified four corrections. The local correction pass clarifies eligible temporary employees’ day-based personal credit, replaces the payroll six-month shorthand with the common residence method, preserves the permanent-establishment and initial-stay qualifications for foreign-expert relief, and screens Article 10 exempt bodies before the ordinary VAT shared-input method. This records findings addressed, not a completed professional review.

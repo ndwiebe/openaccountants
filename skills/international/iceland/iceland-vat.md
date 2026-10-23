@@ -1,7 +1,7 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.2
+version: 2.3
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -94,7 +94,9 @@ The vehicle block has a statutory exception: a registered business that sells or
 
 ### Mixed taxable/exempt activity and private use
 
-Use [Input VAT Regulation 192/1993, Articles 3–9](https://files.reglugerd.is/pdf/0192-1993/current), after testing invoice evidence and statutory blocks. Keep each activity identifiable in the ledger:
+**Entity-status screen first.** A VAT-registered body exempt under Income Tax Act Article 4 falls within the overriding [Input VAT Regulation 192/1993 Article 10](https://files.reglugerd.is/pdf/0192-1993/current), which permits only inputs exclusively connected with taxable sales under its general rule. Do not give such a body the ordinary shared-turnover deduction below. Article 10 separately permits qualifying public-service enterprises taxable under VAT Act Article 3(1)(4) to attribute non-property inputs to taxable operations under Article 6, provided those operations are clearly separated financially and in the accounts. Establish that status and its special method before any deduction.
+
+For an ordinary taxpayer outside that override, use [Input VAT Regulation 192/1993, Articles 3–9](https://files.reglugerd.is/pdf/0192-1993/current), after testing invoice evidence and statutory blocks. Keep each activity identifiable in the ledger:
 
 1. **Direct taxable use:** deduct supported VAT on inputs bought solely for the taxable part, subject to the other deduction restrictions. Zero-rated supplies remain taxable activity for input-credit purposes; do not put them in the Article 2 exempt denominator merely because output VAT is zero.
 2. **Direct exempt use:** no deduction for inputs solely serving the exempt activity.
@@ -284,7 +286,7 @@ expected:
 
 ### Mixed-activity annual reconciliation
 
-Assume taxable turnover 12 million and exempt turnover 8 million, excluding a separate 2 million operating-asset sale from the ratio. Supported direct taxable input VAT is 120,000, direct exempt VAT 48,000, genuinely shared VAT 240,000 and separately blocked VAT 24,000. The annual ratio is **60%** and total allowable input is **264,000**. If provisional deductions already claimed in earlier periods total 280,000 and there are no other annual inputs, the final-period reconciliation reverses **16,000**. Map the reconciliation to the current form rather than inventing a delta box. [Regulation 192/1993, Articles 2–5](https://files.reglugerd.is/pdf/0192-1993/current)
+Assume an ordinary taxpayer outside the Article 10 exempt-body override, taxable turnover 12 million and exempt turnover 8 million, excluding a separate 2 million operating-asset sale from the ratio. Supported direct taxable input VAT is 120,000, direct exempt VAT 48,000, genuinely shared VAT 240,000 and separately blocked VAT 24,000. The annual ratio is **60%** and total allowable input is **264,000**. If provisional deductions already claimed in earlier periods total 280,000 and there are no other annual inputs, the final-period reconciliation reverses **16,000**. Map the reconciliation to the current form rather than inventing a delta box. [Regulation 192/1993, Articles 2–5](https://files.reglugerd.is/pdf/0192-1993/current)
 
 ```oa-check
 name: Iceland mixed VAT direct attribution and annual shared-cost reconciliation
