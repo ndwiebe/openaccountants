@@ -6,7 +6,7 @@ covered_by:
   SC: fo-payroll-contributions
 partial:
   IT-IND: "Detailed deductions, capital income, tax caps and special worker categories remain open."
-  IT-CORP: "Capital-income computation, depreciation schedules, distributions and special regimes remain open."
+  IT-CORP: "Capital-income computation, building/ship/vehicle/mixed-use depreciation, distributions and special regimes remain open."
   VAT: "Exempt sectors, input restrictions, invoices and import/export rules remain incomplete."
   SC: "Age, payer, contribution bases and nonresident exceptions need complete statutory review."
   PR: "Benefits, collection dates, reconciliation and special employment categories remain incomplete."

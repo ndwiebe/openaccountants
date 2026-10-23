@@ -11,12 +11,12 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands corporate income tax v0.1
+# Faroe Islands corporate income tax v0.2
 
 ## Who this applies to
 
@@ -50,6 +50,18 @@ Working-paper sequence:
 4. Reverse accounting charges that require separate tax treatment; insert only deductions supported by the applicable law and schedules.
 5. Establish the allowable loss balance, then apply it against positive ordinary taxable income. Preserve the unused balance by origin year and entity.
 6. Multiply the resulting ordinary taxable income by the established rate. Reconcile the assessment and actual payment notices separately.
+
+### Ordinary business equipment depreciation
+
+For machinery, furniture and similar equipment used exclusively in the business, maintain a tax pool separately from accounting carrying values. Classify assets first: buildings, leased-premises installations, ships, mixed/private-use assets and passenger cars subject to §5a cannot simply be placed in this ordinary equipment calculation. Foreign-managed joint ownership also has §1 restrictions. [Depreciation Act §§1–2, 5a][depreciation]
+
+For an ordinary positive pool, start with the opening tax balance, add qualifying acquisitions and deduct disposal proceeds. The maximum annual deduction is **30%** of that adjusted balance. If the balance before depreciation is **DKK 20,000 or less**, the positive remainder can be deducted in full. The ceiling is not a mandatory deduction. [§2(3)–(5)][depreciation]
+
+Separately, an eligible item costing **DKK 20,000 or less** can be deducted immediately in its acquisition year under §3. Choose either full immediate deduction or inclusion of its entire cost in the pool; do not claim both. Subsequent sale proceeds of an immediately deducted item are fully taxable income, not a second pool reduction. [§3(1)–(4)][depreciation]
+
+A proved disposal loss has special treatment: compare proceeds with that asset's cost less prior tax depreciation. Deduct the loss in the disposal year and remove the asset's remaining tax value from the pool. Do not both remove that tax value and deduct the proceeds again from the pool. Keep asset-level records even though ordinary annual depreciation uses a pool. [§4(1)][depreciation]
+
+If proceeds create a negative pool, stop the positive-pool calculation. Section 5 allows inclusion in taxable income in the current year and requires settlement by the following income year unless offset through qualifying acquisitions or a permitted extension. Record the negative balance and its deadline; it is not a negative depreciation deduction. The full reinvestment/extension procedure remains outside this Guide. [§5][depreciation]
 
 ### Losses
 
@@ -87,7 +99,7 @@ Section 81(2) states ordinary late-payment interest of **0.7% per commenced mont
 
 Foreign incorporation does not settle residence where effective management is Faroese. Foreign businesses require a separate domestic-source/PE and treaty analysis under §§1–2. Controlled transactions and thin capitalisation require their own schedules; see the transfer-pricing Guide. Foreign tax credits, participation relief, withholding and treaty procedures are unresolved here. [Tax Act §§1–2, 37a–37b][tax]
 
-## Two worked examples that recompute
+## Worked examples that recompute
 
 ### 1. Ordinary profit bridge
 
@@ -132,6 +144,54 @@ expected:
   tax_if_forfeited: 54000
 ```
 
+### 3. Equipment pool and immediate deduction
+
+Assume all assets qualify for ordinary exclusive-business treatment. An opening pool of DKK 200,000 plus DKK 100,000 of eligible acquisitions gives DKK 300,000. Electing the maximum deduction gives DKK 90,000 and a closing pool of DKK 210,000. A separate eligible item costing exactly DKK 20,000 is immediately deducted and excluded from that pool. There are no disposals or other adjustments.
+
+```oa-check
+name: Faroese equipment pool and separate small item
+inputs:
+  opening_pool: 200000
+  pooled_additions: 100000
+  small_item: 20000
+  rate: 0.30
+steps:
+  pool_before: opening_pool + pooled_additions
+  pool_deduction: pool_before * rate
+  closing_pool: pool_before - pool_deduction
+  total_deduction: pool_deduction + small_item
+expected:
+  pool_before: 300000
+  pool_deduction: 90000
+  closing_pool: 210000
+  total_deduction: 110000
+```
+
+### 4. Proved disposal loss
+
+Assume a DKK 200,000 opening pool includes an asset with DKK 60,000 remaining tax value, sold for DKK 40,000. Its proved loss is DKK 20,000. Remove DKK 60,000 from the pool, leaving DKK 140,000 before depreciation. At the elected 30% maximum, depreciation is DKK 42,000 and the closing pool DKK 98,000. Total deduction is DKK 62,000. Do not deduct the sale proceeds from the pool again.
+
+```oa-check
+name: Faroese equipment disposal loss without double reduction
+inputs:
+  opening_pool: 200000
+  asset_tax_value: 60000
+  proceeds: 40000
+  rate: 0.30
+steps:
+  disposal_loss: asset_tax_value - proceeds
+  pool_before: opening_pool - asset_tax_value
+  depreciation: pool_before * rate
+  closing_pool: pool_before - depreciation
+  total_deduction: disposal_loss + depreciation
+expected:
+  disposal_loss: 20000
+  pool_before: 140000
+  depreciation: 42000
+  closing_pool: 98000
+  total_deduction: 62000
+```
+
 ## Ask the client first
 
 - What are the legal form, relevant capital, registration and actual management location?
@@ -143,7 +203,7 @@ expected:
 
 ## Review limits
 
-Source-cited draft, not professional attestation. Asset-specific depreciation, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
+Source-cited draft, not professional attestation. Building, ship, vehicle and mixed-use depreciation, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
 
 ## Sources
 
@@ -155,6 +215,7 @@ All read 23 October 2026.
 | Assessment Act | [§5][rate] |
 | TAKS company tax | [Rates, losses and payment guidance][taks] |
 | Group taxation regulation 148/2015 | [§§1–9][group] |
+| Current Depreciation Act | [§§1–5a, ordinary equipment scope and computations][depreciation] |
 | TAKS returns | [Company filing procedure][returns] |
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
@@ -162,3 +223,5 @@ All read 23 October 2026.
 [taks]: https://www.taks.fo/fo/vinna/skattur/partafelagsskattur
 [group]: https://logir.fo/Kunngerd/148-fra-18-12-2015-um-samskatting-av-felogum
 [returns]: https://www.taks.fo/en/individuals/tax/tax-return
+
+[depreciation]: https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174
