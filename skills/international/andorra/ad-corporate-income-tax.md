@@ -4,7 +4,7 @@ description: "Source-cited draft: corporate income tax for Andorra (tax year 202
 jurisdiction: AD
 tax_year: 2025
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -16,10 +16,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Corporate income tax (Impost sobre Societats)
 
-- **Standard corporate income tax rate** — 10% on taxable profit %  _(Llei 95/2010 IS)_
-- **Reduced rate for newly created companies** — Historically 5% on the first EUR 50,000 of taxable base in the first years of activity % (approx — confirm this incentive is still in force for 2025)  _(Llei 95/2010 IS)_
+- **Standard corporate income tax rate** — 10% under [Law 95/2010, Article 41(1)](https://www.portaljuridicandorra.ad/L2010095).
+- **Legacy new-business incentive** — Do not apply the former 5%-on-EUR-50,000 claim as a current new-company rate. The former second additional provision was repealed by Law 17/2017; the current second additional provision addresses speculative property gains. The first additional provision concerns the first year of application of the tax itself, not each company’s first year. [Current law and amendment annotations](https://www.portaljuridicandorra.ad/L2010095). Historical-period eligibility requires separate review.
 - **Holding-company (ETVPESE) regime** — Qualifying foreign-shareholding income (dividends and capital gains) may be exempt, giving an effective rate near 0% (approx — confirm current qualifying conditions)  _(Llei 95/2010 IS (regim de societats de tinenca de participacions))_
-- **Intangible-exploitation / IP regime** — Qualifying income from exploitation of certain intangibles may benefit from a reduced effective rate (around 2%) % (approx — confirm; subject to OECD nexus / substance rules)  _(Llei 95/2010 IS)_
+- **Eligible intangible income** — Article 23 provides an 80% base reduction multiplied by the qualifying expenditure ratio, subject to asset, activity, record and authorisation conditions. It is not a general 2% rate on all intellectual-property revenue. See the workpaper below. [Law 95/2010, Article 23](https://www.portaljuridicandorra.ad/L2010095).
 - **Tax base** — Accounting profit per Andorran GAAP (Pla General de Comptabilitat), adjusted for tax-specific items  _(Llei 95/2010 IS)_
 - **Corporate residence** — A company is resident if incorporated under Andorran law, has its registered office in Andorra, or has its effective management in Andorra  _(Llei 95/2010 IS)_
 - **Withholding tax on dividends to non-residents** — 0% — no withholding tax on dividends paid by Andorran companies to non-residents %  _(Llei 94/2010 IRNR)_
@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Filing and payment workpapers
 
-**Scope of this update:** filing and ordinary advance-payment rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including approximate incentives, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
+**Scope of this update:** filing, ordinary advance-payment, general-rate and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including the approximate holding-company summary, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
 
 Reconcile the settlement liability before advances to the payments actually made. Under Article 46, payments under Articles 45 and 45 bis are credited to determine the balance; an excess is refundable. Property-transfer advances have their own rules, including timing of credit where income is recognised over deferred receipts, and are not computed in the examples below. [Law, Article 46](https://www.portaljuridicandorra.ad/L2010095).
 
@@ -74,14 +74,51 @@ expected:
 
 Ask for the declared accounting period, activity start date, prior-period lengths and settlement liabilities, payment receipts, and any property-transfer advances before applying this timetable. Current electronic forms, general penalties, special regimes, the full tax-base calculation and professional review remain outstanding.
 
+## Eligible intangible income workpaper
+
+Article 23 covers positive income from the specified patents, utility models and copyright-protected computer programs. Compute the reduction separately for each asset. For licensing, the eligible income is receipts less the directly related deductible expenses, not gross royalty revenue. [Article 23(1), (3)](https://www.portaljuridicandorra.ad/L2010095).
+
+The numerator includes qualifying own creation costs and the specified subcontracting costs. Related-party subcontracting qualifies in the numerator only where the related party is Andorran-resident and performs the activity in Andorra. For unrelated-party work abroad, apply the statutory 25% numerator limitation before the uplift. Uplift the qualifying numerator by 30%, capped at the denominator. The denominator includes total relevant creation costs, the specified nonqualifying subcontracting costs and intangible acquisition costs. General expenses, including interest and property depreciation, are excluded from both sides when not directly related to creation. Do not classify costs by accounting treatment alone. [Article 23(1)](https://www.portaljuridicandorra.ad/L2010095).
+
+The taxpayer must exploit the asset in its own name in its economic activity. The licensee must use the rights in an economic activity, and that use must not produce goods/services generating deductible expenses for the licensor. Separate asset-level accounts must identify income, direct costs and relief. Prior negative income must be recovered before later positive income receives relief; later negative income following relieved profits has its own corresponding reduction rule. [Article 23(2)–(4)](https://www.portaljuridicandorra.ad/L2010095).
+
+Apply for authorisation with the activity, asset types, means and evidence of conditions. The statutory decision period is six months from receipt or required correction; silence can be treated as rejection. Do not import the deemed-acceptance rule for advance-pricing agreements into this regime. The authorised regime takes effect in the application period; substantive changes require the statutory notification/authorisation process. Required exploitation, management or promotion activities also need evidence. [Article 23(5)–(6)](https://www.portaljuridicandorra.ad/L2010095).
+
+### Example 3: partial qualifying expenditure
+
+Assume an authorised eligible asset, EUR 100,000 positive net income, no prior-loss restriction, a correctly classified EUR 60,000 numerator before uplift and EUR 100,000 denominator. All foreign-subcontracting limits have already been tested. The uplifted ratio is 78%, so the reduction is EUR 62,400. EUR 37,600 remains taxable and produces EUR 3,760 at the general 10% rate before other adjustments. This is not a 2% result.
+
+```oa-check
+name: Andorra eligible intangible partial expenditure ratio
+inputs:
+  net_income: 100000
+  qualifying_costs: 60000
+  total_costs: 100000
+  uplift: 1.30
+  reduction_rate: 0.80
+  general_rate: 0.10
+steps:
+  adjusted_numerator: min(qualifying_costs * uplift, total_costs)
+  ratio: adjusted_numerator / total_costs
+  reduction: net_income * reduction_rate * ratio
+  remaining_base: net_income - reduction
+  tax_before_other_adjustments: remaining_base * general_rate
+expected:
+  adjusted_numerator: 78000
+  ratio: 0.78
+  reduction: 62400
+  remaining_base: 37600
+  tax_before_other_adjustments: 3760
+```
+
 ## Sources
 
-Filing/payment provisions read 23 October 2026:
+Filing/payment and selected incentive provisions read 23 October 2026:
 
-- [Law 95/2010, Articles 45–46](https://www.portaljuridicandorra.ad/L2010095).
+- [Law 95/2010, Articles 23, 41, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
 - [Corporate-tax regulation, Articles 37 and 45](https://www.portaljuridicandorra.ad/R20231229C).
 
-These citations substantiate the updated filing/payment sections, not every legacy incentive claim above.
+These citations substantiate the updated filing/payment and selected incentive sections, not every legacy incentive claim above.
 
 <!-- openaccountants-cta-block -->
 

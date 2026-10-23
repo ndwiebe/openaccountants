@@ -7,3 +7,11 @@ Read current Law 95/2010 Article 45 (ninth-month payment, 50% preceding settleme
 Sources: https://www.portaljuridicandorra.ad/L2010095 and https://www.portaljuridicandorra.ad/R20231229C . Both are non-official consolidations on the legal portal.
 
 Replaced the contradictory six-month/July filing sentence in both files and the approximate advance rate. Unverified form numbers were removed from these corrected sentences; current approved forms remain a stated gap. Other legacy approximate incentive claims remain explicitly unverified pending further work. Two examples test EUR 9,000 advance/EUR 13,000 balance and EUR 10,000 advance/EUR 4,000 excess. No whole-Guide re-verification, independent review or professional attestation is claimed.
+
+## Selected incentives correction, v0.3
+
+Read the complete Article 23 and Article 41 in the current law. Replaced the legacy approximate 2% IP claim with the eligible-asset, net-income, expenditure-ratio, 30% uplift/cap, foreign-subcontracting limit, prior-loss and authorisation conditions. Added an assumed-input example yielding EUR 62,400 reduction and EUR 3,760 tax, illustrating why 2% is not universal.
+
+The original draft said new companies historically paid 5% on the first EUR 50,000, but left current applicability unverified. The current law annotates repeal of the former second additional provision by Law 17/2017 and now uses that provision for a property surcharge. Replaced the legacy claim with that historical boundary, preserving its provenance here and in Git history. The first additional provision concerns the first application year of the tax, not a rolling new-company concession. No comprehensive historic-transition audit is claimed.
+
+Other legacy holding-company, residence/base and withholding statements still require their respective full review. Independent review remains outstanding.
