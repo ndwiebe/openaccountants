@@ -10,6 +10,82 @@ Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the
 
 Cross-cutting: Ryan owns source reachability, the repo audit and the pentest. Michael owns the website sync, licensing and marketing. Jeff owns the board and issue triage. The GLOBAL, INTL and EU-wide skills are not jurisdictions; Michael maintains them.
 
+## Europe writing assignments
+
+Approved by Michael on 23 October 2026. Michael remains the accountable owner for Europe; the assignments below divide writing work between his agents. They do not transfer professional responsibility or certify coverage. This section is maintained manually and must be preserved when regenerating the jurisdiction report below.
+
+**Claude: retain the recent European workstream (22 jurisdictions). ChatGPT: take the other European packs (33 jurisdictions).** Country allocations cover all topics in each pack, so two writers do not independently expand the same country.
+
+| Code | Country or territory | Assigned writer |
+|---|---|---|
+| AD | Andorra | ChatGPT |
+| AL | Albania | Claude |
+| AM | Armenia | ChatGPT |
+| AT | Austria | Claude |
+| AZ | Azerbaijan | ChatGPT |
+| BA | Bosnia and Herzegovina | ChatGPT |
+| BE | Belgium | Claude |
+| BG | Bulgaria | ChatGPT |
+| BY | Belarus | ChatGPT |
+| CH | Switzerland | Claude |
+| CY | Cyprus | Claude |
+| CZ | Czech Republic | Claude |
+| DE | Germany | Claude |
+| DK | Denmark | Claude |
+| EE | Estonia | ChatGPT |
+| ES | Spain | ChatGPT |
+| FI | Finland | ChatGPT |
+| FO | Faroe Islands | ChatGPT |
+| FR | France | Claude |
+| GB | United Kingdom | Claude |
+| GE | Georgia | ChatGPT |
+| GG | Guernsey | ChatGPT |
+| GI | Gibraltar | ChatGPT |
+| GR | Greece | Claude |
+| HR | Croatia | ChatGPT |
+| HU | Hungary | Claude |
+| IE | Ireland | Claude |
+| IM | Isle of Man | ChatGPT |
+| IS | Iceland | ChatGPT |
+| IT | Italy | Claude |
+| LI | Liechtenstein | ChatGPT |
+| LT | Lithuania | ChatGPT |
+| LU | Luxembourg | Claude |
+| LV | Latvia | ChatGPT |
+| MC | Monaco | ChatGPT |
+| MD | Moldova | ChatGPT |
+| ME | Montenegro | ChatGPT |
+| MK | North Macedonia | ChatGPT |
+| MT | Malta | Claude |
+| NL | Netherlands | Claude |
+| NO | Norway | ChatGPT |
+| PL | Poland | Claude |
+| PT | Portugal | Claude |
+| RO | Romania | Claude |
+| RS | Serbia | Claude |
+| RU | Russia | ChatGPT |
+| SE | Sweden | Claude |
+| SI | Slovenia | ChatGPT |
+| SJ | Svalbard | ChatGPT |
+| SK | Slovakia | ChatGPT |
+| SM | San Marino | ChatGPT |
+| TR | Turkey | ChatGPT |
+| UA | Ukraine | ChatGPT |
+| VA | Vatican City | ChatGPT |
+| XK | Kosovo | ChatGPT |
+
+### Working and handover rules
+
+- Read this assignment, the existing country issue, current source Guides, linked research and open PRs before starting. Reuse existing work regardless of its original author.
+- Claude retains the Germany and UK work already open in PRs [#595](https://github.com/openaccountants/openaccountants/pull/595) and [#596](https://github.com/openaccountants/openaccountants/pull/596), alongside the other countries assigned above. PR state must be checked live; this is not a completion claim.
+- ChatGPT starts with the missing Kosovo corporate-tax topic under [#430](https://github.com/openaccountants/openaccountants/issues/430), then checks Andorra's current gaps. Its existing Faroese work remains in [#514](https://github.com/openaccountants/openaccountants/pull/514). Guernsey and Gibraltar stay parked for further expansion unless Michael redirects them.
+- One active writer per country. Before transferring a country or taking another writer's topic, record the handover on GitHub with the topic, branch/PR, remaining gaps and next action. Do not infer a handover from inactivity or a merged PR.
+- Independent review does not confer writing ownership. Preserve existing author/reviewer provenance and obtain professional review separately.
+- Keep applicable topics partial until their evidence and review requirements are satisfied. Guide presence, source preparation, passing checks and merge status alone do not establish comprehensive coverage.
+- Keep ChatGPT additions in the existing consolidated PR #514 while it remains the active batch. Do not open a PR for every small topic change.
+
+This allocation applies only to the 55 jurisdictions labelled `europe` below. It does not change Ryan's Asia-Pacific/Africa allocation, Jeff's Americas allocation, or assign Michael's Middle East work between agents. Jersey and Åland work in other branches/forks must be reconciled and explicitly assigned before being added to this table; do not infer ownership from geography alone.
+
 ## By jurisdiction
 
 Generated from `python3 scripts/coverage-report.py` on 2026-10-22 (tax domains); the issue for each row is the live status. Regenerate with the same command when owners change.
