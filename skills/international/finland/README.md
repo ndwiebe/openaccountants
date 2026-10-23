@@ -1,6 +1,6 @@
 ---
 jurisdiction: FI
-version: 0.6
+version: 0.7
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -16,10 +16,10 @@ partial:
   IT-IND: "2026 state/capital scales, ordinary business split, YEL deduction routes and filing sanctions prepared; complete legal chain, deductions/credits, local taxes, income categories and independent review open."
   IT-CORP: "2026 rate, book-to-tax bridge, losses, filing and outbound-payment screening prepared; statutes, exemptions, finance, groups, specialist international cases and independent review open."
   VAT: "Existing return Guide now has executable rate/mixed-use/sanction controls; full statutory, specialist scope and independent review open."
-  SC: "YEL contribution/reduction controls added; wider employee/social coverage, statutory reconciliation and independent review open."
-  PR: "New employer reporting/health-contribution draft; withholding, insurance, exceptions, statutes and independent review open."
-  TP: "New documentation draft; statutes, methods, reporting and independent review open."
-  XB: "New individual residence screening draft; statutes, income categories, treaties, companies, PE and independent review open."
+  SC: "YEL contribution/reduction/review controls and selected legal exceptions checked; wider employee/social coverage, annual decrees and independent review open."
+  PR: "Reporting/health contribution, tax-card and statutory cash-cap preparation; insurance/benefit exceptions, remaining law and independent review open."
+  TP: "Documentation/control/method-selection principles and selected penalty provisions checked; benchmark/transaction application, specialist scope and independent review open."
+  XB: "Individual residence core checked to selected statutes; income categories, treaties, companies, PE and independent review open."
 ---
 
 # Finland tax pack
@@ -30,7 +30,7 @@ The [individual-tax Guide](fi-income-tax.md) now separates the 2026 state scale 
 
 The [transfer-pricing documentation Guide](fi-transfer-pricing.md) addresses a scoped documentation gap. Prepayments, VAT, YEL, payroll, cross-border and property still need full scope and legal review. The formation draft retains its 2025 coverage and unconfirmed fees/timing/audit details; it has not been refreshed by the tax-core pass. Guide presence and passing checks do not establish comprehensive coverage or professional review.
 
-The [country-by-country reporting draft](fi-country-by-country-reporting.md) distinguishes notification and full-report preparation. Local-filing exceptions, statutory reconciliation, live exchange checks and independent review remain open.
+The [country-by-country reporting draft](fi-country-by-country-reporting.md) distinguishes notification and full-report preparation. The selected statutory notification/report deadlines, secondary/surrogate conditions and penalty provisions are now source-checked; current exchange conditions, case-specific eligibility and independent review remain open.
 
 The [employer-payroll draft](fi-employer-payroll.md) adds reporting and employer health-contribution preparation. It does not complete employee withholding or employer insurance coverage.
 
@@ -40,6 +40,8 @@ The [property-transfer tax draft](fi-property-transfer-tax.md) adds acquisition-
 
 ## Evidence and next action
 
-The local 23 October country batch has 27 passing executable controls across ten source Guides, including the older YEL, VAT and prepayment Guides and a second CbCR threshold-boundary control. All 86 unique non-CTA source URLs returned HTTP 200 without redirects; 129 repository unit tests pass. These checks do not establish legal accuracy or independent review. Source reachability is recorded separately from legal-content verification in `docs/research/2026-10-23-finland-source-reachability.json`; a successful HTTP response does not prove the rule is correct or current.
+The local 23 October country batch has 31 passing executable controls across ten source Guides, including the older YEL, VAT and prepayment Guides and a second CbCR threshold-boundary control. All 92 unique non-CTA source URLs have HTTP 200 evidence without redirects, including six newly checked statutory URLs. The updated local batch passes 129 repository unit tests. These checks do not establish legal accuracy or independent review. Source reachability is recorded separately from legal-content verification in `docs/research/2026-10-23-finland-source-reachability.json`; a successful HTTP response does not prove the rule is correct or current.
 
 Next: finish statutory/source-content reconciliation across the existing pack, obtain one independent full-pack review, fix its findings and publish one reviewed country content batch. A named Finnish accountant review is still required separately. Keep this issue open and the consolidated PR in draft while these gates remain open.
+
+Selected provisions of eight tax/pension statutes have been read directly from official Finlex content, including the YEL review-consent and disability exceptions and the 2026 contingent-consideration transition. This is scoped legal reconciliation, not an audit of every statute or exception. Retrieval scope/hashes are in `docs/research/2026-10-23-finland-direct-statute-retrieval.json`.

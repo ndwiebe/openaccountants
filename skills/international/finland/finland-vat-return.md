@@ -1,7 +1,7 @@
 ---
 name: finland-vat-return
 description: Use this skill whenever asked to prepare, review, or classify transactions for a Finland VAT return (ALV-ilmoitus) for any client. Trigger on phrases like "prepare VAT return", "do the ALV", "fill in ALV", "Finnish VAT", "OmaVero", or any request involving Finland VAT filing. This skill covers Finland only and standard ALV registration. MUST be loaded alongside BOTH vat-workflow-base v0.1 or later AND eu-vat-directive v0.1 or later. ALWAYS read this skill before touching any Finnish VAT work.
-version: 2.2
+version: 2.3
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland VAT return v2.2 — 2026 editorial draft
+# Finland VAT return v2.3 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified, or an attestation.
 
@@ -93,6 +93,8 @@ If any fact is absent, leave the transaction in a reconciliation exception and o
 A return filed after the due date attracts a late-filing penalty; late payment attracts late-payment charges. Quantifying them is out of scope here. The MyTax period and deadline shown for the business are controlling. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
 
 ## 3. Classify domestic sales before choosing a rate
+
+Direct statutory check on 23 October 2026: VAT Act section 3 supports the current/preceding-calendar-year small-business test; sections 84, 85 and 85a support the general, reduced and publication rates. Section 85's 13.5% amendment is effective from 1 January 2026. Section 102 sets the taxable-business deduction basis, while section 114 restricts entertainment and ordinary passenger-car deductions with specified exceptions. Historical wording displayed below current provisions is not the 2026 rule. These selected sections do not settle all supply classifications, cross-border rules or filing procedures. [VAT Act 1501/1993](https://www.finlex.fi/fi/lainsaadanto/1993/1501)
 
 For each Finnish domestic taxable sale, match the statutory category and retain the support for it.
 
@@ -336,6 +338,7 @@ This draft deliberately does not resolve:
 - late-payment consequences, penalties, taxable-period changes or a disputed registration effective date.
 
 ## Sources
+- [VAT Act 1501/1993](https://www.finlex.fi/fi/lainsaadanto/1993/1501), sections 3, 84–85a, 102 and 114. Read directly from embedded official Finnish statutory text on 23 October 2026; country research records contain retrieval hashes. Full statute/amendment and specialist-scope review remains open.
 - [Vero: VAT registration](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/how-to-register-for-vat/)
 - [Vero: VAT exemption for small businesses](https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/)
 - [Vero: VAT rates](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/)

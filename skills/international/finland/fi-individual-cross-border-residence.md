@@ -10,10 +10,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 ---
 
-# Finland individual cross-border residence v0.2
+# Finland individual cross-border residence v0.3
 
 ## Who this applies to
 
@@ -22,6 +22,8 @@ Use this draft for an individual arriving in Finland, leaving Finland or maintai
 Vero's guidance bases domestic residence on the main abode/home or continuous presence exceeding six months. Temporary absences can leave continuity intact, and the period can cross calendar years. Exactly six months is not enough for that presence route, but the home route must still be checked. Do not replace the test with a universal 183-day count. [Detailed residence guidance, sections 2.4–2.5][detailed]
 
 ## Arrival and departure evidence
+
+Income Tax Act sections 9 and 11 were directly checked on 23 October 2026: the home/presence and citizen-departure rules have a statutory basis, with separate positions for specified diplomatic, state and international service. Section 9 also distinguishes resident/nonresident parts of a year. Check those special facts before applying the ordinary timeline. [Income Tax Act][law]
 
 Prepare a dated timeline with arrival, departure, every absence, home availability, work and family facts. Registration in a population system does not itself resolve tax residence; the detailed guidance requires the actual situation to be assessed. A short stay can still involve a main home. [Detailed guidance, section 2.4][detailed]
 
@@ -133,13 +135,17 @@ expected:
 
 Official Vero text retrieved through the search index on 23 October 2026:
 
+- [Income Tax Act][law], sections 9 and 11, read directly from embedded official Finnish statutory text. Retrieval hashes are in the country research record; selected sections do not establish a full amendment or treaty audit.
+
 - [Detailed individual residence guidance][detailed].
 - [Finnish citizens and the three-year rule][three].
 - [Taxation of nonresident individuals][nonresident].
 - [Treaty articles guidance][treaties].
 - [Individual double-tax relief][relief]; [detailed individual relief guidance][relief-detail], section 3.2.6.
 
-Not yet confirmed: complete current Income Tax Act sections 9–11 and amendments, exact day-count and temporary-absence application, full substantial-ties and special-position cases, each treaty, income-specific source/rate rules, foreign-tax relief, forms and current procedures. Independent review and professional attestation remain outstanding. Cross-border coverage remains partial.
+Not yet confirmed: remaining source-income and amendment scope, exact day-count and temporary-absence application, full substantial-ties and special-position cases, each treaty, income-specific source/rate rules, complete foreign-tax relief law, forms and current procedures. Independent pack review and named accountant review remain outstanding. Cross-border coverage remains partial.
+
+[law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/
 [three]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/finnish_citizens_and_the_3year_rul/

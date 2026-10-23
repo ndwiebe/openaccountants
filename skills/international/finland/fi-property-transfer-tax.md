@@ -10,10 +10,10 @@ category: property
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Finland property transfer tax v0.1
+# Finland property transfer tax v0.2
 
 ## Who this applies to
 
@@ -23,6 +23,8 @@ Use this draft for a buyer of Finnish real estate, a building or housing/real-es
 |---|---|
 | Real estate and buildings | 3% |
 | Housing-company or real-estate-company shares | 1.5% |
+
+Sections 6 and 20 of the Transfer Tax Act support the respective 3% and 1.5% rates. Direct-estate consideration and property-company debt rules differ; apply the correct base before multiplying. [Transfer Tax Act][law]
 
 This is a transfer-tax draft. Annual property tax, rental income, capital gains, VAT and financing deductions require separate work.
 
@@ -45,6 +47,12 @@ Keep the following preparation evidence: share identifiers, ownership percentage
 [Vero deadline table][deadlines]. An agent does not take over the buyer's filing responsibility for a direct real-estate acquisition. Do not automatically start every two-month period from the same event. The guidance says first-home relief ended for purchases from 1 January 2024; historical purchases require their own eligibility and filing check. [Deadline table][deadlines]
 
 Confirm any special acquisition route, holiday rule and current instructions before calendaring the actual transaction. No live filing or title registration was tested for this draft.
+
+### Conditional additional consideration from 2026
+
+For contracts made from **1 January 2026**, Act 1143/2025 adds a separate rule for contractual contingent consideration whose payment obligation and amount become confirmed after the ordinary tax-payment deadline. Pay the tax on that additional part within **two months of that confirmation**, rather than deferring the original purchase tax. It applies to direct real estate and securities under sections 7(2) and 21(5). Earlier contracts follow the previous rules. [Amending Act 1143/2025, including commencement][amendment]
+
+Retain the original agreement, contingency terms, original return/payment, date both obligation and amount became confirmed, calculation and supplemental filing evidence. Do not use the bank-payment date as the confirmation date without establishing the contractual facts. Current return/correction mechanics and exceptional deadlines still need checking before filing.
 
 ## Non-resident buyers and scope traps
 
@@ -101,6 +109,26 @@ expected:
   transfer_tax: 7500
 ```
 
+### 3. Additional consideration confirmed after the ordinary deadline
+
+Assume a direct-estate contract signed in February 2026, correctly taxed original consideration of EUR 250,000 and contractual contingent consideration of EUR 50,000 whose obligation and amount become confirmed in November, after the ordinary deadline. At the assumed applicable 3% rate, additional tax is EUR 1,500, making total purchase tax EUR 9,000. The two-month additional-payment clock follows that confirmation; actual dates and filing mechanics need a separate check. No exemption or other consideration is assumed.
+
+```oa-check
+name: Finland assumed contingent real estate consideration tax
+inputs:
+  original_taxed_consideration: 250000
+  later_confirmed_additional_consideration: 50000
+  established_rate: 0.03
+steps:
+  original_tax: original_taxed_consideration * established_rate
+  additional_tax: later_confirmed_additional_consideration * established_rate
+  combined_tax: original_tax + additional_tax
+expected:
+  original_tax: 7500
+  additional_tax: 1500
+  combined_tax: 9000
+```
+
 ## Ask the client first
 
 - What legal asset and share are being acquired, and by whom?
@@ -114,12 +142,17 @@ expected:
 
 Official Vero text retrieved in the search index on 23 October 2026:
 
+- [Transfer Tax Act][law], sections 4, 6–7, 15 and 20–21, read directly from embedded Finnish statutory text on 23 October 2026. [Amending Act 1143/2025][amendment] was read in its official two-page PDF, including the contract-date transition.
+
 - [Current overview][overview], updated 7 January 2026.
 - [Housing-share base guidance][shares].
 - [Deadline table][deadlines].
 - [Corporate-stock/non-resident distinction][stock].
 
-Not yet confirmed: full Transfer Tax Act and amendment chain; detailed consideration rules for direct real estate and reorganisations; indirect/foreign property-company transfers; exemptions and historical transitions; refunds, penalties, interest, current forms and holiday rules. Independent review and professional attestation remain outstanding. Property and country coverage remain partial.
+Not yet confirmed: remaining Transfer Tax Act/amendment scope; detailed consideration and reorganisation cases; indirect/foreign property-company transfers; exemptions and other historical transitions; refunds, penalties, interest, supplemental filing mechanics and holiday rules. Independent pack review and named accountant review remain outstanding. Property and country coverage remain partial.
+
+[law]: https://www.finlex.fi/fi/lainsaadanto/1996/931
+[amendment]: https://www.finlex.fi/api/media/statute/896509/mainPdf/main.pdf?timestamp=2025-12-11T05%3A12%3A12.000Z
 
 [overview]: https://www.vero.fi/en/individuals/property/transfer-tax/
 [shares]: https://www.vero.fi/en/individuals/property/transfer-tax/buyer-of-a-flat/

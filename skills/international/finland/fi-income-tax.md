@@ -10,7 +10,7 @@ description: >
   reconciliation. Includes executable examples and primary-source read dates. Municipal
   and church amounts, detailed deductions, asset-specific income rules, international
   cases and full statutory and independent review remain open.
-version: 1.1
+version: 1.2
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -23,11 +23,11 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland individual income tax v1.1
+# Finland individual income tax v1.2
 
 ## Who this applies to
 
-This source-cited draft prepares 2026 workpapers for a resident individual and an ordinary sole trader. Establish the income category before choosing the return: Vero distinguishes miscellaneous income-producing activities, including some freelance receipts, from income reported as a self-employed business. A freelance label does not itself establish business treatment. [Personal return instructions][personal-return]
+This source-cited draft prepares 2026 workpapers for a resident individual and an ordinary sole trader in mainland Finland. Åland requires a separate computation: Income Tax Act section 124 provides a state-scale adjustment for taxpayers whose statutory home municipality is there. Establish the income category before choosing the return: Vero distinguishes miscellaneous income-producing activities, including some freelance receipts, from income reported as a self-employed business. A freelance label does not itself establish business treatment. [Income Tax Act, section 124][income-law]; [personal return instructions][personal-return]
 
 Collect the residence decision, all income categories, municipality, church membership, household facts and deductions before estimating the full assessment. Use the [residence Guide](fi-individual-cross-border-residence.md) for the separate residence screen and the [payroll Guide](fi-employer-payroll.md) for withholding. Neither withholding nor the calculation below establishes final tax.
 
@@ -55,6 +55,8 @@ Apply the capital bands to the established annual taxable capital-income total. 
 For an ordinary sole trader, reconcile receipts and legally deductible costs to the accounts. Vero applies the **5% entrepreneur deduction after allowable prior-year business losses and before dividing the remaining profit between earned and capital income**. It does not create or enlarge a business loss. [Entrepreneur deduction][entrepreneur]
 
 Vero's Form 5 instructions use an ordinary **20% annual return on prior-year business net worth** for the capital portion, with requested alternatives of 10% or all earned income. They add 30% of qualifying wages paid during the preceding 12 months to the net-worth calculation. Fixed-asset real-estate/securities gains can impose a minimum capital portion. Start-up periods, asset valuation, spouse allocation and exceptions need separate checking before using this simplified route. [Form 5 instructions][form5]
+
+Income Tax Act sections 30a, 38 and 41 support these core rules. Section 38 uses the start-up year's closing net worth when business begins during the tax year and requires the alternative allocation request before assessment finishes. Check the gain minimum even when all-earned treatment is requested. Section 96 prevents a duplicate personal pension deduction where the same policy contributions were deducted from business/agriculture. [Income Tax Act][income-law]
 
 **YEL contributions are not restricted to the personal return.** A sole trader can claim eligible paid contributions through Form 5, their personal return or their spouse's return. Choose one route. If booked costs are claimed personally or by the spouse, add them back on Form 5 to prevent a double deduction. See the [YEL Guide](fi-yel-social.md) for insurance eligibility and contribution preparation. [Vero YEL deduction instructions][yel]
 
@@ -176,9 +178,10 @@ version (and the professional behind it) is at
 
 ## Sources and review limits
 
-Read on 23 October 2026. Direct Vero earned/capital pages and indexed official instructions support the preparation rules. Act 1140/2025 section 1 was retrieved as indexed Finlex text; its direct page returned a navigation shell. The statutory table agrees with Vero's directly opened 2026 table. No full current Income Tax Act or Business Income Tax Act audit is claimed.
+Read on 23 October 2026. Direct Vero earned/capital pages and indexed official instructions support the preparation rules. Act 1140/2025 sections 1–2 and Income Tax Act sections 30a, 38, 41, 96 and 124 were subsequently read directly from official HTML statutory content after the browser reader returned navigation shells. Every numeric cell in the statutory scale was retained and matched to Vero's table. Selected-section retrieval is not a full Income Tax Act or Business Income Tax Act audit.
 
 - [2026 state scale Act, section 1][scale-law]; [Vero earned-income table][earned].
+- [Income Tax Act][income-law], selected sections listed above; retrieval hashes are in the country research record.
 - [Capital income][capital]; [entrepreneur deduction][entrepreneur].
 - [Form 5 instructions][form5]; [YEL deduction routes][yel].
 - [Self-employed filing page][filing]; [personal return instructions][personal-return]; [individual reporting timeline][timeline].
@@ -187,6 +190,7 @@ Read on 23 October 2026. Direct Vero earned/capital pages and indexed official i
 Not yet confirmed: full statutory/amendment chain; all deductions, credits, municipal/church amounts and income-specific exclusions; business asset valuation and exceptional allocations; 2027 filing dates; specialist cross-border treatment; live filing; independent pack review and named accountant review. The individual-tax domain remains partial.
 
 [scale-law]: https://www.finlex.fi/fi/lainsaadanto/2025/1140
+[income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [earned]: https://www.vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/tulot/ansiotulot/
 [capital]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/
 [entrepreneur]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/deduction-for-entrepreneurs/

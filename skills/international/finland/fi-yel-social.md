@@ -1,7 +1,7 @@
 ---
 name: fi-yel-social
 description: Use this skill whenever asked about Finland YEL pension insurance or social security for self-employed persons. Trigger on phrases like "YEL", "YEL insurance", "yrittäjän eläkelaki", "self-employed pension Finland", "Finnish pension insurance", "entrepreneur pension", "YEL income", "YEL contribution", "sickness allowance Finland", "disability pension self-employed Finland", "new entrepreneur discount", or any question about mandatory social insurance obligations for Finnish self-employed. Covers YEL contribution rates, income thresholds, provider selection, tax deductibility, and social security benefits. ALWAYS read this skill before advising on Finnish self-employed social insurance.
-version: 1.1
+version: 1.2
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-23
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Finland YEL and self-employed social insurance v1.1 — 2026 editorial draft
+# Finland YEL and self-employed social insurance v1.2 — 2026 editorial draft
 
 **Status:** **Source-cited draft** by the OpenAccountants team. It is not accountant-authored, accountant-verified or an attestation.
 
@@ -73,9 +73,9 @@ Confirmed income is the annual value of the work performed, broadly the wage for
 
 Record the recommendation, its inputs and the work evidence. Explain any departure with substantiated part-time, hours, staffing, unusual-work, pay or other work-input facts. Do not mechanically choose either leeway boundary. Aggregate work input across companies; one policy can cover it. The provider makes the appealable confirmed-income decision.
 
-The 2023 reform: providers review YEL income every three years. In the first two reviews, a provider can increase confirmed income by no more than €4,000 at each review. From the beginning of 2026, that cap also applies at the first review for insurance begun in 2023–2025. In 2026 reviews are carried out for YEL insurance that began in 2023 and for incomes not reviewed in the past three years. The cap is not an annual cap or an automatic increase. Retain the notice, current evidence and decision.
+The 2023 reform: providers review YEL income every three years. For income confirmed before the reform, its first two review increases are capped at €4,000 each without the entrepreneur's consent to a higher increase. From 2026 the transition also caps the first review before 1 January 2029 for income first confirmed to start during 2023–2025. A higher increase is permitted with the entrepreneur's consent. The cap is neither annual nor an automatic increase. Record the qualifying history, notice, evidence, consent and decision. [YEL Act, commencement provisions for Acts 1157/2022 and 1400/2025](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
-At the beginning of each year, the provider raises confirmed income using the wage coefficient. Contact the provider when business operations change or when considering a rise in confirmed income. Keep the change facts and new decision: confirmed income cannot be amended retrospectively. This differs from late policy arrangement, which can cover the current and three preceding years.
+At the beginning of each year, the provider adjusts confirmed income using the wage coefficient under section 89. Contact the provider when business operations change. Ordinary income changes are not retrospective; section 112a provides a disability-pension exception, which requires separate review. This differs from late policy arrangement, which can cover the current and three preceding years. The statute's base-year monetary figures are not automatically the 2026 indexed amounts. [YEL Act, sections 89 and 112a](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
 ## The method, step by step
 
@@ -89,7 +89,7 @@ At the beginning of each year, the provider raises confirmed income using the wa
 
 Choose an earnings-related pension insurance company, or where eligible an industry pension fund. Obtain its current quote and preserve the provider, policy effective date, payment-frequency choice and terms. Do not use a universal instalment date, late-interest rate or payment plan.
 
-Arrange YEL within six months of starting self-employment. Coverage begins at the start. A person can arrange insurance retroactively for the current and three previous years only. Uninsured work further back is lost: no YEL pension accrues for it. If ETK has urged correction and the person does not act, ETK can arrange YEL on that person's behalf and at that person's expense. Two further consequences are set by the Self-Employed Persons' Pensions Act (YEL, 1272/2006), which this skill cannot yet cite from an allowed official page, so confirm them with the provider or ETK before advising: a neglect fee (laiminlyöntimaksu, section 122) of up to the contribution for the neglected period, imposed by the State Treasury (Valtiokonttori) on the provider's application where YEL is not taken out within six months of the obligation starting, and also payable after ETK compulsory insurance (section 143); and no start-up reduction where ETK has insured the person compulsorily (section 115). Do not calculate a fee amount. This draft does not establish provider invoice terms.
+Arrange YEL within six months of starting qualifying self-employment. Section 109 sets that deadline; section 143 authorises ETK compulsory insurance after an uncorrected notice, limited to the current and three preceding calendar years. Section 122 provides a neglect-fee ceiling equal to the neglected-period contribution, with statutory discretion/waiver conditions: the State Treasury decides on the provider's application. Section 115 excludes compulsory-insurance cases from the startup reduction. Do not calculate a fee or infer the maximum is automatic. Provider invoice terms remain separate. [YEL Act, sections 109, 115, 122 and 143](https://www.finlex.fi/fi/lainsaadanto/2006/1272)
 
 For 2026:
 
@@ -146,6 +146,26 @@ The provider record controls actual accrual where flexibility or unpaid contribu
 
 **Changed business:** the provider has indexed confirmed income at the start of the year, then the business operations materially change. Give the change facts to the provider and obtain its new decision; do not seek a retrospective amendment to confirmed income. A late-policy arrangement is a different rule.
 
+### Review-cap arithmetic with no consent to exceed it
+
+Assume current indexed confirmed income of EUR 20,000, a proposed review result of EUR 27,000, verified eligibility for the EUR 4,000 transition cap and no consent to a higher increase. The capped result is EUR 24,000. Annual indexation, different review histories, consent and disability cases are separate; the calculation does not establish the correct work-input value.
+
+```oa-check
+name: Finland assumed eligible YEL review cap without higher consent
+inputs:
+  current_indexed_income: 20000
+  proposed_review_income: 27000
+  established_transition_cap: 4000
+steps:
+  proposed_increase: proposed_review_income - current_indexed_income
+  capped_increase: min(proposed_increase, established_transition_cap)
+  capped_review_income: current_indexed_income + capped_increase
+expected:
+  proposed_increase: 7000
+  capped_increase: 4000
+  capped_review_income: 24000
+```
+
 ## Executable contribution examples
 
 The standard rate and new-entrepreneur reduction below were rechecked against [ETK's self-employed page](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/) on 23 October 2026. The other source references and specialist rules in this earlier editorial draft still need full pack review. These controls reproduce existing illustrative amounts; they do not establish eligibility or insurer billing terms.
@@ -196,6 +216,8 @@ expected:
 - The amount of any neglect fee: the State Treasury decides it on the provider's application; do not calculate it.
 
 ## Sources
+
+Direct statutory check, 23 October 2026: [Self-Employed Persons' Pensions Act 1272/2006](https://www.finlex.fi/fi/lainsaadanto/2006/1272), sections 4, 89, 109, 112–112a, 114–115, 122 and 143, plus the displayed review-transition provisions. Official HTML statutory text was extracted after the browser reader proved incomplete; hashes are in the country research record. This closes selected statutory gaps, not every annual decree, social-benefit rule or exception in the earlier operational draft. Full independent pack and named accountant review remain open.
 
 - [Finnish Centre for Pensions: FAQs on YEL insurance](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/)
 - [Finnish Centre for Pensions: self-employed](https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/)

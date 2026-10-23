@@ -10,16 +10,20 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 ---
 
-# Finland transfer-pricing documentation v0.3
+# Finland transfer-pricing documentation v0.4
 
 ## Who this applies to
 
 The Finnish Tax Administration's guidance addresses foreign related-party transactions of Finnish taxpayers and dealings between a foreign enterprise and its Finnish PE. The pricing principle also applies to small enterprises outside the full documentation obligation. [Obligation guidance][obligation]
 
-This draft uses official administrative guidance read on 23 October 2026. The obligation page says it will be updated and displays a 2022 update date. Finlex sections 14a–14c have now been checked in indexed consolidated Finnish text, including the 2016 amending Act for documentation content. Full statutory scope, later procedural interaction and independent review remain open.
+This draft uses official administrative guidance read on 23 October 2026. The obligation page says it will be updated and displays a 2022 update date. Consolidated Finnish sections 14a–14c, 31, 32 and 32a have now been read directly from the official Finlex page's embedded statutory text; the earlier indexed and 2016-amendment work is preserved. Full specialist scope, procedural interaction and independent review remain open.
+
+## Related parties and the actual transaction
+
+Section 31 covers direct/indirect majority capital or votes, majority appointment rights, common management and other actual control, including common third-party control. Analyse contracts, functions, assets, risks, transaction characteristics, economic conditions and strategies before pricing the actual transaction. Replacing that transaction is an exceptional statutory route with additional conditions, not an ordinary benchmarking shortcut. [Assessment Procedure Act, section 31][law]
 
 ## Rates, bands and thresholds
 
@@ -47,6 +51,18 @@ At taxpayer level it requires organisation/management; business; related-party r
 
 A separable independently operated business area can be described at group level, but central group functions/transactions remain included and the authority can request other business areas. Section 14b also addresses a standalone foreign enterprise with a Finnish PE. Apply the specific simplifications above separately. [Section 14b(3)–(5)][law]
 
+## Method selection and calculation evidence
+
+Select the most reliable method for the delineated transaction and available comparables. Vero distinguishes CUP (price), resale price/cost plus (gross margin), TNMM (net indicator) and profit split. If equally reliable, traditional transaction methods take preference over profit methods, and CUP over other methods. Record the tested party, base, adjustments and calculation; avoid a universal markup. [Detailed guidance, sections 6.6–6.7][detailed]
+
+Gross cost plus and a net-cost TNMM are different analyses. Do not import every overhead into a gross cost base or transfer a net margin to gross costs without supporting comparability. [Detailed guidance, section 6.7.2][detailed]
+
+## Penalties and cross-border follow-through
+
+Sections 32(1)(2) and 32a provide a maximum EUR 25,000 increase for the specified late, materially incomplete or incorrect documentation/supplement failures. It is not an automatic fixed fee or a ceiling on every substantive tax adjustment. Check the failure, hearing, applicable penalty provision and decision separately. [Assessment Procedure Act][law]
+
+Reconcile a proposed adjustment with the foreign counterparty, accounts and returns. Corresponding adjustment, treaty dispute relief and APA routes need a separate verified procedure; this draft establishes neither automatic foreign relief nor an agreed pricing result. The [CbCR Guide](fi-country-by-country-reporting.md) addresses a separate reporting obligation.
+
 ## Preparation workpaper
 
 Use this as an evidence checklist, not a claim that it reproduces every statutory local-file requirement:
@@ -58,7 +74,7 @@ Use this as an evidence checklist, not a claim that it reproduces every statutor
 - Connect the analysis and any adjustment to the accounts, tax computation and Form 78.
 - Keep the authority's request, receipt date, requested scope, response calendar and delivery acknowledgement together.
 
-A documentation exemption does not establish an acceptable price. Nor does an authority request establish the correct margin: the transaction evidence still needs substantive analysis. No markup, interest rate or method priority is supplied by this checklist.
+A documentation exemption does not establish an acceptable price. Nor does an authority request establish the correct margin: the transaction evidence still needs substantive analysis. No benchmark markup or interest rate is supplied by this checklist.
 
 ## Worked example
 
@@ -98,6 +114,25 @@ expected:
   excess_over_limit: 30000
 ```
 
+### 3. Gross cost-plus arithmetic on established assumptions
+
+Assume a properly supported gross cost base of EUR 100,000 and an invented 8% comparable markup, with method/base/benchmark eligibility already established. Revenue is EUR 108,000; the markup is not an 8% sales margin. No Finnish safe harbour or recommended rate is implied.
+
+```oa-check
+name: Finland assumed gross cost plus computation
+inputs:
+  established_gross_cost_base: 100000
+  assumed_supported_markup: 0.08
+steps:
+  gross_profit: established_gross_cost_base * assumed_supported_markup
+  transaction_revenue: established_gross_cost_base + gross_profit
+  sales_margin_percent: gross_profit / transaction_revenue * 100
+expected:
+  gross_profit: 8000
+  transaction_revenue: 108000
+  sales_margin_percent: 7.407407407407407
+```
+
 ## Ask the client first
 
 - Which foreign parties and PE dealings exist, and what establishes the relationships?
@@ -108,14 +143,14 @@ expected:
 
 ## Sources and review limits
 
-Read 23 October 2026. The obligation page was opened directly; detailed guidance, Form 78 and FAQ passages were retrieved from indexed official text.
+Read 23 October 2026. The obligation page was opened directly; detailed guidance, including sections 6.6–6.7, Form 78 and FAQ passages were retrieved from indexed official text.
 
-- [Finlex consolidated Assessment Procedure Act][law], sections 14a–14c; [2016 amending Act][amendment], section 14b. Retrieved as indexed Finnish text; the direct consolidated-page open returned only a navigation shell.
+- [Finlex consolidated Assessment Procedure Act][law], sections 14a–14c, 31, 32 and 32a: direct official HTML statutory text extracted on 23 October after the browser reader returned a navigation shell. The retrieval/hashes are in the country research record. Earlier [2016 amending Act][amendment] work is retained.
 - [Documentation obligation][obligation], referring to Assessment Procedure Act sections 14a and 14c.
 - [Detailed documentation guidance][detailed], SME definition and related calculations.
 - [Form 78 instructions][form]; [documentation FAQ][faq].
 
-Not yet confirmed: remaining statutory/amendment scope, related-party definition, detailed application of master/local content and simplification eligibility, valuation methods and transaction-specific treatment, CbCR, dispute/APA procedures, current penalties and live filing. Professional attestation and independent review remain outstanding. TP and the country pack remain partial.
+Not yet confirmed: remaining amendment/procedural scope, detailed application of master/local content and simplification eligibility, benchmark searches and transaction-specific method application, financing/intangibles/restructuring cases, dispute/APA procedures and live filing. Independent pack review and named accountant review remain outstanding. TP and the country pack remain partial.
 
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/

@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.4
+version: 0.5
 ---
 
-# Finland employer payroll reporting v0.4
+# Finland employer payroll reporting v0.5
 
 ## Who this applies to
 
@@ -62,6 +62,10 @@ For ordinary wage withholding, obtain the current tax-card data electronically o
 Each employer monitors the wages it has paid against the annual ceiling; employees with multiple employers must monitor their overall position and obtain revised cards where needed. Asking for a higher withholding rate does not increase the ceiling. A lower rate requires a revised card based on updated income/deduction information. [Rate and ceiling guidance][ceiling]
 
 Retain the card's effective dates, source, rates, ceiling and the employer's cumulative payroll values. Confirm how a revised card applies to its validity period before changing the payroll calculation. These records are a preparation control; this draft does not prescribe every revised-card or cumulative-withholding algorithm. Cross-border tax-at-source cards and special remuneration require separate classification.
+
+## Statutory wage classification and cash limit
+
+Prepayment Act section 13 includes employment remuneration, fringe benefits and specified personal fees in wages. Section 9 sets the payer's withholding obligation subject to exceptions; section 11 ties withholding to payment/crediting and limits it to the amount paid in cash. Benefits therefore affect the established base without automatically providing cash from which to withhold. Benefit-only withholding has separate decree rules. Resolve classification and available cash before completing the payslip; do not infer that missing cash removes reporting or employer-health obligations. [Prepayment Act, sections 9, 11 and 13][prepayment-law]
 
 ## Reports and deadlines
 
@@ -202,6 +206,28 @@ expected:
   employer_health_separately: 57.3
 ```
 
+### 6. Withholding cannot exceed cash pay
+
+Assume EUR 500 gross cash wages, EUR 1,500 properly valued taxable benefits, and a valid invented 40% ordinary withholding instruction with no ceiling issue. The uncapped calculation is EUR 800, but statutory withholding is limited to the EUR 500 cash amount. The EUR 300 difference is a reconciliation flag, not a conclusion about a separate tax debt or recovery right. Insurance deductions, later payments, benefits-only rules and the final payslip require separate checks.
+
+```oa-check
+name: Finland assumed cash limit on wage withholding
+inputs:
+  gross_cash_wages: 500
+  established_taxable_benefits: 1500
+  assumed_card_rate: 0.40
+steps:
+  taxable_wage_base: gross_cash_wages + established_taxable_benefits
+  uncapped_withholding: taxable_wage_base * assumed_card_rate
+  cash_limited_withholding: min(uncapped_withholding, gross_cash_wages)
+  difference_from_uncapped_amount: uncapped_withholding - cash_limited_withholding
+expected:
+  taxable_wage_base: 2000
+  uncapped_withholding: 800
+  cash_limited_withholding: 500
+  difference_from_uncapped_amount: 300
+```
+
 ## Ask the client first
 
 - Who is paid, for what work, where, and on which payment dates?
@@ -214,6 +240,8 @@ expected:
 
 Official text retrieved through the search index on 23 October 2026:
 
+- [Prepayment Act][prepayment-law], sections 9, 11 and 13, read directly from the official page's embedded Finnish statutory text on 23 October 2026. Full decree, contribution-law and exceptional-case reconciliation remains open.
+
 - [Vero social insurance contributions][insurance], 2026 table and scope.
 - [TyEL eligibility in Finnish][tyel-eligibility], [contribution page][tyel-contributions] and [contribution calculation][tyel-calculation], retrieved in indexed insurer text on 23 October 2026.
 - [Employment Fund liability][unemployment-liability] and [payment/rate guidance][unemployment-payment], retrieved as indexed official text on 23 October 2026.
@@ -224,6 +252,7 @@ Official text retrieved through the search index on 23 October 2026:
 Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, full pension statutory/coverage review, accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
 
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
+[prepayment-law]: https://www.finlex.fi/fi/lainsaadanto/1996/1118
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
 [reporting]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/
 

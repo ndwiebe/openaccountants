@@ -4,537 +4,666 @@
   "scope": "All unique non-CTA HTTP URLs in the Finland source pack and README. HTTP reachability does not establish the legal content or currency.",
   "base": "915c5118",
   "worktree_source_sha256": {
-    "skills/international/finland/README.md": "0b130af9f4c6ca16ac11393a607a3520d1bf4d9a1d2b0a6c4ddc48f23fea97f6",
+    "skills/international/finland/README.md": "48c24b643f3070017d6dce9341f46c9ca4e394cb52043e2f13b960620f27c357",
     "skills/international/finland/fi-company-formation.md": "87b4215b90bac105ed2b1ca9ac35fb534c9d8bda5e580e4e127134be23546b1d",
-    "skills/international/finland/fi-corporate-income-tax.md": "c2c233530245151dc2c5e3013266b5bd427b3fece1ec4d33dad5a187ade21ae8",
-    "skills/international/finland/fi-country-by-country-reporting.md": "dbbd3bd87ad81e9ac338067c0f133db16b997d62b213de524803faf1e70eaf68",
-    "skills/international/finland/fi-employer-payroll.md": "c88bf20da295bb6965b28fdf8c80c1817fee199dbf7b92abe421342893f4e461",
-    "skills/international/finland/fi-income-tax.md": "c02499f837d2138172fc31c77dd4fa010dbd409e16af490046804032a67949a8",
-    "skills/international/finland/fi-individual-cross-border-residence.md": "461bc1284eaa70a5b0291dfb9c690e74c26ec62d6bb07edb5da5574c7b0c5e42",
+    "skills/international/finland/fi-corporate-income-tax.md": "f2dbe58736cc091c1d0fe11dccd0556f2819c44b4728e01a4595c8d1b8e04eb3",
+    "skills/international/finland/fi-country-by-country-reporting.md": "0455d4c5e8a14a10cdfe78f0403624451378065c17b66e821b80be5a938fbdd3",
+    "skills/international/finland/fi-employer-payroll.md": "4167634ac012469489949ca6b4d2db07908fb4cfb225a7c84f7e43e964a5a5d3",
+    "skills/international/finland/fi-income-tax.md": "e4f3df3af9644221761db75e0eb5cd2db6b44faa733548e4b4c81da8e723fefd",
+    "skills/international/finland/fi-individual-cross-border-residence.md": "fd7c92866b6ec7cec837ffe39ebf000fb2a621511d8a817ab89880f49ec83a66",
     "skills/international/finland/fi-prepayments.md": "e06de60c74430fbdb5acd21849f8f59280f1a93b4ff6145cc1a19e2383ec4e7c",
-    "skills/international/finland/fi-property-transfer-tax.md": "c8e590bfae86c13a7e0738699317421c0b92cb3e435fe7eecfac604091f22060",
+    "skills/international/finland/fi-property-transfer-tax.md": "8eaf1450ada0eacad572612c58142e10191a4dc0430b26578d00454de7d980da",
     "skills/international/finland/fi-tax-overview.md": "8d6a3755ddcafb3ac8acf16e8fc4242e26853b3c4841e0b67e3005c387977ffa",
-    "skills/international/finland/fi-transfer-pricing.md": "7e562690937cd04cee829225213ba8754363b900cba3658b3681c38b21a04609",
-    "skills/international/finland/fi-yel-social.md": "1ed50f469bfe25a1012fc2c036854975c745f55a7e85e3b51e5c47a5a759e861",
-    "skills/international/finland/finland-vat-return.md": "8c010d21acbb8d89a362a7ddb6fc862c8698a556c5f1fff7bbce1d0b84984ed6"
+    "skills/international/finland/fi-transfer-pricing.md": "787ea1e5551c3fedb33088fd4dbb43e15d3b834d4724dd11ba6eaedf24c24a4f",
+    "skills/international/finland/fi-yel-social.md": "4506d949319eae55a59217d3b23a37891934d03b9513082adbc639debf67d19e",
+    "skills/international/finland/finland-vat-return.md": "22619b1427e4723c88e8cceb61941b667fd6b865a026bf4e69bc59e87d1d3c87"
   },
   "results": [
     {
       "url": "https://github.com/openaccountants/openaccountants/issues/392",
       "status": 200,
       "final_url": "https://github.com/openaccountants/openaccountants/issues/392",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://github.com/openaccountants/openaccountants/pull/514",
       "status": 200,
       "final_url": "https://github.com/openaccountants/openaccountants/pull/514",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/About-us/newsroom/news/uutiset/2023/country-by-country-reporting-in-mytax/",
       "status": 200,
       "final_url": "https://vero.fi/en/About-us/newsroom/news/uutiset/2023/country-by-country-reporting-in-mytax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/business-operations/tax-administrations-registers--business/prepayment-register/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/payments/interest-on-late-payments/interest-calculator/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/payments/interest-on-late-payments/interest-calculator/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/additional-prepayment/late-payment-interest-with-relief/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-to-request-prepayment-entrepreneurs-and-individual-taxpayers/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/how-to-request-prepayment-entrepreneurs-and-individual-taxpayers/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/if-you-pay-late/",
       "status": 200,
       "final_url": "https://vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/if-you-pay-late/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/",
       "status": 200,
       "final_url": "https://vero.fi/en/detailed-guidance/guidance/334489/taxation-of-income-received-by-nonresidents-natural-persons/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/detailed-guidance/guidance/77657/relief-for-international-double-taxation-in-natural-persons-tax-assessment/",
       "status": 200,
       "final_url": "https://vero.fi/en/detailed-guidance/guidance/77657/relief-for-international-double-taxation-in-natural-persons-tax-assessment/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/tax-decision/when-can-i-report-income-or-deductions-for-my-tax-assessment/",
       "status": 200,
       "final_url": "https://vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/tax-decision/when-can-i-report-income-or-deductions-for-my-tax-assessment/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/",
       "status": 200,
       "final_url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/",
       "status": 200,
       "final_url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.etk.fi/en/topical-issues/how-earnings-related-pensions-will-change-in-2026/",
       "status": 200,
       "final_url": "https://www.etk.fi/en/topical-issues/how-earnings-related-pensions-will-change-in-2026/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.etk.fi/wp-content/uploads/2026/02/pension-insurance-of-the-self-employed.pdf",
       "status": 200,
       "final_url": "https://www.etk.fi/wp-content/uploads/2026/02/pension-insurance-of-the-self-employed.pdf",
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.finlex.fi/api/media/statute/699004/mainPdf/main.pdf?timestamp=2016-12-28T22%3A00%3A00.000Z",
       "status": 200,
       "final_url": "https://www.finlex.fi/api/media/statute/699004/mainPdf/main.pdf?timestamp=2016-12-28T22%3A00%3A00.000Z",
-      "content_type": "application/pdf"
+      "content_type": "application/pdf",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/api/media/statute/896509/mainPdf/main.pdf?timestamp=2025-12-11T05%3A12%3A12.000Z",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/api/media/statute/896509/mainPdf/main.pdf?timestamp=2025-12-11T05%3A12%3A12.000Z",
+      "content_type": "application/pdf",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1992/1535",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/1992/1535",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1993/1501",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/1993/1501",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
     },
     {
       "url": "https://www.finlex.fi/fi/lainsaadanto/1995/1558",
       "status": 200,
       "final_url": "https://www.finlex.fi/fi/lainsaadanto/1995/1558",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1996/1118",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/1996/1118",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/1996/931",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/1996/931",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2006/1272",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/2006/1272",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
     },
     {
       "url": "https://www.finlex.fi/fi/lainsaadanto/2025/1140",
       "status": 200,
       "final_url": "https://www.finlex.fi/fi/lainsaadanto/2025/1140",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/",
       "status": 200,
       "final_url": "https://www.ilmarinen.fi/en/employer/managing-tyel-insurance/determining-the-tyel-contribution/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.ilmarinen.fi/en/employer/tyel-contributions/",
       "status": 200,
       "final_url": "https://www.ilmarinen.fi/en/employer/tyel-contributions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.ilmarinen.fi/tyonantaja/tyel-vakuutus/",
       "status": 200,
       "final_url": "https://www.ilmarinen.fi/tyonantaja/tyel-vakuutus/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.prh.fi/en/kaupparekisteri.html",
       "status": 200,
       "final_url": "https://www.prh.fi/en/kaupparekisteri.html",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/insure-your-self-employment/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/insure-your-self-employment/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/pension-amount-and-contributions/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/pension-amount-and-contributions/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/social-security-of-the-self-employed-based-on-confirmed-income/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/social-security-of-the-self-employed-based-on-confirmed-income/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/the-finnish-centre-for-pensions-supervises/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/the-finnish-centre-for-pensions-supervises/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/what-is-yel-income/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/what-is-yel-income/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/when-do-i-need-insurance/",
       "status": 200,
       "final_url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/when-do-i-need-insurance/",
-      "content_type": "text/html; charset=UTF-8"
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/",
       "status": 200,
       "final_url": "https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/",
       "status": 200,
       "final_url": "https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/About-us/contact-us/forms/filling-instructions/78-explanation-of-transfer-prices-how-to-fill-out-the-form/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/About-us/contact-us/forms/filling-instructions/78-explanation-of-transfer-prices-how-to-fill-out-the-form/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/About-us/newsroom/changes-in-taxation/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/About-us/newsroom/changes-in-taxation/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/income-tax/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/income-tax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/supporting-high-growth-companies-with-international-tax-questions/faq---transfer-pricing/faq/when-does-a-company-need-to-maintain-and-submit-transfer-pricing-documentation-in-finland/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/supporting-high-growth-companies-with-international-tax-questions/faq---transfer-pricing/faq/when-does-a-company-need-to-maintain-and-submit-transfer-pricing-documentation-in-finland/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/country-by-country-report---how-to-file-the-report-in-mytax/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/country-by-country-report---how-to-file-the-report-in-mytax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/notification-of-the-reporting-entity-how-to-file-the-notification-in-mytax/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/countrybycountry-report-and-notification/notification-of-the-reporting-entity-how-to-file-the-notification-in-mytax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/how-to-report-wages-and-employers-contributions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/losses/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/losses/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/Late-filing-penalty-and-punitive-tax-increase/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/Late-filing-penalty-and-punitive-tax-increase/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/instructions_for_completing_the_income_tax_return/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/instructions_for_completing_the_income_tax_return/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/late-penalty-charges/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/self-assessed-taxes/late-penalty-charges/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/tax-prepayment/instructions-for-making-prepayments/how-many-instalments/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/deduction-for-entrepreneurs/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/deduction-for-entrepreneurs/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/pension-premiums-yel/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/deductions/pension-premiums-yel/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/instructions-for-filing/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/taxation-of-self-employed-individuals/instructions-for-filing/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/how-to-register-for-vat/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/how-to-register-for-vat/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-on-vehicles/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-on-vehicles/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/tax-period/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/tax-period/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/48999/tax-residency-nonresidency-and-residency-in-accordance-with-a-tax-treaty--natural-persons4/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/49133/payments-of-dividends-interest-and-royalties-to-nonresidents3/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/49133/payments-of-dividends-interest-and-royalties-to-nonresidents3/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/85707/articles-of-tax-treaties3/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/85707/articles-of-tax-treaties3/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/detailed-guidance/guidance/95551/resident-and-nonresident-tax-liability-of-corporate-entities5/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/detailed-guidance/guidance/95551/resident-and-nonresident-tax-liability-of-corporate-entities5/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/employers/earnings-payment-data/employers-are-obliged-to-insure-their-employees/health-insurance-contribution/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/incomes-register/companies-and-organisations/employers/earnings-payment-data/employers-are-obliged-to-insure-their-employees/health-insurance-contribution/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/payments/back-taxes/payment-instructions/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/payments/back-taxes/payment-instructions/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/property/transfer-tax/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/property/transfer-tax/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/property/transfer-tax/buyer-of-a-flat/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/property/transfer-tax/buyer-of-a-flat/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/property/transfer-tax/corporate-stock/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/table-of-filing-and-payment-deadlines/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/property/transfer-tax/instructions-for-filing-and-paying-transfer-tax/table-of-filing-and-payment-deadlines/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/finnish_citizens_and_the_3year_rul/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/finnish_citizens_and_the_3year_rul/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/tax-treaties/elimination_of_double_taxation__receipt/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/moving_away_from_finland/tax-treaties/elimination_of_double_taxation__receipt/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/making-a-claim-for-adjustment-against-a-decision-on-prepayments/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/prepayments-individual/making-a-claim-for-adjustment-against-a-decision-on-prepayments/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/tax-bases/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/wage-earners/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/wage-earners/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/forgotten-to-report-important-details/late-fee-and-tax-increase/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/forgotten-to-report-important-details/late-fee-and-tax-increase/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/instructions-for-filing/",
       "status": 200,
       "final_url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/your_tax_return_and_tax_assessment_deci/instructions-for-filing/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/tulot/ansiotulot/",
       "status": 200,
       "final_url": "https://www.vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/tulot/ansiotulot/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
       "url": "https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/ilmoitus-ja-maksuohjeet/",
       "status": 200,
       "final_url": "https://www.vero.fi/yritykset-ja-yhteisot/verot-ja-maksut/arvonlisaverotus/ilmoitus-ja-maksuohjeet/",
-      "content_type": "text/html; charset=utf-8"
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     }
   ],
-  "snapshot_note": "Source hashes refreshed after VAT source-heading/version correction and README evidence update; the URL set is unchanged from the recorded HTTP check."
+  "snapshot_note": "Earlier checked URLs retained with their timestamps; new statutory URLs checked directly after the legal-source pass. All source hashes reflect this worktree.",
+  "expanded_at_utc": "2026-10-23T18:10:03.178339+00:00"
 }

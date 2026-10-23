@@ -17,11 +17,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.0
+version: 1.1
 category: international
 ---
 
-# Finland corporate income tax v1.0
+# Finland corporate income tax v1.1
 
 ## Who this applies to
 
@@ -40,6 +40,8 @@ Tax residence and a permanent establishment are separate questions. A foreign en
 | Ordinary corporate prepayments over EUR 2,000 | Twelve equal instalments under the decision | [Prepayment instalments][instalments] |
 
 The official future-changes page describes an **18% corporate rate and 25-year business-loss period as proposals**. Those figures do not replace the 2026 computation. Check enactment, commencement and transition rules before preparing any later tax year. [Vero changes in taxation][changes]
+
+Income Tax Act sections 124, 119 and 122 confirm the current rate, loss period and ownership restrictions. The listed-company exception has its own unlisted-share ownership test; listing is not a blanket exemption. A loss-use permit also has group-contribution limits under section 122(4). [Income Tax Act][income-law]
 
 ## Establish the base
 
@@ -170,9 +172,10 @@ version (and the professional behind it) is at
 
 ## Sources and review limits
 
-Read on 23 October 2026. Corporate tax, loss, return and sanctions pages were opened directly. Detailed Form 6B, nonresident-income and instalment passages were retrieved as indexed official text. The current authority summary distinguishes future proposals from current rules. Full statutory/amendment reconciliation remains open.
+Read on 23 October 2026. Corporate tax, loss, return and sanctions pages were opened directly. Detailed Form 6B, nonresident-income and instalment passages were retrieved as indexed official text. Income Tax Act sections 9, 119, 122 and 124 were subsequently read from direct official HTML statutory content; the retrieval hashes are in the country research record. The current authority summary distinguishes future proposals from current rules. Full statutory/amendment reconciliation remains open.
 
 - [Corporate income tax][income]; [losses and ownership][losses].
+- [Income Tax Act][income-law], selected sections listed above. The displayed section 9(3) amendment referring to new section 9b commences on 1 January 2027; it is not the applicable 2026 wording.
 - [Corporate return][return]; [Form 6B instructions][form6b]; [foreign-business filing example][foreign].
 - [Instalment table][instalments]; [corporate sanctions][sanctions]; [interest calculator][interest].
 - [Corporate residence][residence]; [nonresident investment income][outbound]; [future changes][changes].
@@ -180,6 +183,7 @@ Read on 23 October 2026. Corporate tax, loss, return and sanctions pages were op
 Not yet confirmed: complete current legal chain; participation exemptions, interest restrictions, group relief, restructurings, incentives, CFC/exit/minimum-tax rules; treaty/EU entitlement and withholding procedures; detailed PE attribution and foreign relief; exceptional entity and source cases; live filing; independent pack review and named accountant review. Corporate and cross-border domains remain partial.
 
 [income]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/
+[income-law]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [losses]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/income-tax/losses/
 [return]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/
 [form6b]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/limited-companies-and-cooperatives/tax-return/instructions_for_completing_the_income_tax_return/
