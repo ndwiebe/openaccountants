@@ -5,17 +5,17 @@ description: >
   permanent establishment from separate income payments, classify services,
   royalties and rent, test statutory exemptions and treaty relief, calculate
   ordinary withholding and identify quarterly reporting obligations. Use for
-  payments to overseas suppliers and non-resident landlords. Property sales,
-  treaty-specific rates and full PE computations require separate work.
+  payments to overseas suppliers and non-resident landlords. Includes ordinary property-sale gains and buyer withholding; treaty-specific
+  rates, special property cases and full PE computations require separate work.
 jurisdiction: AD
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Andorra non-resident income tax v0.1
+# Andorra non-resident income tax v0.2
 
 ## Who this applies to
 
@@ -51,6 +51,27 @@ Without a PE, calculate tax separately for each taxable accrual; do not offset o
 
 For each payment record the recipient, residence evidence, contract, service/use locations, accrual/payment dates, income category, gross amount, exemption or treaty basis, tax calculation and certificate. A statutory exemption does not imply every reporting obligation disappears: Articles 33 and 35 specify particular exemptions from declarations. [Articles 33–35][law]
 
+### Non-resident property sales without a PE
+
+For an ordinary disposal of Andorran immovable property, Article 28 bis determines the positive difference between the real transfer value and the supported acquisition value. Add qualifying investments/improvements and qualifying acquisition or development taxes/costs to acquisition value. Improvements must be lawful under planning rules and supported by business invoices; costs need the statutory direct connection. Do not automatically deduct every selling cost under the general movable-asset rule. Gifts, assessed values and transactions without a price require their specific valuation provisions. [Article 28 bis][law]
+
+Property-equivalent acts include transfers of interests in entities with at least 50% of assets directly or indirectly in Andorran real property or relevant rights, interests conferring enjoyment of Andorran property, judicial/administrative awards, debt-settlement transfers and specified real rights. Do not assume that a share transfer always follows the ordinary share-gain exemption. [Article 28 bis(1)][law]
+
+| Time between acquisition and disposal | Domestic rate on the taxable gain |
+|---|---|
+| Less than 2 years | 25% |
+| At least 2 but less than 5 years | 20% |
+| At least 5 but less than 10 years | 15% |
+| At least 10 years | General 10% rate |
+
+[Article 29][law], as replaced by [Law 5/2025, Article 80][housing]. These are whole-gain rates, not progressive bands. Verify actual acquisition/disposal dates and the applicable law at disposal. The fifth transitional provision of Law 5/2025 concerns the IRPF amendment in Article 79(2); it must not be imported as an IRNR relief.
+
+The buyer generally withholds **5% of the total transfer value**, not 5% of the gain, where the non-resident seller operates without a PE. Article 15-exempt transfers are excluded. The rule also extends to Article 28 bis(1)'s property-equivalent acts. This is a payment credited against the seller's assessment, not a substitute 5% final gains-tax rate. [Articles 33 bis(4), 35(5)][law]
+
+The seller settles within **30 days of a private contract**, or simultaneously with execution of the public deed. A later public deed requires evidence of the prior settlement. Deduct the buyer withholding from assessed tax; excess withholding is refundable under the separate property procedure, with the statutory/regulatory six-month limit and required application evidence. Do not use the ordinary quarterly return timetable for the disposal. [Articles 33 bis–33 ter][law]; [Regulation, Articles 22(4), 25][reg]
+
+This section addresses IRNR only. It does not establish exemption from transfer tax, IGI, foreign-investment tax or investment authorisation requirements. Those separate regimes and special/restructuring cases remain outside this draft.
+
 ## Deadlines and filing
 
 Ordinary income accrues when due or, if earlier, when collected. Capital gains accrue on the disposal or other relevant alteration. [Article 32][law]
@@ -69,7 +90,7 @@ This draft does not quote a monetary penalty or interest rate: current applicati
 
 Before applying treaty relief, verify that the treaty is in force and applicable to the period, the recipient qualifies, the income article and PE position, and the required residence/relief evidence. No treaty-specific rate is supplied here. Article 35 excludes withholding for qualifying domestic or treaty-exempt income; Article 36 permits reclaiming excessive withholding, including amounts above a treaty limit. Do not equate a domestic exemption with a treaty claim. [Articles 3, 35–36][law]
 
-Ordinary non-resident employees, frontier/seasonal-worker elections, PE deductions and cessation, property transfers and related-party documentation require separate work. The presence of this Guide does not complete the cross-border domain.
+Ordinary non-resident employees, frontier/seasonal-worker elections, PE deductions and cessation, special property cases and related-party documentation require separate work. The presence of this Guide does not complete the cross-border domain.
 
 ## Worked examples that recompute
 
@@ -116,6 +137,33 @@ expected:
   tax: 1200
 ```
 
+### 3. Property gain and buyer withholding are different bases
+
+Assume an ordinary non-exempt sale on 1 October 2026 of property acquired on 1 October 2020. Supported acquisition value is EUR 300,000; qualifying documented improvements are EUR 20,000; qualifying acquisition costs are EUR 10,000. Assume the statutory real transfer value and total consideration are both EUR 500,000, no treaty override and no other adjustment. The six-year holding falls in the 15% band. The gain is EUR 170,000, assessed tax EUR 25,500 and buyer withholding EUR 25,000, leaving EUR 500 to settle. Do not apply 15% to the gross proceeds or treat the withholding as final tax.
+
+```oa-check
+name: Andorra property gain and withholding settlement
+inputs:
+  transfer_value: 500000
+  acquisition: 300000
+  improvements: 20000
+  acquisition_costs: 10000
+  gain_rate: 0.15
+  withholding_rate: 0.05
+steps:
+  adjusted_acquisition: acquisition + improvements + acquisition_costs
+  taxable_gain: transfer_value - adjusted_acquisition
+  assessed_tax: taxable_gain * gain_rate
+  buyer_withholding: transfer_value * withholding_rate
+  settlement: assessed_tax - buyer_withholding
+expected:
+  adjusted_acquisition: 330000
+  taxable_gain: 170000
+  assessed_tax: 25500
+  buyer_withholding: 25000
+  settlement: 500
+```
+
 ## Ask the client first
 
 - Who receives the payment, and what establishes their tax residence?
@@ -124,15 +172,19 @@ expected:
 - Is the payment a service, licensed right, dividend, interest, rent or disposal proceeds?
 - Is the contract gross or net of tax, and when did the amount become due or get paid?
 - What treaty and exemption evidence exists, and who has actually declared and remitted?
+- For property, what are the acquisition/disposal dates, documented costs, private-contract/deed dates and buyer-withholding evidence?
 
 ## Sources and review limits
 
-Read 23 October 2026. Source-cited draft; independent source review and professional attestation remain outstanding. Full treaty, property-sale, PE and enforcement coverage is not claimed.
+Read 23 October 2026. Source-cited draft; independent source review and professional attestation remain outstanding. Full treaty, special property, PE and enforcement coverage is not claimed.
 
 - [Law 94/2010, current portal consolidation][law].
 - [Law version and amendment status][status].
 - [IRNR regulation approved 29 December 2023, current portal consolidation][reg], including listed amendments through Decree 412/2025.
 
+- [Law 5/2025, Article 80 and transitional/final provisions][housing]: cross-check of the amended property-gain rate schedule.
+
+[housing]: https://www.portaljuridicandorra.ad/L2025005
 [law]: https://www.portaljuridicandorra.ad/L2010094
 [status]: https://www.portaljuridicandorra.ad/L2010094_F
 [reg]: https://portaljuridicandorra.ad/R20231229B

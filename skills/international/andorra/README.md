@@ -1,5 +1,7 @@
 ---
 jurisdiction: AD
+version: 0.2
+last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -13,7 +15,7 @@ partial:
   SC: "Shared payroll/social Guide requires current source and full scope review."
   PR: "Shared payroll/social Guide requires current source and full scope review."
   TP: "Dedicated transfer-pricing Guide missing."
-  XB: "New non-resident draft; independent review, treaty, full PE, property-transfer and enforcement work remain open."
+  XB: "New non-resident draft; independent review, treaty, full PE, special property and enforcement work remain open."
 ---
 
 # Andorra tax pack
@@ -27,7 +29,7 @@ Accountable owner: Michael, [issue #376](https://github.com/openaccountants/open
 | VAT / IGI | [IGI](andorra-igi.md) | Current source and full scope review |
 | Payroll / social | [Payroll and social](ad-payroll-social.md) | Current source and full scope review |
 | Transfer pricing | Missing | Dedicated Guide |
-| Cross-border | [Non-resident income](ad-non-resident-income-tax.md) | Review; treaty, PE, property and enforcement expansion |
+| Cross-border | [Non-resident income](ad-non-resident-income-tax.md) | Review; treaty, PE, special property and enforcement expansion |
 | Formation | [Company formation](ad-company-formation.md) | Separate current-law completeness audit |
 | Overview | [Tax overview](ad-tax-overview.md) | Reconcile approximate statements against detailed Guides |
 

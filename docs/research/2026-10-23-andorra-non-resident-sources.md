@@ -15,3 +15,9 @@ Both consolidations expressly lack official legal status. They are supplied by t
 New `ad-non-resident-income-tax.md` covers ordinary source/non-PE classification and withholding, with PE and treaty screening. It deliberately does not supply an unverified penalty figure or treaty rate. The filing section distinguishes payer compliance from the non-resident's exemption from duplicate filing.
 
 Two executable examples pass: service/royalty tax EUR 1,600 and net EUR 18,400; rental base EUR 12,000 and tax EUR 1,200. Independent review is outstanding. No comprehensive-domain, live filing, professional-attestation or publication claim is made.
+
+## Property expansion, v0.2
+
+Cross-checked the property rate schedule against Law 5/2025 Article 80 (https://www.portaljuridicandorra.ad/L2025005), and read its fifth transitional and final entry-into-force provisions. The fifth transition refers to IRPF Article 79(2), not a general IRNR grandfathering rule. Law 94/2010 Articles 28 bis, 29, 33 bis–ter and 35(5), plus regulation Articles 22(4) and 25, support the added base, holding-period rates, buyer withholding, settlement and excess-payment boundaries.
+
+Added a six-year holding example separating the EUR 170,000 gain, EUR 25,500 tax, EUR 25,000 withholding and EUR 500 balance. Other property taxes, investment permissions and special cases remain open; independent review is still outstanding.
