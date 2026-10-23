@@ -10,10 +10,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Finland transfer-pricing documentation v0.1
+# Finland transfer-pricing documentation v0.2
 
 ## Who this applies to
 
@@ -32,6 +32,12 @@ The detailed guidance and Form 78 instructions use turnover **exceeding** EUR 50
 The obligation guidance states: annual documentation; Finnish, Swedish or English; submission within 60 days of request, with a six-month post-year-end restriction on when that year's documentation can first be requested; supplementary information within 90 days. Extensions can be requested. It describes a two-consecutive-year size transition and a maximum EUR 25,000 documentation sanction. Verify the statutory conditions before a deadline or penalty conclusion. [Obligation guidance][obligation]
 
 Form 78 is separate from the documentation. Its instructions say documentation is provided on request rather than attached to the return. Where no foreign related-party transactions occurred during the year, those instructions say Form 78 is unnecessary. Check the taxpayer's facts and the applicable return instructions before filing. [Form 78][form]
+
+### EUR 500,000 simplification is assessed by counterparty
+
+Detailed guidance section 4.4 describes reduced documentation where annual controlled dealings with a particular associated enterprise have an arm's-length value no greater than EUR 500,000. Aggregate that counterparty's dealings; do not test each invoice separately. Its examples include service income plus loan interest, and separately a newly drawn loan principal. Repayment of that principal is not counted as another borrowing. [Detailed guidance, section 4.4][detailed]
+
+The simplification can remove the Master File requirement when no counterparty exceeds the threshold. For qualifying below-threshold dealings, it removes specified Local File functional/comparability/method content, while other taxpayer information remains required. It does not exempt the pricing from the arm's-length principle. Keep loan movements and valuation evidence for the applicability check. [Section 4.4][detailed]
 
 ## Preparation workpaper
 
@@ -66,6 +72,24 @@ expected:
   assumed_adjustment: 30000
 ```
 
+### 2. Counterparty aggregation
+
+Assume EUR 350,000 services and EUR 180,000 interest with one associated enterprise, both at established arm's-length values. EUR 530,000 exceeds the simplification threshold by EUR 30,000. The example assumes no disputed classification or double counting.
+
+```oa-check
+name: Finland documentation counterparty aggregation
+inputs:
+  service_value: 350000
+  interest_value: 180000
+  simplification_limit: 500000
+steps:
+  counterparty_total: service_value + interest_value
+  excess_over_limit: counterparty_total - simplification_limit
+expected:
+  counterparty_total: 530000
+  excess_over_limit: 30000
+```
+
 ## Ask the client first
 
 - Which foreign parties and PE dealings exist, and what establishes the relationships?
@@ -82,7 +106,7 @@ Read 23 October 2026. The obligation page was opened directly; detailed guidance
 - [Detailed documentation guidance][detailed], SME definition and related calculations.
 - [Form 78 instructions][form]; [documentation FAQ][faq].
 
-Not yet confirmed: current consolidated statute and amendments, related-party definition, full master/local-file content, simplified documentation rules, valuation methods and transaction-specific treatment, CbCR, dispute/APA procedures, current penalties and live filing. Professional attestation and independent review remain outstanding. TP and the country pack remain partial.
+Not yet confirmed: current consolidated statute and amendments, related-party definition, full master/local-file content, full simplification eligibility and current statutory reconciliation, valuation methods and transaction-specific treatment, CbCR, dispute/APA procedures, current penalties and live filing. Professional attestation and independent review remain outstanding. TP and the country pack remain partial.
 
 [obligation]: https://www.vero.fi/en/businesses-and-corporations/business-operations/transfer-pricing/transfer-pricing-documentation/obligation-to-compile-a-transfer-pricing-documentation/
 [detailed]: https://www.vero.fi/en/detailed-guidance/guidance/47978/transfer-pricing-documentation/
