@@ -4,7 +4,7 @@ description: "Source-cited draft: corporate income tax for Andorra (tax year 202
 jurisdiction: AD
 tax_year: 2025
 last_updated: 2026-10-23
-version: 0.3
+version: 0.4
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **Standard corporate income tax rate** — 10% under [Law 95/2010, Article 41(1)](https://www.portaljuridicandorra.ad/L2010095).
 - **Legacy new-business incentive** — Do not apply the former 5%-on-EUR-50,000 claim as a current new-company rate. The former second additional provision was repealed by Law 17/2017; the current second additional provision addresses speculative property gains. The first additional provision concerns the first year of application of the tax itself, not each company’s first year. [Current law and amendment annotations](https://www.portaljuridicandorra.ad/L2010095). Historical-period eligibility requires separate review.
-- **Holding-company (ETVPESE) regime** — Qualifying foreign-shareholding income (dividends and capital gains) may be exempt, giving an effective rate near 0% (approx — confirm current qualifying conditions)  _(Llei 95/2010 IS (regim de societats de tinenca de participacions))_
+- **Holding-company regime** — Article 38 exempts qualifying dividend and disposal income under an authorised special regime, subject to the conditions below. This is an income exemption, not a blanket zero-rate company. [Law 95/2010, Article 38](https://www.portaljuridicandorra.ad/L2010095).
 - **Eligible intangible income** — Article 23 provides an 80% base reduction multiplied by the qualifying expenditure ratio, subject to asset, activity, record and authorisation conditions. It is not a general 2% rate on all intellectual-property revenue. See the workpaper below. [Law 95/2010, Article 23](https://www.portaljuridicandorra.ad/L2010095).
 - **Tax base** — Accounting profit per Andorran GAAP (Pla General de Comptabilitat), adjusted for tax-specific items  _(Llei 95/2010 IS)_
 - **Corporate residence** — A company is resident if incorporated under Andorran law, has its registered office in Andorra, or has its effective management in Andorra  _(Llei 95/2010 IS)_
@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Filing and payment workpapers
 
-**Scope of this update:** filing, ordinary advance-payment, general-rate and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including the approximate holding-company summary, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
+**Scope of this update:** filing, ordinary advance-payment, general-rate, holding-company and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including residence, base and withholding summaries, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
 
 Reconcile the settlement liability before advances to the payments actually made. Under Article 46, payments under Articles 45 and 45 bis are credited to determine the balance; an excess is refundable. Property-transfer advances have their own rules, including timing of credit where income is recognised over deferred receipts, and are not computed in the examples below. [Law, Article 46](https://www.portaljuridicandorra.ad/L2010095).
 
@@ -111,12 +111,30 @@ expected:
   tax_before_other_adjustments: 3760
 ```
 
+## Holding-company and participation exemptions
+
+### Special holding-company regime
+
+An Andorran SA or SL whose exclusive object is managing and holding participations in resident or non-resident companies can request the Article 38 regime. Its own capital securities/interests must be nominative. Apply through the census declaration; the regime applies to the tax period ending after ministry authorisation and later periods until renunciation is communicated. A description in the articles of association alone is not evidence that approval was granted. [Law, Article 38(1)–(2)](https://www.portaljuridicandorra.ad/L2010095); [regulation, Article 32](https://www.portaljuridicandorra.ad/R20231229C).
+
+For foreign subsidiaries, the regime requires exposure, without exemption, to a substantially similar income tax at a nominal rate at least 40% of Andorra's general rate: 4% when the general rate is 10%. The statute treats this condition as met where an applicable Andorran double-tax treaty covers the subsidiary's country. It also provides a specified route for income traced through an untaxed direct subsidiary from a qualifying second-tier subsidiary. For Andorran subsidiaries, the condition is liability without exemption at the general rate. Do not substitute an effective-tax-rate calculation for the stated nominal-rate test. [Article 38(3)](https://www.portaljuridicandorra.ad/L2010095).
+
+Article 38 imports Article 20(2)'s limitations. These include the exclusion for gains on interests in entities with at least 50% of assets directly or indirectly in Andorran real property/relevant rights; dividends generating a deduction for the payer; non-deductibility of expenses linked to exempt participation income; and participation-loss restrictions, including special extinction exceptions and reductions. Test each applicable limitation before exempting income or claiming a loss. [Articles 20(2), 38(3)](https://www.portaljuridicandorra.ad/L2010095).
+
+Maintain the annual-accounts note showing participations held during the year, portfolio value and dividends/reserves received. Report the exemption in the tax return. The holding company must file even if no tax is payable. [Article 38(3), (5)](https://www.portaljuridicandorra.ad/L2010095); [regulation, Article 32](https://www.portaljuridicandorra.ad/R20231229C).
+
+### Do not conflate this with the ordinary participation exemption
+
+Article 20(1)'s ordinary exemption has its own tests, including at least 5% participation and the one-year holding condition, and for foreign subsidiaries a nominal-tax threshold of 50% of the general rate, rather than Article 38's 40%. Dividend holdings can complete the year after entitlement; a disposal requires the holding period to be met by disposal. The law specifies indirect-holding, related-holder continuity, underlying-income and tax-period tests that must also be checked. These ordinary-regime conditions are not a replacement for the special regime's approval and exclusive-object requirements. [Article 20(1)](https://www.portaljuridicandorra.ad/L2010095).
+
+The transitional rules of Law 6/2018 can preserve historic treatment for part of a later gain on pre-1 July 2017 participations held under the qualifying old authorised regime. Obtain the original authorisation, acquisition date and pre-2021 gain allocation evidence before using that transition; this draft does not calculate its application. [Law 6/2018, third transitional provision reproduced with the corporate law](https://www.portaljuridicandorra.ad/L2010095).
+
 ## Sources
 
 Filing/payment and selected incentive provisions read 23 October 2026:
 
-- [Law 95/2010, Articles 23, 41, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
-- [Corporate-tax regulation, Articles 37 and 45](https://www.portaljuridicandorra.ad/R20231229C).
+- [Law 95/2010, Articles 20, 23, 38, 41, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
+- [Corporate-tax regulation, Articles 32, 37 and 45](https://www.portaljuridicandorra.ad/R20231229C).
 
 These citations substantiate the updated filing/payment and selected incentive sections, not every legacy incentive claim above.
 

@@ -15,3 +15,9 @@ Read the complete Article 23 and Article 41 in the current law. Replaced the leg
 The original draft said new companies historically paid 5% on the first EUR 50,000, but left current applicability unverified. The current law annotates repeal of the former second additional provision by Law 17/2017 and now uses that provision for a property surcharge. Replaced the legacy claim with that historical boundary, preserving its provenance here and in Git history. The first additional provision concerns the first application year of the tax, not a rolling new-company concession. No comprehensive historic-transition audit is claimed.
 
 Other legacy holding-company, residence/base and withholding statements still require their respective full review. Independent review remains outstanding.
+
+## Holding-company correction, v0.4
+
+Read Article 38 together with Article 20(2)'s incorporated restrictions and regulation Article 32's authorisation/reporting rules. Replaced the approximate near-zero headline with a conditional exemption. Distinguished the special regime's 40%-of-general nominal-tax test from ordinary Article 20's 50% test and its 5%/one-year participation conditions. Added property-rich gain, payer-deduction, linked-expense and loss boundaries. Read the third transition of Law 6/2018 and retained a historical-case gap rather than asserting every legacy holding now follows only current rules.
+
+No new claim of comprehensive coverage or independent review. The underlying sources remain https://www.portaljuridicandorra.ad/L2010095 and https://www.portaljuridicandorra.ad/R20231229C .
