@@ -9,3 +9,7 @@ Used the three official Vero/Incomes Register URLs in the Guide, retrieved in in
 Read Vero's current wage-card and rate/ceiling guidance in indexed official text, with URLs added to the Guide. Added ordinary wage-card workflow, the missing-card rule and separate treatment of card rates versus employee insurance deductions. No paper-card absence is equated with absent electronic data. The revised-card algorithm and special/cross-border cases remain open.
 
 Two further examples pass: assumed ceiling crossing produces EUR 1,200 withholding, and the assumed missing-card case gives EUR 1,200 withholding plus EUR 800 before other deductions. Neither result is presented as final net salary or annual tax liability. Independent review remains outstanding.
+
+## Unemployment insurance expansion, v0.3
+
+Read Employment Fund liability and payment guidance in indexed official text on 23 October 2026; links retained in the Guide. Added ordinary/part-owner distinction and employer banding without asserting that any shareholder is automatically a part-owner. Scope exclusions, birthdays, international coverage and statutory reconciliation remain open. Fourth executable example tests band arithmetic and produces EUR 13,812.60 employer contribution on the assumed ordinary payroll; actual invoice/rounding reconciliation remains separate.

@@ -10,10 +10,10 @@ category: payroll
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 ---
 
-# Finland employer payroll reporting v0.2
+# Finland employer payroll reporting v0.3
 
 ## Who this applies to
 
@@ -28,6 +28,24 @@ Vero publishes a **1.91% employer health-insurance contribution for 2026**, comp
 The employer contribution can apply even when withholding is zero or remuneration consists of benefits. The employee's insured-person health contribution is included in the withholding rate; do not deduct it again as a separate item. Vero distinguishes trade income from wages for this contribution. [Social insurance contributions][insurance]
 
 The same official page lists pension, unemployment, occupational accident/disease and group life contributions separately. Their inclusion depends on the applicable coverage and other conditions. This Guide supplies no universal all-in employer percentage. [Social insurance contributions][insurance]
+
+## Unemployment insurance: classify before calculating
+
+The Employment Fund's liability guidance identifies employees aged 18 to under 65 and employer annual wages exceeding EUR 1,500, subject to exclusions. It excludes the specified self-employed/agricultural categories and flags ownership, entity type and international circumstances for assessment. The threshold is not a general exemption from payroll reporting. Birthday-month transitions and international coverage still need detailed checks. [Employment Fund liability][unemployment-liability]
+
+Its 2026 payment guidance states:
+
+| Contribution | 2026 rate |
+|---|---|
+| Ordinary employer: eligible annual payroll up to EUR 2,509,500 | 0.31% |
+| Ordinary employer: excess over that band | 1.23% |
+| Ordinary employee | 0.89% |
+| Part-owner employee | 0.39% |
+| Employer on part-owner wages | 0.31% |
+
+Part-owner wages are excluded from the ordinary employer band calculation. The employee share is deducted from pay; the employer remits both shares on the Fund's invoices. Universities and state enterprises have separate upper rates. [Employment Fund payment guidance][unemployment-payment]
+
+Reconcile eligible wages and ownership status before calculating. This draft does not determine whether a shareholder meets the statutory part-owner definition. Keep the insurer/Fund decisions and payroll reports consistent; tax withholding and the employer health contribution are separate amounts.
 
 ## Withholding instructions and income ceilings
 
@@ -125,6 +143,31 @@ expected:
   remainder_before_other_deductions: 800
 ```
 
+### 4. Ordinary employer unemployment bands
+
+Assume EUR 3,000,000 of fully eligible ordinary annual payroll, excluding part-owner wages and special employer categories. Applying the published bands gives EUR 7,779.45 plus EUR 6,033.15, totalling EUR 13,812.60. This estimates the employer share only; reconcile actual invoicing and rounding separately.
+
+```oa-check
+name: Finland 2026 ordinary employer unemployment bands
+inputs:
+  eligible_ordinary_payroll: 3000000
+  lower_band_limit: 2509500
+  lower_rate: 0.0031
+  upper_rate: 0.0123
+steps:
+  lower_band_wages: min(eligible_ordinary_payroll, lower_band_limit)
+  upper_band_wages: max(0, eligible_ordinary_payroll - lower_band_limit)
+  lower_contribution: round(lower_band_wages * lower_rate, 2)
+  upper_contribution: round(upper_band_wages * upper_rate, 2)
+  employer_total: lower_contribution + upper_contribution
+expected:
+  lower_band_wages: 2509500
+  upper_band_wages: 490500
+  lower_contribution: 7779.45
+  upper_contribution: 6033.15
+  employer_total: 13812.60
+```
+
 ## Ask the client first
 
 - Who is paid, for what work, where, and on which payment dates?
@@ -138,11 +181,12 @@ expected:
 Official text retrieved through the search index on 23 October 2026:
 
 - [Vero social insurance contributions][insurance], 2026 table and scope.
+- [Employment Fund liability][unemployment-liability] and [payment/rate guidance][unemployment-payment], retrieved as indexed official text on 23 October 2026.
 - [Incomes Register deadlines][deadlines].
 - [Vero wage reporting and employer contributions][reporting].
 - [Wage tax-card guidance][card], updated 14 April 2026; [rate and ceiling guidance][ceiling], updated 1 January 2026, retrieved as indexed official text.
 
-Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, pension/unemployment/accident and group-life conditions and rates, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
+Not yet confirmed: complete current statutory chain, employee withholding and benefit valuation, pension/accident/group-life rules and rates, complete unemployment eligibility and special-category rules, cross-border insurance, exceptional reporting, sanctions and live correction/payment procedures. Independent review and professional attestation remain outstanding. Payroll and social-contribution coverage remain partial.
 
 [insurance]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/being-an-employer/social-insurance-contributions/
 [deadlines]: https://www.vero.fi/en/incomes-register/companies-and-organisations/deadlines-for-reporting/
@@ -150,3 +194,6 @@ Not yet confirmed: complete current statutory chain, employee withholding and be
 
 [card]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/wage-earners/
 [ceiling]: https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/tax_card/tax-rate-and-income-ceiling/
+
+[unemployment-liability]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/payment-liability-for-unemployment-insurance-contributions/
+[unemployment-payment]: https://www.tyollisyysrahasto.fi/en/Unemploymentinsurancecontribution/paying-unemployment-insurance-contributions/
