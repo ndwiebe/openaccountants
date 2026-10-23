@@ -13,3 +13,11 @@ Two examples pass: EUR 15,000 supported-revenue adjustment and EUR 310,000 quali
 Downloaded the official three-language instruction PDF from TAK: https://www.atk-ks.org/wp-content/uploads/2017/07/Udh%C3%ABzimi-Administrativ-MF-Nr.-02-2017-p%C3%ABr-Transferimin-e-%C3%87mimit.pdf . SHA256: `6d3906253e246bf81b0a8ff0ed8d826596212f0699ee736b719045dede80522d`. Read Article 29 including the complete 6.1–6.9 checklist, response period, refresh distinction, language and incomplete-file provisions.
 
 The draft attributes the 30-day response period to the retrieved instruction and leaves current procedure reconciliation explicit. It does not quote the instruction's older tax-administration-law penalty as current. It preserves the unresolved relationship between Article 29(8)'s below-threshold wording and the newer statute's documentation duty. No independent review or full amendment audit is claimed.
+
+## Notification and current guidance expansion, v0.3
+
+Directly retrieved https://www.atk-ks.org/en/transferimi-i-cmimit/ on 23 October 2026 via curl after browser retrieval timed out. Read questions 46–49 against Instruction Articles 28–29. FAQ 46 says reach or exceed EUR 300,000; the instruction (including its Albanian text) and the previously retrieved filing notice say exceed. Removed the Guide's unqualified boundary conclusion and recorded the discrepancy for resolution before an exactly-EUR-300,000 filing decision.
+
+Added the instruction's loan-balance inclusion and income/expense non-netting rule; loan measurement and form reconciliation remain open. Added the distinction between instruction-permitted physical/electronic delivery as TAK determines and FAQ-described physical submission. This is evidence of guidance, not a tested live filing channel. FAQ master/local-file and request guidance is attributed as administrative guidance without inventing universal annual full-file submission.
+
+A third executable example verifies EUR 220,000 income plus EUR 100,000 expense gives EUR 320,000 reportable-category total rather than EUR 120,000 net. No independent legal review or full amendment verification is claimed.

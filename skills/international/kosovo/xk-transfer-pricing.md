@@ -12,10 +12,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: 0.3
 ---
 
-# Kosovo transfer pricing v0.2
+# Kosovo transfer pricing v0.3
 
 ## Who this applies to
 
@@ -32,7 +32,13 @@ This source-cited draft uses the official English statute and the tax authority'
 | Documentation | All taxpayers with controlled transactions must prepare it; submit on TAK request | [Article 28(5)][law] |
 | Annual cross-border controlled-transaction notification | The current notice addresses related parties in different tax jurisdictions whose reporting-period total exceeds EUR 300,000 | [TAK notice][notice] |
 
-The notification threshold is not a tax rate, pricing safe harbour or blanket documentation exemption. Exactly EUR 300,000 does not exceed the threshold stated in that notice; verify aggregation and transaction classification before using the boundary. Specific-jurisdiction rules, valuation of loan balances and any simplified documentation treatment require the instruction/form review still outstanding.
+The notification threshold is not a tax rate, pricing safe harbour or blanket documentation exemption. The notice and Instruction 02/2017 Article 28(1) say **exceed** EUR 300,000, but TAK's English FAQ question 46 says **reach or exceed**. Exactly EUR 300,000 is therefore an unresolved administrative-guidance boundary; do not conclude that no notification is needed without resolving that conflict. Specific-jurisdiction rules and simplified documentation treatment remain subject to further review. [Instruction, Article 28][instruction]; [TAK FAQ, question 46][faq].
+
+### Notification aggregation and submission
+
+Instruction Article 28(1) includes loan balances (translated as “loan surpluses”) in the transaction total and prohibits offsetting income against expenses. Prepare a transaction-by-transaction reconciliation, including the relevant lending balances; do not use net intercompany profit as the notification test. Loan measurement dates, movements, interest and avoiding double counting still require form-level reconciliation. [Instruction, Article 28(1)][instruction]
+
+The instruction links the notice to the annual declaration and financial statements, with physical or electronic submission as determined by TAK. FAQ question 46 currently describes physical delivery to its Transfer Pricing and Digital Economy department. Confirm the accepted channel and retain delivery evidence; this draft has not tested a live filing. [Instruction, Article 28(2)–(3)][instruction]; [TAK FAQ, question 46][faq]
 
 ## The base
 
@@ -122,6 +128,25 @@ expected:
   excess_over_threshold: 10000
 ```
 
+### 3. Do not net transaction income and expense
+
+Assume qualifying controlled service income of EUR 220,000 and controlled service expense of EUR 100,000, with no loans or double-counted entries. The gross transaction total is EUR 320,000, above the notification threshold. Netting to EUR 120,000 would conceal EUR 200,000 of the relevant gross total and is prohibited by the instruction. This example avoids the unresolved exactly-EUR-300,000 boundary.
+
+```oa-check
+name: Kosovo controlled transaction non-netting
+inputs:
+  controlled_income: 220000
+  controlled_expense: 100000
+steps:
+  gross_transaction_total: controlled_income + controlled_expense
+  incorrect_net_total: controlled_income - controlled_expense
+  understatement_from_netting: gross_transaction_total - incorrect_net_total
+expected:
+  gross_transaction_total: 320000
+  incorrect_net_total: 120000
+  understatement_from_netting: 200000
+```
+
 ## Ask the client first
 
 - Which parties are related under each ownership, control, management or family test?
@@ -131,6 +156,10 @@ expected:
 - Was the annual notification submitted, and is the acknowledgement available?
 - Is there a foreign adjustment, double taxation or treaty procedure involved?
 
+### Current tax-authority documentation guidance
+
+FAQ questions 47–49 describe group and local files, preparation before the annual return, submission within 30 days of request, and annual or material-change updates. Question 48 expressly includes below-EUR-300,000 taxpayers when TAK requests documentation. This reinforces that the notification threshold is not a blanket documentation exemption. Treat the FAQ as administrative guidance alongside the statute and instruction, not a new legislative exemption or a requirement to file both full files annually. [TAK FAQ][faq]
+
 ## Sources and review limits
 
 Read 23 October 2026. Independent source review and professional attestation remain outstanding. The full instruction/amendment chain, specified-jurisdiction and simplified-documentation rules, current enforcement, electronic form and treaty procedures remain open. This is not comprehensive TP or country coverage.
@@ -138,7 +167,10 @@ Read 23 October 2026. Independent source review and professional attestation rem
 - [Law 06/L-105, official English PDF][law], Articles 3(1.18), 28.
 - [TAK notification notice for tax year 2025][notice], identified in the current search index; direct browser retrieval returned HTTP 502.
 - [Instruction 02/2017, Gazette text][instruction], retrieved as the implementation source requiring further detailed reconciliation.
+- [TAK transfer-pricing FAQ][faq], questions 46–49, directly retrieved on 23 October 2026; boundary discrepancy and submission guidance recorded above.
 
 [law]: https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf
 [notice]: https://www.atk-ks.org/njoftim-per-tatimpagues-raporto-transaksionet-e-kontrolluara-2/
 [instruction]: https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=14937
+
+[faq]: https://www.atk-ks.org/en/transferimi-i-cmimit/
