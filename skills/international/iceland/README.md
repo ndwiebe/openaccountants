@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.22
+version: 0.23
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -81,3 +81,5 @@ The still-local country batch also adds the VOES application/output-return seque
 The [independent benefits/options review](../../../docs/research/2026-10-23-iceland-payroll-benefits-review.md) is now closed at corrected snapshot `e7241273`. It identified the Article 10 contractual pledge prohibition and a versioning omission; the writer fixed both and the reviewer independently confirmed closure with all 64 controls at that snapshot passing. This does not review the later two VAT controls or establish complete payroll/country coverage. The combined country batch remains local pending the additional VAT review and publication checks.
 
 A follow-up primary-source search found Skatturinn letter 1/2026, dated 20 January and effective 1 January. It confirms the 2026 refund minimums of 105,500 for two months and 21,100 for the year/remainder, resolving the previously recorded missing-current-minimum gap. It also confirms the Regulation 576 Article 5 annual repair threshold of 3,457,000; actual scope/value and calculated-price support remain required. The refund control now distinguishes the two period minimums. These updates require review with the VOES/refund delta before the combined country publication.
+
+The independent VAT review identified two clarifications: Article 3(d)'s hypothetical Icelandic registration requirement must be tested separately from no ordinary registration during the claim period and input entitlement; Article 10's excess-refund repayment runs from notification, while Article 11's appeal period runs from the decision date. The writer corrected both and advanced the VAT version; corrected-snapshot review remains pending. No new country push has occurred.
