@@ -1,7 +1,7 @@
 ---
 name: iceland-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for an Iceland VAT (VSK) return for any client. Trigger on phrases like "prepare VSK return", "Iceland VAT", "virðisaukaskattur", "Icelandic VAT filing", or any request involving Icelandic VAT. Iceland is NOT an EU member but IS in the EEA. This skill covers Iceland only. MUST be loaded alongside vat-workflow-base v0.1 or later. Does NOT require eu-vat-directive (Iceland is not EU). ALWAYS read this skill before touching any Iceland VSK work.
-version: 2.3
+version: 2.4
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -132,9 +132,27 @@ For a change within the acquisition/works settlement period, compute input VAT o
 
 Before reversing, test Article 12's exceptions, including taxable disposals, qualifying zero-rated disposals, specified forced sales and voluntarily registered rental. For a property/business transfer, Article 15 permits assumption of adjustment obligations only to the extent of the buyer's entitlement; the seller adjusts any balance. Both parties notify Skatturinn within eight days, with the year/period amounts, proportions and the buyer's assumption statement. A sale described as “VAT-free” does not extinguish an adjustment obligation. [Regulation 192/1993, Articles 12 and 15](https://files.reglugerd.is/pdf/0192-1993/current)
 
-This method does not establish voluntary-registration eligibility, a property's actual use or the special vehicle exception without their documents. Those determinations and the actual accepted reporting route remain for review.
+The property-registration method below supplies the stated eligibility/application steps; neither method establishes a property's actual use, approval or the special vehicle exception without their documents. Those determinations and the actual accepted reporting route remain for review.
 
 Build a purchase schedule with supplier, date, invoice number, VAT-exclusive amount, VAT shown, vendor VAT status, business use, classification and deduction result. Reconcile the deductible total to the purchase ledger and evidence before netting it against output VAT.
+
+### Property: voluntary rent registration and special construction registration
+
+**Identify the property and the approval route.** Obtain the address, property number, plans, floor areas/parts, ownership, actual and intended use, tenant/buyer, lease/sale agreement, work dates and existing registration decisions. Ordinary exempt property rental/sale does not itself allow construction input VAT. VAT Act Article 6 distinguishes voluntary registration for the rental service from special developer registration; approval for one is not automatic approval for the other. Residential premises are excluded from the property routes below. Identify any genuinely separate commercial part; do not include a part used wholly or partly as housing. [VAT Act, Articles 2 and 6](https://www.althingi.is/lagas/nuna/1988050.html); [Regulation 577/1989, Articles 1 and 4–5](https://files.reglugerd.is/pdf/0577-1989/current)
+
+**A. Commercial rent, frjáls skráning.** An application identifies the specific property/part and includes a written lease, the tenant's signed consent to the registration and VAT on rent, and evidence that this consent is registered on the property. Keep ownership/lease-party evidence. The minimum registration period is **two years**; an indefinite lease needs the stated intention to rent for at least that period. Establish the approved start date before invoicing or recovering inputs. Regulation Article 5 ordinarily refers to the tenant's occupation date, while current administrative guidance describes application receipt or later occupation. This draft does not infer unrestricted retrospective entitlement from the former wording: obtain the authority's actual approved date and resolve an earlier-period claim explicitly. [Regulation, Articles 4–5](https://files.reglugerd.is/pdf/0577-1989/current); [Current registration procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
+
+After approval, charge ordinary **24%** output VAT on the covered rent. Regulation Article 6 includes security money required from the tenant; do not assume every deposit is outside the base merely because it is refundable. Establish the actual arrangement and later settlement/credit-note treatment separately so the same consideration is not taxed twice. Below-market rent needs the Article 8 valuation test. The tenant deducts rent VAT only to the extent its own general input rules permit it; a consenting tenant's exempt/private use does not acquire full credit from the landlord's approval. [Regulation, Article 6](https://files.reglugerd.is/pdf/0577-1989/current); [VAT Act, Articles 8, 14 and 16](https://www.althingi.is/lagas/nuna/1988050.html)
+
+Eligible post-registration property maintenance, operations and administration inputs follow the ordinary deduction/attribution rules above. **New construction or substantial pre-occupation improvements need the special-registration analysis**, rather than a retrospective deduction solely from later rent registration. Notify a change defeating registration conditions within **eight days** and compute the capital-input adjustment. A new tenant requires the new lease and registered consent; an ownership change requires the new owner's application and proof of lease succession, rather than automatic transfer of the former owner's approval. For the same continuing lease, Article 4 provides the stated document simplification. Record vacancies: under Article 5, the specified nonuse of six months or more, including the stated early-termination/reletting circumstances, does not count towards the adjustment period. Do not age away the obligation through that vacancy. [Regulation, Articles 4–5 and 7–8](https://files.reglugerd.is/pdf/0577-1989/current); [Current procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
+
+**B. Construction for qualifying sale/rental, sérstök skráning.** For the sold-property route, obtain the executed contract with the VAT-registered buyer, approved plans/identified commercial part, the buyer's intended-use declaration and its undertaking to assume the input-adjustment obligation. Register the declarations on the property and quantify the obligation. Registration of the buyer alone does not prove full deduction or extinguish the seller's residual adjustment: use the Article 15 transfer workpaper above. For an unsold commercial project, Article 3 requires approved taxable-use intentions and the unconditional bank guarantee indexed to the construction index. A landlord constructing for approved taxable rental also needs the lease/registered-consent and special-registration evidence; do not invent a buyer where the rental branch applies. [VAT Act, Article 6](https://www.althingi.is/lagas/nuna/1988050.html); [Regulation 577/1989, Articles 1–5](https://files.reglugerd.is/pdf/0577-1989/current); [Current procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
+
+Keep a separate construction workpaper for **each property**. First test the developer/self-construction scope under Regulation 576/1989, including owner/employee design/construction work and equipment use. Its ordinary construction method has limited input deductions; special registration must be established before treating the additional contractor/material inputs as recoverable. Output is based on the supported ordinary market value, or the specified calculated selling value including overhead/profit if market value is unavailable, not bare payroll cost. Article 5's printed repair threshold is annually construction-indexed; the historic printed amount is **not** a verified 2026 threshold. Current calculated-price rates and that indexed threshold require separate confirmation if material to the case. Preserve labour/time, equipment, materials, contractor invoices, valuations and direct/shared allocation. [Regulation 576/1989, Articles 1–7](https://files.reglugerd.is/pdf/0576-1989/current)
+
+Under Regulation 577 Article 2, show the required construction output and supported input on the separate property statement, **submitted without payment**. On approval, the stated output collection is cancelled and eligible input refund is authorised. Already paid qualifying construction VAT has separate refund treatment: reconcile paid output, unpaid/cancelled output and input so a cancellation does not become a second cash refund. Keep the approval, property statements, payment ledger and refund/offset decision; this is not an ordinary rent-period netting shortcut or proof of bank receipt. Guarantee release also needs the documented statutory event and the remaining indexed adjustment balance; it is limited to qualifying parts. [Regulation 577/1989, Articles 2–3](https://files.reglugerd.is/pdf/0577-1989/current); [Current guarantee-release procedure](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra)
+
+The authority currently requests a written application with the property's dates, plans/use, cost breakdown and whether employees or contractors build it. For approved retrospective registration it requests past **RSK 10.01 paper statements** and input-ledger movements because electronic past-period filing is unavailable for that route. This does not establish retrospective eligibility or permit replacement of ordinary electronic returns. Retain application/acceptance evidence and confirm the actual current submission route; no application, message or filing is sent by this Guide. [Current registration instructions](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra); [Regulation, Article 9](https://files.reglugerd.is/pdf/0577-1989/current)
 
 ### Foreign-service purchaser workflow
 
@@ -367,11 +385,58 @@ expected:
   clawback: 172800
 ```
 
+### Commercial rent with required security money
+
+Assume the specific commercial premises and period have approved voluntary registration, all lease/consent conditions are met and there is no private/residential use or valuation dispute. VAT-exclusive rent is 1,000,000 and the landlord requires 200,000 security money falling within Regulation 577 Article 6. Output VAT is **288,000** on 1,200,000, with **1,488,000** collected including VAT. Proved, fully eligible post-registration maintenance input VAT is 24,000, giving **264,000** net VAT before other transactions. The tenant's credit is not assumed; later return/application of security needs its own reconciliation. These are invented case amounts. [Regulation 577/1989, Articles 6–7](https://files.reglugerd.is/pdf/0577-1989/current); [VAT Act, Article 14](https://www.althingi.is/lagas/nuna/1988050.html)
+
+```oa-check
+name: Iceland approved commercial rent includes required security in output base
+inputs:
+  rent_excluding_vat: 1000000
+  qualifying_security_excluding_vat: 200000
+  standard_rate: 0.24
+  supported_maintenance_input_vat: 24000
+steps:
+  - output_base: rent_excluding_vat + qualifying_security_excluding_vat
+  - output_vat: output_base * standard_rate
+  - gross_receipt: output_base + output_vat
+  - net_period_vat: output_vat - supported_maintenance_input_vat
+expected:
+  output_base: 1200000
+  output_vat: 288000
+  gross_receipt: 1488000
+  net_period_vat: 264000
+```
+
+### Approved special construction statement: cancellation is not cash twice
+
+Assume a fully qualifying commercial property has approved special registration, a registered buyer with the required registered declarations, and no blocked/shared inputs. Supported construction output base under Regulation 576 is 3 million, giving **720,000** at 24%; it was shown but **not paid**. Proved eligible input VAT is 240,000 equipment, 4.8 million materials and 2.4 million contractors: **7.44 million** in total. Under the assumed Article 2 approval, collection of the unpaid 720,000 is cancelled and the eligible-input refund claim is **7.44 million**. Do not add the cancelled unpaid output again as cash received. Approval, public-debt offsets and actual payment remain separate evidence; the example does not calculate an indexed guarantee or assume every construction invoice is eligible. [Regulation 577/1989, Articles 1–2](https://files.reglugerd.is/pdf/0577-1989/current); [Regulation 576/1989, Articles 2–3 and 6](https://files.reglugerd.is/pdf/0576-1989/current)
+
+```oa-check
+name: Iceland special property registration separates unpaid output cancellation from input refund
+inputs:
+  proved_construction_output_base: 3000000
+  standard_rate: 0.24
+  eligible_equipment_input_vat: 240000
+  eligible_material_input_vat: 4800000
+  eligible_contractor_input_vat: 2400000
+  qualifying_output_vat_already_paid: 0
+steps:
+  - unpaid_construction_output_cancelled: proved_construction_output_base * standard_rate
+  - eligible_input_refund_claim: eligible_equipment_input_vat + eligible_material_input_vat + eligible_contractor_input_vat
+  - total_supported_refund_claim: eligible_input_refund_claim + qualifying_output_vat_already_paid
+expected:
+  unpaid_construction_output_cancelled: 720000
+  eligible_input_refund_claim: 7440000
+  total_supported_refund_claim: 7440000
+```
+
 ## Ask the client first
 
 - What do the Icelandic VAT registration record and current settlement period say? Has the business ever been removed from the VAT register and re-registered?
 - What invoice, supplier/customer status, business use and rate/exemption facts support each transaction?
 - Are imports, foreign services, VOES, mixed exempt activity, property, vehicles or a correction involved?
+- For property, which exact premises/parts, actual use, approvals/start dates, leases, registered consents/declarations, construction costs, guarantee and prior input-adjustment balances support the claimed route?
 - Has a statement already been filed or an assessment/penalty notice been issued?
 
 ## When to refuse or refer
@@ -383,7 +448,7 @@ expected:
 
 ### Stop conditions
 
-Use a separate sourced method or professional review for disputed mixed-use attribution, voluntary real-property registration, imported goods/customs valuation and import-VAT deferral, VOES eligibility, foreign representative arrangements, special investment/fishing schemes, vehicle-resale margin rules, a missing VAT invoice, a supplier that was not registered, and an estimated assessment or appeal. The method above includes ordinary direct/shared attribution, annual reconciliation and the stated capital-adjustment rules, alongside confirmed domestic taxable rates, zero-rated evidence (including services to foreign businesses under current Article 12), exempt outputs, supported input VAT, invoice controls, the Article 35 foreign-service purchaser route, refunds of excess input VAT, corrections before assessment and the ordinary return timetable.
+Use a separate sourced method or professional review for disputed mixed-use attribution, property registration outside the stated method or with unresolved approval/start-date/use facts, imported goods/customs valuation and import-VAT deferral, VOES eligibility, foreign representative arrangements, special investment/fishing schemes, vehicle-resale margin rules, a missing VAT invoice, a supplier that was not registered, and an estimated assessment or appeal. The method above includes ordinary direct/shared attribution, annual reconciliation and the stated capital-adjustment rules, alongside confirmed domestic taxable rates, zero-rated evidence (including services to foreign businesses under current Article 12), exempt outputs, supported input VAT, invoice controls, the Article 35 foreign-service purchaser route, refunds of excess input VAT, corrections before assessment and the ordinary return timetable.
 
 Original editorial source record: [Skatturinn: Value Added Tax](https://www.skatturinn.is/english/companies/value-added-tax/); [VAT Act No. 50/1988, current consolidated text](https://www.althingi.is/lagas/nuna/1988050.html); [RSK 10.24 foreign-service purchase report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf); [Skatturinn VAT-register guidance](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/virdisaukaskattsskra/). Source snapshots, evidence ledger and cases are retained in the controlled editorial packet.
 
@@ -395,7 +460,7 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
-The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording, mixed input attribution/capital adjustments and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
+The following primary sources were accessed on 23 October 2026. This pass checked the current rate provisions, foreign-service boundary, campground wording, mixed input attribution/capital adjustments, stated property registration/construction rules and example inputs; it does not attest to all remaining scope or operational questions. The earlier September research record above is preserved.
 
 | Official source | Read on |
 | --- | --- |
@@ -405,3 +470,6 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [RSK 10.24 foreign-service report](https://www.skatturinn.is/media/rsk10/rsk_1024.is.pdf) | 2026-10-23 |
 | [Input VAT Regulation 192/1993, Articles 2–16, current PDF](https://files.reglugerd.is/pdf/0192-1993/current) | 2026-10-23 |
 | [Skatturinn, VAT overview and mixed activity](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/almennt-um-vsk/) | 2026-10-23 |
+| [Voluntary/special property registration Regulation 577/1989, current reproduction](https://files.reglugerd.is/pdf/0577-1989/current) | 2026-10-23 |
+| [Own-cost construction VAT Regulation 576/1989, current reproduction](https://files.reglugerd.is/pdf/0576-1989/current) | 2026-10-23 |
+| [Current registration procedure, property applications, changes and guarantees](https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra) | 2026-10-23 |
