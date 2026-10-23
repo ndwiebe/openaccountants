@@ -1,52 +1,277 @@
 ---
 name: is-corporate-income-tax
-description: "Source-cited draft: corporate income tax for Iceland (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Prepare Iceland corporate income-tax workpapers for 2026 for resident
+  limited companies and other separately taxable legal entities. Determine
+  the legal-form rate, reconcile accounting profit to the tax base, support
+  deductions, depreciation, participation deductions and loss carryforwards,
+  screen group taxation and related-party finance, and reconcile assessment
+  payments. Includes the separately identified 2026 filing cycle for 2025
+  income. Use for ehf., hf., taxable partnerships, RSK 1.04 and annual tax
+  reconciliations. Sector taxes, foreign credits, restructurings, some financial
+  instruments and independent Icelandic legal review require further work;
+  this source-cited draft is not comprehensive country coverage.
 jurisdiction: IS
-tax_year: 2025
+category: international
+tax_year: 2026
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland Corporate Income Tax
+# Iceland corporate income tax v0.2
 
-## Corporate income tax rates and base (2025)
+## Who this applies to
 
-- **Corporate income tax rate — limited liability companies (hf./ehf.)** — 20% percent  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income))_
-- **Income tax rate — partnerships and other legal entities (incl. general partnerships taxed as separate entities)** — 37.6% percent (approx — some sources cite 38.4%; confirm entity classification)  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income))_
-- **Tax base** — Worldwide income less deductible operating expenses (all costs needed to earn, secure and maintain income)  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income))_
-- **Non-resident companies** — Taxed at the same rates as resident companies on Iceland-source income / permanent establishment profits  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/taxes-on-corporate-income))_
-- **Inter-company dividends** — Dividends received by a resident company are effectively exempt — a deduction equal to received dividends generally eliminates tax (approx — confirm conditions)  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/income-determination))_
-- **Tax loss carryforward** — Losses may be carried forward for up to 10 years; no carryback (approx — confirm 10-year period)  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/deductions))_
-- **Withholding tax on dividends to non-residents** — 20% percent (corporate recipients may reclaim down to 20% effective rate / refunds available; reduced under treaties)  _(Act No. 90/2003 on Income Tax; Act No. 94/1996 on Withholding of Tax on Financial Income (https://taxsummaries.pwc.com/iceland/corporate/withholding-taxes))_
-- **2026 non-resident corporate interest correction** — Article 70(8)(b)'s national rate is 12%, subject to Article 3(8) exclusions and treaty relief. The authority identifies 13% as a 2024 exception, not an alternative current rate. Confirm the collection route and instrument. [Income Tax Act, Articles 3 and 70](https://www.althingi.is/lagas/nuna/2003090.html); [Skatturinn interest guidance](https://www.skatturinn.is/english/companies/interests/).
-- **2026 non-resident royalty correction** — The national rate for income classified under Article 3(6) is 22% under Article 70(6), including legal entities. The 20% company service-payment rate is a different category. Check the contract, collection rules and treaty relief before paying. [Income Tax Act, Articles 3 and 70](https://www.althingi.is/lagas/nuna/2003090.html); [Skatturinn royalty guidance](https://www.skatturinn.is/english/companies/royalties-lease-etc/). See the [cross-border screening draft](is-cross-border.md).
-- **Corporate tax year** — Calendar year; other fiscal years require approval of the Internal Revenue Directorate  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/tax-administration))_
-- **Corporate tax return deadline** — Generally 31 May following the tax year; extension to 30 September for professionally prepared returns  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/tax-administration))_
-- **Advance corporate tax payments** — Monthly advance payments of 8.5% of the prior year's assessed income tax, due on the 1st of each month from February to September percent  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/tax-administration))_
-- **Final corporate tax balance** — Any balance after final assessment (available end of October) payable in equal installments by 1 November and 1 December  _(Act No. 90/2003 on Income Tax (https://taxsummaries.pwc.com/iceland/corporate/tax-administration))_
+Prepare **income-year 2026** workpapers for separately taxable Iceland-resident legal entities. Article 2 residence includes Icelandic registration, domicile under the constitution or actual management in Iceland. Confirm the legal form and separate-taxpayer status, including any partnership election; a business name alone does not establish the tax rate. Residents are taxed on worldwide income under Article 2. [Income Tax Act 90/2003, Article 2][law]
+
+An individual's sole trade belongs in the [individual income-tax Guide](iceland-income-tax.md). Exempt bodies require Article 4 and Article 71(4)–(5) review: ordinary income-tax exemption does not itself settle capital-income tax. Non-residents require the source-category method in the [cross-border Guide](is-cross-border.md), rather than a blanket resident-company computation. [Articles 3–4, 70–71][law]
+
+**Keep years separate.** A return labelled 2026 ordinarily reports **2025 income**. The official 2026 assessment page expressly uses that pairing. This Guide distinguishes the current 2026 income computation from confirmed 2026 filing/payment rules; no unissued 2027 deadline is inferred. [2026 assessment information][assessment]; [Article 59][law]
+
+## Rates, bands and thresholds
+
+Amounts are ISK. The rates below concern the ordinary statutory computation, before any applicable sector taxes or relief.
+
+| Item | Rule for the stated period | Official source |
+|---|---|---|
+| Ordinary Article 2(1)(1)–(2) entities, including hf./ehf. | 20% of taxable income for 2026 | [Article 71(1)][law]; [2026 rates][rates] |
+| Other separately taxable Article 2(1)(3)–(5) entities | 37.6% of taxable income for 2026 | [Article 71(2)][law]; [2026 rates][rates] |
+| Dividends received by the specified higher-rate entities | Separate 22% treatment; do not apply 37.6% indiscriminately | [Article 71(3)][law] |
+| Loss vintage | Unused qualifying trading losses from the ten years preceding the income year | [Article 31(8)][law] |
+| Eligible closing business receivables/loans; inventory | Optional reductions up to 5%; reverse previously expensed prior-year reductions | [Article 31(3)–(4)][law] |
+| Immediate expensing of an asset or asset group | Acquisition cost **below 600,000**, not equal to it | [Article 39][law] |
+| Ordinary office equipment depreciation | 20%–35% of the statutory depreciation base | [Article 37(4)(a)][law] |
+| Ordinary domestic group-tax ownership screen | At least 90%, with approval and further conditions | [Article 55][law] |
+| 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; current guidance describes eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
+
+Article 71(3) also imposes a separate 6% financial-activity tax on the defined in-scope taxpayers' base above ISK 1 billion, without group taxation or brought-forward losses for that calculation. This is a screening flag, not a complete sector-tax method. The 2024 exceptional 21%/38.4% ordinary rates in transitional provision LXXVI do not replace the 2026 rates. [Article 71(3), transitional provision LXXVI][law]
+
+## The base
+
+### 1. Reconcile income and timing
+
+Start with a reconciled trial balance and statutory accounts. Identify trading receipts, interest, dividends, gains, foreign items and related-party transactions. Article 59 ordinarily recognises income when the claim arises, subject to its uncertain-income rule. Bank receipts alone do not establish the income year. Under Article 61(2), legal-entity taxable income is statutory income less deductions permitted by Article 31. [Articles 7–8, 59, 61][law]
+
+Prepare a bridge from accounting profit **before tax**. Add back book depreciation and any expenses not permitted for tax; replace them with the supported statutory depreciation/deductions. Reconcile provisions, reserves, share income, exchange differences and losses separately. Keep income-tax payments and withholding credits in a payment schedule, not as deductions from taxable profit. [Articles 31–50, 61, 112][law]
+
+### 2. Support deductions and adjustments
+
+| Area | Workpaper rule | Source |
+|---|---|---|
+| Operating expenses | Evidence the cost, relevant year and connection to acquiring, securing or maintaining income. Missing required payroll/contractor reporting can lead to deduction denial under the stated procedure. | [Article 31(1)][law] |
+| Bad debts | Distinguish business-connected debts demonstrably lost from an accounting provision. For an elected up-to-5% closing reduction, verify the eligible base and reverse the prior year's expensed reduction. | [Article 31(3)][law] |
+| Inventory | Establish the Article 73 valuation first; calculate the optional up-to-5% reduction once and reverse the prior year's expensed reduction. Do not duplicate a book write-down and tax deduction. | [Articles 31(4), 73(4)][law] |
+| Gifts/donations | Review Article 31(2)'s recipient registration, qualifying purposes and limits; do not deduct all gifts under the general expense rule. | [Articles 31(2), 50(1)][law] |
+| Fines and unlawful payments | Article 50 disallows the specified criminal penalties, related unlawful-gain costs and unlawful payments. Classify the actual charge; this is not a blanket conclusion about every interest or fee item. | [Article 50][law] |
+| Interest and FX | Apply Article 49's business connection and timing rules. Its net exchange-loss rule spreads the qualifying net loss equally over three years; a book loss is not automatically the same-year tax deduction. Review related-party interest separately under Article 57b. | [Articles 49, 57b][law] |
+| Start-up and specified development costs | Article 32 permits the stated cost classes to be written down in the year incurred or equally over five years; classify the cost before choosing that treatment. | [Article 32][law] |
+
+Retain invoices, contracts, allocation evidence, payroll filings and the reconciliation to each return field. These are preparation controls implementing the cited rules; they do not establish an expense's eligibility without its facts.
+
+### 3. Depreciation and disposals
+
+Build an asset register showing original cost, category, business use, first-use date, prior tax depreciation, opening tax value, additions, disposals and closing value. Articles 33–36 define depreciable assets, first use and the base. Movable assets under Article 33(1) use cost less prior depreciation; other specified classes use original cost. Do not apply the office-equipment rate to buildings or purchased intangibles. [Articles 33–37][law]
+
+Selected statutory ranges are 10%–20% for the specified ships/passenger vehicles and aircraft, 10%–30% for industrial machinery, 20%–35% for office equipment and the stated other movables, 1%–3% for residential/office/retail buildings, 15%–20% for purchased intellectual-property rights and 10%–20% for purchased goodwill. Other building classes have their own ranges. Determine the precise class and business use before selecting a rate. [Article 37][law]
+
+Article 39's immediate-expense threshold is strictly below ISK 600,000 for the asset **or asset group**. Articles 35 and 45 address disposal/cessation years; an ordinary annual charge is not automatically available then. Article 42 generally leaves a 10% original-cost residual for Article 33(1)–(2) assets. Reconcile disposal proceeds, tax value and any gain/loss under the relevant disposal provisions instead of simply deleting the asset. [Articles 12–27, 33–45][law]
+
+### 4. Dividends, share gains and losses
+
+Article 31(9) provides a deduction for qualifying dividends received by the specified entity classes. It extends to foreign dividends only under its foreign-tax and rate conditions. Article 31(9a) addresses qualifying share gains and states that excess share-sale losses are neither generally deductible from other income nor carried forward as trading losses. Retain recipient/issuer classifications, dividend decisions, holding/disposal schedules and the evidence supporting foreign treatment. A group relationship alone does not establish a participation deduction. [Article 31(9), (9a)][law]
+
+Keep higher-rate entities' Article 71(3) dividend treatment separate. Do not assume that the limited-company deduction or ordinary 37.6% rate resolves every partnership's dividend receipt. [Articles 31, 71][law]
+
+### 5. Trading-loss schedule
+
+For a calendar 2026 computation, the ordinary preceding-ten-year window covers **2016–2025**, subject to adequate original reporting, unused balances and the change-of-ownership/business rules. A 2015 vintage is outside that ordinary window. Retain origin, opening balance, prior use, eligible amount used now and closing balance for each vintage. Article 31(8) restricts use after material business/activity changes unless the ordinary-business-purpose condition is established; age alone is insufficient. [Article 31(8)][law]
+
+Separate share-loss restrictions, foreign CFC losses and pre-group losses. Mergers/splits also require Article 54's loss-transfer conditions; unused losses do not automatically follow a purchase or reorganisation. This Guide supplies no loss carryback claim. [Articles 31(9a), 54–55, 57a][law]
+
+### 6. Group taxation and related-party finance
+
+Article 55 group taxation requires authority approval, at least 90% ownership, the same accounting year and all-year ownership subject to the stated new-entity/closure exceptions. It normally lasts at least five years; the statute also restricts restarting after termination. Apply at least **30 days before the applicable return deadline**. Current-year results are settled before brought-forward losses; losses from before group taxation remain usable only in their originating company. Do not consolidate separate returns merely because management prepares group accounts. [Article 55][law]
+
+For related-party loans, separately apply arm's-length pricing and Article 57b. The latter addresses related-party interest/discounts above ISK 100 million and a 30% statutory profit measure. Its domestic-group, equity-ratio and financial-entity exceptions require evidence; statutory profit differs from an unadjusted EBITDA label. No complete interest-cap calculation is asserted here. See the [transfer-pricing method](is-transfer-pricing.md). [Articles 57, 57b][law]
+
+## Deadlines and filing
+
+### Return and assessment workflow
+
+Use **RSK 1.04** for the legal-entity business return through the taxpayer service or software meeting Skatturinn's electronic specification. The legal-entity version is distinct from an individual's business schedule. Reconcile accounts, asset register, deductions, loss/group schedules and applicable information returns; retain submission and acceptance evidence. [RSK 1.04 guidance][return]
+
+For **2025 income filed in 2026**, the 30 January 2026 notice states a general deadline of **31 May 2026** and a professional extension available up to **21 September 2026**. An extension is not automatic. The former generic 30 September statement did not match that notice. Article 93 establishes annual deadline-setting: verify the notice for **2026 income filed in 2027** when available. [2026 filing notice][filing-notice]; [Article 93][law]
+
+Calendar year is the ordinary income period; another accounting year needs the Article 59 permission. For approved foreign-currency accounts, Article 91 requires the supporting accounts and statutory ISK conversion statement; it distinguishes income/expense average rates from balance-sheet closing rates. Check its detailed tax-basis rules before using a single year-end rate for the whole return. [Articles 59, 90–91][law]
+
+Compare assessment with the return, tax calculation and payment ledger. Article 99 gives legal entities a **one-month** initial assessment-complaint period measured from the specified assessment announcement; do not substitute the different individual period or assume every later reassessment follows the same trigger. [Article 99][law]
+
+### Payment-year reconciliation
+
+Regulation 1370/2025 governs **2026 payments towards the 2026 assessment on 2025 income**. Each pre-assessment payment is 8.5% of 2025 assessed public levies; current guidance describes eight equal February–September payments totalling 68%. Reconcile actual notices, reductions and payments rather than treating advances as a tax expense or calling them payments against 2026 trading profit. The regulation also has an ISK 5,000 collection minimum per due date. [Regulation, Articles 1–2][payment-reg]; [Advance guidance][advances]
+
+Article 112 allocates the assessed balance, after the stated advances/credits, across remaining due dates. Do not promise two identical November/December instalments without checking the actual assessment and prior payments. **Final-date discrepancy:** Article 112(1)'s ordinary wording is the month's last business day, whereas Regulation 1370/2025 Article 1 and the guidance say one month after due date. Preserve the issued payment notice and obtain a documented resolution where dates differ; this draft does not silently treat them as identical. [Articles 112, 114][law]; [Regulation, Articles 1–4][payment-reg]
+
+For a requested advance reduction, Regulation 1370/2025 Article 6 says the relevant 2025 bases are **more than 25%** below 2024; the authority's general guidance instead says **at least 25%**, adds an ISK 100,000 tax reduction and describes a 31 May application deadline. Exactly 25% and the applicable year's notice require resolution before assuming eligibility. A request does not itself reduce the amount due. [Regulation, Articles 5–7][payment-reg]; [Advance guidance][advances]
+
+## Penalties and interest
+
+Article 108 increases **tax bases**, rather than imposing the listed percentages directly on tax due:
+
+| Circumstance | Statutory maximum/treatment | Source |
+|---|---|---|
+| No timely return; estimated bases | Up to 15%, considering withholding already collected | [Article 108(1)][law] |
+| Late return received before assessment finishes | 0.5% of bases per late day, capped at 10% | [Article 108(1)][law] |
+| Defective/understated bases | Up to 25%; maximum 15% if corrected before assessment | [Article 108(2)][law] |
+| Proven absence of taxpayer fault/uncontrollable circumstances | Statutory waiver conditions in Article 108(3) | [Article 108(3)][law] |
+
+Article 114 links assessment late interest to the Central Bank rate. Regulation 1370/2025 Article 4 says unpaid 2026 advances/assessments after a month attract interest from the due date and addresses acceleration after partial nonpayment. Use the actual collection basis, due dates and period-specific rate; no undated floating rate is quoted here. Documentation fines, payroll/VAT collection penalties and criminal sanctions are separate regimes. [Article 114][law]; [Regulation, Article 4][payment-reg]
+
+## Cross-border points
+
+Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Treaty corridors and full foreign-credit limitations remain open. [Articles 2, 119][law]
+
+For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
+
+Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. Sector taxes, incentives/R&D credits, financial instruments and any other applicable group minimum-tax regime require a separate applicability audit; nothing in this ordinary computation establishes their absence.
+
+## Worked examples that recompute
+
+### 1. Profit-to-tax reconciliation
+
+Assume a resident ehf. with ISK 12 million accounting profit before tax, including book depreciation ISK 2 million, a supported nondeductible item ISK 1 million and qualifying dividend income ISK 2 million. Tax depreciation is ISK 3 million and substantiated eligible brought-forward losses are ISK 4 million. The bridge is 12 + 2 + 1 − 3 − 2 = **ISK 10 million** before losses; taxable income is **ISK 6 million** and ordinary tax **ISK 1.2 million**. Assume all participation/loss conditions are met and no other adjustment or sector tax applies. Eligibility is a fact assumption requiring evidence.
+
+```oa-check
+name: Iceland company profit to ordinary tax bridge
+inputs:
+  accounting_profit: 12000000
+  book_depreciation: 2000000
+  disallowed_item: 1000000
+  tax_depreciation: 3000000
+  qualifying_dividend_deduction: 2000000
+  eligible_losses: 4000000
+  ordinary_rate: 0.20
+steps:
+  before_losses: accounting_profit + book_depreciation + disallowed_item - tax_depreciation - qualifying_dividend_deduction
+  loss_used: min(eligible_losses, max(0, before_losses))
+  taxable_income: max(0, before_losses - loss_used)
+  ordinary_tax: taxable_income * ordinary_rate
+expected:
+  before_losses: 10000000
+  loss_used: 4000000
+  taxable_income: 6000000
+  ordinary_tax: 1200000
+```
+
+### 2. Reverse last year's closing reductions
+
+Assume eligible closing receivables ISK 20 million and inventory ISK 30 million, already valued under the relevant rules. Elect 5% reductions: ISK 1 million and ISK 1.5 million. Prior-year expensed reductions of ISK 750,000 and ISK 1.2 million must be reversed. The net current deduction is **ISK 550,000**, not ISK 2.5 million. Assume no overlapping book or other tax write-down. [Article 31(3)–(4)][law]
+
+```oa-check
+name: Iceland closing reductions with prior year reversals
+inputs:
+  eligible_receivables: 20000000
+  eligible_inventory: 30000000
+  elected_rate: 0.05
+  prior_receivable_reduction: 750000
+  prior_inventory_reduction: 1200000
+steps:
+  current_receivable_reduction: eligible_receivables * elected_rate
+  current_inventory_reduction: eligible_inventory * elected_rate
+  net_deduction: current_receivable_reduction + current_inventory_reduction - prior_receivable_reduction - prior_inventory_reduction
+expected:
+  current_receivable_reduction: 1000000
+  current_inventory_reduction: 1500000
+  net_deduction: 550000
+```
+
+### 3. Exact acquisition threshold and the depreciation floor
+
+Assume qualifying office equipment first used this year costs **exactly ISK 600,000**. Article 39's below-threshold expensing does not apply. At an elected permitted 20% rate, first-year depreciation is **ISK 120,000**, leaving **ISK 480,000**. Separately, assume continuing-use equipment with the same original cost but opening tax value ISK 65,000: a 20% charge would be ISK 13,000, but Article 42's ISK 60,000 floor limits the charge to **ISK 5,000**. These are not disposal-year examples. [Articles 34, 36–39, 42][law]
+
+```oa-check
+name: Iceland office equipment depreciation and residual floor
+inputs:
+  original_cost: 600000
+  elected_rate: 0.20
+  later_opening_tax_value: 65000
+  residual_rate: 0.10
+steps:
+  first_depreciation: original_cost * elected_rate
+  first_closing_value: original_cost - first_depreciation
+  residual_floor: original_cost * residual_rate
+  later_uncapped_depreciation: later_opening_tax_value * elected_rate
+  later_depreciation: min(later_uncapped_depreciation, max(0, later_opening_tax_value - residual_floor))
+  later_closing_value: later_opening_tax_value - later_depreciation
+expected:
+  first_depreciation: 120000
+  first_closing_value: 480000
+  residual_floor: 60000
+  later_uncapped_depreciation: 13000
+  later_depreciation: 5000
+  later_closing_value: 60000
+```
+
+### 4. Assessment-year cash reconciliation
+
+Assume 2025 assessed public levies of ISK 5 million, eight unreduced 2026 advances paid in full, and a 2026 assessment on 2025 income of ISK 3.6 million, with no other credits or charges. Each advance is **ISK 425,000**, total **ISK 3.4 million**, leaving **ISK 200,000**. This is a payment reconciliation for the 2026 assessment cycle; it does not calculate tax on 2026 trading income or establish actual instalment dates. [Regulation, Articles 1–2][payment-reg]
+
+```oa-check
+name: Iceland 2026 assessment advances and balance
+inputs:
+  assessment_2025: 5000000
+  instalment_rate: 0.085
+  paid_instalments: 8
+  assessment_2026: 3600000
+steps:
+  each_advance: assessment_2025 * instalment_rate
+  paid_advances: each_advance * paid_instalments
+  assessment_balance: assessment_2026 - paid_advances
+expected:
+  each_advance: 425000
+  paid_advances: 3400000
+  assessment_balance: 200000
+```
+
+## Ask the client first
+
+- What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
+- Which accounts, ledgers, contracts, payroll reports, asset registers, inventory and receivable schedules reconcile to the return?
+- What dividends, share disposals, financing, FX and foreign items need distinct adjustments?
+- Which loss vintages, ownership/business changes, group approvals or reorganisations affect use of losses?
+- What filing extension, assessment, advance notices, reductions, withholding and actual payments already exist?
+- Are there regulated financial activities, foreign holdings, incentives, related parties or planned asset/company moves?
 
 <!-- openaccountants-cta-block -->
 
----
+## Talk to an accountant
 
-## Talk to a verified accountant
+For professional review of the facts and workpapers, [contact OpenAccountants](https://www.openaccountants.com/contact).
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+## Sources
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, full interest-cap/foreign-credit methods, sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Act 90/2003, Articles 2–4, 7–8, 12–61, 70–71, 90–99, 108, 112–114, 119 | [Alþingi][law] | 2026-10-23 |
+| Skatturinn, corporate income tax | [Authority guidance][corporate] | 2026-10-23 |
+| Skatturinn, 2026 rates | [Current-year rate table][rates] | 2026-10-23 |
+| Skatturinn, 2026 assessment on 2025 income | [Assessment information][assessment] | 2026-10-23 |
+| Skatturinn, RSK 1.04 filing method | [Return instructions][return] | 2026-10-23 |
+| Skatturinn, 30 January 2026 corporate filing notice | [Filing notice][filing-notice] | 2026-10-23 |
+| Regulation 1370/2025, 2026 payment cycle | [Regulation][payment-reg] | 2026-10-23 |
+| Skatturinn, corporate advance-tax guidance | [Advance payments][advances] | 2026-10-23 |
 
-## Sources and review limits
-
-Read **23 October 2026** for the two expressly labelled 2026 non-resident interest/royalty corrections only: [Income Tax Act 90/2003, Articles 3 and 70](https://www.althingi.is/lagas/nuna/2003090.html), [Skatturinn interest guidance](https://www.skatturinn.is/english/companies/interests/), and [Skatturinn royalty guidance](https://www.skatturinn.is/english/companies/royalties-lease-etc/). The remaining legacy 2025 statements, secondary-source references, corporate return dates and other scopes were not reverified by this edit. The changed date and version record these corrections, not a full current-year review. Independent legal review and professional attestation remain open.
+[law]: https://www.althingi.is/lagas/nuna/2003090.html
+[corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
+[rates]: https://www.skatturinn.is/einstaklingar/helstutolur/2026
+[assessment]: https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026/
+[return]: https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/skattframtal-rekstraradila/
+[filing-notice]: https://www.skatturinn.is/um-rsk/frettir-og-tilkynningar/opnad-fyrir-skil-a-skattframtali-logadila-2026
+[payment-reg]: https://island.is/reglugerdir/nr/1370-2025
+[advances]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/fyrirframgreidsla-thinggjalda/

@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.3
+version: 0.4
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -12,7 +12,7 @@ covered_by:
   VAT: iceland-vat
 partial:
   IT-IND: "Existing draft needs current-year primary-source and scope review."
-  IT-CORP: "Existing 2025 draft contains unresolved rate and withholding statements; no re-verification claimed."
+  IT-CORP: "2026 primary-source workpaper method added; full interest-cap, foreign-credit, sector/incentive/minimum-tax applicability, restructurings, operational and independent legal review remain open."
   VAT: "Existing draft requires current source, scope and example verification."
   SC: "Existing draft requires current source, scope and example verification."
   PR: "Existing draft requires current source, scope and example verification."
@@ -27,7 +27,7 @@ Accountable owner: Michael Cutajar. Assigned writer: ChatGPT under [OWNERS.md](.
 | Tax domain | Existing Guide | Status |
 |---|---|---|
 | Individual income tax | [Income tax](iceland-income-tax.md) | Source-cited draft; verification open |
-| Corporate income tax | [Corporate income tax](is-corporate-income-tax.md) | Source-cited draft; unresolved claims require review |
+| Corporate income tax | [Corporate income tax](is-corporate-income-tax.md) | Source-cited draft; 2026 method, stated specialist and review gaps open |
 | VAT | [VAT](iceland-vat.md) | Source-cited draft; verification open |
 | Social contributions | [Social contributions](iceland-social-contributions.md) | Source-cited draft; verification open |
 | Payroll | [Payroll](iceland-payroll.md) | Source-cited draft; verification open |
