@@ -10,13 +10,13 @@ partial:
   VAT: "Exempt sectors, input restrictions, invoices and import/export rules remain incomplete."
   SC: "Age, payer, contribution bases and nonresident exceptions need complete statutory review."
   PR: "Benefits, collection dates, reconciliation and special employment categories remain incomplete."
-  TP: "Current forms, sanctions, retention, CbCR and treaty remedies remain open."
+  TP: "Current forms, sanctions, retention, CbCR exchange eligibility and operational filing, and treaty remedies remain open."
   XB: "Treaty-specific relief, PE analysis and complete withholding procedures remain open."
 ---
 
 # Faroe Islands: tax pack
 
-Owner: Michael, per [existing issue #393](https://github.com/openaccountants/openaccountants/issues/393). Seven source-cited drafts are present locally. None establishes comprehensive domain coverage or professional attestation. The partial flags deliberately keep all seven tax domains in the report's missing-work queue.
+Owner: Michael, per [existing issue #393](https://github.com/openaccountants/openaccountants/issues/393). Eight source-cited drafts are present locally. None establishes comprehensive domain coverage or professional attestation. The partial flags deliberately keep all seven tax domains in the report's missing-work queue.
 
 | Topic | Guide | Status |
 |---|---|---|
@@ -25,12 +25,13 @@ Owner: Michael, per [existing issue #393](https://github.com/openaccountants/ope
 | VAT | [MVG](fo-vat.md) | Source-cited draft |
 | Payroll and social contributions | [Payroll](fo-payroll-contributions.md) | Source-cited draft |
 | Transfer pricing | [Controlled transactions](fo-transfer-pricing.md) | Source-cited draft |
+| Country-by-country reporting | [CbCR](fo-country-by-country-reporting.md) | Source-cited draft |
 | Cross-border | [Royalties and dividend-refund procedure](fo-cross-border-payments.md) | Source-cited draft |
 | Formation/reporting | [Company registration](fo-company-registration-reporting.md) | Source-cited draft |
 
 ## Review and remaining work
 
-The new [transfer-pricing review record](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md) and [corporate review record](../../../docs/research/2026-10-23-faroe-corporate-sources.md) identify reviewed hashes and later writer-checked additions. These are independent source/editorial reviews, not licensed professional attestations. Existing Guides retain their own scope limits; this register is not a fresh legal review of them.
+The new [transfer-pricing review record](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md) and [corporate review record](../../../docs/research/2026-10-23-faroe-corporate-sources.md) identify reviewed hashes and later writer-checked additions. The [CbCR review record](../../../docs/research/2026-10-23-faroe-cbcr-sources.md) covers the separate reporting Guide. These are independent source/editorial reviews, not licensed professional attestations. Existing Guides retain their own scope limits; this register is not a fresh legal review of them.
 
 Formation still needs capital, beneficial-ownership, audit, retention and event-filing detail. Property, succession and other applicable special regimes need a separate applicability and evidence audit. No not-applicable conclusions are asserted. Publication, ingestion and exported-content checks remain outstanding for local additions.
 
