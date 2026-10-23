@@ -4,7 +4,7 @@ description: "Source-cited draft: corporate income tax for Andorra (tax year 202
 jurisdiction: AD
 tax_year: 2025
 last_updated: 2026-10-23
-version: 0.4
+version: 0.5
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Filing and payment workpapers
 
-**Scope of this update:** filing, ordinary advance-payment, general-rate, holding-company and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including residence, base and withholding summaries, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
+**Scope of this update:** filing, ordinary advance-payment, general-rate, loss-relief, holding-company and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including residence, base and withholding summaries, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
 
 Reconcile the settlement liability before advances to the payments actually made. Under Article 46, payments under Articles 45 and 45 bis are credited to determine the balance; an excess is refundable. Property-transfer advances have their own rules, including timing of credit where income is recognised over deferred receipts, and are not computed in the examples below. [Law, Article 46](https://www.portaljuridicandorra.ad/L2010095).
 
@@ -129,11 +129,48 @@ Article 20(1)'s ordinary exemption has its own tests, including at least 5% part
 
 The transitional rules of Law 6/2018 can preserve historic treatment for part of a later gain on pre-1 July 2017 participations held under the qualifying old authorised regime. Obtain the original authorisation, acquisition date and pre-2021 gain allocation evidence before using that transition; this draft does not calculate its application. [Law 6/2018, third transitional provision reproduced with the corporate law](https://www.portaljuridicandorra.ad/L2010095).
 
+## Carried losses and the settlement floor
+
+Article 22 permits negative tax bases to offset positive tax bases of periods ending within the following **17 years**, subject to Article 43(2). Amounts not used because of that limit retain the window measured from generation; the limit does not restart the loss's expiry clock. Maintain the generation period, original amount, prior use, expiry and current eligible balance separately for each loss. This draft does not determine transitional treatment of historic losses. [Articles 22(1), 43(2)](https://www.portaljuridicandorra.ad/L2010095).
+
+The settlement liability cannot fall below **30% of the gross tax on the positive base before prior-year losses**. Where that floor binds, reduce the losses and the deductions referred to in Article 43 accordingly. It is a combined constraint, not a general permission to use 70% losses and then deduct all credits as well. For a simple company at the general rate with no deductions, the arithmetic limits loss use to 70% of the positive pre-loss base; other deductions require a combined calculation. [Article 43(1)–(3)](https://www.portaljuridicandorra.ad/L2010095).
+
+Article 22(2)'s loss restriction combines acquisition of majority capital/voting rights after the loss period, the acquiring person/entity or related group having held less than 25% at the end of that loss period, and the specified inactivity or changed/additional-activity condition. Do not describe a majority acquisition by itself as automatic loss forfeiture. Inactivity means no economic activity during the six months before acquisition. The alternative changed/additional-activity test requires both a different Andorran economic-activity classification group and the statutory turnover comparison: average annual turnover of those activities during the two post-acquisition years exceeds 50% of the entity's average annual turnover in the two preceding years. Record the ownership and activity evidence, not only the acquisition date. [Article 22(2)](https://www.portaljuridicandorra.ad/L2010095).
+
+### Example 4: available losses do not eliminate the annual liability
+
+Assume EUR 100,000 positive base before losses, EUR 90,000 eligible unexpired losses, the general 10% rate, no tax deductions and no special adjustments. Gross pre-loss tax is EUR 10,000 and the floor is EUR 3,000. Use EUR 70,000 losses, leave EUR 30,000 taxable and retain EUR 20,000 losses within their original expiry window. This example assumes ownership/activity restrictions have already been tested.
+
+```oa-check
+name: Andorra loss relief settlement floor without credits
+inputs:
+  pre_loss_base: 100000
+  available_losses: 90000
+  tax_rate: 0.10
+  floor_fraction: 0.30
+steps:
+  pre_loss_tax: pre_loss_base * tax_rate
+  liability_floor: pre_loss_tax * floor_fraction
+  maximum_loss_use: pre_loss_base * (1 - floor_fraction)
+  losses_used: min(available_losses, maximum_loss_use)
+  taxable_base: pre_loss_base - losses_used
+  settlement_liability: taxable_base * tax_rate
+  losses_remaining: available_losses - losses_used
+expected:
+  pre_loss_tax: 10000
+  liability_floor: 3000
+  maximum_loss_use: 70000
+  losses_used: 70000
+  taxable_base: 30000
+  settlement_liability: 3000
+  losses_remaining: 20000
+```
+
 ## Sources
 
 Filing/payment and selected incentive provisions read 23 October 2026:
 
-- [Law 95/2010, Articles 20, 23, 38, 41, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
+- [Law 95/2010, Articles 20, 22–23, 38, 41, 43, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
 - [Corporate-tax regulation, Articles 32, 37 and 45](https://www.portaljuridicandorra.ad/R20231229C).
 
 These citations substantiate the updated filing/payment and selected incentive sections, not every legacy incentive claim above.

@@ -21,3 +21,7 @@ Other legacy holding-company, residence/base and withholding statements still re
 Read Article 38 together with Article 20(2)'s incorporated restrictions and regulation Article 32's authorisation/reporting rules. Replaced the approximate near-zero headline with a conditional exemption. Distinguished the special regime's 40%-of-general nominal-tax test from ordinary Article 20's 50% test and its 5%/one-year participation conditions. Added property-rich gain, payer-deduction, linked-expense and loss boundaries. Read the third transition of Law 6/2018 and retained a historical-case gap rather than asserting every legacy holding now follows only current rules.
 
 No new claim of comprehensive coverage or independent review. The underlying sources remain https://www.portaljuridicandorra.ad/L2010095 and https://www.portaljuridicandorra.ad/R20231229C .
+
+## Loss relief expansion, v0.5
+
+Read current Articles 22 and 43 in full. Added the 17-year generation-based window, combined 30% settlement floor and cumulative ownership/activity restriction. The no-credit example derives 70% maximum base offset from the floor; it does not claim this remains available alongside unrestricted tax credits. Historic-loss transitions and combined-credit ordering remain open. Example: EUR 70,000 used, EUR 20,000 remaining and EUR 3,000 settlement liability. Independent review remains outstanding.
