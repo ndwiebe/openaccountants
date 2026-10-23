@@ -17,11 +17,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.1
+version: 0.2
 category: international
 ---
 
-# Finland tax overview v0.1
+# Finland tax overview v0.2
 
 ## Start with the question and the taxpayer
 
@@ -39,7 +39,7 @@ Use the existing topic Guide and its source/read-date record before applying a f
 | Income-tax payments during the year | [Prepayments](fi-prepayments.md) | The issued decision and applicable taxpayer route control. |
 | Multinational reporting | [CbCR](fi-country-by-country-reporting.md) | Threshold, filer role and notification are separate checks. |
 | Acquisition of real estate or housing-company shares | [Property-transfer tax](fi-property-transfer-tax.md) | Annual property taxation, rent and disposal gains are separate topics. |
-| Entity formation | [Formation draft](fi-company-formation.md) | Legacy 2025 coverage and unconfirmed fees/timing require a fresh PRH/legal check. |
+| Entity formation | [Formation draft](fi-company-formation.md) | Current PRH setup/fee and selected statutory checks; broader entity, accounting and specialist review remain open. |
 
 ## Workpaper handoff
 

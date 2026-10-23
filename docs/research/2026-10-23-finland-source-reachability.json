@@ -4,8 +4,8 @@
   "scope": "All unique non-CTA HTTP URLs in the Finland source pack and README. HTTP reachability does not establish the legal content or currency.",
   "base": "915c5118",
   "worktree_source_sha256": {
-    "skills/international/finland/README.md": "48c24b643f3070017d6dce9341f46c9ca4e394cb52043e2f13b960620f27c357",
-    "skills/international/finland/fi-company-formation.md": "87b4215b90bac105ed2b1ca9ac35fb534c9d8bda5e580e4e127134be23546b1d",
+    "skills/international/finland/README.md": "efc0d4676953c10127e2c142c7be525154455f22beddb0cb58ecaf1d65c0da7e",
+    "skills/international/finland/fi-company-formation.md": "4fb7ee85bf63bc2980c4caa8ffbb1e68f6e70975cb5bd3260cc16688042761b6",
     "skills/international/finland/fi-corporate-income-tax.md": "f2dbe58736cc091c1d0fe11dccd0556f2819c44b4728e01a4595c8d1b8e04eb3",
     "skills/international/finland/fi-country-by-country-reporting.md": "0455d4c5e8a14a10cdfe78f0403624451378065c17b66e821b80be5a938fbdd3",
     "skills/international/finland/fi-employer-payroll.md": "4167634ac012469489949ca6b4d2db07908fb4cfb225a7c84f7e43e964a5a5d3",
@@ -13,7 +13,7 @@
     "skills/international/finland/fi-individual-cross-border-residence.md": "fd7c92866b6ec7cec837ffe39ebf000fb2a621511d8a817ab89880f49ec83a66",
     "skills/international/finland/fi-prepayments.md": "e06de60c74430fbdb5acd21849f8f59280f1a93b4ff6145cc1a19e2383ec4e7c",
     "skills/international/finland/fi-property-transfer-tax.md": "8eaf1450ada0eacad572612c58142e10191a4dc0430b26578d00454de7d980da",
-    "skills/international/finland/fi-tax-overview.md": "8d6a3755ddcafb3ac8acf16e8fc4242e26853b3c4841e0b67e3005c387977ffa",
+    "skills/international/finland/fi-tax-overview.md": "92c6e28cf1adefd7de61f7ed4c7423e8070937c4d28fa189d34ab6b0f4426def",
     "skills/international/finland/fi-transfer-pricing.md": "787ea1e5551c3fedb33088fd4dbb43e15d3b834d4724dd11ba6eaedf24c24a4f",
     "skills/international/finland/fi-yel-social.md": "4506d949319eae55a59217d3b23a37891934d03b9513082adbc639debf67d19e",
     "skills/international/finland/finland-vat-return.md": "22619b1427e4723c88e8cceb61941b667fd6b865a026bf4e69bc59e87d1d3c87"
@@ -209,6 +209,20 @@
       "checked_at_utc": "2026-10-23T18:10:03.178339+00:00"
     },
     {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2006/624",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/2006/624",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
+      "url": "https://www.finlex.fi/fi/lainsaadanto/2015/1141",
+      "status": 200,
+      "final_url": "https://www.finlex.fi/fi/lainsaadanto/2015/1141",
+      "content_type": "text/html; charset=utf-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
       "url": "https://www.finlex.fi/fi/lainsaadanto/2025/1140",
       "status": 200,
       "final_url": "https://www.finlex.fi/fi/lainsaadanto/2025/1140",
@@ -237,11 +251,39 @@
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     },
     {
-      "url": "https://www.prh.fi/en/kaupparekisteri.html",
+      "url": "https://www.prh.fi/en/companiesandorganisations/financial_statements/limited_liability_companies_co-operatives_and_other_companies/digital.html",
       "status": 200,
-      "final_url": "https://www.prh.fi/en/kaupparekisteri.html",
+      "final_url": "https://www.prh.fi/en/companiesandorganisations/financial_statements/limited_liability_companies_co-operatives_and_other_companies/digital.html",
       "content_type": "text/html; charset=UTF-8",
-      "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
+      "url": "https://www.prh.fi/en/companiesandorganisations/muutokset_rekisteritietoihin/yleisohje.html",
+      "status": 200,
+      "final_url": "https://www.prh.fi/en/companiesandorganisations/muutokset_rekisteritietoihin/yleisohje.html",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
+      "url": "https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html",
+      "status": 200,
+      "final_url": "https://www.prh.fi/en/companiesandorganisations/ulkomaalaisluvat.html",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
+      "url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html",
+      "status": 200,
+      "final_url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
+    },
+    {
+      "url": "https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/financial-statements-submitted-late-27.5.2026.html",
+      "status": 200,
+      "final_url": "https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/financial-statements-submitted-late-27.5.2026.html",
+      "content_type": "text/html; charset=UTF-8",
+      "checked_at_utc": "2026-10-23T18:17:01.966786+00:00"
     },
     {
       "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/insure-your-self-employment/",
@@ -664,6 +706,6 @@
       "checked_at_utc": "2026-10-23T17:55:07.942001+00:00"
     }
   ],
-  "snapshot_note": "Earlier checked URLs retained with their timestamps; new statutory URLs checked directly after the legal-source pass. All source hashes reflect this worktree.",
-  "expanded_at_utc": "2026-10-23T18:10:03.178339+00:00"
+  "snapshot_note": "Earlier checked URLs retained with their timestamps. New formation URLs checked directly; removed legacy-only links are excluded. Source hashes match this worktree.",
+  "expanded_at_utc": "2026-10-23T18:17:01.966786+00:00"
 }
