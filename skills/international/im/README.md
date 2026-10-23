@@ -1,6 +1,6 @@
 ---
 jurisdiction: IM
-version: 0.1
+version: 0.2
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -15,7 +15,7 @@ partial:
   SC: "Shared legacy payroll/social draft; current-year verification open."
   PR: "Shared legacy payroll/social draft; current-year verification open."
   TP: "No dedicated Guide; domestic related-party, treaty and reporting applicability must be established before any not-applicable conclusion."
-  XB: "New individual non-resident draft; residence, treaties, companies, PE, credits, statutes and independent review open."
+  XB: "Individual non-resident draft includes UK pension treaty screening; domestic residence, other treaties, companies, PE, credits, statutes and independent review open."
 ---
 
 # Isle of Man tax pack

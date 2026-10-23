@@ -10,10 +10,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Isle of Man non-resident individual income tax v0.1
+# Isle of Man non-resident individual income tax v0.2
 
 ## Who this applies to
 
@@ -66,7 +66,23 @@ This is an employer withholding instruction, not a conclusion that every payment
 
 R221 is the authority's route described for residents of a treaty jurisdiction whose agreement provides relevant pension relief. A foreign address alone is insufficient. Verify the actual agreement, income article, residence evidence and relief decision before treating a pension as exempt. [Making payments][payments]
 
-For the UK corridor, HMRC lists the 2018 agreement as in force and the previous 1955 arrangement as terminated. Its collection includes later exchange-of-letters and memorandum material. This draft does not provide a treaty-rate table or conclude that a particular pension qualifies; use the applicable current text and related instruments. [HMRC treaty collection][uk]
+For the UK corridor, HMRC lists the 2018 agreement as in force and the previous 1955 arrangement as terminated. Its collection includes later exchange-of-letters and memorandum material. The following section develops the UK pension route only; other treaty corridors remain unverified. [HMRC treaty collection][uk]
+
+### UK corridor: residence and pension classification
+
+Under Article 4(1), treaty residence depends on liability to tax by a residence-type criterion; source-only liability is insufficient. For an individual resident in both territories, Article 4(2) considers permanent home, then centre of vital interests if a home exists in both, then habitual abode where required. If habitual abode is in both or neither, the competent authorities resolve the case by agreement. Do not insert a nationality tie-breaker that this text does not contain. Preserve the residence evidence before applying the pension article. [2018 agreement, Article 4][treaty]
+
+Article 17 assigns pensions and similar remuneration to the individual's treaty-residence territory only, **subject to Article 18**. Thus a Manx ordinary pension paid to an eligible UK treaty-resident individual falls within UK-only taxing rights under Article 17, once classification and entitlement are established. This allocates taxing rights; it does not determine the UK taxable amount or make the pension tax-free everywhere. Use the R221 application process and obtain the relevant deduction/relief instruction rather than independently stopping withholding. [Article 17][treaty]; [Making payments][payments]
+
+Article 18 contains a separate government-service rule. For remuneration including pensions paid by one government for services discharging governmental functions, the exemption in the other territory depends on ordinary residence there. For remuneration other than a pension, it also addresses residence solely to render those services. It excludes payments for services connected with a government's profit-making trade or business. Record the actual government payer, former duties, ordinary-residence facts and any commercial activity; do not use a standard “government pension always taxable only at source” shortcut. A case outside the stated exemption needs a separate domestic-law and treaty analysis. [Article 18][treaty]
+
+Article 23 denies benefits where obtaining them was one of an arrangement's principal purposes, unless granting them accords with the relevant treaty provisions' object and purpose. Its competent-authority relief mechanism requires a request and assessment; residence documentation alone does not resolve every entitlement question. [Article 23][treaty]
+
+### Disputed treaty treatment
+
+Article 25(1) permits presenting a case to either competent authority within **three years of the first notification** of the action producing treaty-inconsistent taxation, independently of domestic remedies. Record that notification and protect domestic appeal deadlines separately. This Guide does not establish that a treaty request suspends payment or collection. [Article 25][treaty]
+
+The 2024 memorandum governs the treaty's arbitration procedure. A request must identify the case and include statements about prior court or tribunal decisions. Its information requirements cover parties, relevant treaty provisions, facts, periods, amounts, analysis and supporting correspondence. This is not an automatic refund process; the full timing and admissibility conditions require case-specific review. [2024 memorandum, Parts 1–2][mou]
 
 ## Worked examples
 
@@ -104,6 +120,24 @@ expected:
   reconciled_payment: 2000
 ```
 
+### 3. Pension deduction pending accepted treaty relief
+
+Assume a UK treaty-resident individual receives GBP 12,000 of ordinary Manx pension, Article 17 applies, Article 18 does not, and entitlement is accepted after GBP 2,520 has been withheld at 21%. The Manx tax under the assumed treaty conclusion is zero, so the amount to reconcile in the relief/repayment application is GBP 2,520. UK liability is a separate calculation. This example does not assume that filing R221 itself produces approval or payment.
+
+```oa-check
+name: Isle of Man UK ordinary pension relief reconciliation
+inputs:
+  gross_pension: 12000
+  rate_used_before_relief: 0.21
+  accepted_manx_treaty_tax: 0
+steps:
+  tax_previously_withheld: gross_pension * rate_used_before_relief
+  amount_to_reconcile_for_repayment: tax_previously_withheld - accepted_manx_treaty_tax
+expected:
+  tax_previously_withheld: 2520
+  amount_to_reconcile_for_repayment: 2520
+```
+
 ## Ask the client first
 
 - What establishes non-residence, and on what dates did residence change?
@@ -119,7 +153,7 @@ Read 23 October 2026. The rates, budget, receiving-income, departure and employm
 - [Current and historical rates][rates]; [Budget 2026][budget].
 - [Receiving Manx-source income][receiving]; [Leaving the Island][leaving].
 - [Making payments to non-residents][payments]; [Non-resident employees][employment].
-- [HMRC Isle of Man treaty collection][uk].
+- [HMRC Isle of Man treaty collection][uk]; [2018 agreement, Articles 4, 17, 18, 23 and 25][treaty]; [2024 arbitration memorandum][mou]. The treaty text was retrieved from legislation.gov.uk and cross-checked against HMRC's PDF.
 
 Not yet confirmed: residence tests, statutory amendment chain, detailed deductions, additional sanctions and payment deadlines, live forms, treaty-by-treaty entitlement, company/PE rules, foreign-tax credits and wider reporting. Cross-border country coverage remains partial. Existing corporate withholding summaries must not be used to infer individual treatment.
 
@@ -130,3 +164,6 @@ Not yet confirmed: residence tests, statutory amendment chain, detailed deductio
 [payments]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/individuals/non-residents/making-payments-to-non-residents?iomg-device=Mobile
 [employment]: https://www.gov.im/categories/tax-vat-and-your-money/income-tax-and-national-insurance/employers/further-information-for-employers/non-resident-employees/?iomg-device=Mobile
 [uk]: https://www.gov.uk/government/publications/isle-of-man-tax-treaties
+
+[treaty]: https://www.legislation.gov.uk/uksi/2018/1347/made
+[mou]: https://www.gov.uk/government/publications/isle-of-man-tax-treaties/2024-uk-isle-of-man-memorandum-of-understanding-in-force
