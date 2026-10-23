@@ -16,10 +16,10 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.1
+version: 0.2
 ---
 
-# Iceland transfer pricing v0.1
+# Iceland transfer pricing v0.2
 
 ## Who this applies to
 
@@ -187,7 +187,7 @@ For help with the facts and professional review, [contact OpenAccountants](https
 
 ## Sources
 
-Read **23 October 2026**. The Icelandic statute and consolidated regulations are controlling sources for this draft. The regulations were retrieved directly as HTML after the web reader returned access errors; 1180/2014 includes the displayed 1156/2017 amendment, and 766/2019 includes 413/2022. Independent Icelandic-language legal review, current filing-system verification, detailed litigation review and professional attestation remain open. All figures used in examples other than identified legal thresholds/fines are invented assumptions.
+Read **23 October 2026**. The Icelandic statute and consolidated regulation reproductions are the legal sources used for this draft. The regulation website states that the official B-section Gazette publication prevails if its reproduction differs; that publication comparison remains open. The regulations were retrieved directly as HTML after the web reader returned access errors; 1180/2014 includes the displayed 1156/2017 amendment, and 766/2019 includes 413/2022. Independent Icelandic-language legal review, current filing-system verification, detailed litigation review and professional attestation remain open. All figures used in examples other than identified legal thresholds/fines are invented assumptions.
 
 | Official source | URL | Read on |
 |---|---|---|

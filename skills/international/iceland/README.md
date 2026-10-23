@@ -1,9 +1,14 @@
 ---
 jurisdiction: IS
-version: 0.1
+version: 0.2
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+covered_by:
+  TP: is-transfer-pricing
+  SC: iceland-social-contributions
+  PR: iceland-payroll
+  VAT: iceland-vat
 partial:
   IT-IND: "Existing draft needs current-year primary-source and scope review."
   IT-CORP: "Existing 2025 draft contains unresolved rate and withholding statements; no re-verification claimed."
