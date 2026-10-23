@@ -1,5 +1,7 @@
 ---
 jurisdiction: XK
+version: 0.2
+last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -11,7 +13,7 @@ partial:
   VAT: "Existing Guide needs current-year source and full scope review."
   SC: "Existing Guide needs current-year source and full scope review."
   PR: "Existing Guide needs current-year source and full scope review."
-  TP: "Dedicated controlled-transaction methods, documentation and compliance Guide missing."
+  TP: "New TP draft; full instruction, current procedures, enforcement and independent review remain open."
   XB: "Dedicated PE, treaty, withholding and foreign-tax relief Guide missing."
 ---
 
@@ -26,7 +28,7 @@ Accountable owner: Michael, [issue #430](https://github.com/openaccountants/open
 | VAT | [VAT](kosovo-vat.md) | Existing source-cited draft; review outstanding |
 | Payroll | [Payroll](kosovo-payroll.md) | Existing source-cited draft; review outstanding |
 | Social contributions | [Contributions](kosovo-social-contributions.md) | Existing source-cited draft; review outstanding |
-| Transfer pricing | Missing | Corporate summary does not complete this domain |
+| Transfer pricing | [Transfer pricing](xk-transfer-pricing.md) | Scoped draft; instruction and review gaps open |
 | Cross-border | Missing | Corporate summary does not complete this domain |
 
 The existing tax-optimization Guide is supplementary and does not substitute for missing tax domains. All seven domains remain partial pending scope, source and review acceptance. Formation, property and other applicable compliance topics require a separate audit; no not-applicable conclusions are asserted. Publication, ingestion and professional attestation remain separate requirements.
