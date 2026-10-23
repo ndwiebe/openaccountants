@@ -6,7 +6,7 @@ description: >
   filing, separate pension deadlines and A1 evidence. Use for payroll social
   costs, pension deductions, employer pension, seamen and contribution
   remittance reconciliation. Includes source conflicts and recomputable cases.
-version: 0.4
+version: 0.5
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -19,7 +19,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland social contributions and mandatory pension v0.3
+# Iceland social contributions and mandatory pension v0.5
 
 **Source-cited draft.** Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension. It produces contribution workpapers for professional review; it carries no Icelandic accountant attestation. The [payroll Guide](iceland-payroll.md) handles income-tax withholding and net pay. Sources were read on 23 October 2026; the linked statutes are Alþingi's 1 October 2026 compilation.
 
@@ -221,4 +221,4 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 | [Collection guidance](https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/) | No levy daily surcharge; administrative date conflict | 2026-10-23 |
 | [Annual wage reporting](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/) | Pension in levy base, separate foreign wages, return-year scope | 2026-10-23 |
 | [Calculated remuneration 2026](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026) | Current remuneration determination; fetch the live category before use | 2026-10-23 |
-| [Financial activities remuneration tax, Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) | 2026-10-23 |
+| [Financial activities remuneration tax, Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) | Separate financial-sector scope and remuneration base | 2026-10-23 |
