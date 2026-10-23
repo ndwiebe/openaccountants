@@ -9,21 +9,22 @@ description: >
   payments. Includes the separately identified 2026 filing cycle for 2025
   income. Use for ehf., hf., taxable partnerships, RSK 1.04 and annual tax
   reconciliations and approved research/development credits, cost ceilings and
-  public-aid limits. Sector taxes, foreign credits, restructurings, some financial
+  public-aid limits, and the stated financial-sector remuneration, additional
+  profit and bank-liability taxes. Other sector taxes, foreign credits, restructurings, some financial
   instruments and independent Icelandic legal review require further work;
   this source-cited draft is not comprehensive country coverage.
 jurisdiction: IS
 category: international
 tax_year: 2026
 last_updated: 2026-10-23
-version: 0.6
+version: 0.7
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland corporate income tax v0.6
+# Iceland corporate income tax v0.7
 
 ## Who this applies to
 
@@ -52,9 +53,12 @@ Amounts are ISK. The rates below concern the ordinary statutory computation, bef
 | Purchased R&D sublimit | 20% of the statutory ceiling, calculated as 220,000,000; supplier/project conditions also apply | [Article 10(5)][rd-law] |
 | Special small-enterprise project approval | A project with planned annual cost no greater than 125,000,000 can receive two-year approval, subject to the statutory plans/report | [Article 9, amended by Act 27/2026][rd-law] |
 | Ordinary domestic group-tax ownership screen | At least 90%, with approval and further conditions | [Article 55][law] |
+| Financial activities remuneration tax | 5.5% of the supported Articles 4–5 base, including employer pension contributions before applicable exclusions | [Act 165/2011, Articles 4–6][fat-law]; [2026 employer notice][fat-notice] |
+| Additional financial activities income tax | 6% of the applicable stand-alone base above 1,000,000,000, without group taxation or brought-forward losses | [Income Tax Act Article 71(3)][law] |
+| Special tax on financial institutions' liabilities | 0.145% of the applicable year-end tax-return liabilities above 50,000,000,000, subject to the Act's own scope and exceptions | [Act 155/2010, Articles 2–4][bank-law] |
 | 2026 assessment-year advances | 8.5% of 2025 assessed public levies at each due date; current guidance describes eight February–September payments totalling 68% | [Regulation 1370/2025, Articles 1–2][payment-reg]; [Advance-tax guidance][advances] |
 
-Article 71(3) also imposes a separate 6% financial-activity tax on the defined in-scope taxpayers' base above ISK 1 billion, without group taxation or brought-forward losses for that calculation. This is a screening flag, not a complete sector-tax method. The 2024 exceptional 21%/38.4% ordinary rates in transitional provision LXXVI do not replace the 2026 rates. [Article 71(3), transitional provision LXXVI][law]
+The three financial-sector charges in the table are separate computations; the method below establishes their scope, bases and reconciliation. It does not cover every regulatory charge or transaction-specific financial instrument. The 2024 exceptional 21%/38.4% ordinary rates in transitional provision LXXVI do not replace the 2026 rates. [Article 71(3), transitional provision LXXVI][law]
 
 ## The base
 
@@ -171,6 +175,20 @@ For a single supported project below the cost ceiling, compare the nominal credi
 
 The credit reduces **assessed tax**, after the ordinary taxable-profit computation; do not deduct the credit again as an expense. Eligible underlying costs follow the ordinary tax rules once. Article 11 provides for the excess credit to be paid when it exceeds assessed income tax or there is a tax loss, subject to public-debt setoff. Regulation Article 8 orders the offsets before any cash balance, so a calculated refund is not a promised payment date or bank receipt. [Articles 10–11][rd-law]; [Regulation, Articles 7–8][rd-reg]
 
+### 10. Financial-sector taxes: scope and three separate bases
+
+**First determine each charge independently.** Act 165/2011 Articles 2–3 cover the specified insurers, financial/e-money/fund-management undertakings, other operators supplying the stated VAT-exempt financial services, and relevant foreign branches/representatives, with the statutory public-body exception. A non-bank financial-services operator cannot dismiss the remuneration tax merely because it lacks a banking licence. The bank-liability tax has the narrower and separate permissions/winding-up tests in Act 155/2010 Article 2. Keep licences, actual service classification, branch status, public ownership/statutory role and any exemption decision in the scope file. [Act 165/2011, Articles 2–3][fat-law]; [Act 155/2010, Article 2][bank-law]
+
+**A. Remuneration tax, fjársýsluskattur.** Reconcile cash pay, fees, director/committee remuneration, calculated remuneration, taxable benefits and the other Article 4 items. Employer pension contributions are expressly in the base; do not reduce it by the employee's personal pension deduction or assume only cash salary is taxed. Test Article 5 separately for pension payments, amounts attributable to the taxpayer's VAT-taxable activity outside the specified exempt financial services, and the maternity-leave payment portion reimbursed by the fund. Preserve evidence for the actual excluded cost; a VAT turnover ratio is not automatically a wage allocation. Apply **5.5%** to the supported remaining base. [Act 165/2011, Articles 4–6][fat-law]
+
+Keep taxable/exempt operations separate in the ledger and financial-activities return and retain the records for **seven years** from the accounting-year end. Under Article 15, this remuneration tax is an ordinary deductible operating cost **only to the extent** calculated on wages that themselves qualify under Income Tax Act Article 31. Where book profit already includes that deductible charge, do not deduct it again in the tax bridge. These are employer charges, separate from employee PAYE and the social-contribution method. [Act 165/2011, Articles 14–15][fat-law]; [Payroll](iceland-payroll.md); [Social contributions](iceland-social-contributions.md)
+
+**B. Additional income tax, sérstakur fjársýsluskattur.** Prepare a second Article 61(2) income-tax-base reconciliation for the Article 71(3) charge. Disregard group taxation and brought-forward losses when determining this base; an ordinary CIT loss offset does not itself reduce it. Apply **6% only to the excess over 1 billion**. Show this charge alongside ordinary CIT, not as a universal 26% rate on all income. Do not treat income-tax payments as deductible operating expenses or deduct this tax from its own base. Resolve unusual instrument, exemption or taxpayer-status questions from their specific provisions before finalising. [Income Tax Act, Articles 31, 61(2) and 71(3)][law]
+
+**C. Liability tax, sérstakur skattur á fjármálafyrirtæki.** For an in-scope institution, reconcile year-end liabilities to the tax-return amount under Income Tax Act Article 75. The base is the amount **above 50 billion**, and the rate is **0.145%**. Act 155/2010 Article 3 prohibits netting assets and liabilities within items or categories; net assets are not this tax base. Winding-up cases instead use the specified admitted-claims measure. Test Article 2's exemptions and transitional II's qualifying currency-reserve adjustment separately; do not deduct a general accounting reserve as that exception. [Act 155/2010, Articles 2–4 and transitional II][bank-law]
+
+This liability tax is **not deductible** as operating expenditure under Act 155/2010 Article 6. If book profit before income tax includes it as an expense, add it back in the ordinary CIT bridge and the corresponding additional-profit-tax reconciliation. This differs from the conditional wage-cost deduction for the 5.5% remuneration tax. Preserve three distinct schedules and payment-credit balances rather than combining the percentages. [Act 155/2010, Article 6][bank-law]; [Act 165/2011, Article 15][fat-law]; [Income Tax Act, Article 71(3)][law]
+
 ## Deadlines and filing
 
 ### Return and assessment workflow
@@ -190,6 +208,14 @@ New-project applications reach Rannís by **1 October** for the application year
 The 2026 amendment permits the stated small-company two-year approval with both years' plans and a first-year progress report. Obtain the actual approval rather than treating every small project as automatically covered for two years. Current statutory processing time is **three months**; the older regulation reproduction still says two months, so do not promise that older interval. Approval does not settle the tax authority's cost/aid calculation. [Articles 8–9][rd-law]; [Amendment, Articles 4–5][rd-amendment]; [Handbook, pages 3 and 6–8][rd-handbook]
 
 Prepare a separate signed cost statement and **RSK 4.21 for each project**, with **RSK 4.22** for cooperation and reconciled participant shares. The statutory signatory is an auditor, examiner or recognised bookkeeper. The handbook links a 2026 RSK 4.21 and a 2025-labelled RSK 4.22: these establish the published layout, not the accepted 2027 form for 2026 income. In particular, the older 4.21 explanation's land-financing wording must not override the current Act's financing-cost exclusion. Confirm current-year forms and upload acceptance before filing; retain the submission and assessment evidence. [Article 10][rd-law]; [Handbook, pages 7–8 and 11][rd-handbook]; [Published RSK 4.21][rd-form]; [Published RSK 4.22][rd-coop-form]
+
+### Financial-sector reporting and payment
+
+For remuneration tax, Act 165/2011 Article 7 requires notification **at least eight days before activity starts**. Article 8 makes each calendar month a payment period, due on the **first of the next month**, with final payment **fourteen days later**. Submit the authority's required statement and reconcile the monthly tax with the annual financial-activities return due within the applicable income-tax-return deadline. Allocate calculated remuneration across periods under Article 10 unless the records demonstrate the different actual split. Keep an annual reconciliation to wages, returns, payments and assessment. [Act 165/2011, Articles 7–11][fat-law]
+
+The Act gives separate annual due dates for specified benefit/non-withheld amounts: **1 June for individuals and 1 November for legal entities**, with final payment one month later. This is not permission to defer ordinary monthly remuneration tax. Correct an omission by the original payment periods under Article 11 rather than assigning all arrears to the annual date. Confirm applicable calendar shifts and the issued notice. [Act 165/2011, Articles 10–11][fat-law]
+
+For the **2026 assessment on 2025 income/year-end liabilities**, Regulation 1370/2025 Article 2 expressly includes additional financial activities tax and bank-liability tax alongside ordinary CIT in the advance public levies. The authority describes eight 8.5% advances and settlement against the assessment. Keep those payment-year credits separate from the 2026-income computation; do not reuse the 2012 launch notice's transitional advance timetable or infer the unissued 2027 timetable. The existing final-date conflict and reduction conditions below remain relevant. [Regulation, Articles 1–4][payment-reg]; [Advance guidance][advances]; [2026 assessment][assessment]
 
 ### Payment-year reconciliation
 
@@ -214,13 +240,15 @@ Article 114 links assessment late interest to the Central Bank rate. Regulation 
 
 For R&D overstatement, Article 12 permits a **25% surcharge on the reduction of the credit**, not 25% of all project costs. Its no-fault and criminal-case exceptions must be considered; this is not an automatic charge in every correction. Article 5 permits approval revocation for materially false/misleading application information, reaching the current and preceding two income years. False/fabricated claims also require the separate Article 15a criminal-law analysis. [Articles 5, 12 and 15a][rd-law]
 
+For remuneration tax unpaid by the monthly final date, Act 165/2011 Articles 8 and 11 provide default interest from the original due date. Article 9 imports the Withholding Act only as applicable and **expressly excludes Article 28(2)(1)'s daily surcharge**. Do not add the ordinary PAYE 1%-per-day/10%-cap charge to this tax. Assessment/information/sanction rules also require Articles 10–13; criminal penalties are not an automatic payroll calculation. The bank-liability tax uses Act 155/2010 Article 5's separate reference to the Income Tax Act's assessment, collection and sanction chapters. [Act 165/2011, Articles 8–13][fat-law]; [Act 155/2010, Article 5][bank-law]
+
 ## Cross-border points
 
 Resident worldwide income still needs treaty and foreign-tax-relief analysis. Article 119 permits an application-based reduction where no double-tax treaty exists and the statutory conditions apply; it is not automatic dollar-for-dollar credit. Use the [resident foreign-income relief workpaper](is-cross-border.md) for country/category matching, tax attribution and the conditional current-UK credit example. Other treaty-specific limitations and exemption methods still need the actual treaty analysis. Company/asset migration now has a statutory computation and payment workpaper in the [cross-border Guide](is-cross-border.md); do not treat a qualifying move as automatically tax-free. [Articles 2, 119][law]
 
 For non-resident payments, preserve the [cross-border Guide](is-cross-border.md)'s distinctions: Article 70 national rates include 20% for the relevant company service/dividend categories, **22% for Article 3(6) royalties**, and **12% for taxable corporate interest**, before exclusions/treaty relief. Do not apply ordinary resident CIT to every gross cross-border receipt. [Articles 3, 70][law]
 
-Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. The R&D method above includes the foreign-supplier and foreign-public-aid screens; territory alone does not establish purchase eligibility. Other sector taxes/incentives, financial instruments and any applicable group minimum-tax regime still need their own applicability audit; this ordinary computation does not establish their absence.
+Screen foreign holdings under Article 57a, related-party transactions under Article 57, CbC reporting under Article 91a, and migration/restructuring under Articles 51–56a. These screens require their own evidence and computations. The R&D method above includes the foreign-supplier and foreign-public-aid screens; territory alone does not establish purchase eligibility. The stated financial-sector scope includes relevant foreign branches, but an actual branch still needs liability/attribution evidence. Other sector taxes/incentives, financial instruments and any applicable group minimum-tax regime still need their own applicability audit; this ordinary computation does not establish their absence.
 
 ## Worked examples that recompute
 
@@ -492,6 +520,77 @@ expected:
   surcharge: 375000
 ```
 
+### 12. Financial remuneration tax includes employer pension
+
+Assume an in-scope employer has 100 million gross cash remuneration, 11.5 million employer pension contributions and 2 million taxable benefits. Evidence supports excluding 20 million of that combined remuneration base because it relates to the employer's VAT-taxable non-financial operations; there are no other exclusions. The remaining **93.5 million** base gives **5,142,500** financial activities tax at 5.5%. The assumed pension amount is a supported case input; it does not establish every employee's pension contract. [Act 165/2011, Articles 4–6][fat-law]
+
+```oa-check
+name: Iceland financial remuneration tax includes pension and proved exclusion
+inputs:
+  gross_cash_pay: 100000000
+  employer_pension: 11500000
+  taxable_benefits: 2000000
+  proved_vat_taxable_activity_exclusion: 20000000
+  financial_remuneration_rate: 0.055
+steps:
+  - remuneration_before_exclusions: gross_cash_pay + employer_pension + taxable_benefits
+  - financial_tax_base: remuneration_before_exclusions - proved_vat_taxable_activity_exclusion
+  - financial_remuneration_tax: financial_tax_base * financial_remuneration_rate
+expected:
+  remuneration_before_exclusions: 113500000
+  financial_tax_base: 93500000
+  financial_remuneration_tax: 5142500
+```
+
+### 13. Bank-liability tax: gross debts and exact threshold
+
+Assume an in-scope institution has established tax-return year-end liabilities of 60 billion, assets of 55 billion, no reserve adjustment and no exemption. Assets are **not** netted against debt: taxable excess is **10 billion** and the charge is **14.5 million**. At exactly 50 billion of qualifying liabilities, the excess and charge are zero. This does not establish a winding-up claim balance or allow a consolidation/netting shortcut. [Act 155/2010, Articles 2–4][bank-law]
+
+```oa-check
+name: Iceland bank liabilities charge without asset netting
+inputs:
+  tax_return_liabilities: 60000000000
+  threshold: 50000000000
+  rate: 0.00145
+steps:
+  - excess_debts: max(0, tax_return_liabilities - threshold)
+  - bank_liability_tax: excess_debts * rate
+  - exact_threshold_tax: max(0, threshold - threshold) * rate
+expected:
+  excess_debts: 10000000000
+  bank_liability_tax: 14500000
+  exact_threshold_tax: 0
+```
+
+### 14. Separate ordinary and additional income-tax bases
+
+Assume an in-scope resident limited company has 1.2 billion book profit before income taxes. That profit already expenses 14.5 million bank-liability tax and a proved deductible financial-remuneration tax; the only book-to-tax adjustment is the **14.5-million add-back**. Assume 300 million qualifying prior-year trading losses, no group adjustment, no credits and no other restriction. Current income-tax base before those losses is **1,214.5 million**. Ordinary CIT at 20% on 914.5 million is **182.9 million**. The separate 6% charge ignores brought-forward losses and applies to 214.5 million above its billion threshold, giving **12.87 million**; total income taxes are **195.77 million**. The liability tax itself remains a distinct charge. [Act 155/2010, Article 6][bank-law]; [Act 165/2011, Article 15][fat-law]; [Income Tax Act, Articles 31, 61 and 71][law]
+
+```oa-check
+name: Iceland financial profit tax ignores prior loss and adds back bank tax
+inputs:
+  book_profit_before_income_taxes: 1200000000
+  expensed_bank_liability_tax: 14500000
+  eligible_prior_losses: 300000000
+  ordinary_cit_rate: 0.20
+  additional_threshold: 1000000000
+  additional_rate: 0.06
+steps:
+  - current_tax_base_before_prior_loss: book_profit_before_income_taxes + expensed_bank_liability_tax
+  - ordinary_cit_base: max(0, current_tax_base_before_prior_loss - eligible_prior_losses)
+  - ordinary_cit: ordinary_cit_base * ordinary_cit_rate
+  - additional_profit_base: max(0, current_tax_base_before_prior_loss - additional_threshold)
+  - additional_profit_tax: additional_profit_base * additional_rate
+  - combined_income_taxes: ordinary_cit + additional_profit_tax
+expected:
+  current_tax_base_before_prior_loss: 1214500000
+  ordinary_cit_base: 914500000
+  ordinary_cit: 182900000
+  additional_profit_base: 214500000
+  additional_profit_tax: 12870000
+  combined_income_taxes: 195770000
+```
+
 ## Ask the client first
 
 - What are the entity's legal form, separate-taxpayer election, residence/management, accounting year and approved currency?
@@ -500,6 +599,7 @@ expected:
 - Which loss vintages, ownership/business changes, group approvals or reorganisations affect use of losses?
 - What filing extension, assessment, advance notices, reductions, withholding and actual payments already exist?
 - Are there regulated financial activities, foreign holdings, incentives, related parties or planned asset/company moves?
+- For financial-sector taxes, what actual licences/services and exemptions apply, which wage/benefit/pension allocations support the remuneration base, what stand-alone profit base precedes losses, and which year-end tax-return liabilities and payment notices reconcile to the separate charges?
 - For R&D, who owns and funds the project, what timely approval covers the year, what enterprise-size/group evidence applies, and which signed cost statements, supplier-country/relationship records, collaboration terms and domestic/foreign public grants reconcile to the claim?
 
 <!-- openaccountants-cta-block -->
@@ -510,7 +610,7 @@ For professional review of the facts and workpapers, [contact OpenAccountants](h
 
 ## Sources
 
-Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
+Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regulation 1370/2025 was retrieved directly as HTML; its page states that the official Gazette prevails over its reproduction. The primary-source rewrite replaces the former short 2025 summary while preserving its file identity and attribution. This is a source-cited draft, not professional attestation. Independent Icelandic legal review, the negative-profit interest-cap boundary, CFC timing/substance disputes and foreign-relief cases outside the shared workpaper, other sector/incentive/minimum-tax applicability, restructurings and current filing-system verification remain open. The financial-sector addition supplies the stated three-charge computation and reporting method; disputed classifications, foreign-branch attribution, reserve/winding-up exceptions and actual submission acceptance still need their evidence and independent review. The added R&D method uses the current 2026 amendment and August 2026 handbook; enterprise-size boundaries, overlapping aid/cost limits and accepted future-year claim forms require the stated evidence and independent review. The 2027 filing/payment timetable is not established by the 2026 notices. Example amounts are invented assumptions.
 
 | Source | URL | Read on |
 |---|---|---|
@@ -535,6 +635,10 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 | Skatturinn, published RSK 4.21 (2026 return) and RSK 4.22 (2025 label) | [4.21][rd-form]; [4.22][rd-coop-form] | 2026-10-23 |
 | European Commission, SME definition and group-data warning | [Definition][rd-sme] | 2026-10-23 |
 
+| Act 165/2011, financial remuneration tax scope, bases, exclusions, collection and deduction | [Current statute][fat-law] | 2026-10-23 |
+| Act 155/2010, bank-liability scope/base/rate and nondeductibility | [Current statute][bank-law] | 2026-10-23 |
+| Skatturinn, January 2026 employer notice, financial remuneration rate | [Dated notice][fat-notice] | 2026-10-23 |
+
 [law]: https://www.althingi.is/lagas/nuna/2003090.html
 [corporate]: https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tekjuskattur/
 [rates]: https://www.skatturinn.is/einstaklingar/helstutolur/2026
@@ -552,3 +656,7 @@ Read **23 October 2026**. Statutes display the 1 October 2026 compilation. Regul
 [rd-form]: https://www.skatturinn.is/media/rsk04/rsk_0421_2026.is.pdf
 [rd-coop-form]: https://www.skatturinn.is/media/rsk04/rsk_0422_2025.is.pdf
 [rd-sme]: https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_en
+
+[fat-law]: https://www.althingi.is/lagas/nuna/2011165.html
+[bank-law]: https://www.althingi.is/lagas/nuna/2010155.html
+[fat-notice]: https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf

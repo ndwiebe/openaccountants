@@ -1,7 +1,7 @@
 ---
 name: iceland-payroll
 description: Use this skill whenever asked about Iceland payroll processing for employed persons. Trigger on phrases like "Iceland payroll", "Icelandic payroll", "staðgreiðsla", "PAYE Iceland", "withholding Iceland", "tryggingagjald", "social security contribution Iceland", "persónuafsláttur", "personal tax credit Iceland", "lífeyrissjóður", "mandatory pension Iceland", "séreignarsparnaður", "supplementary pension", "launagreiðendaskrá", "employer registry Iceland", "RSK 5.02", "launamiði", "skilagreining", "net salary Iceland", "tax withholding Iceland", "employer social cost Iceland", "kjarasamningur", "minimum wage Iceland", "municipal income tax Iceland", "gross to net Iceland", "salary calculation Iceland", or any question about computing employee pay, withholding income tax (state + municipal), or social contributions for Iceland-based employees. This skill covers PAYE (staðgreiðsla) income tax withholding, the personal tax credit, employer social security contribution (tryggingagjald), mandatory occupational pension (employee 4% + employer 11.5%), supplementary private pension, no statutory minimum wage (collective-agreement minimums), and filing obligations to Skatturinn. ALWAYS read this skill before processing any Iceland payroll.
-version: 0.3
+version: 0.4
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -102,7 +102,7 @@ Calculate employer pension separately from the employee deduction. General 2026 
 Special cases, each needing evidence before use:
 
 - **Posted EEA workers with an A1 certificate:** for citizens of an EEA state hired to work in Iceland for one year or less, the employer does not pay the full rate if it holds the worker's A1 certificate showing cover under the home country's social security. Skatturinn lists 0.293% for 2024 and 2025 and has not published a 2026 figure on that page; confirm the 2026 rate with Skatturinn before use. These wages are reported separately and excluded from the general base. [A1 rule](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald)
-- **Financial undertakings** (financial firms, securities firms and insurers) also pay financial activities tax of 5.5% on all wages, monthly with withholding. [Financial activities tax](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026)
+- **Financial activities:** screen the employer under Act 165/2011 Articles 2–3, then use the [corporate Guide’s separate financial-sector method](is-corporate-income-tax.md). The 5.5% remuneration tax includes employer pension contributions and has Article 5 exclusions; it is not a blanket percentage of cash wages. Reconcile its own base, monthly return/payment and annual assessment separately from PAYE and the employer levy. [Act 165/2011, Articles 2–10](https://www.althingi.is/lagas/nuna/2011165.html)
 
 Employer pension contributions also enter the payroll-tax base. The wage-return guidance expressly includes the general employer pension contribution among reportable payroll-tax amounts. Use that base rule with the dated current-year rate; the annual-return page's assessment-year label is not a new wage-year rate. [Payroll-tax base reporting](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/)
 
@@ -355,3 +355,4 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [media/2026/rsk_0601_1_2026.is.pdf](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) | 2026-10-23 |
 | [Posted-worker personal credit](https://www.skatturinn.is/english/individuals/posted-workers/) | 2026-10-23 |
 | [Limited-liability employment credit](https://www.skatturinn.is/english/individuals/limited-tax-liability/) | 2026-10-23 |
+| [Financial activities tax, Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) | 2026-10-23 |

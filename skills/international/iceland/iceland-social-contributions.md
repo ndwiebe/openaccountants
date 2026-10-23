@@ -6,7 +6,7 @@ description: >
   filing, separate pension deadlines and A1 evidence. Use for payroll social
   costs, pension deductions, employer pension, seamen and contribution
   remittance reconciliation. Includes source conflicts and recomputable cases.
-version: 0.3
+version: 0.4
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -76,7 +76,7 @@ pension fund remittance = employee pension + employer pension
 
 The levy is an employer cost, not a deduction from employee pay. The employee contribution is withheld from pay and remitted with the employer contribution to the pension provider. Income-tax withholding goes to Skatturinn separately. [Act 113/1990, Articles 4, 7 and 10](https://www.althingi.is/lagas/nuna/1990113.html), [Act 129/1997, Article 7](https://www.althingi.is/lagas/nuna/1997129.html)
 
-At these assumed rates, employer social cost is **18.58025% of cash wages**, not 17.85%: 11.5% + (100% + 11.5%) × 6.35%. This is an illustration, not a universal total employment-cost rate. Other contractual, insurance, holiday, benefit or sector charges require their own evidence.
+At these assumed rates, employer social cost is **18.58025% of cash wages**, not 17.85%: 11.5% + (100% + 11.5%) × 6.35%. This is an illustration, not a universal total employment-cost rate. Other contractual, insurance, holiday, benefit or sector charges require their own evidence. For financial-services employers, use the [corporate Guide’s financial-sector method](is-corporate-income-tax.md) to screen and compute the separate remuneration tax, including its employer-pension base and statutory exclusions. The ordinary cost illustration above does not include that charge. [Act 165/2011, Articles 2–6](https://www.althingi.is/lagas/nuna/2011165.html)
 
 ### 3. Additional contributions and income-tax treatment
 
@@ -201,7 +201,7 @@ expected:
 - Does a valid foreign-coverage/A1 determination cover these exact dates, and what current levy decision applies?
 - What returns, assessments, bank/fund statements, corrections and arrears reconcile to the period's liabilities?
 
-**Review boundary.** The ordinary method and arithmetic are source-cited preparation. Current A1 rate/coordination, the administrative payment-date conflicts, actual fund contracts/arrears, complex benefit classification, sector charges and independent Icelandic-language professional review remain open. Historical 0.425% A1 and the former wages-only cost percentages must not be reused for a 2026 result.
+**Review boundary.** The ordinary method and arithmetic are source-cited preparation. Current A1 rate/coordination, the administrative payment-date conflicts, actual fund contracts/arrears, complex benefit classification, sector cases outside the stated financial-sector workpaper and independent Icelandic-language professional review remain open. Historical 0.425% A1 and the former wages-only cost percentages must not be reused for a 2026 result.
 
 <!-- openaccountants-cta-block -->
 
@@ -221,3 +221,4 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 | [Collection guidance](https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/) | No levy daily surcharge; administrative date conflict | 2026-10-23 |
 | [Annual wage reporting](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/) | Pension in levy base, separate foreign wages, return-year scope | 2026-10-23 |
 | [Calculated remuneration 2026](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026) | Current remuneration determination; fetch the live category before use | 2026-10-23 |
+| [Financial activities remuneration tax, Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) | 2026-10-23 |

@@ -17,3 +17,17 @@ Four added arithmetic controls test the purchased/annual cap sequence, public-gr
 ## Remaining country work
 
 Corporate sector taxes, other incentives, minimum-tax applicability, restructuring and the other gaps in the country README remain open. No country issue is closed and no comprehensive-coverage claim follows from this local extension. Complete the country delta, validate it, obtain independent review, fix findings and publish once as a country batch.
+
+## Financial-sector evidence
+
+Read the full operative provisions of [Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) and [Act 155/2010](https://www.althingi.is/lagas/nuna/2010155.html), and reopened Income Tax Act Article 71(3). The draft distinguishes the remuneration, additional-profit and liability charges, separate scope/exceptions, employer-pension inclusion, evidenced VAT-taxable-operation exclusion, group/loss disregard, no asset/debt netting and contrasting expense treatment. It preserves foreign-branch, reserve and winding-up case requirements.
+
+The [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) corroborates the current remuneration-tax rate. The [2026 assessment guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/alagningarsedill-og-forsendur/2026) concerns 2025 income, not a confirmed 2027 return. Regulation 1370/2025 Article 2 was reread from the earlier same-day official HTML retrieval, which expressly includes both financial income/liability taxes in the 2026 advance public levies. Current web open was blocked; [advance guidance](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/fyrirframgreidsla-thinggjalda/) corroborates the schedule.
+
+Act 165 Article 9 expressly excludes the ordinary daily PAYE surcharge, and Articles 8/11 require the separate original-due-date interest treatment. The draft does not reuse the 2011 launch notice's obsolete rate/exception/timetable or the 2018 tax-guide bank rate. Three new arithmetic controls cover remuneration with employer pension and proved exclusion, liability threshold/no netting, and the ordinary versus additional-income-tax bridge with a nondeductible bank-tax add-back. All are hypothetical supported-scope assumptions pending independent review.
+
+The payroll Guide's earlier “5.5% on all wages” shorthand was reconciled to the new method: employer pension inclusion and Article 5 exclusions are now explicit, with a local cross-reference. Social contributions points to the same method without treating its ordinary cost illustration as a complete financial-sector employment cost. These cross-reference corrections are part of this unpublished country delta.
+
+## Minimum-tax status evidence still does not establish applicability
+
+The [government's programme for the 158th parliamentary session, 2026–2027](https://www.stjornarradid.is/page/03008eff-e41e-4535-a8e3-75ddeb4d6002/), finance-ministry item 21, describes a proposed top-up-tax bill and a March presentation plan. This is a legislative programme, not an enacted charging provision or proof of a 2026 exemption. No minimum-tax calculation or effective date is asserted from that evidence. Current Icelandic enactment/commencement and any foreign-group obligations still require a separate documented determination. The same programme also lists further planned R&D changes; the enacted Act 27/2026 and current statute were used for the method, without treating future proposals as law.
