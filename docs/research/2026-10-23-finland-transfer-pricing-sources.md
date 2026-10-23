@@ -11,3 +11,7 @@ One executable example: 2,000 units times EUR 105 versus EUR 120 gives EUR 30,00
 ## Simplification expansion, v0.2
 
 Read section 4.4 of the previously cited Vero detailed documentation guidance on 23 October 2026. Added the limited counterparty-level simplification and an aggregation example, retaining current statutory reconciliation as an open gate. The example produces EUR 530,000 and EUR 30,000 above the assumed limit; it does not verify transaction classification. No independent review is claimed.
+
+## Statutory reconciliation, v0.3
+
+Read Finlex indexed consolidated Finnish sections 14a–14c at https://www.finlex.fi/fi/lainsaadanto/1995/1558 and section 14b in amending Act 1489/2016, linked in the Guide. The indexed consolidated page identifies an April 2026 consolidation; direct browser open returned a navigation shell, so no full direct-page retrieval is claimed. Added the group and taxpayer content categories and corrected the earliest-presentation wording. Remaining law scope and independent review are explicitly open; this is not a completed country or full statutory audit.
