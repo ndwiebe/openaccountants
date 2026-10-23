@@ -1,6 +1,6 @@
 ---
 jurisdiction: IS
-version: 0.23
+version: 0.24
 last_updated: 2026-10-23
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -83,3 +83,5 @@ The [independent benefits/options review](../../../docs/research/2026-10-23-icel
 A follow-up primary-source search found Skatturinn letter 1/2026, dated 20 January and effective 1 January. It confirms the 2026 refund minimums of 105,500 for two months and 21,100 for the year/remainder, resolving the previously recorded missing-current-minimum gap. It also confirms the Regulation 576 Article 5 annual repair threshold of 3,457,000; actual scope/value and calculated-price support remain required. The refund control now distinguishes the two period minimums. These updates require review with the VOES/refund delta before the combined country publication.
 
 The independent VAT review identified two clarifications: Article 3(d)'s hypothetical Icelandic registration requirement must be tested separately from no ordinary registration during the claim period and input entitlement; Article 10's excess-refund repayment runs from notification, while Article 11's appeal period runs from the decision date. The writer corrected both and advanced the VAT version; corrected-snapshot review remains pending. No new country push has occurred.
+
+The [independent VOES/refund review](../../../docs/research/2026-10-23-iceland-voes-refund-review.md) subsequently confirmed both corrections and closed its stated scope at exact `a80c2475`. Together with benefits/options closure at `e7241273`, this reviews the current country delta's stated source methods and all 66 controls. The review records preserve source-access limits, unresolved administrative discrepancies and the separate professional/live-operation gates. This supersedes the earlier pending-review notes for those exact additions only; all seven country domains remain partial, and issue #404 stays open. Publication still requires the final combined-branch checks and exact remote-head CI.
