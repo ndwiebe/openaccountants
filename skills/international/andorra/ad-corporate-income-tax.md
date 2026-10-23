@@ -4,7 +4,7 @@ description: "Source-cited draft: corporate income tax for Andorra (tax year 202
 jurisdiction: AD
 tax_year: 2025
 last_updated: 2026-10-23
-version: 0.5
+version: 0.6
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Legacy new-business incentive** — Do not apply the former 5%-on-EUR-50,000 claim as a current new-company rate. The former second additional provision was repealed by Law 17/2017; the current second additional provision addresses speculative property gains. The first additional provision concerns the first year of application of the tax itself, not each company’s first year. [Current law and amendment annotations](https://www.portaljuridicandorra.ad/L2010095). Historical-period eligibility requires separate review.
 - **Holding-company regime** — Article 38 exempts qualifying dividend and disposal income under an authorised special regime, subject to the conditions below. This is an income exemption, not a blanket zero-rate company. [Law 95/2010, Article 38](https://www.portaljuridicandorra.ad/L2010095).
 - **Eligible intangible income** — Article 23 provides an 80% base reduction multiplied by the qualifying expenditure ratio, subject to asset, activity, record and authorisation conditions. It is not a general 2% rate on all intellectual-property revenue. See the workpaper below. [Law 95/2010, Article 23](https://www.portaljuridicandorra.ad/L2010095).
-- **Tax base** — Accounting profit per Andorran GAAP (Pla General de Comptabilitat), adjusted for tax-specific items  _(Llei 95/2010 IS)_
+- **Tax base** — Correct the accounting result prepared under the accounting law and general accounting plan for the adjustments in Chapter IV. See the reconciliation below. [Law 95/2010, Article 9](https://www.portaljuridicandorra.ad/L2010095).
 - **Corporate residence** — A company is resident if incorporated under Andorran law, has its registered office in Andorra, or has its effective management in Andorra  _(Llei 95/2010 IS)_
 - **Withholding tax on dividends to non-residents** — 0% — no withholding tax on dividends paid by Andorran companies to non-residents %  _(Llei 94/2010 IRNR)_
 - **Withholding tax on interest to non-residents** — 0% — no withholding tax on interest paid to non-residents %  _(Llei 94/2010 IRNR)_
@@ -30,7 +30,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Filing and payment workpapers
 
-**Scope of this update:** filing, ordinary advance-payment, general-rate, loss-relief, holding-company and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including residence, base and withholding summaries, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
+**Scope of this update:** filing, ordinary advance-payment, general-rate, ordinary expense-reconciliation, loss-relief, holding-company and Article 23 intangible rules were checked on 23 October 2026 against the current legal-portal consolidations. The other legacy 2025 bullets above, including residence, base and withholding summaries, have not been reverified by this update and must not be used as confirmed current advice. The portal labels its consolidations as without official legal status. This remains a partial source-cited draft, not comprehensive corporate-tax coverage.
 
 Reconcile the settlement liability before advances to the payments actually made. Under Article 46, payments under Articles 45 and 45 bis are credited to determine the balance; an excess is refundable. Property-transfer advances have their own rules, including timing of credit where income is recognised over deferred receipts, and are not computed in the examples below. [Law, Article 46](https://www.portaljuridicandorra.ad/L2010095).
 
@@ -166,11 +166,45 @@ expected:
   losses_remaining: 20000
 ```
 
+## Accounting-profit reconciliation
+
+Under direct determination, start with the accounting result and reconcile the statutory adjustments. Distinguish permanent disallowances from timing differences; a cash payment does not establish deductibility. Keep an adjustment schedule linking each ledger item to its rule and evidence. [Article 9](https://www.portaljuridicandorra.ad/L2010095).
+
+Article 13 excludes equity remuneration, the booked corporate tax charge, the specified communal rental-income and business-location tax liabilities, criminal/administrative fines, the specified late-filing/enforcement surcharges, gambling losses and costs of unlawful acts. Corporate-tax accounting income is likewise not taxable income. Do not generalise the listed disallowed surcharges to every type of interest without checking its provision. [Article 13(1)(a)–(e), (h)](https://www.portaljuridicandorra.ad/L2010095).
+
+Donations and gratuitous expenditure have their own limits and exceptions under Article 13(1)(f). The provision describes client/supplier relations, customary staff expenditure, promotion and income-related costs and caps the deductible expenditure it covers at 1% of the average positive tax base for the current and two preceding years, before that limitation. Recognised nonprofit donations have a separate maximum of 10% of accounting result. Determine the classification and relevant base; neither is a general percentage of turnover. Interaction with separate donation credits and cases with short or loss-making histories need further review before calculation. [Article 13(1)(f)](https://www.portaljuridicandorra.ad/L2010095).
+
+For related-entity payments, Article 13(1)(g) separately restricts deductions where the recipient's income is exempt, outside a similar income tax or subject to a nominal rate below 50% of the general rate, including specified mismatched classifications. The article contains an applicable-treaty presumption that must be tested. Arm's-length pricing alone does not displace this restriction. Director remuneration specifically for the office is deductible only if provided for in the company's articles; that condition does not by itself prove all other deduction requirements. [Article 13(1)(g), (2)](https://www.portaljuridicandorra.ad/L2010095).
+
+Depreciation, impairment, provisions, finance-cost limits and timing require their separate Chapter IV tests. This ordinary-expense section does not supply complete schedules for those items.
+
+### Example 5: permanent adjustments already charged in the accounts
+
+Assume accounting profit EUR 80,000 after a EUR 7,000 corporate-tax expense, EUR 2,000 administrative fine and EUR 1,000 of the specified communal business-location tax. Assume no other adjustments, exemptions, losses, credits or special regimes. Add back those EUR 10,000 expenses to obtain EUR 90,000 taxable base and EUR 9,000 tax at 10%. Do not add an expense again if the starting profit already excludes it.
+
+```oa-check
+name: Andorra ordinary permanent expense adjustments
+inputs:
+  accounting_profit: 80000
+  booked_corporate_tax: 7000
+  administrative_fine: 2000
+  specified_communal_tax: 1000
+  tax_rate: 0.10
+steps:
+  permanent_addbacks: booked_corporate_tax + administrative_fine + specified_communal_tax
+  taxable_base: accounting_profit + permanent_addbacks
+  tax: taxable_base * tax_rate
+expected:
+  permanent_addbacks: 10000
+  taxable_base: 90000
+  tax: 9000
+```
+
 ## Sources
 
 Filing/payment and selected incentive provisions read 23 October 2026:
 
-- [Law 95/2010, Articles 20, 22–23, 38, 41, 43, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
+- [Law 95/2010, Articles 9, 13, 20, 22–23, 38, 41, 43, 45–46 and additional-provision annotations](https://www.portaljuridicandorra.ad/L2010095).
 - [Corporate-tax regulation, Articles 32, 37 and 45](https://www.portaljuridicandorra.ad/R20231229C).
 
 These citations substantiate the updated filing/payment and selected incentive sections, not every legacy incentive claim above.

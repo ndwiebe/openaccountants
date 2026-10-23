@@ -25,3 +25,7 @@ No new claim of comprehensive coverage or independent review. The underlying sou
 ## Loss relief expansion, v0.5
 
 Read current Articles 22 and 43 in full. Added the 17-year generation-based window, combined 30% settlement floor and cumulative ownership/activity restriction. The no-credit example derives 70% maximum base offset from the floor; it does not claim this remains available alongside unrestricted tax credits. Historic-loss transitions and combined-credit ordering remain open. Example: EUR 70,000 used, EUR 20,000 remaining and EUR 3,000 settlement liability. Independent review remains outstanding.
+
+## Ordinary reconciliation, v0.6
+
+Read Articles 9 and 13 in full. Added permanent adjustment categories, the specified communal-tax disallowance, donation/related-expenditure limits with classification boundaries, related-recipient tax-status restriction and director-remuneration constitutional requirement. The EUR 80,000 accounting-profit example explicitly includes all three booked expenses before adding EUR 10,000 back; taxable base EUR 90,000 and tax EUR 9,000. Detailed timing, depreciation, provision and finance-cost schedules remain open.
