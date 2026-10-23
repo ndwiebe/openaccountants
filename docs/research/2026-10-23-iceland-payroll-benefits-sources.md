@@ -1,0 +1,19 @@
+# Iceland payroll benefits: source preparation after the published country delta
+
+Writer: ChatGPT support chat. Research date: 23 October 2026. Published base: `ad570bbcff30eb795d0c229ddcd960d350303b12` on PR #514. This is a new local country delta; the prior review closed at `9de5b54d` does not review these later additions. All seven country domains remain partial and the Guides remain tier 2.
+
+## Primary evidence read
+
+Read the full operative benefit sections 1–2.10 and travel section 3.1 of [Skatturinn's January 2026 employer notice 2](https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf), with the [current 2026 valuation page](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/) and [benefit/car guidance](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/). The latter explicitly confirms that the annual 10% car-value reduction uses the preceding year's base. The notice provides the five-reduction lease example, separate operating-cost branches, five-month January–June example, employee/owner housing distinction, commuting trip gates, meals, supported reimbursement limits and monthly opening-loan benchmark. No permanent loan rate, new travel-committee rate or actual taxpayer entitlement was inferred.
+
+The authority page's public HTML was retrieved and its 2026 Gazette link extracted after web click failed. [The linked Gazette entry](https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f) and direct official PDF attempt returned 403. The Guide cites the six-page official authority reproduction instead; it does not claim successful Gazette access.
+
+Reopened current [Pension Act 129/1997 Article 3](https://www.althingi.is/lagas/nuna/1997129.html), [Levy Act 113/1990 Articles 6–8](https://www.althingi.is/lagas/nuna/1990113.html), [Withholding Act 45/1987](https://www.althingi.is/lagas/nuna/1987045.html) and [Regulation 591/1987](https://files.reglugerd.is/pdf/0591-1987/current). The method keeps cash, PAYE, statutory minimum pension and employer-levy bases separate. The current [Central Bank rate portal](https://sedlabanki.is/gagnatorg/vextir) supplies distinct general bank, policy, IKON and late-interest series; its late-interest headline is not assumed to be the employee-loan benchmark. An actual dated monthly general-rate calculation remains required.
+
+The published [2026 wage statement](https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf) and [annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/) explicitly concern 2025 wages. The layout is recorded without treating it as an accepted 2027 form for 2026 wages. No actual return, bank payment, application or email was sent.
+
+## Addition and controls
+
+The payroll Guide supplies the stated benefit classification/valuation and evidence sequence; social contributions cross-refers to it without equating pension and levy bases. The vehicle-allowance withholding paragraph now identifies the current Travel Costs Committee maximum, distinguishing it from the annual-return kilometre deduction scale. The six added controls cover compound vehicle reduction/charging-only valuation, the vehicle floor and partial-year monthly basis, a separate cash/pension/PAYE/levy payroll, ordinary housing day-based value and energy, conditional commuting caps, and meal/event/fitness schedule reductions. All eligibility/actual-value facts in hypothetical examples remain assumptions requiring proof.
+
+Independent source review is pending for this delta. A1 and annual payment conflicts, special workers, weekly rounding, contested valuations, owner-property/financing edge cases, contractual bases and live filing remain open. Passing arithmetic does not resolve those questions. Keep this next country batch local until the full delta is reviewed, fix the findings and publish once under the country-batch rule.

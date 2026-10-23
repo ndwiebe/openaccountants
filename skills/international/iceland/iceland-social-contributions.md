@@ -6,7 +6,7 @@ description: >
   filing, separate pension deadlines and A1 evidence. Use for payroll social
   costs, pension deductions, employer pension, seamen and contribution
   remittance reconciliation. Includes source conflicts and recomputable cases.
-version: 0.5
+version: 0.6
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -19,7 +19,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland social contributions and mandatory pension v0.5
+# Iceland social contributions and mandatory pension v0.6
 
 **Source-cited draft.** Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension. It produces contribution workpapers for professional review; it carries no Icelandic accountant attestation. The [payroll Guide](iceland-payroll.md) handles income-tax withholding and net pay. Sources were read on 23 October 2026; the linked statutes are Alþingi's 1 October 2026 compilation.
 
@@ -60,6 +60,8 @@ The general levy has no contribution ceiling in Articles 6–8. Do not truncate 
 Article 9 excludes specified pensions, social benefits, insured accident compensation, unemployment benefits and other named payments. Match the legal payment category to the underlying statement before excluding it. A bank reference containing “pension” does not establish whether the payment is a pension contribution, a benefit or a wage cost. [Act 113/1990, Article 9](https://www.althingi.is/lagas/nuna/1990113.html)
 
 **Pension.** Article 3 uses remuneration for work, but excludes benefits paid in kind (for example clothing, food and housing) and reimbursements of incurred costs (for example vehicle allowances, per diems and meal money). Pension and levy bases therefore differ. The pension statute also excludes specified benefits and includes unemployment benefits; do not copy the levy-exemption list into the pension calculation. [Act 129/1997, Article 3](https://www.althingi.is/lagas/nuna/1997129.html)
+
+For the stated 2026 car, food, housing and other benefit valuations, use the [payroll Guide's benefit workpaper](iceland-payroll.md). Carry the supported tax value into the levy base under Article 8, while testing the statutory minimum pension exclusion and actual contractual base separately. The car/payroll example demonstrates this split; the benefit's noncash tax value is not a second cash wage or proof of the employer's actual benefit cost. [Levy Act, Articles 7–8](https://www.althingi.is/lagas/nuna/1990113.html); [Pension Act, Article 3](https://www.althingi.is/lagas/nuna/1997129.html)
 
 ### 2. Calculate ordinary contributions
 

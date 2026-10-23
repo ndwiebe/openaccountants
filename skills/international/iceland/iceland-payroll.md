@@ -1,7 +1,7 @@
 ---
 name: iceland-payroll
-description: Use this skill whenever asked about Iceland payroll processing for employed persons. Trigger on phrases like "Iceland payroll", "Icelandic payroll", "staðgreiðsla", "PAYE Iceland", "withholding Iceland", "tryggingagjald", "social security contribution Iceland", "persónuafsláttur", "personal tax credit Iceland", "lífeyrissjóður", "mandatory pension Iceland", "séreignarsparnaður", "supplementary pension", "launagreiðendaskrá", "employer registry Iceland", "RSK 5.02", "launamiði", "skilagreining", "net salary Iceland", "tax withholding Iceland", "employer social cost Iceland", "kjarasamningur", "minimum wage Iceland", "municipal income tax Iceland", "gross to net Iceland", "salary calculation Iceland", or any question about computing employee pay, withholding income tax (state + municipal), or social contributions for Iceland-based employees. This skill covers PAYE (staðgreiðsla) income tax withholding, the personal tax credit, employer social security contribution (tryggingagjald), mandatory occupational pension (employee 4% + employer 11.5%), supplementary private pension, no statutory minimum wage (collective-agreement minimums), and filing obligations to Skatturinn. ALWAYS read this skill before processing any Iceland payroll.
-version: 0.4
+description: Use this skill whenever asked about Iceland payroll processing for employed persons. Trigger on phrases like "Iceland payroll", "Icelandic payroll", "staðgreiðsla", "PAYE Iceland", "withholding Iceland", "tryggingagjald", "social security contribution Iceland", "persónuafsláttur", "personal tax credit Iceland", "lífeyrissjóður", "mandatory pension Iceland", "séreignarsparnaður", "supplementary pension", "launagreiðendaskrá", "employer registry Iceland", "RSK 5.02", "launamiði", "skilagreining", "net salary Iceland", "tax withholding Iceland", "employer social cost Iceland", "kjarasamningur", "minimum wage Iceland", "municipal income tax Iceland", "gross to net Iceland", "salary calculation Iceland", or any question about computing employee pay, withholding income tax (state + municipal), or social contributions for Iceland-based employees. This skill covers PAYE (staðgreiðsla) income tax withholding, the personal tax credit, employer social security contribution (tryggingagjald), mandatory occupational pension (employee 4% + employer 11.5%), supplementary private pension, no statutory minimum wage (collective-agreement minimums), 2026 benefit valuation for vehicles, meals, housing, commuting, fitness and employee loans, and filing obligations to Skatturinn. ALWAYS read this skill before processing any Iceland payroll.
+version: 0.5
 jurisdiction: IS
 tax_year: 2026
 last_updated: 2026-10-23
@@ -66,10 +66,59 @@ Children born in 2011 or later (who do not reach 16 in 2026) pay 6% (4% state, 2
 
 Withholding applies to all pay for work plus vehicle allowances, benefits, relocation and travel money, per diems and other work-related payments, except payments that Regulation 591/1987 lists as outside withholding. Two common exemptions have conditions:
 
-- **Vehicle allowance** is outside withholding only if it reimburses specific driving done for the employer, the rate is at or below Skatturinn's valuation limit, and the employee keeps a regular log of each trip (date, distance, purpose, rate paid, employee name and ID, vehicle registration). Driving between home and the usual workplace always counts as the employee's own. If any condition fails, the payment is taxable pay.
+- **Vehicle allowance** is outside withholding only if it reimburses specific driving done for the employer, the payment is within the current Travel Costs Committee maximum used by the withholding rule, and the employee keeps a regular log of each trip (date, distance, purpose, rate paid, employee name and ID, vehicle registration). Driving between home and the usual workplace always counts as the employee's own. Apply Regulation 591/1987 Article 3 and the current dated maximum; the annual income-return kilometre deduction scale is a different calculation. If the conditions for excluding an amount fail, include the affected amount in withholding.
 - **Per diems and travel money** are outside withholding only for travel for the employer, within the amounts Skatturinn's valuation allows, with records of the trip purpose, days, amounts and employee. Any excess above those limits is taxable pay.
 
 Uniforms the employee is expected to wear at work are not withholding pay. Even when a vehicle allowance is outside withholding, it still enters the payroll-tax base (see below). [Withholding base and exemptions](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/stadgreidsla/2026) [Payroll-tax base](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/)
+
+### Benefit valuation and separate payroll bases
+
+Use **income-year 2026** rules, not a return labelled 2026 for 2025 wages. Record the recipient, relationship to the employer, benefit/cash form, actual availability/use dates, employer cost, applicable tax value and employee payment. General private benefits use market/current value unless a specific valuation applies; where the employee pays less than that value, the difference is taxable. Cash gifts and cards exchangeable for money are taxable even when a staff-event/treat exclusion would otherwise exist. [2026 valuation rules, sections 1–2.1][benefit-notice]
+
+Keep **three bases**: PAYE includes the taxable benefit; the statutory minimum pension base excludes benefits in kind and the specified expense reimbursements; the employer levy includes taxable benefits at tax valuation plus the relevant employer pension. Confirm any contractual pension treatment separately. A noncash benefit does not increase bank wages, and its tax value is not necessarily the employer's actual cost. Do not deduct a benefit valuation from cash pay a second time after including it in taxable income. [Withholding Act, Article 5](https://www.althingi.is/lagas/nuna/1987045.html); [Pension Act, Article 3](https://www.althingi.is/lagas/nuna/1997129.html); [Levy Act, Articles 6–8](https://www.althingi.is/lagas/nuna/1990113.html)
+
+#### Cars: decide availability before valuing it
+
+Full private availability is valued **regardless of actual kilometres**. Multiple cars made available to the employee/family are valued separately. Owners, managers, comparable executives and directors with private use are treated as having full/unlimited availability; a low-mileage log alone does not give them the limited-use method. Leased or borrowed cars are also within the rules. Keep the asset/lease record, original VAT-inclusive price or required dealer/lessor reference, acquisition/availability year, power type, use agreement, restrictions, running-cost invoices and employee payments. [Section 2.3][benefit-notice]; [Authority car guidance][benefit-guidance]
+
+| Full-use car category | Annual valuation method for 2026 | Source |
+|---|---|---|
+| Employer-owned car acquired in 2014 or later | 28% of the supported value for fossil-fuel cars; 20% for the stated electricity/hydrogen/methane clean-energy cars. A hybrid label alone does not establish that latter class. | [Section 2.3][benefit-notice] |
+| Permitted value reduction for that category | 10% of the previous year's value each year, starting **after** the employer's acquisition year; never below 50% of original acquisition price. This is reducing balance, not ten percentage points of original price each year. | [Section 2.3][benefit-notice]; [Authority explanation][benefit-guidance] |
+| Employer-owned car acquired in 2013 or earlier | Separate 30% of original acquisition-price rule; do not automatically extend the later-acquisition reduction method. | [Section 2.3][benefit-notice] |
+| Car not owned by the employer | The stated dealer-list price when employer availability begins or lessor reference value when yearly/monthly rent is set; 28%/20% power-type rule. Apply the supported 10% annual reduction/floor from its own start year. Lease instalments are not automatically the valuation base. | [Section 2.3][benefit-notice] |
+| Employee pays the defined running costs | Reduce the fossil percentage by **six points**, or the stated clean-energy percentage by **three points**, of the supported car value. These are not 6%/3% discounts on the already calculated benefit. | [Section 2.3][benefit-notice] |
+| Pure electric, employee pays charging alone while employer pays other running costs | The stated **19%** annual rate; do not claim 17% solely because the employee charges at home. | [Section 2.3][benefit-notice] |
+
+Defined running costs concern fuel/electricity, lubrication, cleaning and comparable running items; repairs, parts, tyres, insurance, vehicle taxes and kilometre taxes do **not** qualify for the running-cost reduction merely because the employee pays them. Supported payments to the employer for use reduce the benefit value; distinguish them from the separate running-cost adjustment and reconcile actual settlement without deducting the same payment twice. [Section 2.3][benefit-notice]
+
+Partial-year full use takes **one twelfth of the annual benefit per commenced monthly period of availability**. Do not apply the housing day fraction to a car. The authority's example counts **five months** for 15 January–10 June; counting six named calendar months instead does not reproduce it. Retain the actual period determination where a boundary is disputed. For employee/employer co-ownership, value the employer's share. [Section 2.3][benefit-notice]
+
+The **limited-use** car method is **ISK 144 per private kilometre**, only where permission outside working hours is confined to commuting/occasional use and the vehicle otherwise serves the employer's daily business, with clear records. More extensive use invokes full availability. The separate collective-agreement transport exception requires the stated absence of public transport and staff collection/delivery arrangements; ordinary commuting alone is not that exception. A car with the specified security/location systems and a regular dedicated driver also has its own exclusion. Document the actual exception before excluding value. [Section 2.3][benefit-notice]
+
+Other motor vehicles/trailers under **section 2.4**, including the stated motorcycles, snowmobiles and caravans, have their own full/unlimited **28%** method, value reduction/floor and defined six-point running-cost adjustment. Do not give every electric item the clean-car 20% rate. Private aircraft use under **section 2.5** is valued at **317,000 per commenced flight hour**, or **32,000** for the stated small single-engine aircraft; the time definition includes the relevant parking-to-parking, waiting and empty-return time. These require category and journey evidence, not a private-mileage car substitution. [Sections 2.4–2.5][benefit-notice]
+
+#### Food, housing and supported exclusions
+
+| Benefit | 2026 valuation / exclusion | Evidence and source |
+|---|---|---|
+| Food supplied free to employee/family | Breakfast 501; lunch or dinner 751; full food day 2,003. A quarter reduction is permitted for children **under 12**. Offset supported employee payment against the relevant value, without creating a negative benefit. | Meal type, count, recipient age and employee payments; [sections 1 and 2.7][benefit-notice]. |
+| Ordinary employee housing | Annual 5% of the supported property/land assessment, including the stated separately assessed structures, multiplied by the **actual location factor**: 1.0 for Reykjavík, Seltjarnarnes, Mosfellsbær, Kópavogur, Garðabær and Hafnarfjörður; 0.8 for Suðurnesjabær, Reykjanesbær, Vogar, Akranes, Akureyri, Árborg, Hveragerði and Ölfus; 0.7 elsewhere. Part-year use is by days. Free heat/electricity is added at cost. | Property assessment, exact municipality, occupancy/days, employee rent and energy costs; [section 2.8][benefit-notice]. |
+| Required residence / temporary work camp | Required-residence relief for incomplete use needs the authority's assessment decision. The rule treats up to 150 m² plus 5 m² per resident above six as fully used. The separately stated temporary service stay in work/fishing camps is excluded. | Actual work obligation, occupants/use and decision; do not automatically reduce payroll housing value by spare floor area. [Section 2.8][benefit-notice]. |
+| Occasional ordinary employee holiday accommodation | 5,000 per day **above ten days per year**; up to ten days excluded under that branch. Supported employer/union holiday-cost reimbursement is a separate exclusion up to 79,000 annually with valid invoices. | Cumulative employee/family days and actual invoices; distinguish the two branches. [Section 2.8][benefit-notice]. |
+| Fitness reimbursement | Up to 85,000 annually for supported qualifying regular exercise, with valid invoices. Equipment/clothing, general online-content subscriptions and ordinary spa/leisure visits do not qualify merely through a wellness label. | Activity, invoice and cumulative reimbursements; [section 2.9][benefit-notice]. |
+| Qualifying staff events/treats | The stated events/treats generally available to all employees, including relevant staff-association funding, have a 192,000 annual per-employee employer-cost limit; excess is taxable. This does not exempt cash gifts or cash-redeemable cards. | Offer to staff, actual type/cost and annual allocation; [sections 1–2.1][benefit-notice]. |
+| Workplace facilities / work clothing | The stated workplace coffee, on-site fitness, preventive health care and directly job-related courses are excluded. Clothing is at cost unless the uniform/marked-work-clothing/necessary-protection conditions apply. | Actual supply/use and work connection; an ordinary private wardrobe does not become exempt by reimbursement. [Sections 2.1–2.2][benefit-notice]. |
+
+**Owner/manager/director property is a separate branch.** Private availability beyond ten days invokes the section 2.8 full/unlimited rule **from day one**. Do not substitute the ordinary occasional-holiday ten-day exclusion. For Icelandic property, establish the book acquisition cost plus capital improvements and the stated higher-assessment comparison, with the permitted 3% annual reduction subject to its assessment floor. For foreign property, the separate 5%-of-book-cost-plus-improvements rule applies. Supported rent and unrelated letting periods affect the calculation, and one property is not simultaneously attributed to several people under this rule. Resolve the actual value, period and permitted reduction before calculating; the ordinary employee example below does not settle those cases. [Section 2.8][benefit-notice]
+
+**Commuting payment is conditional.** Section 2.6 permits up to **11,500 per month / 138,000 for full-year work** where the signed employer/employee agreement and qualifying public/green transport at least **80% of trips** are proved. At least **40% but below 80%** permits half the monthly limit, **5,750**. Below 40% or failure of the required conditions leaves the commuting payment taxable. Keep trip records and period/payment totals. Cars of any propulsion do not qualify as the green mode for this rule; a pure-electric company car does not itself establish exempt commuting cash. Taxable excess belongs in the payroll computation. [Section 2.6][benefit-notice]
+
+**Employee loans and deferred purchase payments.** Section 2.10 requires a monthly comparison using the **opening loan balance** and the applicable Central Bank general indexed or unindexed rate for that month, against actual interest. Include the supported positive benefit in monthly withholding. Keep the loan/instalment contract, indexed status, opening principal, dated benchmark, monthly interest calculation, actual charge and benefit. Deferred share/property purchase payments are also within the stated rule; a nil cash advance is not proof of no financing benefit. Select the **general loan benchmark**, not the policy, IKON or late-interest headline. No permanent benchmark rate or unsupported day-count method is supplied here. Loan forgiveness, equity-plan entitlement and disputed financing terms need their own statutory determination. [Section 2.10][benefit-notice]; [Central Bank rate portal][loan-benchmarks]
+
+#### Reporting and benefit reconciliation
+
+Roll forward each benefit schedule by employee and period; reconcile employee charges, annual exclusions, PAYE value, pension base, levy base and bank pay. Do not assume a category is outside monthly reporting merely because it is noncash. The published wage-statement **2026 layout concerns 2025 wages** and separately identifies car, clothing, housing and food benefits; it is evidence of the category layout, not an accepted 2027 return for 2026 wages. Match the actual wage year's live fields before submission, preserve acceptance, and correct the original affected periods under the existing procedure. An insufficient-cash or benefit-only pay run requires a documented withholding/settlement decision before release; do not turn a negative calculated bank balance into a fictitious payment or simply omit the benefit. [Withholding Act, Articles 5 and 20](https://www.althingi.is/lagas/nuna/1987045.html); [Annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/); [Published 2026 statement][benefit-wage-form]
 
 ### Pension and gross-to-net calculation
 
@@ -311,11 +360,170 @@ expected:
   twelve_days: 100000
 ```
 
+### Benefit control 1: leased-car compound reduction and charging-only rate
+
+Use the authority's 2021 lease example: supported original reference value **10 million** and five permitted 10% annual reductions through 2026 give **5,904,900**, not 5 million from a straight 50% subtraction. At 28%, the annual benefit is **1,653,372**, or **137,781 monthly**. For the same established reference value, a qualifying pure-electric car with only employee-paid charging and employer-paid other running costs uses **19%**, giving **93,494.25 monthly**; 17% requires the different full-running-cost conditions. Assume full-year private availability, no employee-use payment and no other exception. [Section 2.3][benefit-notice]
+
+```oa-check
+name: Iceland leased car compound reduction and pure electric charging only
+inputs:
+  supported_reference_value: 10000000
+  annual_retention: 0.90
+steps:
+  - reduced_value: max(supported_reference_value * 0.50, supported_reference_value * annual_retention * annual_retention * annual_retention * annual_retention * annual_retention)
+  - fossil_annual_benefit: reduced_value * 0.28
+  - fossil_monthly_benefit: fossil_annual_benefit / 12
+  - electric_charging_only_monthly: reduced_value * 0.19 / 12
+expected:
+  reduced_value: 5904900
+  fossil_annual_benefit: 1653372
+  fossil_monthly_benefit: 137781
+  electric_charging_only_monthly: 93494.25
+```
+
+### Benefit control 2: car value floor, partial availability and paid use
+
+Assume a fossil car bought after 2013 has an original supported price of **10 million**, seven permitted reductions and no qualifying employee-paid running costs. The 50% floor gives **5 million** instead of the lower reducing-balance result. Assume the authority's 15 January–10 June availability pattern, hence **five commenced monthly periods**, and **50,000** separately paid by the employee for use. Gross period value is **583,333.33**, net taxable benefit **533,333.33**, before filing rounding. Do not use a daily housing fraction or count six calendar-month names. Eligibility, actual availability and paid-use evidence are assumptions. [Section 2.3][benefit-notice]
+
+```oa-check
+name: Iceland full use car floor and five commenced monthly periods
+inputs:
+  original_supported_price: 10000000
+  retention: 0.90
+  proved_commenced_months: 5
+  employee_paid_use: 50000
+steps:
+  - value_before_floor: original_supported_price * retention * retention * retention * retention * retention * retention * retention
+  - supported_value: max(original_supported_price * 0.50, value_before_floor)
+  - full_year_value: supported_value * 0.28
+  - gross_period_value: full_year_value * proved_commenced_months / 12
+  - taxable_period_value: max(0, gross_period_value - employee_paid_use)
+expected:
+  value_before_floor: 4782969
+  supported_value: 5000000
+  full_year_value: 1400000
+  gross_period_value: 583333.33
+  taxable_period_value: 533333.33
+```
+
+### Benefit control 3: car value enters PAYE and levy, with separate cash/pension
+
+Assume an ordinary adult with **600,000 cash wages**, a fully supported **210,000 noncash car value** for the month (the authority's 2025 purchase/2026 fossil-car example), full authorised monthly credit and no other item. Under the assumed documented arrangement, pension contributions are 4%/11.5% on **cash wages only**; no contractual broader benefit base applies. Employee pension is **24,000**, PAYE base **786,000**, decimal withholding **193,731.47** and bank pay **382,268.53**. Employer pension is **69,000**; the employer-levy base is **879,000**, giving **55,816.50** at 6.35%. Do not add the car value to bank pay or subtract employee pension from the levy base. Actual car cost and any other employer charges still need their own cost schedule, so this is not total employment cost. Final service rounding remains a separate check. [2026 employer notice 1](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf); [Benefit section 2.3][benefit-notice]; [Pension Act, Article 3](https://www.althingi.is/lagas/nuna/1997129.html); [Levy Act, Articles 7–8](https://www.althingi.is/lagas/nuna/1990113.html)
+
+```oa-check
+name: Iceland car benefit separate cash pension PAYE and employer levy bases
+inputs:
+  cash_wages: 600000
+  proved_car_value: 210000
+  employee_pension_rate: 0.04
+  employer_pension_rate: 0.115
+  first_ceiling: 498122
+  second_ceiling: 1398450
+  authorised_credit: 72492
+steps:
+  - employee_pension: cash_wages * employee_pension_rate
+  - employer_pension: cash_wages * employer_pension_rate
+  - paye_base: cash_wages + proved_car_value - employee_pension
+  - band_one: min(paye_base, first_ceiling) * 0.3149
+  - band_two: max(0, min(paye_base, second_ceiling) - first_ceiling) * 0.3799
+  - band_three: max(0, paye_base - second_ceiling) * 0.4629
+  - withholding: max(0, band_one + band_two + band_three - authorised_credit)
+  - bank_pay: cash_wages - employee_pension - withholding
+  - employer_levy_base: cash_wages + proved_car_value + employer_pension
+  - employer_levy: employer_levy_base * 0.0635
+expected:
+  employee_pension: 24000
+  employer_pension: 69000
+  paye_base: 786000
+  withholding: 193731.47
+  bank_pay: 382268.53
+  employer_levy_base: 879000
+  employer_levy: 55816.50
+```
+
+### Benefit control 4: ordinary housing is by days, with separate energy
+
+Assume ordinary employee housing within the section 2.8 general branch, applicable property/land assessment **60 million**, an established **0.8 municipality factor**, **30 days** of 2026 occupancy, **20,000** employee rent for that period and **10,000** free energy at supported cost. No owner/director, mandatory-residence relief, work-camp or holiday rule applies. Annual housing value is **2.4 million**; period housing before rent is **197,260.27**. After paid rent and adding energy, taxable value is **187,260.27** before filing rounding. The assumed assessment and use facts must be proved; this is not a director-property example. [Sections 1 and 2.8][benefit-notice]
+
+```oa-check
+name: Iceland ordinary employee housing day fraction and paid rent energy
+inputs:
+  applicable_assessment: 60000000
+  supported_location_factor: 0.8
+  proved_occupancy_days: 30
+  year_days: 365
+  employee_rent: 20000
+  free_energy_cost: 10000
+steps:
+  - annual_housing_value: applicable_assessment * 0.05 * supported_location_factor
+  - period_housing_before_rent: annual_housing_value * proved_occupancy_days / year_days
+  - taxable_housing_and_energy: max(0, period_housing_before_rent - employee_rent) + free_energy_cost
+expected:
+  annual_housing_value: 2400000
+  period_housing_before_rent: 197260.27
+  taxable_housing_and_energy: 187260.27
+```
+
+### Benefit control 5: commuting trip thresholds and payment excess
+
+Assume the required signed agreement, qualifying mode, monthly work period and trip evidence are established, and each alternative employee receives **11,500**. At **80 qualifying trips out of 100**, the full 11,500 can be excluded. At **79/100** or **40/100**, only **5,750** can be excluded and 5,750 is taxable. At **39/100**, none is excluded. Without the required agreement the payment is not made exempt by the trip percentage alone. The control uses the legally established cap for each alternative; arithmetic does not verify mode or agreement. [Section 2.6][benefit-notice]
+
+```oa-check
+name: Iceland commuting full half and zero supported caps
+inputs:
+  monthly_payment: 11500
+  established_80_percent_case_cap: 11500
+  established_79_percent_case_cap: 5750
+  established_40_percent_case_cap: 5750
+  established_39_percent_case_cap: 0
+steps:
+  - taxable_at_80: max(0, monthly_payment - established_80_percent_case_cap)
+  - taxable_at_79: max(0, monthly_payment - established_79_percent_case_cap)
+  - taxable_at_40: max(0, monthly_payment - established_40_percent_case_cap)
+  - taxable_at_39: max(0, monthly_payment - established_39_percent_case_cap)
+expected:
+  taxable_at_80: 0
+  taxable_at_79: 5750
+  taxable_at_40: 5750
+  taxable_at_39: 11500
+```
+
+### Benefit control 6: separate meal, staff-event and fitness schedules
+
+These are separate hypothetical schedule checks, not items assumed to arise in one payroll month. Twenty lunches at **751** each with **500** paid by the employee per lunch leave **5,020** taxable food value. A supported all-staff event/treat allocation of **220,000** for the year leaves **28,000** above the 192,000 limit; a separate **5,000 cash gift** remains fully taxable. Assume a **100,000** fitness reimbursement consists of 90,000 proved qualifying exercise and 10,000 equipment: at most **85,000** is excluded, leaving **15,000** taxable. The equipment does not qualify simply because the annual exercise ceiling has unused room. These calculations assume the stated classification/evidence and do not determine the pension base of every reimbursement. [Sections 1, 2.1, 2.7 and 2.9][benefit-notice]
+
+```oa-check
+name: Iceland food employee payment and annual event fitness exclusions
+inputs:
+  lunch_count: 20
+  lunch_value: 751
+  employee_payment_per_lunch: 500
+  qualified_event_annual_cost: 220000
+  event_limit: 192000
+  cash_gift: 5000
+  total_fitness_reimbursement: 100000
+  proved_qualifying_exercise_cost: 90000
+  fitness_limit: 85000
+steps:
+  - taxable_food: lunch_count * max(0, lunch_value - employee_payment_per_lunch)
+  - taxable_event_excess: max(0, qualified_event_annual_cost - event_limit)
+  - taxable_cash_gift: cash_gift
+  - exempt_fitness: min(total_fitness_reimbursement, proved_qualifying_exercise_cost, fitness_limit)
+  - taxable_fitness: total_fitness_reimbursement - exempt_fitness
+expected:
+  taxable_food: 5020
+  taxable_event_excess: 28000
+  taxable_cash_gift: 5000
+  exempt_fitness: 85000
+  taxable_fitness: 15000
+```
+
 ## Ask the client first
 
 - What are the employee identity, age, residence, work location, wage period and pay date?
 - What contract, collective agreement, pension fund and contribution arrangement apply?
 - Which cash wages, benefits, reimbursements and other deductions are supported?
+- For benefits, which availability/use agreements, vehicle values and running costs, housing assessments/days, meal/employee-payment records, signed commuting evidence, annual reimbursement totals and loan benchmarks establish the classification and valuation?
 - What current bracket, own-credit and spouse-credit instructions and prior usage apply?
 - Which prior returns, payment claims, bank payments and pension statements require reconciliation or correction?
 
@@ -332,7 +540,7 @@ For advice on your facts, [contact OpenAccountants](https://www.openaccountants.
 
 ## Sources
 
-The following primary sources were accessed on 23 October 2026. This pass checked the contribution-base and penalty corrections and the example inputs; it does not attest to all remaining scope or operational questions.
+The following primary sources were accessed on 23 October 2026. This pass checked the contribution-base and penalty corrections, the stated 2026 benefit valuation methods and example inputs; it does not attest to all remaining scope or operational questions.
 
 | Official source | Read on |
 | --- | --- |
@@ -356,3 +564,16 @@ The following primary sources were accessed on 23 October 2026. This pass checke
 | [Posted-worker personal credit](https://www.skatturinn.is/english/individuals/posted-workers/) | 2026-10-23 |
 | [Limited-liability employment credit](https://www.skatturinn.is/english/individuals/limited-tax-liability/) | 2026-10-23 |
 | [Financial activities tax, Act 165/2011](https://www.althingi.is/lagas/nuna/2011165.html) | 2026-10-23 |
+| [2026 valuation rules, official January employer notice 2, sections 1–2.10 and 3.1][benefit-notice] | 2026-10-23 |
+| [Current income-year 2026 valuation page](https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/) | 2026-10-23 |
+| [Authority benefit/car operational explanation][benefit-guidance] | 2026-10-23 |
+| [Regulation 591/1987, withholding exclusions and travel evidence](https://files.reglugerd.is/pdf/0591-1987/current) | 2026-10-23 |
+| [Central Bank, monthly bank/general-rate portal; no permanent rate asserted][loan-benchmarks] | 2026-10-23 |
+| [2026 wage statement, expressly for 2025 wages; layout only][benefit-wage-form] | 2026-10-23 |
+
+The authority's linked [2026 Gazette entry](https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f) returned HTTP 403 in the web reader. The six-page official employer-notice reproduction and current authority text were read; no successful Gazette retrieval is claimed. This addition is outside the earlier country-review snapshots and needs independent source review. Actual benefit classification, values, contractual pension terms, changing monthly loan/travel benchmarks, insufficient-cash settlement and accepted reporting remain case/operational evidence requirements. Weekly rounding, A1 and other specialist gaps remain open.
+
+[benefit-notice]: https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf
+[benefit-guidance]: https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/
+[loan-benchmarks]: https://sedlabanki.is/gagnatorg/vextir
+[benefit-wage-form]: https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf
