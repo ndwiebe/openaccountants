@@ -40,3 +40,23 @@ All eight source Guides and README are now prepared locally; no San Marino conte
 - Markdown headings introduced incorrectly by an earlier writer formatting pass (`# #`/`## #`) were repaired before the full-pack checkpoint; no platform licence or attribution value was changed. Prepared original Guides retain their platform-owned fields; new TP/XB do not invent professional provenance. Previous research bodies stay in Git history.
 
 Next: exact-checkpoint local schema/metadata/repository checks, fresh independent whole-pack review, corrections/closure, then one country content push to PR #514 and exact-head CI. Professional review and live filing remain separate gates.
+
+## Whole-pack writer checkpoint
+
+Exact source checkpoint: `4d6678ca7cc9a0655f28ad9c2bf9d9371f0a193d`. All nine country blobs remain identical after published main `8bd0eb05` was merged cleanly at `01928a23527c33d129a813072bafd28d870f8d9e`. No country content has been pushed.
+
+| Country file | Git blob at source checkpoint | Version | Controls |
+|---|---|---:|---:|
+| README.md | `654b7d5188280a99a3ddeed05c5f7ad83353a832` | 0.3 | 0 |
+| sm-company-formation.md | `8643a27c461af18d28ce425388579b479f66fb1f` | 0.1 | 2 |
+| sm-corporate-income-tax.md | `fed7b0e9fc4ceb26a5ddd10f19d30c818cfcfddc` | 0.2 | 4 |
+| sm-cross-border.md | `436a3e036cbf974ea4c9f0bcc4a581d206f878af` | 0.2 | 4 |
+| sm-income-tax.md | `f0c0c1feed7d8e9f0b0af0fefe00045e0e40cd07` | 0.1 | 6 |
+| sm-payroll-social.md | `deaa043249d974e570fdcc05ee8e10ed6af5fca9` | 0.1 | 5 |
+| sm-tax-overview.md | `e9fd5cad4c432508ab20b94e38d2937f88f8bf70` | 0.3 | 0 |
+| sm-transfer-pricing.md | `c68cd6a35ae44d6dcb4716f9fc1a9f69ba7b6c43` | 0.2 | 3 |
+| sm-vat-gst.md | `d94392cd5681d983a72ab8ee72635990d9ceabb1` | 0.1 | 3 |
+
+Writer checks: all 27 arithmetic controls pass; schema passes across 113 changed source Guides (only inherited Gibraltar tax-year 2024 freshness warning); strict metadata audit of the eight country Guides passes; all 129 repository unit tests pass in 7.209 seconds. `git diff --check` passes. Country SHA256 map matches the exact committed bytes. The generated-tree diff against published main is empty.
+
+The separate source-transport record has 18 HTTP 200 observations; all retained primary PDF/ZIP identities match. This does not extend the recorded substantive read scope or establish a complete current-law amendment chain. Independent review authorization is pending; no fresh San Marino reviewer has been delegated and no closure is claimed. Review must inspect the exact source blobs, legal/category/date assumptions, all controls, cross-file consistency and partial/professional status.
