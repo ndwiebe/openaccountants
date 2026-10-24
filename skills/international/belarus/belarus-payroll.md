@@ -60,8 +60,11 @@ FSZN covers employees, covered civil contractors and founder-managers under Law 
 | PU-2 | Hire within 5 calendar days; new employer within 15 days of state registration; dismissal generally by next day | [Resolution 742 Rules para. 16](https://pravo.by/document/?guid=12551&p0=C22500742) |
 | PU-3 | Quarterly within following month; initial covered civil-contract submission within 5 calendar days, 15 for new payer | [Rules para. 17](https://pravo.by/document/?guid=12551&p0=C22500742) |
 | Belgosstrakh premium | By 25th following quarter | [Resolution 1462 payment Regulation para. 4](https://pravo.by/document/?guid=3871&p0=C20601462) |
+| Belgosstrakh annual report | Registered policyholders file calendar-year report by 25 January following year; nonworking deadline moves to next working day | [Resolution 1462 reporting Regulation paras. 2-3, 33-35](https://pravo.by/document/?guid=3871&p0=C20601462) |
 
 Use the MNS portal/inspectorate for the agent declaration and income information. Do not replace the two 2026 individual-income information submissions with a single March report. Under Law art. 8(5), employer FSZN payments due on nonworking days move to the preceding working day; tax deadlines use General Code art. 4. The ordinary PU/report process above follows Resolution 742 effective 8 January 2026; do not retroactively apply its new engagement-notification rules to 1-7 January without checking the predecessor rules. [General Code arts. 4, 40, 85](https://pravo.by/document/?guid=3871&p0=hk0200166); [Law art. 8](https://pravo.by/document/?guid=3871&p0=H12100118); [Resolution 742 para. 5](https://pravo.by/document/?guid=12551&p0=C22500742).
+
+The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's prescribed electronic-document/electronic software delivery and keep its receipt; the reporting deadline moves to the following working day, while quarterly premium payment moves to the preceding working day. Reorganisation/liquidation reports use the separate 15-working-day triggers in reporting Regulation para. 33 and can be filed on paper under para. 35. [Resolution 1462 reporting Regulation paras. 33-38](https://pravo.by/document/?guid=3871&p0=C20601462); [Resolution 660 commencement para. 3](https://pravo.by/document/?guid=12551&p0=C22500660).
 
 ## Penalties and interest
 

@@ -68,8 +68,11 @@ The wage amounts required by these formulae are period-specific statutory/statis
 | Independent PU-3 | Fund worker files entrepreneur and other specified cases by 15 April; the separately listed self-filers in para. 10 file by 31 March | [Resolution 742 Rules paras. 10, 17](https://pravo.by/document/?guid=12551&p0=C22500742) |
 | PU-2 hiring/dismissal | Hire within 5 calendar days, newly created employer within 15 days of registration; dismissal by following day, subject to stated exceptional order dates | [Resolution 742 Rules para. 16](https://pravo.by/document/?guid=12551&p0=C22500742) |
 | Accident premium | By 25th of month after quarter | [Resolution 1462 payment Regulation para. 4](https://pravo.by/document/?guid=3871&p0=C20601462) |
+| Belgosstrakh annual report | Registered policyholders file calendar-year report by 25 January following year; nonworking deadline moves to next working day | [Resolution 1462 reporting Regulation paras. 2-3, 33-35](https://pravo.by/document/?guid=3871&p0=C20601462) |
 
 FSZN payment dates falling on nonworking days are brought forward to the preceding working day, except for independent payers, under Law art. 8(5). Accident-premium dates likewise move to the preceding working day (payment Regulation para. 5). Do not apply the tax-return next-working-day convention to these payments. Reconcile employee accounts to contributions actually paid and submit corrections under the current PU rules. Employer/Fund registration and cessation follow Law art. 7 and Resolution 742's registration Regulation; confirm UNPF as well as tax UNP. [Law arts. 7-8](https://pravo.by/document/?guid=3871&p0=H12100118); [Resolution 742](https://pravo.by/document/?guid=12551&p0=C22500742); [Resolution 1462](https://pravo.by/document/?guid=3871&p0=C20601462).
+
+The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's prescribed electronic-document/electronic software delivery and keep its receipt; the reporting deadline moves to the following working day, while quarterly premium payment moves to the preceding working day. Reorganisation/liquidation reports use the separate 15-working-day triggers in reporting Regulation para. 33 and can be filed on paper under para. 35. [Resolution 1462 reporting Regulation paras. 33-38](https://pravo.by/document/?guid=3871&p0=C20601462); [Resolution 660 commencement para. 3](https://pravo.by/document/?guid=12551&p0=C22500660).
 
 ## Penalties and interest
 
@@ -137,7 +140,7 @@ expected:
 |---|---|---|
 | FSZN Law 118-Z, arts. 1-16-1, current consolidated text | https://pravo.by/document/?guid=3871&p0=H12100118 | 2026-10-24 |
 | Decree 108 of 18 March 2025, approved Regulation paras. 192-197 and Annex 16 | https://pravo.by/document/?guid=3871&p0=P32500108 | 2026-10-24 |
-| Council Resolution 1462, contribution-payment Regulation paras. 1-12 | https://pravo.by/document/?guid=3871&p0=C20601462 | 2026-10-24 |
+| Council Resolution 1462, contribution-payment Regulation paras. 1-12 and reporting Regulation paras. 2-3, 33-38 | https://pravo.by/document/?guid=3871&p0=C20601462 | 2026-10-24 |
 | Council Resolution 660, commencement of March 2026 insurance reform | https://pravo.by/document/?guid=12551&p0=C22500660 | 2026-10-24 |
 | Ministry of Labour Resolution 143, official PDF p. 1, Form 4-Fund | https://pravo.by/document/?guid=12551&p0=W22544374p | 2026-10-24 |
 | Council Resolution 742, official PDF pp. 27-34, individual-account Rules paras. 7-19 | https://pravo.by/document/?guid=12551&p0=C22500742 | 2026-10-24 |
