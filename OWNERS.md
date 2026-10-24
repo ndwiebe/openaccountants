@@ -2,7 +2,7 @@
 
 Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
 
-**Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** Michael updated the allocation on 24 October 2026. The [country PR split register](docs/research/2026-10-24-country-pr-split.md) supersedes consolidated PR [#514](https://github.com/openaccountants/openaccountants/pull/514) for new publication; preserve that PR and its branch as historical review evidence.
+**Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** Michael updated the allocation on 24 October 2026. Coordination [PR #773](https://github.com/openaccountants/openaccountants/pull/773) carries this allocation until merged. The [country PR split register](docs/research/2026-10-24-country-pr-split.md) supersedes consolidated PR [#514](https://github.com/openaccountants/openaccountants/pull/514) for new publication; preserve that PR and its branch as historical review evidence.
 
 | Owner | Regions | Jurisdictions | Thin (7 or fewer skills) |
 |---|---|---|---|
