@@ -72,3 +72,5 @@ Independent finding BY-07: outbound individual Belarus residence-certificate cit
 Independent finding BY-08: added Resolution 742 Rules 19-21 occupational PU-6 reporting, pension-event/continued-work treatment, liquidation thirty-working-day trigger and next-working-day PU-2/3/6 convention to SC/PR. Writer read the fresh official PDF pp. 34-35.
 
 Independent finding BY-09: added Special Code 211(1.2) mandatory historical BYN-to-USD-to-receipt-date-BYN cost conversion, its adverse-rate no-conversion exception, foreign-currency cost conversion, ownership-share and instalment allocation. Restricted automatic use of this deduction to immovable property in art. 218-assessed nonresident cases, without asserting a universal rule for all nonresident movable receipts. Writer read fresh official 211(1.2) and 218(5)-(6); requested final exact-source closure.
+
+Independent finding BY-10: corrected the single-tax surcharge return citation from342(29)to342(27), retaining343(3)for payment. The four stated due dates were unchanged and correct. Requested source closure.

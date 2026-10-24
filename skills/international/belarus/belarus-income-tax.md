@@ -95,7 +95,7 @@ Art. 340 reduces tax 25% for the first three months beginning with first busines
 | Professional-income app | Install and notify before using regime; authority notification by 10th, payment by 22nd of following month; no conventional annual return for this regime | [Arts. 381, 381-4, 381-7](https://pravo.by/document/?guid=3871&p0=hk0900071) |
 | Fixed private rent | Register the written rental agreement before occupation; first/new extension payment by next working day after contractual provision, then by first day of paid month | [Art. 221; MNS procedure](https://nalog.gov.by/individuals/income_taxation/payment_incom_tax_of_residential_and_non-residential_premises/) |
 | Entrepreneur single tax | Return by first day of quarter; payment by first day of each month; first annual start by working day before activity; amend changed conditions before change | [Arts. 341-343](https://pravo.by/document/?guid=3871&p0=hk0900071) |
-| Single-tax surcharge, both return and payment | Q1/Q2/Q3/Q4: 1 July / 1 October / 1 January / 1 April, including after exit | [Arts. 342(29), 343(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Single-tax surcharge, both return and payment | Q1/Q2/Q3/Q4: 1 July / 1 October / 1 January / 1 April, including after exit | [Arts. 342(27), 343(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
 
 Use the tax inspectorate or MNS personal cabinet for individual declarations; entrepreneur electronic filing follows General Code art. 40. Apply General Code art. 4 to nonworking-day tax deadlines, rather than assuming contribution payment dates follow the same convention. [General Code arts. 4, 28, 40](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
