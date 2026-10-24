@@ -42,7 +42,7 @@ Before signing or paying, retain: counterparty identity and residence evidence; 
 
 ### Examples
 
-- A nonresident supplies a service remotely. Do not decide withholding solely from the invoice address. Determine whether the service falls within Article 71(1)(b), which SFS treats as Moldova-source irrespective of where performed, or the residual Article 71(1)(b¹) category, for which SFS says performance in Moldova is required. Then check a treaty and residence certificate.
+- A nonresident supplies a service remotely. Do not decide withholding solely from the invoice address. Determine whether the service falls within Article 71(1)(b), which SFS treats as Moldova-source irrespective of where performed, or the residual Article 71(1)(b¹) category, for which SFS says performance in Moldova is required. Then check the applicable treaty and retain residence evidence accepted for the recipient’s legal form.
 - A nonresident earns income through a Moldovan fixed place of business. Test domestic PE criteria and the applicable treaty, then analyze PE attribution and filing separately. The 12% gross-payment rule for non-PE income is not a substitute for that analysis.
 - A Moldovan payer is about to pay interest or royalties to a treaty-country company. Identify the domestic category and rate, obtain and retain the residence proof acceptable for that legal form and treaty before payment, read the treaty article and protocol, and document the reduced rate or domestic rate used.
 
