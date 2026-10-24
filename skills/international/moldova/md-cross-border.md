@@ -38,13 +38,13 @@ Do not infer a worldwide-income rule for every Moldovan person from this Guide. 
 
 ## Cross-border compliance checklist
 
-Before signing or paying, retain: counterparty identity and residence evidence; a contract describing the actual service, rights or property; service location and delivery evidence; a written Moldovan-source and PE analysis; the applicable treaty and protocol; a timely residence certificate where relief is claimed; withholding and payment evidence; and any required tax statement and return. For related parties, also screen Moldova's transfer-pricing thresholds and documentation duties under [md-transfer-pricing](md-transfer-pricing.md).
+Before signing or paying, retain: counterparty identity and residence evidence; a contract describing the actual service, rights or property; service location and delivery evidence; a written Moldovan-source and PE analysis; the applicable treaty and protocol; timely residence evidence acceptable for the recipient’s legal form and treaty where relief is claimed; withholding and payment evidence; and any required tax statement and return. For related parties, also screen Moldova's transfer-pricing thresholds and documentation duties under [md-transfer-pricing](md-transfer-pricing.md).
 
 ### Examples
 
 - A nonresident supplies a service remotely. Do not decide withholding solely from the invoice address. Determine whether the service falls within Article 71(1)(b), which SFS treats as Moldova-source irrespective of where performed, or the residual Article 71(1)(b¹) category, for which SFS says performance in Moldova is required. Then check a treaty and residence certificate.
 - A nonresident earns income through a Moldovan fixed place of business. Test domestic PE criteria and the applicable treaty, then analyze PE attribution and filing separately. The 12% gross-payment rule for non-PE income is not a substitute for that analysis.
-- A Moldovan payer is about to pay interest or royalties to a treaty-country company. Identify the domestic category and rate, obtain the required residence certificate before payment, read the treaty article and protocol, and document the reduced rate or domestic rate used.
+- A Moldovan payer is about to pay interest or royalties to a treaty-country company. Identify the domestic category and rate, obtain and retain the residence proof acceptable for that legal form and treaty before payment, read the treaty article and protocol, and document the reduced rate or domestic rate used.
 
 These examples identify the decision sequence and do not determine an individual payment's final tax treatment.
 
