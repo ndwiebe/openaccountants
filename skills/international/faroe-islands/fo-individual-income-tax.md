@@ -7,11 +7,15 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-23
-version: 0.2
+version: "0.3"
 verified_by: pending
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands individual income tax v0.2
+# Faroe Islands individual income tax v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -113,3 +117,13 @@ The 23 October revision corrects the statutory residence boundary and adds arith
 | [National table](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt) | 2026-10-22, retained source record |
 | [Municipal table](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) | 2026-10-22, retained source record |
 | [Returns](https://www.taks.fo/en/individuals/tax/tax-return) | 2026-10-23 |
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

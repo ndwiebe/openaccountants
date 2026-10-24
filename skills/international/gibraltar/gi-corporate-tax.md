@@ -6,8 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: "0.16"
+last_updated: 2026-10-23
+version: "0.17"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -31,9 +31,13 @@ sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf"
     title: "Income Tax Office allocation table 2022–2033; stale rate footer, not rate authority"
     as_of: "2026-10-22"
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar corporate tax and filing v0.16
+# Gibraltar corporate tax and filing v0.17
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -455,3 +459,13 @@ All source URLs in the frontmatter were accessed on 22 October 2026. The dated r
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

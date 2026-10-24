@@ -6,8 +6,8 @@ jurisdiction: GI
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: "0.13"
+last_updated: 2026-10-23
+version: "0.14"
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf"
@@ -64,9 +64,13 @@ sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf"
     title: "Social Insurance Contributions Class 2026/2027"
     as_of: "2026-10-22"
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar payroll and social insurance v0.13
+# Gibraltar payroll and social insurance v0.14
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -545,3 +549,13 @@ The following links collect the sources already cited above. Their applicable ve
 - [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822)
 - [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837)
 - [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance)
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

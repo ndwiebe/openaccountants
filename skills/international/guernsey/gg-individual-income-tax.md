@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.7
+last_updated: 2026-10-23
+version: "0.8"
 verified_by: pending
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=122165&p=0"
@@ -46,9 +46,13 @@ sources:
   - url: "https://gov.gg/revenue-service/personal-tax-returns"
     title: "Personal returns and agency guidance"
     as_of: "2026-10-22"
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey individual income tax and residence v0.7
+# Guernsey individual income tax and residence v0.8
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -314,3 +318,13 @@ Read on 22 October 2026: [residence guidance](https://gov.gg/residency), [sectio
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

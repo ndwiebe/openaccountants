@@ -6,8 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.3
+last_updated: 2026-10-23
+version: "0.4"
 verified_by: pending
 sources:
   - url: "https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf"
@@ -19,6 +19,10 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf"
     title: "Stamp Duties Act 2005, sections 4A–4B, 11–16, 19–19C and Schedules 1–2; 23 December 2024 consolidation"
     as_of: "2026-10-22"
+authored_by: Ryan Duguid
+review_status: pending_review
+trust_label: Accountant-authored
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Gibraltar property conveyance and mortgage stamp duty
@@ -151,3 +155,13 @@ Attach a copy of the executed instrument or proposed execution version to the ca
 ## Scope remaining
 
 Complete relief eligibility and prescribed estate evidence, other security types, leases, indirect property investments, gifts, live electronic filing/payment operations, current interest notices and case-specific penalties remain unresolved. Income-tax treatment of rental profits and residential-property disposals is a separate question from stamp duty. Do not reuse this table for those transactions. A reviewer must check current amendments and the actual facts before filing or paying. No accountant attestation is claimed.
+
+> Contributed by Ryan Duguid.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to an accountant
+
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
