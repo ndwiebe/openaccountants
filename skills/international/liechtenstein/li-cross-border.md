@@ -16,10 +16,10 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein cross-border tax preparation v0.1
+# Liechtenstein cross-border tax preparation v0.2
 
 ## Scope and order of work
 
@@ -53,7 +53,7 @@ This Guide does not compute those specialised nonresident assessments or the ann
 
 Residents' wages also have withholding. Use [payroll](li-payroll-social.md) for the current ordinary wage schedule, not a final individual-tax rate. SteG article 25 separately provides 12% for its specified board/pension categories. Article 63a provides 12% on the specified nonresident **corporate** board-function income, with its own ordinary-assessment application. A blanket “no withholding” statement about investment distributions does not resolve a board, pension or employment payment. [SteG, articles 24–25 and 63a][law]
 
-For an individual article-24 payment, article 26 provides authority confirmation on application where the treaty gives exclusive taxing rights abroad or caps the domestic rate. Excess treaty withholding has an application/refund route, with its **two-year period from payment maturity**. Collect the authority confirmation and use it within its actual conditions; do not substitute a private residence assertion. Payer liability/certification under article 27 remains separate. The [February 2026 wage-tax bulletin and January treaty annex][wage] are an administrative screen, not proof that a named employee meets commuter, workday, employer, cost-bearing or public-service conditions.
+For an individual article-24 payment, article 26 provides authority confirmation on application where the treaty gives exclusive taxing rights abroad or caps the domestic rate. Excess treaty withholding has an application/refund route, with its **two-year period from the due date of the source-withholding amounts**. Collect the authority confirmation and use it within its actual conditions; do not substitute a private residence assertion. Payer liability/certification under article 27 remains separate. The [February 2026 wage-tax bulletin and January treaty annex][wage] are an administrative screen, not proof that a named employee meets commuter, workday, employer, cost-bearing or public-service conditions.
 
 For a concrete treaty, retain its signed text, protocols, entry into force/application dates, covered person/tax/income articles, residence, permanent establishment/employment conditions and the actual claim evidence. The [authority treaty collection][treaties] is the starting register; this draft has not independently applied every treaty or established a rate for an unnamed country.
 

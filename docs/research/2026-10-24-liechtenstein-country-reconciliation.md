@@ -34,3 +34,11 @@ A direct bulk HTML read encountered HTTP 403 and produced no success manifest. D
 At the first local preparation pass, all 24 country controls pass across seven computation/preparation Guides and the 129 repository unit tests pass. Strict source metadata audit against `af8d6057` reports eight Guides with zero errors/warnings/notices. Changed-only schema validation before the checkpoint inspected the committed earlier workstream, so it must be rerun after this new checkpoint to cover the eight new country changes; its inherited Gibraltar freshness warning is not a Liechtenstein issue.
 
 Next: finish writer reconciliation and exact-checkpoint checks, obtain fresh independent whole-pack review, fix and close its findings, then fetch/reconcile only the published shared branch and make one combined country content push. Exact pushed-head CI is a later separate check. All eight Guides remain tier 2, all seven domains remain partial, and named Liechtenstein accountant review remains open. Do not close issue #406, mark comprehensive coverage or represent this local draft as published.
+
+## Exact-checkpoint follow-up
+
+After source checkpoint `46b6da5a`, contributor schema validation covers 105 changed source Guides across the consolidated workstream, including all eight Liechtenstein Guides, and passes with the inherited Gibraltar 2024 freshness warning. The eight-Guide strict audit and all 24 country calculations pass. The coverage report deliberately reports LI as partial/missing in all seven domains because README preserves those gaps; file presence is not completion.
+
+Writer QA narrowed the cross-border treaty-refund clock to the due date of the source-withholding amounts, matching article 26(3), rather than ambiguous payment maturity; that Guide advances to v0.2. No calculation block changed.
+
+The 23-URL transport audit records nine direct HTTP 200 responses and fourteen direct HTTP 403 responses, with scoped web-reader content evidence retained separately. Two restricted URLs are general source-register entry points, not assertions that every underlying treaty/source was read. No direct 403 is relabelled as a successful HTTP response. The report is `2026-10-24-liechtenstein-source-reachability.json`.
