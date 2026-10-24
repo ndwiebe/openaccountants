@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-10-24T15:45:54+00:00",
+ "generated_at": "2026-10-24T08:30:47+00:00",
  "counts": {
-  "guides": 2247,
+  "guides": 2236,
   "jurisdictions": 274,
   "accountant_reviewed": 33
  },
@@ -5267,12 +5267,12 @@
    "path": "skills/international/bulgaria/bg-corporate-income-tax.md",
    "name": "bg-corporate-income-tax",
    "jurisdiction": "BG",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bg-cross-border",
@@ -5317,22 +5317,22 @@
    "jurisdiction": "BG",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bulgaria-payroll",
    "path": "skills/international/bulgaria/bulgaria-payroll.md",
    "name": "bulgaria-payroll",
    "jurisdiction": "BG",
-   "category": "international",
+   "category": "payroll",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bulgaria-social-contributions",
@@ -5341,10 +5341,10 @@
    "jurisdiction": "BG",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bulgaria-tax-optimization",
@@ -5363,12 +5363,12 @@
    "path": "skills/international/bulgaria/bulgaria-vat-return.md",
    "name": "bulgaria-vat-return",
    "jurisdiction": "BG",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "bf-company-formation",
@@ -7009,22 +7009,22 @@
    "jurisdiction": "HR",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "croatia-payroll",
    "path": "skills/international/croatia/croatia-payroll.md",
    "name": "croatia-payroll",
    "jurisdiction": "HR",
-   "category": "international",
+   "category": "payroll",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "croatia-social-contributions",
@@ -7033,10 +7033,10 @@
    "jurisdiction": "HR",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "croatia-tax-optimization",
@@ -7055,12 +7055,12 @@
    "path": "skills/international/croatia/croatia-vat-return.md",
    "name": "croatia-vat-return",
    "jurisdiction": "HR",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "hr-company-formation",
@@ -7079,24 +7079,12 @@
    "path": "skills/international/croatia/hr-corporate-income-tax.md",
    "name": "hr-corporate-income-tax",
    "jurisdiction": "HR",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
-  },
-  {
-   "slug": "hr-cross-border",
-   "path": "skills/international/croatia/hr-cross-border.md",
-   "name": "hr-cross-border",
-   "jurisdiction": "HR",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "hr-tax-overview",
@@ -8603,24 +8591,12 @@
    "path": "skills/international/estonia/ee-corporate-income-tax.md",
    "name": "ee-corporate-income-tax",
    "jurisdiction": "EE",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
-   "slug": "ee-cross-border",
-   "path": "skills/international/estonia/ee-cross-border.md",
-   "name": "ee-cross-border",
-   "jurisdiction": "EE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "ee-tax-overview",
@@ -8635,18 +8611,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "ee-transfer-pricing",
-   "path": "skills/international/estonia/ee-transfer-pricing.md",
-   "name": "ee-transfer-pricing",
-   "jurisdiction": "EE",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
-  },
-  {
    "slug": "estonia-income-tax",
    "path": "skills/international/estonia/estonia-income-tax.md",
    "name": "estonia-income-tax",
@@ -8656,19 +8620,19 @@
    "verified_by": null,
    "reviewed_by": null,
    "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "last_updated": "2026-10-16"
   },
   {
    "slug": "estonia-payroll",
    "path": "skills/international/estonia/estonia-payroll.md",
    "name": "estonia-payroll",
    "jurisdiction": "EE",
-   "category": "international",
+   "category": "payroll",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "estonia-social-contributions",
@@ -8677,10 +8641,10 @@
    "jurisdiction": "EE",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "estonia-tax-optimization",
@@ -13369,22 +13333,22 @@
    "jurisdiction": "LV",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "latvia-payroll",
    "path": "skills/international/latvia/latvia-payroll.md",
    "name": "latvia-payroll",
    "jurisdiction": "LV",
-   "category": "international",
+   "category": "payroll",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "latvia-social-contributions",
@@ -13393,10 +13357,10 @@
    "jurisdiction": "LV",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "latvia-tax-optimization",
@@ -13415,12 +13379,12 @@
    "path": "skills/international/latvia/latvia-vat-return.md",
    "name": "latvia-vat-return",
    "jurisdiction": "LV",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "lv-company-formation",
@@ -13439,24 +13403,12 @@
    "path": "skills/international/latvia/lv-corporate-income-tax.md",
    "name": "lv-corporate-income-tax",
    "jurisdiction": "LV",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
-   "slug": "lv-cross-border",
-   "path": "skills/international/latvia/lv-cross-border.md",
-   "name": "lv-cross-border",
-   "jurisdiction": "LV",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "lv-tax-overview",
@@ -13469,18 +13421,6 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "lv-transfer-pricing",
-   "path": "skills/international/latvia/lv-transfer-pricing.md",
-   "name": "lv-transfer-pricing",
-   "jurisdiction": "LV",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
   },
   {
    "slug": "lb-company-formation",
@@ -13849,22 +13789,22 @@
    "jurisdiction": "LT",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "lithuania-vat-return",
    "path": "skills/international/lithuania/lithuania-vat-return.md",
    "name": "lithuania-vat-return",
    "jurisdiction": "LT",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "lt-company-formation",
@@ -13883,24 +13823,12 @@
    "path": "skills/international/lithuania/lt-corporate-income-tax.md",
    "name": "lt-corporate-income-tax",
    "jurisdiction": "LT",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
-   "slug": "lt-cross-border",
-   "path": "skills/international/lithuania/lt-cross-border.md",
-   "name": "lt-cross-border",
-   "jurisdiction": "LT",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "lt-payroll-social",
@@ -13925,18 +13853,6 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "lt-transfer-pricing",
-   "path": "skills/international/lithuania/lt-transfer-pricing.md",
-   "name": "lt-transfer-pricing",
-   "jurisdiction": "LT",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
   },
   {
    "slug": "references",
@@ -14521,10 +14437,10 @@
    "jurisdiction": "MT",
    "category": "bookkeeping",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "malta-financial-statements",
@@ -14545,10 +14461,10 @@
    "jurisdiction": "MT",
    "category": "formation",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "malta-income-tax",
@@ -14593,10 +14509,10 @@
    "jurisdiction": "MT",
    "category": "tax-optimization",
    "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "verified_by": null,
+   "reviewed_by": "Michael Cutajar, CPA (Malta)",
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "malta-transfer-pricing",
@@ -15163,18 +15079,6 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "md-cross-border",
-   "path": "skills/international/moldova/md-cross-border.md",
-   "name": "md-cross-border",
-   "jurisdiction": "MD",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
    "slug": "md-tax-overview",
    "path": "skills/international/moldova/md-tax-overview.md",
    "name": "md-tax-overview",
@@ -15185,18 +15089,6 @@
    "reviewed_by": null,
    "tax_year": "2025",
    "last_updated": "2026-07-13"
-  },
-  {
-   "slug": "md-transfer-pricing",
-   "path": "skills/international/moldova/md-transfer-pricing.md",
-   "name": "md-transfer-pricing",
-   "jurisdiction": "MD",
-   "category": null,
-   "tier": 2,
-   "verified_by": null,
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
   },
   {
    "slug": "moldova-income-tax",
@@ -19703,12 +19595,12 @@
    "path": "skills/international/slovakia/sk-corporate-income-tax.md",
    "name": "sk-corporate-income-tax",
    "jurisdiction": "SK",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "sk-cross-border",
@@ -19727,12 +19619,12 @@
    "path": "skills/international/slovakia/sk-payroll-social.md",
    "name": "sk-payroll-social",
    "jurisdiction": "SK",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "sk-tax-overview",
@@ -19765,10 +19657,10 @@
    "jurisdiction": "SK",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "slovakia-vat-registration-4-7-7a",
@@ -19811,24 +19703,12 @@
    "path": "skills/international/slovenia/si-corporate-income-tax.md",
    "name": "si-corporate-income-tax",
    "jurisdiction": "SI",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
-   "slug": "si-cross-border",
-   "path": "skills/international/slovenia/si-cross-border.md",
-   "name": "si-cross-border",
-   "jurisdiction": "SI",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-23"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "si-tax-overview",
@@ -19843,40 +19723,28 @@
    "last_updated": "2026-07-13"
   },
   {
-   "slug": "si-transfer-pricing",
-   "path": "skills/international/slovenia/si-transfer-pricing.md",
-   "name": "si-transfer-pricing",
-   "jurisdiction": "SI",
-   "category": "international",
-   "tier": 2,
-   "verified_by": "pending",
-   "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
-  },
-  {
    "slug": "slovenia-income-tax",
    "path": "skills/international/slovenia/slovenia-income-tax.md",
    "name": "slovenia-income-tax",
    "jurisdiction": "SI",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "slovenia-payroll",
    "path": "skills/international/slovenia/slovenia-payroll.md",
    "name": "slovenia-payroll",
    "jurisdiction": "SI",
-   "category": "international",
+   "category": "payroll",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "slovenia-social-contributions",
@@ -19885,10 +19753,10 @@
    "jurisdiction": "SI",
    "category": "international",
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "slovenia-tax-optimization",
@@ -19907,12 +19775,12 @@
    "path": "skills/international/slovenia/slovenia-vat-return.md",
    "name": "slovenia-vat-return",
    "jurisdiction": "SI",
-   "category": "international",
+   "category": null,
    "tier": 2,
-   "verified_by": "pending",
+   "verified_by": null,
    "reviewed_by": null,
-   "tax_year": "2026",
-   "last_updated": "2026-10-24"
+   "tax_year": "2025",
+   "last_updated": "2026-07-13"
   },
   {
    "slug": "so-company-formation",
