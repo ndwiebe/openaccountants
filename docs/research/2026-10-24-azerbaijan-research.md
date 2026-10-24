@@ -20,7 +20,7 @@ Replaced unsupported secondary citations and the old mixed 2025/prospective pros
 
 ## Remaining core gaps
 
-The README deliberately marks all seven domains partial:
+At initial draft `8c6a01ee`, the README marked all seven domains partial:
 
 | Domain | Missing computation or group |
 |---|---|
@@ -41,3 +41,13 @@ These are unfinished research/implementation items. They are not statements that
 ## Initial validation
 
 The per-file arithmetic checker reported 16 blocks, zero failures. A global validator attempt initially could not import PyYAML; dependency setup and the required validators are recorded in the final review/validation receipt. This is writer research, not independent review or accountant attestation.
+
+## Subsequent source completion and corrections
+
+Before publication, Cabinet Decision 492 paragraphs 1.2–4.4 and current Decision 14 were read for ordinary representation, employee housing/food and travel. The corporate Guide now supplies their caps and conditions, including VAT-inclusive limits, separate housing/representation pools, meal eligibility and domestic hotel rules. Its sole core partial flag is removed; special regimes remain out of scope.
+
+Current Cabinet Decision 387 was fetched and read from `https://frameworks.e-qanun.az/55/f_55514.html`. VAT now implements the foreign B2C registration/platform/documents, monthly return and distinct payment deadline, currencies, exchange rate, change notification and payment-agent interaction. VAT remains partial for the 25 December leasing transition.
+
+Independent review identified two VAT omissions and two cross-border filing requirements. Corrections add art. 158.2-1's POS-weighted deregistration threshold and art. 159.7's input-credit entitlement condition on retained-inventory output VAT. Law 297-VIIQD was fetched at `https://frameworks.e-qanun.az/61/f_61117.html`: art. 19.6 starts the rule on 1 January 2026, while art. 18.1's receipt-date restriction expressly names arts. 155.1-1 and 218.1-1 and is not copied into art. 158.2-1. XB also receives the VAT inventory qualification, DTA Rules para. 5.3's DTA-03 quarter-end filing requirement and para. 4.2-2's DTA-02 consent-letter attachment requirement.
+
+The writer's Cabinet 492 PDF curl requests and normal-browser navigation timed out, but the official PDF was accessible and read through the web reader at `https://nk.gov.az/uploads/doc/docs/674d98557ed68.pdf`; the independent reviewer also retrieved it independently. No CAPTCHA was solved, and no substitute secondary source or fabricated local receipt was used. The additional official source checks narrow the final core gaps to six domains; the final README is authoritative for the final scope.

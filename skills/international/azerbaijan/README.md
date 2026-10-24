@@ -12,8 +12,7 @@ covered_by:
   XB: azerbaijan-cross-border
 partial:
   IT-IND: "Land/building disposal and fixed-receipt trade calculations, and full bank-deposit exemption conditions remain incomplete."
-  IT-CORP: "Ordinary deduction caps needing Cabinet representation, employee housing/food and travel norms are not implemented."
-  VAT: "Foreign B2C electronic-seller registration/reporting implementation and the 25 December 2026 leasing transition remain incomplete."
+  VAT: "The 25 December 2026 leasing transition remains incomplete."
   SC: "Informal-worker medical-category commencement and implementing charge remain unconfirmed."
   PR: "Non-employment director or corporate-office fees require further classification and calculation."
   TP: "Full CbCR parent, surrogate and local-filing exceptions and exchange-failure triggers remain incomplete."
@@ -29,7 +28,7 @@ The State Tax Service administers the Tax Code. Ordinary income/profit tax uses 
 | Domain | Guide | Status |
 |---|---|---|
 | IT-IND | [azerbaijan-income-tax](azerbaijan-income-tax.md) | source-cited draft; partial |
-| IT-CORP | [az-corporate-income-tax](az-corporate-income-tax.md) | source-cited draft; partial |
+| IT-CORP | [az-corporate-income-tax](az-corporate-income-tax.md) | source-cited draft |
 | VAT | [azerbaijan-vat](azerbaijan-vat.md) | source-cited draft; partial |
 | SC | [azerbaijan-social-contributions](azerbaijan-social-contributions.md) | source-cited draft; partial |
 | PR | [azerbaijan-payroll](azerbaijan-payroll.md) | source-cited draft; partial |

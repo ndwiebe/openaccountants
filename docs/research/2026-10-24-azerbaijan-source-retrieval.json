@@ -47,6 +47,30 @@
       "sha256": "e8c6f79180432d43fd13e2a13e48dcbb08e1a526b7c801cf5624e613af4c1a77",
       "retrieval": "curl public official consolidated HTML, normal Referer and User-Agent headers",
       "local_research_file": "work/size.html"
+    },
+    {
+      "url": "https://frameworks.e-qanun.az/55/f_55514.html",
+      "read_on": "2026-10-24",
+      "bytes": 167742,
+      "sha256": "dce48a0a667b180c793935a419352077d763442c9eccd1d22ac866bc9c501240",
+      "retrieval": "curl public official consolidated HTML",
+      "local_research_file": "work/electronic.html"
+    },
+    {
+      "url": "https://frameworks.e-qanun.az/13/f_13154.html",
+      "read_on": "2026-10-24",
+      "bytes": 740388,
+      "sha256": "45f62e3a73e9e219a971c90808bf0a8b6d8de3987776f91ed243ff4c34937371",
+      "retrieval": "curl public official consolidated HTML",
+      "local_research_file": "work/travel.html"
+    },
+    {
+      "url": "https://frameworks.e-qanun.az/61/f_61117.html",
+      "read_on": "2026-10-24",
+      "bytes": 332309,
+      "sha256": "a775a81977abf3ec47bca643ad3938adc92b298dd204db0caf6479408901fa9b",
+      "retrieval": "curl public official consolidated HTML",
+      "local_research_file": "work/amendment-297.html"
     }
   ],
   "notes": "Local HTML is scratch evidence, not a committed statute mirror. Body text read with superseded strike-tag text excluded; future commencement annotations retained and checked. Public links and hashes permit independent re-fetch."
