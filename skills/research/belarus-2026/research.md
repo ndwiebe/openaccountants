@@ -56,3 +56,5 @@ Writer follow-up after initial candidate: precise General Code art. 44(1)-(4) li
 Independent finding BY-01: the annual ordinary Belgosstrakh report was omitted from SC/PR. Writer read the reviewer's freshly retrieved official Resolution1462 reporting Regulation paras.2-3 and33-38, and added the25January deadline, next-working-day reporting convention, electronic receipt and separate reorganisation/liquidation procedure to both guides. This fixes an ordinary reporting omission; existing historical/proration gaps remain.
 
 Writer follow-up: made the ordinary VAT refund process executable with Special Code137(2)-(5-1) decision/inspection/set-off/refund dates and notice/audit exceptions, from the current official article read in full. Requested independent verification of this exact insertion.
+
+Independent finding BY-02: ordinary PU reporting events were missing. Writer read official742Rules15-17 on PDFpp32-33 and added PU-1 identification/status conditions, PU-2 job-change quarter10th deadline, sickness/maternity PU-3/conditionalPU-2 three-working-day events, and pension PU-3 five-working-day submission to both SC/PR. Requested exact-source reviewer closure.
