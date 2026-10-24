@@ -7,7 +7,7 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
     title: "Official coordinated IGR; residence, source, withholding, corporate foreign credit and procedure"
@@ -26,9 +26,9 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino cross-border and nonresident tax v0.1
+# San Marino cross-border and nonresident tax v0.2
 
-# # Residence, source and PE first
+## Residence, source and PE first
 
 IGR 1 taxes relevant resident worldwide income and the listed domestic-source income of nonresidents. Individual residence under 10 has alternative gates: registered residence for most of the tax period, actual stay for most of the period, **or centre of vital interests** in San Marino. Article 2 defines the vital-interest centre using economic, property, social and family interests. The earlier generic registered-address-or 183-day instruction is incomplete. Companies use registered office or effective management for most of the period under 42. Special residence/tax regimes require their own law and approval; this Guide does not determine immigration eligibility. [IGR 1–2,10 and 42][law]
 
@@ -36,7 +36,7 @@ Domestic PE under 4 includes a fixed business place and the listed examples. A c
 
 Under 9, apply the domestic tax provisions where they are more favourable than a tax treaty. For any treaty result, retain the authentic treaty/protocol, entry/application dates, tax/person/income article, beneficial-entitlement facts and the actual claim/withholding evidence. This draft applies no unnamed treaty rate.
 
-# # Current domestic-source and identification screen
+## Current domestic-source and identification screen
 
 IGR 5 lists domestic land/buildings, specified capital income, employment, professional activity, PE business and other source categories. Employment includes payments by resident persons in or outside San Marino; professional source has its own activity/customer/PE terms. Do not decide source solely from where an invoice is issued or workdays counted. [IGR 5][law]; [Law 141/2025,article 2][reform]
 
@@ -48,7 +48,7 @@ The **12 October 2026 DD 156**, applying from tax year 2026, replaces article 5(
 
 [DD 156/2026,articles 2 and 19][october]. The older coordinated text and August circular must be read with this later amendment. The actual identification workflow has not been exercised.
 
-# # Classify each payment before selecting withholding
+## Classify each payment before selecting withholding
 
 | Selected domestic category | Conditional rate/route | Source |
 |---|---|---|
@@ -60,7 +60,7 @@ The **12 October 2026 DD 156**, applying from tax year 2026, replaces article 5(
 
 These are selected classifications, not a universal outbound-payment table. Bank-paid investment income has separate 103(2) rates and source/exemption gates. A charge labelled royalty, service or reimbursement needs its actual legal character; the former corporate summary's universal royalty percentage is not adopted. The special 3% service route requires the actual implementing circular/facts and is not applied in these examples. Actual treaty relief is separate.
 
-# # Specific 2026 foreign-bank interest and rental circular
+## Specific 2026 foreign-bank interest and rental circular
 
 [Department Finance circular 1/2026,5 August 2026][circular] covers the specified interest paid by resident nonfinancial persons to foreign banks and specified equipment/vehicle rentals paid to foreign economic operators **without a domestic PE**. It distinguishes:
 
@@ -71,13 +71,13 @@ The circular's stated Italian treaty treatment is a source pointer only; this Gu
 
 For these covered receipts, payment timing controls: a 2026 payment of income accrued in 2025 is covered in full absent a transitional rule; an unpaid accrued amount does not itself trigger the circular's cash-basis obligation. Certification of B2B tax withheld/paid, with the authority stamp, and B2C declaration/payment receipts support a later foreign-credit claim; they do not themselves prove that the other State grants a credit. The circular distinguishes failure to withhold/remit from failure to remit after correct withholding under IGR 131. Preserve evidence rather than assuming the recipient is released in every case. [Circular,pages 1–3][circular]; [IGR 11,125 and 131][law]
 
-# # Corporate foreign credit, separate from withholding
+## Corporate foreign credit, separate from withholding
 
 For a corporate/assimilated taxpayer or covered PE whose total income includes foreign income, IGR 44 requires final/nonrefundable foreign tax and limits credit to the corresponding share of net San Marino tax after fiscal adjustments. Compute separately by State; excluded/undeclared income and omitted/null returns have separate denial rules. Partial foreign-income inclusion also proportionately reduces the eligible foreign tax. [IGR 44][law]
 
 For income **not produced through a foreign PE**,44(8) specifies foreign income for the credit computation as total income multiplied by **foreign gross receipts/total receipts**. Do not substitute the foreign gross receipts themselves as net taxable foreign income. The return/year, final-payment timing through 31 December of the declaration year and the specified later-payment/three-year adjustment provisions need actual documents. Article 44(7)'s following-period deduction for qualifying unrecovered foreign tax is different from a carryforward of a tax credit; do not promise a universal unused-credit carryforward. Individual foreign relief is a separate method and remains to be reconciled.
 
-# # Exit, rulings, filing and sanctions
+## Exit, rulings, filing and sanctions
 
 DD 116/2026 permits an international advance-agreement route covering certain entry/exit values, treaty PE questions, PE profit attribution and specified cross-border receipts/payments. Its existence does not itself determine an exit charge, tax-neutral reorganisation or valuation. Use the [TP Guide](sm-transfer-pricing.md), establish the actual event and obtain the relevant full exit/restructuring chain. DD 156's merger/insolvency changes do not complete those topics. [DD 116,articles 1–6][apa]; [DD 156,articles 13–14][october]
 
@@ -85,11 +85,11 @@ The general IGR return/withholding-declaration deadline is 31 July following the
 
 Late interest under 128 is legal rate plus two points; its actual legal rate/dates are not fixed here. Withholding, nonpayment and declaration penalties are distinct under 138–139. DD 156 changes late-return charges and selected employer-certification treatment. Complete sanctions, late-validity/correction interplay, relief claims and actual portal fields remain open. [IGR 128,131,137–143][law]; [DD 156,articles 16 and 19][october]
 
-# # Worked controls
+## Worked controls
 
 Legal classification and entitlement are explicit assumptions; amounts areEUR.
 
-## # Covered B2B foreign-bank interest
+### Covered B2B foreign-bank interest
 
 Assume a resident ordinary economic-operator payer, a foreign-bank recipient without domestic PE,10,000 interest actually paid in 2026, a covered domestic-source instrument and no treaty relief.13% withholding is 1,300; recipient cash 8,700. This does not apply the domestic-bank source exclusion to an ordinary business payer.
 
@@ -106,7 +106,7 @@ expected:
   recipient_cash: 8700
 ```
 
-## # Covered B2B equipment rental
+### Covered B2B equipment rental
 
 Assume a qualifying nonresident owner without domestic PE, covered equipment situated in San Marino,12,000 rent paid by a covered resident operator and no treaty relief.10% withholding is 1,200 and recipient cash 10,800.
 
@@ -123,7 +123,7 @@ expected:
   recipient_cash: 10800
 ```
 
-## # Specific covered B2C route
+### Specific covered B2C route
 
 Assume the circular's nonresident/without-PE B2C route is established,10,000 of the covered gross income is received from a private resident in 2026, the 18% ordinary rate applies and no treaty reduction or other adjustment exists. Self-assessed IGR is 1,800; this is not a customer-operated 13% or 10% withholding.
 
@@ -138,7 +138,7 @@ expected:
   self_assessed_igr: 1800
 ```
 
-## # Non-PE corporate foreign-credit allocation
+### Non-PE corporate foreign-credit allocation
 
 Assume total taxable income 100,000, net San Marino IGR before foreign credit 18,000, gross total receipts 200,000, relevant-State foreign receipts 40,000 and eligible final foreign tax 5,000. No foreign PE, partial exemption, other State or special adjustment applies. Statutory foreign income allocation 20,000 gives 3,600 domestic limit; credit 3,600 and 1,400 uncredited. Determine separately whether any following-period deduction under 44(7) applies;1,400 is not automatically a carried-forward tax credit.
 
@@ -162,11 +162,11 @@ expected:
   foreign_tax_uncredited_in_example: 1400
 ```
 
-# # Ask and refer
+## Ask and refer
 
 Collect dated homes/stays and vital interests, legal seat/effective management, actual payer/recipient/operator status and regulated licences, PE/project/contract records, income character and payment dates. Obtain authentic treaties/protocols and claim forms, all foreign income/tax/finality evidence, relevant applications, certificates, returns and receipts. Refer every concrete treaty, special residence regime, complex source/PE/remote-work case, personal foreign credit, exit/entry/merger, foreign-loss and contested withholding/credit claim. Complete XB coverage, within-year amendment/implementation chain, live procedures and independent whole-pack/named local accountant review remain open.
 
-# # Sources and access scope
+## Sources and access scope
 
 Read 24 October 2026: coordinated IGR no-notes edition 22 December 2025, selected 1–6,9–11,42–46,83–94,102–104,123–131,137–143; with-notes edition dated 12 December 2025 is separate. Law 141/2025 selected 2/54 and DD 156/2026 all 20 articles. DD 116/2026 all 6 articles. Finance circular 1/2026 is scanned: OCR supplied navigation, pages 1–3 were visually compared for the substantive claims; page 4 is a blank certification form, not filed. It anticipates 2027 procedures, whose existence is not asserted now. These selected reads do not establish the entire amendment chain, all treaties or live filing readiness.
 
@@ -180,6 +180,6 @@ Read 24 October 2026: coordinated IGR no-notes edition 22 December 2025, selecte
 
 ---
 
-# # Talk to an accountant
+## Talk to an accountant
 
 Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

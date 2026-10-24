@@ -98,7 +98,118 @@
       "pdf_magic": true,
       "pdftotext_exit": 0,
       "text_sha256": "94ed19059dd89df6138d8044c82f1d7edfa950c0c6d5783d2cba8b5cca050c82",
-      "read_scope": "PDF retrieved; selected web-reader passages located for subsequent domestic-invoice reconciliation. Whole-document legal/commencement audit is pending; no current Guide method relies on a completed reading."
+      "read_scope": "All eleven articles now read, including article 11 optional 2026 route, 2027 obligation/paper scope, 2028 sanction and conditional public-entity commencement. Complete technical Regulation28/2026 and portal execution remain open."
+    },
+    {
+      "name": "iss-general-revised-2026",
+      "url": "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T11:59:51.742109+00:00",
+      "raw_sha256": "7b6c1a321a75dd029aa19585b1f8745ac4c43ef0ec1832003634b21df4fc5ad3",
+      "bytes": 3136289,
+      "pdf_magic": true,
+      "read_scope": "All ten pages OCR-read; material pages 1,4,5,10 visually compared. Full underlying special-case statutes and live CONTRISS not audited.",
+      "text_sha256": "cb7c7f5a50363e843bf55318c122a7f82614928eb2580384dc6aca3a963ef1cd",
+      "ocr": {
+        "engine": "tesseract -l ita --psm3; pdftoppm160dpi",
+        "pixel_compared_pages": [
+          1,
+          4,
+          5,
+          10
+        ],
+        "page_text_sha256": {
+          "1": "a03b114891b85791a56b721c859dda5b4d82d28f0b2a32b31b28f65511d43189",
+          "2": "ba26585b7ae2bce7deb2215b140e27557aa882307e5760c02bb3a60712b0ad56",
+          "3": "858a8941ffca9ff5ef6a19552cb850e2d387d027a3dfb2a7151e938afe8a0e91",
+          "4": "aac5acd809fdc745f1fca1d1aab9c50b2359d61a4d206b94cc2f49060595d618",
+          "5": "9481172190086ee7ff14f48d8118dbbe6a900b2b55c594acf2776a2a3c414320",
+          "6": "dac013be8bf2a43ef30c4a06f4cc49080492a833aa35abe4e569e940ec39cebf",
+          "7": "4ed4d0922c83e89fc3908ae93ed9d44cc1d5bfa0f7e2edccc30539cd8d2d0b78",
+          "8": "54d91a432607d4126c1dc54916c217e4fe283e08f454cff7bb3f696b4899ef87",
+          "9": "3cfdfa1689f6761a14860768d341492ec9fcbe5f2a6a3b9601fe93a536e56e5a",
+          "10": "fb5d55249cec1fefc14c6b91a4da1ac7fe6a69e21a23b26088969d8b8c7c4766"
+        }
+      }
+    },
+    {
+      "name": "pension-law-157-2022",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T11:59:53.228433+00:00",
+      "raw_sha256": "7eff5489f2d598750f2c2e5fee171f57b26d058f22c88d1d4e7a818eb1f54609",
+      "bytes": 624059,
+      "pdf_magic": true,
+      "read_scope": "Final enacted law identity/first page checked; not a full contribution-law review. Current rate method uses revised ISS circular.",
+      "text_sha256": "d70f7e1cb48dca99c59fd4438648532c7f357616f45b9e63a88328b425957564"
+    },
+    {
+      "name": "import-law-40-1972",
+      "url": "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:50.861305+00:00",
+      "raw_sha256": "9e520020b95448dbc94d143c1ad929042513b2a556e7c90f6f50f4f55a4cb1a1",
+      "bytes": 71329,
+      "pdf_magic": true,
+      "read_scope": "Selected scope, base, liability and export/refund framework read; original paper process and rates are not represented as current.",
+      "text_sha256": "4919c410c521a3bee0f7f487f3c6c10127de20fc7e6d68004c9a0a7794271094"
+    },
+    {
+      "name": "import-d-50-1993",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17021434.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:55.010557+00:00",
+      "raw_sha256": "f8dea1e7b0130f07102c643d40dee29aad5818915754d4f853148dabbf4e99a6",
+      "bytes": 34852,
+      "pdf_magic": true,
+      "read_scope": "Selected article 3 base and 4-5 documentary provisions read; current operational amendments remain open.",
+      "text_sha256": "3ff5236329c13b313326ed0c46703e191087ee30d6fb531d1dd1763fd7cc9c87"
+    },
+    {
+      "name": "import-dd-183-2011",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/documento17046854.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:52.827461+00:00",
+      "raw_sha256": "8e3ad9d943239739fe216ad13283469868efc214f34d0393233392e7f6a2e8b9",
+      "bytes": 21481,
+      "pdf_magic": true,
+      "read_scope": "Both articles read; ordinary 17%, specified Table C 21% and January 2012 application. Official errata corrects title, not these rates.",
+      "text_sha256": "d6300cfcbbb09537e3c1d2aa4324eeb6a0f6a60fd5299cd8f8dd1f6acb6884bb"
+    },
+    {
+      "name": "import-d-108-1997",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022004.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:16:55.283641+00:00",
+      "raw_sha256": "3552dce9dddfa06c71fe8433f9550a4f601fd7cf879eb611d486cfe89b037752",
+      "bytes": 69694,
+      "pdf_magic": true,
+      "read_scope": "Articles 1-4 and selected table framework; original ordinary rate superseded. Not full current tariff-chain review.",
+      "text_sha256": "b99058f402fbf8b8b98a235bd724e5891e256a0541995304dd460e3ed9898cf6"
+    },
+    {
+      "name": "import-d-135-2003",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17022916.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:57.858949+00:00",
+      "raw_sha256": "d6137ce89f82cc985e0c346be611f6b173fcba7e20a4ceb94efd376738df5ab7",
+      "bytes": 22983,
+      "pdf_magic": true,
+      "read_scope": "All articles read for capital-goods original framework; later amendments/current vehicle, rental and property conclusions remain open.",
+      "text_sha256": "9ac73159b4ed48c4eb75f0107a8e9dacf01a72d56b98aa44d514cbdc738276ee"
+    },
+    {
+      "name": "company-law-80-2022",
+      "url": "https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17132480.html",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:18:07.812592+00:00",
+      "raw_sha256": "4f032d3ba066d3ec1ab1106030165fc2b1fbba2b0b374ac3aa56136dfaedc444",
+      "bytes": 282337,
+      "pdf_magic": true,
+      "read_scope": "Original articles 1-7 read and compared with selected company collection; not full current company/licensing law review.",
+      "text_sha256": "e13941ad76ae2972f93f0c0e82aab0b65c62fdcfa6253866722f10743b5d1513"
+    },
+    {
+      "name": "italy-gu-168-2021",
+      "url": "https://www.gazzettaufficiale.it/eli/gu/2021/07/15/168/sg/pdf",
+      "local_download_completed_at_utc_from_mtime": "2026-10-24T12:17:43.525451+00:00",
+      "raw_sha256": "18dcb791dec4ac7914b92f1e41afeb5a148616d7a9b83d781eb4a651e8957f0f",
+      "bytes": 2732845,
+      "pdf_magic": true,
+      "read_scope": "Only DM 21 June 2021 articles 1-23 read; detailed ordinary B2B and commencement comparisons. Gazette remainder unrelated/not reviewed; all later implementation/amendments and live SDI remain open.",
+      "selected_extracted_articles_text_sha256": "1b3d656833bdfe1cbd733f2f6e6a3f5b8407c76aac077ec541523c0243262770"
     }
   ],
   "coordinated_archive": {
@@ -123,7 +234,8 @@
         "selected_read_scope": "No-notes edition used for selected main-law1–6,9–11,17,24,30,42–50,73–75,84–85,92–94,123–128,131,137–139/143; not every paragraph in those ranges. With-notes edition used for selected source history and original/amending text comparisons; full historical annex not audited."
       }
     ],
-    "status_limit": "Official coordinated texts are recognitive aids; authentic post2012acts are in Bollettino. Do not describe the two editions as identical or a complete2026consolidation."
+    "status_limit": "Official coordinated texts are recognitive aids; authentic post2012acts are in Bollettino. Do not describe the two editions as identical or a complete2026consolidation.",
+    "additional_selected_read_scope": "Personal articles12-18,24-26/30,84-85/101 and AnnexC/E read for second preparation, with current DD156 amendments. Not all category or implementation provisions."
   },
   "access_limits": [
     "Web reader cannot open coordinated ZIP; direct official download succeeded.",
@@ -132,14 +244,88 @@
     "Selected gov.sm/ISS listing pages rendered only forms/iframe in web reader; this does not establish unavailable or completed underlying source coverage."
   ],
   "country_source_sha256": {
-    "skills/international/san-marino/README.md": "e427439c3b3dc2430c1ae0161aa50325a9a7a4a3d0188742293215d26be59196",
-    "skills/international/san-marino/sm-company-formation.md": "f242830ef7f5a76c38841be85147873e03d422abda8c6d27e4cc41a5c797c694",
-    "skills/international/san-marino/sm-corporate-income-tax.md": "9c349689543f6211d5bab7463866175a05a9229e17b59dd5006fc74d668cb697",
-    "skills/international/san-marino/sm-cross-border.md": "8c7bedb8b6a7cd7ec95b2a6d5f3cb2cbd64c77a17ee8e8cbb3123b4a8972a106",
-    "skills/international/san-marino/sm-income-tax.md": "85c7e68f27685da85e4fd14bb2f163b791a38f53f9e72c789c1d549c563c4f00",
-    "skills/international/san-marino/sm-payroll-social.md": "9c7cf19f732c012932f5019c3058a0a387a44afe3583fbd5bfa75d3e67a3ac9d",
-    "skills/international/san-marino/sm-tax-overview.md": "2426188ab74f9d0534648043c98f54d68cd8e41090a717b9b52261396afea2e0",
-    "skills/international/san-marino/sm-transfer-pricing.md": "9f897aa1df154edee00e18b77a1ff9564e72b911028bc71d4714c9e5a18e57ab",
-    "skills/international/san-marino/sm-vat-gst.md": "4d4c103370a3b3b2ab2d6a13f89c17777f3eebae5968b5f228c13915569cae2b"
-  }
+    "skills/international/san-marino/README.md": "1864c04da3bd981d943a7dc3309d7604644b0d6ba5ead54453d86b8accbd4a2e",
+    "skills/international/san-marino/sm-company-formation.md": "c4ef4205443419aa574c20f25651e4f65fbe183f9eb9a5226bb0718a045c9b09",
+    "skills/international/san-marino/sm-corporate-income-tax.md": "017b0ff00ab175e84e5aebd3960607a826fb3e02346e72674b7a5ab8d43b29a7",
+    "skills/international/san-marino/sm-cross-border.md": "3db0b8f020c4939198fdc734784f796185fbb973cadf2bf99b6fc06f58808e36",
+    "skills/international/san-marino/sm-income-tax.md": "81752dc4439d12f3415a949cd2b421aea8590d17ef1ec5b293584aca0d012a17",
+    "skills/international/san-marino/sm-payroll-social.md": "6fbfd427995c1c0d8969da6bb433e2b793c74356190b394be46796ca47349e50",
+    "skills/international/san-marino/sm-tax-overview.md": "0419796d37380242282e5537177c8c77e157d50e8182c48f841ef9f179887e9a",
+    "skills/international/san-marino/sm-transfer-pricing.md": "4b52ec39c117c91d8b44c658e2d1173d9c79d06f01a7b17ebdcb696ce3e2e95b",
+    "skills/international/san-marino/sm-vat-gst.md": "655f762216062181b84933763dfd09890222ee0e134c5313cd6a6e5b37275958"
+  },
+  "second_preparation_recorded_at_utc": "2026-10-24T12:24:06.549315+00:00",
+  "second_preparation_limit": "Writer preparation only. Earlier retrieval timestamps are preserved; local file mtime below identifies the completed download, not a separately measured HTTP-response timestamp.",
+  "company_coordinated_archive": {
+    "url": "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html",
+    "catalogue_printed_date": "2024-11-27",
+    "archive_sha256": "07e213846e9f5f88607dbacaef1b93d8860fe91521f8710191725315adab4047",
+    "selected_scope": "Definitions and selected company articles2-6,10-21,48-52; selected accounting references and history of10/12/13. Not the full collection or2025-2026amendment chain.",
+    "pdfs": {
+      "0": {
+        "raw_sha256": "99211a9bb2bb370238df67883ef71103716e244fa7595cfe20466afa224652d7",
+        "text_sha256": "4bcae7cbf5b5f5cccf7e6df2cd219b3b003ab727dcee421a4f2554e28a36a182"
+      },
+      "1": {
+        "raw_sha256": "5b6cc6b149df0da53174e015f7f2e34154f62e5620609783975e2a5261fbca35",
+        "text_sha256": "b4695b4aa444b97b8dc8bfe1b1ae11be18c442f4519e563abad1a5041e5a7632"
+      }
+    }
+  },
+  "public_synthetic_calculator_checks": [
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "11000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.008066+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "d6db64bb91e408f98f25ee8e3eb4bc015cef51f6d594521ce596eea7ab6ecda6",
+      "extracted_text_sha256": "2fa324dba601cbe2a5152a7abdd71989c1944dcf0fceb47d55d4b860da9b0dfe",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    },
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "30000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.454822+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "cf6ed2b20334dd68db61b13f6dd5b0e1974f30c440f0118125d1ce1770a6efac",
+      "extracted_text_sha256": "fb9b23f1ab8ec799e70f090a86f9365886bab3e434ea21c8489cf83980d293cb",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    },
+    {
+      "url": "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025",
+      "synthetic_get_inputs": {
+        "AnnoComp": "2026",
+        "TipoContribuente": "2",
+        "Imponibile": "0,00",
+        "NumMensilita": "13",
+        "ImponibileAnnuo": "50000,00",
+        "Conferma": "Calcola",
+        "MPasso": "3",
+        "MTipo": "G"
+      },
+      "checked_at_utc": "2026-10-24T12:05:19.942727+00:00",
+      "http_status": 200,
+      "raw_html_sha256": "752e58b5728f80dd46db7b361fbc4d1a999b83486bc7320bbab34871e7ddb509",
+      "extracted_text_sha256": "1965748caa1336bbdbe0d40553da6a4b8b79241ef9c199d8ce4ace75506ce7dd",
+      "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
+    }
+  ]
 }
