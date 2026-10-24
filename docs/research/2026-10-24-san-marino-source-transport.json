@@ -289,5 +289,17 @@
       "raw_sha256": "4c326af9a22b987f12e5f12424db4237ac16cf21ead9d959558c78b6433bee88",
       "magic": "<html la"
     }
-  ]
+  ],
+  "country_source_sha256_after_correction": {
+    "skills/international/san-marino/README.md": "f06f21f141c5c5130cf2d12184923b18913e556734da4a9afc7d83398f5202d5",
+    "skills/international/san-marino/sm-company-formation.md": "3213f2f7c3bb1bd07637f75cd1fdd5f979dff0a78922f45f9200448e0fc54e25",
+    "skills/international/san-marino/sm-corporate-income-tax.md": "1581fbd03fc673d65d9e272ede646557ff45bf6b46a811ed5d33ad66daa011b8",
+    "skills/international/san-marino/sm-cross-border.md": "4d09329515cad5079999890ad51f1c286bd6b1127ddfd322483a1a66a281593a",
+    "skills/international/san-marino/sm-income-tax.md": "744e4e44d8b55ffcd8162432fd24ee1a3b4165d10226b5391b978225766ecfb6",
+    "skills/international/san-marino/sm-payroll-social.md": "ffb9144b818dffa6743bd9c80e06bfe12e7eb3f924b1d8eb64ab1770e3408afe",
+    "skills/international/san-marino/sm-tax-overview.md": "b26e78811b5197e0da66839e7083b413c93eb5ecb14a8be9a5326ad33121c181",
+    "skills/international/san-marino/sm-transfer-pricing.md": "ef783b5a2be4a92b95d39915bb89e1ba0ca31ddf50f14b1da338728a87db6c7d",
+    "skills/international/san-marino/sm-vat-gst.md": "02f7b3d952ff36c2d2a0a65bc1ae8c5ad1a349a1fe951c65d990f4b46b497154"
+  },
+  "identity_map_limit": "Country byte identities only; original HTTP check times and original source checkpoint remain historical, not refreshed legal or source-transport checks."
 }

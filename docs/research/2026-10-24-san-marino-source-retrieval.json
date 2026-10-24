@@ -323,15 +323,15 @@
     "Selected gov.sm/ISS listing pages rendered only forms/iframe in web reader; this does not establish unavailable or completed underlying source coverage."
   ],
   "country_source_sha256": {
-    "skills/international/san-marino/README.md": "2e442be9d0f833845bcecaa624980407caddcc2c2a5ea754d1c745340e8649d9",
-    "skills/international/san-marino/sm-company-formation.md": "c4ef4205443419aa574c20f25651e4f65fbe183f9eb9a5226bb0718a045c9b09",
-    "skills/international/san-marino/sm-corporate-income-tax.md": "017b0ff00ab175e84e5aebd3960607a826fb3e02346e72674b7a5ab8d43b29a7",
-    "skills/international/san-marino/sm-cross-border.md": "3db0b8f020c4939198fdc734784f796185fbb973cadf2bf99b6fc06f58808e36",
-    "skills/international/san-marino/sm-income-tax.md": "81752dc4439d12f3415a949cd2b421aea8590d17ef1ec5b293584aca0d012a17",
-    "skills/international/san-marino/sm-payroll-social.md": "6c67424215f3d14d01f068b600ba067adc2da5dca4e144c5cfaed2ea34677117",
-    "skills/international/san-marino/sm-tax-overview.md": "0419796d37380242282e5537177c8c77e157d50e8182c48f841ef9f179887e9a",
-    "skills/international/san-marino/sm-transfer-pricing.md": "4b52ec39c117c91d8b44c658e2d1173d9c79d06f01a7b17ebdcb696ce3e2e95b",
-    "skills/international/san-marino/sm-vat-gst.md": "655f762216062181b84933763dfd09890222ee0e134c5313cd6a6e5b37275958"
+    "skills/international/san-marino/README.md": "f06f21f141c5c5130cf2d12184923b18913e556734da4a9afc7d83398f5202d5",
+    "skills/international/san-marino/sm-company-formation.md": "3213f2f7c3bb1bd07637f75cd1fdd5f979dff0a78922f45f9200448e0fc54e25",
+    "skills/international/san-marino/sm-corporate-income-tax.md": "1581fbd03fc673d65d9e272ede646557ff45bf6b46a811ed5d33ad66daa011b8",
+    "skills/international/san-marino/sm-cross-border.md": "4d09329515cad5079999890ad51f1c286bd6b1127ddfd322483a1a66a281593a",
+    "skills/international/san-marino/sm-income-tax.md": "744e4e44d8b55ffcd8162432fd24ee1a3b4165d10226b5391b978225766ecfb6",
+    "skills/international/san-marino/sm-payroll-social.md": "ffb9144b818dffa6743bd9c80e06bfe12e7eb3f924b1d8eb64ab1770e3408afe",
+    "skills/international/san-marino/sm-tax-overview.md": "b26e78811b5197e0da66839e7083b413c93eb5ecb14a8be9a5326ad33121c181",
+    "skills/international/san-marino/sm-transfer-pricing.md": "ef783b5a2be4a92b95d39915bb89e1ba0ca31ddf50f14b1da338728a87db6c7d",
+    "skills/international/san-marino/sm-vat-gst.md": "02f7b3d952ff36c2d2a0a65bc1ae8c5ad1a349a1fe951c65d990f4b46b497154"
   },
   "second_preparation_recorded_at_utc": "2026-10-24T12:24:06.549315+00:00",
   "second_preparation_limit": "Writer preparation only. Earlier retrieval timestamps are preserved; local file mtime below identifies the completed download, not a separately measured HTTP-response timestamp.",
@@ -407,5 +407,17 @@
       "limit": "Public synthetic calculation only, no personal/client data, authentication, declaration, filing or payment. Runtime output is guidance, not independent law verification."
     }
   ],
-  "third_preparation_recorded_at_utc": "2026-10-24T12:33:31.927535+00:00"
+  "third_preparation_recorded_at_utc": "2026-10-24T12:33:31.927535+00:00",
+  "independent_review_correction_recorded_at_utc": "2026-10-24T14:34:01.936851+00:00",
+  "independent_review_corrections": {
+    "original_source_checkpoint": "fc1a9b19591ebb8f163c4a1e8378694abb7c9c29",
+    "corrective_source_checkpoint": "b5e11396408884836a1d3b31dd10ba265628eae1",
+    "material": "DD133/2026 art2 current-year exactly100000 boundary separated from strict-exceeded/option continuing-use wording; equality persistence unconfirmed.",
+    "clarity": [
+      "IGR125(1) next-bimonth clock explicitly covers withholding or monthly employment-income accrual.",
+      "XB routes to personal Guides partial article18method."
+    ],
+    "workflow": "Primary Armenia/Montenegroqueued, source-review record and professional tier2/partial limits; no whole-country completeness claimed.",
+    "arithmetic": "All28original control blocks remain byte-identical."
+  }
 }
