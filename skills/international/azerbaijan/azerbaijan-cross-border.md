@@ -135,4 +135,3 @@ expected:
 | STS official treaty register, effective/application dates and MLI text links | https://taxes.gov.az/az/page/ikiqat-vergitutmanin-aradan-qaldirilmasina-dair-beynelxalq-sazisler | 2026-10-24 |
 
 Not yet confirmed: Full CFC inclusion/ownership-chain calculation and implementing statement; preferential-jurisdiction payment exclusions/interactions and current official list; migration/exit asset valuation and the 25 December 2026 financial-leasing transition. No zero-tax result is inferred.
-

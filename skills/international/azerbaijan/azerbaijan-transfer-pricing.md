@@ -141,4 +141,3 @@ expected:
 | STS current CbCR implementing-rule summary | https://www.taxes.gov.az/az/page/cbcr-auto-info-exchange | 2026-10-24 |
 
 Not yet confirmed: Complete CbCR parent/surrogate/local-filing exceptions and exchange-failure triggers. No filing exemption is inferred from that gap.
-
