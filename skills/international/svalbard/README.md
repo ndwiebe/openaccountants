@@ -12,14 +12,13 @@ covered_by:
   XB: sj-svalbard-tax-residence
 partial:
   IT-IND: "Final 2026 residential-property assessment directions and values have not been verified; no mainland housing default is substituted."
-  SC: "Final low-income contribution assessment and the interaction of the general threshold with Svalbard gross collection need official confirmation."
-  PR: "Imported 2026 mainland communications and travel/car/snowmobile allowance schedules and final-tax rounding remain unverified."
-  XB: "Adapted foreign-capital and wealth credit rules and Svalbard departure/business-asset exit computations and payment mechanics remain unverified."
+  SC: "Low-income separately assessed sole-trader and mixed-income contribution rules need confirmation; first-krone salary contributions are confirmed."
+  XB: "Territorial adaptation and computation/payment of cross-border unrealised-asset gains and company emigration remain unverified; ordinary liquidation/final-loss rules are covered."
 ---
 
 # Svalbard: 2026 tax pack
 
-Svalbard has a separate Norwegian tax system, administered by Skatteetaten, using NOK and the calendar year. Gross salary withholding and separately assessed ordinary income are distinct. All six Guides are **source-cited drafts**, not accountant-reviewed. Ordinary scope has been expanded, but the four explicit coverage gaps above keep issue #424 open.
+Svalbard has a separate Norwegian tax system, administered by Skatteetaten, using NOK and the calendar year. Gross salary withholding and separately assessed ordinary income are distinct. All six Guides are **source-cited drafts**, not accountant-reviewed. Ordinary scope has been expanded, but the three explicit coverage gaps above keep issue #424 open.
 
 **Territory:** OWNERS.md and issue #424 identify this catalogue entry as Svalbard. The SJ metadata identifier does not establish Jan Mayen coverage. Svalbard Tax Act §1-1 sets this pack's boundary; Jan Mayen needs separate research and is not represented as complete by this work.
 
@@ -31,7 +30,7 @@ Svalbard has a separate Norwegian tax system, administered by Skatteetaten, usin
 | IT-CORP | sj-svalbard-company-income-tax | source-cited draft |
 | VAT | Not applicable within Svalbard; statutory territorial exclusion | sourced absence |
 | SC | sj-svalbard-social-contributions | source-cited draft; partial as declared |
-| PR | sj-svalbard-payroll-tax | source-cited draft; partial as declared |
+| PR | sj-svalbard-payroll-tax | source-cited draft |
 | TP | sj-svalbard-transfer-pricing | source-cited draft |
 | XB | sj-svalbard-tax-residence | source-cited draft; partial as declared |
 

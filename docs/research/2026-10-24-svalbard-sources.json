@@ -327,7 +327,72 @@
       "sha256": "a411e85ee91f6c758863b1e3ed6ca2b657e7de75581cf1033e2c48d1373714fe",
       "bytes": 156282,
       "text_chars": 31260
+    },
+    {
+      "key": "allowances",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216",
+      "read_on": "2026-10-24",
+      "sha256": "093b5a2dd39aad385ae559c8d0b08d408a1e2c928bf652b5a028a07c2079f465",
+      "bytes": 62501,
+      "text_chars": 16875
+    },
+    {
+      "key": "incomereg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158",
+      "read_on": "2026-10-24",
+      "sha256": "8bf64bcaf773b8809b133e9ce6057f0fa57037633f641468b345ff5561449ddc",
+      "bytes": 292420,
+      "text_chars": 59547
+    },
+    {
+      "key": "incomereg5",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_5",
+      "read_on": "2026-10-24",
+      "sha256": "e40d406060aaacd65bbdbdf777ea308b6aca30c0c1775bcee28c6b60dd012668",
+      "bytes": 470730,
+      "text_chars": 117324
+    },
+    {
+      "key": "creditreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_16-3-1-1",
+      "read_on": "2026-10-24",
+      "sha256": "ed70e72e2a6a48c7061863982c29b6e23467caa3b5a728b59632f79d1f78a919",
+      "bytes": 264806,
+      "text_chars": 57157
+    },
+    {
+      "key": "prepay2026",
+      "url": "https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/",
+      "read_on": "2026-10-24",
+      "sha256": "31baa3aff9ebf939437cef0231100b4ee2352fadcd8077b4f4cbef56c8fc527b",
+      "bytes": 203631,
+      "text_chars": 102273
+    },
+    {
+      "key": "areport",
+      "url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+      "read_on": "2026-10-24",
+      "sha256": "1438a00e560d7d377e3d85cb43dc0eec4a635c4713b7ac25eab63f092f7d99cb",
+      "bytes": 64339,
+      "text_chars": 13030
+    },
+    {
+      "key": "areportreg",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-24",
+      "sha256": "8cf2f61aae084056df74ea669f06b0932fc882e1af4a00c5f7c635b69b7956fe",
+      "bytes": 58372,
+      "text_chars": 8809
+    },
+    {
+      "key": "youthconsultation",
+      "url": "https://www.regjeringen.no/contentassets/337ef9a31fcc495bb63bb37166c52a1d/horingsnotat-fribelop-for-ungdom-pa-svalbard.pdf",
+      "read_on": "2026-10-24",
+      "sha256": "b8d355f205fdaf0480ec37cd9cb2e3ab30057dfb7494bae787e6788f7742b357",
+      "bytes": 5811,
+      "scope": "section3.5 explanatory history only, read through web PDF reader; operative authority is current enacted Svalbard regulation section5"
     }
   ],
-  "retrieval": "Fresh HTTPS retrieval with normal user agent after initial urllib 403; browser fallback opened wage page successfully. No challenge solved. HTML/text retained in local work/sources; hashes identify fetched snapshots, not proof of legal correctness. Current handbook paragraph years checked against enacted decisions."
+  "retrieval": "Fresh HTTPS retrieval with normal user agent after initial urllib 403; browser fallback opened wage page successfully. No challenge solved. HTML/text retained in local work/sources; hashes identify fetched snapshots, not proof of legal correctness. Current handbook paragraph years checked against enacted decisions.",
+  "scope_note": "Fresh read scope extends to ordinary credit allocation/documentation, imported 2026 payroll allowances and communications, claim rounding, and separate a-melding sanctions. Primary consultation history is interpretive only; no proposed rate or alternative is used."
 }

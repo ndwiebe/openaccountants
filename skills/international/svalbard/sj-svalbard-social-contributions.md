@@ -38,7 +38,9 @@ For ordinary covered salary/pensions, collect on the same gross taxable benefit 
 
 For a member with ordinary sole-trader income assessed under Svalbard Act §3-2(4)(b), the Act expressly assigns the middle contribution rate. Use the separately determined taxable business base and establish membership before calculating. Salary bands cap neither the contribution base nor contributions. Insurance is additional to 8%/22% income tax.
 
-National Insurance Act §23-3 also contains a general **NOK 99,650** lower threshold and **25%** phase-in cap. The Svalbard salary system collects gross contributions from the first krone, while the new youth allowance gives refunds. The interaction of the general low-income provision with final Svalbard contribution assessment has not been conclusively verified here. Do not apply a mainland tax-card exemption in payroll or assert that a low-income adult is finally exempt. This precise low-income assessment question remains a core coverage gap pending official clarification; the examples are above the phase-in range.
+For income within the salary-withholding scheme, contributions are payable **from the first krone**, subject to the enacted youth refund and other actual membership/class exemptions. This follows [Svalbard regulation §5](https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305), which expressly applies Act §3-1's gross computation. The [2026 authority statement](https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/) confirms first-krone collection/refund. The Ministry's consultation §3.5 explains the cross-reference subsequently enacted in regulation §5; its proposed alternatives and old-year rates are not operative authority here. Do not import the mainland low-income exemption into final gross salary contributions.
+
+The application of the general §23-3 low-income rules to **separately assessed sole-trader income and mixed assessed/withheld income** remains unconfirmed. No assessment exemption or phase-in calculation is supplied for those facts. That narrower annual-assessment question remains the SC coverage gap; the examples do not depend on it.
 
 For youth, withhold first and let the tax authority refund qualifying contributions under regulation §5 and Act §3-3. The allowance concerns qualifying employment remuneration and sickness pay, not all pensions or all insurance benefits. Retain the age, income and refund reconciliation.
 
@@ -50,7 +52,9 @@ Individually assessed sole-trader contributions belong in the annual business ta
 
 ## Penalties and interest
 
-Under [Svalbard Act §4-1](https://lovdata.no/dokument/NL/lov/1996-11-29-68), the Tax Administration Act applies. Missing mandatory information can trigger a daily coercive fine, ordinarily **0.5 court-fee units per day**, capped at **50 units** for the ordinary information failure ([Administration Act §14-1](https://lovdata.no/dokument/NL/lov/2016-05-27-14); [regulation §14-1-1](https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13)). The authority's notice sets the start date; this is not an automatic charge on every late return.
+**A-melding has a separate reporting-sanction regime.** [A-Reporting Act §§1,10–11](https://lovdata.no/dokument/NL/lov/2012-06-22-43) applies on Svalbard. Missing mandatory payroll information can attract a daily coercive fine, normally **0.1 court-fee units per missing income recipient per day**, starting on the date in the decision, with a statutory total cap of **1,000 court-fee units**. A separate late-report fee is normally **0.25 court-fee units per day of lateness**, from the day after the deadline through delivery, capped at **15 units**. Do not impose that fee where a coercive fine has accrued for the same lateness. The regulations allow a different daily rate in special cases ([A-Reporting regulation §§4-1–4-4](https://lovdata.no/dokument/SF/forskrift/2014-06-24-857)). Keep these separate from ordinary tax-return sanctions and interest on unpaid tax.
+
+Under [Svalbard Act §4-1](https://lovdata.no/dokument/NL/lov/1996-11-29-68), the Tax Administration Act applies. For ordinary tax-return/information duties outside the separate a-melding sanction rules above, missing mandatory information can trigger a daily coercive fine, ordinarily **0.5 court-fee units per day**, capped at **50 units** for the ordinary information failure ([Administration Act §14-1](https://lovdata.no/dokument/NL/lov/2016-05-27-14); [regulation §14-1-1](https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13)). The authority's notice sets the start date; this is not an automatic charge on every late return.
 
 Incorrect or incomplete information producing a tax advantage attracts **20%** additional tax, reduced to **10%** for the specified third-party-reported information. Intentional or grossly negligent failures can attract a further **20% or 40%**. Excusable circumstances, qualifying voluntary correction and other statutory exceptions must be tested ([Administration Act §§14-3 to 14-6](https://lovdata.no/dokument/NL/lov/2016-05-27-14)). These percentages apply to the tax advantage, not turnover.
 
@@ -113,8 +117,12 @@ expected:
 | Administration Act chs.8,14 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-24 |
 | Administration regulation §14-1-1 | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13 | 2026-10-24 |
 | Payment Act chs.10–11 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-24 |
+| 2026 first-krone collection/youth-refund statement | https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | 2026-10-24 |
+| Ministry consultation §3.5, explanatory history only, checked against enacted regulation §5 | https://www.regjeringen.no/contentassets/337ef9a31fcc495bb63bb37166c52a1d/horingsnotat-fribelop-for-ungdom-pa-svalbard.pdf | 2026-10-24 |
+| A-Reporting Act §§1,10–11 | https://lovdata.no/dokument/NL/lov/2012-06-22-43 | 2026-10-24 |
+| A-Reporting regulation §§4-1–4-4 | https://lovdata.no/dokument/SF/forskrift/2014-06-24-857 | 2026-10-24 |
 | 2026 interest | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-24 |
 
 The current Skatte-ABC contains stale year labels in some rate paragraphs and numbering inconsistencies. The enacted 2026 decision and consolidated statute control all figures here.
 
-Not yet confirmed: Interaction of the general §23-3 low-income threshold/phase-in with final Svalbard assessments. No exemption is inferred from the missing operational confirmation. Voluntary/special overseas contribution schedules are excluded.
+Not yet confirmed: Application of the general §23-3 low-income rules to separately assessed sole-trader and mixed income. Final first-krone salary contributions are confirmed; no assessed-business exemption is inferred. Voluntary/special overseas contribution schedules are excluded.

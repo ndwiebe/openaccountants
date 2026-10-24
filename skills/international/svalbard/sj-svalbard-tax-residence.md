@@ -1,7 +1,7 @@
 ---
 name: sj-svalbard-tax-residence
 description: >
-  Determine Svalbard individual and company tax residence and ordinary cross-border scope for 2026. Covers permanent residence from the beginning of a twelve-month stay, temporary work and business, the conditional five-year newcomer limitation, rolling departure days, medical absence, local property and mainland or foreign income allocation. Explains mainland exemption for Svalbard-taxed items, treaty exclusion, foreign dividend withholding and associated filing/payment duties. Flags mainland exit tax when moving to Svalbard and separates it from departure from Svalbard. Two calculations test nonresident withholding and foreign-dividend payments. Use for Svalbard residence, moving, nonresidents, cross-border tax and distributions. Jan Mayen is excluded; specialist relief and exit computations remain limited. This source-cited draft awaits professional review.
+  Determine Svalbard individual and company tax residence and ordinary cross-border scope for 2026. Covers permanent residence from the beginning of a twelve-month stay, temporary work and business, the conditional five-year newcomer limitation, rolling departure days, medical absence, local property and mainland or foreign income allocation. Explains mainland exemption for Svalbard-taxed items, treaty exclusion, foreign dividend withholding and associated filing/payment duties. Flags mainland exit tax when moving to Svalbard and separates it from departure from Svalbard. Two calculations test nonresident withholding and the foreign-capital credit ceiling. Use for Svalbard residence, moving, nonresidents, cross-border tax and distributions. Jan Mayen is excluded; specialist relief and exit computations remain limited. This source-cited draft awaits professional review.
 version: 0.2
 jurisdiction: SJ
 tax_year: 2026
@@ -69,11 +69,17 @@ Unpaid tax bears interest from the due date under [Payment Act §§11-1 and 11-6
 
 **Mainland interaction:** [Income Tax Act §2-35(2)(c)](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_2) removes mainland tax on income/wealth **taxed to Svalbard** for mainland residents/companies. Keep proof of the Svalbard assessment. Moving does not itself prove mainland fiscal emigration; §2-1(3)'s separate residence/departure conditions still matter. The 2026 [authority S-23-2.2](https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23) explains the ongoing mainland residence link and why the rules must be tested separately.
 
-**Treaties and foreign tax:** Norway's income-tax treaties do **not** apply to Svalbard ([current authority S-23-1.5 and 9.2.3](https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23)). The Nordic insurance convention is separate. Use the statutory Svalbard source exclusions first. Act §3-2 imports Income Tax Act rules with express exclusions, and §§16-20–16-29 contain domestic foreign-tax credit rules. The exact adapted operation for Svalbard foreign capital income/wealth, including allocation and excess credits, has not been verified here; do not promise automatic credit for a foreign levy. This ordinary relief question remains partial.
+**Treaties and foreign tax:** Norway's income-tax treaties do **not** apply to Svalbard ([current authority S-23-1.5 and 9.2.3](https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23)). The Nordic insurance convention is separate. Use the statutory Svalbard source exclusions first. For a fully liable resident with foreign-source capital income or wealth also included in the Svalbard base, [Act §3-2](https://lovdata.no/dokument/NL/lov/1996-11-29-68) imports the domestic credit rules in [Income Tax Act §§16-20–16-29](https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_16). A credit requires the same taxpayer's final income/wealth tax imposed and paid in the foreign source state on the included item. Excluded income has no credit capacity, and a foreign levy is not automatically a qualifying income/wealth tax. Social contributions are outside this income/wealth-tax credit; §16-20(1) also excludes credit against the 3% dividend inclusion under §2-38(6).
+
+Determine the Svalbard taxable base first, then allocate foreign income and costs under [FSFIN §§16-29-2–11](https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_16-3-1-1). Directly attribute income and associated costs; allocate deductible debt interest and unassignable common costs proportionately under §16-29-4, applying its specific exceptions only where their conditions hold. Do not import mainland deductions excluded by Svalbard Act §3-2. Use Norwegian tax timing under §16-29-5 and currency conversion under §16-29-6. The ordinary foreign-income credit is the **lesser of qualifying foreign tax and the part of Svalbard income tax proportionately attributable to included net foreign income**, calculated within the separate income categories in §16-21. Wealth tax is a separate credit calculation, capped at the Svalbard wealth tax proportionately attributable to included foreign wealth; income tax cannot absorb wealth-tax credit or vice versa.
+
+Unused foreign **income-tax** credit can carry forward up to **five subsequent years** within the same category and capacity rules. It can carry back **one year** only where §16-22(2)'s prospective inability-to-use condition is proved. Use current-year foreign tax before brought-forward credits, and older brought-forward credits first (§16-22). Do not deduct the same foreign tax as an expense and a credit (§16-24).
+
+Claim in the annual return by its deadline, or, if the foreign assessment cannot yet be substantiated, within **six months after final foreign assessment**, with an absolute **ten-year** limit after the income year (§16-25). Retain foreign assessment/payment evidence, source/base/cost schedules and required translations, and disclose subsequent foreign assessment changes under FSFIN §§16-29-8–11. A foreign resident with limited Svalbard source liability must seek home-state relief under that state's law; no Norwegian treaty entitlement is supplied here.
 
 **Mainland move to Svalbard:** Income Tax Act §2-35(2)(b) expressly extends §10-70 to a person becoming Svalbard-resident and to specified transfers to Svalbard recipients. Svalbard is treated as EEA for this specific rule. For a 2026 departure, §10-70 covers the listed share/account/fund/derivative assets, deems disposal just before the change, applies the **NOK 3m** departure gain allowance and a distinct **NOK 100,000** annual transfer threshold. Gain uses market value less the applicable tax basis, with statutory loss/immigration-basis rules. A qualifying deferral runs up to **12 years**, with security rules and annual-instalment or interest-bearing end-payment choices (§10-70(7)). Disposals, transfers and distributions can accelerate payment; **70% of distributions** is the statutory amount in §10-70(8), subject to its safeguards. A move to Svalbard is not a tax-free alternative to mainland exit tax. Full account-specific valuation and deferral administration are outside this guide's verified computation.
 
-**Leaving Svalbard/business cessation:** check unpaid remuneration, final gains/losses and the continuing local-property source rule. Imported Income Tax Act §§9-14 and 10-71 address assets leaving the tax base and company emigration. Their Svalbard adaptations, exclusions and payment computations are not established here, so no automatic tax-free exit or invented flat exit levy is stated. This remains a core XB gap in the README.
+**Leaving Svalbard/business cessation:** check unpaid remuneration, final gains/losses and the continuing local-property source rule. Ordinary asset disposal and complete company liquidation use §§14-44–14-48, including settlement of negative tax pools/gain accounts and eligible loss deductions, as detailed in the company guide; final business losses also need §14-7 or the specific sole-trader rule. Those confirmed cessation mechanics are not the unresolved gap. Imported Income Tax Act §§9-14 and 10-71 address assets leaving the tax base and company emigration. The Svalbard territorial adaptation of those cross-border unrealised-gain/company-emigration provisions, their exclusions and payment computations are not established here, so no automatic tax-free exit or invented flat exit levy is stated. This remains a core XB gap in the README.
 
 ## Two worked examples that recompute
 
@@ -91,18 +97,26 @@ expected:
   after_income_tax: 82800
 ```
 
-**Foreign shareholder distribution.** A company resolves a gross NOK 500,000 dividend to an individual resident abroad. Assume the §10-13 liability applies and no domestic exemption. Withholding is NOK 100,000 and net payment NOK 400,000. This does not determine the recipient's home-country tax or credit.
+**Foreign capital-income credit is capped.** A fully liable resident has verified net ordinary income after allowable costs/allowance of NOK 200,000, of which NOK 50,000 is attributable to included foreign-source capital income after the required allocation. Assume NOK 10,000 final qualifying foreign income tax has been paid and no other credits. Svalbard income tax before credit is NOK 32,000, and the proportional ceiling is NOK 8,000. Credit is NOK 8,000, leaving NOK 24,000 Svalbard tax; unused foreign income tax NOK 2,000 enters the statutory carryforward test. The attributed bases are established inputs, not raw foreign receipts, and this example does not give credit for excluded foreign business income.
 
 ```oa-check
-name: Svalbard foreign individual dividend withholding 2026
+name: Svalbard foreign capital income credit ceiling 2026
 inputs:
-  gross_dividend: 500000
+  total_net_ordinary_base: 200000
+  attributed_foreign_base: 50000
+  qualifying_foreign_tax: 10000
 steps:
-  withholding: gross_dividend*0.20
-  net: gross_dividend-withholding
+  svalbard_tax: total_net_ordinary_base*0.16
+  ceiling: svalbard_tax*attributed_foreign_base/total_net_ordinary_base
+  credit: min(qualifying_foreign_tax,ceiling)
+  net_tax: svalbard_tax-credit
+  unused: qualifying_foreign_tax-credit
 expected:
-  withholding: 100000
-  net: 400000
+  svalbard_tax: 32000
+  ceiling: 8000
+  credit: 8000
+  net_tax: 24000
+  unused: 2000
 ```
 
 ## Ask the client first
@@ -128,16 +142,17 @@ expected:
 | Income Tax Act §§10-13,10-70,10-71 | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_10 | 2026-10-24 |
 | Income Tax Act §9-14 | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_9 | 2026-10-24 |
 | Income Tax Act §14-3 | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_14 | 2026-10-24 |
-| Income Tax Act §§16-20–29, read but adaptation unresolved | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_16 | 2026-10-24 |
+| Income Tax Act §§16-20–29, domestic credit | https://lovdata.no/dokument/NL/lov/1999-03-26-14/KAPITTEL_16 | 2026-10-24 |
 | Administration Act chs.8,14 | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-24 |
 | Administration regulation ch.8 | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_7 | 2026-10-24 |
 | Coercive-fine regulation | https://lovdata.no/dokument/SF/forskrift/2016-11-23-1360/KAPITTEL_13 | 2026-10-24 |
 | Payment Act chs.10–11 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-24 |
 | 2026 interest | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-24 |
+| Foreign credit allocation/documentation, FSFIN §§16-29-2–11 | https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_16-3-1-1 | 2026-10-24 |
 
 The current Skatte-ABC contains stale year labels in some rate paragraphs and numbering inconsistencies. The enacted 2026 decision and consolidated statute control all figures here.
 
-Not yet confirmed: Adapted domestic foreign-capital/wealth credit rules; full Svalbard departure and business-asset exit computations and payment mechanics. No unverified exemption or exit amount is supplied.
+Not yet confirmed: Svalbard territorial adaptation and computation/payment of cross-border unrealised-asset gains and company emigration. Ordinary disposal/liquidation and final-loss rules are covered. No unverified exit exemption or exit amount is supplied.
 
 > Contributed by Ryan Duguid.
 
