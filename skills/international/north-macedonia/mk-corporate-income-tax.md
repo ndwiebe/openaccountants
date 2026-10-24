@@ -8,11 +8,11 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 category: international
 ---
 
-# North Macedonia corporate income tax v0.2
+# North Macedonia corporate income tax v0.3
 
 **Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -52,6 +52,8 @@ This is ordinary company tax. Minimum global top-up tax, regulated financial-sec
 7. Reinvestment relief under art. 28 uses actual investment from prior-year profit in business-expansion real estate, plant, equipment, software and patents, including qualifying finance leases. Ordinary passenger cars, furniture, audiovisual/household equipment, art and administrative assets are excluded. Keep the profit allocation, invoices, commissioning and asset-retention evidence. Disposal within five years or termination of finance lease recaptures the relief; unsupported use and failure to determine/pay recapture trigger the specific **fivefold tax** rule in art. 28(5)-(6). File/pay **DD-DO within 30 days** of disqualifying disposal/termination (art. 39(2)).
 
 **Turnover regime:** first verify arts. 31-33 eligibility. Banking, finance, insurance and gambling/amusement activities are excluded. Total revenue from all sources, not profit or taxable VAT turnover, controls. Eligible companies not above 3 million have no annual turnover tax; those in the election band elect 1% on the whole revenue, not only excess over 3 million. Revenue over 6 million or abusive related-party arrangements cause removal under art. 36; recompute ordinary profit tax and credit turnover tax already paid. UJP records eligible companies from annual-account data (art. 35). Filing still applies to exempt companies.
+
+**Historical retained profits:** [art. 48][cit] separately charges profit tax when accumulated profits earned in **2009-2013** are distributed after the current law took effect. Use **DD-ID** for that distribution charge; keep it separate from the current year's accounting-profit tax and the recipient's dividend PIT/withholding. Identify the earnings vintage before treating a payment as an ordinary already-taxed-profit distribution.
 
 ## Deadlines and filing
 
@@ -111,7 +113,7 @@ expected:
 - What is total revenue, entity size and existing turnover election history?
 - Which expenses, receivables, depreciation and related-party balances need adjustments?
 - Which approved losses remain within their window, and were status changes made?
-- Which prior profits funded investment, and were assets retained or disposed of?
+- Which prior profits funded investments or distributions, including 2009-2013 earnings requiring DD-ID, and were investment assets retained?
 - Which advances, foreign taxes and nonresident payments have evidence?
 
 ## Sources

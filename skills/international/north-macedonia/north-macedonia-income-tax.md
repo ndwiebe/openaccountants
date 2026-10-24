@@ -11,10 +11,10 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 ---
 
-# North Macedonia personal income tax v0.2
+# North Macedonia personal income tax v0.3
 
 **Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -55,7 +55,7 @@ Depreciate eligible assets using the [Decree arts. 2-7 and nomenclature][depreci
 
 Apply documented expansion relief after computing the adjusted base; ordinary relief is the lower of 30% of qualifying investment and 50% of that base. Eligible items are business-expansion property, plant, equipment, software and patents. Administrative furnishings and ordinary passenger cars do not qualify. Vehicles in the specific rental/taxi/driver-training/special-vehicle activities have the separate art. 28(2) rule. Disposal within the statutory retention period reverses relief with interest (art. 28).
 
-**Loss:** enter the accounting loss separately from add-backs. The [official DLD-DB instructions, field 22][self-brochure] expressly require a negative adjusted base to be shown with a minus sign and subsequent fields left blank. Do not replace this with a credit against salary or import the corporate carryforward rule. Further business-loss relief is unconfirmed below.
+**Business loss and annual reconciliation:** show the accounting loss and add-backs separately. [DLD-DB field 22 instructions][self-brochure] require a negative adjusted net result with a minus sign; leave the following business-tax fields blank. The [current prescribed DLD-GDP instructions p. 3][dld-gdp] transfer that same field 22 to annual business-income row 2. The annual form p. 2 aggregates income, less permitted deductions and the salary reduction actually used. Thus a current-year negative business result enters that annual reconciliation; it does not alter an employer's monthly salary withholding. Do not deduct own business insurance again: it is already expensed in field 22. Verify/correct UJP's populated return and request any resulting overpayment refund under [arts. 96-100, especially 100(4)-(5)][pit]. These are current-calendar-year mechanics under arts. 4 and 9. No general prior-year business-loss carryforward or carryback is authorised by these PIT provisions; do not import the corporate three-year loss rule or carry an unused negative annual base into another year.
 
 **Other categories:** gross dividends and other distributions are taxable capital income; loan interest uses calculated interest (arts. 55-57). Tax on term-deposit interest is deferred until EU accession (art. 116), not a current blanket interest exemption. Rent uses gross receipts, including tenant-paid improvements for the landlord, less the applicable deemed costs; subletting deducts rent paid, rather than stacking both deductions (arts. 51-54). Copyright: 50% for specified sculpture/tapestry/ceramic/stained-glass work; 40% for the art/design/music/film categories listed in art. 40(2); 30% for scientific/professional/publicist and specified performing works; 20% for translations, lectures, popular performances and other works. Transferred copyright holders deduct only the agency/authorised-agent fees permitted by art. 41. Agricultural own-product sales have the separate **80%** deemed-cost rule in art. 44, not ordinary trader-profit treatment. Art. 45 requires registration of the activity by **15 January of the following year** where that taxpayer's total annual income exceeds **1,000,000**. Art. 46 separately permits refund of tax paid on own-product sales not exceeding **1,000,000**, provided there is no other taxable income apart from its specified free-production-input exceptions; other nontaxable income is permitted except income under art. 13. UJP uses confirmed annual returns and Ministry of Agriculture verification; refund is due by the end of the following year. Do not turn this conditional refund into a general exemption at source.
 
@@ -138,6 +138,7 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
+| Current UJP-listed DLD-GDP annual form, Gazette 101/2020; p. 2 reconciliation, p. 3 business row 2/field 22 instructions | https://www.ujp.gov.mk/files/attachment/0000/1264/Prijava_DLD-GDP_101-2020_15.04.2020.pdf | 2026-10-24 |
 | State Statistical Office, average net wage November 2025, published 21 January 2026 | https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/ | 2026-10-24 |
 | Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
 | Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
@@ -153,10 +154,11 @@ expected:
 [allowance]: https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje
 [depreciation]: https://www.ujp.gov.mk/files/attachment/0000/0157/Uredba_za_amortizacija__277-_219.pdf
 [self-brochure]: https://ujp.gov.mk/files/attachment/0000/0730/08-2102-1-Odanocuvanje_na_prihodi_ostvareni_od_vrsenje_na_samostojna_dejnost_09.03.2026.pdf
+[dld-gdp]: https://www.ujp.gov.mk/files/attachment/0000/1264/Prijava_DLD-GDP_101-2020_15.04.2020.pdf
 [dld-db]: https://www.ujp.gov.mk/files/attachment/0000/1220/____________________________________________________271-19.pdf
 [treaty-pit]: https://www.ujp.gov.mk/files/attachment/0000/1219/_____________________________________________________________________________271-19.pdf
 
-Not yet confirmed: Business-loss carryforward and cross-category business-loss relief beyond the confirmed negative DLD-DB reporting treatment; a standalone departure/deemed-disposal tax procedure. Do not infer a nil charge or import corporate loss relief.
+Not yet confirmed: A standalone departure/deemed-disposal tax procedure. Do not infer a nil charge from absence of a transaction-specific analysis.
 
 <!-- openaccountants-cta-block -->
 

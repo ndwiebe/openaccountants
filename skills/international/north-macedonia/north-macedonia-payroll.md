@@ -11,10 +11,10 @@ depends_on:
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 ---
 
-# North Macedonia payroll withholding v0.2
+# North Macedonia payroll withholding v0.3
 
 **Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -53,7 +53,14 @@ Art. 25 expressly switches with the **July wage**; do not change a June arrears 
 
 For standalone directors' fees and occasional service fees, art. 16(1)(5) uses the receipt's amount and does not give the ordinary salary reduction. Their contribution treatment is established separately; uninsured executive directors/managers have a specific pension/health class. Do not promise that all service contracts have no insurance. A self-employed professional's business receipts instead belong in the income-tax/business guide.
 
-**Allowances and losses:** exempt reimbursements require the exact [PIT art. 12][pit] conditions and evidence; an unexplained transfer or label is not an exemption. [UJP hours guidance step 2][hours] calculates gross salary and the personal reduction proportionately to hours worked where the employee works fewer than the full month hours. Use full-month hours and actual worked hours, not a calendar-day fraction. Its mixed work/sickness minimum-base formula is set out in the social-contributions guide. The salary reduction is not duplicated on unrelated income. Reconcile the right actually used across salary/pension payers to the art. 10 annual limit. Business or investment losses do not form an automatic negative item in a salary withholding calculation.
+**Allowances and losses:** exempt reimbursements require the exact [PIT art. 12][pit] conditions and evidence; an unexplained transfer or label is not an exemption. [UJP hours guidance step 2][hours] calculates gross salary and the personal reduction proportionately to hours worked where the employee works fewer than the full month hours. Use full-month hours and actual worked hours, not a calendar-day fraction. For ordinary part-time and joining/leaving months, apply the employee hours-based floor and ceiling in the social-contributions Guide, with floor top-ups declared separately. Its mixed work/sickness formula separates effective-work insurance from replacement payments. The salary reduction is not duplicated on unrelated income. Reconcile the right actually used across salary/pension payers to the art. 10 annual limit. Business or investment losses do not form an automatic negative item in a salary withholding calculation.
+
+For a lump-sum self-employed proprietor who also employs staff, distinguish
+UJP's own-proprietor contribution calculation from the employer's continuing
+employee MPIN duty. [UJP's current implementation notice](https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1)
+confirms the split from July 2026. Use the social-contributions Guide for that
+route; a proprietor's receipt is not an employee salary merely because MPIN is
+used.
 
 ## Deadlines and filing
 
@@ -143,6 +150,7 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
+| UJP September 2026 proprietor/employee MPIN duty distinction | https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1 | 2026-10-24 |
 | UJP, gross salary calculation guidance, steps 2-4 | https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1 | 2026-10-24 |
 | Personal Income Tax Law, consolidated through Gazette 274/2022 | https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf | 2026-10-24 |
 | Mandatory Social Insurance Contributions Law, through Gazette 148/2026 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
@@ -161,7 +169,7 @@ expected:
 [bases]: https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187
 [contrib-rules]: https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf
 
-Not yet confirmed: Contribution-floor/ceiling treatment for ordinary part-time and partial-month cases beyond the confirmed UJP mixed work/sickness formula. The first-year professional issue belongs to self-employed insurance, not employee salary withholding.
+Not yet confirmed: Specialist protected-hours, non-working and benefit-replacement insurance computations outside this ordinary employee scope. The separate first-calendar-year professional issue in the social-contributions Guide concerns self-employed insurance, not employee salary withholding.
 
 <!-- openaccountants-cta-block -->
 

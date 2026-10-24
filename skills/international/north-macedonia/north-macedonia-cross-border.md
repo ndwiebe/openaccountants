@@ -6,10 +6,10 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 ---
 
-# North Macedonia cross-border tax v0.1
+# North Macedonia cross-border tax v0.2
 
 **Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
@@ -50,7 +50,14 @@ Art. 21(2) expressly excludes remittance of already taxed local PE profit, inter
 
 **PE attribution and registration:** art. 6 covers fixed business locations and dependent agents as well as the duration tests. Contract-concluding authority, local stock/delivery, preparation/auxiliary exceptions and genuinely independent agency require separate factual analysis. Group control alone does not create a PE (art. 6(11)); absence of a registered branch does not establish absence of a PE. Register at commencement and attribute the local business income/expenses into the ordinary company computation.
 
-**Departure, asset transfers and liquidation:** preserve residency, asset tax cost, location, valuation and transaction dates. [Profit Tax Law arts. 25-27][cit] preserve continuity for specified conversions/status changes at unchanged carrying values, tax the described revaluation/capital increases where continuity fails, and compute liquidation profit/loss through closing before residue distribution. Status changes require accounts/return up to the registered change date. [PIT arts. 58-63][pit] govern realised individual disposals; arts. 5 and 7 govern scope after residence changes. These verified rules do **not** establish the presence or absence of a separate migration/deemed-disposal charge; that core exit issue is expressly unconfirmed below. A departure calculation must remain open until resolved.
+**Departure, asset transfers and liquidation:** preserve residence evidence, asset tax cost/location, valuation, ownership and transaction dates. Separate these ordinary events:
+
+- An individual's residence test remains [PIT art. 5][pit]; once nonresident, art. 7 still taxes local-source income. Actual sales/exchanges use arts. 58-63 and the category's filing route. Do not treat a change of address as proof of treaty residence or of a realised disposal.
+- A company incorporated locally still meets the domestic incorporation limb of [Profit Tax Law art. 4(2)][cit] when management moves abroad; a treaty residence question is separate. Calculate actual business profit under arts. 7-9 and related-party transfers under arts. 12-15.
+- [Arts. 25-27][cit] preserve the specified conversion/status-change continuity at unchanged carrying values and tax the specified revaluation/capital increases where continuity fails. Liquidation continues the last tax period through closing before residue distribution. A registered merger/division/takeover needs accounts/return through the change date and the continuing entity's opening balance.
+- Before transferring an investment asset, test five-year relief recapture separately: [Profit Tax Law art. 28(3)-(4)][cit] and [PIT art. 28(3)-(4)][pit]. The corporate and individual reliefs are different computations.
+
+These are verified ordinary transaction rules. A separate migration/deemed-disposal charge and its specific procedure remain unconfirmed below; no universal nil exit charge is asserted.
 
 ## Deadlines and filing
 

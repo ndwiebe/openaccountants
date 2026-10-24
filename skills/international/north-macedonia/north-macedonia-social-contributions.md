@@ -11,16 +11,25 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.2
+version: 0.3
 ---
 
-# North Macedonia mandatory social contributions v0.2
+# North Macedonia mandatory social contributions v0.3
 
 **Tax year: 2026. Source-cited draft, tier 2.** Amounts are MKD unless stated otherwise. Professional review remains outstanding.
 
 ## Who this applies to
 
-[Contributions Law arts. 7, 10-13][social] define each insured group and the person responsible for calculation/remittance. Ordinary employees bear the employee contributions and the employer calculates, withholds and remits them. A self-employed person calculates/pays their own contributions. **The July 2026 amendment changes the lump-sum self-employed calculation administrator:** [UJP's 13 July notice][july] explains the art. 13 amendment under which UJP now calculates contributions for those paying PIT on assessed lump-sum net income, while the person still pays. Before that amendment the person calculated their own contributions. Keep pre-amendment periods/corrections distinct; confirm their handling with UJP rather than applying the current administrator retrospectively. The notice does not state the exact commencement/transition rule for that administrative change beyond identifying the July amendment, so that procedural boundary is unconfirmed below. Uninsured executive directors/board members/managers fall into the separate arts. 7(1)(1-a), 10(1)(1-a) class if not already insured by employment/self-employment. Do not apply employee rates to every payment called a fee.
+[Contributions Law arts. 7, 10-13][social] define each insured group and the person responsible for calculation/remittance. Ordinary employees bear the employee contributions and the employer calculates, withholds and remits them. A self-employed person calculates/pays their own contributions. **Lump-sum self-employed administration changes with the July 2026
+contribution period:** under amended art. 13 and [UJP's 22 September 2026
+implementation notice][lump-implementation], UJP generates the proprietor's own
+MPIN; the proprietor still pays. Before July the proprietor calculates their own
+contributions. July/August calculations already filed and paid by the person do
+not require a second payment against UJP's duplicate calculation. Retrieve the
+UJP calculation from the taxpayer's e-services profile, registered email or UJP
+office, reconcile the period/payment and retain evidence. The proprietor still
+files MPIN for their employees. UJP withdrew automatic nonfiling reminders for
+the proprietor's calculation duty it had taken over. Uninsured executive directors/board members/managers fall into the separate arts. 7(1)(1-a), 10(1)(1-a) class if not already insured by employment/self-employment. Do not apply employee rates to every payment called a fee.
 
 Individual farmers and registered market-stall traders have their own base; the pension/health funds and Chamber have the calculation responsibilities specified in art. 13. Employer-funded extended-service pension contributions are separate from deductions from employee gross salary (art. 7(3)).
 
@@ -38,18 +47,21 @@ Individual farmers and registered market-stall traders have their own base; the 
 | Derived uninsured director total | 26.3% / 27.4% | January-June / July-December 2026 | [Arts. 7(1)(1-a), 10(1)(1-a), 11-12, 25][social]; [dated rates][rates] |
 | January-published average gross wage reference | 69,141 | January-December 2026 calculations | [UJP 22 January announcement][bases] |
 | General minimum monthly base | 34,570, UJP published amount | 2026 | [Art. 15(1)][social]; [UJP announcement][bases] |
-| Professional/intellectual self-employed minimum | 69,141, one reference wage | 2026 | [Art. 15(2)][social]; [reference wage][bases] |
+| Established professional/intellectual self-employed minimum | 69,141, one reference wage; starter exception below | 2026 | [Art. 15(2)][social]; [reference wage][bases] |
 | Employee/director maximum monthly base | 1,106,256, 16 reference wages | 2026 | [Art. 16(1)-(2),(5)-(6)][social]; [UJP announcement][bases] |
 | Self-employed maximum monthly base | 829,692, 12 reference wages | 2026 | [Art. 16(3),(5)-(6)][social]; [UJP announcement][bases] |
+| First-calendar-year self-employed base, including professionals | 50% of 69,141 = 34,570.50 before accepted MPIN denomination | 2026 | [Art. 14(1)(14), final starter indent][social]; [UJP starter code 060][mpin-manual]; [current July 2026 MPIN package][mpin-2026] |
 | Individual farmer/covered market trader base | 20% of January-published average, arithmetic 13,828.20 before operational rounding | 2026 | [Art. 14(1)(12), art. 15 exception][social]; [reference wage][bases] |
 
 The **wage month**, not the day a bank transfer happens, determines the July split: art. 25 expressly starts with the July wage and ends with the December wage. Use the published 34,570 floor; do not silently replace it with a different rounding of half the reference wage. These parameters are not a statutory minimum-wage amount.
 
 ## The base
 
-**Employees:** art. 14 includes salary, statutory employment additions and performance pay. Compute each fund on the appropriate base, subject to arts. 15-16. For ordinary full-month employee salary, `base = min(max(contributory gross, 34570), 1106256)`. Aggregate salary components paid by the same remitter for the same month before applying the cap; the employee cap is expressly per remitter. A cap limits contributions, not salary PIT. The general floor exceptions are specifically art. 14(1)(3),(5)-(13); art. 14(1)(2) part-time salary is not in that list. Do not prorate the floor simply because contractual hours are reduced. For fewer employee hours, [UJP calculation guidance step 2][hours] prorates gross pay and the personal reduction by worked hours. Its step 4 supplies a specific mixed work/sickness top-up: effective-work gross = monthly gross / full month hours × effective hours; effective-hours minimum = published minimum / full month hours × effective hours; top-up base = max(0, effective-hours minimum - effective-work gross), with each applicable fund charged on that top-up. Keep sickness pay and the legally responsible payer separate. This specified formula does not establish arbitrary calendar-day or all-category proration; other partial-month/part-time contribution-floor cases remain unconfirmed.
+**Employees:** art. 14 includes salary, statutory employment additions and performance pay. Compute each fund on the appropriate base, subject to arts. 15-16. For ordinary full-month employee salary, `base = min(max(contributory gross, 34570), 1106256)`. Aggregate salary components paid by the same remitter for the same month before applying the cap; the employee cap is expressly per remitter. A cap limits contributions, not salary PIT. **Ordinary reduced hours or joining/leaving month:** [UJP's hours method, pp. 12, 22-24, 37][mpin-manual], applies both bounds in proportion to effective/paid salary hours plus overtime `h`, divided by full-time month hours `H`. With current [arts. 14(1)(2), 15-16][social] and 2026 parameters: `floor = 34570 × h/H`; `ceiling = 1106256 × h/H`; `base = min(max(contributory salary, floor), ceiling)`. Declare floor top-ups separately. Use employment dates and insured hours, not calendar-day fractions. The manual's historical rates/caps are superseded. Protected shortened hours credited as full-time, unpaid suspension and replacement benefits require their own status rules.
 
-**Self-employed:** art. 14(1)(4) starts from monthly advance net business income, or UJP-assessed lump-sum net income. General business floor is 34,570; professional/intellectual services use at least 69,141; cap is 829,692. Under art. 14(1)(14), first-calendar-year starters have a specific half-reference-wage base; document the start year and resolve its interaction with art. 15(2) before calculating a new professional's base. A higher elected base is permitted on personal request under art. 14(2). Business losses do not remove a contribution floor.
+For mixed work/sickness, [UJP guidance step 4][hours] separately computes effective-work gross = monthly gross / full month hours × effective hours, effective-hours minimum = published minimum / full month hours × effective hours, and top-up base = max(0, effective-hours minimum - effective-work gross). Keep sickness compensation and the legally responsible payer separate.
+
+**Self-employed:** art. 14(1)(4) starts from monthly advance net business income, or UJP-assessed lump-sum net income. After the starting calendar year, the general business floor is 34,570, established professional/intellectual services use at least 69,141, and the self-employed cap is 829,692. **Until 31 December of the calendar year activity starts**, art. 14(1)(14)'s specific half-reference base applies to self-employed entrants, including professionals: analytical base 34,570.50 in 2026. The [UJP manual p. 36][mpin-manual] assigns intellectual entrants code **060**. The [July 2026 package published by UJP][mpin-2026], linked by [current MPIN form 81][mpin-form], retains that code's 50%-of-average-gross-wage instruction for pension, health and injury health. Its legacy description says “commencing activity 2009”; the current-year application comes from the statute and manual, not that historical label. This specific starter route takes precedence over the ordinary established-professional minimum for that calendar year. Document registration/start date, use the correct insured code and reconcile UJP-accepted denomination rather than silently turning 34,570.50 into the published general minimum of 34,570. A higher elected base is permitted on personal request under art. 14(2). Business losses do not remove a contribution floor.
 
 The ordinary self-employed group pays pension, ordinary health and 0.5% additional health because art. 11 explicitly includes art. 10(1)(3). It is not an ordinary art. 12 unemployment-insured group. Thus its derived totals differ from an employee's. A separate continued-insurance status must be tested separately under art. 12(2).
 
@@ -60,6 +72,11 @@ The ordinary self-employed group pays pension, ordinary health and 0.5% addition
 **Foreign currency:** For foreign-currency salary, **art. 14(3)** converts the contribution base at the National Bank official middle exchange rate on the **last day of the month for which contributions are calculated/paid**. Keep this distinct from PIT art. 93(2)'s receipt-date conversion for foreign income.
 
 **Employer-funded extended-service pension:** for jobs whose 12 worked months count as 18, 17, 16, 15, 14 or 13 insured months, the additional rates are respectively **9.4%, 7.83%, 6.27%, 4.7%, 3.13%, 1.57%** through June, and **9.95%, 8.29%, 6.63%, 4.98%, 3.32%, 1.66%** for July-December ([art. 25(2)][social]; [dated table][rates]). Confirm the legally designated job and duration first. Apply the relevant extra to its applicable contributory base and add it to employer cost, not the ordinary employee deduction. Ordinary employment does not itself trigger this extra.
+
+**Lump-sum assessed self-employment:** [the same current UJP notice][lump-implementation]
+confirms that registered part-time hours do not reduce this group's assessed
+net-income contribution base. Do not apply an employee's hourly salary formula.
+Report sick leave with evidence to the competent UJP unit for its calculation.
 
 Sick-pay/maternity replacement payments, domestic pensioners, non-working health-insured people, trainees and the new seasonal-engagement class have separate arts. 7-14 and 25 categories. Do not apply the ordinary employee bundle to them; their specialist computations are outside this guide's ordinary scope. No deduction, business expense or tax-loss offset reduces the insurance base beyond its own statutory definition. Salary PIT is computed after insurance in the payroll guide.
 
@@ -101,24 +118,34 @@ expected:
   total: 13400
 ```
 
-**Edge: established professional with income below the special floor, July 2026.** Monthly advance income 40,000 is raised to 69,141 by art. 15(2). Pension at 19.9%, health at 7.5% and additional health at 0.5% total 19,290.35 when each is shown to two decimals. This is an analytical control; reconcile to UJP's accepted MPIN denomination/rounding before payment. It is not an employee's 28% bundle.
+**Edge: ordinary half-time employee below the hourly floor, July 2026.** The payroll has 184 full-time hours and 92 insured effective hours, with contributory salary 10,000. The hourly floor is 17,285 and ceiling 553,128. MPIN separates the 7,285 floor top-up. Apply July's employee fund rates to 17,285; analytical two-decimal amounts total 4,839.82. This is an insurance calculation, not a statement that this contractual pay satisfies labour-law minimum pay. The statutory salary and accepted MPIN rounding must be checked separately ([arts. 14-16, 25][social]; [UJP hours method, pp. 12, 37][mpin-manual]).
 
 ```oa-check
-name: MK July 2026 professional minimum base
+name: MK July 2026 half-time employee floor
 inputs:
-  declared_base: 40000
+  full_time_hours: 184
+  insured_hours: 92
+  salary: 10000
 steps:
-  - base: min(max(declared_base, 69141), 829692)
+  - hourly_floor: 34570 * insured_hours / full_time_hours
+  - hourly_ceiling: 1106256 * insured_hours / full_time_hours
+  - top_up: max(0, hourly_floor - salary)
+  - base: min(max(salary, hourly_floor), hourly_ceiling)
   - pension: round(base * 0.199, 2)
   - health: round(base * 0.075, 2)
   - injury_health: round(base * 0.005, 2)
-  - total: pension + health + injury_health
+  - unemployment: round(base * 0.001, 2)
+  - total: pension + health + injury_health + unemployment
 expected:
-  base: 69141
-  pension: 13759.06
-  health: 5185.58
-  injury_health: 345.71
-  total: 19290.35
+  hourly_floor: 17285
+  hourly_ceiling: 553128
+  top_up: 7285
+  base: 17285
+  pension: 3439.72
+  health: 1296.38
+  injury_health: 86.43
+  unemployment: 17.29
+  total: 4839.82
 ```
 
 ## Ask the client first
@@ -133,6 +160,9 @@ expected:
 
 | Official source | URL | Read on |
 |---|---|---|
+| UJP current MPIN form and July 2026 client archive; static strukturaN.xml, starter code 060 | https://www.ujp.gov.mk/mk/obrasci/opis/81 ; https://www.ujp.gov.mk/files/attachment/0000/0393/klientski_13.07.2026.zip | 2026-10-24 |
+| UJP MPIN manual, 2016 procedural hours method pp. 12, 22-24, 37; historical figures superseded by 2026 law/table | https://www.ujp.gov.mk/files/attachment/0000/0526/ISBN_978-608-4592-70-9_Mesecna_presmetka_za_integrirana_naplata_11.03.2016.pdf | 2026-10-24 |
+| UJP 22 September 2026 implementation, July/August proprietor calculations, duplicate payments, employee returns and part-time/sickness treatment | https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1 | 2026-10-24 |
 | UJP, gross salary calculation guidance, steps 2-4 | https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1 | 2026-10-24 |
 | Mandatory Social Insurance Contributions Law, through Gazette 148/2026 | https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf | 2026-10-24 |
 | UJP, dated contribution-rate tables | https://www.ujp.gov.mk/en/vodic/category/641?print=1 | 2026-10-24 |
@@ -141,6 +171,10 @@ expected:
 | Contribution calculation/payment rulebook, MPIN structure | https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf | 2026-10-24 |
 | Tax Procedure Law, through Gazette 3/2025 | https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf | 2026-10-24 |
 
+[lump-implementation]: https://ujp.gov.mk/mk/javnost/soopstenija/pogledni/1284?print=1
+[mpin-form]: https://www.ujp.gov.mk/mk/obrasci/opis/81
+[mpin-2026]: https://www.ujp.gov.mk/files/attachment/0000/0393/klientski_13.07.2026.zip
+[mpin-manual]: https://www.ujp.gov.mk/files/attachment/0000/0526/ISBN_978-608-4592-70-9_Mesecna_presmetka_za_integrirana_naplata_11.03.2016.pdf
 [hours]: https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1
 [social]: https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf
 [rates]: https://www.ujp.gov.mk/en/vodic/category/641?print=1
@@ -149,7 +183,7 @@ expected:
 [contrib-rules]: https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf
 [procedure]: https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf
 
-Not yet confirmed: Exact commencement/correction transition for July's lump-sum administration change; interaction of the first-calendar-year half-reference base with the professional-services minimum; contribution-floor/ceiling treatment of ordinary part-time and partial-month cases beyond the confirmed UJP mixed work/sickness formula; operational fund rounding for those cases. Do not extrapolate an arbitrary calendar-day rule.
+Not yet confirmed: A universal operational MPIN rounding convention; reconcile analytical decimals to UJP's accepted calculation. Specialist protected-hours and replacement-benefit computations are outside the ordinary employee scope. No ordinary insured group is omitted on that account.
 
 <!-- openaccountants-cta-block -->
 
