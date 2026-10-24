@@ -1,7 +1,7 @@
 ---
 name: sm-company-formation
 description: >
-  Prepare a San Marino entity-choice and incorporation evidence file using selected company-law provisions and the actual 2022 capital reform in the official coordinated collection dated November 2024. Distinguishes ordinary SRL/SPA capital, the conditional 9000 SRL alternative, contributions and sole-member liability, public deed/registration and separate activity permissions. Replaces the old universal sixty-day/full-deposit and resident-director assertions. This is a partial 2026 preparation aid: all later company/licensing amendments, beneficial-ownership procedure, current fees, sector permissions and live registration must be checked before execution. No completion, independent review or named local accountant verification is claimed.
+  Prepare a San Marino entity-choice and incorporation evidence file using selected company-law provisions and the actual 2022 capital reform in the official coordinated collection dated November 2024. Distinguishes ordinary SRL/SPA capital, the conditional 9000 SRL alternative, contributions and sole-member liability, public deed/registration and separate activity permissions. Replaces the old universal sixty-day/full-deposit and resident-director assertions. This is a partial 2026 preparation aid: all later company/licensing amendments, beneficial-ownership procedure, current fees, sector permissions and live registration must be checked before execution. Independent source-review scope appears in the dated pack record; no completion or named local accountant verification is claimed.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17113696.html"
     title: "Official coordinated company and business collection; dated November 2024, selected scope only"
@@ -23,7 +23,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino company formation and entity choice v0.1
+# San Marino company formation and entity choice v0.2
 
 ## Scope and source-date limit
 
@@ -120,13 +120,17 @@ This supplementary topic remains partial, with a dated statutory baseline. Recon
 
 ## Sources
 
-Read 24 October 2026: selected company provisions in the official coordinated business collection dated 27 November 2024, especially definitions and Law 47/2006 articles 2–6,10–21,48–52 and selected later-accounting references. Both no-notes and separate historical-notes PDFs were retrieved; selected article 10/12/13 history was compared, not the full collection. Law 80/2022 original act articles 1–7 and capital changes were read directly against that collection. The official archive's coordinated documents are recognition aids, not a claim of complete current-law authenticity. Complete 2025–2026 amendments, activity-law reforms and live filing were not audited. Earlier secondary assertions remain in Git history. Independent whole-pack and named San Marino accountant review are open.
+Read 24 October 2026: selected company provisions in the official coordinated business collection dated 27 November 2024, especially definitions and Law 47/2006 articles 2–6,10–21,48–52 and selected later-accounting references. Both no-notes and separate historical-notes PDFs were retrieved; selected article 10/12/13 history was compared, not the full collection. Law 80/2022 original act articles 1–7 and capital changes were read directly against that collection. The official archive's coordinated documents are recognition aids, not a claim of complete current-law authenticity. Complete 2025–2026 amendments, activity-law reforms and live filing were not audited. Earlier secondary assertions remain in Git history. Named San Marino accountant review remains open.
 
 [law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

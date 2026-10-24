@@ -1,6 +1,6 @@
 ---
 jurisdiction: SM
-version: 0.4
+version: 0.5
 last_updated: 2026-10-24
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -24,9 +24,9 @@ partial:
 
 # San Marino tax pack
 
-Accountable owner: Michael. Active writer: ChatGPT support chat under [OWNERS](../../../OWNERS.md) and [issue #426](https://github.com/openaccountants/openaccountants/issues/426). Taking was recorded before writing on 24 October 2026. Local branch: `codex/san-marino-country-completion`, starting from shared published `532a1568`. Reuse consolidated draft [PR #514](https://github.com/openaccountants/openaccountants/pull/514) after the whole country is prepared, independently reviewed and corrected, then make one combined country content push. This San Marino batch is local and unpublished.
+Accountable owner: Michael. Active writer: ChatGPT support chat under [OWNERS](../../../OWNERS.md) and [issue #426](https://github.com/openaccountants/openaccountants/issues/426). Taking was recorded before writing on 24 October 2026. Local branch: `codex/san-marino-country-completion`, starting from shared published `532a1568`. Use consolidated draft [PR #514](https://github.com/openaccountants/openaccountants/pull/514) for one combined country content publication after independent review and correction closure; published-head checks are recorded on the issue and PR.
 
-Primary chat retains Montenegro. Liechtenstein and Finland are parked after reviewed country publication, with exact-source and coverage limits preserved. Iceland, Norway, Guernsey, Gibraltar and Bosnia remain parked.
+Primary chat writes Armenia; Montenegro is queued locally for review at `cf27ecf8`. Liechtenstein and Finland are parked after reviewed country publication, with exact-source and coverage limits preserved. Iceland, Norway, Guernsey, Gibraltar and Bosnia remain parked.
 
 ## Existing work and current preparation
 
@@ -54,4 +54,4 @@ The [revised ISS general circular 2187/UC/2026](https://www.iss.sm/on-line/home/
 
 ## Next country actions
 
-The eight-Guide draft is prepared locally. Run whole-country schema, strict metadata, calculation and repository checks against the exact checkpoint. Obtain one fresh independent full-pack source review, fix and close findings against exact source blobs, reconcile published shared work, and push the country once to existing PR #514. Exact-head CI follows publication. Keep issue #426 open, all partial flags and the PR draft; named accountant review, complete later-amendment/specialist coverage and live filing/ingestion remain separate gates.
+The eight-Guide source-cited draft has 28 calculation controls. The [independent whole-pack source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) records the original review, any corrections and exact source closure, with its read-scope limits. Full source/metadata/calculation/repository checks and published-head CI are separate evidence; see issue #426 and PR #514 for publication state. Named San Marino accountant review, comprehensive later-amendment/specialist coverage and live filing/ingestion remain open. Keep all seven partial flags, the country issue open and the PR draft; source review and publication do not complete these gates.

@@ -1,7 +1,7 @@
 ---
 name: sm-payroll-social
 description: >
-  Prepare 2026 San Marino wage withholding and selected social-contribution workpapers using current ISS circular 2187/UC/2026 and the reformed IGR. Establish coverage, pensionable and fiscal bases, actual payslip components, anticipated annual income, requested credits and filing/payment evidence first. Distinguishes ISS cash contributions from tax-deductible amounts, employer pension/FONDISS components from total employment cost, and employee from self-employed or separate-management rules. Includes six assumed arithmetic controls and the August 2026 contribution-debt procedures. Full employer-fund rates, cross-border coverage, employee contribution deadlines, special remuneration and live portal execution remain partial. Independent whole-pack and named local accountant review are open.
+  Prepare 2026 San Marino wage withholding and selected social-contribution workpapers using current ISS circular 2187/UC/2026 and the reformed IGR. Establish coverage, pensionable and fiscal bases, actual payslip components, anticipated annual income, requested credits and filing/payment evidence first. Distinguishes ISS cash contributions from tax-deductible amounts, employer pension/FONDISS components from total employment cost, and employee from self-employed or separate-management rules. Includes six assumed arithmetic controls and the August 2026 contribution-debt procedures. Full employer-fund rates, cross-border coverage, employee contribution deadlines, special remuneration and live portal execution remain partial. The dated pack record identifies independent source-review scope and limits; named local accountant review remains open.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 sources:
   - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html"
     title: "ISS revised general 2026 circular 2187/UC/2026; pages 1-10"
@@ -38,7 +38,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino payroll and social contributions v0.2
+# San Marino payroll and social contributions v0.3
 
 ## Scope and preparation
 
@@ -82,7 +82,7 @@ The ISS circular provides specific Christmas/thirteenth-month contribution repor
 
 ## Reporting and payment calendar
 
-Keep tax and social-security obligations separate. IGR 125 gives the ordinary withholding remittance route by the **following bimonthly period**; special financial-payer advances are a different route. This is not an ISS monthly contribution deadline. Article 85 requires IGR G transmission by **15 April** following the income period and the specified employee copy. The worker's return exemption depends on article 84; otherwise the general declaration/balance route is 31 July following the tax year, subject to article 93's holiday/office-closure rule. Obtain the actual current forms, calendar and receipts. [IGR 84–85,93,124–125][law]
+Keep tax and social-security obligations separate. IGR 125(1) requires the ordinary withholding payment by the **bimonth following the one in which withholding was made or the monthly employment income accrued**. Record the relevant accrual/withholding dates; do not automatically start the clock only when salary cash is paid. Special financial-payer advances under 125(2) are a different route. This is not an ISS monthly contribution deadline. Article 85 requires IGR G transmission by **15 April** following the income period and the specified employee copy. The worker's return exemption depends on article 84; otherwise the general declaration/balance route is 31 July following the tax year, subject to article 93's holiday/office-closure rule. Obtain the actual current forms, calendar and receipts. [IGR 84–85,93,124–125][law]
 
 This research has not reconciled the complete employee contribution declaration/payment calendar or the live CONTRISS payload. Do not fill that gap with the old phrase typically monthly or treat a correct tax-payment deadline as proof ISS payment is timely. Obtain the current ISS instructions before execution. IGR 131's joint-liability rule has the specific neither-withheld-nor-paid condition; it is not a general conclusion that an employee pays tax twice whenever an employer fails to remit. [IGR 125 and 131][law]
 
@@ -240,7 +240,7 @@ expected:
 
 ## Limits and referral
 
-PR and SC remain partial. Full employer-fund tables and cost, contribution-base ceilings/exclusions, current employee deadlines, cross-border coverage/coordination, employment permission, collective agreements, benefits, termination, directors/operational members/pensioners, minimum adjustments, special sectors and portal validation remain open. Refer the identified missing classification or rule before processing. A household-worker circular or category-specific solidarity amount does not establish an all-employer charge. Independent whole-pack and named San Marino accountant review are open.
+PR and SC remain partial. Full employer-fund tables and cost, contribution-base ceilings/exclusions, current employee deadlines, cross-border coverage/coordination, employment permission, collective agreements, benefits, termination, directors/operational members/pensioners, minimum adjustments, special sectors and portal validation remain open. Refer the identified missing classification or rule before processing. A household-worker circular or category-specific solidarity amount does not establish an all-employer charge. Named San Marino accountant review remains open.
 
 ## Sources
 
@@ -251,6 +251,10 @@ Read 24 October 2026: revised ISS circular 2187/UC/2026, all ten pages through t
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

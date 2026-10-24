@@ -1,13 +1,13 @@
 ---
 name: sm-transfer-pricing
 description: >
-  Prepare San Marino related-party normal-value and international advance-agreement workpapers for 2026. Use for corporate controlled-company dealings, the separate individual-business related-party rule, supported upward adjustments and conditional corresponding-adjustment preparation. Establish the exact relationship, transaction, market comparability, taxpayer route and agreement scope before using any calculation. Includes the 2026 advance-agreement access and fee tiers, signature-based duration and conditional rollback. It does not import Italian documentation thresholds or promise a benchmark, safe harbour, automatic downward adjustment or accepted application. Actual documentation, decreasing-adjustment circulars, treaty procedure, implementing instructions and full specialist coverage remain open. This is a source-cited draft pending independent whole-pack and named local accountant review.
+  Prepare San Marino related-party normal-value and international advance-agreement workpapers for 2026. Use for corporate controlled-company dealings, the separate individual-business related-party rule, supported upward adjustments and conditional corresponding-adjustment preparation. Establish the exact relationship, transaction, market comparability, taxpayer route and agreement scope before using any calculation. Includes the 2026 advance-agreement access and fee tiers, signature-based duration and conditional rollback. It does not import Italian documentation thresholds or promise a benchmark, safe harbour, automatic downward adjustment or accepted application. Actual documentation, decreasing-adjustment circulars, treaty procedure, implementing instructions and full specialist coverage remain open. This is a source-cited draft with independent source-review scope documented in the dated pack record; named local accountant review remains open.
 jurisdiction: SM
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
     title: "Official coordinated IGR; relationship, normal value, adjustments and procedure"
@@ -23,7 +23,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino transfer pricing and international advance agreements v0.2
+# San Marino transfer pricing and international advance agreements v0.3
 
 ## Scope and relationship
 
@@ -122,7 +122,7 @@ expected:
 
 ## Ask and refer
 
-Obtain entity/control/family diagrams, the complete transaction ledger, contracts and actual conduct, comparable evidence, group revenue definition, prior rulings/agreements and foreign final assessments. Refer intangibles, finance/guarantees, exit/entry values, PE allocation, downward adjustments/MAP, fee interpretation/renewals and changing facts. Actual methods, request/circular deadlines, CbCR and full legal/amendment implementation remain partial. Independent whole-pack and named San Marino accountant review are open.
+Obtain entity/control/family diagrams, the complete transaction ledger, contracts and actual conduct, comparable evidence, group revenue definition, prior rulings/agreements and foreign final assessments. Refer intangibles, finance/guarantees, exit/entry values, PE allocation, downward adjustments/MAP, fee interpretation/renewals and changing facts. Actual methods, request/circular deadlines, CbCR and full legal/amendment implementation remain partial. Named San Marino accountant review remains open.
 
 ## Sources
 
@@ -132,6 +132,10 @@ Read 24 October 2026: IGR coordinated no-notes edition 22 December 2025, selecte
 [reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [apa]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

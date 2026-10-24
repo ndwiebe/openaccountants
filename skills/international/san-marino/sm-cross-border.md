@@ -1,13 +1,13 @@
 ---
 name: sm-cross-border
 description: >
-  Prepare 2026 San Marino residence, source, permanent-establishment, nonresident withholding and selected corporate foreign-credit workpapers. Use for the domestic-law screen before applying any actual treaty, and for the specific foreign-bank interest and equipment/vehicle-rental cases in the 2026 Finance circular. Establish payer/recipient, country, income character, payment date, operator status and PE before choosing a rate or filing route. Includes the October 2026 identification amendment and separates B2B withholding from covered B2C nonresident self-assessment. No passport, bank location, operator code or general 183-day assumption grants an exemption. Actual treaty entitlement, special residence regimes, personal foreign credit, complete exit/restructuring and operational procedures remain partial, pending independent whole-pack and named local accountant review.
+  Prepare 2026 San Marino residence, source, permanent-establishment, nonresident withholding and selected corporate foreign-credit workpapers. Use for the domestic-law screen before applying any actual treaty, and for the specific foreign-bank interest and equipment/vehicle-rental cases in the 2026 Finance circular. Establish payer/recipient, country, income character, payment date, operator status and PE before choosing a rate or filing route. Includes the October 2026 identification amendment and separates B2B withholding from covered B2C nonresident self-assessment. No passport, bank location, operator code or general 183-day assumption grants an exemption. Actual treaty entitlement, special residence regimes, personal foreign credit, complete exit/restructuring and operational procedures remain partial, with independent source-review scope documented in the dated pack record; named local accountant review remains open.
 jurisdiction: SM
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
     title: "Official coordinated IGR; residence, source, withholding, corporate foreign credit and procedure"
@@ -26,7 +26,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino cross-border and nonresident tax v0.2
+# San Marino cross-border and nonresident tax v0.3
 
 ## Residence, source and PE first
 
@@ -65,7 +65,7 @@ These are selected classifications, not a universal outbound-payment table. Bank
 [Department Finance circular 1/2026,5 August 2026][circular] covers the specified interest paid by resident nonfinancial persons to foreign banks and specified equipment/vehicle rentals paid to foreign economic operators **without a domestic PE**. It distinguishes:
 
 1. **B2B:** the San Marino economic operator applies the specified 13% interest or 10% rental withholding at payment and remits by the following bimonthly period. Retain its COE/status self-certification and the actual gross base. Interest on specified bank overdrafts/advances is not excluded merely because it involves an account. Late-payment/delay interest follows the category of the underlying obligation rather than automatically being capital income.
-2. **Covered B2C:** a private resident customer is not treated as the B2B withholding operator. The specified foreign recipient files its own annual electronic declaration and pays the covered income tax, ordinarily 18% for 2026–2030 absent applicable treaty treatment. The circular states 31 July 2027 for its 2026 return and single balance payment, with no in-year advances for this stated route. It anticipates system availability byApril 2027 and an operational manual in early 2027; these are future instructions, not a portal tested in 2026. Read the later DD 156 identification provision too.
+2. **Covered B2C:** a private resident customer is not treated as the B2B withholding operator. The specified foreign recipient files its own annual electronic declaration and pays the covered income tax, ordinarily 18% for 2026–2030 absent applicable treaty treatment. The circular states 31 July 2027 for its 2026 return and single balance payment, with no in-year advances for this stated route. It anticipates system availability by April 2027 and an operational manual in early 2027; these are future instructions, not a portal tested in 2026. Read the later DD 156 identification provision too.
 
 The circular's stated Italian treaty treatment is a source pointer only; this Guide has not independently determined a particular Italian recipient's entitlement. No B2B rate is silently reused as the B2C ordinary assessment rate.
 
@@ -75,13 +75,13 @@ For these covered receipts, payment timing controls: a 2026 payment of income ac
 
 For a corporate/assimilated taxpayer or covered PE whose total income includes foreign income, IGR 44 requires final/nonrefundable foreign tax and limits credit to the corresponding share of net San Marino tax after fiscal adjustments. Compute separately by State; excluded/undeclared income and omitted/null returns have separate denial rules. Partial foreign-income inclusion also proportionately reduces the eligible foreign tax. [IGR 44][law]
 
-For income **not produced through a foreign PE**,44(8) specifies foreign income for the credit computation as total income multiplied by **foreign gross receipts/total receipts**. Do not substitute the foreign gross receipts themselves as net taxable foreign income. The return/year, final-payment timing through 31 December of the declaration year and the specified later-payment/three-year adjustment provisions need actual documents. Article 44(7)'s following-period deduction for qualifying unrecovered foreign tax is different from a carryforward of a tax credit; do not promise a universal unused-credit carryforward. Individual foreign relief is a separate method and remains to be reconciled.
+For income **not produced through a foreign PE**,44(8) specifies foreign income for the credit computation as total income multiplied by **foreign gross receipts/total receipts**. Do not substitute the foreign gross receipts themselves as net taxable foreign income. The return/year, final-payment timing through 31 December of the declaration year and the specified later-payment/three-year adjustment provisions need actual documents. Article 44(7)'s following-period deduction for qualifying unrecovered foreign tax is different from a carryforward of a tax credit; do not promise a universal unused-credit carryforward. The [personal-income Guide](sm-income-tax.md) supplies an expressly partial article 18 method for individual foreign-tax relief, distinguishing ordinary income from business/professional receipts; its timing, correction and specialist limits remain open.
 
 ## Exit, rulings, filing and sanctions
 
 DD 116/2026 permits an international advance-agreement route covering certain entry/exit values, treaty PE questions, PE profit attribution and specified cross-border receipts/payments. Its existence does not itself determine an exit charge, tax-neutral reorganisation or valuation. Use the [TP Guide](sm-transfer-pricing.md), establish the actual event and obtain the relevant full exit/restructuring chain. DD 156's merger/insolvency changes do not complete those topics. [DD 116,articles 1–6][apa]; [DD 156,articles 13–14][october]
 
-The general IGR return/withholding-declaration deadline is 31 July following the income year, with article 93's office-closure/holiday rule; normal withholding remittance under 125 has a bimonthly clock and a distinct financial-payer route. The specific circular's B 2 Croute above supplies its own stated 2026 income/2027 operational instructions. Retain certified source-tax statements, returns, attachments and payment receipts. Do not equate a declaration exemption, treaty exemption and zero domestic liability. [IGR 83–94,124–127][law]
+The general IGR return/withholding-declaration deadline is 31 July following the income year, with article 93's office-closure/holiday rule; normal withholding remittance under 125 has a bimonthly clock and a distinct financial-payer route. The specific circular's B2C route above supplies its own stated 2026 income/2027 operational instructions. Retain certified source-tax statements, returns, attachments and payment receipts. Do not equate a declaration exemption, treaty exemption and zero domestic liability. [IGR 83–94,124–127][law]
 
 Late interest under 128 is legal rate plus two points; its actual legal rate/dates are not fixed here. Withholding, nonpayment and declaration penalties are distinct under 138–139. DD 156 changes late-return charges and selected employer-certification treatment. Complete sanctions, late-validity/correction interplay, relief claims and actual portal fields remain open. [IGR 128,131,137–143][law]; [DD 156,articles 16 and 19][october]
 
@@ -164,7 +164,7 @@ expected:
 
 ## Ask and refer
 
-Collect dated homes/stays and vital interests, legal seat/effective management, actual payer/recipient/operator status and regulated licences, PE/project/contract records, income character and payment dates. Obtain authentic treaties/protocols and claim forms, all foreign income/tax/finality evidence, relevant applications, certificates, returns and receipts. Refer every concrete treaty, special residence regime, complex source/PE/remote-work case, personal foreign credit, exit/entry/merger, foreign-loss and contested withholding/credit claim. Complete XB coverage, within-year amendment/implementation chain, live procedures and independent whole-pack/named local accountant review remain open.
+Collect dated homes/stays and vital interests, legal seat/effective management, actual payer/recipient/operator status and regulated licences, PE/project/contract records, income character and payment dates. Obtain authentic treaties/protocols and claim forms, all foreign income/tax/finality evidence, relevant applications, certificates, returns and receipts. Refer every concrete treaty, special residence regime, complex source/PE/remote-work case, personal foreign-credit cases beyond the [partial article 18 method](sm-income-tax.md), exit/entry/merger, foreign-loss and contested withholding/credit claim. Complete XB coverage, within-year amendment/implementation chain, live procedures and named local accountant review remain open. Named San Marino accountant review remains open.
 
 ## Sources and access scope
 
@@ -175,6 +175,10 @@ Read 24 October 2026: coordinated IGR no-notes edition 22 December 2025, selecte
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [apa]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
 [circular]: https://www.finanze.sm/pub2/dam/jcr%3Ac7b6c29b-5894-4a96-914b-00785958a63a/Circolare%20n.1-2026.pdf
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

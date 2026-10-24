@@ -1,7 +1,7 @@
 ---
 name: sm-income-tax
 description: >
-  Prepare 2026 San Marino personal IGR by residence, source and income category, separating ordinary progressive income from business/professional and other separately taxed receipts. Reconcile wage or pension bases, documented deductions, family entitlement, the new SMaC tax credits and foreign-tax evidence before filing. Includes synthetic official-calculator comparisons and arithmetic controls. This source-cited draft replaces the approximate 2025 summary and the old expense-deduction description. Special residence schemes, complete capital/property categories, mixed-income implementation, full relief ordering and live return fields remain partial. Independent whole-pack and named San Marino accountant review are open.
+  Prepare 2026 San Marino personal IGR by residence, source and income category, separating ordinary progressive income from business/professional and other separately taxed receipts. Reconcile wage or pension bases, documented deductions, family entitlement, the new SMaC tax credits and foreign-tax evidence before filing. Includes synthetic official-calculator comparisons and arithmetic controls. This source-cited draft replaces the approximate 2025 summary and the old expense-deduction description. Special residence schemes, complete capital/property categories, mixed-income implementation, full relief ordering and live return fields remain partial. Named San Marino accountant review remains open.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
     title: "Official coordinated IGR archive; selected personal income, tariff and SMaC provisions"
@@ -29,7 +29,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino personal income tax v0.1
+# San Marino personal income tax v0.2
 
 ## Scope, period and questions
 
@@ -249,13 +249,17 @@ IT-PIT remains partial: complete capital/property/separate income classification
 
 ## Sources
 
-Read 24 October 2026: selected IGR articles 1,5,9–18,24–26,30,84–85,93–94,101,124,137–139 and Annex C/E in the official coordinated archive; relevant reform provisions of Law 141/2025; all twenty articles of authentic DD 156/2026. The December 2025 archive editions are dated aids, not a complete 2026 consolidation. ISS circular 2187/UC/2026 pages 1,4,5 and 10 were visually checked; other pages OCR-read. The public tax calculator was exercised with three synthetic wage amounts only, with no authentication, personal data, declaration, filing or payment. Its results are guidance alongside the law and do not validate every fact pattern. Earlier approximate wording remains in Git history. Independent whole-pack and named local accountant review are open.
+Read 24 October 2026: selected IGR articles 1,5,9–18,24–26,30,84–85,93–94,101,124,137–139 and Annex C/E in the official coordinated archive; relevant reform provisions of Law 141/2025; all twenty articles of authentic DD 156/2026. The December 2025 archive editions are dated aids, not a complete 2026 consolidation. ISS circular 2187/UC/2026 pages 1,4,5 and 10 were visually checked; other pages OCR-read. The public tax calculator was exercised with three synthetic wage amounts only, with no authentication, personal data, declaration, filing or payment. Its results are guidance alongside the law and do not validate every fact pattern. Earlier approximate wording remains in Git history. The dated pack record identifies independent source-review scope and limits; named local accountant review remains open.
 
 [law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

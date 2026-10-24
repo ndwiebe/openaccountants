@@ -1,7 +1,7 @@
 ---
 name: sm-corporate-income-tax
 description: >
-  Prepare 2026 San Marino corporate IGR workpapers from the accounting result to the taxable base, documented losses, the temporary 18% rate, conditional new-activity relief and advance/balance reconciliation. Use for resident legal persons and the relevant domestic income of foreign entities. Establish actual management, income category, accounting evidence, loss history, incentive eligibility and prior payments before calculating. This source-cited draft replaces the former approximate 2025 summary. It distinguishes the statutory 17% text from the 2026–2030 override and does not offer a blanket new-company rate, dividend exemption or treaty result. Full incentive, depreciation, restructuring, foreign-credit, technology-sector and filing implementation remain partial, pending independent whole-pack and named local accountant review.
+  Prepare 2026 San Marino corporate IGR workpapers from the accounting result to the taxable base, documented losses, the temporary 18% rate, conditional new-activity relief and advance/balance reconciliation. Use for resident legal persons and the relevant domestic income of foreign entities. Establish actual management, income category, accounting evidence, loss history, incentive eligibility and prior payments before calculating. This source-cited draft replaces the former approximate 2025 summary. It distinguishes the statutory 17% text from the 2026–2030 override and does not offer a blanket new-company rate, dividend exemption or treaty result. Full incentive, depreciation, restructuring, foreign-credit, technology-sector and filing implementation remain partial, with independent source-review scope documented in the dated pack record; named local accountant review remains open.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.2
+version: 0.3
 sources:
   - url: "https://www.consigliograndeegenerale.sm/on-line/documento17086436.html"
     title: "Official coordinated IGR archive; dated 2025 editions, selected corporate and procedure provisions"
@@ -23,7 +23,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino corporate income tax v0.2
+# San Marino corporate income tax v0.3
 
 ## Who this applies to and period
 
@@ -156,7 +156,7 @@ expected:
 
 ## Ask and refer
 
-Obtain seat/management dates, complete accounts and ledgers, all assets/costs and counterparties, loss history, foreign tax certificates, prior tax/credit basis and actual advance receipts. Obtain the full incentive/ownership/beneficial-owner/employment/option file before any half-rate claim. Refer special corporate exemptions, finance/technology, intellectual property, detailed depreciation/provisions, incentive interactions, foreign PE/credit, restructurings/insolvency, exit and disputes. DD 156 changes insolvency and merger provisions; they are not completed by this ordinary workpaper. IT-CORP remains partial. Independent whole-pack and named San Marino accountant review are open.
+Obtain seat/management dates, complete accounts and ledgers, all assets/costs and counterparties, loss history, foreign tax certificates, prior tax/credit basis and actual advance receipts. Obtain the full incentive/ownership/beneficial-owner/employment/option file before any half-rate claim. Refer special corporate exemptions, finance/technology, intellectual property, detailed depreciation/provisions, incentive interactions, foreign PE/credit, restructurings/insolvency, exit and disputes. DD 156 changes insolvency and merger provisions; they are not completed by this ordinary workpaper. IT-CORP remains partial. Named San Marino accountant review remains open.
 
 ## Sources
 
@@ -165,6 +165,10 @@ Read 24 October 2026: official coordinated IGR archive, no-notes edition dated 2
 [law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 

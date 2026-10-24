@@ -1,7 +1,7 @@
 ---
 name: sm-vat-gst
 description: >
-  Prepare selected 2026 San Marino monofase import-tax workpapers by actual goods, connected services, origin, importer, transaction date, taxable base and established tariff classification. This is not a generic VAT credit/return model. Distinguishes ordinary 17% import tax, conditional capital-goods relief, export-refund evidence, Italy VAT exchange procedures and the 2026-2028 domestic-invoice transition. Includes three arithmetic controls with explicit eligibility assumptions. Full tariff amendments, complementary/excise duties, exemptions, refund amounts/time limits and current operational import/payment instructions remain partial. Independent whole-pack and named San Marino accountant review are open.
+  Prepare selected 2026 San Marino monofase import-tax workpapers by actual goods, connected services, origin, importer, transaction date, taxable base and established tariff classification. This is not a generic VAT credit/return model. Distinguishes ordinary 17% import tax, conditional capital-goods relief, export-refund evidence, Italy VAT exchange procedures and the 2026-2028 domestic-invoice transition. Includes three arithmetic controls with explicit eligibility assumptions. Full tariff amendments, complementary/excise duties, exemptions, refund amounts/time limits and current operational import/payment instructions remain partial. Named San Marino accountant review remains open.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 sources:
   - url: "https://www.consigliograndeegenerale.sm/contents/instance18/files/document/19029leggi_2560.pdf"
     title: "Law 40/1972; import tax original framework"
@@ -41,7 +41,7 @@ sources:
     as_of: "2026-10-24"
 ---
 
-# San Marino monofase and VAT interface v0.1
+# San Marino monofase and VAT interface v0.2
 
 ## Scope and transaction questions
 
@@ -88,7 +88,7 @@ DD 133/2026 is separate from Italy trade. Article 11 makes the following distinc
 
 [DD 133/2026, article 11][invoice]
 
-Article 2 excludes operators with previous-calendar-year declared revenues **below 100,000**, while permitting an option; reaching/exceeding the threshold or opting brings continuing electronic use under 2(3). This is an invoice-format rule, **not a VAT-registration or import-tax exemption threshold**. The general article 3 timing is by the second month following delivery/shipment for goods, completion for services or payment for advances, with special delayed/continuous-supply rules. An HUB SM rejection means the electronic invoice is not issued under 4(3). The actual 2026 option, technical Regulation 28/2026, certificate, corrections, retention and live workflow still need validation; these statements do not claim a successful filing. [DD 133/2026, articles 2–5 and 8–11][invoice]
+Article 2(2) excludes operators with previous-calendar-year declared revenues **below 100,000**, while permitting an option. Exactly 100,000 is outside that exclusion and therefore brings the covered obligation for that year. Article 2(3) separately requires continuing electronic use in later years where operators have **exceeded** the amount or exercised the option. The text does not establish the same continuing-use result for exact equality alone; obtain official interpretation before treating a year at exactly 100,000 as permanent entry. This is an invoice-format rule, **not a VAT-registration or import-tax exemption threshold**. The general article 3 timing is by the second month following delivery/shipment for goods, completion for services or payment for advances, with special delayed/continuous-supply rules. An HUB SM rejection means the electronic invoice is not issued under 4(3). The actual 2026 option, technical Regulation 28/2026, certificate, corrections, retention and live workflow still need validation; these statements do not claim a successful filing. [DD 133/2026, articles 2–5 and 8–11][invoice]
 
 ## Documentation, calendar and sanctions gaps
 
@@ -153,7 +153,7 @@ expected:
 
 ## Limits and referral
 
-VAT/indirect tax remains partial. Complete tariff chains, current exemptions/fixed amounts, capital-goods/vehicle amendments, complementary taxes and excise, customs valuation/clearance, current import calendar, export-refund computation/forms/time limits, Italian special cases and technical/live invoice execution remain open. Resolve the actual transaction-specific gap before execution. No accountant verification, independent review or country completeness is claimed.
+VAT/indirect tax remains partial. Complete tariff chains, current exemptions/fixed amounts, capital-goods/vehicle amendments, complementary taxes and excise, customs valuation/clearance, current import calendar, export-refund computation/forms/time limits, Italian special cases and technical/live invoice execution remain open. Resolve the actual transaction-specific gap before execution. No accountant verification or country completeness is claimed. Named San Marino accountant review remains open.
 
 ## Sources
 
@@ -164,6 +164,10 @@ Read 24 October 2026: Law 40/1972 selected scope/base/liability/export provision
 [october]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=9c3a0dfeb72a7aeab52d1c5c0440879b4cf2ad33
 [iss]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html
 [calculator]: https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1
+
+## Source-review status
+
+See the [independent source-review record](../../../docs/research/2026-10-24-san-marino-pack-review.md) for its exact revision, scope and findings. Named San Marino accountant review remains open. This record is separate from comprehensive coverage, named professional approval and live filing.
 
 <!-- openaccountants-cta-block -->
 
