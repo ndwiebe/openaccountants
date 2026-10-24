@@ -2,7 +2,7 @@
 
 Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
 
-**Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** Until PR [#514](https://github.com/openaccountants/openaccountants/pull/514) merges, use the [assignment on its branch](https://github.com/openaccountants/openaccountants/blob/codex/world-coverage-consolidated/OWNERS.md#europe-writing-assignments); `main` does not yet contain the Europe split.
+**Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** Michael updated the allocation on 24 October 2026. Coordination [PR #773](https://github.com/openaccountants/openaccountants/pull/773) carries this allocation until merged. The [country PR split register](docs/research/2026-10-24-country-pr-split.md) supersedes consolidated PR [#514](https://github.com/openaccountants/openaccountants/pull/514) for new publication; preserve that PR and its branch as historical review evidence.
 
 | Owner | Regions | Jurisdictions | Thin (7 or fewer skills) |
 |---|---|---|---|
@@ -38,44 +38,39 @@ To take an open role, comment on the coverage report issue or open a PR changing
 
 ## Europe writing assignments
 
-Approved by Michael on 23 October 2026. Michael remains the accountable owner for Europe; the assignments below divide writing work between his agents. They do not transfer professional responsibility or certify coverage. This section is maintained manually and must be preserved when regenerating the jurisdiction report below.
+Approved by Michael on 23 October 2026 and updated by his explicit handover on 24 October 2026. Michael remains the accountable owner for Europe. Writing allocation does not transfer professional responsibility or certify a Guide.
 
-**Claude: retain the recent European workstream (22 jurisdictions). ChatGPT: take the other European packs (33 jurisdictions).** Country allocations cover all topics in each pack, so two writers do not independently expand the same country.
+**Claude: 29 jurisdictions. ChatGPT: 26 jurisdictions.** Country allocations cover all topics, including existing Guides. One active writer per country.
 
-### Claude: start here
+### Recorded seven-country handover, 24 October 2026
 
-Your countries are **Albania, Austria, Belgium, Switzerland, Cyprus, Czech Republic, Germany, Denmark, France, United Kingdom, Greece, Hungary, Ireland, Italy, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Serbia and Sweden**. Continue filling and re-verifying their applicable topics, including existing Guides. Keep the country issue and pack README current with the remaining evidence and review gaps. Do not restart a pack because its earlier work came from another agent.
+Michael handed **Bulgaria (BG), Croatia (HR), Estonia (EE), Latvia (LV), Lithuania (LT), Slovakia (SK) and Slovenia (SI) to Claude**. This supersedes their former ChatGPT allocation and the old instruction for Claude to leave those packs untouched.
 
-ChatGPT owns the other 33 countries in the table below. Current ChatGPT writing is Armenia in the primary chat and San Marino in the support chat; Montenegro has completed independent source review and correction recheck, with partial coverage retained; Bosnia and Herzegovina is parked after Michael questioned the continued time on it on 24 October. Finland's reviewed batch is published at `af8d6057` with coverage gaps retained. Norway and Iceland remain parked at Michael's direction. Iceland remains in the ChatGPT allocation. Guernsey and Gibraltar are parked. Leave these packs with their assigned writer unless Michael records a handover.
-
-Before choosing a topic, fetch `origin`, inspect that country's files on `main`, and check its issue and open PRs, including consolidated PR #514. Some work landed before this assignment reached `main`: Bulgaria transfer pricing and cross-border ([#731](https://github.com/openaccountants/openaccountants/pull/731), [#732](https://github.com/openaccountants/openaccountants/pull/732)), Croatia transfer pricing ([#730](https://github.com/openaccountants/openaccountants/pull/730)), and Slovakia cross-border and transfer pricing ([#727](https://github.com/openaccountants/openaccountants/pull/727), [#728](https://github.com/openaccountants/openaccountants/pull/728)) are already merged as checked on 23 October 2026. Preserve and build on those changes. Their merge does not transfer those countries to Claude or establish comprehensive coverage.
-
-Continue within your allocation without waiting for a new country-by-country instruction. Record any proposed transfer with its current branch/PR, unfinished topics and next action before another writer starts. Source verification, repository checks and independent review remain required before merge.
-
-**Next action for Claude:** finish the country you are already writing. Reconcile its existing Guides and recent commits with the country issue, identify the remaining applicable topics, and work through those gaps. If no country is active, choose one of your 22 assigned countries and record it on its issue before writing. Keep the README explicit about what remains unverified; do not declare a country complete because its core domain files exist.
-
-**Publish by country:** prepare and validate the whole country batch locally, obtain an independent review of the full pack, fix the findings, then push the reviewed batch. Keep local commits as useful checkpoints; do not push or open a PR for every Guide. Reuse the active consolidated PR for that workstream. A country batch can still have documented partial coverage; publication does not replace the evidence or professional review required for comprehensive coverage.
-
-### Active handover, 23 October 2026
-
-| Writer | Current work and next action | Other writers |
+| Country | Country issue | Handover status and next action |
 |---|---|---|
-| Claude | Continue the country already in progress within the 22-country allocation above. Record the active country and branch/PR on its issue before the next writing batch. If none is active, select an assigned country after checking existing work and open PRs. | Do not start Norway, Iceland or another ChatGPT country without a recorded handover. |
-| ChatGPT, primary chat | Armenia: active writer under issue [#378](https://github.com/openaccountants/openaccountants/issues/378), branch `codex/armenia-country-completion`, shared base `532a1568`. Armenia now has new TP/XB and rebuilt corporate/individual/VAT methods, local content `08ece09e` / checks `947a3d9f`, 35 controls passing; payroll/social reconstruction and remaining specialist/implementation/review gaps are next. Montenegro under #412 completed one independently reviewed country batch at local source `86bab4f9`: all five findings corrected/rechecked, 46 controls pass, ten Guides, all seven domains partial and zero professional reviews. The [review record](docs/research/2026-10-24-montenegro-independent-review.md) discloses six Gazette fresh-retrieval failures and remaining implementation gaps. Publish through existing PR #514, retaining those limits. Reuse consolidated PR #514 after country-batch source checks and independent review/fixes. | Bosnia and Herzegovina is parked at local `codex/bosnia-country-completion` checkpoint `63d8b8b5` under issue #381: ten Guides, 41 arithmetic controls passing, all seven domains partial, zero professional reviews; no Bosnia push/publication. Full review, current implementation/forms, reporting and specialist gaps remain. Norway remains parked at `79c46e49`; no new Norway writing/reviewer assignment. San Marino is active in the support chat; Liechtenstein and Finland are parked after their reviewed country batches. |
-| ChatGPT, support chat | San Marino: active writer from 24 October under issue [#426](https://github.com/openaccountants/openaccountants/issues/426), local branch `codex/san-marino-country-completion`, consolidated draft PR #514. Existing issue, six original Guides, published main and open PRs checked; no competing writer/open San Marino PR found. Preserve paths/history; reconcile the approximate 2025 summaries with current primary law, including Law 141/2025 and DD 156/2026, current ISS/FONDISS, and missing TP/XB methods. Eight Guides and README received a fresh whole-pack source review; one P2 and two clarity observations close at exact source `b5e11396`. All 28 controls independently recompute; local schema/metadata, 129 repository tests and 40 MCP tests pass. The [dated review and closure](docs/research/2026-10-24-san-marino-pack-review.md) records exact country blobs and scope. Publish one combined country content batch to PR #514; actual publication head and checks are tracked on issue #426 and that PR. All seven domains remain partial, tier 2; named local accountant review is open. | Liechtenstein is parked at reviewed source `ede184f9`, published country batch `ee349c5d`, preserved at shared reconciliation `532a1568` with all five exact-head checks green; all seven domains and named local accountant review remain open. Finland, Iceland, Norway, Guernsey and Gibraltar remain parked. Primary chat writes Armenia; Montenegro source `86bab4f9` is independently reviewed with corrections closed and partial coverage retained; Bosnia is parked at `63d8b8b5`. |
+| Bulgaria | [#383](https://github.com/openaccountants/openaccountants/issues/383) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged law-based drafts and independent review records. |
+| Croatia | [#400](https://github.com/openaccountants/openaccountants/issues/400) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged drafts and review records. |
+| Estonia | [#390](https://github.com/openaccountants/openaccountants/issues/390) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged drafts and review records. |
+| Latvia | [#409](https://github.com/openaccountants/openaccountants/issues/409) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged drafts and review records. |
+| Slovakia | [#425](https://github.com/openaccountants/openaccountants/issues/425) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged drafts and review records. |
+| Slovenia | [#423](https://github.com/openaccountants/openaccountants/issues/423) | Michael reports the 2026 tax-domain work complete and issue closed. Preserve merged drafts and review records. |
+| Lithuania | [#407](https://github.com/openaccountants/openaccountants/issues/407) | Still open. Payroll/social draft [#772](https://github.com/openaccountants/openaccountants/pull/772), branch `fix/LT-payroll-sc-2026`, needs a fresh independent review because its earlier review was stopped. Reconcile main, fix findings, pass checks, then merge and close the issue under Michael's direction. |
 
-Update this handover when the active country, writer or next action changes. Keep each country's remaining gaps in its README and issue; the allocation table below remains the authority for who writes each pack.
+The source handover is Michael's message and `HANDOVER-wave3.md`, supplied on 24 October. He reports 37 merged PRs, all Source-cited drafts and no accountant review. Closed coverage issues and independent source review do not grant `tier: 1`. Retain the recorded follow-ups: Lithuania formation's old rolling VAT test, Slovenia optimisation's contradiction noted on #769, and older non-domain overview/formation/optimisation summaries across these packs. Do not reopen completed tax-domain work merely to regenerate it.
 
-### Existing open work to reconcile before writing
+### Current country work
 
-Checked on GitHub on 23 October 2026. The PRs below are existing work, not a transfer of country ownership or a finding that the content has passed review. Status is stated explicitly where work has merged:
-
-| Assigned writer | Countries and existing PRs | Next action |
+| Writer | Current work and next action | Preserve or leave parked |
 |---|---|---|
-| Claude | Malta: [#746](https://github.com/openaccountants/openaccountants/pull/746) and [#747](https://github.com/openaccountants/openaccountants/pull/747) are now merged (rechecked 23 October 2026). | Read the merged Malta changes before selecting the next gap; preserve their research and provenance. Continue within the 22-country allocation. Merges do not establish complete coverage. |
-| ChatGPT | Lithuania: [#745](https://github.com/openaccountants/openaccountants/pull/745); Latvia: [#743](https://github.com/openaccountants/openaccountants/pull/743), [#744](https://github.com/openaccountants/openaccountants/pull/744); Croatia: [#736](https://github.com/openaccountants/openaccountants/pull/736), [#742](https://github.com/openaccountants/openaccountants/pull/742); Slovakia: [#735](https://github.com/openaccountants/openaccountants/pull/735), [#737](https://github.com/openaccountants/openaccountants/pull/737), [#740](https://github.com/openaccountants/openaccountants/pull/740), [#741](https://github.com/openaccountants/openaccountants/pull/741); Estonia: [#733](https://github.com/openaccountants/openaccountants/pull/733), [#739](https://github.com/openaccountants/openaccountants/pull/739); Slovenia: [#734](https://github.com/openaccountants/openaccountants/pull/734), [#738](https://github.com/openaccountants/openaccountants/pull/738) | Reconcile these PRs before expanding the corresponding packs. Claude should leave the existing drafts intact and continue his assigned countries. Any further writing in a ChatGPT country needs an explicit recorded handover first. |
+| Claude | Continue within the 29-country allocation below. Lithuania #407 / PR #772 is the outstanding Wave 3 review/merge item. Check country issues, existing merged work and open PRs before writing. | The seven-country transfer above is explicit. All other ChatGPT countries require a separate recorded handover. |
+| ChatGPT, primary chat | Armenia under [#378](https://github.com/openaccountants/openaccountants/issues/378), branch `codex/armenia-country-completion`; corporate/individual/VAT and new TP/XB draft checkpoints `08ece09e` / `947a3d9f`. Resume payroll/social after reconciling current country work and the PR split. | Montenegro source `86bab4f9` received independent review and correction closure, published to historical shared head `571c00a3`; 46 controls, seven domains partial, zero professional reviews. Bosnia is parked at `63d8b8b5`; Norway is parked at `79c46e49`. |
+| ChatGPT, support chat | Monaco was taken on [#410](https://github.com/openaccountants/openaccountants/issues/410), branch `codex/monaco-country-completion`, before writing. Primary-law retrievals and a private country card exist; no Monaco Guide edits or content publication yet. Pause drafting for Michael's requested ownership correction and one-PR-per-country split. Resume Monaco in a fresh session with the preserved evidence. | San Marino reviewed source `b5e11396`, published batch `669a1cca`, all five exact-head checks green. Liechtenstein reviewed source `ede184f9` / batch `ee349c5d`; Finland reviewed source `c83ca9f5` / batch `af8d6057`. These remain partial Source-cited drafts. Iceland, Norway, Guernsey, Gibraltar and Bosnia remain parked. |
 
-**Claude's operating instruction:** use this file's country allocation as the writing boundary. Start each country by reading its current issue, README, merged work and open PRs. Record the active country and branch on its issue, finish the country batch with source checks and independent review, and reuse the workstream's existing PR. Update the issue and this handover when moving countries. Do not create another draft of a topic already being worked on, infer ownership from a PR author, or mark a pack complete from file counts.
+### Country publication rule
+
+Prepare the whole country batch locally, obtain independent review, fix findings, then push **once for that country**. Michael's 24 October instruction replaces the consolidated-PR rule: use **one PR per country**, not one PR per Guide. Split existing #514 contents without changing their legal substance or claiming a new review. Preserve original Guide paths, attribution, calculation blocks, source records and review limits. The [split register](docs/research/2026-10-24-country-pr-split.md) maps every replacement PR and shared provenance. Keep unresolved domains and professional review separate from publication/CI status.
+
+Continue within your allocation without waiting for another country-by-country instruction. Before taking work, fetch origin and check the current main files, issue and open PRs. Start each new wave in a fresh session as Michael directed; use this file and the split register for the handover.
 
 ### Country allocation
 
@@ -88,14 +83,14 @@ Checked on GitHub on 23 October 2026. The PRs below are existing work, not a tra
 | AZ | Azerbaijan | ChatGPT |
 | BA | Bosnia and Herzegovina | ChatGPT |
 | BE | Belgium | Claude |
-| BG | Bulgaria | ChatGPT |
+| BG | Bulgaria | Claude |
 | BY | Belarus | ChatGPT |
 | CH | Switzerland | Claude |
 | CY | Cyprus | Claude |
 | CZ | Czech Republic | Claude |
 | DE | Germany | Claude |
 | DK | Denmark | Claude |
-| EE | Estonia | ChatGPT |
+| EE | Estonia | Claude |
 | ES | Spain | ChatGPT |
 | FI | Finland | ChatGPT |
 | FO | Faroe Islands | ChatGPT |
@@ -105,16 +100,16 @@ Checked on GitHub on 23 October 2026. The PRs below are existing work, not a tra
 | GG | Guernsey | ChatGPT |
 | GI | Gibraltar | ChatGPT |
 | GR | Greece | Claude |
-| HR | Croatia | ChatGPT |
+| HR | Croatia | Claude |
 | HU | Hungary | Claude |
 | IE | Ireland | Claude |
 | IM | Isle of Man | ChatGPT |
 | IS | Iceland | ChatGPT |
 | IT | Italy | Claude |
 | LI | Liechtenstein | ChatGPT |
-| LT | Lithuania | ChatGPT |
+| LT | Lithuania | Claude |
 | LU | Luxembourg | Claude |
-| LV | Latvia | ChatGPT |
+| LV | Latvia | Claude |
 | MC | Monaco | ChatGPT |
 | MD | Moldova | ChatGPT |
 | ME | Montenegro | ChatGPT |
@@ -128,9 +123,9 @@ Checked on GitHub on 23 October 2026. The PRs below are existing work, not a tra
 | RS | Serbia | Claude |
 | RU | Russia | ChatGPT |
 | SE | Sweden | Claude |
-| SI | Slovenia | ChatGPT |
+| SI | Slovenia | Claude |
 | SJ | Svalbard | ChatGPT |
-| SK | Slovakia | ChatGPT |
+| SK | Slovakia | Claude |
 | SM | San Marino | ChatGPT |
 | TR | Turkey | ChatGPT |
 | UA | Ukraine | ChatGPT |
@@ -139,17 +134,14 @@ Checked on GitHub on 23 October 2026. The PRs below are existing work, not a tra
 
 ### Working and handover rules
 
-This assignment is published on branch [`codex/world-coverage-consolidated`](https://github.com/openaccountants/openaccountants/blob/codex/world-coverage-consolidated/OWNERS.md) through PR #514 until merged. Agents starting from `main` must consult that branch while the PR remains open.
+- Read this assignment, the country issue, current main Guides, research and open PRs before starting. Reuse existing work regardless of its author.
+- Claude owns all topics for the 29 countries in the table; ChatGPT owns all topics for the remaining 26. Michael remains accountable for both allocations.
+- One active writer per country. Record a handover on GitHub with its country/topic, branch/PR, unfinished scope and next action before another writer starts. Inactivity or a merged PR alone does not transfer ownership.
+- Independent review does not confer writing ownership. Preserve author/reviewer provenance; obtain named professional review separately.
+- Guide presence, arithmetic checks, source preparation and merge status alone do not prove comprehensive coverage. Preserve each pack's explicit applicability and evidence gaps.
+- Use one reviewed country batch and one country PR. Historical #514 and its branch remain evidence; its replacement PRs are listed in the split register.
 
-- Read this assignment, the existing country issue, current source Guides, linked research and open PRs before starting. Reuse existing work regardless of its original author.
-- Claude continues all topics for the 22 countries assigned above. Recent work already merged into `main` includes Germany employee income tax [#595](https://github.com/openaccountants/openaccountants/pull/595), UK non-resident income [#596](https://github.com/openaccountants/openaccountants/pull/596), and Italy annual VAT returns and advances [#599](https://github.com/openaccountants/openaccountants/pull/599), checked on 23 October 2026. Build on those Guides; do not recreate them. Check each assigned country's remaining gaps and open PRs before selecting the next topic. These merges do not establish complete country coverage.
-- ChatGPT has Kosovo corporate-tax and transfer-pricing drafts under [#430](https://github.com/openaccountants/openaccountants/issues/430), Andorra non-resident and transfer-pricing drafts plus corporate-tax corrections, and the existing Faroese work in [#514](https://github.com/openaccountants/openaccountants/pull/514). Kosovo cross-border and Isle of Man non-resident individual drafts (including UK pension treaty screening) are also in that batch; statutory and independent review remain open. Claude must leave these country packs with ChatGPT unless a handover is recorded. Guernsey and Gibraltar stay parked for further expansion unless Michael redirects them.
-- One active writer per country. Before transferring a country or taking another writer's topic, record the handover on GitHub with the topic, branch/PR, remaining gaps and next action. Do not infer a handover from inactivity or a merged PR.
-- Independent review does not confer writing ownership. Preserve existing author/reviewer provenance and obtain professional review separately.
-- Keep applicable topics partial until their evidence and review requirements are satisfied. Guide presence, source preparation, passing checks and merge status alone do not establish comprehensive coverage.
-- Keep ChatGPT additions in the existing consolidated PR #514 while it remains the active batch. Do not open a PR for every small topic change.
-
-This allocation applies only to the 55 jurisdictions labelled `europe` below. It does not change Ryan's Asia-Pacific/Africa allocation, Jeff's Americas allocation, or assign Michael's Middle East work between agents. Jersey and Åland work in other branches/forks must be reconciled and explicitly assigned before being added to this table; do not infer ownership from geography alone.
+This allocation applies only to the 55 jurisdictions labelled `europe` below. Ryan's Asia-Pacific/Africa allocation, Jeff's Americas allocation and Michael's Middle East accountability remain unchanged. Existing Caribbean/Middle East drafts in the split are preserved contributions, not a claim of a new regional assignment. Reconcile and explicitly assign Jersey or Åland work before adding it to this table.
 
 ## By jurisdiction
 
