@@ -176,3 +176,75 @@ The web reader returned 405 for Lovdata; ordinary HTTPS succeeded without a chal
 | https://www.regjeringen.no/contentassets/337ef9a31fcc495bb63bb37166c52a1d/horingsnotat-fribelop-for-ungdom-pa-svalbard.pdf | `8d9da566acb93971a0a9cb888a533ef64e6da546c5c05b9ebb03d17b29cece4a` | **Web-reader response JSON hash, not PDF-byte hash**; §§2.1,3.3–3.5,especially pp.13–14; underlying PDF403/browser unreadable |
 
 Search-only leads concerning 2026 property advance values and source discovery are not represented as final assessment evidence. No country content was changed, no external message sent and no publication/push performed by this review. The only repository write is this receipt.
+
+## Exact-source closure
+
+Closure date: **24 October 2026**. Final reviewed country source commit: **`7ff2d2b2be80b24cf7a105b31de5c4aaaa8effc8`**. I reviewed the consolidated corrections in `b6c839d960d9bcc1a855f3852aa66a7ade3407f6`, the communications/pension wording correction in `9771cc9fef731a647140b57374c79c29961f0a33`, and the final isolated XB sentence change in `7ff2d2b2be80b24cf7a105b31de5c4aaaa8effc8`. The full initial country text plus all country diffs, the full corrected PR/XB text and all final file bytes were checked. All seven working-tree country files matched the final committed bytes when hashed.
+
+**PASS: independent legal-source review of these exact seven files as a source-cited, explicitly partial tier-2 draft. No must-fix finding remains open in the stated covered scope.** This does **not** pass the pack as complete: the README still has genuine IT-IND, SC and XB partial entries, so issue #424 must remain open. Professional accountant review remains outstanding. A later evidence-only commit can retain this closure only if the seven country-file hashes below remain identical.
+
+### Finding closure
+
+| Item | Exact-source result |
+|---|---|
+| F1 a-melding sanctions | Closed. PR and SC now state the separate 0.1-unit/recipient/day coercive fine, 1,000-unit cap, separate 0.25-unit/day late fee and 15-unit cap, same-delay prohibition and notice/special-case conditions. Ordinary tax-return sanctions are separately scoped. |
+| F2 pension/nonresident benefits | Closed. PR expressly excludes temporary nonresident pensions and distinguishes §5-10(c) replacement benefits and their entitlement/presence conditions. During closure, broad “maintenance payments” was replaced with contractual life-support payments (føderåd) and qualifying annuities. |
+| F3 rental exemption | Closed. IT-IND states at least 30 continuous days and §7-2(3)'s multi-unit/letting-cabin/business exclusions. |
+| F4 TP documentation clock | Closed. Table and filing prose state the earliest start at expiry of the return filing deadline; the separate 60–90-day supplementary comparability-analysis request also matches regulation §8-11-15(2). |
+| G1 first-krone contributions | Closed for gross salary/pension withholding; SC's partial entry is now confined to low-income separately assessed sole-trader and mixed-income cases. No unverified annual business exemption is asserted. |
+| G2 resident foreign credit | Closed for the ordinary capital/wealth rules stated. Included taxable bases, same-taxpayer final paid foreign tax, distinct income/wealth ceilings, categories, cost/interest allocation, current/prior credit ordering, five-year carryforward, conditional one-year carryback, claim deadlines and evidence/change duties match the statutes/regulation. The new example uses established net attributed bases after costs/allowance. |
+| G3 imported payroll schedules and rounding | Closed. Newly cited primary provisions independently retrieved/read, with hashes below. Amounts and conditions match. The final text includes the work-related-need/private-availability condition in FSFIN §5-12-20. Raw payroll example arithmetic is expressly separated from downward whole-krone tax/contribution claim rounding. |
+| G4 property directions | Remains a genuine, narrow IT-IND partial entry. The new advance-assessment paragraph accurately identifies nominal 2024-to-2026 continuation and the stated 30% documented-market-value cap as **advance** treatment. It does not promote this into final 2026 assessment directions or a mainland automatic housing value. |
+| G5 cessation/exit | Ordinary disposals, tax balances, gain/loss accounts, sub-NOK 30,000 settlement and complete-liquidation rules are now covered accurately. The genuine XB partial entry is confined to territorial adaptation/computation/payment for cross-border unrealised-asset gains and company emigration. It does not conceal ordinary liquidation/final-loss rules. |
+
+One stale reference to a foreign-dividend worked example remained after that example was replaced. The final isolated commit removes it and gives a standalone recipient-status instruction. No new tax proposition or arithmetic changed in that final correction.
+
+### Final twelve examples: independent legal and numerical check
+
+I rechecked the eleven unchanged examples against the same legal bases/rates and independently recomputed the new foreign-credit example under §§16-20–16-21. Taxable cost/loss/valuation/price/membership inputs remain explicit case assumptions, not proof supplied by the arithmetic. The executable check was then run with the six explicit skill paths: **6 files, 12 oa-check blocks, 0 failures, 0 missing**. That automated result corroborates, rather than replaces, the legal/base review.
+
+| Final example | Independently recomputed result | Verdict |
+|---|---|---|
+| IT-IND salary and sole trader | Business 400,000; shared income 1,600,000; tax 128,000 | Pass |
+| IT-IND capital and upper wealth band | Capital tax 24,000; wealth tax 212,500; total 236,500 | Pass |
+| IT-CORP ordinary profit/loss | Taxable profit 8,000,000; tax 1,280,000 | Pass |
+| IT-CORP higher slice | Threshold 22,000,000; high slice 8,000,000; tax 5,280,000 | Pass |
+| SC ordinary adult | Employee 45,600; employer 0 on the stated facts | Pass |
+| SC older member | Low-rate contribution 20,400; comparison difference 10,000 | Pass |
+| PR ordinary cash | Tax 4,000; contribution 3,800; net cash 42,200 | Pass |
+| PR car/band crossing | Raw tax 8,424.68; contribution 4,776.60; net cash 46,798.72 before the clearly identified claim-rounding stage | Pass |
+| TP service correction | Adjustment 200,000; corrected tax 672,000; increase 32,000 | Pass |
+| TP corporate band crossing | Corrected profit 17,000,000; threshold 15,000,000; tax 2,840,000; increase 600,000 | Pass |
+| XB exactly 30 days | Tax 7,200; after-income-tax amount 82,800 | Pass |
+| XB capital-income credit | 200,000×16%=32,000 before credit; 32,000×50,000/200,000=8,000 ceiling; min(10,000,8,000)=8,000 credit; 24,000 remaining Svalbard tax; 2,000 enters the statutory unused-credit test | Pass |
+
+The final metadata/trust checks remain passed: all six tax years are 2026, all tiers are 2, no professional-review keys were added, the three original platform metadata blocks and Ryan contribution lines remain intact, and their platform CTA suffixes still match the base byte-for-byte. The final territory remains Svalbard and excludes Jan Mayen. Niche exclusions and the professional-review limit remain separate from the three ordinary partial domains.
+
+### Final country-file SHA256 manifest
+
+These hashes identify the **country content**, independently of later changes to review receipts, author evidence or generated assets.
+
+| File under skills/international/svalbard/ | SHA256 at 7ff2d2b2be80b24cf7a105b31de5c4aaaa8effc8 |
+|---|---|
+| README.md | `4829c8b79636dca5e27cb06779a5fed8fe7e1afa15ebf0f6b01fd670e9835ff0` |
+| sj-svalbard-company-income-tax.md | `3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d` |
+| sj-svalbard-income-tax.md | `ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5` |
+| sj-svalbard-payroll-tax.md | `184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe` |
+| sj-svalbard-social-contributions.md | `1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e` |
+| sj-svalbard-tax-residence.md | `1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14` |
+| sj-svalbard-transfer-pricing.md | `30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7` |
+
+### Additional independently retrieved primary sources for closure
+
+All retrieved on **24 October 2026**, with ordinary HTTPS and the same normal user agent. Hashes are original response-body bytes. Previously retrieved core statutes, Svalbard benefit regulation and a-melding law/regulation were reread against the corrections and are recorded in the initial ledger; the entries below cover newly relied-on official URLs and additional provisions.
+
+| Official URL | SHA256 | Read scope and confirmed additions |
+|---|---|---|
+| https://lovdata.no/dokument/SF/forskrift/2025-11-07-2216 | `093b5a2dd39aad385ae559c8d0b08d408a1e2c928bf652b5a028a07c2079f465` | Entire §§2–4: 693/400/107 overnight rates and lodging conditions; actual extra costs; started extra day; meal reductions 20/30/50% and nearest-krone rounding; documented higher costs; conditional 452 night supplement; 15km and 6–12/>12-hour limits with 200/400 rates; 3.50/km car,10/km snowmobile/ATV, conditional1/km additions. |
+| https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_5 | `e40d406060aaacd65bbdbdf777ea308b6aca30c0c1775bcee28c6b60dd012668` | Entire §§5-11-10,5-12-20–23: qualifying communications scope;4,392 annual amount;366 derived monthly; benefit/reimbursement ceiling; no employee-payment reduction; whole/started months;14-in-30 and30-in-year sporadic limits. |
+| https://lovdata.no/dokument/SF/forskrift/2007-12-21-1766 | `5b4ab4def38552dd6d9b06d04efb4bae5323bee1116a074f8f270914c0d73a09` | Entire §5-6-12 documentation/allowance conditions and §10-4-4 downward whole-krone claim rounding. |
+| https://lovdata.no/dokument/SF/forskrift/1999-11-19-1158/KAPITTEL_16-3-1-1 | `ed70e72e2a6a48c7061863982c29b6e23467caa3b5a728b59632f79d1f78a919` | §§16-29-10–11: possible notarised copy/authorised Norwegian translation demand; duty to disclose reduced foreign assessment. §§16-29-1–9 were independently read from the chapter URL already in the initial ledger. |
+| https://www.skatteetaten.no/rettskilder/type/uttalelser/uttalelser/forskuddsutskrivingen-2026/ | `31baa3aff9ebf939437cef0231100b4ee2352fadcd8077b4f4cbef56c8fc527b` | “Fribeløpsordning for ungdom på Svalbard” and “Fritidseiendom”: current youth collection/refund statement; explicitly dated advance-property treatment and30% cap. Other mainland proposed/advance figures are not imported into the pack. |
+| https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/svalbard/andre-inntekter/ | `0f8fd719f6f2b106af56a665043d29e90baa414125bf73d32ee5b62a7ccdc877` | Entire substantive other-income page: ordinary assessed income/wealth is returned; gross salary withholding is a separate system and salary is not entered again in that return. |
+
+No country skill/README was edited by the reviewer. This receipt is the reviewer's only repository mutation. No external communication, publication, push or new accountant-review attribution was performed by the reviewer.
