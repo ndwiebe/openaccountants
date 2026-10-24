@@ -1,7 +1,7 @@
 ---
 name: sm-payroll-social
 description: >
-  Prepare 2026 San Marino wage withholding and selected social-contribution workpapers using current ISS circular 2187/UC/2026 and the reformed IGR. Establish coverage, pensionable and fiscal bases, actual payslip components, anticipated annual income, requested credits and filing/payment evidence first. Distinguishes ISS cash contributions from tax-deductible amounts, employer pension/FONDISS components from total employment cost, and employee from self-employed or separate-management rules. Includes five assumed arithmetic controls. Full employer-fund rates, cross-border coverage, employee contribution deadlines, special remuneration and live portal execution remain partial. Independent whole-pack and named local accountant review are open.
+  Prepare 2026 San Marino wage withholding and selected social-contribution workpapers using current ISS circular 2187/UC/2026 and the reformed IGR. Establish coverage, pensionable and fiscal bases, actual payslip components, anticipated annual income, requested credits and filing/payment evidence first. Distinguishes ISS cash contributions from tax-deductible amounts, employer pension/FONDISS components from total employment cost, and employee from self-employed or separate-management rules. Includes six assumed arithmetic controls and the August 2026 contribution-debt procedures. Full employer-fund rates, cross-border coverage, employee contribution deadlines, special remuneration and live portal execution remain partial. Independent whole-pack and named local accountant review are open.
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-24
@@ -10,7 +10,7 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 sources:
   - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49158490.html"
     title: "ISS revised general 2026 circular 2187/UC/2026; pages 1-10"
@@ -27,15 +27,26 @@ sources:
   - url: "https://www.pa.sm/portalepa/servlet/portalepa.hic.servizi.HGCalcoloIGRLegge141_2025?MPasso=1&MTipo=G&profondita=1"
     title: "Official public IGR calculator; synthetic wage checks only"
     as_of: "2026-10-24"
+  - url: "https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7"
+    title: "Authentic Regulation 24/2026; contribution nonpayment procedures"
+    as_of: "2026-10-24"
+  - url: "https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html"
+    title: "ISS circular 4295/UC/2026; current instalment instructions"
+    as_of: "2026-10-24"
+  - url: "https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html"
+    title: "Law 157/2022 articles 21-22; pension and FONDISS rate progression"
+    as_of: "2026-10-24"
 ---
 
-# San Marino payroll and social contributions v0.1
+# San Marino payroll and social contributions v0.2
 
 ## Scope and preparation
 
 For each 2026 payroll, collect the contract and applicable collective agreement, actual coverage and registrations, work/residence locations, gross pay and benefits, pensionable base, fiscal base, cumulative year-to-date pay/withholding, dependency claims, SMaC choice and payment records. Cross-border coverage or a foreign employment relationship needs an actual domestic/treaty social-security conclusion. Do not infer coverage from citizenship or a San Marino company address.
 
 The current ISS general circular is **2187/UC/2026 of 22 April 2026**. Its first page expressly annuls and replaces circular 1376/UC/2026 of 2 March 2026. This Guide uses the revised circular and the 2026 IGR amendments, replacing the retained approximate 2025 rates. [ISS revised circular, page 1][iss]; [IGR 15,24 and 101][law]; [Law 141/2025][reform]; [DD 156/2026][october]
+
+The actual enacted Law 157/2022 articles 21–22 was also compared: its 2026 employee/employer pension and FONDISS columns match the revised ISS circular. The original law also sets later-year increases; those later rates are not substituted for 2026. [Law 157/2022, articles 21–22][pension-reform]
 
 ## Employee and employer components
 
@@ -74,6 +85,18 @@ The ISS circular provides specific Christmas/thirteenth-month contribution repor
 Keep tax and social-security obligations separate. IGR 125 gives the ordinary withholding remittance route by the **following bimonthly period**; special financial-payer advances are a different route. This is not an ISS monthly contribution deadline. Article 85 requires IGR G transmission by **15 April** following the income period and the specified employee copy. The worker's return exemption depends on article 84; otherwise the general declaration/balance route is 31 July following the tax year, subject to article 93's holiday/office-closure rule. Obtain the actual current forms, calendar and receipts. [IGR 84–85,93,124–125][law]
 
 This research has not reconciled the complete employee contribution declaration/payment calendar or the live CONTRISS payload. Do not fill that gap with the old phrase typically monthly or treat a correct tax-payment deadline as proof ISS payment is timely. Obtain the current ISS instructions before execution. IGR 131's joint-liability rule has the specific neither-withheld-nor-paid condition; it is not a general conclusion that an employee pays tax twice whenever an employer fails to remit. [IGR 125 and 131][law]
+
+## Contribution debt: current 2026 procedure
+
+Keep the actual debt, periods, scheme, taxpayer/COE, collection stage and accepted payment plan in the workpaper. **Regulation 24/2026** governs employee notices, category-specific counts for licence action and collection/instalment coordination. The rules below are distinct from income-tax withholding sanctions and from the ordinary payment due date. [Regulation 24/2026, articles 1–14][debt-regulation]
+
+For the employee notice under Law 158/2025 article 8, the Office reviews actual employee-specific contribution positions **bimonthly** and checks three unpaid or incompletely paid eligible months, including nonconsecutive months. ISS and FONDISS counts are checked separately for this notice route. Months without an actual contribution obligation are excluded; the specified good-faith material-error exception needs evidence. Notice goes through the ARPA process; a plan does not make a month fully regularised until the contribution obligation is fully paid. The regulation schedules the communication service from **1 October 2026**, with its particular 31 August initial-state/February–March 2026 transition. That dated legal requirement is not evidence that a particular worker has received a live portal notice. [Regulation 24/2026, articles 2–6][debt-regulation]
+
+The licence-suspension count under Law 30/2025 article 6 is a separate test. For covered employee/occasional/employee-pensioner arrears entered on the collection roll, the same calendar month counts **once**, whether unpaid to ISS, FONDISS or both, and nonconsecutive months can cross calendar years. The threshold is thirteen such months. For the specified self-employed/agricultural route, **three unpaid contribution deadlines** (first advance, second advance or balance), including nonconsecutive ones, are treated as thirteen months. Do not count each fund twice, treat the employee-notice three-month trigger as suspension, or apply the three-deadline equivalence to every director. Article 7(4) instead uses the principal-debt **above 100,000** route for its specified separate-management categories. Aggregate a physical person's and associated COE roll entries where 7(3) requires it. Article 10 excludes the specified valid BCSM instalment, approved settlement and moratorium positions from the relevant counts/threshold. Obtain current Law 30/2025 and the UAE/collection implementation before deciding suspension, revocation or reactivation in a case. [Regulation 24/2026, articles 7–12][debt-regulation]
+
+An ISS Office-agreed contribution repayment plan has a **maximum twelve-month** period to clear the debt, with the relevant penalty and late interest; it is not a taxpayer's automatic unilateral extension. Current **ISS circular 4295/UC/2026 of 19 August** states the penalty as **5%** and the article 44(3) late-interest route, and expressly supersedes circular 2301/UC/2019. Default on even one agreed instalment leads to the stated collection-roll procedure. If no plan can be defined, article 13(3) gives the Office the following four-month collection-roll route. Once amounts are entered on the roll and transmitted to the BCSM collection service, ISS/FONDISS cannot agree a new Office plan or cancel the roll outside the statutory cases. [Regulation 24/2026, articles 13–14][debt-regulation]; [ISS circular 4295/2026][debt-circular]
+
+Regulation 24 article 15 directs a **proposal** for sanctions reform; it does not itself enact the proposed replacement penalty schedule. Before an actual sanctions/interest calculation, reconcile current article 44 of Law 179/2005 and its amendments, the applicable legal interest rate/dates, good-faith exceptions and collection stage. The earlier 2005 text alone is not treated as a complete current sanctions chain. [Regulation 24/2026, articles 1,13 and 15][debt-regulation]; [ISS circular 4295/2026][debt-circular]
 
 ## Self-employed and separate management
 
@@ -195,13 +218,33 @@ expected:
   isolated_pension_component: 12264.74
 ```
 
+### Agreed-plan principal and stated penalty only
+
+Assume an eligible ISS plan has actually been agreed, contribution principal is 12,000 and the stated 5% penalty applies, with no additional statutory charge. The principal-plus-penalty subtotal is 12,600, or 1,050 for each of twelve equal allocations **before interest**. The legally due interest, actual instalment schedule and any roll-stage change must be added separately; 1,050 is not the final payment quote.
+
+```oa-check
+name: San Marino assumed agreed contribution plan before interest
+inputs:
+  established_contribution_principal: 12000
+  established_plan_penalty_fraction: 0.05
+  assumed_equal_allocations_within_maximum: 12
+steps:
+  stated_plan_penalty: established_contribution_principal * established_plan_penalty_fraction
+  principal_and_penalty_before_interest: established_contribution_principal + stated_plan_penalty
+  equal_allocation_before_interest: principal_and_penalty_before_interest / assumed_equal_allocations_within_maximum
+expected:
+  stated_plan_penalty: 600
+  principal_and_penalty_before_interest: 12600
+  equal_allocation_before_interest: 1050
+```
+
 ## Limits and referral
 
 PR and SC remain partial. Full employer-fund tables and cost, contribution-base ceilings/exclusions, current employee deadlines, cross-border coverage/coordination, employment permission, collective agreements, benefits, termination, directors/operational members/pensioners, minimum adjustments, special sectors and portal validation remain open. Refer the identified missing classification or rule before processing. A household-worker circular or category-specific solidarity amount does not establish an all-employer charge. Independent whole-pack and named San Marino accountant review are open.
 
 ## Sources
 
-Read 24 October 2026: revised ISS circular 2187/UC/2026, all ten pages through text/OCR; material pages 1,4,5 and 10 visually compared to the scanned tables and footnotes. The page 4 pension and separate social-security columns were kept distinct. Selected IGR articles 15–17,24–26,84–85,93,101,124–125 and 131; relevant Law 141/2025 reform/commencement and full authentic DD 156/2026. Three public synthetic wage calculations were observed, with no authentication, client data, filing or payment. Original legislation for every ISS special case, every 2026 amendment and live CONTRISS/payroll execution were not audited. Earlier approximate text remains in Git history.
+Read 24 October 2026: revised ISS circular 2187/UC/2026, all ten pages through text/OCR; material pages 1,4,5 and 10 visually compared to the scanned tables and footnotes. The page 4 pension and separate social-security columns were kept distinct. Selected IGR articles 15–17,24–26,84–85,93,101,124–125 and 131; relevant Law 141/2025 reform/commencement and full authentic DD 156/2026. Three public synthetic wage calculations were observed, with no authentication, client data, filing or payment. Law 157/2022 articles 21–22 were read against the current rates. Full authentic Regulation 24/2026, including all fifteen articles and the particular October communication transition, was read. ISS circular 4295/2026 was OCR-read and visually compared. Original legislation for every ISS special case, every 2026 amendment, the complete collection/licensing/sanction chain and live CONTRISS/payroll execution were not audited. The April 2026 care-worker portal circular and November 2020 FONDISS information note were identified as category-specific/datum-limited leads, not a universal current employer procedure. Earlier approximate text remains in Git history.
 
 [law]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [reform]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
@@ -216,3 +259,7 @@ Read 24 October 2026: revised ISS circular 2187/UC/2026, all ten pages through t
 ## Talk to an accountant
 
 Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).
+
+[debt-regulation]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=16951b47dbbfd35a095f3ff014ae4d7f1dd77aa7
+[debt-circular]: https://www.iss.sm/on-line/home/menudestra/area-modulistica/modulistica-ufficio-contributi/documento49160180.html
+[pension-reform]: https://www.consigliograndeegenerale.sm/on-line/home/documento17136203.html
