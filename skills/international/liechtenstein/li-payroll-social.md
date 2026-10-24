@@ -19,10 +19,12 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein payroll and social contributions v0.1
+# Liechtenstein payroll and social contributions v0.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -173,7 +175,7 @@ expected:
 
 ## Ask before preparing and refer when unresolved
 
-Establish coverage, contribution dates/wages, residence and treaty status, public/private employment, family status and the authority instruction. Ask for the pension/insurance plan, benefit details, current remittance notices and prior corrections. Refer disputed status, multi-country insurance/telework, every treaty entitlement, family/retirement exceptions, specialist benefits and plan pricing. The SC/PR domains, full source chain, live filing and independent whole-pack/named local accountant review remain open.
+Establish coverage, contribution dates/wages, residence and treaty status, public/private employment, family status and the authority instruction. Ask for the pension/insurance plan, benefit details, current remittance notices and prior corrections. Refer disputed status, multi-country insurance/telework, every treaty entitlement, family/retirement exceptions, specialist benefits and plan pricing. The SC/PR domains, full source chain, live filing and named local accountant review remain open.
 
 ## Sources
 
@@ -195,16 +197,6 @@ Read 24 October 2026, within the sections identified above:
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

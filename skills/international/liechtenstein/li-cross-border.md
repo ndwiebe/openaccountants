@@ -16,10 +16,12 @@ category: cross-border
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.2
+version: 0.3
 ---
 
-# Liechtenstein cross-border tax preparation v0.2
+# Liechtenstein cross-border tax preparation v0.3
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Scope and order of work
 
@@ -131,7 +133,7 @@ expected:
 
 ## Ask and refer
 
-Collect dated homes/stays, treaty residence, all workdays and employment/public-service facts, entity seat/management, project/PE records, source/asset and income categories, tax certificates, foreign reduction efforts and final notices. Obtain a separate legal conclusion for each treaty, remote-work/insurance coordination, unusual source category, business/wealth valuation, PVS/trust, exit deferral and corresponding-adjustment claim. Full cross-border coverage, treaty application, complete legal chain and independent whole-pack/named accountant review remain open.
+Collect dated homes/stays, treaty residence, all workdays and employment/public-service facts, entity seat/management, project/PE records, source/asset and income categories, tax certificates, foreign reduction efforts and final notices. Obtain a separate legal conclusion for each treaty, remote-work/insurance coordination, unusual source category, business/wealth valuation, PVS/trust, exit deferral and corresponding-adjustment claim. Full cross-border coverage, treaty application, complete legal chain and named accountant review remain open.
 
 ## Sources and scope
 

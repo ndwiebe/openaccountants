@@ -3,14 +3,14 @@ name: li-income-tax
 description: >
   Prepare 2026 Liechtenstein individual wealth-and-income tax workpapers. Use for
   ordinary resident taxation, family-status tariff selection, deemed wealth yield,
-  state tax, the separate municipality surcharge, business loss screening and
+  the separate minimum-income exemption, state tax, municipality surcharge, business loss screening and
   reconciliation of payroll withholding. Establish residence, family/election facts,
   taxable net wealth, income categories, deductions and the municipality's actual
   annual rate before computing. The Guide replaces approximate summary brackets
   with the statutory formulas and separates the tariff allowance from deductible
   expenses. It does not complete asset valuations, all deductions, lump-sum pension
   taxation, trusts, expenditure taxation, treaties, exact filing calendars or live
-  filing, and remains pending independent whole-pack and local accountant review.
+  filing, and remains pending local accountant review.
 jurisdiction: LI
 tax_year: 2026
 last_updated: 2026-10-24
@@ -19,10 +19,12 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein individual income and wealth tax v0.1
+# Liechtenstein individual income and wealth tax v0.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -38,7 +40,23 @@ SteG article 6 makes individuals with domestic domicile or habitual abode subjec
 
 ## 2026 state formulas
 
-The following reproduces article 19(1). Values are CHF taxable income **x**, not gross salary. “Subtract” is the fixed amount in the statutory formula, not another itemised deduction. Basic exemptions apply through the zero band. Qualifying single-parent status is the statutory family-law category, not any adult living alone with a child. Special capital/substitute wealth taxation has different rules.
+Before using the tariff, screen the separate **Existenzminimum exemption** in SteG article 15(2)(i). For an unlimited-liability resident, article 14 income that does not exceed the applicable minimum is exempt. If only part of the income is domestically taxable, test total income; for liability lasting less than a year, annualise that total. This test is not a further deduction from taxable income and is distinct from the zero band and fixed tariff subtraction. [SteG, articles 15(2)(i) and 19][law]
+
+SteV article 8 sets these monthly gross minima, with the amended base amounts first applying to tax year 2025 and continuing in the current 2026 text:
+
+| Established category | CHF per month | CHF for a full twelve months |
+|---|---:|---:|
+| Single | 2,100 | 25,200 |
+| Qualifying single parent | 2,600 | 31,200 |
+| Jointly assessed spouses/registered partners | 3,200 | 38,400 |
+| Separately assessed spouses/registered partners in the same household, or factual cohabiting partners | 1,600 each | 19,200 each |
+| Each child aged up to 5, additional | 300 | 3,600 |
+| Each child aged 6–11, additional | 450 | 5,400 |
+| Each child aged 12 or older, additional | 600 | 7,200 |
+
+Establish the actual family/child category, article 14 total income including relevant deemed wealth yield, and liability period before deciding eligibility. Resolve changing family circumstances or disputed attribution separately; do not replace this gross-income test with post-deduction taxable income **x**. [SteV, article 8 and its amendment notes][ordinance]
+
+For income not exempt under that screen, the following reproduces article 19(1). Values are CHF taxable income **x**, not gross salary. “Subtract” is the fixed amount in the statutory formula, not another itemised deduction. The tariff's basic allowance is embedded in its zero band and formula. Qualifying single-parent status is the statutory family-law category, not any adult living alone with a child. Special capital/substitute wealth taxation has different rules.
 
 ### Ordinary tariff, article 19(1)(a)
 
@@ -106,6 +124,24 @@ Article 114 generally requires payment within 30 days of legal maturity, subject
 ## Worked controls
 
 Amounts, deduction entitlement, wealth values and municipality rates are case assumptions. All examples exclude special incomes, foreign relief and rounding differences.
+
+### Minimum-income exemption screen
+
+Assume an unlimited-liability single resident for the full year, no child addition and CHF 24,000 total article 14 income after including every relevant source and deemed wealth yield. The CHF 25,200 annual minimum exceeds that established total by CHF 1,200. Article 15(2)(i) therefore exempts this income; do not compute a positive tariff liability merely because a post-deduction figure falls above the zero band. The arithmetic below checks the threshold and headroom; statutory eligibility is an express case assumption.
+
+```oa-check
+name: Liechtenstein assumed full-year single minimum-income screen
+inputs:
+  statutory_monthly_gross_minimum: 2100
+  months_in_full_year: 12
+  established_total_article_14_income: 24000
+steps:
+  annual_gross_minimum: statutory_monthly_gross_minimum * months_in_full_year
+  income_below_minimum: annual_gross_minimum - established_total_article_14_income
+expected:
+  annual_gross_minimum: 25200
+  income_below_minimum: 1200
+```
 
 ### Ordinary state tax with deemed wealth income
 
@@ -200,14 +236,14 @@ expected:
 
 ## Ask and refer
 
-Obtain residence/family/election facts, the municipality/year rate, all assets/debts and values, income and benefits, assessed losses, actual deductions, foreign taxes and withholding/prepayment certificates. Refer partial-year migration, foreign relief, special pension/capital receipts, foundations/trusts, expenditure taxation, wealth substitutions, business disposals and contested classifications. All deductions/valuation methods, actual annual calendar, specialist law and independent whole-pack/named accountant review remain open; IT-IND coverage stays partial.
+Obtain residence/family/election facts, the municipality/year rate, all assets/debts and values, income and benefits, assessed losses, actual deductions, foreign taxes and withholding/prepayment certificates. Refer partial-year migration, foreign relief, special pension/capital receipts, foundations/trusts, expenditure taxation, wealth substitutions, business disposals and contested classifications. All deductions/valuation methods, actual annual calendar, specialist law and named accountant review remain open; IT-IND coverage stays partial.
 
 ## Sources
 
 Read 24 October 2026, selected provisions only:
 
 - [SteG, consolidated 1 July 2026][law], articles 5–8, selected 9–16, 18–19, 24–29, 75, 94, 113–114 and 135. The full asset/deduction/foreign-relief/special-regime chain has not been audited.
-- [SteV, consolidated 1 July 2026][ordinance], article 6 election and article 45 interest; full current return/election procedures remain to be reconciled.
+- [SteV, consolidated 1 July 2026][ordinance], article 6 election, article 8 minimum-income exemption and article 45 interest; full current return/election procedures remain to be reconciled.
 - [Act 2024/483][amendment], article 5 and commencement II(2); its article 19 schedule was compared with the current consolidation, not assumed from the prior approximate summary.
 
 [law]: https://www.gesetze.li/konso/pdf/2010340000
@@ -218,16 +254,6 @@ Read 24 October 2026, selected provisions only:
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

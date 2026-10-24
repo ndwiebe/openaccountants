@@ -19,10 +19,12 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein company formation and entity screening v0.1
+# Liechtenstein company formation and entity screening v0.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Scope and first decision
 
@@ -103,7 +105,7 @@ expected:
 
 ## Ask and refer
 
-Establish purpose/licensing, actual founders/beneficiaries/control, intended residence/management, capital currency and contributions, governance/service address, representation and accounts/size. Refer trusts, foundations, Anstalt control/benefits, segmented entities, noncash contributions, foreign owners/management, regulated activities, disqualification, review waivers and all disputed formation/tax cases. Full formation/annual-reporting scope and independent whole-pack/named local professional review remain open. This secondary topic does not make any core tax domain complete.
+Establish purpose/licensing, actual founders/beneficiaries/control, intended residence/management, capital currency and contributions, governance/service address, representation and accounts/size. Refer trusts, foundations, Anstalt control/benefits, segmented entities, noncash contributions, foreign owners/management, regulated activities, disqualification, review waivers and all disputed formation/tax cases. Full formation/annual-reporting scope and named local professional review remain open. This secondary topic does not make any core tax domain complete.
 
 ## Sources
 
@@ -121,16 +123,6 @@ Read 24 October 2026:
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

@@ -19,10 +19,12 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein corporate income tax v0.1
+# Liechtenstein corporate income tax v0.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -166,7 +168,7 @@ expected:
 
 ## Ask and refer
 
-Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity movements and related-party balances; assessed loss history; three-year minimum-tax data and purpose; current forms, notices and elections. Refer participation/exemption anti-abuse, NID special cases, groups, foreign PE loss/credit, exit/restructuring, PVS, GloBE, source tax and live filing. Corporate/XB coverage, full legal/amendment chain and independent whole-pack/named accountant review remain open.
+Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity movements and related-party balances; assessed loss history; three-year minimum-tax data and purpose; current forms, notices and elections. Refer participation/exemption anti-abuse, NID special cases, groups, foreign PE loss/credit, exit/restructuring, PVS, GloBE, source tax and live filing. Corporate/XB coverage, full legal/amendment chain and named accountant review remain open.
 
 ## Sources
 
@@ -188,16 +190,6 @@ Read 24 October 2026:
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

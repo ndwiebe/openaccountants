@@ -22,7 +22,7 @@
       "raw_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553",
       "extracted_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
       "extraction": "pdftotext -layout",
-      "selected_read_scope": "Selected provisions: 4, 6, 18a–18c, 31a–31b, 32–32a, 41–42, 45 and 47. Business-credit 36a–36c and full filing/ordinance interactions remain open."
+      "selected_read_scope": "Selected provisions: 4, 6, 8, 18a–18c, 31a–31b, 32–32a, 41–42, 45 and 47. Business-credit 36a–36c and full filing/ordinance interactions remain open. Article 8 and amendment notes additionally read to correct the separate minimum-income exemption screen during independent review."
     },
     {
       "url": "https://www.gesetze.li/konso/pdf/2009330000",
@@ -127,14 +127,14 @@
     "Tax Act and Tax Ordinance current 1 July 2026, PGR current 1 September 2026; exact within-year amendment applicability still needs full reconciliation."
   ],
   "country_source_sha256": {
-    "skills/international/liechtenstein/README.md": "21cddd6ad68e0c7b6606a66f829ce49ea92b79761e188511e33db3b79f876979",
-    "skills/international/liechtenstein/li-company-formation.md": "a44c4dc41ab96dda353766c3184d1f36554e5d4c48566b2e058837be7932f9d6",
-    "skills/international/liechtenstein/li-corporate-income-tax.md": "5c8c47d2188a5948d5325af5d6ddb0ed9a908174e0fa81e5668e1086cdbf72c3",
-    "skills/international/liechtenstein/li-cross-border.md": "3cb894ef363dc9d2e4bf41b79ae521e2b9c5ef7c443ab4f3ab99f49e9ec4d12c",
-    "skills/international/liechtenstein/li-income-tax.md": "882a2c318bf2a1a358d21b7f97cf53e69f8f8a70be919086894830162005f125",
-    "skills/international/liechtenstein/li-payroll-social.md": "88b7088f391f8478af98cd3e654d1de14cd9b0fa6eacdfc4bf7a49df4cd16ca6",
-    "skills/international/liechtenstein/li-tax-overview.md": "1670a8b765330fa71ef09cb9221d5be295a94c2d99339fd6669ad2baba75d09e",
-    "skills/international/liechtenstein/li-transfer-pricing.md": "6d55bd9770f5b019ad1b0f3a171bb0f2dd18c0e5caac0503a487f6237487331b",
-    "skills/international/liechtenstein/liechtenstein-vat.md": "a54126c4e83eadc2d6cdd8f3de8ede33a128608ede9c2c8d15d1f874117ec507"
+    "skills/international/liechtenstein/README.md": "e0cfae3ca936c69e7eb77d943cc258ee45aa9bd1654e0c6022ac0ee93dd5eb0e",
+    "skills/international/liechtenstein/li-company-formation.md": "e49bb1dceee91a3540c56300039a0a317efa7e25e07bed76aec08bec28a4c0da",
+    "skills/international/liechtenstein/li-corporate-income-tax.md": "72981e14840831bf1b1f36f48261ad83a50678ead66fc7df0a3c81ee35f6d4b6",
+    "skills/international/liechtenstein/li-cross-border.md": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
+    "skills/international/liechtenstein/li-income-tax.md": "a02a901fbcb0378ecef7961f9003c7c85fd892e4be94a21ad4a82c1e728fb0e2",
+    "skills/international/liechtenstein/li-payroll-social.md": "45a891f3ce5cc96b215e94ac67be228cab1bab379fd6db30dd1062336d096a3c",
+    "skills/international/liechtenstein/li-tax-overview.md": "46f0b8fd74d307ebd7460fafe700cd9adc6435eea7e45cf099f3c6d4f111a9ba",
+    "skills/international/liechtenstein/li-transfer-pricing.md": "f7755802012c5e899838daa4742613f848724ad48c1d0a4b5f09e3ae448fe8c4",
+    "skills/international/liechtenstein/liechtenstein-vat.md": "11a44408c8bace284b69f22bb4475cc9a5c29577be99cc6d41d53bfe23934db8"
   }
 }

@@ -10,8 +10,8 @@ description: >
   It does not decide all cross-border supplies, platform sales, margin or net-tax
   methods, property, groups, sector exemptions or complex partial recovery. Bank
   statements alone do not establish VAT treatment. The source-cited draft remains
-  subject to independent whole-pack and named local accountant review.
-version: 2.1
+  subject to named local accountant review.
+version: 2.2
 jurisdiction: LI
 tax_year: 2026
 last_updated: 2026-10-24
@@ -22,7 +22,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Liechtenstein VAT preparation v2.1
+# Liechtenstein VAT preparation v2.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -149,7 +151,7 @@ expected:
 
 ## Ask and refer
 
-Obtain the registration/authority decision, approved method/period, portal representation, invoices, contracts, location/transport/customs evidence, VAT bases and actual use. Retain prior returns, advance payments and notices. Refer uncertain supply location, foreign enterprise allocation, agency/platform transactions, exemption/option, groups, property, partial exemption, method changes, refunds/late interest and contested tax. No actual return, payment or production account was accessed. Full legal/amendment scope, operational field testing and independent whole-pack/named accountant review remain open; VAT coverage stays partial.
+Obtain the registration/authority decision, approved method/period, portal representation, invoices, contracts, location/transport/customs evidence, VAT bases and actual use. Retain prior returns, advance payments and notices. Refer uncertain supply location, foreign enterprise allocation, agency/platform transactions, exemption/option, groups, property, partial exemption, method changes, refunds/late interest and contested tax. No actual return, payment or production account was accessed. Full legal/amendment scope, operational field testing and named accountant review remain open; VAT coverage stays partial.
 
 ## Sources and read limits
 
@@ -169,16 +171,6 @@ Read 24 October 2026:
 
 ---
 
-## Talk to a verified accountant
+## Talk to an accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).

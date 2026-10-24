@@ -16,10 +16,12 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-24
-version: 0.1
+version: 0.2
 ---
 
-# Liechtenstein transfer pricing v0.1
+# Liechtenstein transfer pricing v0.2
+
+Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.
 
 ## Who this applies to
 
@@ -120,7 +122,7 @@ expected:
 
 ## Ask and refer
 
-Obtain the full group/benefit/relationship chart, turnover and consolidation evidence, both years' company-size data, currency, all party/category transactions, PE facts and actual authority requests. Require the functions/risks/assets record, method/comparable support and accounts reconciliation. Refer financing, guarantees, intangibles, restructurings, PE allocation, contested aggregation/size tests, CbCR, advance agreements and cross-border disputes. Full legal/application and independent whole-pack/named local accountant review remain open; TP coverage is partial.
+Obtain the full group/benefit/relationship chart, turnover and consolidation evidence, both years' company-size data, currency, all party/category transactions, PE facts and actual authority requests. Require the functions/risks/assets record, method/comparable support and accounts reconciliation. Refer financing, guarantees, intangibles, restructurings, PE allocation, contested aggregation/size tests, CbCR, advance agreements and cross-border disputes. Full legal/application and named local accountant review remain open; TP coverage is partial.
 
 ## Sources
 

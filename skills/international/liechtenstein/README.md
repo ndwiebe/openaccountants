@@ -1,6 +1,6 @@
 ---
 jurisdiction: LI
-version: 0.1
+version: 0.2
 last_updated: 2026-10-24
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,18 +13,18 @@ covered_by:
   TP: li-transfer-pricing
   XB: li-cross-border
 partial:
-  IT-IND: "2026 statutory state scales, wealth-income integration and selected loss/withholding rules prepared; full deductions, valuation, actual municipal rates, special cases and review remain open."
+  IT-IND: "2026 statutory state scales, wealth-income integration and selected loss/withholding rules prepared; full deductions, valuation, actual municipal rates, special cases and named local accountant review remain open."
   IT-CORP: "2026 base, minimum-tax exception, loss cap and equity-deduction preparation added; complete exemption, group, foreign, GloBE and filing application remain open."
-  VAT: "2026 authority, registration, rates, acquisition tax, input and filing/correction method prepared; special supplies, complete legal chain, operational fields and independent review remain open."
+  VAT: "2026 authority, registration, rates, acquisition tax, input and filing/correction method prepared; special supplies, complete legal chain, operational fields and named local accountant review remain open."
   SC: "2026 employee AHV/IV/FAK/VK and ALV rates/bases prepared; full self-employed, non-employed, pension/insurance, international and statutory scope remain open."
-  PR: "2026 resident/nonresident wage withholding, schedule and remittance preparation added; treaty, benefit, exact calendar, full statutory and independent review remain open."
+  PR: "2026 resident/nonresident wage withholding, schedule and remittance preparation added; treaty, benefit, exact calendar, full statutory and named local accountant review remain open."
   TP: "Statutory relationship, documentation routes, thresholds and method preparation added; benchmarks, detailed transaction/size interaction, CbCR and disputes remain open."
   XB: "Domestic residence/source/PE, withholding, selected foreign-credit and corporate exit preparation added; actual treaties, full special cases and operational claims remain open."
 ---
 
 # Liechtenstein tax pack
 
-Accountable owner: Michael. Active writer: ChatGPT support chat under [OWNERS.md](../../../OWNERS.md) and [issue #406](https://github.com/openaccountants/openaccountants/issues/406), local branch `codex/liechtenstein-country-completion`. Reuse consolidated draft [PR #514](https://github.com/openaccountants/openaccountants/pull/514) after one independent whole-pack review and corrections. No Liechtenstein content from this batch has been pushed. The primary chat retains Bosnia and Herzegovina; Finland's reviewed batch is published separately at `af8d6057`, with its coverage gaps preserved.
+Accountable owner: Michael. Active writer: ChatGPT support chat under [OWNERS.md](../../../OWNERS.md) and [issue #406](https://github.com/openaccountants/openaccountants/issues/406), local branch `codex/liechtenstein-country-completion`. This country batch uses consolidated draft [PR #514](https://github.com/openaccountants/openaccountants/pull/514), with one combined country content push after review and correction closure. The primary chat is writing Montenegro; Bosnia and Herzegovina is parked; Finland's reviewed batch is published separately at `af8d6057`, with its coverage gaps preserved.
 
 The tax authority is the Liechtenstein Steuerverwaltung. Use the country's own tax and VAT Acts and its actual authority allocation. Swiss VAT practice applies by analogy with local deviations; it does not send every Liechtenstein taxpayer to the Swiss filing system. Sources below were read on 24 October 2026.
 
@@ -44,9 +44,9 @@ The [formation](li-company-formation.md) Guide now reconciles selected GmbH/capi
 
 ## Source preparation and next action
 
-The local country draft provides 24 executable calculations across seven preparation Guides; the overview is a router. It replaces Swiss payroll approximations and universal Swiss VAT filing instructions with the Liechtenstein 2026 sources. A successful calculation or a source's HTTP response does not establish legal applicability or complete coverage. The dated research record identifies provisions read and access limitations.
+The local country draft provides 25 executable calculations across seven preparation Guides; the overview is a router. It replaces Swiss payroll approximations and universal Swiss VAT filing instructions with the Liechtenstein 2026 sources. A successful calculation or a source's HTTP response does not establish legal applicability or complete coverage. The dated research record identifies provisions read and access limitations.
 
-Next: verify remaining source/application questions, run whole-country checks, obtain independent full-pack review, fix findings and push the reviewed country batch once. Keep this issue open and the consolidated PR draft; all seven domains remain partial. Named local accountant review and live filing are separate, unresolved gates.
+The [independent whole-pack source review and correction record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md) identifies exact source revisions, findings and closure status. Apply its stated limits; this is a source/editorial review. Next: resolve the remaining source/application questions, obtain named local accountant review and establish actual filing/claim procedures. Verify publication and exact-head CI on PR #514; a local checkpoint alone is not publication. Keep this issue open and the consolidated PR draft; all seven domains remain partial. Named local accountant review and live filing are separate, unresolved gates.
 
 ## Official sources
 
