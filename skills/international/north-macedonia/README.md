@@ -12,7 +12,7 @@ covered_by:
   XB: north-macedonia-cross-border
 partial:
   IT-IND: "Business-loss carryforward and cross-category business-loss relief beyond confirmed negative DLD-DB reporting remain unconfirmed."
-  SC: "First-calendar-year professional minimum and part-time/partial-month base treatment beyond UJP's confirmed mixed work/sickness formula remain unconfirmed."
+  SC: "First-calendar-year professional minimum, part-time/partial-month bases beyond the confirmed mixed work/sickness formula, and exact July lump-sum administration cutover remain unconfirmed."
   PR: "Part-time/partial-month contribution bases beyond UJP's confirmed mixed work/sickness formula remain unconfirmed."
   XB: "Standalone migration/deemed-disposal or exit-tax rules and their filing/payment procedure remain unconfirmed."
 ---

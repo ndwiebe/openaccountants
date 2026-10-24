@@ -20,7 +20,7 @@ version: 0.2
 
 ## Who this applies to
 
-[Contributions Law arts. 7, 10-13][social] define each insured group and the person responsible for calculation/remittance. Ordinary employees bear the employee contributions and the employer calculates, withholds and remits them. A self-employed person calculates/pays their own contributions; UJP calculates for a taxpayer on assessed lump-sum income, who still pays. Uninsured executive directors/board members/managers fall into the separate arts. 7(1)(1-a), 10(1)(1-a) class if not already insured by employment/self-employment. Do not apply employee rates to every payment called a fee.
+[Contributions Law arts. 7, 10-13][social] define each insured group and the person responsible for calculation/remittance. Ordinary employees bear the employee contributions and the employer calculates, withholds and remits them. A self-employed person calculates/pays their own contributions. **The July 2026 amendment changes the lump-sum self-employed calculation administrator:** [UJP's 13 July notice][july] explains the art. 13 amendment under which UJP now calculates contributions for those paying PIT on assessed lump-sum net income, while the person still pays. Before that amendment the person calculated their own contributions. Keep pre-amendment periods/corrections distinct; confirm their handling with UJP rather than applying the current administrator retrospectively. The notice does not state the exact commencement/transition rule for that administrative change beyond identifying the July amendment, so that procedural boundary is unconfirmed below. Uninsured executive directors/board members/managers fall into the separate arts. 7(1)(1-a), 10(1)(1-a) class if not already insured by employment/self-employment. Do not apply employee rates to every payment called a fee.
 
 Individual farmers and registered market-stall traders have their own base; the pension/health funds and Chamber have the calculation responsibilities specified in art. 13. Employer-funded extended-service pension contributions are separate from deductions from employee gross salary (art. 7(3)).
 
@@ -56,6 +56,8 @@ The ordinary self-employed group pays pension, ordinary health and 0.5% addition
 **Uninsured directors/managers:** base is their monetary remuneration (art. 14(1)(1-a)), subject to the general floor and director ceiling. They pay pension and ordinary health; art. 11 does not list the 1-a health group and art. 12 does not list this standalone director group. If the director is an employee, use employee rules for that employment instead. Do not deduct the salary personal allowance from standalone director fees without the PIT basis.
 
 **Individual farmers/covered market traders:** use art. 14(1)(12)'s 20% base, exempt from the general floor. Pension and ordinary health follow their group in arts. 7 and 10; art. 11 does not add the 0.5% employee/self-employed charge to those groups, nor art. 12 ordinary unemployment. Follow the designated fund/Chamber calculation rather than inventing a payroll salary.
+
+**Foreign currency:** For foreign-currency salary, **art. 14(3)** converts the contribution base at the National Bank official middle exchange rate on the **last day of the month for which contributions are calculated/paid**. Keep this distinct from PIT art. 93(2)'s receipt-date conversion for foreign income.
 
 **Employer-funded extended-service pension:** for jobs whose 12 worked months count as 18, 17, 16, 15, 14 or 13 insured months, the additional rates are respectively **9.4%, 7.83%, 6.27%, 4.7%, 3.13%, 1.57%** through June, and **9.95%, 8.29%, 6.63%, 4.98%, 3.32%, 1.66%** for July-December ([art. 25(2)][social]; [dated table][rates]). Confirm the legally designated job and duration first. Apply the relevant extra to its applicable contributory base and add it to employer cost, not the ordinary employee deduction. Ordinary employment does not itself trigger this extra.
 
@@ -147,7 +149,7 @@ expected:
 [contrib-rules]: https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf
 [procedure]: https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf
 
-Not yet confirmed: Interaction of the first-calendar-year half-reference base with the professional-services minimum; contribution-floor/ceiling treatment of ordinary part-time and partial-month cases beyond the confirmed UJP mixed work/sickness formula; operational fund rounding for those cases. Do not extrapolate an arbitrary calendar-day rule.
+Not yet confirmed: Exact commencement/correction transition for July's lump-sum administration change; interaction of the first-calendar-year half-reference base with the professional-services minimum; contribution-floor/ceiling treatment of ordinary part-time and partial-month cases beyond the confirmed UJP mixed work/sickness formula; operational fund rounding for those cases. Do not extrapolate an arbitrary calendar-day rule.
 
 <!-- openaccountants-cta-block -->
 

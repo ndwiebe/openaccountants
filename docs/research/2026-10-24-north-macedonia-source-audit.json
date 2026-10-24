@@ -171,6 +171,16 @@
       "url": "https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1",
       "sha256": "4f73db982f88314ed0e47bf26db183e67c7e0b6fe38892ea3581d4e038f33999",
       "retrieved_utc": "2026-10-24T17:52:53.815334+00:00"
+    },
+    {
+      "name": "january-net-wage",
+      "url": "https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/",
+      "sha256": "ff6dcbb5dab146944bd56820e7cb393b3410049aac83656a44a762a24a034716",
+      "retrieved_utc": "2026-10-24T17:57:59.944916+00:00",
+      "read_date": "2026-10-24",
+      "publication_date": "2026-01-21",
+      "wage_period": "2025-11",
+      "average_net_wage": 45961
     }
   ],
   "reading_method": "Downloaded actual official PDFs. pdftotext extraction; scanned PIT pages OCR in Macedonian with rendered page inspection for percentages. Statutory articles and read dates cited in each guide. Actual implementing PDFs read. Retrieval is not professional review.",
@@ -208,7 +218,7 @@
   ],
   "unresolved": {
     "IT-IND": "Business-loss carryforward/cross-category relief beyond confirmed negative DLD-DB reporting.",
-    "SC": "First-year professional minimum and ordinary part-time/partial-month bases beyond specific mixed work/sickness formula.",
+    "SC": "First-year professional minimum; ordinary part-time/partial-month bases beyond confirmed work/sickness formula; exact July lump-sum administration commencement/correction cutover.",
     "PR": "Ordinary part-time/partial-month contribution bases beyond specific mixed work/sickness formula.",
     "XB": "Standalone migration/deemed-disposal or exit tax and procedure."
   },
@@ -218,5 +228,7 @@
     "Named professional review",
     "Platform ingestion or production publication",
     "Tax exemption inferred from absent text"
-  ]
+  ],
+  "current_main_recheck": "fa82c25c375f468017c2ba428d4808e948da3069",
+  "main_movement": "Fetched current main; DE naming and ingestion workflow changed, no North Macedonia source changes."
 }
