@@ -9,7 +9,7 @@ Pravo scripted requests through web and curl returned HTTP 403 or timeouts for t
 | Official source | Read scope and result | Date |
 |---|---|---|
 | https://pravo.by/document/?guid=3871&p0=hk0900071 | Current consolidated Special Code: VAT 112-141-1; profit 166-194; PIT 195-224; offshore 262-267; simplified 324-333; single tax 335-344 and Annexes 2/24; professional income 378-381-7. Article-by-article reads for rates/base/dates; future 2027 amendments not applied to 2026. | 2026-10-24 |
-| https://pravo.by/document/?guid=3871&p0=hk0200166 | General Code: residence 17, related persons 20, tax/cessation procedure 40/44/55/66/69/70, transfer pricing 87-98. Normal browser after scripted denial. | 2026-10-24 |
+| https://pravo.by/document/?guid=3871&p0=hk0200166 | General Code: residence 17, related persons 20, tax/cessation procedure 40/44/55/66/69/70 (art. 44(1)-(4) final return/payment timings read in full), transfer pricing 87-98. Normal browser after scripted denial. | 2026-10-24 |
 | https://pravo.by/document/?guid=3871&p0=hk2100091 | Administrative Code 12.15, 14.2, 14.4, 14.5. Read actual provisions, not merely table of contents. | 2026-10-24 |
 | https://pravo.by/document/?guid=3871&p0=H12100118 | Current Law 118-Z arts. 1-16-1: insured groups, bases/limits/rates, payment, relief, interest. | 2026-10-24 |
 | https://pravo.by/document/?guid=3871&p0=P32500108 | Decree 108 approved Regulation 192-197 and Annex 16, current insurance framework. Former Decree 531 is not used as current authority. | 2026-10-24 |
@@ -50,3 +50,5 @@ These are scoped follow-ups under template rule 2, not silent acceptance of cont
 ## Coverage and review gate
 
 README partial flags retain the unresolved director insurance history/proration, Jan 1-7 reporting cutover and corporate migration/deemed-disposal/liquidation computation. Each guide ends its authored Sources with exact limits. Unpublished wage inputs are not forecasts. Special regimes and exhaustive treaty matrices are named specialist exclusions, not invented zero-tax conclusions. A fresh reviewer must check all seven guides, every figure and fourteen examples, resolve material findings and close on an exact source manifest. No licensed professional review is claimed.
+
+Writer follow-up after initial candidate: precise General Code art. 44(1)-(4) liquidation/branch/PE final return and settlement deadlines added to XB; Special Code 186(2) confirms actual-profit settlement. The corporate migration/deemed-disposal computation limit remains; no zero exit tax is inferred.
