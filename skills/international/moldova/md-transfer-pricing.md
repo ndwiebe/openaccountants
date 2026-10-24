@@ -2,7 +2,7 @@
 name: md-transfer-pricing
 description: "Source-cited draft: Moldovan transfer-pricing scope, reporting and documentation for periods from 2025. Not a substitute for transaction-specific pricing analysis."
 jurisdiction: MD
-tax_year: 2025
+tax_year: 2026
 last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -57,3 +57,10 @@ This source-cited draft has not been reviewed by a Moldovan transfer-pricing pra
 ## Talk to a verified accountant
 
 This document is general reference information, not advice for a specific transaction. Consult the cited legislation and a Moldovan transfer-pricing specialist before filing or setting prices.
+
+## Sources
+
+- Moldova Fiscal Code, Title V, Chapter 11², official consolidated text: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro (read 2026-10-24)
+- Law 187/2025, amendment to Article 226¹⁹: https://www.legis.md/cautare/downloadpdf/149593 (read 2026-10-24)
+- Ministry of Finance Order 9/2024, as amended by Orders 21/2025 and 8/2026: https://www.legis.md/cautare/downloadpdf/147520 and https://www.legis.md/cautare/downloadpdf/152708 (read 2026-10-24)
+- State Tax Service transfer-pricing page and 2025 reporting deadline notice: https://www.sfs.md/ro/pagina/preturi-de-transfer and https://www.sfs.md/ru/novosti/25-iunie-2026-termen-limita-de-prezentare-a-informatiei-privind-preturile-de-transfer-pentru-anul-2025 (read 2026-10-24)

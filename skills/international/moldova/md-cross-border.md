@@ -59,3 +59,11 @@ This source-cited draft has not had a Moldovan cross-border tax practitioner rev
 ## Talk to a verified accountant
 
 This document is general reference information, not advice for a specific payment or business structure. Consult the cited law, current treaty and a Moldovan tax professional before payment or filing.
+
+## Sources
+
+- Moldova Fiscal Code, arts. 4, 5, 71–73, 79³, 90–91, official consolidated text: https://www.legis.md/cautare/getResults?doc_id=142855&lang=ro (read 2026-10-24)
+- State Tax Service Generalized Fiscal Practice, nonresident income and treaty-residence evidence: https://www.sfs.md/ro/ordinele-de-baze-de-generalizare/102 and https://www.sfs.md/ro/ordinele-de-baze-de-generalizare/1095 (read 2026-10-24)
+- State Tax Service permanent-establishment practice: https://www.sfs.md/ro/intrebare-baza-de-date-generalizare/105 (read 2026-10-24)
+- State Tax Service residence-certificate instructions: https://www.sfs.md/ro/pagina/certificate-de-rezidenta-persoane-fizice (read 2026-10-24)
+- Ministry of Finance treaty inventory (status date shown as 20 June 2022; not current treaty proof): https://mf.gov.md/ro/content/acorduriconven%C8%9Bii-pentru-evitarea-dublei-impuneri-la-situa%C8%9Bia-din-20062022 (read 2026-10-24)
