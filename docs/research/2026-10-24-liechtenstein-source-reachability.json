@@ -1,7 +1,7 @@
 {
   "read_on": "2026-10-24",
   "scope": "Transport of current non-CTA country URLs only; successful response is not legal verification. HTTP restrictions are distinct from missing source content where the web reader supplied the document. Not every entry point is a legally reviewed source.",
-  "source_checkpoint": "Corrective country source candidate after d1faf74d; exact Git checkpoint and correction closure are recorded separately in the dated whole-pack review. Original URL check timestamps and transport outcomes are retained.",
+  "source_checkpoint": "Corrected country source closed by independent source/editorial review at ede184f9d5b0ba4fdd35e8178d49e30df377d95d; URL check timestamps and transport outcomes are retained from their original checks.",
   "country_source_sha256": {
     "skills/international/liechtenstein/README.md": "e0cfae3ca936c69e7eb77d943cc258ee45aa9bd1654e0c6022ac0ee93dd5eb0e",
     "skills/international/liechtenstein/li-company-formation.md": "e49bb1dceee91a3540c56300039a0a317efa7e25e07bed76aec08bec28a4c0da",
@@ -186,5 +186,6 @@
       "status": 403,
       "error": "HTTP Error 403: Forbidden"
     }
-  ]
+  ],
+  "country_source_checkpoint": "ede184f9d5b0ba4fdd35e8178d49e30df377d95d"
 }
