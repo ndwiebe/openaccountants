@@ -13,7 +13,7 @@ partial:
   VAT: "Existing VAT Guide retained; registration, place-of-supply, imports, exemptions and return instructions need current source reconciliation."
   SC: "Existing social-contribution Guide retained; current rates, categories, ceilings and exceptions need review."
   PR: "Existing payroll Guide retained; current withholding, benefits, filings and special employment cases need review."
-  TP: "New source-cited draft; practitioner review, full statutory and annex reconciliation, and taxpayer-specific analysis remain open."
+  TP: "New source-cited draft updated for Law 187/2025 and Order 8/2026; practitioner review, full statutory and annex reconciliation, and taxpayer-specific analysis remain open."
   XB: "New scoped source-cited draft; practitioner review, current treaty-by-treaty checks, residence, credits, mobility, property and entity topics remain open."
 ---
 
