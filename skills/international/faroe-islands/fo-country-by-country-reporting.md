@@ -4,19 +4,27 @@ description: >
   Screen Faroese multinational groups for country-by-country reporting and
   notification obligations in 2026. Distinguish prior-year consolidated revenue,
   ultimate-parent and local filing, surrogate relief, year-end notification and
-  the twelve-month report deadline. Prepare the statutory data tables without
-  treating CbCR as a transfer-pricing or minimum-tax computation.
+  the twelve-month report deadline. Compile jurisdiction totals, constituent
+  entities, activities and explanatory information while keeping cash tax,
+  current accrued tax, permanent-establishment fields and consolidation
+  eliminations distinct. Use for Faroese CbCR, foreign-parent group reporting,
+  local filing, surrogate-parent notifications and the DKK 5.6 billion threshold.
+  This Guide prepares an obligation assessment and reporting workpaper; it does
+  not compute transfer prices or minimum tax. Actual exchange relationships,
+  foreign-currency threshold cases and current template transmission still need
+  verification. Independent country review and professional attestation are
+  pending.
 jurisdiction: FO
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.1
+last_updated: 2026-10-25
+version: 0.2
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands country-by-country reporting v0.1
+# Faroe Islands country-by-country reporting v0.2
 
 ## Who this applies to
 
@@ -26,15 +34,15 @@ This Guide prepares an obligation assessment and reporting workpaper. It does no
 
 ## Rates, bands and thresholds
 
-| Test | Rule | Source |
+| Test | Rule | Tax year / official source |
 |---|---|---|
-| Faroese ultimate-parent threshold | Consolidated revenue at least DKK 5.6 billion in the financial year preceding the reporting year | §118c(1) |
-| Report deadline | Twelve months after the reporting year's last day | §118c(2) |
-| Notification | Before the reporting income year ends | §118f; regulation §2 |
+| Faroese ultimate-parent threshold | Consolidated revenue at least DKK 5.6 billion in the financial year preceding the reporting year | 2026; [Tax Act §118c(1)][law] |
+| Report deadline | Twelve months after the reporting year's last day | 2026; [Tax Act §118c(2)][law] |
+| Notification | Before the reporting income year ends | 2026; [Tax Act §118f][law]; [Regulation §2][regulation] |
 
 [Tax Act][law]; [Regulation 151/2019][regulation]. Equality meets the revenue test. For a 2026 calendar reporting year, examine 2025 consolidated revenue; a 2026 revenue figure alone does not answer that test. TAKS directs foreign-currency threshold questions to OECD currency-fluctuation guidance; no spot-rate conversion method is established here. [TAKS][taks]
 
-## The base and reporting decision
+## The base
 
 1. Establish the group perimeter, parent residence, consolidation rules, reporting year and prior-year consolidated revenue.
 2. If the Faroese-taxable ultimate parent meets §118c, record its reporting obligation.
@@ -120,19 +128,15 @@ expected:
 - Has each required notification been made, with what receipt?
 - Are all constituent and PE records available, including withholding and tax-expense reconciliations?
 
-## Review limits
-
-Source-cited draft, not professional attestation. Current bilateral exchange coverage, foreign-currency threshold application, unusual local-filing cases, notification penalties and fine amounts, template execution and secure transmission remain open. Neither this Guide nor an arithmetic pass completes the transfer-pricing domain or country pack.
-
 ## Sources
 
-Read 23 October 2026.
+| Source | Provisions / purpose | Read on |
+|---|---|---|
+| [Current Tax Act][law] | §§118b–g, 139c; scope, threshold, report/notification, surrogate and sanctions | 2026-10-25 |
+| [Regulation 151 of 19 December 2019][regulation] | §§1–5 and annex; notifications, report definitions and three tables | 2026-10-25 |
+| [TAKS CbCR guidance][taks] | Templates, exchange-list referral, notification and secure delivery | 2026-10-25 |
 
-| Source | Locator |
-|---|---|
-| Current Tax Act | [§§118b–g and 139c][law] |
-| Regulation 151 of 19 December 2019 | [§§1–5 and annex][regulation] |
-| TAKS CbCR guidance | [Scope, notifications and delivery][taks] |
+Not yet confirmed: actual bilateral exchange coverage, foreign-currency threshold application, unusual local-filing cases, notification penalties and assessed fine amounts, current template execution and secure transmission. Source-cited draft, not professional attestation. Neither this Guide nor its arithmetic checks completes the TP domain or country pack. Whole-pack independent review remains pending.
 
 [law]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [regulation]: https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan

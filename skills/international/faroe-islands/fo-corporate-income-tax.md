@@ -1,46 +1,63 @@
 ---
 name: fo-corporate-income-tax
 description: >
-  Prepare a 2026 Faroese ordinary corporate income tax computation for P/F and
-  Sp/F companies. Check the 18% rate conditions, reconcile accounting profit,
-  test carried losses, distinguish group and capital-income regimes, and build
-  the filing and payment calendar. Special industries, treaty relief and full
-  capital-income calculations remain outside this source-cited draft.
+  Prepare 2026 Faroese company tax working papers for P/F and Sp/F companies,
+  separating ordinary income from capital gains. Check residence and the 18%
+  rate conditions, reconcile profit, calculate equipment and building
+  depreciation, and distinguish company interest from separately taxed
+  investments. Track ordinary and capital losses, exempt dividends, ownership
+  changes, distributions, group permissions, returns and payments. Use for
+  Faroese corporation tax, investment gains, business assets, company losses,
+  dividend withholding and incorporation or closure questions. Petroleum,
+  fishing and aquaculture charges, tonnage tax, reorganisations, international
+  minimum tax and treaty-specific outcomes need separate work. This is a
+  source-cited draft awaiting independent country review and professional
+  attestation.
 jurisdiction: FO
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
-version: 0.4
+last_updated: 2026-10-25
+version: 0.5
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands corporate income tax v0.4
+# Faroe Islands corporate income tax v0.5
 
 ## Who this applies to
 
-This Guide prepares ordinary income-tax working papers for Faroese P/F and Sp/F companies. Faroese registration brings companies with limited-liability participants within Tax Act §1(1)(8); §1(2) also covers relevant foreign-registered entities whose effective management is in the Faroes. Treaty residence requires separate analysis. [Tax Act][tax]
+This Guide prepares ordinary and separate capital-income tax working papers for Faroese P/F and Sp/F companies. Faroese registration brings companies with limited-liability participants within Tax Act §1(1)(8); §1(2) also covers relevant foreign-registered entities whose effective management is in the Faroes. Treaty residence requires separate analysis. [Tax Act][tax]
 
-It does not compute capital-income tax, shareholder distributions, petroleum tax, fishing/resource charges, aquaculture surcharges, tonnage taxation, reorganisations or minimum-tax exposure. Identify those activities before using the ordinary calculation. An 18% result here is not necessarily the company's complete tax liability.
+Compute ordinary income and non-business capital gains in separate schedules. Business securities activity belongs in ordinary income under Capital Income Act §3; company interest and negative interest belong there under §10(1). The separate §14 calculation covers the remaining statutory capital items. Do not classify every investment receipt as ordinary income or every company interest receipt as separate capital income. [Capital Income Act §§1–4, 10, 14][capital]
 
-**Period:** income year 2026, sources read 23 October 2026. The Tax Act consolidation identifies amendment 53 of 1 June 2026, effective 1 September 2026. Event-specific rules must be matched to the event date.
+Petroleum, fishing/resource charges, aquaculture surcharges, tonnage taxation, reorganisations and minimum-tax exposure need separate work. Identify those activities before using the ordinary calculation. An 18% result here is not necessarily the company's complete tax liability.
+
+**Period:** income year 2026, selected current provisions read 25 October 2026. The Tax Act consolidation identifies amendment 53 of 1 June 2026, effective 1 September 2026. Event-specific rules must be matched to the event date.
 
 ## Rates, bands and thresholds
 
-| Item | Rule | Source |
-|---|---|---|
-| Ordinary qualifying company rate | 18% | Assessment Act §5(2) |
-| Capital condition in §5(2) | Relevant share/paid-in/guarantee/cooperative capital at least DKK 50,000 for the specified entities | Same |
-| Entrepreneur companies | Separately included in §5(2) | Same |
-| Residual rate under §5(1) | 49%; do not apply automatically without checking the exceptions in §5(2)–(4) | Same |
-| Petroleum-income exception | 27% for the specified Hydrocarbon Tax Act §4 income; excluded here | §5(4) |
+| Item | Amount or condition | Tax year | Official source |
+|---|---|---|---|
+| Ordinary qualifying company rate | 18% | 2026 | [Assessment Act §5(2)][rate] |
+| Relevant capital for specified §5(2) entities | At least DKK 50,000; entrepreneur companies separately included | 2026 | [Assessment Act §5(2)][rate] |
+| Residual rate, only after testing exceptions | 49% | 2026 | [Assessment Act §5(1)–(4)][rate] |
+| Petroleum-income exception, outside ordinary calculation | 27% for the specified Hydrocarbon Tax Act §4 income | 2026 | [Assessment Act §5(4)][rate] |
+| Company separate capital-income rate | 18% | 2026 | [Capital Income Act §14(2)][capital] |
+| Company distributions to individuals/estates | 35% withholding before treaty or specific relief | 2026 | [Capital Income Act §15(1)–(2)][capital] |
+| Distributions to entities outside the §9(1) exemption | 18% withholding before treaty or specific relief | 2026 | [Capital Income Act §§9, 15][capital] |
+| Ordinary equipment pool maximum | 30% of adjusted balance | 2026 | [Depreciation Act §2(5)][depreciation] |
+| Small equipment / positive pool write-off | DKK 20,000 or less, subject to the separate conditions | 2026 | [Depreciation Act §§2(5), 3][depreciation] |
+| Specified exclusive-business passenger car cost cap | DKK 150,000; special treatment when cost exceeds this | 2026 | [Depreciation Act §5a][depreciation] |
+| Mixed business/private equipment cap | DKK 150,000 of acquisition cost; depreciate separately and allocate deduction by business use | 2026 | [Depreciation Act §7][depreciation] |
+| Other qualifying business building floor-area test | At least 75% qualifying business use | 2026 | [Depreciation Act §17(1)(c)][depreciation] |
+| Building index multipliers, 1 Jan / 1 Apr / 1 Jul / 1 Oct | 21.4589 / 21.4767 / 22.0056 / 22.0829; select dates under the circular, not by year alone | 2026 | [TAKS Circular 10/1992, annex 1][index] |
 
-[Assessment Act][rate]. The 18% is the combined national and municipal amount; the 70%/30% allocation divides that tax, not additional tax rates. TAKS also describes the 18% treatment for specified funds and insurers, which this ordinary-company Guide does not analyse. [TAKS company-tax guidance][taks]
+The 18% ordinary rate is the combined national and municipal amount. Assessment Act §5(1) allocates 70% of that tax to the state and 30% to municipalities; these are not additional rates. Section 5(3) supplies separate 18% treatment for its specified entities. Check legal form before applying a rate. [Assessment Act §5][rate]
 
 ## The base
 
-Start with a reconciled trial balance and a separate tax-adjustment schedule. Operating expenditure incurred to earn, secure and maintain income is addressed by Tax Act §31. Tax depreciation is governed separately, so an accounting depreciation charge is not its own tax deduction. Check business interest under §33 and related-party restrictions under §37b before allowing it. [Tax Act][tax]
+Start with a reconciled trial balance and a separate tax-adjustment schedule. Operating expenditure incurred to earn, secure and maintain income is addressed by Tax Act §31. Tax depreciation is governed separately, so an accounting depreciation charge is not its own tax deduction. Business loan interest, specified financing fees and negative interest fall under §33(1)(1). Interest deducted when due but still unpaid at the end of the following income year is brought back into the original due-year income, subject to the provision's bank-credit payment test. Check related-party restrictions under §37b before allowing it. Assets acquired for resale or within the taxpayer's trading business require Tax Act §27 treatment; property held for less than two years carries a rebuttable resale-profit presumption. Ordinary unrealised asset changes are excluded under §29(2), subject to its exceptions. [Tax Act][tax]
 
 Working-paper sequence:
 
@@ -71,30 +88,50 @@ For an affected car, keep a separate DKK 150,000 depreciable balance. Record the
 
 On disposal, compare proceeds with full acquisition cost plus improvements less prior depreciation. A positive gain is taxable. A loss is deductible only to the extent it exceeds the amount that §5a(2) excluded from depreciation. This differs from deducting the full accounting loss. Preserve original cost, improvements, prior tax deductions and the excluded balance separately. [§5a(4)][depreciation]
 
-Private or mixed use requires a separate analysis under Chapter 2 and the change-of-use provisions; employee benefits and payroll valuation are also separate. This section does not determine them. [§§5a(5), 7–10, 31][depreciation]
+### Mixed use, change of use and ships
+
+For equipment used both privately and for business, keep an individual schedule under §7. Compute annual depreciation at an elected whole percentage up to 30% of acquisition cost in year one and unrelieved balance thereafter, subject to the DKK 150,000 acquisition-cost cap. Only the current-year business-use share of that computed depreciation is deductible. Keep both total computed depreciation and actually deducted business depreciation: disposal recapture/loss allocation under §8 uses the ratio of those cumulative amounts, with the statutory excluded-cost restriction. No depreciation is computed in the sale year. Improvements to an asset originally acquired above the cap are also excluded. [Depreciation Act §§7–10][depreciation]
+
+A transfer to exclusively private or mixed use is a deemed sale and purchase at market value under §31. A transfer from exclusively private use into business or mixed use is a deemed purchase at that value. The passenger-car transitions in §5a(5) expressly invoke §31, including the above-DKK-150,000 market-value condition for a Chapter 1 car moving into §5a use. Record the transition date, market evidence, old basis and recapture before opening the new schedule. Employee benefit valuation and payroll reporting are separate and unresolved here. [Depreciation Act §§5a(5), 31][depreciation]
+
+Keep a separate commercial ship pool, including equipment used commercially aboard ships; §11 also expressly addresses the specified commercial fishing licences. Chapter 1 rules apply subject to §12, whose pool deducts relevant scrapping subsidies and disposal proceeds. A negative balance must be settled by the following income year unless qualifying replacement acquisitions or permitted extension apply. For contracted decked-ship construction/reconstruction, advance depreciation starts in the contract year, is capped at 15% per year and 45% in total, and continues only until delivery. On delivery, add cost net of advance depreciation to the ship pool. Contract cancellation recaptures prior advance deductions; sale of contract rights has its own gain/loss computation including prior advance deductions. This does not establish eligibility for tonnage tax or fishing levies. [Depreciation Act §§11–16][depreciation]
 
 ### Business buildings
 
 Classify each building under Depreciation Act §17 before selecting a rate. Category (a) covers exclusive craft/industrial use, including necessary offices/storage; (b) covers exclusive hotel use or rental buildings with at least ten apartments, including necessary offices/storage. Category (c), including other office/storage buildings, requires at least **75%** business floor area. Residential use is excluded except within the express §17(1) exceptions. [§17][depreciation]
 
-| Classification | Acquisition year and next nine income years | Later income years |
-|---|---:|---:|
-| §17(1)(a) or (b) | Up to 7% of eligible acquisition cost annually | Up to 2% |
-| §17(1)(c) | Up to 4% of eligible acquisition cost annually | Up to 1% |
+| Classification | Acquisition year and next nine income years | Later income years | Tax year / official source |
+|---|---:|---:|---|
+| §17(1)(a) or (b) | Up to 7% of eligible acquisition cost annually | Up to 2% | 2026; [Depreciation Act §20(1)][depreciation] |
+| §17(1)(c) | Up to 4% of eligible acquisition cost annually | Up to 1% | 2026; [Depreciation Act §20(2)][depreciation] |
 
 These are cost-based rates, not the equipment pool method. The acquisition-year definition in §20(1) includes acquisition/completion and use for a qualifying purpose. Keep that date and accumulated deductions in the schedule; do not start a new ten-year period merely because this year's return is the first one being prepared. [§20][depreciation]
 
 Exclude land acquisition, site preparation and surrounding-area costs from the depreciable building basis. Where only part qualifies, allocate cost by qualifying floor area under §18; where business uses span the rate classes, apply §20(4)'s area allocation. Test eligibility before allocation: a 74% business-use office building does not meet the 75% test merely by reducing its deduction to 74%. Keep separate schedules for each building and its reconstruction/improvement expenditure. [§§18–22, 27][depreciation]
 
-No annual depreciation is allowed in the disposal or demolition year. Section 24 provides a separate demolition deduction for unrelieved amounts less material-sale proceeds only where ownership and qualifying use lasted at least five years before demolition. Disposal gains, indexation, reinvestment and insurance relief under §§25–26 need separate computations; an accounting disposal loss is not automatically deductible. [§§21, 24–26][depreciation]
+No annual depreciation is allowed in the disposal or demolition year. Section 24 provides a separate demolition deduction for unrelieved amounts less material-sale proceeds only where ownership and qualifying use lasted at least five years before demolition. For disposal, separate gain and recaptured tax depreciation under §25. Index the building/land acquisition cost to the last prescribed index before disposal; Circular 10/1992 computes indexed cost as original cost divided by the acquisition-quarter multiplier, multiplied by the relevant disposal multiplier. Preserve separately dated improvement costs and their own evidence. The four 2026 multipliers appear in the rates table; do not extrapolate a later unpublished index. TAKS's standalone index page and the circular differ for some older entries, so reconcile any conflicting historic acquisition factor before computing that case. Do not use these 2026 factors as acquisition factors for an earlier acquisition. [Depreciation Act §25(3)][depreciation]; [Circular 10/1992 and annexes][index]; [TAKS index page][indices]
+
+For category (a), §25(1) permits the statutory gain/recapture reinvestment route into Chapter 1 equipment or category (a) buildings by the end of the following income year. Categories (b)/(c) bring gain and recaptured depreciation into disposal-year income under §25(2); do not extend the category (a) route to them. Disposal losses are not deductible. For buildings/land acquired before 1 January 1950, the gain/loss exclusion does not remove the separate recaptured-depreciation rule. Insurance/compensation is treated as disposal proceeds. Cases where the indexed cost exceeds proceeds but proceeds exceed written-down tax value still need the recapture amount verified before computation here. [§25][depreciation]
+
+For §26 insurance relief, request exemption and notify the use/intended use by the return deadline. All compensation must go into rebuilding/replacement in the gain year or next income year, and the gain is applied as advance depreciation reducing the replacement basis. Do not deduct it again. Failure to meet the period back-assesses the gain year and carries 1% for each commenced month from the original tax-payment times; a special extension requires approval. Unused compensation is brought back subject to the statutory gain cap. [§§21, 24–26][depreciation]
 
 ### Losses
 
-Section 33a allows forward deduction, using available earlier profits before carrying losses to a later year. Company losses are forfeited under its ownership-continuity rule if at least 50% of capital or voting value is not in the same hands at the beginning of the utilisation year as at the end of the loss year. The statute preserves an exception where the company carried on significant business activity involving economic risk when ownership changed. Do not treat every share sale as automatic forfeiture. [§33a(1)–(2)][tax]
+Section 33a allows forward deduction, using available earlier profits before carrying losses to a later year. Company losses are forfeited if its at-least-50% continuity test for capital or voting value is not met, comparing the beginning of the utilisation year with the end of the loss year. Exactly 50% continuing in the same hands meets the stated numerical boundary. The statute preserves an exception where the company carried on significant business activity involving economic risk when ownership changed. Do not treat every share sale as automatic forfeiture. [§33a(1)–(2)][tax]
 
 Debt cancellation/reduction also reduces losses; debt-to-equity conversion uses the difference between face and market value, with adjustment for debt-release income taxed. Review the transaction before using the old loss balance. [§33a(3)][tax]
 
-TAKS describes ordinary-income losses as deductible in the capital-income return but not the reverse. Do not combine the two bases into a single net-profit figure. The exact capital-income ordering and computation remain outside this Guide. [TAKS][taks]
+### Separate non-business capital-income computation
+
+First test Capital Income Act §3: business-related securities/claim gains and losses enter ordinary taxable income, using realisation and FIFO for equal-right shares unless the taxpayer has made the irrevocable mark-to-market election. Business foreign-exchange gains/losses on claims/debts follow §6(6). Company interest and negative interest are ordinary items under §10(1). Remove those amounts from the separate capital schedule. [Capital Income Act §§3, 6, 10][capital]
+
+For remaining share/securities disposals, compute realised proceeds less acquisition cost using FIFO for equal-right shares in the same company. Fully Faroese-taxable companies/funds reduce a security's allowable disposal loss by exempt dividends received from that security: only the excess loss qualifies. Allotted bonus shares and subscription rights have zero acquisition cost and follow the parent share's acquisition date. Claims, debt and options have their own realised acquisition/disposal or debt-release computations under §§6–8; the DKK 1,000 claim/debt-gain threshold in §6(4) is for individuals/estates, not companies. Debt cancellation under §7 taxes the statutory reduction below the creditor's claim market value, subject to its exception. [§§4, 6–8][capital]
+
+Dividends received by fully Faroese-taxable companies/funds holding share or contributed capital in the distributing company are exempt under §9(1). The text sets no minimum participation percentage or holding period; do not import one. A distribution is broadly defined by §1(2); a final-liquidation-year distribution follows disposal treatment, and capital-reduction distributions need TAKS permission for that treatment. A sale back to the issuer is ordinarily a dividend under §5 unless permission or its specific exceptions apply. Do not grant ordinary capital-loss relief to a gross distribution without checking that classification. [§§1, 5, 9][capital]
+
+Aggregate the separate §14 categories after their own adjustments. Track eligible carried capital losses separately and use them against capital net gains at the first available opportunity. A capital loss cannot reduce ordinary trading profit. Capital Income Act §14(2) allows ordinary-income losses, including eligible carried ordinary losses, to shelter separate capital gain only up to that ordinary loss; record the ordinary loss used once. Apply 18% to the remaining company capital gain. Capital losses have their own §14(4) 50% ownership-continuity/significant-business exception. Do not assume a surviving ordinary-loss balance proves the separate capital-loss balance survives. [§14][capital]; [TAKS][taks]
+
+This produces two reconciled bases, two loss ledgers and the resulting tax, not one undifferentiated accounting-profit calculation. Group ordering requires the next section.
 
 ### Group taxation
 
@@ -102,7 +139,7 @@ Regulation 148/2015 requires eligible Faroese-registered entities, matching fina
 
 Each company computes its own result. Pre-group losses first offset its own profit; the regulation prescribes further ordering involving its own capital income and group-period losses before group allocation. Do not transfer an acquired company's pre-group loss directly to its parent. The parent reports the joint result; §9 requires intercompany tax/loss compensation to be paid or booked by 1 October following the income year. [§§6–9][group]
 
-This is a screening summary, not a complete group-loss calculator. Capital-income grouping requires its own authority and review.
+The ordinary permission does not itself cover capital-income grouping. Capital Income Act §14a provides a separate TAKS permission for Faroese-resident parent/subsidiary companies with the same accounting year and full qualifying ownership. Pre-group losses remain restricted to that company's own surplus. Parent responsibility and participating companies' joint liability follow §14a(3). Obtain the actual capital-group permission and applicable implementing conditions; they remain incomplete here. TAKS's ordinary-group summary must not be read as repealing this distinct statutory route. [Capital Income Act §14a][capital]; [TAKS][taks]
 
 ## Deadlines and filing
 
@@ -112,201 +149,92 @@ TAKS requires company accounts with the return, including exempt companies; acco
 
 Ordinary company tax falls due in three payments on **1 October, 1 November and 1 December**, with payment permitted through the **20th** of each month. Use the assessed year and issued amounts; do not substitute the return deadline for the payment calendar. [Tax Act §81][tax]; [TAKS][taks]
 
-New-company first periods and cessation have separate §21 rules. This Guide does not supply an incorporation/closure calendar; resolve it before applying the ordinary-year example.
+For a new resident company, §21 taxes the whole first accounting period, with the return by 1 July and the statutory October–December payment dates. The first period cannot exceed 18 months, begin before 1 January of the incorporation year, or span more than two calendar years. A cessation or move into exempt activity requires the liquidator/board to notify TAKS and provide the intervening-income statement within four weeks; it does not erase the company's final-year liability. An existing business transferred to a company uses market values unless the separately legislated conversion regime applies. [Tax Act §21][tax]
+
+Report separate capital income digitally or on TAKS's form by the ordinary return deadline. No additional capital form is needed if the issued capital statement is correct and complete. Separate capital assessment tax is due on the first of the month after the statement is issued, payable through the 20th. Additional capital tax of DKK 500 or less is not collected; refunds below DKK 50 are not paid. These are settlement thresholds, not exemptions for gains. [Capital Income Act §18(1)–(3), (6)][capital]
+
+A company declaring dividends pays withheld tax and supplies the recipient/calculation statement within 14 days after the distribution decision. Withhold 35% for individuals/estates and 18% for entities outside the §9(1) exemption, before a verified treaty or specific relief. Retain the decision, recipient identity/status, exemption or relief authority and remittance receipt. Do not substitute a payment-date deadline for the statutory decision-date trigger. [Capital Income Act §§9, 15][capital]
 
 ## Penalties and interest
 
 Section 104 provides estimated assessment for a missing timely complete return, a DKK **1,000–5,000** fine, and income-tax increases of **2%** when less than seven days late or **5%** when seven or more days late. Relief requires a supported application under subsection 3. [Tax Act][tax]
 
-Section 81(2) states ordinary late-payment interest of **0.7% per commenced month**, subject to §146(1). That latter provision addresses specified offence penalties and underpaid tax, with **12% annual interest** for the specified companies. Do not stack or substitute these mechanically. TAKS's short guidance describes the ordinary calculation from the timely-payment date, whereas §81 says the due date; obtain the assessment's calculation if the start-date distinction affects the charge. [Tax Act][tax]; [TAKS][taks]
+Section 81(2) states ordinary late-payment interest of **0.7% per commenced month**, subject to §146(1). That latter provision requires payment of underpaid tax in the specified offence cases and **12% annual interest** for its specified companies from the end of the relevant tax year. Section 146(2) also addresses under-assessment without a punishable offence; do not describe 12% as applying only to deliberate evasion. Do not stack or substitute these mechanically. TAKS's short guidance describes the ordinary calculation from the timely-payment date, whereas §81 says the due date; obtain the assessment's calculation if the start-date distinction affects the charge. [Tax Act][tax]; [TAKS][taks]
+
+Late separate capital returns attract estimated assessment, a DKK 1,000–5,000 fine and the same less-than-seven-day 2% / at-least-seven-day 5% tax increase under Capital Income Act §18(7), subject to the supported relief application. Late capital-assessment or dividend-withholding payment carries 0.7% for each commenced month from the statutory due date, including booked interest as specified; interest is not an ordinary income-tax deduction. [Capital Income Act §§15(4), 18(1), (4), (7)][capital]
+
+Tax Act §139 penalises false/misleading tax information given with evasion intent by fine, detention or imprisonment up to two years; gross negligence has the separate subsection 2 treatment. Section 139b addresses evasion-motivated failure to file, while §140 addresses false/misleading control information. No fixed monetary fine is supplied by those provisions. Keep offence assessment separate from the mechanical late-return increases. [Tax Act §§139–140][tax]
 
 ## Cross-border points
 
-Foreign incorporation does not settle residence where effective management is Faroese. Foreign businesses require a separate domestic-source/PE and treaty analysis under §§1–2. Controlled transactions and thin capitalisation require their own schedules; see the transfer-pricing Guide. Foreign tax credits, participation relief, withholding and treaty procedures are unresolved here. [Tax Act §§1–2, 37a–37b][tax]
+Foreign incorporation does not settle residence where effective management is Faroese. Foreign businesses require a separate domestic-source/PE and treaty analysis under §§1–2. Controlled transactions and thin capitalisation require their own schedules; see the transfer-pricing Guide. Foreign-source capital income from a country without a double-tax treaty can receive credit under Capital Income Act §19 for tax actually paid/withheld there, capped at Faroese tax attributable to that same income. That provision does not supply the procedure for a treaty country or an ordinary-income credit. Treaty eligibility, ordinary foreign-tax relief, PE profit attribution and refund procedures remain separate. Cross-border dividends require the domestic §15 starting position above and a recipient-specific treaty/relief review. [Tax Act §§1–2, 37a–37b][tax]; [Capital Income Act §§15, 19][capital]
 
-## Worked examples that recompute
+## Two worked examples that recompute
 
-### 1. Ordinary profit bridge
+### 1. Ordinary profit with equipment depreciation
 
-Assume a qualifying 18% company, no special regime or capital-income items, accounting profit DKK 600,000, accounting depreciation DKK 80,000 and independently verified tax depreciation DKK 100,000. The ordinary base is DKK 580,000 and tax DKK 104,400. The depreciation input is a case assumption, not a rate established by this Guide.
+Assume a qualifying 18% company with accounting profit DKK 600,000 after DKK 80,000 accounting depreciation. Its exclusively business-used ordinary equipment pool opens at DKK 200,000; eligible pooled additions are DKK 100,000, with no disposals. Elect the 30% maximum: pool depreciation is DKK 90,000 and the closing pool DKK 210,000. A separate eligible DKK 20,000 item, capitalised and not expensed in that accounting profit, is immediately deducted. Total tax depreciation/deduction is DKK 110,000, ordinary taxable income DKK 570,000 and tax DKK 102,600. Assume no capital items, loss relief, car cap or other adjustments. [Depreciation Act §§2–3][depreciation]; [Assessment Act §5(2)][rate]
 
 ```oa-check
-name: Faroese ordinary company profit bridge
+name: Faroese company ordinary profit and equipment deductions
 inputs:
   profit: 600000
   accounting_depreciation: 80000
-  verified_tax_depreciation: 100000
-  rate: 0.18
-steps:
-  taxable: profit + accounting_depreciation - verified_tax_depreciation
-  tax: taxable * rate
-expected:
-  taxable: 580000
-  tax: 104400
-```
-
-### 2. Loss use and a failed continuity condition
-
-A qualifying company's ordinary profit before loss relief is DKK 300,000, with DKK 500,000 verified carried losses. If the losses survive §33a and no other adjustment applies, DKK 300,000 is used, ordinary tax is zero and DKK 200,000 remains. If ownership continuity fails and the significant-business exception does not apply, assume the whole DKK 500,000 is forfeited: tax is DKK 54,000 and no such loss remains. This is a conditional comparison, not a factual finding about a share transfer.
-
-```oa-check
-name: Faroese loss eligibility changes the result
-inputs:
-  profit: 300000
-  eligible_loss: 500000
-  rate: 0.18
-steps:
-  used: min(profit, eligible_loss)
-  taxable: max(0, profit - used)
-  tax: taxable * rate
-  remaining: eligible_loss - used
-  tax_if_forfeited: profit * rate
-expected:
-  used: 300000
-  taxable: 0
-  tax: 0
-  remaining: 200000
-  tax_if_forfeited: 54000
-```
-
-### 3. Equipment pool and immediate deduction
-
-Assume all assets qualify for ordinary exclusive-business treatment. An opening pool of DKK 200,000 plus DKK 100,000 of eligible acquisitions gives DKK 300,000. Electing the maximum deduction gives DKK 90,000 and a closing pool of DKK 210,000. A separate eligible item costing exactly DKK 20,000 is immediately deducted and excluded from that pool. There are no disposals or other adjustments.
-
-```oa-check
-name: Faroese equipment pool and separate small item
-inputs:
   opening_pool: 200000
-  pooled_additions: 100000
-  small_item: 20000
-  rate: 0.30
+  additions: 100000
+  separate_small_item: 20000
+  depreciation_rate: 0.30
+  tax_rate: 0.18
 steps:
-  pool_before: opening_pool + pooled_additions
-  pool_deduction: pool_before * rate
-  closing_pool: pool_before - pool_deduction
-  total_deduction: pool_deduction + small_item
+  pool: opening_pool + additions
+  pool_depreciation: pool * depreciation_rate
+  closing_pool: pool - pool_depreciation
+  tax_deductions: pool_depreciation + separate_small_item
+  taxable: profit + accounting_depreciation - tax_deductions
+  tax: taxable * tax_rate
 expected:
-  pool_before: 300000
-  pool_deduction: 90000
+  pool_depreciation: 90000
   closing_pool: 210000
-  total_deduction: 110000
+  tax_deductions: 110000
+  taxable: 570000
+  tax: 102600
 ```
 
-### 4. Proved disposal loss
+### 2. Capital losses, exempt dividends and an ordinary loss
 
-Assume a DKK 200,000 opening pool includes an asset with DKK 60,000 remaining tax value, sold for DKK 40,000. Its proved loss is DKK 20,000. Remove DKK 60,000 from the pool, leaving DKK 140,000 before depreciation. At the elected 30% maximum, depreciation is DKK 42,000 and the closing pool DKK 98,000. Total deduction is DKK 62,000. Do not deduct the sale proceeds from the pool again.
-
-```oa-check
-name: Faroese equipment disposal loss without double reduction
-inputs:
-  opening_pool: 200000
-  asset_tax_value: 60000
-  proceeds: 40000
-  rate: 0.30
-steps:
-  disposal_loss: asset_tax_value - proceeds
-  pool_before: opening_pool - asset_tax_value
-  depreciation: pool_before * rate
-  closing_pool: pool_before - depreciation
-  total_deduction: disposal_loss + depreciation
-expected:
-  disposal_loss: 20000
-  pool_before: 140000
-  depreciation: 42000
-  closing_pool: 98000
-  total_deduction: 62000
-```
-
-### 5. Building eligibility at the floor-area boundary
-
-Assume a §17(1)(c) office building in its first ten-year period, DKK 4 million eligible building cost after excluding land/site costs, and 1,000 square metres total floor area. At 750 square metres of qualifying business use, the 75% eligibility test is met, allocated basis is DKK 3 million and the maximum annual deduction is DKK 120,000. At 740 square metres, category (c) fails. Assume no other qualifying category, relief or exceptional facts.
+Assume a standalone fully taxable company with verified ordinary trading loss DKK 150,000 before DKK 30,000 company interest income. Its ordinary loss is therefore DKK 120,000. Separate realised non-business share gains are DKK 240,000. Another security is sold at a DKK 100,000 loss but has paid DKK 60,000 total exempt dividends; §4(3) allows only DKK 40,000 of that loss. The dividends themselves are excluded under §9. The current capital net gain is DKK 200,000, reduced by DKK 50,000 eligible carried capital losses to DKK 150,000. Using the DKK 120,000 ordinary loss once leaves DKK 30,000 taxable capital gain and DKK 5,400 tax. Neither loss balance remains. Assume all classification, FIFO and continuity conditions are satisfied, no group permission, foreign credit or withholding credit, and that none of the securities activity is business activity under §3. [Capital Income Act §§3–4, 9–10, 14][capital]
 
 ```oa-check
-name: Faroese building floor-area boundary
+name: Faroese separate capital result and one-way ordinary loss relief
 inputs:
-  building_cost: 4000000
-  total_area: 1000
-  eligible_area: 750
-  below_area: 740
-  threshold: 0.75
-  rate: 0.04
+  trading_loss: 150000
+  company_interest: 30000
+  share_gains: 240000
+  security_loss: 100000
+  exempt_dividends_on_security: 60000
+  carried_capital_loss: 50000
+  rate: 0.18
 steps:
-  eligible_share: eligible_area / total_area
-  boundary_margin: eligible_share - threshold
-  basis: building_cost * eligible_share
-  deduction: basis * rate
-  below_margin: below_area / total_area - threshold
+  ordinary_loss: max(0, trading_loss - company_interest)
+  allowed_security_loss: max(0, security_loss - exempt_dividends_on_security)
+  current_capital_gain: share_gains - allowed_security_loss
+  capital_loss_used: min(current_capital_gain, carried_capital_loss)
+  capital_after_own_losses: current_capital_gain - capital_loss_used
+  ordinary_loss_used: min(capital_after_own_losses, ordinary_loss)
+  taxable_capital: capital_after_own_losses - ordinary_loss_used
+  capital_tax: taxable_capital * rate
+  capital_loss_remaining: carried_capital_loss - capital_loss_used
+  ordinary_loss_remaining: ordinary_loss - ordinary_loss_used
 expected:
-  eligible_share: 0.75
-  boundary_margin: 0
-  basis: 3000000
-  deduction: 120000
-  below_margin: -0.01
-```
-
-### 6. Demolition deduction is separate from annual depreciation
-
-Assume a qualifying building is demolished after six years of continuous ownership and qualifying use. Verified unrelieved cost is DKK 600,000 and material-sale proceeds DKK 40,000. The separate §24 deduction is DKK 560,000; no ordinary annual depreciation is added in the demolition year. With only four years of ownership/use, the five-year condition would fail.
-
-```oa-check
-name: Faroese separate demolition deduction
-inputs:
-  unrelieved_cost: 600000
-  material_proceeds: 40000
-  years: 6
-  minimum_years: 5
-  short_ownership: 4
-steps:
-  deduction: unrelieved_cost - material_proceeds
-  qualifying_margin: years - minimum_years
-  failing_margin: short_ownership - minimum_years
-expected:
-  deduction: 560000
-  qualifying_margin: 1
-  failing_margin: -1
-```
-
-### 7. Passenger-car cost cap
-
-Assume an exclusively business-used passenger car registered for private passenger transport, purchased for DKK 250,000, with no improvements or disposal in the year. The separately depreciable portion is DKK 150,000 and the excluded cost DKK 100,000. Electing the 30% maximum gives DKK 45,000 depreciation and a DKK 105,000 closing depreciable balance. Depreciating the full purchase price would overstate the deduction by DKK 30,000.
-
-```oa-check
-name: Faroese passenger-car separate cost cap
-inputs:
-  cost: 250000
-  cap: 150000
-  rate: 0.30
-steps:
-  excluded_cost: cost - cap
-  depreciation: cap * rate
-  closing_balance: cap - depreciation
-  overstatement: cost * rate - depreciation
-expected:
-  excluded_cost: 100000
-  depreciation: 45000
-  closing_balance: 105000
-  overstatement: 30000
-```
-
-### 8. Passenger-car disposal loss restriction
-
-Assume that same car is sold in the following year for DKK 80,000, with DKK 45,000 prior tax depreciation and no improvements. Full cost less prior depreciation is DKK 205,000, giving a DKK 125,000 loss before the restriction. Subtract the DKK 100,000 non-depreciable amount: only DKK 25,000 is deductible. No annual depreciation is added in the disposal year.
-
-```oa-check
-name: Faroese passenger-car restricted disposal loss
-inputs:
-  full_cost: 250000
-  prior_depreciation: 45000
-  excluded_cost: 100000
-  proceeds: 80000
-steps:
-  adjusted_full_cost: full_cost - prior_depreciation
-  loss_before_restriction: adjusted_full_cost - proceeds
-  deductible_loss: max(0, loss_before_restriction - excluded_cost)
-expected:
-  adjusted_full_cost: 205000
-  loss_before_restriction: 125000
-  deductible_loss: 25000
+  ordinary_loss: 120000
+  allowed_security_loss: 40000
+  current_capital_gain: 200000
+  capital_after_own_losses: 150000
+  ordinary_loss_used: 120000
+  taxable_capital: 30000
+  capital_tax: 5400
+  capital_loss_remaining: 0
+  ordinary_loss_remaining: 0
 ```
 
 ## Ask the client first
@@ -318,22 +246,21 @@ expected:
 - Is group taxation approved, and were all ownership and period conditions met?
 - What returns, assessments, extension decisions and payment notices have been received?
 
-## Review limits
-
-Source-cited draft, not professional attestation. Building disposal/indexation and special reliefs, ship and mixed-use depreciation, vehicle change-of-use and benefit treatment, capital-income computation/grouping, shareholder distributions, special industries, minimum-tax applicability and treaty relief remain open. Neither the examples nor this file establish comprehensive corporate or country coverage.
-
 ## Sources
 
-All read 23 October 2026.
+| Source | Provisions or purpose | Read on |
+|---|---|---|
+| [Consolidated Tax Act][tax] | §§1–2, 21, 25, 27, 29, 31, 33, 33a, 81, 100, 104–105, 139–140, 146; controlled-transaction detail belongs to the separate TP Guide | 2026-10-25 |
+| [Assessment Act][rate] | §5, ordinary/residual/specified rates | 2026-10-25 |
+| [Capital Income Act][capital] | §§1–10, 14–15, 18–19; separate ordinary/capital classification, losses, dividends and settlement | 2026-10-25 |
+| [Group taxation regulation 148/2015][group] | §§1–9, ordinary group scope, ordering and compensation | 2026-10-25 |
+| [Current Depreciation Act][depreciation] | §§1–16, 17–27, 29–31; equipment, cars, mixed use, ships, buildings and transitions | 2026-10-25 |
+| [TAKS company tax][taks] | Ordinary loss direction, company/group/payment guidance | 2026-10-25 |
+| [TAKS returns][returns] | Company return/accounts submission and extension process | 2026-10-25 |
+| [TAKS Circular 10/1992, current annexes][index] | Acquisition/disposal index method and quarterly multipliers | 2026-10-25 |
+| [TAKS building/land index page][indices] | Cross-check current factors; some historical entries differ from circular | 2026-10-25 |
 
-| Source | Locator |
-|---|---|
-| Consolidated Tax Act | [§§1–2, 21, 31, 33a, 37a–b, 81, 100, 104–105, 146][tax] |
-| Assessment Act | [§5][rate] |
-| TAKS company tax | [Rates, losses and payment guidance][taks] |
-| Group taxation regulation 148/2015 | [§§1–9][group] |
-| Current Depreciation Act | [§§1–5a, 7–10, 17–27 and 31, equipment and building computations][depreciation] |
-| TAKS returns | [Company filing procedure][returns] |
+Not yet confirmed: conflicting historic acquisition-index entries and recapture computation when indexed cost exceeds proceeds but proceeds exceed written-down value; capital-group implementing conditions and complete group-loss operational filing; employee vehicle benefits/payroll valuation; ordinary foreign-credit and treaty procedures; current monetary fine practice; intangible-asset treatment and other common deductions not resolved above. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Whole-pack independent review and professional attestation remain outstanding; this Guide does not establish complete corporate coverage.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170
@@ -342,3 +269,7 @@ All read 23 October 2026.
 [returns]: https://www.taks.fo/en/individuals/tax/tax-return
 
 [depreciation]: https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174
+
+[capital]: https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173
+[index]: https://www.taks.fo/fo/log/rundskriv/pristalsvidgerd-av-bygningum
+[indices]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/pristoel-a-bygningum-og-byggigrundum
