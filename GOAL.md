@@ -18,14 +18,14 @@ There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `ti
 
 | Measure | Now |
 |---|---|
-| Skills | 2,245 |
+| Skills | 2,250 |
 | Jurisdiction units in the repository catalogue (countries, territories, US states and Canadian provinces; pseudo-codes such as GLOBAL and INTL excluded) | 266 |
 | Jurisdictions with 7 skills or fewer | 184 |
-| Tax-domain maps with no missing applicable domain | 32 |
+| Tax-domain maps with no missing applicable domain | 33 |
 | Packs with a README declaring applicability | 29 |
 | Skills with a named reviewer (`tier: 1`) | 33 |
 
-These are inventory counts, not comprehensive-coverage counts. The 32 tax-domain maps only show that the report found a skill for each applicable domain and no domain marked `partial`; the report does not verify sources, examples, independent pack review, or named-accountant attestation. It does not yet calculate how many packs pass all three goal tests.
+These are inventory counts, not comprehensive-coverage counts. The 33 tax-domain maps only show that the report found a skill for each applicable domain and no domain marked `partial`; the report does not verify sources, examples, independent pack review, or named-accountant attestation. It does not yet calculate how many packs pass all three goal tests.
 
 The work is to finish each jurisdiction pack, verify it, and get it reviewed. A skill's presence, a source packet, or a row with no missing domain is not comprehensive coverage.
 
