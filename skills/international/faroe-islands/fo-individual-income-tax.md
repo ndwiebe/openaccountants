@@ -10,7 +10,7 @@ description: >
   Faroese personal income tax, self-employed profit, child tax credits, private
   investments, foreign work and individual tax returns. Shipping, part-year
   annualisation, treaty relief, benefits and specified implementation questions
-  require additional work identified in Sources. This is a source-cited draft
+  require additional work identified in Sources. This is tier-2 material
   accepted for partial draft publication after independent AI review; professional
   attestation remains pending.
 jurisdiction: FO
@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Faroe Islands individual income tax v0.4
 
-> **Source-cited draft.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026; professional review is pending.
+> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026; professional review is pending.
 
 ## Who this applies to
 

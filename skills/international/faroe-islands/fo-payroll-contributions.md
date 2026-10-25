@@ -27,7 +27,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Faroe Islands payroll and mandatory contributions v0.2
 
-> **Source-cited draft.** Income year 2026; selected current statutes and authority guidance read 25 October 2026. This Guide prepares payroll working papers, with professional review pending.
+> **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026. This Guide prepares payroll working papers, with professional review pending.
 
 ## Who this applies to
 

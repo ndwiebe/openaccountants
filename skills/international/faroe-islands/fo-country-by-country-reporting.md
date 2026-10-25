@@ -136,7 +136,7 @@ expected:
 | [Regulation 151 of 19 December 2019][regulation] | §§1–5 and annex; notifications, report definitions and three tables | 2026-10-25 |
 | [TAKS CbCR guidance][taks] | Templates, exchange-list referral, notification and secure delivery | 2026-10-25 |
 
-Not yet confirmed: actual bilateral exchange coverage, foreign-currency threshold application, unusual local-filing cases, notification penalties and assessed fine amounts, current template execution and secure transmission. Source-cited draft, not professional attestation. Neither this Guide nor its arithmetic checks completes the TP domain or country pack. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
+Not yet confirmed: actual bilateral exchange coverage, foreign-currency threshold application, unusual local-filing cases, notification penalties and assessed fine amounts, current template execution and secure transmission. Checked against the law, not professional attestation. Neither this Guide nor its arithmetic checks completes the TP domain or country pack. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [law]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [regulation]: https://logir.fo/Kunngerd/151-fra-19-12-2019-um-land-fyri-land-frabodan

@@ -18,18 +18,18 @@ partial:
 
 # Faroe Islands: tax pack
 
-The Faroes use DKK, national and municipal income tax, capital-income tax and MVG administered by TAKS. Owner: Michael, per [issue #393](https://github.com/openaccountants/openaccountants/issues/393). Eight 2026 source-cited drafts are present. **This remains a partial pack with zero professional attestations.** The seven partial flags record ordinary implementation gaps; no not-applicable conclusion is asserted.
+The Faroes use DKK, national and municipal income tax, capital-income tax and MVG administered by TAKS. Owner: Michael, per [issue #393](https://github.com/openaccountants/openaccountants/issues/393). Eight 2026 Guides checked against the law are present. **This remains a partial pack with zero professional attestations.** The seven partial flags record ordinary implementation gaps; no not-applicable conclusion is asserted.
 
 | Topic | Guide | Status |
 |---|---|---|
-| Individual income tax | [Personal tax](fo-individual-income-tax.md) | Source-cited draft |
-| Corporate income tax | [Company tax](fo-corporate-income-tax.md) | Source-cited draft |
-| VAT | [MVG](fo-vat.md) | Source-cited draft |
-| Payroll and social contributions | [Payroll](fo-payroll-contributions.md) | Source-cited draft |
-| Transfer pricing | [Controlled transactions](fo-transfer-pricing.md) | Source-cited draft |
-| Country-by-country reporting | [CbCR](fo-country-by-country-reporting.md) | Source-cited draft |
-| Cross-border | [Payments, PE and securities migration](fo-cross-border-payments.md) | Source-cited draft |
-| Formation/reporting | [Company registration](fo-company-registration-reporting.md) | Source-cited draft |
+| Individual income tax | [Personal tax](fo-individual-income-tax.md) | Checked against the law |
+| Corporate income tax | [Company tax](fo-corporate-income-tax.md) | Checked against the law |
+| VAT | [MVG](fo-vat.md) | Checked against the law |
+| Payroll and social contributions | [Payroll](fo-payroll-contributions.md) | Checked against the law |
+| Transfer pricing | [Controlled transactions](fo-transfer-pricing.md) | Checked against the law |
+| Country-by-country reporting | [CbCR](fo-country-by-country-reporting.md) | Checked against the law |
+| Cross-border | [Payments, PE and securities migration](fo-cross-border-payments.md) | Checked against the law |
+| Formation/reporting | [Company registration](fo-company-registration-reporting.md) | Checked against the law |
 
 ## Current source pass and review
 

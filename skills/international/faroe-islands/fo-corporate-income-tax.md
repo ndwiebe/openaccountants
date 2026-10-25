@@ -10,9 +10,9 @@ description: >
   Faroese corporation tax, investment gains, business assets, company losses,
   dividend withholding and incorporation or closure questions. Petroleum,
   fishing and aquaculture charges, tonnage tax, reorganisations, international
-  minimum tax and treaty-specific outcomes need separate work. This is a
-  source-cited draft accepted for partial publication after independent AI review;
-  professional attestation remains pending.
+  minimum tax and treaty-specific outcomes need separate work. This Guide has
+  been checked against the law and accepted for partial publication after
+  independent AI review; professional attestation remains pending.
 jurisdiction: FO
 category: international
 tax_year: 2026

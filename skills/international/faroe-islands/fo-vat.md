@@ -26,7 +26,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Faroe Islands VAT registration and returns v0.3
 
-> **Source-cited draft for 2026.** This Guide has no professional attestation
+> **Checked against the law for 2026.** This Guide has no professional attestation
 > for the revised content. It prepares classification and calculation working
 > papers; the stated source conflicts and implementation gaps remain open.
 

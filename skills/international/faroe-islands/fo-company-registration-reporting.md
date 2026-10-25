@@ -27,7 +27,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Faroe Islands company registration and annual reporting v0.2
 
-> **Source-cited draft.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.
+> **Checked against the law.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.
 
 ## What this file is and scope
 

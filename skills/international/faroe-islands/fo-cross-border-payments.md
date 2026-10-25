@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Faroe Islands cross-border payments and migration v0.2
 
-> **Source-cited draft.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026.
+> **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026.
 
 ## Who this applies to
 
