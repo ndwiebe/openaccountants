@@ -10,9 +10,9 @@ description: >
   holiday accruals, payslips, information reporting and invoice deadlines,
   including mid-year ALS procedure changes. Use for Faroese payroll, employer
   contributions, mandatory pension, social insurance, holiday pay and foreign
-  workers. Full benefits valuation and specified historical/operational cases
-  remain open. Independent country review and professional attestation are
-  pending.
+  workers. Benefit adjustments/exemptions and specified historical/operational
+  cases remain open. Independent AI review accepted partial draft publication;
+  professional attestation is pending.
 version: 0.2
 jurisdiction: FO
 tax_year: 2026
@@ -90,7 +90,23 @@ The ordinary earning year is 1 April–31 March, unless an agreed calendar year 
 
 On monthly-paid departure, §11(2) requires holiday pay for outstanding entitlement using the statutory route; do not simply pay both 12% and 1.5% on the same basis. Current §20a places the holiday-pay account administration with TAKS through an approved settlement institution. The older linked Regulation 14/1987 still describes the former fund/accounts and cannot override the later statute abolishing that fund. Current operational details need the checks in Sources. [Holiday Act §§10–13, 20a–21][holiday]
 
-Taxable benefit valuation, exemptions and reporting require a separate schedule. Tax Act §29 contains express work-computer/telecom and specified travel/accommodation exceptions; they are not universal benefit exclusions. Do not insert a flat car valuation without the current applicable authority. [Tax Act §§25, 29, 118(1)(b)][tax]
+### Ordinary benefit valuation
+
+Tax Act §25 includes money's-worth benefits, subject to §29's express exemptions. Establish the actual benefit, private availability, coverage period, employer/employee funding and exemption evidence separately from cash wages. TAKS publishes these **2026** annual values, VAT included; meals have a daily value. Do not use a 2025 column or one flat percentage of car cost. [Tax Act §§25, 29][tax]; [TAKS annual valuations, 2026 column][values]
+
+| Benefit | Published 2026 value in DKK | Official source |
+|---|---|---|
+| Free housing | 1,644 per square metre annually | [TAKS 2026 housing row][values] |
+| Free electricity | 12,400 annually | [TAKS 2026 electricity row][values] |
+| Free heat, oil/district heating | 31,500 annually | [TAKS 2026 heat row][values] |
+| Free heat, electric/geothermal/other energy | 14,700 annually | [TAKS 2026 heat row][values] |
+| Free meals | 47 / 61 / 81 per day for one / two / three meals | [TAKS 2026 meal rows][values] |
+| Electric passenger car, including plug-in hybrid | 56,800 up to 1,300 kg; 65,900 at 1,301–1,500 kg; 79,700 at 1,501–1,700 kg; 86,000 from 1,701 kg | [TAKS 2026 electric-car rows][values] |
+| Other passenger car, including non-plug-in hybrid | 62,400 up to 1,100 kg; 71,900 at 1,101–1,300 kg; 86,300 at 1,301–1,500 kg; 96,800 from 1,501 kg | [TAKS 2026 other-car rows][values] |
+| Taxi up to ten persons | 23,000 annually | [TAKS 2026 taxi row][values] |
+| Van/other vehicle | 60% of the corresponding electric/non-electric passenger-car value | [TAKS 2026 van row][values] |
+
+The schedule supplies annual standard values, not proof of entitlement to an exemption, part-year proration or employee-payment offset. Those adjustments need their own authority. Tax Act §29 contains work-computer/telecom and specified travel/accommodation exceptions; they are not universal benefit exclusions. TAKS requires both taxable benefits and exempt employee reimbursements to be reported on Vinnugluggin by **31 January following the year**, with the stated exceptional paper route. The employee reports corresponding information on the return. Reconcile the benefit schedule to the employer's records and employee statement rather than assuming noncash items pass through ordinary cash withholding automatically. [Tax Act §§25, 29, 118(1)(b)][tax]; [TAKS employer-benefits reporting][benefits]
 
 ## Deadlines and filing
 
@@ -119,6 +135,7 @@ Keep the actual invoice/withholding dates and receipts; the AMEG and ALS invoice
 | Health late contribution | 0.7% per commenced month, including booked interest as specified; incorrect exemption can be recovered | [Health Act §§24(4), 26][health] |
 | Occupational-disease late contribution | 0.7% per commenced month including booked interest as specified | [Work Injury Act §79(4)][injury] |
 | Guarantee-fund late contribution | 0.7% per commenced month from due date, with statutory fine liability for specified failure to pay/provide information | [Guarantee Act §§7(4), 11][guarantee] |
+| Late holiday pay | 1.5% per commenced month from the due date | [Holiday Act §16][holiday] |
 | Unjustified failure to pay holiday amounts / prohibited waiver | Fine; legal-person liability as specified | [Holiday Act §22][holiday] |
 
 Pension Act §16's DKK 20,000 daily provisions concern the specified provider reporting/administrative breaches, not a universal employee or employer late-pension fine. Unpaid pension/tax has the separate recovery provisions in §§2, 12. Assess the actual liable party and breach before applying any penalty. [Pension Act §§2, 6, 12, 16][pension]
@@ -228,12 +245,14 @@ expected:
 | [Parental Act][parental] | §§17–20; persons, base, rate and collection | 2026-10-25 |
 | [Work Injury Act][injury] | §79; employer/self-employed bases and rate | 2026-10-25 |
 | [Guarantee Act][guarantee] | §§7, 11; ceiling, exclusions, collection and sanction | 2026-10-25 |
-| [Holiday Act][holiday] | §§1–13, 20a–22; entitlement, bases, funding and current administration | 2026-10-25 |
+| [Holiday Act][holiday] | §§1–13, 16, 20a–22; entitlement, bases, late-payment interest and current administration | 2026-10-25 |
 | [Bookkeeping Act][books] | §§9–15; traceability and retention | 2026-10-25 |
 | [TAKS 2026 employer table][employer] | Published employer rates, including operating guarantee rate | 2026-10-25 |
+| [TAKS annual valuations][values] | Actual 2026 column; ordinary housing, utilities, meals and vehicle values | 2026-10-25 |
+| [TAKS employer-benefits reporting][benefits] | Annual employer/employee reporting and exceptional paper route | 2026-10-25 |
 | [TAKS employer broadcasting][broadcast] | Separate annual prior-year payroll invoice | 2026-10-25 |
 
-Not yet confirmed: complete current benefit valuation, retrospective pre-28-February temporary-stay/small-payment rules, pre-25-August foreign-plan implementing terms, guarantee-fund operative regulation and exact invoice calendar, parental/occupational-disease invoice implementation, detailed current holiday transmission/benefit reconciliation, unusual contribution-base/rounding cases and zero-income pension-tax annex treatment. Private broadcasting rates/age assessment and full special-worker/foreign-coverage procedures require their own review. Those are real gaps; payroll/social-contribution domains remain partial. Independent whole-pack review and professional attestation are pending.
+Not yet confirmed: benefit part-year/employee-payment adjustments and full exemption implementation, retrospective pre-28-February temporary-stay/small-payment rules, pre-25-August foreign-plan implementing terms, guarantee-fund operative regulation and exact invoice calendar, parental/occupational-disease invoice implementation, detailed current holiday transmission/benefit reconciliation, unusual contribution-base/rounding cases and zero-income pension-tax annex treatment. Private broadcasting rates/age assessment and full special-worker/foreign-coverage procedures require their own review. Those are real gaps; payroll/social-contribution domains remain partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [pension]: https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum
@@ -256,6 +275,8 @@ Not yet confirmed: complete current benefit valuation, retrospective pre-28-Febr
 [books]: https://logir.fo/Logtingslog/23-fra-20-03-2018-um-bokhald
 [employer]: https://www.taks.fo/fo/vinna/studul/almenn-gjoeld-hja-arbeidsgevarum
 [broadcast]: https://www.taks.fo/fo/vinna/skattur/kringvarpsgjald
+[values]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/arligar-virdisasetingar-hja-taks
+[benefits]: https://www.taks.fo/fo/vinna/skattur/friir-agodar-og-skattafriar-veitingar-til-starvsfolk
 
 > Contributed by Ryan Duguid.
 

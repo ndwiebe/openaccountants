@@ -11,7 +11,8 @@ description: >
   investments, foreign work and individual tax returns. Shipping, part-year
   annualisation, treaty relief, benefits and specified implementation questions
   require additional work identified in Sources. This is a source-cited draft
-  awaiting independent country review and professional attestation.
+  accepted for partial draft publication after independent AI review; professional
+  attestation remains pending.
 jurisdiction: FO
 category: international
 tax_year: 2026
@@ -69,11 +70,15 @@ National tax on established annual ordinary taxable income `I`, in DKK:
 
 ### Ordinary income and deductions
 
-Build separate schedules for wages/benefits, business profit, rents, foreign income and investments. A/B classification determines collection, not a new exemption. Tax Act §§57, 60–62 define the routes; doubt about classification is decided by TAKS under §62(2). Ordinary wage/A-income timing generally follows payment, with §28's backstop at the end of the following calendar year and acceleration when liability ceases. [Tax Act §§25, 28, 57, 60–62][tax]
+Build separate schedules for wages/benefits, business profit, rents, foreign income and investments. Use the payroll Guide’s [dated 2026 benefit-value schedule](fo-payroll-contributions.md#ordinary-benefit-valuation) for ordinary housing, utilities, meals and cars, with its stated adjustment/exemption limits. A/B classification determines collection, not a new exemption. Tax Act §§57, 60–62 define the routes; doubt about classification is decided by TAKS under §62(2). Ordinary wage/A-income timing generally follows payment, with §28's backstop at the end of the following calendar year and acceleration when liability ceases. [Tax Act §§25, 28, 57, 60–62][tax]
 
 For business profit, reconcile sales and expenses, remove private withdrawals/use, correct inventory and replace accounting depreciation with the statutory asset schedule. Section 31 permits expenses incurred to earn, secure and maintain business income but expressly excludes ordinary expenses of earning A-income/personal employment income. Do not deduct an employee's ordinary work costs as sole-trader costs. Business interest/finance costs follow §33(1)(1), including its unpaid-interest clawback. Pre-trading research expenditure has the separate §32 start-year/next-three-years rule. Carry business losses under §33a only when not usable earlier; debt-release loss reductions must be applied. [Tax Act §§26, 31–33a][tax]
 
 Equipment depreciation requires the Depreciation Act classification, pool, disposal and private-use rules. The ordinary exclusive-business pool maximum is 30%; qualifying items or positive pool remainders of DKK 20,000 or less have separate immediate-deduction rules. Keep the underlying asset evidence; the corporate Guide's [asset schedules](fo-corporate-income-tax.md) explain these shared provisions, without applying its company rate to a person. [Depreciation Act §§1–8][depreciation]
+
+Before finalising an individual's depreciation or investment-fund deduction, apply Tax Act §31(2)–(6)'s separate **personal-consumption floor**. If taxable income is below the statutory consumption computation, increase income toward that amount, but by no more than the depreciation/investment-fund deductions covered by the rule. Section 31(4) excludes year-bound depreciation that would otherwise be lost. Under §31(5), the denied depreciation is treated as not taken in that year; preserve it in the asset records instead of losing it or deducting it twice. For spouses, the statutory consumption calculation includes both spouses' full-year income and opening/closing assets and liabilities. This floor is distinct from an asset's private-use adjustment. Obtain the actual consumption working paper before confirming the base. [Tax Act §31(2)–(6)][tax]
+
+Regulation 98/1987 §1 gives the ordinary indirect consumption calculation: opening net assets plus taxable income, asset increases outside taxable income, deductions that did not reduce assets and nontaxable valuation increases; subtract non-consumption asset reductions not deducted in arriving at income, taxable income that did not increase assets, nondeductible valuation decreases and closing net assets. Reconcile each component. A direct calculation is permitted where acceptable annual accounts include all income/expenses and opening/closing assets/liabilities. Apply §2's particular spouse, separation and death rules rather than mechanically combining every household. [Regulation 98/1987 §§1–3][consumption]
 
 Eligible paid pension contributions have deduction/exclusion under Pension Act §12(3)–(4) in the year contributed, including the specified voluntary payments. Do not deduct the same payment twice. The pension contribution itself has a separate pension tax under §12(2)/annex 1, with provisional 40% withholding and final income-linked rates; a personal income-tax deduction does not make the pension payment tax-free. Mandatory contribution funding, exceptions and collection are in the [payroll Guide](fo-payroll-contributions.md). [Pension Act §§2, 12 and annex 1][pension]
 
@@ -121,7 +126,7 @@ False/misleading information with evasion intent is subject to Tax Act §139 fin
 
 Classify domestic versus treaty residence, work location, payer, actual days, income article and relief evidence. The 42% A-income-only nonresident rule does not govern every foreign person's Faroese property/business income. A stay below 180 days does not itself prove treaty exemption. Tax Act §1(3) restricts deductions for a treaty-foreign resident to expenses concerning income the Faroes may tax. [Tax Act §§1–2][tax]; [Assessment Act §§1, 8][rate]
 
-Capital Income Act §19 permits capped foreign-tax credit for income from a country **without** a double-tax treaty. Treaty credits/exemptions and ordinary foreign-tax relief need separate authority; do not use that clause as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2e, 19][capital]
+Capital Income Act §19 permits capped foreign-tax credit for income from a country **without** a double-tax treaty. Treaty credits/exemptions and ordinary foreign-tax relief need separate authority; do not use that clause as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]
 
 ## Two worked examples that recompute
 
@@ -145,7 +150,7 @@ expected:
 
 ### 2. Sole trader, child credit and private investments
 
-Assume a full-year eligible non-church Tórshavnar resident, with DKK 600,000 business revenue, DKK 260,000 deductible non-private costs, and an ordinary exclusive-business opening equipment pool DKK 200,000 with no additions/disposals. Electing 30% depreciation gives DKK 60,000. An independently eligible DKK 40,000 pension payment made in 2026 is deducted once, leaving ordinary income DKK 240,000. The resident is the sole eligible recipient of the full-year credits for one child aged five on 1 January. National tax DKK 23,950 less DKK 10,700 credit is DKK 13,250; municipal DKK 39,900 less DKK 9,000 is DKK 30,900. Separate non-business share gains DKK 40,000, fully eligible share loss DKK 5,000 and bank interest DKK 5,000 give DKK 40,000 capital net gain and DKK 14,000 capital tax. Combined ordinary/capital income tax is DKK 58,150, before withholding credits. Pension contribution tax and social charges are separate. Assume no prior capital losses, foreign credit, private-use adjustment, special regime or other deduction. [Tax Act §§31, 46][tax]; [Assessment Act §§1–2][rate]; [Pension Act §12][pension]; [Depreciation Act §2][depreciation]; [Capital Income Act §§4, 10, 14][capital]; [municipal row][municipal]
+Assume a full-year eligible non-church Tórshavnar resident, with DKK 600,000 business revenue, DKK 260,000 deductible non-private costs, and an ordinary exclusive-business opening equipment pool DKK 200,000 with no additions/disposals. Electing 30% depreciation gives DKK 60,000. An independently eligible DKK 40,000 pension payment made in 2026 is deducted once, leaving ordinary income DKK 240,000. Assume the independently verified statutory personal-consumption computation is DKK 200,000, so the §31 floor requires no increase; this is a case input, not a statutory fixed allowance. The resident is the sole eligible recipient of the full-year credits for one child aged five on 1 January. National tax DKK 23,950 less DKK 10,700 credit is DKK 13,250; municipal DKK 39,900 less DKK 9,000 is DKK 30,900. Separate non-business share gains DKK 40,000, fully eligible share loss DKK 5,000 and bank interest DKK 5,000 give DKK 40,000 capital net gain and DKK 14,000 capital tax. Combined ordinary/capital income tax is DKK 58,150, before withholding credits. Pension contribution tax and social charges are separate. Assume no prior capital losses, foreign credit, private-use adjustment, special regime or other deduction. [Tax Act §§31, 46][tax]; [Assessment Act §§1–2][rate]; [Pension Act §12][pension]; [Depreciation Act §2][depreciation]; [Capital Income Act §§4, 10, 14][capital]; [municipal row][municipal]
 
 ```oa-check
 name: Faroese sole trader deductions credits and separate capital result
@@ -155,6 +160,7 @@ inputs:
   equipment_pool: 200000
   depreciation_rate: 0.30
   eligible_paid_pension: 40000
+  verified_personal_consumption: 200000
   national_child_credit: 10700
   municipal_child_credit: 9000
   share_gain: 40000
@@ -162,7 +168,9 @@ inputs:
   bank_interest: 5000
 steps:
   depreciation: equipment_pool * depreciation_rate
-  ordinary_base: revenue - costs - depreciation - eligible_paid_pension
+  base_before_consumption_floor: revenue - costs - depreciation - eligible_paid_pension
+  consumption_floor_increase: min(max(verified_personal_consumption - base_before_consumption_floor, 0), depreciation)
+  ordinary_base: base_before_consumption_floor + consumption_floor_increase
   national_before_credit: 14950 + (ordinary_base - 180000) * 0.15
   municipal_before_credit: (floor(ordinary_base / 100) * 100 - 30000) * 0.19
   national_tax: national_before_credit - national_child_credit
@@ -172,6 +180,7 @@ steps:
   income_tax: national_tax + municipal_tax + capital_tax
 expected:
   depreciation: 60000
+  consumption_floor_increase: 0
   ordinary_base: 240000
   national_before_credit: 23950
   municipal_before_credit: 39900
@@ -198,6 +207,7 @@ expected:
 | [Current Tax Act][tax] | §§1–5, 24–34, 41–47, 54, 57–80, 100–105, 135, 139–141; selected personal-tax provisions | 2026-10-25 |
 | [Assessment Act][rate] | §§1–3, 8–8a; bands, credits, special categories and rental election | 2026-10-25 |
 | [Capital Income Act][capital] | §§1–19, selected ordinary/private classification and individual computation provisions | 2026-10-25 |
+| [Regulation 98/1987][consumption] | §§1–3; statutory personal-consumption working paper and household cases | 2026-10-25 |
 | [Depreciation Act][depreciation] | §§1–8; equipment deduction used in the example | 2026-10-25 |
 | [Pension Act][pension] | §§1–3, 12, 17, annex 1; eligible paid contributions and separate pension taxation | 2026-10-25 |
 | [Interest Support Act][support] | §§1–8; loan purposes, property cap, rate and application | 2026-10-25 |
@@ -207,11 +217,12 @@ expected:
 | [TAKS housing/rents][rent] | Gross-rental eligibility and ordinary-accounts distinction | 2026-10-25 |
 | [TAKS return procedure][returns] | Statements, accounts, returns and extensions | 2026-10-25 |
 
-Not yet confirmed: complete part-year annualisation and commencement/cessation procedure, church-tax base/rounding, unusual ceiling/credit interaction, full benefit valuation, ordinary foreign-tax/treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent country review and professional attestation are pending.
+Not yet confirmed: complete part-year annualisation and commencement/cessation procedure, church-tax base/rounding, unusual ceiling/credit interaction, benefit part-year/payment adjustments and full exemption implementation, ordinary foreign-tax/treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170
 [capital]: https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173
+[consumption]: https://logir.fo/Kunngerd/98-fra-14-12-1987-um-uppgerd-av-skattligu-eginnytsluni
 [depreciation]: https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174
 [pension]: https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum
 [support]: https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog

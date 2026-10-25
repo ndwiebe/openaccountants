@@ -11,8 +11,8 @@ description: >
   dividend withholding and incorporation or closure questions. Petroleum,
   fishing and aquaculture charges, tonnage tax, reorganisations, international
   minimum tax and treaty-specific outcomes need separate work. This is a
-  source-cited draft awaiting independent country review and professional
-  attestation.
+  source-cited draft accepted for partial publication after independent AI review;
+  professional attestation remains pending.
 jurisdiction: FO
 category: international
 tax_year: 2026
@@ -92,7 +92,7 @@ On disposal, compare proceeds with full acquisition cost plus improvements less 
 
 For equipment used both privately and for business, keep an individual schedule under §7. Compute annual depreciation at an elected whole percentage up to 30% of acquisition cost in year one and unrelieved balance thereafter, subject to the DKK 150,000 acquisition-cost cap. Only the current-year business-use share of that computed depreciation is deductible. Keep both total computed depreciation and actually deducted business depreciation: disposal recapture/loss allocation under §8 uses the ratio of those cumulative amounts, with the statutory excluded-cost restriction. No depreciation is computed in the sale year. Improvements to an asset originally acquired above the cap are also excluded. [Depreciation Act §§7–10][depreciation]
 
-A transfer to exclusively private or mixed use is a deemed sale and purchase at market value under §31. A transfer from exclusively private use into business or mixed use is a deemed purchase at that value. The passenger-car transitions in §5a(5) expressly invoke §31, including the above-DKK-150,000 market-value condition for a Chapter 1 car moving into §5a use. Record the transition date, market evidence, old basis and recapture before opening the new schedule. Employee benefit valuation and payroll reporting are separate and unresolved here. [Depreciation Act §§5a(5), 31][depreciation]
+A transfer to exclusively private or mixed use is a deemed sale and purchase at market value under §31. A transfer from exclusively private use into business or mixed use is a deemed purchase at that value. The passenger-car transitions in §5a(5) expressly invoke §31, including the above-DKK-150,000 market-value condition for a Chapter 1 car moving into §5a use. Record the transition date, market evidence, old basis and recapture before opening the new schedule. Employee benefit valuation and payroll reporting are separate from the company asset schedule. Use the payroll Guide’s [dated 2026 benefit values and reporting](fo-payroll-contributions.md#ordinary-benefit-valuation); its stated adjustment/exemption limits remain. [Depreciation Act §§5a(5), 31][depreciation]
 
 Keep a separate commercial ship pool, including equipment used commercially aboard ships; §11 also expressly addresses the specified commercial fishing licences. Chapter 1 rules apply subject to §12, whose pool deducts relevant scrapping subsidies and disposal proceeds. A negative balance must be settled by the following income year unless qualifying replacement acquisitions or permitted extension apply. For contracted decked-ship construction/reconstruction, advance depreciation starts in the contract year, is capped at 15% per year and 45% in total, and continues only until delivery. On delivery, add cost net of advance depreciation to the ship pool. Contract cancellation recaptures prior advance deductions; sale of contract rights has its own gain/loss computation including prior advance deductions. This does not establish eligibility for tonnage tax or fishing levies. [Depreciation Act §§11–16][depreciation]
 
@@ -260,7 +260,7 @@ expected:
 | [TAKS Circular 10/1992, current annexes][index] | Acquisition/disposal index method and quarterly multipliers | 2026-10-25 |
 | [TAKS building/land index page][indices] | Cross-check current factors; some historical entries differ from circular | 2026-10-25 |
 
-Not yet confirmed: conflicting historic acquisition-index entries and recapture computation when indexed cost exceeds proceeds but proceeds exceed written-down value; capital-group implementing conditions and complete group-loss operational filing; employee vehicle benefits/payroll valuation; ordinary foreign-credit and treaty procedures; current monetary fine practice; intangible-asset treatment and other common deductions not resolved above. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Whole-pack independent review and professional attestation remain outstanding; this Guide does not establish complete corporate coverage.
+Not yet confirmed: conflicting historic acquisition-index entries and recapture computation when indexed cost exceeds proceeds but proceeds exceed written-down value; capital-group implementing conditions and complete group-loss operational filing; employee-benefit adjustments and full exemption implementation; ordinary foreign-credit and treaty procedures; current monetary fine practice; intangible-asset treatment and other common deductions not resolved above. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026; professional attestation remains outstanding; this Guide does not establish complete corporate coverage.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170

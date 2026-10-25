@@ -11,8 +11,8 @@ description: >
   pricing, management fees, intercompany loans, controlled-transaction disclosure,
   small-company documentation and related-party interest deductions. CbCR is
   addressed in its separate Guide. Current return fields, retention duration,
-  treaty procedures and complex debt allocation remain open; independent
-  country review and professional attestation are pending.
+  treaty procedures and complex debt allocation remain open. Independent AI
+  review accepted partial draft publication; professional attestation is pending.
 jurisdiction: FO
 category: transfer-pricing
 tax_year: 2026
@@ -144,7 +144,7 @@ The checks recompute arithmetic; the legal conclusions require the stated facts 
 | [TAKS return procedure][returns] | Company return/accounts and extension process | 2026-10-25 |
 | [Tax Administration Act][admin] | §§8–9; five-year TP amendment rule and exceptional cases | 2026-10-25 |
 
-Not yet confirmed: current return fields/appendix, documentation retention duration, new-company application of the two-year test, complex thin-capitalisation debt allocation and negative-equity cases, current fine assessment practice, treaty corresponding-adjustment/MAP procedure and deadlines. These remain gaps; no professional attestation or complete TP coverage is claimed. CbCR's separate exchange/operational gaps are recorded in that Guide. Whole-pack independent review remains pending.
+Not yet confirmed: current return fields/appendix, documentation retention duration, new-company application of the two-year test, complex thin-capitalisation debt allocation and negative-equity cases, current fine assessment practice, treaty corresponding-adjustment/MAP procedure and deadlines. These remain gaps; no professional attestation or complete TP coverage is claimed. CbCR's separate exchange/operational gaps are recorded in that Guide. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [law]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [amendment]: https://logir.fo/Logtingslog/191-fra-21-12-2018-um-broyting-i-logtingslog-um-landsskatt-og-kommunuskatt-Skattalogin

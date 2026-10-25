@@ -7,11 +7,11 @@ not_applicable: {}
 covered_by:
   SC: fo-payroll-contributions
 partial:
-  IT-IND: "Part-year and church-base implementation, unusual ceiling/credit ordering, complete benefit valuation, special-worker and specified loan/travel procedures remain open."
+  IT-IND: "Part-year and church-base implementation, unusual ceiling/credit ordering, benefit adjustment/exemption implementation, special-worker and specified loan/travel procedures remain open."
   IT-CORP: "Historical-index conflicts, specified building recapture cases, group implementation, intangibles and employee benefits remain open."
   VAT: "Q2 statutory payment-date conflict and specified foreign-service/representative implementation remain open."
   SC: "Earlier 2026 pension implementing periods, guarantee-fund and specified invoice procedures, zero-income pension-tax annex and unusual contribution-base cases remain open."
-  PR: "Complete benefit valuation, current holiday transmission/reconciliation and full special-worker procedures remain open."
+  PR: "Benefit adjustment/exemption implementation, current holiday transmission/reconciliation and full special-worker procedures remain open."
   TP: "Current return fields, retention, complex debt cases, CbCR exchange/operational filing and treaty remedies remain open."
   XB: "Actual treaties, PE attribution, ordinary foreign credits, company migration and complete exit-deferral adjustments remain open."
 ---
@@ -35,9 +35,9 @@ The Faroes use DKK, national and municipal income tax, capital-income tax and MV
 
 The seven tax Guides follow the nine-section method with exactly two executable examples each. They now distinguish national/municipal/personal capital tax and credits; ordinary/capital corporate bases and losses; MVG exemptions, input recovery and capital adjustments; separate worker/employer contribution bases and limits; statutory thin capitalisation and CbCR reporting; and cross-border payments, domestic PE screening and individual securities migration.
 
-The payroll Guide identifies February, July, August and October 2026 changes and distinguishes current statutory holiday administration from the older linked fund regulation. Formation/reporting adds capital and ownership duties, audit size tests, retention and event filings. It applies the new Annual Accounts Act to financial years beginning from 1 January 2026 and keeps earlier-period accounts under the prior framework.
+The payroll Guide adds dated 2026 ordinary benefit values and identifies February, July, August and October 2026 changes and distinguishes current statutory holiday administration from the older linked fund regulation. Formation/reporting adds capital and ownership duties, audit size tests, retention and event filings. It applies the new Annual Accounts Act to financial years beginning from 1 January 2026 and keeps earlier-period accounts under the prior framework.
 
-Whole-pack independent source review is pending. Historical [TP](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md), [corporate](../../../docs/research/2026-10-23-faroe-corporate-sources.md) and [CbCR](../../../docs/research/2026-10-23-faroe-cbcr-sources.md) review records remain unchanged and do not certify these later revisions. All Guides remain tier 2; protected existing attribution is retained. AI review is distinct from professional attestation.
+A fresh independent whole-pack AI source review accepted the corrected material for **partial tier-2 draft publication on 25 October 2026**. Four source findings were corrected: late holiday-pay interest, inbound-securities loss restriction, initial beneficial-owner registration deadline and the personal-consumption floor. The reviewer independently checked the new dated benefit schedule. This is not country completion or professional attestation. Historical [TP](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md), [corporate](../../../docs/research/2026-10-23-faroe-corporate-sources.md) and [CbCR](../../../docs/research/2026-10-23-faroe-cbcr-sources.md) review records remain unchanged and do not certify these later revisions. All Guides remain tier 2; protected existing attribution is retained. AI review is distinct from professional attestation.
 
 Formation still has current form/fee, detailed UBO, first-year/holding audit and transitional implementation gaps. Property, succession and other special regimes need a separate applicability/evidence audit. Treaty-rate matrices, special VAT schemes, regulated entities, IFRS and insolvency execution are named outside this ordinary scope. Publication does not close the country issue or prove platform ingestion/export.
 

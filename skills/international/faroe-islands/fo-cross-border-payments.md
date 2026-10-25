@@ -12,8 +12,8 @@ description: >
   PE screening, moving abroad with shares and inbound investment portfolios.
   Treaty-specific rates, PE profit attribution, company migration, complete
   exit-deferral adjustments and ordinary foreign-tax credits need additional
-  source work. This source-cited draft remains subject to country review and
-  professional attestation.
+  source work. Independent AI review accepted partial draft publication;
+  professional attestation remains pending.
 version: 0.2
 jurisdiction: FO
 tax_year: 2026
@@ -32,7 +32,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Who this applies to
 
-Apply to Faroese payers of foreign royalties/dividends, nonresident persons and companies with Faroese-source income, and individuals changing tax residence while holding securities. Residence, source, classification and relief are separate decisions. This does not provide a treaty-rate matrix, complete PE opinion, company-migration calculation or an automatic exemption. [Tax Act §§1–2, 25][tax]; [Capital Income Act §§2–2e, 15][capital]
+Apply to Faroese payers of foreign royalties/dividends, nonresident persons and companies with Faroese-source income, and individuals changing tax residence while holding securities. Residence, source, classification and relief are separate decisions. This does not provide a treaty-rate matrix, complete PE opinion, company-migration calculation or an automatic exemption. [Tax Act §§1–2, 25][tax]; [Capital Income Act §§2–2f, 15][capital]
 
 An individual with a Faroese home has full domestic tax liability. A person without a home also meets the full-liability stay test where presence reaches at least 180 days in a 12-month period, whether interrupted or not. This is **180 days**, not a generic 183-day treaty test. Companies can be fully liable by Faroese registration or effective management under §1(1)(8), (2). Treaty residence and the right to tax particular income must then be tested against the actual instrument. [Tax Act §1][tax]
 
@@ -74,6 +74,8 @@ A realisation-basis taxpayer can seek deferral under §§2b–2c. The departure 
 Later disposal requires an individual security calculation using the acquisition basis used for the exit computation and FIFO. Section 2c(3)–(4) adjusts the deferred balance for subsequent gains/losses and foreign-tax/loss effects; death is treated as disposal of all inventory securities under subsection 5. These adjustment mechanics need a transaction-specific calculation beyond the simple exit example below. For each year with a positive deferred balance, a return with address is due by 1 May of the following year. [§2c][capital]
 
 On return to Faroese tax residence, apply the exit/deferral rules up to the return date for securities still held, then use market value on return as the incoming basis while retaining the actual acquisition date. For other incoming individuals, §2e likewise preserves acquisition date and uses incoming market value. Listed securities use that day's quoted value; unlisted securities start from the company's net asset value at the end of the last accounting period before arrival, unless TAKS approves a better evidenced valuation. [§§2d–2e][capital]
+
+Apply the separate §2f loss restriction: capital-income losses are not deductible to the extent they arise from disposal proceeds below the incoming value established under §2e. The incoming market-value basis is therefore not an unrestricted promise of relief for every later loss. Preserve both the arrival valuation and actual disposal evidence. [Capital Income Act §2f][capital]
 
 ## Deadlines and filing
 
