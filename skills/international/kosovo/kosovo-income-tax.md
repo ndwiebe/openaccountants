@@ -5,7 +5,7 @@ description: >
 version: 0.2
 jurisdiction: XK
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-25
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -115,7 +115,7 @@ than the accrual year (PIT art. 15; AI art. 20).
 | Private costs, income tax, public-authority fines/penalty interest and recoverable VAT | Add back; PIT art. 30 |
 | Representation versus advertising | Representation has the 1%-of-gross limit; genuine media advertising/promotion is fully deductible; art. 16 |
 | Related-party wages, interest, rent and other charges | Deduct only open-market amount; art. 19 |
-| Bad debts | Previously recorded income, no legal-validity dispute, collection evidence, more than six months overdue and no more than 24 months; judicial action except amounts at most EUR 500; related/repeated-debtor restrictions; recoveries taxable; art. 17 |
+| Bad debts | Previously recorded income, no legal-validity dispute, collection evidence, at least six months overdue and no more than 24 months; judicial action except amounts at most EUR 500; issue the required **"Bad Debt" document for the uncollected amount referencing the original invoice**, supporting seller-income and purchaser-expense reduction; related/repeated-debtor restrictions; recoveries taxable; art. 17(1.6), (2)–(3) |
 | Tangible assets | Exclude non-wasting land/art from depreciation; assign correct category, cost and first use; leasehold improvements over lease duration; art. 20 |
 | Repairs/improvements | Capitalise qualifying life extension of at least a year where expenditure exceeds EUR 1,000; smaller repairs/improvements expense; art. 23 |
 | Intangible assets | Straight-line over contractual useful life; where no term is defined, up to 20 years; art. 24 |
@@ -341,7 +341,7 @@ expected:
 | Pension Funds Law 04/L-101 art. 6(12) | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-24 |
 | Pension amendment 04/L-168 art. 3 | https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=8655 | 2026-10-24 |
 
-Not yet confirmed: numeric 2026 tax late-interest rate; filing treatment of the PD24 donation-field conflict; case-specific residence exit/cessation treatment; operative health phase for a final payroll/contribution result. Whole-pack independent review remains outstanding.
+Not yet confirmed: numeric 2026 tax late-interest rate; filing treatment of the PD24 donation-field conflict; case-specific residence exit/cessation treatment; operative health phase for a final payroll/contribution result. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation.
 
 <!-- openaccountants-cta-block -->
 

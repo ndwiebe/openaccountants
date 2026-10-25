@@ -11,18 +11,20 @@ description: >
   forms and the current tax-procedure statute. It includes ordinary assets,
   bad debts, donations, distributions and liquidation. Construction, leasing,
   gross-interest reporting and remaining implementing-rule questions are
-  explicitly pending, alongside the independent whole-pack review.
+  explicitly pending. Independent AI review accepted the corrected material
+  for publication as a partial source-cited draft; professional attestation
+  remains outstanding.
 jurisdiction: XK
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-24
+last_updated: 2026-10-25
 version: 0.2
 ---
 
 # Kosovo corporate income tax v0.2
 
-Tax year **2026**, checked **24 October 2026**. Source-cited draft, tier 2;
+Tax year **2026**, checked **25 October 2026**. Source-cited draft, tier 2;
 no licensed accountant has attested to this revision.
 
 ## Who this applies to
@@ -34,8 +36,10 @@ without a later amending act listed. TAK's current overview identifies
 06/L-105 as the corporate law. Both were read on 24 October 2026. This is
 evidence about those current official records, not a conclusion from a missing
 search result that no special rule can exist. The older 2016 corporate
-instruction implements the repealed statute; its continuing application and
-the reporting rules for construction, leasing and gross interest remain open.
+instruction implements the repealed statute. Positive post-2019 TAK answers
+apply the construction ruling and describe finance/operating leases, as set
+out below. General legal continuity of the old instruction, gross-interest
+reporting and the other specified implementation questions remain open.
 The pack therefore keeps IT-CORP partial. [Current Gazette record][record];
 [TAK current overview][overview].
 
@@ -64,11 +68,12 @@ The pack therefore keeps IT-CORP partial. [Current Gazette record][record];
 A qualifying small taxpayer can elect the real-income books/records regime. An existing taxpayer applies before 1 March of the chosen tax period; a new taxpayer's first quarterly statement communicates the election. The election year and at least three following tax periods are covered. Crossing EUR 30,000 similarly brings the crossing year and at least three following periods into real-income treatment. [Articles 35(2)–(3), 38(3)][law]
 
 Returning to small-business books requires the statutory conditions and TAK
-approval **before** 1 March. Article 35(4)'s English wording refers to income
-in the last quarter being below the limit. Retain TAK's approval and the
-turnover/election history; a later low-turnover year alone does not cancel
-the continuing obligation. The exact administrative application of that
-quarter wording remains on the unconfirmed list. [Article 35(4)][law]
+approval **before** 1 March. The original Albanian art. 35(4) says income
+in the **last period** must be below EUR 30,000; the English translation
+says last quarter. Use the original period wording and retain TAK's approval
+with the turnover/election history. A low quarter alone does not end the
+continuing real-income obligation. [Article 35(4), original Albanian][albanian];
+[English translation][law]
 
 ## The base
 
@@ -89,12 +94,16 @@ relief requires its own law and approval evidence, rather than treating every
 donation as a tax credit. [Articles 11–12][law]
 
 Bad debt requires previously recognised income, an undisputed debt, collection
-efforts, more than six months overdue and initiation of the declaration
+efforts, at least six months overdue and initiation of the declaration
 procedures within 24 months of the payment obligation. Judicial proceedings
 are not required for amounts at most EUR 500. Related-party debts and repeated
 transactions after declaring the debt bad are excluded, with the specified
 public-service exception. Deduct only the unrecovered amount; a later recovery
-is taxable. An unsupported ledger write-off is insufficient. [Article 13][law]
+is taxable. Issue the required **"Bad Debt" invoice/document for the
+uncollected amount, referencing the original invoice number; it supports the
+seller's income reduction and the purchaser's expense/cost reduction. An
+unsupported ledger write-off is insufficient, and the same relief must not
+be counted twice. [Article 13(1.6), (2)][law]
 
 Related-party interest, rent and other charges are deductible at the **lower
 of actual payment and open-market amount**, rather than increasing an expense
@@ -136,8 +145,10 @@ rules in arts. 17 and 21. [Articles 17–21][law]
 
 ### Disposals, distributions and cessation
 
-Capital gain is proceeds plus other consideration less acquisition cost,
-improvements and prior allowed depreciation. Adjust related-party undervalue
+Capital gain is `proceeds (including other consideration) − adjusted basis`,
+where `adjusted basis = acquisition cost + improvements − prior allowed
+depreciation and other allowed expenses`. Prior depreciation reduces basis
+and therefore increases the gain. Adjust related-party undervalue
 to market. Gains and losses are ordinary business items; the four-year loss
 rule applies. Instalment-sale gains are spread straight-line over the
 enforceable agreement. Involuntary conversion has the same-character
@@ -156,6 +167,65 @@ rules, not proof of either a universal departure charge or its absence.
 ### Losses
 
 Carry a tax loss forward for up to four successive tax periods, oldest first, reduced by amounts already used. Except for the Article 27 reorganisation rules, the loss belongs to the business that incurred it. A change in business-organisation type or ownership change of **more than 50%** prevents transfer under Article 24(5). Exactly 50% does not meet that particular ownership trigger; other restrictions still require testing. Keep loss-year, expiry, utilisation and ownership evidence. [Article 24][law]
+
+### Long-term construction: current TAK application
+
+Current CIT art. 6(2.1), (5) delegates the special reporting rules. TAK answer
+**ATK27334/2023** cites that current article and directs taxpayers to Public
+Ruling **02/2019**. Answer **ATK27829/2024** applies the ruling's retention
+rules. These are positive administrative applications after the 2019 law;
+they do not establish that every older bylaw remains in force
+([TAK construction answer][construction-faq]; [retention answer][retention-faq]).
+
+The ruling distinguishes the contractor from the investor/developer and
+investor-contractor. Do not apply one cash or invoice rule to all three:
+
+| Role | Ruling's income/cost computation | Official source |
+|---|---|---|
+| Contractor | Percentage of completion: costs incurred in the tax period divided by total planned project costs, applied to the total contract value | [02/2019, pp. 8 and 13][construction] |
+| Investor/developer or investor-contractor | Recognise received advances and enforceable rights to advances; otherwise recognise under the ruling's accrual conditions. Without a recognition condition, retain work in progress | [02/2019, pp. 8 and 13][construction] |
+| Matching investor/developer costs | Planned cost per unit × units sold, with the receipt/sale-contract-value proportion for the stated advance cases; reconcile planned and actual cost on final completion | [02/2019, p. 8][construction] |
+| Completed unsold property | Record remaining unsold units as inventory; keep project/contract cost records | [02/2019, pp. 8, 13][construction] |
+
+Retain a separate contract schedule for value, forecast costs, period costs,
+recognised income, advances, units/sales, stock and final reconciliation.
+Barter is not invisible because no cash changes hands: the ruling requires
+market-value income/expense when the exchange occurs (p. 8). VAT construction
+reverse charge and chargeable events are separate; use the VAT Guide.
+
+Contractual retention is not income until received or the contractor is
+entitled to receive it. Early payment is income on receipt. An amount paid
+into a restricted separate account is excluded until withdrawal/use becomes
+available under the contract. Reconcile those exclusions to the recognition
+schedule once; an unpaid ordinary receivable is not automatically retention
+([02/2019, pp. 8 and 20][construction]; [ATK27829/2024][retention-faq]).
+
+### Finance and operating leases: current TAK interpretation
+
+TAK answer **ATK26322/2021**, expressly using current CIT art. 6(2.2),
+describes finance leases as transferring substantially the ownership risks
+and rewards. It lists alternative conditions: a term exceeding **75%** of
+asset life, transfer of ownership, a bargain purchase option, or present value
+of payments exceeding **90%** of market value. Keep the term, useful life,
+option terms, discount-rate evidence and payment schedule
+([finance-lease answer][finance-lease]).
+
+For a qualifying finance lease, separate principal/acquisition from interest.
+The lessee recognises the acquired asset and allowable depreciation from
+first business use; the interest component is separately income/expense.
+Do not deduct the entire payment and also claim depreciation. The answer
+identifies the CBK-authorised financial-lessor interest-withholding exception;
+apply the statute's conditions rather than treating all leases as exempt
+([finance-lease answer][finance-lease]; [CIT arts. 16 and 31(4)][law]).
+
+TAK **ATK28224/2025** describes operating lease payments as lessor income and
+lessee expense, with depreciation remaining with the lessor. Its quotation
+labels interest art. 31(2) as rent; apply the actual **rent art. 31(3), 9%**
+where withholding is required, rather than copying that citation error.
+The answer explicitly limits itself to the submitted taxpayer facts; it is
+administrative evidence of treatment, not a general binding ruling for an
+unrelated arrangement ([operating-lease answer][operating-lease];
+[actual art. 31(3)][law]).
 
 ## Deadlines and filing
 
@@ -271,11 +341,17 @@ expected:
 |---|---|---|
 | Law 06/L-105 arts. 3–13, 15–29, 35–41; cross-border arts. 30–33 | [Official TAK PDF][law] | 2026-10-24 |
 | Current Gazette law record, repeal relationship; no later amendment listed there | [Gazette record][record] | 2026-10-24 |
+| Original Albanian art. 35(4), last-period wording versus English quarter | [Gazette original][albanian] | 2026-10-25 |
 | Current rates and filing timetable, read in ordinary browser | [TAK overview][overview] | 2026-10-24 |
 | Current corporate declaration layout and credit reconciliation | [TAK CD layout][cd] | 2026-10-24 |
 | Tax-procedure Law 08/L-257 arts. 24, 99–103 | [Official TAK PDF][procedure] | 2026-10-24 |
+| Public Ruling 02/2019, contractor/investor methods and retention, pp. 8, 13 and 20 | [TAK ruling][construction] | 2026-10-25 |
+| Current-law construction application, ATK27334/2023 | [TAK FAQ][construction-faq] | 2026-10-25 |
+| Retention treatment, ATK27829/2024 | [TAK FAQ][retention-faq] | 2026-10-25 |
+| Finance lease, ATK26322/2021, art. 6(2.2) interpretation | [TAK FAQ][finance-lease] | 2026-10-25 |
+| Operating lease, ATK28224/2025, with citation error disclosed above | [TAK FAQ][operating-lease] | 2026-10-25 |
 
-Not yet confirmed: construction, leasing and gross-interest reporting instructions; continuing application of the older implementing instructions; prescribed post-education employment period; administrative application of art. 35(4)'s quarter wording; numeric 2026 tax-interest rate; case-specific treaty and departure/cessation treatment. Independent whole-pack review remains outstanding. IT-CORP remains partial for the stated implementing-rule gaps.
+Not yet confirmed: current ministerial instrument/legal continuity for special reporting, beyond the cited positive TAK construction/lease applications; gross-interest recognition/reporting; prescribed post-education employment period; numeric 2026 tax-interest rate; case-specific treaty and departure/cessation treatment. Independent AI whole-pack review on 25 October 2026 accepted the corrected material for partial source-cited draft publication; this is not professional attestation. IT-CORP remains partial for the stated implementing-rule gaps.
 
 [law]: https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf
 [gazette]: https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=20988
@@ -283,3 +359,11 @@ Not yet confirmed: construction, leasing and gross-interest reporting instructio
 [overview]: https://www.atk-ks.org/en/portfolio/informata-te-pergjithshme-per-tatimet-ne-kosove/
 [procedure]: https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf
 [cd]: https://crmm.atk-ks.org/en/Public/CalculatorDetail?id=9
+
+[construction]: https://www.atk-ks.org/wp-content/uploads/2019/02/VendimiShpjeguesPublik.pdf
+[construction-faq]: https://www.atk-ks.org/en/pyetje/?wpfaqpage=120
+[retention-faq]: https://www.atk-ks.org/en/pyetje/?wpfaqpage=151
+[finance-lease]: https://www.atk-ks.org/pyetje-te-shpeshta/?dy=20&mcat=all&month=04&time=day&wpfaqpage=49&yr=2021
+[operating-lease]: https://www.atk-ks.org/en/pyetje/?wpfaqpage=183
+
+[albanian]: https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1

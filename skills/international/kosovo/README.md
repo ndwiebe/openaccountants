@@ -1,61 +1,95 @@
 ---
 jurisdiction: XK
-version: 0.4
-last_updated: 2026-10-24
+version: 0.5
+last_updated: 2026-10-25
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: kosovo-social-contributions
   PR: kosovo-payroll
 partial:
-  IT-IND: "Rewritten to current PIT law and 2026 bands; donation-field filing conflict and case-specific exit/cessation treatment remain open. Whole-pack independent review is pending."
-  IT-CORP: "Current law, forms, penalties and ordinary assets/distributions expanded; construction, leasing, gross-interest and other specified implementing-rule gaps remain. Whole-pack independent review is pending."
-  VAT: "Existing Guide needs current-year source and full scope review."
-  SC: "Pension calculations rewritten for 2026; new health-law phased rates, collection commencement and filing instruments remain unconfirmed. Whole-pack independent review is pending."
-  PR: "Wage tax and pension calculations rewritten for 2026; final health-inclusive payroll awaits the new health-law implementation instruments. Whole-pack independent review is pending."
-  TP: "New TP draft; full instruction, current procedures, enforcement and independent review remain open."
-  XB: "New PE, withholding and foreign-tax-credit draft; treaty, amendment, procedures, attribution and independent review remain open."
+  IT-IND: "Current bands and ordinary computation rewritten; donation-field filing conflict and specific exit/cessation implementation remain open."
+  IT-CORP: "Current construction/lease interpretations added; general implementing authority, gross-interest reporting, education-retention duration remain open."
+  VAT: "Current ordinary VAT computation/procedures rewritten; numeric 2026 tax late-interest rate remains unconfirmed."
+  SC: "Pension calculations current; operative health-law phased rate, collection start and filing instruments remain unconfirmed."
+  PR: "Wage PIT and pensions current; complete health-inclusive payroll awaits operative health-law implementation evidence."
+  TP: "Full instruction and notification/documentation procedures added; loan-balance threshold measurement remains open."
+  XB: "Current withholding, credit, WR/MAP and disposal framework added; service-PE interpretation and specified attribution/apportionment/closure implementation remain open."
 ---
 
 # Kosovo tax pack
 
-Accountable owner: Michael, [issue #430](https://github.com/openaccountants/openaccountants/issues/430). ChatGPT continues the existing country branch under the allocation recorded in [coordination PR #773](https://github.com/openaccountants/openaccountants/pull/773). The existing slugs and historical source research are preserved. Only the rows explicitly marked rewritten below have completed the current writer's source pass; no whole-pack independent review is claimed.
+Tax year **2026**, updated **25 October 2026**. Eight Guides are source-cited
+drafts, **tier 2**, with no professional attestations. The seven tax domains
+have nine sections and two executable examples each; the supporting tax-planning
+Guide has two additional comparisons. A current source pass and arithmetic
+checks do not close the identified legal/implementation gaps. Independent AI
+whole-pack review on **25 October 2026** accepted the corrected material for
+publication as a **partial source-cited draft**. It is not accountant review
+and does not make the country complete.
 
-| Topic | Guide | Status |
+Accountable owner: Michael, [issue #430](https://github.com/openaccountants/openaccountants/issues/430).
+Work continues on the existing country [PR #784](https://github.com/openaccountants/openaccountants/pull/784)
+under the allocation in [coordination PR #773](https://github.com/openaccountants/openaccountants/pull/773).
+Existing slugs and historical research are preserved.
+
+| Domain | Guide | Current draft scope and remaining limitation |
 |---|---|---|
-| Individual income tax | [Income tax](kosovo-income-tax.md) | 2026 source/computation rewrite; filing conflict, exit/cessation and independent review open |
-| Corporate income tax | [Corporate tax](xk-corporate-income-tax.md) | 2026 ordinary-company scope expanded; specified implementing rules and independent review open |
-| VAT | [VAT](kosovo-vat.md) | Existing source-cited draft; review outstanding |
-| Payroll | [Payroll](kosovo-payroll.md) | 2026 PIT/pension rewrite; health implementation and independent review open |
-| Social contributions | [Contributions](kosovo-social-contributions.md) | 2026 pension rewrite; health implementation and independent review open |
-| Transfer pricing | [Transfer pricing](xk-transfer-pricing.md) | Scoped draft; instruction and review gaps open |
-| Cross-border | [Cross-border business income](xk-cross-border.md) | Scoped draft; treaty, amendment and review gaps open |
+| IT-IND | [Income tax](kosovo-income-tax.md) | Actual progressive income, gross method, deductions/assets/losses and settlement; filing conflict and specific cessation implementation open |
+| IT-CORP | [Corporate income tax](xk-corporate-income-tax.md) | Company reconciliation, assets/distributions, losses and positive current construction/lease interpretations; specified implementing questions open |
+| VAT | [VAT](kosovo-vat.md) | Current law/amendments/instructions, registration, input recovery/proportion, capital adjustments, refunds and cross-border supplies; numeric current late-interest rate unconfirmed |
+| SC | [Social contributions](kosovo-social-contributions.md) | Current pension coverage, employee/employer/owner bases and caps; operative health implementation open |
+| PR | [Payroll](kosovo-payroll.md) | Current wage PIT after employee pension, benefits and reporting; full health-inclusive calculation open |
+| TP | [Transfer pricing](xk-transfer-pricing.md) | Full instruction, methods, low-value services, notification/documentation and current filing route; loan threshold measurement and review open |
+| XB | [Cross-border business income](xk-cross-border.md) | Domestic PE/WHT, net profit/credit framework, current WR/MAP and actual disposals; stated ordinary implementation gaps open |
 
-The existing tax-optimization Guide is supplementary and does not substitute for missing tax domains. All seven domains remain partial pending scope, source and review acceptance. Formation, property and other applicable compliance topics require a separate audit; no not-applicable conclusions are asserted. Publication, ingestion and professional attestation remain separate requirements.
+[Tax planning](kosovo-tax-optimization.md) now separates company and sole-trader
+ceilings and methods. It cannot establish an all-in entity comparison while
+health implementation and the linked ordinary gaps remain unresolved.
 
-## Current source corrections
+## Source conflicts and open decisions
 
-The individual-income-tax draft now distinguishes the individual progressive
-bands from corporate tax and the small-business gross method, with sourced
-deductions, assets, losses and annual reconciliation. The publicly accessible
-TAK PD24 calculator's donation label conflicts with PIT art. 28; the Guide
-applies the statutory figure and records the unresolved filing treatment.
+- PIT uses progressive individual bands, not the company's flat rate. The
+  current PD24 donation-field label conflicts with PIT art. 28. The Guide
+  follows the statute and records the filing-treatment question.
+- Pension top-ups are additional percentage points, not a fictional total
+  allowance. Owner quarterly caps/floors and both minimum-wage periods are
+  sourced. Law 10/L-028 repeals the prior health-insurance law and derived
+  bylaws. Its standard contribution rule must be read with phased rates;
+  without the operative collection instruments, neither zero nor the full
+  standard charge is asserted as the payable 2026 amount.
+- The TP instruction and current notice say notification **exceeds**
+  EUR 300,000; one FAQ says reaches or exceeds. The Guide applies the binding
+  instruction and records the conflict. Notification and documentation are
+  separate duties.
+- The Albanian CIT service-PE paragraph contains the same 90-day and
+  individual-presence proviso requiring clarification. The English text is
+  not silently rewritten. Current WR country reporting removes separate
+  treaty forms on its conditions; treaty entitlement still needs evidence.
+- The corporate Guide uses positive current TAK construction/lease answers
+  without declaring universal survival of old implementing instructions.
+  The current numeric tax late-interest rate remains unconfirmed.
 
-The payroll and contribution drafts now deduct the employee's allowable pension
-before wage PIT, distinguish the additional voluntary pension limit from the
-total limit, and apply the owner's statutory quarterly cap and minimum. The
-2026 minimum-wage decision supplies both half-year periods and hourly amounts.
-Each rewritten tax Guide has the nine required sections, exactly two executable
-examples and dated article-level primary sources. These checks do not validate
-the retained VAT, transfer-pricing or cross-border drafts. The corporate draft
-has separately gained current procedure penalties, forms, asset and distribution
-rules; its stated implementing-rule gaps remain.
+Special VAT electronic-services/tourist schemes, treaty-rate matrices,
+individual treaty outcomes, APA/CbCR-specific arrangements and transaction-
+specific incentives/reorganisations require their own evidence and are not
+claimed complete. These named specialist questions are distinct from the
+ordinary gaps recorded above. Formation and accounting packs require a
+separate audit; no not-applicable conclusion is asserted for them.
 
-Law 10/L-028, published in the [Official Gazette on 15 May 2026](https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1),
-repeals the previous health-insurance law under art. 36. Its art. 22 standard
-contributions must be read with the phased-rate provisions in art. 35(2).
-Until the operative 2026 phase and collection instruments are confirmed, the
-rewritten Guides show PIT/pension components rather than claiming a complete
-health-inclusive payslip or a zero health charge. The numeric current tax
-late-interest rate also remains unconfirmed; the Guides cite the rate-setting
-rule in tax-procedure Law 08/L-257 art. 24.
+## Official sources
+
+Each Guide gives dated, article-level sources and its remaining unconfirmed
+items. The main anchors are:
+
+| Source | Official URL | Read on |
+|---|---|---|
+| PIT 05/L-028, with 08/L-142 art. 5 band amendment | https://www.atk-ks.org/wp-content/uploads/2017/07/LAW_NO._05_L_-028__ON_PERSONAL_INCOME_TAX.pdf ; https://gzk.rks-gov.net/ActDetail.aspx?ActID=96360 | 2026-10-25 |
+| CIT 06/L-105 and original Albanian art. 30 | https://www.atk-ks.org/wp-content/uploads/2019/09/LAW_NO.06_L-105.pdf ; https://gzk.rks-gov.net/ActDetail.aspx?ActID=20988&langid=1 | 2026-10-25 |
+| VAT 05/L-037 and 08/L-276 amendment | https://gzk.rks-gov.net/ActDetail.aspx?ActID=11015 ; https://gzk.rks-gov.net/ActDetail.aspx?ActID=100032 | 2026-10-24 |
+| Pension Law 04/L-101, read with amendments listed in SC | https://bqk-kos.org/wp-content/uploads/2024/11/Law-on-Pension-Funds.pdf?lang=en | 2026-10-24 |
+| Health Law 10/L-028, arts. 22, 35–37 | https://gzk.rks-gov.net/ActDetail.aspx?ActID=119938&langid=1 | 2026-10-24 |
+| TP AI 02/2017 and current notification | https://gzk.rks-gov.net/ActDetail.aspx?ActID=14937 ; https://www.atk-ks.org/en/notice-to-taxpayers-report-controlled-transactions-4/ | 2026-10-24 |
+| Procedure 08/L-257, current penalties and interest-setting rule | https://www.atk-ks.org/wp-content/uploads/2024/01/LAW_NO._08_L-257_ON_THE_ADMINISTRATION_OF_TAX_PROCEDURES.pdf | 2026-10-24 |
+| Current WR treaty-form simplification | https://www.atk-ks.org/en/notice-to-taxpayers-the-wr-form-for-withholding-taxes-has-been-modified/ | 2026-10-25 |
+| Construction ruling 02/2019, applied by later TAK answers | https://www.atk-ks.org/wp-content/uploads/2019/02/VendimiShpjeguesPublik.pdf | 2026-10-25 |
