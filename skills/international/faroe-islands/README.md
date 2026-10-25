@@ -7,68 +7,45 @@ not_applicable: {}
 covered_by:
   SC: fo-payroll-contributions
 partial:
-  IT-IND: "Detailed deductions, capital income, tax caps and special worker categories remain open."
-  IT-CORP: "Ordinary/capital classification, loss computation, distributions and asset schedules expanded; historical-index conflicts, specified recapture cases, group implementation, intangibles and employee benefits remain open. Whole-pack review pending."
-  VAT: "Current statutory exemptions, inputs, invoices, trade and adjustment rules rewritten; Q2 payment-date conflict and specified foreign-service/representative implementation remain open. Whole-pack review pending."
-  SC: "Age, payer, contribution bases and nonresident exceptions need complete statutory review."
-  PR: "Benefits, collection dates, reconciliation and special employment categories remain incomplete."
-  TP: "Thin capitalisation, statutory sanctions and amendment rules expanded; current return fields, retention, complex debt cases, CbCR exchange/operational filing and treaty remedies remain open. Whole-pack review pending."
-  XB: "Domestic PE screening, royalty/dividend procedures and individual securities exit/entry added; actual treaties, PE attribution, ordinary foreign credits, company migration and complete exit-deferral adjustments remain open. Whole-pack review pending."
+  IT-IND: "Part-year and church-base implementation, unusual ceiling/credit ordering, complete benefit valuation, special-worker and specified loan/travel procedures remain open."
+  IT-CORP: "Historical-index conflicts, specified building recapture cases, group implementation, intangibles and employee benefits remain open."
+  VAT: "Q2 statutory payment-date conflict and specified foreign-service/representative implementation remain open."
+  SC: "Earlier 2026 pension implementing periods, guarantee-fund and specified invoice procedures, zero-income pension-tax annex and unusual contribution-base cases remain open."
+  PR: "Complete benefit valuation, current holiday transmission/reconciliation and full special-worker procedures remain open."
+  TP: "Current return fields, retention, complex debt cases, CbCR exchange/operational filing and treaty remedies remain open."
+  XB: "Actual treaties, PE attribution, ordinary foreign credits, company migration and complete exit-deferral adjustments remain open."
 ---
 
 # Faroe Islands: tax pack
 
-Owner: Michael, per [existing issue #393](https://github.com/openaccountants/openaccountants/issues/393). Eight source-cited drafts are present locally. None establishes comprehensive domain coverage or professional attestation. The partial flags deliberately keep all seven tax domains in the report's missing-work queue.
+The Faroes use DKK, national and municipal income tax, capital-income tax and MVG administered by TAKS. Owner: Michael, per [issue #393](https://github.com/openaccountants/openaccountants/issues/393). Eight 2026 source-cited drafts are present. **This remains a partial pack with zero professional attestations.** The seven partial flags record ordinary implementation gaps; no not-applicable conclusion is asserted.
 
 | Topic | Guide | Status |
 |---|---|---|
 | Individual income tax | [Personal tax](fo-individual-income-tax.md) | Source-cited draft |
 | Corporate income tax | [Company tax](fo-corporate-income-tax.md) | Source-cited draft |
-| VAT | [MVG](fo-vat.md) | 2026 statutory/adjustment rewrite; payment-date and specified implementation gaps remain |
+| VAT | [MVG](fo-vat.md) | Source-cited draft |
 | Payroll and social contributions | [Payroll](fo-payroll-contributions.md) | Source-cited draft |
 | Transfer pricing | [Controlled transactions](fo-transfer-pricing.md) | Source-cited draft |
 | Country-by-country reporting | [CbCR](fo-country-by-country-reporting.md) | Source-cited draft |
-| Cross-border | [Payments, PE screening and securities migration](fo-cross-border-payments.md) | Statutory rewrite; treaty, attribution and specified migration gaps remain |
+| Cross-border | [Payments, PE and securities migration](fo-cross-border-payments.md) | Source-cited draft |
 | Formation/reporting | [Company registration](fo-company-registration-reporting.md) | Source-cited draft |
 
-## Current local source pass
+## Current source pass and review
 
-The VAT Guide now separates exempt activities from no-output supplies with
-input recovery, applies current proportional and capital-adjustment rules,
-and covers invoices, imports, specified foreign services and business transfers.
-It records the 16 May–31 July 2026 temporary fuel clause. The statute's Q2
-payment wording and TAKS's later guidance date differ; no bridging authority
-is asserted. Two new executable examples pass. This is a writer's local
-source pass, not a whole-country independent review or a completed VAT domain.
-The corporate Guide now separates ordinary interest/business investment
-activity from the capital-income calculation, applies the one-way loss
-relief and exempt-dividend loss restriction, and adds distributions,
-mixed-use/ship depreciation, asset transitions and current building indices.
-The cross-border Guide adds domestic PE screening, royalty/dividend remittance,
-the 1 May dividend-refund practice and individual securities exit/entry rules.
-Exactly two new executable examples pass in each of VAT, corporate and cross-border tax.
-The TP Guide now includes the statutory 4:1 debt/equity test, guaranteed debt,
-market-value equity, sanctions and amendment rules. CbCR's separate statute and
-report definitions have been re-read; actual bilateral exchange and template
-transmission remain unverified. Both Guides now follow the nine-section method.
-Historical index conflicts and specified building recapture cases remain
-unresolved. Payroll still has no executable examples.
-The remaining whole-country rewrite must follow the canonical two-example/
-nine-section method before review and a single country push.
+The seven tax Guides follow the nine-section method with exactly two executable examples each. They now distinguish national/municipal/personal capital tax and credits; ordinary/capital corporate bases and losses; MVG exemptions, input recovery and capital adjustments; separate worker/employer contribution bases and limits; statutory thin capitalisation and CbCR reporting; and cross-border payments, domestic PE screening and individual securities migration.
 
-## Review and remaining work
+The payroll Guide identifies February, July, August and October 2026 changes and distinguishes current statutory holiday administration from the older linked fund regulation. Formation/reporting adds capital and ownership duties, audit size tests, retention and event filings. It applies the new Annual Accounts Act to financial years beginning from 1 January 2026 and keeps earlier-period accounts under the prior framework.
 
-The new [transfer-pricing review record](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md) and [corporate review record](../../../docs/research/2026-10-23-faroe-corporate-sources.md) identify reviewed hashes and later writer-checked additions. The [CbCR review record](../../../docs/research/2026-10-23-faroe-cbcr-sources.md) covers the separate reporting Guide. These are independent source/editorial reviews, not licensed professional attestations. Existing Guides retain their own scope limits; this register is not a fresh legal review of them.
+Whole-pack independent source review is pending. Historical [TP](../../../docs/research/2026-10-23-faroe-transfer-pricing-sources.md), [corporate](../../../docs/research/2026-10-23-faroe-corporate-sources.md) and [CbCR](../../../docs/research/2026-10-23-faroe-cbcr-sources.md) review records remain unchanged and do not certify these later revisions. All Guides remain tier 2; protected existing attribution is retained. AI review is distinct from professional attestation.
 
-Formation still needs capital, beneficial-ownership, audit, retention and event-filing detail. Property, succession and other applicable special regimes need a separate applicability and evidence audit. No not-applicable conclusions are asserted. Publication, ingestion and exported-content checks remain outstanding for local additions.
+Formation still has current form/fee, detailed UBO, first-year/holding audit and transitional implementation gaps. Property, succession and other special regimes need a separate applicability/evidence audit. Treaty-rate matrices, special VAT schemes, regulated entities, IFRS and insolvency execution are named outside this ordinary scope. Publication does not close the country issue or prove platform ingestion/export.
 
 ## Official sources
 
-- [Current Tax Act](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt), selected provisions read 23 October 2026.
-- [TAKS corporate guidance](https://www.taks.fo/fo/vinna/skattur/partafelagsskattur), read 23 October 2026.
-- Other source links, dates and exceptions are retained in each Guide. A current source link does not certify every topic in the pack.
+Selected provisions read **25 October 2026**, with precise scope, source dates and unresolved questions in each Guide:
 
-Current VAT source additions, read **25 October 2026**:
-- [Consolidated VAT Act, including the 2026 amendment](https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24).
-- [Regulation 35/2000, proportional recovery and capital adjustment](https://logir.fo/Kunngerd/35-fra-20-03-2000-um-lutfalsligan-fradrattarraett-fyri-meirvirdisgjald-og-um-javnan-av-inngangandi-avgjaldi).
-- [Act 36/2026, temporary fuel clause](https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin).
+- [Current Tax Act](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) and [Assessment Act](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170).
+- [VAT Act](https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24), [adjustment regulation](https://logir.fo/Kunngerd/35-fra-20-03-2000-um-lutfalsligan-fradrattarraett-fyri-meirvirdisgjald-og-um-javnan-av-inngangandi-avgjaldi) and [2026 fuel amendment](https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin).
+- [Pension Act](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) and the separate contribution statutes linked in payroll.
+- [Companies Act](https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog), [Annual Accounts Act 206/2025](https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin) and [Bookkeeping Act](https://logir.fo/Logtingslog/23-fra-20-03-2018-um-bokhald).
