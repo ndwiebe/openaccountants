@@ -25,7 +25,7 @@ There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `ti
 | Packs with a README declaring applicability | 29 |
 | Skills with a named reviewer (`tier: 1`) | 33 |
 
-These are inventory counts, not comprehensive-coverage counts. The 33 tax-domain maps only show that the report found a skill for each applicable domain and no domain marked `partial`; the report does not verify sources, examples, independent pack review, or named-accountant attestation. It does not yet calculate how many packs pass all three goal tests.
+These are inventory counts, not comprehensive-coverage counts. The 33 tax-domain maps only show that the report found a skill for each applicable domain and no domain marked `partial`; the report does not verify sources, examples, independent pack review, or sign-off by a named accountant. It does not yet calculate how many packs pass all three goal tests.
 
 The work is to finish each jurisdiction pack, verify it, and get it reviewed. A skill's presence, a source packet, or a row with no missing domain is not comprehensive coverage.
 
@@ -49,7 +49,7 @@ GitHub issues are the work board and the repository is the content record. Do no
 
 Finish all applicable domains for one country locally, source-check every material claim, make sure every Guide has two recomputing worked examples, and run the relevant repository checks. Then get one independent review of the full pack and fix its findings. Publish one country batch, not one PR per Guide. Reuse the active consolidated PR when OWNERS.md assigns the workstream there. After source checks and the independent review are documented, queue the PR for GitHub's native auto-merge. GitHub must require the configured CI checks and reviewer approval before merging. If those protections are not configured, leave the PR pending a maintainer; never bypass the gates.
 
-Accountant attestation is the final coverage gate. A merged source-cited batch can improve the public library, but it does not complete the country issue or count as comprehensive coverage until the full applicable pack is reviewed by a named accountant and the pack passes the other two goal tests. Use `Closes #N` only when the PR completes those gates; otherwise use `Refs #N` and leave the issue open.
+Sign-off by a named accountant is the final coverage gate. A merged source-cited batch can improve the public library, but it does not complete the country issue or count as comprehensive coverage until the full applicable pack is reviewed by a named accountant and the pack passes the other two goal tests. Use `Closes #N` only when the PR completes those gates; otherwise use `Refs #N` and leave the issue open.
 
 Take an `owner:open` issue only after checking that no writer has an active claim. Record `taking` on the issue before drafting. Status comes from the GitHub issue and merged repository state, not memory or a file count.
 
