@@ -529,7 +529,7 @@ expected:
 
 **Source discrepancies resolved by statute.** Hacienda's PDF prints Madrid's EUR 21,894.72 band width with a malformed decimal; Madrid art. 1 gives the correct amount. Its Canarias first cumulative quota is EUR 1,237.30, while current art. 18 bis gives **EUR 1,237.32**. The statutory amounts are used here. La Rioja art. 31 bis also preserves the ordinary assistance amount while increasing only the specified disabled-descendant minimum. The 2027 Valencian scale printed alongside the 2026 table is not used for 2026.
 
-Not yet confirmed in this revision: a complete 2026 regional-credit computation for each community; foral computations; full Ceuta/Melilla territorial relief; módulos activity computations and all applicable 2026 limit/transition questions; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
+Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; foral computations; full Ceuta/Melilla territorial relief; módulos activity computations and all applicable 2026 limit/transition questions; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 
