@@ -148,9 +148,35 @@ Build assessable remuneration under [LGSS art. 147](https://www.boe.es/buscar/ac
 
 Maintain separate **CC** and **AT/EP** bases. Overtime is excluded from CC but included for occupational protection; its additional contribution is calculated separately without reducing the AT/EP base. Apply the group minimum and ceiling to CC, and the occupational floor/ceiling to AT/EP. Compute CC/MEI on CC; unemployment/FOGASA/training and the employer's AT/EP tariff on AT/EP. Deduct only the employee shares from pay; the employer pays both shares to TGSS ([LGSS art. 147.2.e](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a147); [order arts. 1–5/16/33](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296)).
 
-Obtain actual **CNAE-2025 and occupation** for the tariff in [LGSS DA 61](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37). Table II's office rate of 1.50% (IT 0.80%, IMS 0.70%) requires exclusive office work in office premises without exposure to the enterprise's activity risks. A job title alone is insufficient. Do not substitute one assumed office rate for every business. Part-time workers, multiple employment, sickness and other suspensions need the corresponding special base rules in the order before finalising payroll.
+Obtain actual **CNAE-2025 and occupation** for the tariff in [LGSS DA 61](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37). Table II's office rate of 1.50% (IT 0.80%, IMS 0.70%) requires exclusive office work in office premises without exposure to the enterprise's activity risks. A job title alone is insufficient. Do not substitute one assumed office rate for every business. Use the part-time, multiple-employment and suspension base methods below where applicable.
 
 For solidarity, use assessable remuneration under [LGSS art. 19 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a1-4), rather than cash paid. For a full monthly period, calculate the three slices as `s1 = min(max(R − 5,101.20, 0), 510.12)`, `s2 = min(max(R − 5,611.32, 0), 2,040.48)`, `s3 = max(R − 7,651.80, 0)`. Multiply each by the employer/employee rates above. Daily workers use maximum daily base × contribution days; monthly partial periods use the proportional monthly maximum ([order art. 17.2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-9)). Solidarity is additional to capped ordinary contributions and does not apply to RETA.
+
+### Part-time, multiple jobs and suspension periods
+
+For ordinary part-time work, [order art. 38](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-10) uses remuneration for ordinary **and complementary** hours, plus the attributable weekly-rest/public-holiday, extra-pay and other annual-pay portions. Build CC and AT/EP separately; do not multiply the full-time monthly minimum by an assumed percentage without testing the statutory hourly floor.
+
+| 2026 part-time group | Minimum CC base per actual hour | Official source |
+|---|---:|---|
+| 1 | 11.98 | [Order art. 39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-11) |
+| 2 | 9.94 | [Art. 39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-11) |
+| 3 | 8.65 | [Art. 39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-11) |
+| 4–11 | 8.58 | [Art. 39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-11) |
+| AT/EP floor, every group | 8.58 | [Art. 38.3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-10) |
+
+With actual hours H, `CC_base = min(max(assessable_CC_pay, H ×group_hourly_floor), applicable_general_maximum)` and `AT_base = min(max(assessable_AT_pay, H ×8.58), applicable_maximum)`. Force-majeure overtime enters AT/EP and its separate additional contribution, not CC. Apply each employer/employee component to its proper base and test solidarity separately. The same lower unemployment-contract tests apply; part-time status does not by itself require the higher fixed-term rate.
+
+For **multiple employment**, [arts. 10/41](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-2) distribute the overall maximum proportionately across actual employers' pay. The full-time rule also distributes the appropriate minimum (use the highest applicable group minimum for the allocation where categories differ). Use the TGSS allocation and actual concurrent employment evidence; do not give each employer an independent full ceiling when combined pay exceeds it. This is distinct from employment-plus-RETA pluriactividad.
+
+For **full-time IT/risk/care suspensions**, contribution obligations continue. [Art. 6.2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a6) uses the preceding month's CC base for IT/pregnancy or lactation risk/co-responsible infant care, and the **month before the preceding month** for birth/childcare leave. For monthly remuneration with the relevant whole reference month, divide the reference base by 30; for daily pay or an incomplete reference month, divide by its contribution days. Multiply the daily result by the applicable suspension days (30 for a full monthly period), using the same-month starter rules where necessary and the current group minimum unless a legal exception applies. Occupational contributions continue at the actual occupation tariff; overtime uses the article's prior-year average. Partial-time birth/childcare combines the benefit base in proportion to leave with actual remunerated working time under art. 6.6. A missing salary payment does not make the contribution base zero.
+
+For **part-time IT/risk/birth/care suspensions**, [art. 40](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a4-2) uses the corresponding daily regulatory benefit base for every calendar suspension day, including the prescribed hypothetical base if no IT/birth subsidy entitlement arose. For ordinary part-time IT, [LGSS art. 248.1.c](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a248) divides the relevant partial-time bases since the last registration, limited to the specified three months before the month preceding the event, by their calendar days. Birth/childcare uses art. 248.1.b's twelve-month reference before the preceding month, sum/365, or the shorter-record/start exceptions. Do not divide by worked hours or apply only working days to the suspended-period contribution.
+
+If the worker remains registered **without remuneration** but the contribution obligation remains, [art. 7](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a7) uses the group minimum for CC and the occupational minimum, proportionate to those days, with its stated public-service exceptions.
+
+For **ERTE/reduced hours/suspension**, [art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a9) uses different worker and employer reference periods. The worker's ordinary unemployment-protected base uses the last six months' contribution average; RED uses the specified 180-day occupational-base average (or shorter proven period). The employer's CC/AT bases use the six calendar months before the month preceding each continuous situation, with registration-day weighting and the specific recent-starter rules; apply the unworked-time proportion for reduced hours. Preserve the continuous-period and reference-base schedule, including prior non-working/suspension contribution periods. Do not reduce the entire employer charge by the salary-reduction percentage or assume an exemption without its award/conditions.
+
+Finally, [art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2-10) adds **33.62** payable by the employer when a fixed-term contract **shorter than thirty days** ends in 2026. Test the listed agricultural/household/coal/artist, substitution and training exceptions; a short substitution contract is not charged merely because it is fixed-term. Keep this employer-only amount out of the worker's deductions.
 
 ### Benefit and bank-record boundaries
 
@@ -231,15 +257,17 @@ expected:
   contribution: 378
 ```
 
-### 2. Employer: capped ordinary bases and two solidarity slices
+### 2. Employer: capped worker, solidarity and a part-time control
 
-An ordinary monthly group-1 employee has **6,000 of assessable remuneration for October 2026**, already including extra-pay proration, no overtime, an indefinite contract and no contribution relief. The verified work facts meet table II(a)'s exclusive-office conditions, giving the statutory 1.50% AT/EP tariff. Both ordinary bases are capped at 5,101.20. Solidarity uses 510.12 in the first slice and 388.68 in the second. On the separately rounded component working paper, employer contributions are **1,648.98**, employee deductions **333.37**; employer cost is **7,648.98** before other costs. Cash after employee social contributions is 5,666.63 **before IRPF withholding**, which must be computed separately. Reconcile component rounding with the final TGSS settlement ([order arts. 3/4/16/17/33](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296); [LGSS DA 61 table II(a)](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37)).
+An ordinary monthly group-1 employee has **6,000 of assessable remuneration for October 2026**, already including extra-pay proration, no overtime, an indefinite contract and no contribution relief. The verified work facts meet table II(a)'s exclusive-office conditions, giving the statutory 1.50% AT/EP tariff. Both ordinary bases are capped at 5,101.20. Solidarity uses 510.12 in the first slice and 388.68 in the second. On the separately rounded component working paper, employer contributions are **1,648.98**, employee deductions **333.37**; employer cost is **7,648.98** before other costs. Cash after employee social contributions is 5,666.63 **before IRPF withholding**, which must be computed separately. A second worker in the same payroll provides a part-time floor control: group 1, 80 actual hours and 900 assessable remuneration including proration, no overtime. CC is floored at 80 ×11.98 =958.40, while AT remains 900 because its floor is 686.40. Reconcile component rounding with the final TGSS settlement ([order arts. 3/4/16/17/33/38/39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296); [LGSS DA 61 table II(a)](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37)).
 
 ```oa-check
 name: October 2026 payroll cap and employer-employee solidarity
 inputs:
   remuneration: 6000
   cap: 5101.20
+  parttime_hours: 80
+  parttime_pay: 900
 steps:
   base: min(remuneration, cap)
   slice_one: min(max(remuneration - cap, 0), 510.12)
@@ -261,6 +289,8 @@ steps:
   employee_total: employee_cc + employee_unemployment + employee_training + employee_mei + employee_solidarity
   employer_cost: remuneration + employer_total
   before_irpf_cash: remuneration - employee_total
+  parttime_cc_base: min(max(parttime_pay, parttime_hours * 11.98), cap)
+  parttime_at_base: min(max(parttime_pay, parttime_hours * 8.58), cap)
 expected:
   base: 5101.20
   slice_one: 510.12
@@ -272,6 +302,8 @@ expected:
   employee_total: 333.37
   employer_cost: 7648.98
   before_irpf_cash: 5666.63
+  parttime_cc_base: 958.40
+  parttime_at_base: 900
 ```
 
 ## Ask the client first
@@ -297,7 +329,7 @@ expected:
 | [Social Security, temporary incapacity](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365), [AEAT RETA-booking guidance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html) | Ordinary benefit percentage boundaries and year of booking a settled regularisation | 2026-10-26 |
 | [Regulation 883/2004, arts. 11–13](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731) | Applicable-state gateway; read in a normal browser after automated access was blocked | 2026-10-26 |
 
-**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries; current monetary IPREM for a cessation-benefit cap; the monetary interest rate for a particular accrual interval. Detailed special-system/part-time/suspension contribution calculations, non-EU coordination and individual benefit awards are outside this ordinary full-time/RETA computation. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries; current monetary IPREM for a cessation-benefit cap; the monetary interest rate for a particular accrual interval. Detailed special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards are outside this ordinary employee/RETA computation. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 

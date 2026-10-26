@@ -144,7 +144,7 @@ Apply the withholding rate to **taxable cash remuneration** paid, with a separat
 - **Leave and benefits.** [ET art. 38](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a38) requires at least 30 calendar days' paid annual leave. Current [art. 48.4–5](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a48) gives 19 weeks' birth/adoption-related suspension, 32 for the specified sole-parent situation, with its compulsory/deferred portions and special extensions. Obtain the event/award dates and transition rule for a historical event; do not make all weeks employer-paid wages.
 - **Ending employment.** The [ET art. 49.2](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a49) settlement includes outstanding pay, accrued extra pay and unused holiday as applicable. Unused holiday paid on termination has the complementary contribution treatment in [LGSS art. 147.1](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a147). Objective termination and unfair-dismissal formulas are respectively 20 days/year capped at 12 monthly payments and 33 days/year capped at 24, subject to the actual legal route and legacy service transitions ([ET arts. 53/56](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a53)). Establish legal cause, service dates and the applicable daily salary before calculating; do not equate every settlement with exempt severance. [LIRPF art. 7.e](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a7) sets the tax exemption conditions and 180,000 ceiling.
 
-Part-time and suspension contribution computations, detailed severance transitions and individual benefit-award computations remain separate verification items for this pack; the ordinary full-time example does not close them.
+For part-time, concurrent-employment and suspension periods, apply the dedicated contribution-base methods in [es-social-contributions](es-social-contributions.md#the-base), then use those actual employee contributions in the annual rate forecast. Detailed severance transitions, special contribution systems and individual benefit-award computations require their specific verified facts.
 
 ## Deadlines and filing
 
@@ -271,7 +271,7 @@ expected:
 | [1994 payslip order](https://www.boe.es/buscar/act.php?id=BOE-A-1995-912), [RD 1415/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-11836) | Payslip/model/archive and contribution payment period | 2026-10-26 |
 | [Ley 58/2003, LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Tax late-return, collection and underpayment classification | 2026-10-26 |
 
-**Not yet confirmed:** complete foral/non-resident/impatriate payroll routes; detailed part-time, suspension and special-system contribution computations; historical severance/leave transitions for an individual event; the applicable collective agreement and occupational tariff for any actual worker. No live-AEAT-service parity run has yet been performed for these two hypothetical examples. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** complete foral/non-resident/impatriate payroll routes; special-system contribution computations and case-specific suspension exemptions; historical severance/leave transitions for an individual event; the applicable collective agreement and occupational tariff for any actual worker. No live-AEAT-service parity run has yet been performed for these two hypothetical examples. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
