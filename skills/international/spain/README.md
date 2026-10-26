@@ -15,7 +15,7 @@ partial:
   IT-CORP: "common-territory computation is rewritten; foral coverage, the exact 5% headcount boundary and reduced-rate minimum-tax rounding remain to resolve"
   VAT: "both VAT routes now cover 2026 with ordinary business/private allocation, general/special prorrata and annual adjustments; energy CPI outcomes, specific value/correction interactions and territorial computations remain to verify"
   SC: "ordinary RETA day-based income/regularisation and full-time employee contributions are rewritten with 2026 rates and executable examples; the new-2026 reduced-fee amount and the extension income boundary remain unconfirmed; part-time and suspension computations remain"
-  PR: "the full 2026 withholding algorithm, recalculation and contribution reconciliation remain to verify and test"
+  PR: "ordinary common-territory withholding, gross-to-net and pay-rise recalculation are rewritten and tested; Modelo 111, part-time/suspension integration and non-common-territory payroll routes remain to reconcile"
   TP: "the common-territory rewrite awaits whole-pack independent review; the monetary IPREM alternative and foral position remain unconfirmed"
   XB: "current non-resident route does not yet supply a complete migration, exit-charge and permanent-establishment computation"
 ---
