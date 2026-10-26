@@ -14,7 +14,7 @@ partial:
   IT-IND: "state and fifteen common-territory scales, minima and ordinary employee/self-employed computations are rewritten; 2026 Madrid, Cataluña, Andalucía, Aragón, Castilla-La Mancha, Asturias, Illes Balears, Cantabria, Canarias, Castilla y León, Extremadura, La Rioja, Murcia, Galicia and Comunitat Valenciana credit catalogues are drafted; specific credit interactions and foral/territorial computations remain"
   IT-CORP: "common-territory computation is rewritten; foral coverage, the exact 5% headcount boundary and reduced-rate minimum-tax rounding remain to resolve"
   VAT: "both VAT routes now cover 2026 with ordinary business/private allocation, general/special prorrata and annual adjustments; energy CPI outcomes, specific value/correction interactions and territorial computations remain to verify"
-  SC: "employee and self-employed figures need reconciliation to the current 2026 order and executable examples; reduced starting-fee conditions need verification"
+  SC: "ordinary RETA day-based income/regularisation and full-time employee contributions are rewritten with 2026 rates and executable examples; the new-2026 reduced-fee amount and the extension income boundary remain unconfirmed; part-time and suspension computations remain"
   PR: "the full 2026 withholding algorithm, recalculation and contribution reconciliation remain to verify and test"
   TP: "the common-territory rewrite awaits whole-pack independent review; the monetary IPREM alternative and foral position remain unconfirmed"
   XB: "current non-resident route does not yet supply a complete migration, exit-charge and permanent-establishment computation"
