@@ -17,7 +17,7 @@ partial:
   SC: "ordinary RETA day-based income/regularisation and full-time employee contributions are rewritten with 2026 rates and executable examples; the new-2026 reduced-fee amount and the extension income boundary remain unconfirmed; part-time and suspension computations remain"
   PR: "ordinary common-territory withholding, gross-to-net, pay-rise recalculation and Modelo 111 payment/recipient/correction reconciliation are rewritten and tested; part-time/suspension integration and non-common-territory payroll routes remain to reconcile"
   TP: "the common-territory rewrite awaits whole-pack independent review; the monetary IPREM alternative and foral position remain unconfirmed"
-  XB: "current non-resident route does not yet supply a complete migration, exit-charge and permanent-establishment computation"
+  XB: "ordinary non-resident, PE accounting-to-tax, individual share exit and PE transfer routes are rewritten and tested; case-specific treaty/MLI, foral and specialist attribution/relief outcomes remain to verify"
 ---
 
 # Spain: 2026 tax pack
