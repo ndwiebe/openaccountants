@@ -4,7 +4,7 @@ description: Calculates 2026 Spanish quarterly IRPF advances for ordinary common
 version: 2.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -116,6 +116,8 @@ Box 01 aggregates the relevant module net income after applicable adjustments an
 | Forms and prescribed presentation route | Modelo 130/131 through the applicable AEAT electronic or permitted generated-paper route; retain filing/payment evidence | current procedure | [Orden EHA/672/2007 arts. 1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6032); [current 130 instructions](https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html) |
 
 Use the period's actual direct-debit cutoff, which is separate from the return deadline. Filing, payment and any deferral request are separate records. Preserve the justificante/CSV, NRC or other actual payment confirmation and complete earlier-period calculations. VAT Modelo 303 and payer withholding Modelo 111 are different obligations; the same payee/date does not establish the same tax. Credit advances against annual IRPF with the actual withholding and other applicable prepayments ([LIRPF art. 79](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a79)).
+
+**Ceuta 2026 base change.** [LIRPF DA64](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-18) raises simplified direct assessment's combined provisions/hard-to-justify allowance to **10%**, retaining the ordinary 2,000 cap and other conditions, for the specified Ceuta activity entitled to art. 68.4 relief. It also raises the general módulos net-yield reduction to **10%** for qualifying Ceuta activity. These are alternative assessment routes, not two deductions against the same profit. For instalments, apply the changes only to 2026 periods whose filing window begins **more than one month after 3 September 2026**. The ordinary October window began 1 October and fails this test; the first ordinary affected quarterly window is **January2027 for Q4 2026**. Keep this base change separate from the **60% reduction in payment percentages**, and do not extend Ceuta's enhancement to Melilla/La Palma. See [es-income-tax](es-income-tax.md#ceuta-and-melilla-scale-source-and-tax-credit-calculation) for the annual calculation. Source read **2026-10-27**.
 
 ## Penalties and interest
 

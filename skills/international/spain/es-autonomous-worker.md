@@ -4,7 +4,7 @@ description: Compute the 2026 tax, social contributions and cash position of a S
 version: 1.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -106,6 +106,10 @@ Annual IRPF combines the correctly classified net activity amount with all other
 
 Apply actual direct-debit cutoffs separately. Determine Modelo 349, 347 and foreign-asset reports from the underlying transactions and exemptions, not simply from the existence of an autónomo registration. Preserve filing, payment and award evidence.
 
+**Modelo 347.** Under [RGAT arts. 31–33](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a33), an obliged operator normally reports a third party where the relevant calendar-year transactions **exceed 3,005.06**, counting deliveries and purchases separately and including the tax in the prescribed transaction amount. Check SII/reporting exclusions, operations already covered by a coincident specific return, invoice and other statutory exclusions before requiring the form. Exactly 3,005.06 does not exceed the threshold. Cash-scheme operations require the two statutory accrual views and annual information; do not omit one merely because the invoice was unpaid.
+
+**Modelo 720.** The foreign-account, securities/rights/insurance/rents and foreign-property blocks have **separate 50,000 aggregate thresholds**, not 50,000 per asset or one combined allowance. For accounts test both year-end and last-quarter average balances; exceeding either aggregate triggers all reportable accounts. Apply actual ownership/authority/beneficial-owner status, each block's valuation rules and its exemptions, including the specifically conditioned commercial-accounting exemptions. Following a prior report, a block generally requires reporting on an **increase exceeding 20,000** against its last reported reference, with separate cessation/disposal reporting duties even without that increase. The statutory window is **1 January–31 March following the report year**, subject to the applicable calendar. These are information returns, not a wealth-tax allowance or authority to apply retired punitive rules ([RGAT arts. 42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a42bis)). Foreign crypto custody uses the distinct 721 route in the crypto sibling, not automatic insertion into 720.
+
 ## Penalties and interest
 
 Tax and Social Security collection have separate rules. For tax, [LGT art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) voluntary late payable returns without prior request carry **1% plus 1% per complete month** within twelve months; thereafter **15% plus interest after those twelve months**, with the conditional 25% surcharge reduction. [Art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28) executive surcharges are 5%/10%/20% by payment stage. [Arts. 191 and 198](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191) distinguish classified underpayment sanctions of 50–150% from ordinary non-economic late returns, generally 200 with the statutory no-request reduction. Default interest follows the applicable period rate under art. 26; [AEAT records 4.0625% under the continued 2026 budget](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html).
@@ -199,6 +203,8 @@ expected:
 - What family, disability, start-up, regional-credit and foreign-income facts alter final IRPF or the contribution relief?
 
 ## Sources
+
+[RGAT arts. 31–33/42 bis/42 ter/54 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) reread **2026-10-27** for conditional reporting thresholds, exemptions, later-year triggers and windows.
 
 | Official source | Purpose | Read on |
 |---|---|---|

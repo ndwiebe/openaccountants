@@ -4,7 +4,7 @@ description: Use this Guide to compute Spanish common-territory corporate income
 version: 1.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -47,6 +47,7 @@ Unless stated otherwise, these apply to **periods beginning in 2026**. Check the
 | Credit institutions and specified hydrocarbon activity | 30%; the article distinguishes activities outside that special rate | 2026 | [LIS art. 29.6](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
 | Qualifying Ley 49/2002 bodies / qualifying investment vehicles / pension funds | Respectively 10% / 1% / 0%; each has its own eligibility conditions | 2026 | [LIS arts. 29.3–29.5](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
 | Protected cooperatives' cooperative results | Applicable art. 29.1 rates less 3 percentage points, capped at 20%; separate rules govern credit cooperatives and extra-cooperative results | 2026 | [LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
+| Credit cooperatives and rural savings banks | Applicable art. 29.1 rates for cooperative results; **30% for extra-cooperative results** | 2026 | [LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) |
 | General loss-offset percentage | 70% of the positive base before capitalisation reserve and loss relief | 2026 | [LIS art. 26.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a26) |
 | Large-company loss-offset percentages | 50% for preceding-12-month turnover at least EUR 20m but below EUR 60m; 25% from EUR 60m | 2026 | [LIS DA 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#dadecimoquinta) |
 | Minimum ordinary loss capacity | EUR 1m, proportionately reduced for a short period, subject to available positive base and eligible losses | 2026 | [LIS arts. 26.1–26.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a26) |
@@ -103,7 +104,7 @@ Qualifying foreign permanent-establishment positive income follows [art. 22](htt
 
 First establish the positive base and statutory reference amounts before the relevant reductions. Apply capitalisation reserve, then eligible loss offset, then any qualifying levelling-reserve movement. Keep the actual before-reserve reference base for the loss cap; it is not the reduced base after capitalisation (arts. 25–26, 30 and 105).
 
-**Capitalisation reserve, art. 25.** For taxpayers at art. 29.1 or 29.6 rates, compute the qualifying increase in own funds from closing funds excluding the current result minus opening funds excluding the preceding result, then remove the statutory non-qualifying movements, including member contributions, debt capitalisations, specified restructuring/own-share movements, legal reserves, levelling/Canary reserves and the other art. 25.2 exclusions. Generally reduce by **20%** of that increase. The enhanced rates are **23%** where average headcount rises at least **2% without exceeding 5%**, **26.5%** where it is between **5% and 10%**, and **30%** above **10%**. The article overlaps at exactly **5%**; the sources read do not settle which enhanced rate applies there. Do not invent a lower-rate default for that boundary.
+**Capitalisation reserve, art. 25.** For taxpayers at art. 29.1 or 29.6 rates, compute the qualifying increase in own funds from closing funds excluding the current result minus opening funds excluding the preceding result, then remove the statutory non-qualifying movements, including member contributions, debt capitalisations, specified restructuring/own-share movements, legal reserves, levelling/Canary reserves and the other art. 25.2 exclusions. Generally reduce by **20%** of that increase. The enhanced rates are **23%** where average headcount rises at least **2% without exceeding 5%**, **26.5%** where it is between **5% and 10%**, and **30%** above **10%**. The literal article overlaps at exactly **5%**. AEAT’s [2025 corporate manual, for periods beginning from 2025](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/reserva-capitalizacion.html), resolves its administrative table as **23% for ≥2% and <5%, 26.5% for ≥5% and ≤10%, and 30% above 10%**. Retain both the statutory wording and that published administrative interpretation; the manual is not a legislative correction. At an exact 5% claim, record this interpretation and the underlying headcount evidence rather than describing the statute as unambiguous.
 
 Cap the reduction at **20%** of the positive statutory reference base, or **25%** where preceding-12-month net turnover is below **EUR 1m**. Hold the own-funds increase and separately identified unavailable reserve for **three years**, subject to statutory exceptions; hold enhanced headcount for the same period. Unused qualifying reduction carries into periods ending in the following **two years** subject to the cap. A breach triggers tax and interest under arts. 25.4 and 125.3. Source: [LIS art. 25](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a25).
 
@@ -235,6 +236,8 @@ expected:
 
 ## Sources
 
+[LIS art. 29.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a29) and the [AEAT capitalisation-reserve table](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-sociedades-2025/principales-novedades-impuesto-sobre-sociedades-2025/reserva-capitalizacion.html) reread **2026-10-27** for the credit-cooperative rate and the exact 5% administrative interpretation.
+
 | Official source | Provisions and use | Read on |
 |---|---|---|
 | [Ley 27/2014, current consolidated text](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328) | Arts. 5, 7–16, 18–22, 25–33, 35–41, 101–105, 124–128; DA 14–15; DT 44: scope, base, reliefs, rates, filings and exit charge | 2026-10-25 |
@@ -247,7 +250,7 @@ expected:
 | [Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Arts. 26–28, 188, 191, 198: interest, late/enforcement surcharges and penalties | 2026-10-25 |
 | [AEAT interest calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Explicit 2026 continued-budget interest rate; the underlying annual return is for 2025 | 2026-10-25 |
 
-Not yet confirmed: foral corporate computations and allocation; the enhanced capitalisation-reserve rate at exactly 5% headcount growth; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
+Not yet confirmed: foral corporate computations and allocation; a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 

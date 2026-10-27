@@ -4,7 +4,7 @@ description: Use this Guide to compute Spanish common-territory individual capit
 version: 1.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -93,6 +93,12 @@ Before pooling, defer repurchase-blocked losses under art. 33.5 until the corres
 
 Integrate with all other savings income, apply available minima as above, then the combined savings scale and actual credits/payments on account. Compute **incremental gain tax** as annual tax with the relevant taxable item less annual tax without it where other income changes the bands; do not apply the first 6,000 band again to each disposal. Ceuta/Melilla uses the conditional art. 68.4 credit against attributable tax, not a different capital-gain marginal table; the non-resident-in-those-cities exclusions matter for movable-property gains ([art. 68.4](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a68)).
 
+### Urban property acquired in 2012 and non-resident old assets
+
+For an individual resident, [LIRPF DA 37](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#datrigesimaseptima) exempts **50% of the gain** on a qualifying urban property **acquired for consideration from 12 May through 31 December 2012**. Exclude acquisition from or transfer to the spouse, relatives by blood or affinity through the second degree, and the specified art. 42 group-connected entity, applying the statutory family/entity connection test. Do not halve a loss, proceeds or every property bought before 2013. For an eligible main-home reinvestment, apply this exemption **first**, then the proportional reinvestment exemption to the remaining gain under the incorporated conditions.
+
+A non-resident **without a Spanish PE** has the separate [TRLIRNR DA 4](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#dacuarta)50% urban-property gain exemption for the same acquisition window, with the incorporated individual family/entity exclusions and the special entity-related exclusions where the transferor is an entity. Establish acquisition documents, urban classification, parties and connection before applying it. Purchaser withholding remains 3% of agreed consideration, credited against final tax; it does not become 1.5% because half the gain is exempt. [TRLIRNR DT 1](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#dt) preserves the specified old-asset transitions for non-PE individuals. A pre-1994 non-resident acquisition is therefore not automatically outside abatement: use the actual incorporated transition, eligible pre-2006 gain, asset class, residence and cumulative-disposal history. The precise incorporation of later resident400,000-cap amendments into that non-resident transition remains unconfirmed here; do not silently copy resident DT 9 into a different historical cross-reference.
+
 ## Deadlines and filing
 
 Residents include the gain/loss and exemption/election evidence in **Modelo 100 for the accrual year**, using [LIRPF art. 14](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a14) timing and the approved campaign window. Do not invent permanent 1 April/30 June dates for the 2026 return filed in 2027. Maintain lot records, cost/depreciation evidence, deferred/carryforward ledgers and later reinvestment proof.
@@ -176,9 +182,10 @@ expected:
 | [LIRPF, Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Arts. 28/33–38, 45–49, 56/66/68/76, DT 9: classification, basis, exemptions, loss pools, current rate and special old-securities valuation | 2026-10-26 |
 | [RIRPF, RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 40–42, depreciation, main-home definition, reinvestment, annuity and recapture | 2026-10-26 |
 | [TRLIRNR](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527), [IRNR regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532), [210 order](https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707) | Non-resident rate/basis and property-sale withholding/filing gateway | 2026-10-26 |
+| [LIRPF DA37](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#datrigesimaseptima), [TRLIRNR DA 4/DT 1](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#dacuarta) | 2012 urban-property half-gain exemption, excluded related parties, ordering and specific non-resident historical transition | 2026-10-27 |
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Late filing, recapture distinction, interest and penalty classification | 2026-10-26 |
 
-**Not yet confirmed:** current primary judgment/administrative evidence for a bare-ownership/usufruct main-home exemption boundary; exact DT 9 equality-at-cap treatment where decisive; specialised non-cash restructuring, succession-agreement or treaty outcomes without the required fact/source record. Ordinary sale basis, savings-loss integration and current savings tax are supplied. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the precise non-resident DT 1 incorporation of subsequent resident DT 9 amendments and cap for an actual old-asset disposal; current primary judgment/administrative evidence for a bare-ownership/usufruct main-home exemption boundary; exact DT 9 equality-at-cap treatment where decisive; specialised non-cash restructuring, succession-agreement or treaty outcomes without the required fact/source record. Ordinary sale basis, savings-loss integration and current savings tax are supplied. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
