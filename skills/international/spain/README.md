@@ -20,7 +20,7 @@ partial:
 
 # Spain: 2026 tax pack
 
-Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the foral PIT,payroll,VAT,cessation,regional-credit and annuity/progression additions have passed independent delta review. The new foral nonresident Guide has passed a separate fresh source and calculation review,with its stated unresolved surcharge and specialist branches excluded. Further CyL/Andalucía/Murcia intersection additions are under a separate narrow review. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
+Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the foral PIT,payroll,VAT,cessation,regional-credit and annuity/progression additions have passed independent delta review. The new foral nonresident Guide has passed a separate fresh source and calculation review,with its stated unresolved surcharge and specialist branches excluded. Further CyL/Andalucía/Murcia intersection additions passed a separate narrow review;their stated allocation and exact-date reservations remain. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
 
 ## Domains
 
