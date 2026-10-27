@@ -3,7 +3,7 @@ jurisdiction: ES
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: es-income-tax
+  IT-IND: "Ordinary common-territory and four foral methods, pension/progression and business-credit incorporation are supplied. Positive-income regional attributable-tax methods now include mixed savings/general income, reductions and minima. Signed-income/loss allocation, shared wage/thalidomide expenses and the new Balearic thalidomide rate remain unconfirmed, alongside the listed regional intersections, Cantabria denominator/joint combinations, La Rioja third-birthday boundary and lower-base annuity/progression allocation."
   IT-CORP: es-corporate-tax
   VAT: es-vat-return
   SC: es-social-contributions
@@ -20,7 +20,7 @@ partial:
 
 # Spain: 2026 tax pack
 
-Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the foral PIT,payroll,VAT,cessation,regional-credit and annuity/progression additions have passed independent delta review. The new foral nonresident Guide has passed a separate fresh source and calculation review,with its stated unresolved surcharge and specialist branches excluded. Further CyL/Andalucía/Murcia intersection additions passed a separate narrow review;their stated allocation and exact-date reservations remain. The latest [integrated review checkpoint](../../research/spain-2026/investment-ordinary-22-guide-checkpoint.json) carries the bounded 22-Guide audit through the later regional home/carry, interest, VAT-reference and rental corrections. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
+Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the foral PIT,payroll,VAT,cessation,regional-credit and annuity/progression additions have passed independent delta review. The new foral nonresident Guide has passed a separate fresh source and calculation review,with its stated unresolved surcharge and specialist branches excluded. Further CyL/Andalucía/Murcia intersection additions passed a separate narrow review;their stated allocation and exact-date reservations remain. The latest [integrated review checkpoint](../../research/spain-2026/regional-attribution-22-guide-checkpoint.json) carries the bounded 22-Guide audit through the later regional home/carry, interest, VAT-reference and rental corrections, plus positive-income regional attribution and the full-year professional-shareholder IPREM derivation. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
 
 ## Domains
 

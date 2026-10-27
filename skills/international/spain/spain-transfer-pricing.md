@@ -1,10 +1,10 @@
 ---
 name: spain-transfer-pricing
 description: Use this Guide for Spanish common-territory transfer pricing in tax periods beginning in 2026. It covers related-party identification, arm's-length valuation, group and taxpayer documentation, the separate Modelo 232 disclosure tests, private country-by-country reporting on Modelo 231, advance pricing agreements, and documentation penalties. Apply it to Spanish corporate taxpayers and the Spanish permanent establishments identified in the cited rules. Trigger phrases include operaciones vinculadas, precios de transferencia, master file, local file, Modelo 232, Modelo 231, professional shareholder remuneration and intercompany services. Obtain the ownership chart, transaction ledger, turnover and group reporting arrangements first. Documentation exemptions do not remove market-value pricing or automatically exempt information returns. Foral taxes and public corporate-reporting obligations need separate territorial or accounting analysis.
-version: 1.1
+version: 1.2
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain transfer pricing v1.1
+# Spain transfer pricing v1.2
 
 Tax periods beginning in 2026. Common-territory corporate tax rules, checked against the official texts on 25 October 2026. Independent pack review is pending; no accountant has signed off this revision.
 
@@ -54,7 +54,9 @@ Equality matters. EUR 250,000 exactly satisfies the counterparty documentation e
 
 **Specific transactions.** The simplified-file exclusions cover the specified módulos taxpayers dealing with qualifying connected companies, business transfers, the specified unlisted or non-cooperative-market shares, real-estate transfers and intangible transactions (LIS art. 18.3; RIS art. 16.5). Ordinary professional services are not automatically a specific transaction. Apply the statutory qualification to each transaction. For qualifying art. 101 entities or individuals, the final paragraph of RIS art. 16.5 removes the comparability-analysis requirement where its conditions are met and the counterparty is not in a listed jurisdiction; it does not erase the rest of the file.
 
-**Professional shareholder valuation rule.** All conditions in LIS art. 18.6 must hold: **more than 75% of entity revenue** from professional activities; adequate people and equipment; total professional-shareholder remuneration **at least 75% of the result before that remuneration**; written allocation criteria reflecting each shareholder's contribution; and each person's remuneration at least **1.5 times** the average pay of comparable employees, or, if there are none, **five times IPREM**. These are different denominators. Failure of the individual minimum by one shareholder does not disqualify the others under the article. Obtain the applicable IPREM amount before applying the no-comparable-employee limb; this Guide does not insert an unverified monetary amount.
+**Professional shareholder valuation rule.** All conditions in LIS art. 18.6 must hold: **more than 75% of entity revenue** from professional activities; adequate people and equipment; total professional-shareholder remuneration **at least 75% of the result before that remuneration**; written allocation criteria reflecting each shareholder's contribution; and each person's remuneration at least **1.5 times** the average pay of comparable employees, or, if there are none, **five times IPREM**. These are different denominators. Failure of the individual minimum by one shareholder does not disqualify the others under the article. For a **full calendar year 2026** with no comparable employees, this Guide derives the individual minimum as **5 × annual IPREM of EUR 7,200 = EUR 36,000**. The actual [SEPE 2026 amounts](https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html) retain EUR 600 monthly and EUR 7,200 annually under [Law 31/2022, DA 90(c)](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128). DA 90(d)'s EUR 8,400 annual amount concerns the specified annual SMI references substituted under [RDL 3/2004, art. 2.3](https://www.boe.es/buscar/act.php?id=BOE-A-2004-12010); LIS art. 18.6 directly uses IPREM and gives no instruction to include fourteen payments. The EUR 36,000 result is this **reasoned statutory construction**, not a located AEAT/DGT numerical ruling. Do not use five times the monthly EUR 600 as the annual minimum or import a fourteen-payment uplift without establishing its legal basis. A part-year entitlement or apportionment needs its applicable method; this full-year calculation does not decide it.
+
+The special valuation rule is an option, not a compulsory salary. If its conditions fail, use the supported general arm's-length methods above rather than automatically assessing the shareholder at the failed threshold (LIS arts. 18.4/18.6). Separate full-year control: a company with EUR 100,000 total revenue, EUR 80,000 professional revenue, adequate resources and EUR 80,000 result before professional remuneration pays two professional shareholders EUR 36,000 each under evidenced written contribution criteria. Professional revenue is 80%, above 75%; aggregate remuneration of EUR 72,000 exceeds the 75% result minimum of EUR 60,000; each reaches the derived EUR 36,000 individual minimum. If one instead receives EUR 35,999.99, that person fails the individual limb even though aggregate remuneration still exceeds EUR 60,000; the other person's qualifying treatment is not automatically lost. The second executable block also recomputes this separate variant; it does not change the Modelo 232 scenario.
 
 Documentation exemptions also cover the qualifying fiscal-consolidation, AIE/UTE and public-offer transactions in LIS art. 18.3.a–c and RIS art. 13.3. The statutory UTE exception must be tested. Do not extend an exemption merely because two entities prepare consolidated accounts.
 
@@ -147,16 +149,36 @@ inputs:
   same_type_and_method: 180000
   counterparty_threshold: 250000
   turnover_test_fraction: 0.50
+  professional_revenue_variant: 80000
+  total_revenue_variant: 100000
+  result_before_remuneration_variant: 80000
+  professional_pay_each_variant: 36000
+  professional_shareholders_variant: 2
+  annual_iprem_2026: 7200
 steps:
   turnover_test_amount: turnover * turnover_test_fraction
   transaction_share_percent: same_type_and_method / turnover * 100
   excess_above_turnover_test: same_type_and_method - turnover_test_amount
   headroom_under_counterparty_threshold: counterparty_threshold - same_type_and_method
+  professional_revenue_percent_variant: professional_revenue_variant / total_revenue_variant * 100
+  professional_aggregate_minimum_variant: result_before_remuneration_variant * 0.75
+  professional_aggregate_paid_variant: professional_pay_each_variant * professional_shareholders_variant
+  professional_individual_minimum_variant: annual_iprem_2026 * 5
+  professional_aggregate_headroom_variant: professional_aggregate_paid_variant - professional_aggregate_minimum_variant
+  professional_individual_headroom_variant: professional_pay_each_variant - professional_individual_minimum_variant
+  professional_below_headroom_variant: professional_pay_each_variant - 0.01 - professional_individual_minimum_variant
 expected:
   turnover_test_amount: 150000
   transaction_share_percent: 60
   excess_above_turnover_test: 30000
   headroom_under_counterparty_threshold: 70000
+  professional_revenue_percent_variant: 80
+  professional_aggregate_minimum_variant: 60000
+  professional_aggregate_paid_variant: 72000
+  professional_individual_minimum_variant: 36000
+  professional_aggregate_headroom_variant: 12000
+  professional_individual_headroom_variant: 0
+  professional_below_headroom_variant: -0.01
 ```
 
 ## Ask the client first
@@ -182,7 +204,8 @@ expected:
 |[Bizkaia OF387/2023](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2023/10/10/I-1187_cas.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
 |[Álava OF381/2018](https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_C.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
 |[Gipuzkoa OF444/2018](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
-Not yet confirmed: special foral documentation circumstances outside the ordinary four-territory methods in [foral corporate tax](es-foral-corporate-tax.md#cross-border-points); a monetary 2026 IPREM figure for the professional-shareholder alternative; public corporate CbCR reporting and case-specific treaty relief. These are not represented as confirmed computations here. Independent whole-pack review is pending.
+| [Law 31/2022, DA 90(c)/(d)](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128), [RDL 3/2004, art. 2.3](https://www.boe.es/buscar/act.php?id=BOE-A-2004-12010), [SEPE current 2026 amounts](https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html) | Annual IPREM of EUR 7,200, the conditional EUR 8,400 for substituted SMI references, and the full-year direct-IPREM statutory construction; not a numerical administrative ruling | 2026-10-27 |
+Not yet confirmed: special foral documentation circumstances outside the ordinary four-territory methods in [foral corporate tax](es-foral-corporate-tax.md#cross-border-points); professional-shareholder part-year/apportionment treatment and any directly responsive numerical administrative interpretation beyond the full-year statutory construction above; public corporate CbCR reporting and case-specific treaty relief. These are not represented as confirmed computations here. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 
