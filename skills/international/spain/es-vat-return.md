@@ -2,9 +2,10 @@
 name: es-vat-return
 description: Calculates ordinary Spanish IVA for 2026 for sole traders and companies in the peninsula and Balearic Islands. Establishes tax points, rates, taxable consideration, invoice-supported input recovery, business and private use, blocked expenses, general and compulsory special prorrata, annual corrections and investment-good adjustments. Maps the ordinary result, reverse charges, imports and prior credit to the current Modelo 303 and records filing, SII, annual-summary and intra-EU reporting obligations. Distinguishes temporary energy measures and the December housing cutover from ordinary rates. Use for IVA, Modelo 303, deducibilidad, prorrata, mixed-use property, reverse charge and unused VAT credit. Special regimes, territorial allocations and specific unresolved source interactions remain identified limits.
 version: 2.1
+category: international
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants

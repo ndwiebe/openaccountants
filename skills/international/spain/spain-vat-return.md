@@ -2,9 +2,10 @@
 name: spain-vat-return
 description: Reconciles a Spanish ordinary VAT return for 2026 to invoices, bank settlements, customs assessments, registers and accepted prior returns for sole traders and companies in the peninsula and Balearic Islands. Uses es-vat-return for the underlying computation and checks business-use restrictions, general versus special prorrata, investment-good adjustment signs, reverse-charge mapping and credit roll-forward against current Modelo 303 instructions. Separates withheld income tax and platform fees from VAT bases and distinguishes dated energy and housing changes from ordinary rates. Use for revisar IVA, revisar Modelo 303, conciliación IVA, return review, prior credit and investment adjustment. Preserves this existing entry point while recording territorial, special-regime and unresolved computation limits.
 version: 2.1
+category: international
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
