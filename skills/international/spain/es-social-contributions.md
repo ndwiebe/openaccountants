@@ -1,10 +1,10 @@
 ---
 name: es-social-contributions
-description: Use this Guide to calculate Spanish social-security contributions for ordinary self-employed RETA workers and employers in the Régimen General in 2026. It covers annual computable income, the calendar-day monthly average, contribution bands, chosen and final bases, generic deductions, company and family floors, coverage rates, starting-fee conditions, bonuses, annual regularisation and pluriactividad refunds. For payroll it covers assessable cash and in-kind remuneration, extra-pay proration, overtime, contribution groups, employer and employee shares, occupational tariffs, the maximum base, MEI and solidarity. Trigger phrases include cuota de autónomos, RETA, cotización, TGSS, regularización, tarifa plana, Seguridad Social, RLC and payroll contributions. Obtain the actual registration, base, coverage and assessment records before calculating.
+description: Use this Guide to calculate Spanish social-security contributions for ordinary self-employed RETA workers and employers in the Régimen General in 2026. It covers annual computable income, the calendar-day monthly average, contribution bands, chosen and final bases, generic deductions, company and family floors, coverage rates, starting-fee conditions, bonuses, annual regularisation and pluriactividad refunds. For payroll it covers assessable remuneration, extra-pay proration, overtime, contribution groups, employer and employee shares, occupational tariffs, capped bases, MEI and solidarity, plus household salary bands and agricultural monthly, daily and inactivity methods. Trigger phrases include cuota de autónomos, RETA, cotización, TGSS, regularización, tarifa plana, Seguridad Social, RLC and payroll contributions. Obtain the actual registration, base, coverage and assessment records before calculating.
 version: 2.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -25,7 +25,7 @@ This Guide covers ordinary self-employed workers in RETA and employers/employees
 
 Social security is state-wide, including the foral territories. Use the relevant tax administration's income information for RETA regularisation; a different income-tax administration does not exclude the worker from these contribution rules ([LGSS art. 308](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a308)). First establish the applicable state for an international worker under the cross-border section.
 
-Income tax, payroll withholding and quarterly tax instalments are separate computations in [es-income-tax](es-income-tax.md), [spain-payroll](spain-payroll.md) and [es-estimated-tax](es-estimated-tax.md). Sea workers, household workers, agriculture, artists, training contracts and other special systems require their own applicable base rules; do not apply the ordinary full-time table to them. The ordinary rates and bases below apply from **1 January 2026** under [Orden PJC/297/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296).
+Income tax, payroll withholding and quarterly tax instalments are separate computations in [es-income-tax](es-income-tax.md), [spain-payroll](spain-payroll.md) and [es-estimated-tax](es-estimated-tax.md). Household employees and agricultural employees use the dedicated methods below. Sea workers, self-employed agriculture, artists, training contracts and other special systems require their own applicable base rules; do not apply the ordinary full-time table to them. The ordinary rates and bases below apply from **1 January 2026** under [Orden PJC/297/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296).
 
 ## Rates, bands and thresholds
 
@@ -107,6 +107,14 @@ Use the year being regularised. Do not apply 2026 rates to a 2025 base differenc
 | Pluriactividad threshold | 16,672.66 | [2025 art. 18.8](https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780) |
 | Special company/family and no-income-return minimum | 1,000 under the temporary 2023–2025 rule | [RDL 13/2022 DT 7](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) |
 
+The 2025 solidarity slices below are retained **only for 2025 corrections**; apply the positive amount in each band separately and add the employer/employee components. They do not replace the 2026 table.
+
+| 2025 monthly remuneration slice | Employer | Employee | Official source |
+|---|---:|---:|---|
+| Above 4,909.50 through 5,400.45 | 0.77% | 0.15% | [Order PJC/178/2025 art. 17](https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780#a1-9) |
+| Above 5,400.45 through 7,364.25 | 0.83% | 0.17% | [Art. 17](https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780#a1-9) |
+| Above 7,364.25 | 0.98% | 0.19% | [Art. 17](https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780#a1-9) |
+
 ## The base
 
 ### RETA income and choice
@@ -178,13 +186,73 @@ For **ERTE/reduced hours/suspension**, [art. 9](https://www.boe.es/buscar/act.ph
 
 Finally, [art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a2-10) adds **33.62** payable by the employer when a fixed-term contract **shorter than thirty days** ends in 2026. Test the listed agricultural/household/coal/artist, substitution and training exceptions; a short substitution contract is not charged merely because it is fixed-term. Keep this employer-only amount out of the worker's deductions.
 
+### Household employees: salary-band base and complete ordinary quota
+
+Determine each household employment relationship separately. Monthly remuneration includes cash, valued salary in kind and **annual extra pay divided by twelve**. Use that total to select the 2026 base; a bank debit or monthly cash salary excluding extras is not the base ([order art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7)).
+
+| Monthly remuneration including extra-pay proration | Monthly contribution base | Year | Official source |
+|---|---:|---|---|
+| ≤329.00 | 306.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 329.01–510.00 | 436.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 510.01–693.00 | 602.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 693.01–877.00 | 785.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 877.01–1,061.00 | 970.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 1,061.01–1,242.00 | 1,151.00 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| 1,242.01–1,424.40 | 1,424.40 | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| ≥1,424.41 | Actual monthly remuneration | 2026 | [Art. 15.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+
+Apply the minimum-remuneration **band floor** in art. 15.2 before settling: full-time/160 hours monthly/40 weekly uses the band's base for full SMI plus extras. Monthly-paid part-time work uses proportionate SMI plus extras; genuinely hourly external work uses the all-in statutory hourly minimum times actual monthly hours. If pay basis is unknown, TGSS treats it as monthly unless the employer proves hourly payment. Full-time 2026 SMI with extras is **1,424.50**, so its base falls in the actual-remuneration band; do not lower it to 1,424.40 ([RD 126/2026 arts. 1/3/4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-3815); [order art. 15.2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7)).
+
+| Household component on the band base | Employer | Employee | Year and source |
+|---|---:|---:|---|
+| CC | 23.60% | 4.70% | [2026 art. 15.3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7) |
+| AT/EP, household tariff code 97 | 1.50% (IT 0.80%, IMS 0.70%) | 0 | [2026 LGSS DA 61, code 97](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37) |
+| Unemployment, indefinite including fixed-discontinuous | 5.50% | 1.55% | [2026 order art. 35](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-7) |
+| Unemployment, fixed-term | 6.70% | 1.60% | [2026 art. 35](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-7) |
+| FOGASA | 0.20% | 0 | [2026 art. 35](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-7) |
+| MEI | 0.75% | 0.15% | [2026 art. 16](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-8) |
+
+For registered household employment, [RDL 16/2022 DA 1.1](https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680#da) reduces **employer CC by 20%** and bonuses **employer unemployment/FOGASA by 80%**. Current [TGSS guidance](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia) requires being current with Social Security and tax debts. Reduce the relevant employer component, never the employee contribution, AT/EP or MEI. A recognised qualifying **45% large-family CC benefit replaces, rather than adds to, the 20%**, while the unemployment/FOGASA bonuses remain; verify the family category, single supported worker and actual TGSS entitlement. The separate DA 1.2 income/wealth-based 30/45% alternative depends on its regulatory implementation and SEPE/TGSS recognition, so it is not an automatic extra discount. For age-62-or-over IT, LGSS art. 144.4's **75% employer-CC reduction** requires that actual IT situation; do not apply it to ordinary working pay or invent cumulative relief ([LGSS art. 144.4](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a144); [TGSS](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia)).
+
+With only ordinary 20/80 relief and an indefinite contract, compute `employer = B×23.6%×0.8 + B×1.5% + B×5.5%×0.2 + B×0.2%×0.2 + B×0.75%`. Employee contributions are `B×(4.7%+1.55%+0.15%)`; for fixed-term replace unemployment by 6.7/1.6%. There is no ordinary household training component in art. 35. Keep component rounding and any special period/award separately. The employer pays both shares and withholds the employee share from salary; the former under-60-hours option to shift registration/payment duties to the employee ended **1 January 2023** ([RDL 16/2022 DA 2](https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680#da-2)).
+
+### Agricultural employees: activity, daily work and inactivity
+
+These are **employees in the agricultural special system**, not self-employed SETA workers. Establish the contribution group, actual registered days, jornadas reales, contract and chosen monthly/daily modality. Build each assessable CC/occupational base under LGSS art. 147, with the following 2026 limits ([order art. 14.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6)).
+
+| Group | Monthly minimum / maximum | Jornada real minimum / maximum | Year and official source |
+|---|---|---|---|
+| 1 | 1,989.30 / 5,101.20 | 86.49 / 221.79 | [2026 art. 14.1.a/b](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+| 2 | 1,649.70 / 5,101.20 | 71.73 / 221.79 | [2026 art. 14.1.a/b](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+| 3 | 1,435.20 / 5,101.20 | 62.40 / 221.79 | [2026 art. 14.1.a/b](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+| 4–11 | 1,424.40 / 5,101.20 | 61.93 / 221.79 | [2026 art. 14.1.a/b](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+
+Monthly mode is compulsory for indefinite contracts **except fixed-discontinuous**, and optional for other eligible contracts. Communicate and maintain the election for the employment period. LGSS art. 255.2.b makes **monthly mode the default without an express election**. Starts/ends not on month boundaries use the statutory proportional days where the activity lasts at least **30 consecutive calendar days**. Daily mode clamps each real-work day's assessable base to the daily limits and aggregates it; **22 or more real-work days in the calendar month use the monthly base rule**. Do not simply multiply a daily minimum by 30 in monthly mode ([art. 14.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6)).
+
+| Activity component | Employer | Employee | Year and official source |
+|---|---:|---:|---|
+| CC, group 1, before reduction | 23.60% | 4.70% | [2026 art. 14.3.a](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+| CC, groups 2–11, before reduction | 21.20% | 4.70% | [2026 art. 14.3.a](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+| Unemployment, fixed employment; qualifying art. 33.2.a.1 temporary/disability categories | 5.50% | 1.55% | [2026 art. 34.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-6) |
+| Unemployment, other eventual employment | 6.70% | 1.60% | [2026 art. 34.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-6) |
+| FOGASA | 0.10% | 0 | [2026 art. 34.2](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-6) |
+| Training | 0.15% | 0.03% | [2026 art. 34.3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-6) |
+| MEI on CC base | 0.75% | 0.15% | [2026 art. 16](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-8) |
+| AT/EP on occupational base | Actual activity/occupation tariff | 0 | [2026 art. 14.3.a/LGSS DA 61](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6) |
+
+**Employer CC reduction during actual activity.** Group 1's reduction is **8.10 percentage points**, producing **15.50%**, with employer CC capped at **279/month or 12.68 per real-work day**. For groups 2–11, the 2026 order's official formula image expressly uses the **2021 reduction evaluated at the 2026 base**. In percentage-point units define `r21 = 7.36 × (1 + (B−K)/B ×2.52×6.15/7.36)`, where K is **986.70 monthly** or **42.90 daily**. Then `r26 = r21 + (8.10−r21)/10×5`. Calculate `B×(21.20−r26)/100`, then constrain employer CC to **179.44–279.00/month** or **8.16–12.68 per real-work day**, before summing daily amounts. Use proportional reductions for the statutory partial monthly period. The 2021 source supplies the referenced formula only; do not import its rates, old minima or 101.47 floor into 2026 ([2026 art. 14.4 and formula](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6); [PCM/1353/2021 art. 13.4.b](https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20075); [LGSS DT 18](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#dtdecimoctava)).
+
+**Inactivity inside a registration month.** First establish inclusion for inactivity under LGSS art. 253: ordinarily at least **30 real-work days in a continuous 365-day period** and an express application within **three calendar months** after the last qualifying day, effective the first day of the month after application. Apply its exclusion/re-entry and assimilated-day rules to the actual TGSS record. There is **no inactivity** where at least **five real-work days per week for the same employer** fulfil the applicable collective agreement. For an included worker outside that exception, if registered calendar days R exceed real-work days J times **1.3636**, inactive days are `D = R−J×1.3636`; otherwise zero. Use the group-7 monthly minimum **1,424.40/30 =47.48 daily**. The worker alone pays `D×47.48×11.50%`, plus separate **0.90% MEI** on that inactivity base. Where the worker had **at most 55 real-work days in 2025**, reduce the inactivity CC quota by **19.11%** in 2026, leaving MEI unreduced. Do not round away the 1.3636 day adjustment before calculating the assessed base ([arts. 14.2/3.b and 16](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6); [LGSS arts. 253/255](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a253); [LGSS art. 127 bis](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a1-5)).
+
+For IT, pregnancy/breastfeeding risk, birth/care or shared nursing-infant care arising during activity, the employer CC treatment changes: indefinite workers use **15.50% group 1** or **2.75% groups 2–11** under the general suspension rules; temporary/fixed-discontinuous workers use that route on contracted days they could not work. Unscheduled days use inactivity treatment, except the statutory birth/nursing-benefit deemed-contribution periods. The protected-activity situations also have a **2.75-point unemployment-quota reduction**, separate from CC. Contributory unemployment uses the art. 8 base and **11%** rate under art. 14.6. No additional overtime quota applies in this employee agricultural system, while assessable remuneration still follows its legal bases ([arts. 14.5–7/34.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-6)).
+
 ### Benefit and bank-record boundaries
 
 For ordinary RETA temporary incapacity, [LGSS art. 321](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a321) starts common-contingency entitlement on day 4, and occupational entitlement on the day after leave begins. The [Social Security benefit page](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365) sets the ordinary 60% days 4–20/75% from day 21 common-contingency rates and 75% occupational rate. Eligibility and regulatory-base calculation require the actual coverage and contribution record; do not promise a benefit from the bank debit. After sixty days of temporary incapacity with benefit entitlement, the mutua or SEPE pays the contribution quotas under [order art. 37.4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-9).
 
 For cessation, [LGSS arts. 338–339](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a338) use the prior twelve continuous months' base average, ordinarily 70%, or 50% for the specified partial cases. Test legal cessation, at least twelve qualifying months within the prior twenty-four, the 4–24-month duration scale and eighteen-month interval after prior recognition. Art. 339.3–4 applies dependent-child/IPREM limits and exceptions; a voluntary closure alone does not establish legal cessation. The current monetary IPREM and a particular claimant's entitlement are not computed here.
 
-Treat a TGSS debit as an identification clue. Obtain the base report, assessment and award before calling it RETA, employer RLC, reduced fee, regularisation or pluriactividad refund. Keep principal, interest, surcharge and refund nature separate. For direct-assessment IRPF, the [AEAT contribution-booking guidance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html) puts a regularisation in the year settled; do not amend the original year solely for that adjustment. Its 2025 box numbers are not assumed to be the approved 2026 return boxes.
+Treat a TGSS debit as an identification clue. Obtain the base report, assessment and award before calling it RETA, employer RLC, reduced fee, regularisation or pluriactividad refund. Keep principal, interest, surcharge and refund nature separate. For direct-assessment IRPF, the [AEAT contribution-booking guidance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html) puts a regularisation in the year settled; do not amend the original year solely for that adjustment. An extra settlement payment **increases that year's deductible contribution expense**. A refund **reduces that year's contribution expense**; if the refund exceeds contributions paid in that year, the excess becomes **additional activity income**, rather than a negative expense carried into the original year. For example, a 1,100 refund with 800 current-year contributions gives zero net contribution expense and 300 additional income. Its 2025 box numbers are not assumed to be the approved 2026 return boxes.
 
 ## Deadlines and filing
 
@@ -199,6 +267,8 @@ Treat a TGSS debit as an identification clue. Obtain the base report, assessment
 | Regularisation due/refund | Due by month-end after notice; refund before 30 April after income-communication year | [RD 2064 art. 46.2.5](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a46) |
 
 Reconcile payroll workers/days/bases with the TGSS settlement and its payment receipt. Do not substitute a bank debit for a filed contribution record or apply the special artist quarterly option to every autónomo. For a regularisation notice, retain the tax-income communication, excluded-day schedule, provisional/final base schedule and due-date evidence.
+
+**Dated 2026 order catch-up windows.** PJC/297/2026 was published **31 March 2026**. DT 1 gives direct-settlement differences on settlements from 1 February until the **last day of the month after TGSS notifies the update**, without surcharge. Simplified-settlement differences from 1 January are assessed when the systems/data are available and collected by the specified direct debit. Self-assessment differences from 1 January had a no-surcharge window through **31 May 2026**. Under DT 3, qualifying RETA/first-group sea workers who had elected the then-maximum base could elect between their existing and applicable maximum by **30 April 2026**, effective **1 January 2026**. The calendar windows have closed; do not present them as fresh elections or replace a notice-specific deadline ([order DT 1/3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#dt)).
 
 ## Penalties and interest
 
@@ -257,9 +327,11 @@ expected:
   contribution: 378
 ```
 
-### 2. Employer: capped worker, solidarity and a part-time control
+### 2. Employer: capped worker, solidarity, part-time and household controls
 
 An ordinary monthly group-1 employee has **6,000 of assessable remuneration for October 2026**, already including extra-pay proration, no overtime, an indefinite contract and no contribution relief. The verified work facts meet table II(a)'s exclusive-office conditions, giving the statutory 1.50% AT/EP tariff. Both ordinary bases are capped at 5,101.20. Solidarity uses 510.12 in the first slice and 388.68 in the second. On the separately rounded component working paper, employer contributions are **1,648.98**, employee deductions **333.37**; employer cost is **7,648.98** before other costs. Cash after employee social contributions is 5,666.63 **before IRPF withholding**, which must be computed separately. A second worker in the same payroll provides a part-time floor control: group 1, 80 actual hours and 900 assessable remuneration including proration, no overtime. CC is floored at 80 ×11.98 =958.40, while AT remains 900 because its floor is 686.40. Reconcile component rounding with the final TGSS settlement ([order arts. 3/4/16/17/33/38/39](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296); [LGSS DA 61 table II(a)](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#da-37)).
+
+A separate household relationship in the same comparison has lawful part-time pay of **900/month including extras**, an indefinite contract, all ordinary 20/80 relief conditions met and no special award. The salary band gives **970**, rather than 900, as contribution base. With components rounded to cents, employer CC is **183.14**, occupational **14.55**, unemployment **10.67**, FOGASA **0.39** and MEI **7.28**, total **216.03**. Employee CC/unemployment/MEI are **45.59/15.04/1.46**, total **62.09**. The employer remits **278.12** and cash after employee contributions is **837.91**, before any separate applicable tax deduction. Do not charge household training or apply the 20/80 relief to the employee share ([order arts. 15/16/35](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-7); [RDL 16/2022 DA 1](https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680#da)).
 
 ```oa-check
 name: October 2026 payroll cap and employer-employee solidarity
@@ -268,6 +340,8 @@ inputs:
   cap: 5101.20
   parttime_hours: 80
   parttime_pay: 900
+  household_pay: 900
+  household_band_base: 970
 steps:
   base: min(remuneration, cap)
   slice_one: min(max(remuneration - cap, 0), 510.12)
@@ -291,6 +365,18 @@ steps:
   before_irpf_cash: remuneration - employee_total
   parttime_cc_base: min(max(parttime_pay, parttime_hours * 11.98), cap)
   parttime_at_base: min(max(parttime_pay, parttime_hours * 8.58), cap)
+  household_employer_cc: round(household_band_base * 0.236 * 0.8, 2)
+  household_occupational: round(household_band_base * 0.015, 2)
+  household_employer_unemployment: round(household_band_base * 0.055 * 0.2, 2)
+  household_fogasa: round(household_band_base * 0.002 * 0.2, 2)
+  household_employer_mei: round(household_band_base * 0.0075, 2)
+  household_employee_cc: round(household_band_base * 0.047, 2)
+  household_employee_unemployment: round(household_band_base * 0.0155, 2)
+  household_employee_mei: round(household_band_base * 0.0015, 2)
+  household_employer_total: household_employer_cc + household_occupational + household_employer_unemployment + household_fogasa + household_employer_mei
+  household_employee_total: household_employee_cc + household_employee_unemployment + household_employee_mei
+  household_remitted: household_employer_total + household_employee_total
+  household_before_tax_cash: household_pay - household_employee_total
 expected:
   base: 5101.20
   slice_one: 510.12
@@ -304,6 +390,18 @@ expected:
   before_irpf_cash: 5666.63
   parttime_cc_base: 958.40
   parttime_at_base: 900
+  household_employer_cc: 183.14
+  household_occupational: 14.55
+  household_employer_unemployment: 10.67
+  household_fogasa: 0.39
+  household_employer_mei: 7.28
+  household_employee_cc: 45.59
+  household_employee_unemployment: 15.04
+  household_employee_mei: 1.46
+  household_employer_total: 216.03
+  household_employee_total: 62.09
+  household_remitted: 278.12
+  household_before_tax_cash: 837.91
 ```
 
 ## Ask the client first
@@ -328,8 +426,10 @@ expected:
 | [TGSS autonomous-worker guide](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia) | Administrative explanation; combined-rate and reduced-fee total discrepancies identified, not substituted for the order | 2026-10-26 |
 | [Social Security, temporary incapacity](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365), [AEAT RETA-booking guidance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/7-cumplimentacion-irpf/7_4-rendimientos-actividades-economicas/7_4_2-regimen-estimacion-directa/7_4_2_3-gastos-fiscalmente-deducibles/cotizaciones-reta.html) | Ordinary benefit percentage boundaries and year of booking a settled regularisation | 2026-10-26 |
 | [Regulation 883/2004, arts. 11–13](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731) | Applicable-state gateway; read in a normal browser after automated access was blocked | 2026-10-26 |
+| [2025 order art. 17](https://www.boe.es/buscar/act.php?id=BOE-A-2025-3780#a1-9), [2026 order DT 1/3](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#dt) | Restored 2025 solidarity comparative bands/splits and dated catch-up/election windows | 2026-10-27 |
+| [2026 order arts. 14–16/34–35](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296), [incorporated 2021 formula, art. 13](https://www.boe.es/buscar/doc.php?id=BOE-A-2021-20075), [RDL 16/2022 DA 1/2](https://www.boe.es/buscar/act.php?id=BOE-A-2022-14680), [TGSS household guide](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Empleo%2Bdel%2Bhogar/guia) | Household salary bands, components and ordinary relief; agricultural monthly/daily/inactivity bases, components, visually read reduction formulas and protected-period routes | 2026-10-27 |
 
-**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries; current monetary IPREM for a cessation-benefit cap; the monetary interest rate for a particular accrual interval. Detailed special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards are outside this ordinary employee/RETA computation. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries; current monetary IPREM for a cessation-benefit cap; the monetary interest rate for a particular accrual interval. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 

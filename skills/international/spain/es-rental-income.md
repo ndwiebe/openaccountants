@@ -4,7 +4,7 @@ description: Use this Guide to compute common-territory Spanish individual renta
 version: 1.1
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-27
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -20,7 +20,7 @@ Compute 2026 common-territory rental income property by property, then apply the
 
 ## Who this applies to
 
-[LIRPF art. 22](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a22) covers an individual's income from letting/ceding property or real enjoyment rights outside an economic activity. Identify the beneficial right, ownership share, use and lease dates. A sublessor's receipts and letting an operating business are different capital-income categories; letting bare premises is property income.
+[LIRPF art. 22](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a22) covers an individual's income from letting/ceding property or real enjoyment rights outside an economic activity. Identify the beneficial right, ownership share, use and lease dates. A sublessor's receipts and letting an operating business are **movable-capital income under art. 25.4.c** unless the activity rules apply; letting bare premises remains property income. The owner's rent from a tenant who sublets stays the owner's property income. Do not grant the property-income housing reduction to the sublessor's movable-capital receipts ([LIRPF art. 25.4.c](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a25)).
 
 Property letting is an economic activity under [art. 27.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27) when its organisation uses at least one full-time employee under a genuine employment contract. The owner's own management does not satisfy that employment test. Hotel-type services can also change classification under the [AEAT explanation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/rendimientos-capital-inmobiliario/concepto-rendimientos-capital-inmobiliario.html). Do not decide income-tax or VAT classification from a tourist-registration label alone.
 
@@ -103,11 +103,17 @@ For VAT, use [es-vat-return](es-vat-return.md). The 2026 December amendment can 
 
 Aggregate the computed property results and imputation with other **general** income, then run the verified state/community/minimum/credit procedure in [es-income-tax](es-income-tax.md). A tenant's withholding is a tax prepayment, not a rental expense. The resident urban-rent rate is ordinarily 19% on subject payments excluding VAT, with statutory payer/exemption conditions ([RIRPF arts. 75/76/100](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a100)); do not apply professional Modelo 111 to it. A non-resident uses the distinct IRNR rate/base/withholding and 210 route.
 
+### Urban-rent withholding exceptions
+
+After establishing that the payer must withhold under RIRPF art. 76, apply the art. 75.3.g exclusions: a company renting housing for its employees; annual rent paid by the same tenant to the same landlord **not exceeding 900**; or a landlord in IAE group 861 (or another authorising letting/subletting heading) for whom applying group 861's rules to the rented properties' cadastral values produces a **nonzero quota**, evidenced to the tenant through the required certification. An IAE exemption or registration alone is not that certificate. A private tenant paying outside an economic activity does not acquire a withholding duty merely by paying more than 900. Where the urban property is in Ceuta/Melilla and meets LIRPF art. 68.4, art. 100 cuts the **19% rate by 60%**, giving a derived **7.6%**; it is not a 60-point cut ([RIRPF arts. 75.3.g/76/100](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a75)).
+
 ## Deadlines and filing
 
 Residents use Modelo 100 for the accrual year under the approved campaign, not assumed permanent dates for 2026 income filed in 2027. Preserve each property's lease, price history/index/zone evidence, beneficial ownership, IBI values, finance/repairs carry ledger, depreciation schedule and withholding certificate.
 
 For non-residents, 2026 own-use 210 has the new **1 April–31 December 2027** window, and payable annual rental grouping has **1–20 April 2027**. Ungrouped rental accruals through September 2026 retain the relevant quarterly route; from October the new following-April route applies. Nil/refund 210 rules and grouping conditions differ ([210 order art. 5](https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707#a5); [2026 amendment/commencement](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573)). Refer to the complete [IRNR filing table](es-non-resident-income-tax-irnr-and.md#deadlines-and-filing) before selecting a period. Resident business-rent withholding is paid through Modelo 115 and reported annually on Modelo 180; use the [AEAT rent-withholding procedure](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html).
+
+The old tourist-intermediary **Modelo 179 ceased for 2024 and later years**. RD 117/2024's platform reporting replaces that real-estate information: **040** manages registration/change/deregistration in the platform-operator register, and **238** communicates reportable platform information under its operator/seller/property tests. These are operator obligations, not automatic landlord returns; a landlord still reconciles their own taxable income to platform statements ([AEAT 179 FAQ](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-179-decla_____la-cesion-uso-turisticos/preguntas-frecuentes.html); [Orden HAC/72/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2092)).
 
 ## Penalties and interest
 
@@ -200,6 +206,7 @@ expected:
 | [LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Conduct-based correction, interest and penalty rules | 2026-10-26 |
 
 | AEAT business-rent withholding, Modelos 115/180 | https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html | 2026-10-26 |
+| [RIRPF arts. 75.3.g/76/100](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a75), [LIRPF art. 25.4.c](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a25), [AEAT 179 FAQ](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-179-decla_____la-cesion-uso-turisticos/preguntas-frecuentes.html), [HAC/72/2024](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2092) | Subletting/business classification, conditional rent withholding exceptions and territorial reduction, operator 040/238 replacing 179 | 2026-10-27 |
 
 **Not yet confirmed:** exact treatment of a lease signed on the 1 December transition boundary; a replacement contract versus a continuing/novated lease where facts are disputed; the precise combination of housing and irregular-income reductions for an item claimed under both; case-specific reference-index/zone eligibility, corporate-tenant exclusive-use relief and foral allocation. The ordinary expense, depreciation, lease-date and own-use routes above are supplied. Independent whole-pack review remains outstanding.
 

@@ -34,6 +34,8 @@ Read actual invoices, customs documents, registers/SII, prior filed returns, cre
 | Investment-good adjustment | Percentage change **strictly over ten points**, divisor **5**, land/buildings **10** | Statutory adjustment window | [Arts. 107–109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a109) |
 | Deduction and return-credit clocks | Separate **four-year** clocks from entitlement arising and original credit-return filing, respectively | 2026 | [Art. 99](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a99) |
 
+**Energy CPI closure.** The canonical VAT Guide now gives the official INE indices and annual comparisons: electricity 6.0%/8.4%/11.4%, gas 0.8%/4.1%/4.3% for June/July/September 2026. The more-than 15% trigger therefore fails for August/September/November; the corresponding conditional 10% VAT relief is not activated and 21% applies. The gas trigger also covers the listed biomass/firewood. December still awaits October indices. Follow the dated table and primary references in [es-vat-return](es-vat-return.md#energy-conditions-resolved-from-the-official-indices). Source read 2026-10-27.
+
 ## The base
 
 ### Reconcile the source ledger
@@ -43,6 +45,15 @@ Use one row per actual transaction/invoice with issuer/recipient NIF, legal coun
 Reconstruct the invoice settlement as **base + VAT − documented withholding − other settled credits = money received**. If the platform deducts fees, record the gross underlying sales and actual separately invoiced platform service. Do not infer a universal VAT or withholding rate from the amount received. Loans, own-account transfers, owner capital/draws, payroll and statutory payments receive their actual treatment, not an invented VAT extraction ([LIVA arts. 4/7/75/78](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a78)).
 
 Check invoice support before deduction: issuer/recipient details, separate VAT quota and statutory content, including extra details on a simplified invoice. Missing/incorrect documents require correction or an unresolved item, not a fabricated invoice. The investment-good definition is a VAT test separate from book capitalisation. Foreign VAT is not Spanish deductible quota ([LIVA arts. 97–100/108](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a97); [RD 1619/2012 arts. 6–7](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696#a7)).
+
+
+For the ordinary sector/startup methods, use [es-vat-return: The base](es-vat-return.md#the-base). Reconcile the CNAE/50-point/15% sector tests, exclusive versus cross-sector shared input, the before-1-July startup counting rule and aggregate four-year correction separately from ordinary annual prorrata. An interrupted full year uses the last three operating calendar years' global percentage. For mixed-use investment input, business use is applied before prorrata:2,100×50%×60%=630; fixed50% use with provisional50% and definitive60% prorrata produces105 additional annual deduction. These supplied methods replace a bare handoff; a fact-specific common-regime authorisation or simultaneous later use/prorrata change still requires its own evidence.
+
+### Check retained special-regime gateways
+
+Use [the computation Guide's retained gateways](es-vat-return.md#retained-special-regime-and-small-transaction-gateways) for the retailer surcharge **5.2/1.4/0.5/1.75%**, agriculture/forestry compensation **12%** versus livestock/fishing **10.5%**, advertising objects' same-recipient annual **200** boundary, the distinct acquisition and distance/TBE **10,000** tests, and cash-scheme **2m/100,000** entry/exclusion tests. Those are conditional rules, not general ordinary-return allowances. The computation Guide expressly records the unresolved 2026 simplified-regime **150,000/250,000** extension conflict rather than dropping the original gateway ([LIVA arts. 7/14/73/122/130/161/163 decies](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740)).
+
+For cash-scheme information, reconcile **62/63** sales base/quota and **74/75** affected purchase base/quota on ordinary art. 75 timing, separately from the actual collection/payment-driven output/deduction. The purchase information also affects a non-elected recipient of a cash-scheme invoice. A descriptive row does not accelerate recovery or add its quota twice ([AEAT 2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html)).
 
 ### Recompute recovery before mapping boxes
 
@@ -146,6 +157,7 @@ expected:
 
 | Official source | Scope read | Read on |
 |---|---|---|
+|[INE national subclass indices, table 76128](https://www.ine.es/jaxiT3/Tabla.htm?t=76128&L=0),[official CSV](https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/76128.csv)|2026 June/July/September and same 2025 indices; annual variations; six independent product/month comparisons and VAT activation results|2026-10-27|
 | [LIVA, Ley 37/1992](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Tax point/base, invoice-supported deduction, use/blocking, prorrata and investment adjustments, credit and refund clocks | 2026-10-26 |
 | [RIVA, RD 1624/1992](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925), [invoice regulation](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696), [390 order](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472) | Elections, records, invoice details, return/SII/349 and annual-summary periods | 2026-10-26 |
 | [AEAT January/1T 2026](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html), [later periods](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html), [approved 303](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-1761) | Current ordinary output/input/credit mapping and signed adjustments, replacing stale sibling box references | 2026-10-26 |
@@ -153,7 +165,7 @@ expected:
 | [RDL 7/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544), [RDL 18/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112), [RDL 25/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265), [RDL 29/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823) | Dated/conditional energy rules and December housing provisions, with unresolved timing/index points inherited from the computation Guide | 2026-10-26 |
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Conduct-based surcharge, penalty and collection classification | 2026-10-26 |
 
-**Not yet confirmed:** the specific energy CPI/equality, investment acquisition-value boundary, non-intra-EU reverse-charge input-row, startup/differentiated-sector, simultaneous-use-change, correction-route and specialised fuel-result points recorded in [es-vat-return Sources](es-vat-return.md#sources); foral allocation and IGIC/IPSI. This review route does not close an unresolved computation by agreeing with a duplicate draft. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the initial exactly10kW retrospective boundary and December's unpublished October-index condition, investment acquisition-value boundary, non-intra-EU reverse-charge input-row, fact-specific common-regime-authorisation, simultaneous-use-change, correction-route and specialised fuel-result points recorded in [es-vat-return Sources](es-vat-return.md#sources); foral allocation and IGIC/IPSI. This review route does not close an unresolved computation by agreeing with a duplicate draft. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
