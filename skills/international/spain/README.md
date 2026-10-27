@@ -11,16 +11,16 @@ covered_by:
   TP: spain-transfer-pricing
   XB: es-non-resident-income-tax-irnr-and
 partial:
-  IT-IND: "Ordinary common-territory and four foral methods, including pension/progression and business-credit incorporation, are supplied; the listed regional-credit bases, income tests and month/cap/carry allocations remain incomplete, including Cataluña legacy-home base, Cantabria ordinary-rent income and La Rioja/Valencian third-birthday boundaries."
+  IT-IND: "Ordinary common-territory and four foral methods,including pension/progression and business-credit incorporation,are supplied. Independently reviewed Catalan legacy/rural/July credits and Valencian family-credit caps are supplied; listed regional income/allocation/intersection questions remain,including Cantabria ordinary-rent income,La Rioja third-birthday interpretation and lower-base minimum allocation in combined annuity/progression cases."
   IT-CORP: "Nonzero Basque extraordinary-profit surcharge interpretation, including the accounting-profit to base/quota bridge and Álava implementing provision, remains unresolved; the literal 5% headcount overlap and return-specific minimum rounding are recorded."
   VAT: "Ordinary IVA, foral result allocation, IGIC, direct-assessment IPSI, non-EU input mapping and corrective returns are supplied; simultaneous business-use/prorrata changes and acquisition-value thresholds with partially/nonrecoverable VAT remain specifically unconfirmed."
   SC: "The statutory amount and reconciled TGSS assessment of new-2026 reduced-fee awards, equality-at-SMI extension boundary remain unresolved. Cessation-benefit monthly caps and their statutory exceptions are supplied."
-  XB: "Ordinary common-territory non-PE/PE and departure computations are supplied; precise foral allocation and fact-specific attribution/relief branches remain as recorded in the individual Sources sections."
+  XB: "Ordinary common-territory non-PE/PE and departure computations are supplied. The separate Basque/Navarra nonresident Guide supplies independently reviewed ordinary substantive,PE,collection/withholding and formal methods,including complete2026PIT/PE coefficient tables. Positive PE extraordinary-profit surcharge applicability and named specialist allocation/attribution/relief branches remain unresolved as recorded in Sources."
 ---
 
 # Spain: 2026 tax pack
 
-Select residence, competent territory and transaction period before choosing a Guide. The pack contains 21 tax Guides: 16 rewritten originals and five territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the latest foral, payroll, VAT and cessation additions have passed independent delta review. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
+Select residence, competent territory and transaction period before choosing a Guide. The pack contains 22 tax Guides: 16 rewritten originals and six territorial additions. Its ordinary calculations and preservation checks have independent review evidence pinned to exact file versions; the foral PIT,payroll,VAT,cessation,regional-credit and annuity/progression additions have passed independent delta review. The new foral nonresident Guide has passed a separate fresh source and calculation review,with its stated unresolved surcharge and specialist branches excluded. Further CyL/Andalucía/Murcia intersection additions are under a separate narrow review. **Spain remains partial in the domains listed above.** No licensed accountant has attested to this revision.
 
 ## Domains
 
@@ -32,7 +32,7 @@ Select residence, competent territory and transaction period before choosing a G
 | SC | [Employee, RETA, household and agricultural-employee contributions](es-social-contributions.md) | sourced from the law; partial |
 | PR | [Common-territory payroll](spain-payroll.md), [Modelo111](es-modelo-111.md), [foral payroll](es-foral-payroll.md) | checked against the law |
 | TP | [Related-party valuation, documentation and information returns](spain-transfer-pricing.md), [local foral methods](es-foral-corporate-tax.md#cross-border-points) | checked against the law |
-| XB | [Non-residents, PE and departure](es-non-resident-income-tax-irnr-and.md), [incoming-worker election](es-beckham.md) | sourced from the law; partial |
+| XB | [Non-residents, PE and departure](es-non-resident-income-tax-irnr-and.md), [foral nonresident tax](es-foral-non-resident-tax.md), [incoming-worker election](es-beckham.md) | sourced from the law; partial |
 
 The resident calculation routes also include [capital gains](es-capital-gains.md), [rental income](es-rental-income.md), [self-employment](es-autonomous-worker.md), [instalments](es-estimated-tax.md) and [crypto](spain-crypto-tax.md). Each tax Guide has two executable examples. The foral annual-return and payroll rules are separate methods; State scales and withholding tables are not substituted for local ones.
 
