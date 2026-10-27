@@ -107,7 +107,7 @@ Boundary control: exactly36,000 does not cross the ordinary trigger;36,000.01 do
 
 ## Cross-border points
 
-For local foral law, use the related-party documentation and information-return section of [foral corporate tax](es-foral-corporate-tax.md#cross-border-points), including the separate Navarra and provincial thresholds. Its specific current-order gaps remain visible; common-territory model232 triggers do not automatically apply there.
+For local foral law, use the related-party documentation and information-return section of [foral corporate tax](es-foral-corporate-tax.md#cross-border-points), including the separate Navarra and provincial thresholds. The separate Navarra and provincial information-return orders are supplied there and above; common-territory model232 triggers do not automatically apply there.
 
 An overseas counterparty does not create an automatic Spanish documentation exemption, and a domestic counterparty does not remove the arm's-length rule (LIS art. 18). Separately test transactions with listed non-cooperative jurisdictions under [LIS art. 19.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a19) and the applicable documentation rules in [RIS art. 37](https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771#a37); related-party status is not the only relevant question.
 

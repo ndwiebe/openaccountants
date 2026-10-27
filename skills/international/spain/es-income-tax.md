@@ -27,7 +27,7 @@ Use the ordinary resident regime for individuals in the fifteen autonomous commu
 
 Determine the autonomous community under [art. 72](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a72): most days, then the defined main-interest test if days cannot decide, then last declared residence. Apply its anti-avoidance and residence-change rules. Do not select whichever community gives the lowest tax. Establish family unit and individual/joint filing under arts. 82–84 before calculating allowances or reductions.
 
-Navarra and the three Basque foral territories use [their full territorial IRPF computations](es-foral-income-tax.md); they are outside these fifteen common-territory tables. Ceuta/Melilla have separate territorial calculations, including the 2026 Ceuta changes. Non-residents follow IRNR; special incoming-worker elections follow art. 93. An arrival or departure does not create an assumed ordinary split-year return: settle domestic and treaty residence and any exit charge first.
+Navarra and the three Basque foral territories use [their territorial IRPF Guide](es-foral-income-tax.md); they are outside these fifteen common-territory tables. Ceuta/Melilla have separate territorial calculations, including the 2026 Ceuta changes. Non-residents follow IRNR; special incoming-worker elections follow art. 93. An arrival or departure does not create an assumed ordinary split-year return: settle domestic and treaty residence and any exit charge first.
 
 ## Rates, bands and thresholds
 
