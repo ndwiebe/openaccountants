@@ -1,6 +1,6 @@
 # Spain 2026 review evidence
 
-Reviewed source checkpoint: `f227509554375bc0a2f4697d91aeb599fe96d856`. This packet is evidence for the complete 21-Guide batch under construction; **Spain remains partial and is not yet merge-ready**. It is not licensed-accountant attestation.
+The [current integrated review checkpoint](integrated-22-guide-review-checkpoint.json) pins the22taxGuide source files and their bounded independent review chain. Historical source checkpoint `f227509554375bc0a2f4697d91aeb599fe96d856` below covered21Guides; **Spain remains partial and is not yet merge-ready**. It is not licensed-accountant attestation.
 
 The whole-pack report is pinned to 9784b7b4. The later PIT, social/payroll, cessation and VAT reports carry exact reviewed hashes and narrowly transfer review coverage through corrections. The checkpoint manifest identifies the actual source bytes. It does not make a pending calculation complete.
 
@@ -33,3 +33,7 @@ Positive PE extraordinary-profit surcharge applicability remains unresolved;the 
 Source checkpoint `bba54325` adds supported CyLcurrent/preserved home-base andwithin-project-cap investor calculations,Andalucía's independent18.3assistance route/rolling veterinary window and precisebinding-ruling cost categories,andMurciaamount-invariant vehicle/shared-charger branches. The [independent delta review](regional-intersections-independent-review.md) passes72controls,both existingexamples,preservation andnew-source-link checks withzero correctivefindings. The [manifest](regional-intersections-checkpoint-bba54325.json) pins the finalcreditsGuide.
 
 Fourprecise interpretation branches remain reserved:CyLexcess-project-funding attribution,Andalucíaexactacquisition/anniversary-day endpoints,Murcia35,000vehicleband caseswherecandidateamountsdiffer,andMurciasharedchargerbasecap orderingabove4,000aggregatenetcost. The suppliedordinarywithin-cap/interior-date calculationsare not withheld merelybecause those boundaries remain unresolved. This doesnotclose otherregional workorconstitutewhole-countryattestation.
+
+## Current ordinary-method additions and bounded audit
+
+The [22-Guide baseline audit](whole-22-guide-baseline-review.md) reconciles27requirements and the exact prior review chain. Its remaining-work inventory is historical and still identifies unfinished ordinary work. Later finite reports supply the2026SCinterest input, ordinary Canary home/State coexistence, published Balearic child-by-child care calculation, Galicia expense-base/credit carry ledgers, VAT later first-use reference, successive rental reductions and preserved-wording company-tenant housing use. Their exact hashes and explicit limits are in the integrated checkpoint. All44existing examples pass; platform metadata, original paths, references and full CTA tails remain preserved. Spain is still partial, and no accountant attestation is claimed.
