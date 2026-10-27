@@ -1,7 +1,7 @@
 ---
 name: es-income-tax
 description: Use this Guide for 2026 Spanish resident personal income tax in the fifteen common-territory autonomous communities. It computes ordinary employment and self-employment income, general and savings bases, loss offsets, state and regional scales, separate personal and family minima, the employment-income reduction, the 2026 low-pay credit, prepayments and the annual balance. Trigger phrases include IRPF, Modelo 100, autónomo tax, estimación directa, salary income, base del ahorro, mínimo personal, cuota autonómica and regional tax bands. Obtain residence, community, family facts, income schedules and certificates before computing. Regional credits require a separate eligibility schedule; the country README records unfinished coverage. Foral systems, Ceuta/Melilla territorial relief, special incoming-worker elections and módulos calculations need their own verified treatment. No community, method or business-use percentage is assumed.
-version: 2.1
+version: 2.2
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-27
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain resident personal income tax (IRPF) v2.1
+# Spain resident personal income tax (IRPF) v2.2
 
 Calculate resident IRPF from classified income, then apply the state and community scales with their separate personal and family minima. This Guide covers income earned in **calendar year 2026**, returned in 2027 under the campaign rules published for that return. It is sourced from the law; independent whole-pack review is pending and no accountant has signed off this revision.
 
@@ -305,7 +305,7 @@ The **2026 low-pay credit in DA 61** is a tax-credit step, not a replacement emp
 
 ### 3. Compute self-employment income under the actual method
 
-Confirm normal, simplified or objective assessment. For simplified direct assessment, prior-year combined activity turnover must not exceed **EUR 600,000**, annualised where the prior activity lasted less than a year, with the art. 28 conditions and art. 29 election/exclusion rules. Do not assume simplified assessment when the method is unknown. Objective-assessment módulos have their own activity-specific computation and annual order; they are not obtained by applying 5% to accounting profit.
+Confirm normal, simplified or objective assessment. For simplified direct assessment, prior-year combined activity turnover must not exceed **EUR 600,000**, annualised where the prior activity lasted less than a year, with the art. 28 conditions and art. 29 election/exclusion rules. Do not assume simplified assessment when the method is unknown. Objective-assessment módulos have their own activity-specific computation and annual order; they are not obtained by applying 5% to accounting profit. The [instalment Guide](es-estimated-tax.md#objective-method-entry-limits-ordinary-text-and-the-published-2026-route) supplies the published 2026 AEAT entry limits and preserved election routes after non-convalidation, with the lower statutory baseline and remaining legal-reconciliation boundary. Check eligibility before using a module worksheet; the actual activity-specific computation remains separate.
 
 Under [LIRPF arts. 28–30](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a30), reconcile gross activity income, evidenced deductible business expenses and tax depreciation. Deduct the taxpayer's eligible own social contributions. Include costs on the correct tax basis: recoverable input VAT is excluded, while irrecoverable VAT is not erased merely because the taxpayer is registered. Taxes paid as IRPF prepayments, loan principal and owner drawings are not ordinary activity expenses.
 
@@ -612,7 +612,7 @@ expected:
 
 **Source discrepancies resolved by statute.** Hacienda's PDF prints Madrid's EUR 21,894.72 band width with a malformed decimal; Madrid art. 1 gives the correct amount. Its Canarias first cumulative quota is EUR 1,237.30, while current art. 18 bis gives **EUR 1,237.32**. The statutory amounts are used here. La Rioja art. 31 bis also preserves the ordinary assistance amount while increasing only the specified disabled-descendant minimum. The 2027 Valencian scale printed alongside the 2026 table is not used for 2026.
 
-Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; the specifically outstanding foral methods recorded in [foral IRPF Sources](es-foral-income-tax.md#sources); the three-year Ceuta/Melilla extension’s detailed cross-basket attribution where decisive; final average-rate display/truncation and any minimum-spillover allocation in a fact pattern not resolved by the stated art.56/DA20 method; módulos activity computations and all applicable 2026 limit/transition questions; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
+Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; the specifically outstanding foral methods recorded in [foral IRPF Sources](es-foral-income-tax.md#sources); the three-year Ceuta/Melilla extension’s detailed cross-basket attribution where decisive; final average-rate display/truncation and any minimum-spillover allocation in a fact pattern not resolved by the stated art.56/DA20 method; módulos activity computations and case-specific election/return corrections beyond the published 2026 AEAT entry/election route supplied in es-estimated-tax; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 
