@@ -429,13 +429,13 @@
       "compression": "none"
     },
     {
-      "path": "root-independent/DOCM-Law1-2026.pdf",
+      "path": "root-independent/DOCM-Law1-2026.pdf.gz",
       "source_private_path": ".claude/worktrees/europe-evidence/spain/review/regional-signed-allocation-current/root-independent/DOCM-Law1-2026.pdf",
-      "bytes": 454855,
-      "sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+      "bytes": 300791,
+      "sha256": "1a0f952b09b850df1a988ecdeae20ad45eeaedab4421ef1377f28b9e9b4ec426",
       "original_bytes": 454855,
       "original_sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
-      "compression": "none"
+      "compression": "lossless gzip"
     },
     {
       "path": "root-independent/applied-freeze.json",
@@ -761,5 +761,6 @@
       "original_sha256": "bce8f7ea48a0442c6f86a987619ea279077451e6b7932dc0e29242e25a8cc7e8",
       "compression": "lossless gzip"
     }
-  ]
+  ],
+  "packaging_correction": "Full-added-file whitespace audit found raw evidence formatting/binary-PDF flags that tracked-Guide-only pre-stage diff did not inspect. Original bytes preserved exactly by lossless gzip; prior immutable author/reviewer manifests keep original names and are resolved through this selected-evidence map. No Guide bytes, legal methods or review scope changed."
 }
