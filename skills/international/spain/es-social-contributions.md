@@ -1,7 +1,7 @@
 ---
 name: es-social-contributions
 description: Use this Guide to calculate Spanish social-security contributions for ordinary self-employed RETA workers and employers in the Régimen General in 2026. It covers annual computable income, the calendar-day monthly average, contribution bands, chosen and final bases, generic deductions, company and family floors, coverage rates, starting-fee conditions, bonuses, annual regularisation and pluriactividad refunds. For payroll it covers assessable remuneration, extra-pay proration, overtime, contribution groups, employer and employee shares, occupational tariffs, capped bases, MEI and solidarity, plus household salary bands and agricultural monthly, daily and inactivity methods. Trigger phrases include cuota de autónomos, RETA, cotización, TGSS, regularización, tarifa plana, Seguridad Social, RLC and payroll contributions. Obtain the actual registration, base, coverage and assessment records before calculating.
-version: 2.1
+version: 2.2
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-27
@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spanish social contributions: RETA and employer payroll v2.1
+# Spanish social contributions: RETA and employer payroll v2.2
 
 Compute 2026 contributions from the worker's status, assessable income, contribution base and coverage. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. Amounts below are euros.
 
@@ -152,6 +152,12 @@ For **pluriactividad**, include employer **and** employee CC from employment plu
 ### Reduced starting fee and family/territorial bonuses
 
 [Ley 20/2007 art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5) allows the starting reduction for first registration or no RETA registration in the preceding two years; use three years if the previous registration enjoyed it. Request it at registration. It runs from the effective registration date through the next twelve complete calendar months, with no cessation/training contribution during it. A further twelve complete months requires expected annual computable income **below** annual SMI, an application before that period starts, and the condition in each year if it spans two. The first period is not regularised; the extension is tested under art. 38 ter.6. Disability ≥33%, gender-violence and terrorism cases use 24 and 36 complete months instead. The article excludes joining relatives through the second degree and the specified religious members, but expressly includes qualifying company/cooperative members.
+
+**Equality with SMI: published TGSS assessment.** The [current TGSS system guide, “Prórroga Tarifa Plana”](https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es), expressly says that annual net income **equal to or above** SMI leads TGSS to reclaim contributions not paid because of the extended benefit and to treat that extension period as regularisable, recalculating the provisional base and quota as applicable. Current [RD 2064 art. 44.3.f](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44) likewise sends equal-or-higher income to the ordinary base rules. Do not model equality as an automatically retained extension. This does not regularise the unconditional initial period.
+
+Test each calendar year of the extension separately. If an extension spans two calendar years and has annual net income below the first year's SMI but exactly equal to the second year's SMI, the published TGSS route reassesses only the affected extension months in the second year. It does not remove the first year's qualifying reduction. Apply art. 38 ter.6's proportional-income rule for the affected months and the regularisation method above, using actual bases, coverage and notice. Reconcile against reduced contributions actually assessed and paid, rather than treating the advertised flat fee as a verified new-2026 award.
+
+**Precise remaining textual issue.** Art. 38 ter.2/3 requires expected income strictly below SMI, and current art. 44.3.f expressly includes equality in its ordinary-base exception. The narrower literal mismatch is the “exceeds” wording for regularisation in art. 38 ter.6 and [RD 2064 art. 46.1](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a46), compared with TGSS's explicit equal-or-higher assessment explanation. Treatment of a legal challenge to that literal regularisation wording is not established here. That reservation does not make TGSS's published equality practice unknown.
 
 The current statutory monetary authority for a **new 2026** reduced fee remains unconfirmed in this pass. [RDL 13/2022 DT 5](https://www.boe.es/buscar/act.php?id=BOE-A-2022-12482) fixes the stated amounts for 2023–2025 and refers later years to annual budgets. The [TGSS guide](https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia) advertises 80 plus MEI, but its displayed total does not reconcile with its stated base/rate. Use the individual's TGSS award and assessment to document the amount; do not certify a general 2026 amount from this discrepancy. This precise gap does not prevent an ordinary full-rate computation.
 
@@ -455,8 +461,9 @@ expected:
 | [LPGE31/2022 DA90](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128#da-90), [SEPE2026 figures](https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html), [official2026 IPREM table](https://vivienda.castillalamancha.es/iprem) | Monthly600 IPREM and continued2026 indicator, distinct from annual conventions | 2026-10-27 |
 | [Social Security cessation calculation](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es) | Current operational bounds, lawful lower-minimum-base exception and SMI comparator excluding proportional extra pay | 2026-10-27 |
 |[AEATcurrent2026legal/default-interestconfirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) |2026legal3.25%anddefault4.0625%;LGSS31.3selects the SocialSecurityformula andexistingtrigger/accrualrules remain separate |2026-10-27 |
+| [TGSS current system guide, Prórroga Tarifa Plana](https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es), [current LETA art. 38 ter](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5), [RD 2064 arts. 44/46](https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579#a44) | Published equality/above-SMI extension assessment, separate calendar years and exact remaining regularisation-text boundary | 2026-10-27 |
 
-**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the legal reconciliation of the literal 'exceeds' regularisation wording in art. 38 ter.6/RD 2064 art. 46.1 at exactly SMI, despite art. 44.3.f's equal-or-higher ordinary-base rule and TGSS's explicit assessment route above. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
