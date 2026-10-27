@@ -27,7 +27,7 @@ Use the ordinary resident regime for individuals in the fifteen autonomous commu
 
 Determine the autonomous community under [art. 72](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a72): most days, then the defined main-interest test if days cannot decide, then last declared residence. Apply its anti-avoidance and residence-change rules. Do not select whichever community gives the lowest tax. Establish family unit and individual/joint filing under arts. 82–84 before calculating allowances or reductions.
 
-Navarre and the three Basque foral territories require their own laws; they are outside these fifteen tables. Ceuta/Melilla have separate territorial calculations, including the 2026 Ceuta changes. Non-residents follow IRNR; special incoming-worker elections follow art. 93. An arrival or departure does not create an assumed ordinary split-year return: settle domestic and treaty residence and any exit charge first.
+Navarra and the three Basque foral territories use [their full territorial IRPF computations](es-foral-income-tax.md); they are outside these fifteen common-territory tables. Ceuta/Melilla have separate territorial calculations, including the 2026 Ceuta changes. Non-residents follow IRNR; special incoming-worker elections follow art. 93. An arrival or departure does not create an assumed ordinary split-year return: settle domestic and treaty residence and any exit charge first.
 
 ## Rates, bands and thresholds
 
@@ -597,7 +597,7 @@ expected:
 
 **Source discrepancies resolved by statute.** Hacienda's PDF prints Madrid's EUR 21,894.72 band width with a malformed decimal; Madrid art. 1 gives the correct amount. Its Canarias first cumulative quota is EUR 1,237.30, while current art. 18 bis gives **EUR 1,237.32**. The statutory amounts are used here. La Rioja art. 31 bis also preserves the ordinary assistance amount while increasing only the specified disabled-descendant minimum. The 2027 Valencian scale printed alongside the 2026 table is not used for 2026.
 
-Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; foral computations; the three-year Ceuta/Melilla extension’s detailed cross-basket attribution where decisive; simultaneous child-support/exempt-progression worksheet and final average-rate rounding; módulos activity computations and all applicable 2026 limit/transition questions; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
+Not yet confirmed in this revision: specific interactions within the fifteen 2026 common-territory regional-credit catalogues in es-irpf-deductions; the specifically outstanding foral methods recorded in [foral IRPF Sources](es-foral-income-tax.md#sources); the three-year Ceuta/Melilla extension’s detailed cross-basket attribution where decisive; simultaneous child-support/exempt-progression worksheet and final average-rate rounding; módulos activity computations and all applicable 2026 limit/transition questions; the final 2026-return schema, campaign dates and payment-option details for filing in 2027; special elections and treaty/exit computations outside the ordinary examples. These remain visible country-pack work. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 

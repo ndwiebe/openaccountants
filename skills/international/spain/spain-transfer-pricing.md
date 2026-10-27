@@ -87,7 +87,27 @@ An APA application includes an arm's-length proposal. Foreign authorities can pa
 
 Classify the offence before computing a penalty. The specific documentation penalty is not the ordinary Modelo 232 return penalty; incorrect and late returns have different rules. RIS arts. 15.3 and 16.6 define the documentation data items and sets. LIS art. 18.13.3 protects the specified tax-adjustment bases from listed LGT penalties where the required specific documentation was complied with; this is not an immunity for a false return. Art. 18.13.4 preserves obstruction penalties and directs the stated reductions to LGT arts. 188.1.b and 188.3. Check those conditions and the repeat-offence increase in LGT art. 199.6 before finalising the sanction.
 
+### Provincial model232: information duty is separate from the valuation file
+
+The three Basque model232 triggers differ from common-territory and Navarra triggers. The reporting population is the locally governed corporate taxpayer, local PE and specified foreign attribution entity with local presence. The ordinary information threshold is **strictly over36,000 of market value excluding IVA**, but aggregation differs:
+
+| Competent law | Ordinary aggregation test | Primary provisions |
+|---|---|---|
+| Bizkaia |Aggregate related transactions **with the same related person/entity**; the art.2 trigger does not impose Álava/Gipuzkoa's same-type/same-method restriction |[OF1047/2018 art.2](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2018/06/20/I-614_cas.pdf?hash=2b88ef4ffa0b9176fffed62d97b059cb), [OF387/2023 current annex amendment](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2023/10/10/I-1187_cas.pdf) |
+| Álava |Aggregate with the same person/entity **of the same type and valued using the same method** |[OF381/2018 art.2](https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_C.pdf) |
+| Gipuzkoa |Aggregate with the same person/entity **of the same type and valued using the same method** |[OF444/2018 art.2](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf), [current official FAQs](https://www.gipuzkoa.eus/documents/2456431/0/Preguntas%2Bfrecuentes.pdf/a3bb67f1-627e-8165-c710-af2e4b10956f) |
+
+The ordinary boxes exclude the specified same-tax-consolidation-group, qualifying AIE/UTE/member/group and public securities-offer operations; Gipuzkoa also expressly names the qualifying credit-entity institutional-protection-system operations. Related-intangible-income relief and the named noncooperative-jurisdiction operations/holdings have separate boxes **irrespective of amount**, with their own conditions. The ordinary36,000 threshold does not suppress those separate disclosures. Bizkaia's2023 amendment changes the annex/noncooperative-jurisdiction terminology; it does not rewrite the original art.2 aggregation rule. Retain the actual current filing year's annex/accepted code list.
+
+Report income and payment operations separately; do not net them against one another. Group report rows by counterparty, transaction type and valuation method, preserving the territory's trigger-aggregation distinction. Use accounting accrual for income/expense transactions, and actual transaction date for non-income/expense transactions. A qualifying transaction extending across years is disclosed in its originating year under the orders' specific rule; continued services are tested using each year's value. Do not treat a bank settlement date as the accrual date or repeat the entire original non-recurring transaction each year without testing that rule.
+
+All three orders require electronic filing in **the month after ten months have elapsed from period end**: an ordinary31December2026 close produces November2027, subject to the competent administration's operational calendar. Bizkaia OF1047 arts.3–7 prescribe its authorised electronic/representation route; Álava OF381 art.5 prescribes its tax-model application/electronic headquarters; Gipuzkoa OF444 art.5 prescribes ZergaBidea. Preserve the submitted information return and acceptance receipt separately from the corporate tax return and market-value documentation. A printable model or an exempt documentation file is not proof that this information duty was discharged.
+
+Boundary control: exactly36,000 does not cross the ordinary trigger;36,000.01 does. If one counterparty has20,000 of services plus20,000 of a genuinely different rental type, Bizkaia's ordinary aggregate is40,000. In Álava/Gipuzkoa, two separate type/method groups of20,000 each do not individually cross36,000, assuming no separate compulsory box or other transaction changes that result. Actual classification and market value remain essential.
+
 ## Cross-border points
+
+For local foral law, use the related-party documentation and information-return section of [foral corporate tax](es-foral-corporate-tax.md#cross-border-points), including the separate Navarra and provincial thresholds. Its specific current-order gaps remain visible; common-territory model232 triggers do not automatically apply there.
 
 An overseas counterparty does not create an automatic Spanish documentation exemption, and a domestic counterparty does not remove the arm's-length rule (LIS art. 18). Separately test transactions with listed non-cooperative jurisdictions under [LIS art. 19.2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a19) and the applicable documentation rules in [RIS art. 37](https://www.boe.es/buscar/act.php?id=BOE-A-2015-7771#a37); related-party status is not the only relevant question.
 
@@ -158,8 +178,11 @@ expected:
 | [Orden HFP/1978/2016, Modelo 231](https://www.boe.es/buscar/doc.php?id=BOE-A-2016-12484) | Arts. 2–4: private CbCR contents, deadline and electronic filing | 2026-10-25 |
 | [Ley 58/2003, General Tax Law](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Arts. 26, 188, 198–199: interest, reductions and information-return penalties | 2026-10-25 |
 | [AEAT, interest calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Explicit 2026 rate under the continued budget; page concerns the 2025 return filed in 2026 | 2026-10-25 |
-
-Not yet confirmed: foral-specific documentation and information-return rules; a monetary 2026 IPREM figure for the professional-shareholder alternative; public corporate CbCR reporting and case-specific treaty relief. These are not represented as confirmed computations here. Independent whole-pack review is pending.
+|[Bizkaia OF1047/2018](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2018/06/20/I-614_cas.pdf?hash=2b88ef4ffa0b9176fffed62d97b059cb) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
+|[Bizkaia OF387/2023](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2023/10/10/I-1187_cas.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
+|[Álava OF381/2018](https://www.araba.eus/botha/Boletines/2018/076/2018_076_02511_C.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
+|[Gipuzkoa OF444/2018](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2018/09/20/c1806246.pdf) |Confirmed provincial232 trigger/aggregation/electronic filing method |2026-10-27 |
+Not yet confirmed: special foral documentation circumstances outside the ordinary four-territory methods in [foral corporate tax](es-foral-corporate-tax.md#cross-border-points); a monetary 2026 IPREM figure for the professional-shareholder alternative; public corporate CbCR reporting and case-specific treaty relief. These are not represented as confirmed computations here. Independent whole-pack review is pending.
 
 <!-- openaccountants-cta-block -->
 

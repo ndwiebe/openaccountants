@@ -122,7 +122,7 @@ Common-territory residence does not eliminate foreign income: classify it and ap
 
 Social-security legislation is selected independently. [Regulation 883/2004 arts. 11–13](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731) determines one applicable Member State, posting/multi-state exceptions and the employment-state rule for employment in one state plus self-employment in another. Obtain the actual determination/A1 evidence instead of assuming Spanish RETA from tax residence alone.
 
-[VAT territory, LIVA art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3), excludes Canarias, Ceuta and Melilla. This does not mean every invoice by a Canary-established trader bears IGIC: test place of supply, exemptions and reverse charge. Canary IGIC has its own [Ley 20/1991](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463) and [Ley 4/2012 arts. 51–57](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282) rate/category framework. The BOE consolidation was marked “actualizándose” when read; a complete 2026 IGIC computation is not certified here. Ceuta/Melilla IPSI needs each city's ordinance. Foral IRPF needs the competent territory's law, while national social-security rules still require their own test. These precise territorial gaps remain in the pack README; they do not prevent the ordinary mainland computation.
+[VAT territory, LIVA art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3), excludes Canarias, Ceuta and Melilla. This does not mean every invoice by a Canary-established trader bears IGIC: test place of supply, exemptions and reverse charge. Use [the ordinary2026 IGIC computation](es-canary-islands-igic.md), which reads Ley20/1991 alongside the current DL1/2025 regional consolidation and dated2026 amendments. Ceuta/Melilla use [the two city IPSI methods](es-ceuta-melilla-ipsi.md) and current ordinances. Foral residents use [the separate IRPF method](es-foral-income-tax.md); national social-security rules still require their own test. Each territorial Guide names any unresolved ordinary branch precisely.
 
 ## Two worked examples that recompute
 
@@ -222,7 +222,7 @@ expected:
 | [Regulation 883/2004](https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:02004R0883-20190731), arts. 11–13 | Applicable social-security legislation | 2026-10-26 |
 | [Ley 4/2012](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282), arts. 51–57 | Canary rate framework; BOE consolidation marked updating, not a complete 2026 IGIC reconciliation | 2026-10-26 |
 
-**Not yet confirmed:** general statutory amount for new 2026 reduced-fee awards and precise extension-boundary issues; repealed-module-extension election transitions and activity-specific module indices; complete foral/IGIC/IPSI computations; specific foreign/treaty and special-system cases outside the ordinary routes. The final 2026 Modelo 100 campaign/schema for 2027 is not presumed from prior years. Independent whole-pack review remains pending.
+**Not yet confirmed:** general statutory amount for new 2026 reduced-fee awards and precise extension-boundary issues; repealed-module-extension election transitions and activity-specific module indices; the precisely outstanding branches in the linked foral IRPF/IGIC/IPSI Guides; specific foreign/treaty and special-system cases outside the ordinary routes. The final 2026 Modelo 100 campaign/schema for 2027 is not presumed from prior years. Independent whole-pack review remains pending.
 
 <!-- openaccountants-cta-block -->
 
