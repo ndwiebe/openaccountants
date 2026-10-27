@@ -29,6 +29,15 @@ Income tax, payroll withholding and quarterly tax instalments are separate compu
 
 ## Rates, bands and thresholds
 
+### Debt-interest rate
+
+| Item | Annual rate | Verified year | Official source |
+|---|---:|---|---|
+| Legal-money rate | 3.25% |2026,current authority read27October |[AEAT2026confirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) |
+| Social Security default interest | 4.0625%,calculated as3.25%×1.25 |2026,current authority read27October |[LGSS31.3](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a31),[AEAT2026rate](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) |
+
+Apply the rate only to principal/surcharge and accrual periods for which the debt-interest rules below actually require interest. It is not a flat penalty on every late payment.
+
 ### RETA income bands and chosen monthly bases
 
 Every row below is for **2026** under [order art. 18.1](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a1-10). Income is the statutory monthly average calculated in the next section, not turnover or the bank debit. The reduced table ends **below** 1,166.70; that exact amount starts general band 1.
@@ -296,7 +305,7 @@ Contribution surcharges depend on compliance with the art. 29 data/settlement du
 | Duties not met; paid from end of that period | 35% | [Art. 30.1.b.2](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a30) |
 | Non-contribution public-law Social Security debt | 20% | [Art. 30.2](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a30) |
 
-[LGSS art. 31](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a31) makes interest exigible after fifteen days from the enforcement notice/deduction-procedure communication, and in the specified suspended-appeal case. Principal accrues from its original payment deadline; surcharge interest accrues from exigibility. The rate is the legal-money rate during each accrual period **increased by 25%**, unless the budget sets another rate. Use a verified monetary rate for the actual interval; do not confuse a 25% relative increase with 25 percentage points. A RETA regularisation paid within its special notice deadline has no such surcharge/interest.
+[LGSS art. 31](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a31) makes interest exigible after fifteen days from the enforcement notice/deduction-procedure communication, and in the specified suspended-appeal case. Principal accrues from its original payment deadline; surcharge interest accrues from exigibility. The rate is the legal-money rate during each accrual period **increased by 25%**, unless the budget sets another rate. For the verified2026interval,the legal rate is **3.25%**,so art31.3gives **4.0625% annually** (`3.25%×1.25`). AEAT explicitly confirms those2026rates under the continued budget provisions;this does not import a foral tax-interest rule into Social Security ([currentAEAT2026confirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html)). Calculate each applicable rate interval separately;10000of unchanged principal accruing for a full365-day2026year gives406.25,and73eligible days on that365-day basis gives81.25. Those controls assume the statutory interest trigger and stated accrual days;they do not impose interest during an excluded regularisation window. Keep principal and surcharge accrual dates separate,and use the corresponding official rate for another year or an enacted in-year rate change. A25%relative increase is not25percentagepoints. A RETA regularisation paid within its special notice deadline has no such surcharge/interest.
 
 ## Cross-border points
 
@@ -445,8 +454,9 @@ expected:
 | [LGSS arts.331/338–339/342](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a339), [RD1541/2011 art.13](https://www.boe.es/buscar/act.php?id=BOE-A-2011-17173#a13) | Cessation rate, monthly bounds, child/low-base exceptions, partial cases and pluriactivity | 2026-10-27 |
 | [LPGE31/2022 DA90](https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128#da-90), [SEPE2026 figures](https://sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html), [official2026 IPREM table](https://vivienda.castillalamancha.es/iprem) | Monthly600 IPREM and continued2026 indicator, distinct from annual conventions | 2026-10-27 |
 | [Social Security cessation calculation](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/10538/2277?changeLanguage=es) | Current operational bounds, lawful lower-minimum-base exception and SMI comparator excluding proportional extra pay | 2026-10-27 |
+|[AEATcurrent2026legal/default-interestconfirmation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/guia-principales-novedades/otras-cuestiones-interes.html) |2026legal3.25%anddefault4.0625%;LGSS31.3selects the SocialSecurityformula andexistingtrigger/accrualrules remain separate |2026-10-27 |
 
-**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries; the monetary interest rate for a particular accrual interval. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
