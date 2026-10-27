@@ -13,3 +13,9 @@ The whole-pack report is pinned to 9784b7b4. The later PIT, social/payroll, cess
 The Guide README and individual Sources sections identify remaining ordinary regional-credit, territorial, corporate-surcharge, RETA and combined-use VAT questions. Future 2027 forms, specialist schemes and unresolved source conflicts remain separately described in the reports.
 
 Reports are historical review records. Subsequent source changes need their own exact delta review before their coverage transfers.
+
+## Regional and annuity additions
+
+Source checkpoint `b8aed959` adds independently reviewed Catalan legacy/rural/July credit methods,Valencian family-credit month/global-cap calculations and the combined annuity/progression branch where the actual general base absorbs both full minimum increases. The [delta manifest](regional-annuity-checkpoint-b8aed959.json) pins the two changed Guides and the independent reports. Report text differs from its local original only by absolute-path redaction. Existing worked examples,platform metadata and CTA tails remain preserved.
+
+The lower-base annuity/progression minimum allocation remains explicitly unresolved; its [diagnostic analysis](annuity-lower-base-unresolved-analysis.md) records competing official instructions without certifying an allocation. Cantabria's ordinary-rent denominator and La Rioja's age interpretation remain unresolved. No previous full-country completion claim is inferred from these bounded passes. The new foral nonresident Guide is undergoing a separate review and is outside this delta checkpoint.
