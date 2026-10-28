@@ -1,11 +1,11 @@
 ---
 name: spain-vat-return
 description: Reconciles a Spanish ordinary VAT return for 2026 to invoices, bank settlements, customs assessments, registers and accepted prior returns for sole traders and companies in the peninsula and Balearic Islands. Uses es-vat-return for the underlying computation and checks business-use restrictions, general versus special prorrata, investment-good adjustment signs, reverse-charge mapping and credit roll-forward against current Modelo 303 instructions. Separates withheld income tax and platform fees from VAT bases and distinguishes dated energy and housing changes from ordinary rates. Use for revisar IVA, revisar Modelo 303, conciliación IVA, return review, prior credit and investment adjustment. Preserves this existing entry point while recording territorial, special-regime and unresolved computation limits.
-version: 2.3
+version: 2.4
 category: international
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -173,7 +173,7 @@ expected:
 | [RDL16/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-26458), [27January repeal](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2024), [RDL2/2026](https://www.boe.es/buscar/act.php?id=BOE-A-2026-2547), [26February repeal](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-4667) | Actual extending provisions and non-convalidation history; neither decree presented as currently in force | 2026-10-27 |
 
 
-**Not yet confirmed:** the initial exactly10kW retrospective boundary and December's unpublished October-index condition, decisive partly/nonrecoverable-VAT acquisition-value boundary, fact-specific common-regime-authorisation, simultaneous later U/P changes where only one separate change exceeds 10 points, the delayed-first-use later-reference bridge conflict, and specialised fuel-result points recorded in [es-vat-return Sources](es-vat-return.md#sources); specific foral allocation exceptions beyond [the ordinary allocation method](es-vat-return.md#the-base); use [IGIC](es-canary-islands-igic.md) or [IPSI](es-ceuta-melilla-ipsi.md) for their territories. This review route does not close an unresolved computation by agreeing with a duplicate draft. Independent whole-pack review remains outstanding.
+**Published route supplied:** The ordinary AEAT exactly-10-kW route and its literal-source reconciliation are supplied in the linked computation Guide. Its source-derived initial acquisition-value and either-separate-gate annual U/P methods are also supplied, with independent recovery rights, the combined-text interpretation and the actual calculator discrepancy kept explicit. **Not yet confirmed:** December's unpublished October-index condition, fact-specific common-regime-authorisation, the delayed-first-use later-reference bridge conflict, and specialised fuel-result points recorded in [es-vat-return Sources](es-vat-return.md#sources); specific foral allocation exceptions beyond [the ordinary allocation method](es-vat-return.md#the-base); use [IGIC](es-canary-islands-igic.md) or [IPSI](es-ceuta-melilla-ipsi.md) for their territories. This review route does not close an unresolved computation by agreeing with a duplicate draft. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
