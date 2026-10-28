@@ -10,14 +10,14 @@ description: >
   securities exit tax, deferral documents, continuing reports and immigration
   basis. Use for Faroese royalties, dividend tax refunds, foreign contractors,
   PE screening, moving abroad with shares and inbound investment portfolios.
-  Treaty-specific rates, PE profit attribution, company migration, complete
-  exit-deferral adjustments and ordinary foreign-tax credits need additional
+  Treaty-specific rates, complex PE profit attribution, company migration, complete
+  exit-deferral adjustments and complex foreign-tax credit cases need additional
   source work. Independent AI review accepted partial draft publication;
   professional attestation remains pending.
-version: 0.2
+version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-28
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -26,9 +26,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands cross-border payments and migration v0.2
+# Faroe Islands cross-border payments and migration v0.3
 
-> **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026.
+> **Checked against the law.** Professional review is pending. This Guide prepares working papers for income year 2026 from the cited provisions read on 25 October 2026, with ordinary foreign-tax credit, branch attribution, corporate-loan interest and bounded later-disposal methods checked on 28 October.
 
 ## Who this applies to
 
@@ -55,7 +55,11 @@ An individual with a Faroese home has full domestic tax liability. A person with
 
 Tax Act §2 limits nonresident liability to its listed income, with only expenses incurred to earn that income deductible under subsection 2. The categories include royalties from the Faroes, business participation through a Faroese permanent establishment, Faroese property income, dividends/issuer repurchases and the specified securities disposals. Do not treat that expense rule as allowing net taxation where a specific gross levy such as royalty tax applies. Identify the precise category and then its computation law. [Tax Act §2(1)(c)–(g), (m), (2)][tax]; [Assessment Act §7][rate]
 
-Section 2(3)'s more-than-30-day construction, new-build, installation or assembly rule also covers the specified associated activities. Thirty days exactly does not satisfy that particular duration test, but it does not establish an exemption from §2's other routes. Keep contracts, project dates, sites, personnel and connected activities. A treaty can limit the domestic result only after its actual scope and PE provisions have been established. Fixed-place/agent tests, aggregation, exclusions and profit attribution remain incomplete here. [Tax Act §2(1)(d), (3)][tax]
+Section 2(3)'s more-than-30-day construction, new-build, installation or assembly rule also covers the specified associated activities. Thirty days exactly does not satisfy that particular duration test, but it does not establish an exemption from §2's other routes. Keep contracts, project dates, sites, personnel and connected activities. A treaty can limit the domestic result only after its actual scope and PE provisions have been established. The ordinary fixed-place/attribution method follows below; agency tests, aggregation and exclusions need the actual applicable instrument. [Tax Act §2(1)(d), (3)][tax]
+
+TAKS explains that domestic fixed-place interpretation follows the treaty concept, referring to Nordic Article 5 and listing management premises, a branch, office, factory, workshop and extraction site. Establish an actual place and business activity; this list alone does not decide an agency or treaty exception. Once a branch PE is established, attribute the income it would earn as an independent enterprise dealing at arm's length with its head enterprise. Include connected asset gains/losses and deduct only expenses incurred to earn the Faroese taxable income. Build an evidenced bridge from attributable third-party receipts, direct costs and supportable head-office allocations, then the Faroese tax adjustments. This is a profit-attribution working paper, not a gross-receipts levy. [Tax Act §2(1)(d), (2)][tax]; [TAKS VLS C.2, fixed establishment][residence]
+
+For example, an established ordinary company branch with DKK 1,000,000 attributable receipts, DKK 600,000 deductible direct costs and DKK 100,000 independently supported attributable head-office costs has DKK 300,000 ordinary profit before other tax adjustments, and DKK 54,000 at the qualifying 18% company rate. These allocations are hypothetical proved inputs, not automatic percentage deductions or a method for attributing internal finance/intangibles. Reconcile depreciation, financing limitations and losses under the corporate/TP Guides. [Tax Act §§2(2), 31, 37b][tax]; [Assessment Act §5(2)][rate]
 
 ### Royalties and distributions
 
@@ -71,7 +75,9 @@ When an individual becomes tax-resident in Denmark, Greenland or another country
 
 A realisation-basis taxpayer can seek deferral under §§2b–2c. The departure return and securities inventory are due **no later than the departure day**, with adequate security in the form of a bank guarantee matched to the deferred tax. Create both the security-by-security inventory and a deferred-tax balance. Do not label deferral unconditional or replace that deadline with the next ordinary annual return. [§§2a(2), 2b, 2c(1)][capital]
 
-Later disposal requires an individual security calculation using the acquisition basis used for the exit computation and FIFO. Section 2c(3)–(4) adjusts the deferred balance for subsequent gains/losses and foreign-tax/loss effects; death is treated as disposal of all inventory securities under subsection 5. These adjustment mechanics need a transaction-specific calculation beyond the simple exit example below. For each year with a positive deferred balance, a return with address is due by 1 May of the following year. [§2c][capital]
+For each later disposal, use the original acquisition basis used in the exit computation, actual sale proceeds and FIFO. For a positive gain, compute the Faroese tax and credit eligible actual foreign tax under the applicable treaty or §19; pay the positive residual and reduce the deferred balance by the payment. If comparing actual proceeds with departure value produces a loss, §2c(3) separately reduces the balance by that loss's Faroese tax value. A foreign deduction of that loss invokes the separate foreign negative-tax-value payment rule; do not ignore it. Actual acquisition-basis losses have §2c(4)'s separate adjustment. Death is treated as disposal of all inventory securities under subsection 5.
+
+**Bounded later-disposal control:** original cost DKK 100,000, departure value DKK 150,000 and initial deferred tax DKK 17,500; later sale DKK 140,000, no foreign tax, no foreign deduction of the value fall, no other inventory securities or prior balance adjustments. Actual gain DKK 40,000 gives DKK 14,000 tax paid and reduces the balance to DKK 3,500. The DKK 10,000 fall from departure value has DKK 3,500 Faroese tax value, reducing the remaining balance to zero. Do not substitute departure value for the original gain basis, or import this fixture into foreign-loss or rising-value cases without the separate §2c computation. For each year with a positive deferred balance, a return with address is due by 1 May of the following year. [§2c][capital]
 
 On return to Faroese tax residence, apply the exit/deferral rules up to the return date for securities still held, then use market value on return as the incoming basis while retaining the actual acquisition date. For other incoming individuals, §2e likewise preserves acquisition date and uses incoming market value. Listed securities use that day's quoted value; unlisted securities start from the company's net asset value at the end of the last accounting period before arrival, unless TAKS approves a better evidenced valuation. [§§2d–2e][capital]
 
@@ -108,7 +114,20 @@ Tax Act §141(1)(2)–(3) provides a fine for intentional or grossly negligent f
 
 For each payment or migration event, record domestic residence/source, counterparty and beneficial-owner identity, treaty residence, the treaty actually in force for that date, income article and PE connection, domestic starting tax, entitlement to relief and procedure. A country on an authority list does not by itself establish that a payment is exempt. Do not apply EU directives or Danish domestic rules without Faroese authority.
 
-Capital Income Act §19 grants a foreign-tax credit for income from a country **without** a double-tax treaty, for foreign tax actually paid or withheld, capped at Faroese tax attributable to that same income. Treaty-country relief and ordinary-income foreign credits need their own authority. Controlled-transaction pricing and thin capitalisation belong to the separate TP Guide. This Guide does not establish a general interest-withholding exemption. [Capital Income Act §19][capital]; [Tax Act §§37a–37b][tax]
+Controlled-transaction pricing and thin capitalisation belong to the separate TP Guide. [Tax Act §§37a–37b][tax]
+
+**Ordinary corporate-loan interest:** a non-bank Faroese company paying genuine loan interest to a foreign company with no Faroese full liability, PE connection or other domestic taxable connection has no withholding imposed by the cited ordinary royalty, distribution or bank-deposit provisions. This is an inference from their defined scope, not a treaty-granted zero rate: Tax Act §2 exhaustively lists nonresident income categories without a general loan-interest category; Assessment Act §7 covers royalties; Capital Income Act §15 covers distributions; §16 covers interest credited by Faroese banks/postgiro to individuals/estates. Thus DKK 20,000 genuine interest in that bounded fixture is paid DKK 20,000 without those withholdings. A disguised distribution, bank deposit, PE-connected debt, different recipient or special instrument requires its own classification; §16's 35% bank-deposit withholding must not be described as a general corporate-interest rate. [Tax Act §2][tax]; [Assessment Act §7][rate]; [Capital Income Act §§2, 15–16][capital]; [TAKS VLS C.2][residence]
+
+### Ordinary foreign-tax credit
+
+For foreign ordinary income from a country **without a double-tax treaty**, Tax Act §154 allows credit for foreign income tax actually paid or withheld, limited to Faroese tax attributable to the same income. Capital Income Act §19 supplies the separate capital-income rule. Include the eligible foreign income in the correct Faroese base before relief. For a positive ordinary worldwide base, the ordinary limit is `Faroese income tax before foreign relief × eligible net foreign income / worldwide taxable income in that calculation`; credit is the lower of that limit and eligible foreign tax. This is a credit from tax, not a second deduction of the foreign tax from the income base. [Tax Act §§25, 154][tax]; [Capital Income Act §19][capital]; [TAKS VLS O.1.1–O.1.4][relief]
+
+Use only income and tax belonging to the same calculation. Deduct foreign-related expenses from the foreign numerator; allocate expenses relating to both sources proportionally to their gross income. Keep countries separate, and separate income types where methods or tax calculations differ. Special-rate income has its own computed-tax cap. Retain source-income, expense and paid/withheld-tax evidence. Treaty entitlement, losses or a nonpositive denominator, tax changes/refunds, unused-credit treatment and return-field implementation require their own checks. [TAKS VLS O.1.3–O.1.7][relief]
+
+For individuals, TAKS distinguishes ordinary tax credits from refundable child credit: ordinary credits are allocated before foreign relief as described in O.1.8, while child credit follows relief and retains its statutory refund treatment. Relief is allocated proportionally between national, municipal and church tax under O.1.9. Do not copy the older guidance's illustrative bands or foreign-work deduction amounts into a 2026 calculation; use the current income-tax Guides and the actual treaty where relevant. [TAKS VLS O.1.8–O.1.9][relief]; [Assessment Act §§1–3][rate]
+
+
+[Ordinary company credit and its supporting arithmetic](../../../ledgers/faroe-islands-2026-evidence/fo-cross-border-payments-supplementary-controls.md) is retained in supplementary research.
 
 ## Two worked examples that recompute
 
@@ -177,8 +196,12 @@ expected:
 | [Tax Administration Act][admin] | §§8–9, ordinary and exceptional amendment rules | 2026-10-25 |
 | [TAKS royalties][royalty] | Classification and royalty notification/refund routes; simplified treaty summary is not a treaty opinion | 2026-10-25 |
 | [TAKS dividend refunds][refund] | 1 May 2026 practice change, refund evidence and advance-confirmation process | 2026-10-25 |
+| [Current Tax Act][tax] | §154; ordinary credit for tax on income from a country without a treaty | 2026-10-28 |
+| [Assessment Act][rate] | §5(2); qualifying company rate used in the credit example | 2026-10-28 |
+| [TAKS VLS C.2][residence] | Fixed-place examples, independent-enterprise branch attribution and exhaustive domestic source categories, checked against current §2; obsolete treaty/worker examples excluded | 2026-10-28 |
+| [TAKS VLS O, double taxation][relief] | O.1.1–O.1.9; credit fraction, source expenses, separate countries/calculations, credit ordering and allocation; guidance dated 1 November 2021, historical example amounts not used as 2026 law | 2026-10-28 |
 
-Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse application, complete fixed-place/agency PE and attribution analysis, project aggregation, ordinary-income foreign credits, general interest withholding, company migration/closure, full §2c later-disposal/foreign-loss deferral calculations, royalty-refund form contents and time limit, dividend transition cases/exceptional reopening and current monetary fine practice. Those are unresolved work, not exemptions. The cross-border domain remains partial and no professional attestation is claimed.
+Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse application, agency PE, treaty exclusions and complex finance/intangible attribution, project aggregation, foreign-credit losses/nonpositive bases, tax changes/refunds, unused-credit treatment and filing fields, interest cases outside the bounded genuine corporate-loan fixture, company migration/closure, §2c actual-loss/foreign-loss and rising-value deferral calculations, royalty-refund form contents and time limit, dividend transition cases/exceptional reopening and current monetary fine practice. Those are unresolved work, not exemptions. The cross-border domain remains partial and no professional attestation is claimed. The 25 October independent review covered the previous v0.2; this update requires fresh review.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170
@@ -186,6 +209,8 @@ Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse applica
 [admin]: https://logir.fo/Logtingslog/61-fra-02-05-2022-um-fyrisiting-av-skatti-tolli-og-avgjaldi
 [royalty]: https://www.taks.fo/en/business/tax/tax-and-royalties
 [refund]: https://www.taks.fo/en/business/tax/dividend-tax-refunds
+[relief]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting
+[residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting
 
 > Contributed by Ryan Duguid.
 

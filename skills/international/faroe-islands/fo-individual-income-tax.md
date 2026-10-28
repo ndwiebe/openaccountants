@@ -9,7 +9,7 @@ description: >
   support, rental election, preliminary payments and annual settlement. Use for
   Faroese personal income tax, self-employed profit, child tax credits, private
   investments, foreign work and individual tax returns. Shipping, part-year
-  annualisation, treaty relief, benefits and specified implementation questions
+  credits, treaty relief, benefits and specified implementation questions
   require additional work identified in Sources. This is tier-2 material
   accepted for partial draft publication after independent AI review; professional
   attestation remains pending.
@@ -17,8 +17,8 @@ jurisdiction: FO
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-25
-version: "0.4"
+last_updated: 2026-10-28
+version: "0.5"
 verified_by: pending
 authored_by: Ryan Duguid
 review_status: pending_review
@@ -26,9 +26,9 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands individual income tax v0.4
+# Faroe Islands individual income tax v0.5
 
-> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026; professional review is pending.
+> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026, with the church-tax, spouse and bounded part-year methods checked on 28 October; professional review is pending.
 
 ## Who this applies to
 
@@ -84,11 +84,23 @@ Eligible paid pension contributions have deduction/exclusion under Pension Act �
 
 ### Family, municipality and ceiling
 
+For a full-year cohabiting spouse case under §4, first establish each spouse's own taxable income. Where the lower nonnegative income is below DKK 30,000 and the other is above it, the ordinary adjustment transfers the unused amount: `transfer = 30,000 − lower income`; raise the lower income to DKK 30,000 and reduce the higher income by that transfer. TAKS expressly illustrates DKK 20,000 / 300,000 becoming DKK 30,000 / 290,000, and DKK 0 / 300,000 becoming DKK 30,000 / 270,000, automatically at year-end. Keep the spouses separately assessed on the adjusted bases. This bounded method does not settle negative-income, separation, death or part-year spouse cases. [Tax Act §4][tax]; [TAKS spouse adjustment][spouse]
+
 For national child credit, establish full liability, required residence, custody/child's home, child age on 1 January and child's Faroese residence or retained full liability while studying abroad. Apply the recipient/transfer rules and proportional reduction where the recipient's liability covers only part of the year. A child taken into statutory care ends entitlement. The credit reduces tax, not taxable income; an excess is refundable under §2(3). [Assessment Act §2][rate]
 
 Determine the tax municipality under §§41–44, ordinarily residence on 1 December before the income year, with commencement/move rules. Apply the current municipal child credit separately from the national amount. TAKS explains the written agreement/preliminary-registration process for transferring or sharing eligible credit and the refund treatment where credit exceeds tax. Preserve the actual allocation rather than giving both parents the full credit. Pensioner national credits have separate eligibility under Assessment Act §3; unused credit transfers to municipal tax only up to that tax under Tax Act §47(2). [Tax Act §§41–47][tax]; [Assessment Act §§2–3][rate]; [TAKS child credit][child]
 
-For municipal calculation, §47 directs rounding taxable income down to a multiple of DKK 100 before computing the tax. Keep that rounding distinct from payment rounding. Compute each national/municipal/church component, eligible credits and the §54(2) proportional ceiling adjustment in a traceable schedule. The ceiling does not establish a 50% limit on every tax, contribution and pension outflow together. Part-year annualisation, church base/rounding and credit/ceiling ordering in unusual cases require the additional checks listed in Sources. [Tax Act §§24(2), 46–47, 54(2)][tax]
+For municipal calculation, §47 directs rounding taxable income down to a multiple of DKK 100 before computing the tax. Keep that rounding distinct from payment rounding. Compute each national/municipal/church component, eligible credits and the §54(2) proportional ceiling adjustment in a traceable schedule. The ceiling does not establish a 50% limit on every tax, contribution and pension outflow together. Use the bounded part-year method below; unusual credit/ceiling interactions require the additional checks listed in Sources. [Tax Act §§24(2), 46–47, 54(2)][tax]
+
+For an ordinary full-year church member, calculate church tax on the ordinary municipal income base **after the DKK 30,000 exempt amount**, using the actual parish rate. Church Finance Act §§11–13 separates national and local church rates and uses the municipal collection rules. The official 2024 audit report expressly confirms that TAKS calculates church tax in the same way as municipal tax, deducting the municipal exempt amount first. Read with Tax Act §§46–47, the working-paper base is `max(income rounded down to DKK 100 − 30,000, 0)`. Apply the church rate to that base separately; a municipal child credit does not reduce the base. The report also records the Finance Ministry's explanation that the special 42%/35% limited-liability gross levy does not attract an additional church charge. This full-year method does not settle changes of membership during a year, part-year allowances or final sub-krone settlement rounding. [Church Finance Act §§11–14][church]; [Tax Act §§46–47][tax]; [Landsgrannskoðanin, 2024 report §4.10, pp. 44–46][church-audit]; [2026 parish rates][municipal]
+
+### Ordinary arrival and departure during the year
+
+Liability continues while the statutory residence/source conditions are met. Acquiring a home without actually taking up residence does not itself start the home-based route; the 180-day stay route instead starts retrospectively from the first qualifying arrival. Preserve the actual home, arrival/departure and presence evidence. A registration date alone does not decide tax residence. A home retained after departure requires the actual facts to be assessed. [Tax Act §§1, 6–8][tax]; [TAKS VLS C.1][residence]
+
+For a bounded 2026 ordinary resident period with no credits, church membership, foreign relief, spouse transfer or special-rate income, §24(2) requires conversion to full-year income. The TAKS 2026 calculator demonstrates the administrative sequence: actual taxable income × `365 / taxable days`, rounded down to DKK 100; compute the current full-year national and municipal taxes on that annualised base, then multiply their sum by `taxable days / 365`. The municipal exempt amount is applied in the annual calculation before this reduction. Treat this as the observed calculator working-paper method, not an express statutory rounding rule for every component. [Tax Act §§24(2), 46–47][tax]; [TAKS calculator guidance][calculator-info]; [TAKS 2026 calculator][calculator]
+
+**Observed control, not a client assessment:** for DKK 150,000 income over 180 taxable days in Tórshavn, without church tax or any credit, the official calculator shows annualised income DKK 304,100, gross annual tax DKK 85,644 and reduced tax DKK 42,235.40; its final income-tax display is DKK 42,235. The unrounded annual equivalent is DKK 304,166.67. This recomputes as national DKK 33,565 plus municipal DKK 52,079, then ×180/365. Its separately displayed 3% AM charge is DKK 4,500 on actual income. The calculator is expressly indicative. Its displayed child-credit amount differs from the current Assessment Act, so no child-credit result is adopted from it. Part-year credits, spouse cases, changing church membership and final settlement rounding remain separate questions. [Assessment Act §§1–2][rate]; [TAKS calculator][calculator]
 
 ### Capital income, rentals and interest support
 
@@ -126,7 +138,10 @@ False/misleading information with evasion intent is subject to Tax Act §139 fin
 
 Classify domestic versus treaty residence, work location, payer, actual days, income article and relief evidence. The 42% A-income-only nonresident rule does not govern every foreign person's Faroese property/business income. A stay below 180 days does not itself prove treaty exemption. Tax Act §1(3) restricts deductions for a treaty-foreign resident to expenses concerning income the Faroes may tax. [Tax Act §§1–2][tax]; [Assessment Act §§1, 8][rate]
 
-Capital Income Act §19 permits capped foreign-tax credit for income from a country **without** a double-tax treaty. Treaty credits/exemptions and ordinary foreign-tax relief need separate authority; do not use that clause as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]
+Capital Income Act §19 permits capped foreign-tax credit for capital income from a country **without** a double-tax treaty. Tax Act §154 supplies the separate ordinary-income credit; the [cross-border Guide’s bounded method](fo-cross-border-payments.md#ordinary-foreign-tax-credit) explains source expenses, the positive-base fraction and credit ordering. Treaty credits/exemptions, nonpositive bases and the other stated limits require their own authority; do not use §19 as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]
+
+
+[Church calculation and its supporting arithmetic](../../../ledgers/faroe-islands-2026-evidence/fo-individual-income-tax-supplementary-controls.md) is retained in supplementary research.
 
 ## Two worked examples that recompute
 
@@ -214,10 +229,15 @@ expected:
 | [TAKS 2026 national table][national] | Cross-check statutory bands | 2026-10-25 |
 | [TAKS 2026 municipal/church/child table][municipal] | Current municipality rates, credits and locality footnotes | 2026-10-25 |
 | [TAKS child credit][child] | Allocation/application/refund procedure | 2026-10-25 |
+| [Church Finance Act][church] | §§11–15; membership, national/local church tax and municipal collection rules | 2026-10-28 |
+| [Landsgrannskoðanin 2024 annual report][church-audit] | §4.10, pp. 44–46; TAKS's actual church-tax base and limited-liability explanation | 2026-10-28 |
+| [TAKS spouse adjustment][spouse] | Explicit full-year 0/300,000 and 20,000/300,000 adjustment examples; Tax Act §4 checked with them | 2026-10-28 |
+| [TAKS VLS C.1][residence] | Selected residence commencement/cessation discussion, cross-checked against current §§6–8; obsolete examples excluded | 2026-10-28 |
+| [TAKS calculator][calculator] and [guidance][calculator-info] | Actual 2026 synthetic no-credit/no-church 365-day and 180-day runs at DKK 150,000; indicative observed method, child-credit display excluded | 2026-10-28 |
 | [TAKS housing/rents][rent] | Gross-rental eligibility and ordinary-accounts distinction | 2026-10-25 |
 | [TAKS return procedure][returns] | Statements, accounts, returns and extensions | 2026-10-25 |
 
-Not yet confirmed: complete part-year annualisation and commencement/cessation procedure, church-tax base/rounding, unusual ceiling/credit interaction, benefit part-year/payment adjustments and full exemption implementation, ordinary foreign-tax/treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
+Not yet confirmed: part-year credit and spouse adjustments beyond the bounded no-credit calculator method, part-year or membership-change church calculations and final sub-krone settlement rounding, unusual ceiling/credit interaction, benefit part-year/payment adjustments and full exemption implementation, foreign-credit nonpositive bases, tax changes, unused-credit treatment and treaty relief, all overseas/shipping worker computations, special business/asset regimes, detailed loan-support filing and foreign-loan evidence rules. Separate travel/double-household support regimes need applicability review. Those are remaining ordinary/special-case gaps, not exemptions; the personal-tax domain remains partial. Independent whole-pack AI review accepted the previous v0.4 material for partial tier-2 draft publication on 25 October 2026; this update requires fresh review. Professional attestation remains pending.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170
@@ -229,8 +249,14 @@ Not yet confirmed: complete part-year annualisation and commencement/cessation p
 [national]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt
 [municipal]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt
 [child]: https://www.taks.fo/fo/borgari/fradrattur/barnafradrattur
+[church]: https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar
+[church-audit]: https://lg.fo/download/file/f3e290b4e758ae966b65955f9beb36e8c540831d.pdf
 [rent]: https://www.taks.fo/fo/borgari/skattur/skattur-og-husaleiga
 [returns]: https://www.taks.fo/en/individuals/tax/tax-return
+[spouse]: https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur
+[residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting
+[calculator-info]: https://www.taks.fo/fo/borgari/skattur/skattaroknarin
+[calculator]: https://www.eskatt.fo/sjtp/sjtpsim.aspx
 
 > Contributed by Ryan Duguid.
 

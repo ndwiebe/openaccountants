@@ -10,13 +10,14 @@ description: >
   holiday accruals, payslips, information reporting and invoice deadlines,
   including mid-year ALS procedure changes. Use for Faroese payroll, employer
   contributions, mandatory pension, social insurance, holiday pay and foreign
-  workers. Benefit adjustments/exemptions and specified historical/operational
-  cases remain open. Independent AI review accepted partial draft publication;
+  workers. Includes proved employee-payment and car-mileage benefit adjustments and dated
+  2026 pension rules. Other specified benefit transitions and operational cases
+  remain open. Independent AI review accepted partial draft publication;
   professional attestation is pending.
-version: 0.2
+version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-28
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -25,9 +26,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands payroll and mandatory contributions v0.2
+# Faroe Islands payroll and mandatory contributions v0.3
 
-> **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026. This Guide prepares payroll working papers, with professional review pending.
+> **Checked against the law.** Income year 2026; selected current statutes and authority guidance read 25 October 2026; benefit, dated pension and contribution provisions re-read 28 October 2026. This Guide prepares payroll working papers, with professional review pending.
 
 ## Who this applies to
 
@@ -80,7 +81,19 @@ Pension Act §1 covers a fully tax-liable person below statutory pension age, su
 
 Compute eligible combined A/B income, the statutory minimum, qualifying contributions already made and the DKK 150,000 annual mandatory ceiling. A contract can fund or require more. The employer must transfer pension with salary through TAKS's withholding system; incompatible transfers can be rejected. B-income has its own payment/part-year rules. Eligible paid contributions have ordinary income deduction/exclusion under §12(3)–(4), while pension contribution tax is withheld under §12(2). Keep gross pension, contribution tax, credited savings and any insurance allocation separate. [Pension Act §§2, 12][pension]
 
-Act 23/2026, published 27 February and effective **28 February 2026**, replaces the temporary-stay provision with the specified departure-refund route, changes small-payment rules and foreign-pension wording, and makes other administrative changes. Use the pre-amendment provision for earlier events; the current consolidation is not proof of that earlier scope. From **25 August 2026**, Regulation 72/2026's foreign-pension test requires at least 75% for continuing payouts and the stated 12% foreign/combined contribution. Earlier foreign-plan and temporary-stay applications require their applicable prior text. [Act 23/2026 §§1–2][pensionfeb]; [Regulation 72/2026 §§1–2, publication 24 August][foreignaug]
+Use the operative pension rule for the event, not the latest consolidation alone. The contribution rate is **12% throughout 2026**. Keep the following dated ledger. [Pension Act §2(1)][pension]; [payment Regulation 60/2021 §1][pensionreg]
+
+| Period | Ordinary contribution / exemption method | Own official source |
+|---|---|---|
+| 1 January–27 February 2026 | The prior small-contribution rule excludes amounts **below DKK 30**, including B-income under the then §2(10). An A-income transfer of DKK 249 produces DKK 29.88 and is below that limit; DKK 250 produces DKK 30 and is not below. A temporary-job arrival could apply to TAKS for exemption for one or more periods, at most **60 months in total**. Use the actual approval and covered income; an intended short stay alone is insufficient. | [Act 78/2020 §1(2)][pension2020]; [Regulation 60/2021 §§1–3][pensionreg]; [original Pension Act §1(5)][pensionoriginal] |
+| From 28 February 2026 | Act 23/2026 changes the B-income small-contribution limit to **below DKK 500** while retaining **below DKK 30** for A-income. It replaces §1(5)'s temporary-job exemption with a departure-refund provision for a person whose aggregate Faroese stay was at most **60 months**; the new refund is not a payroll exemption. A repeat refund after returning has the separate **ten-year** condition in §1(6). Keep an existing exemption crossing this date separate from a new application. | [Act 23/2026 §1(2), (3), (6), §2, published 27 February][pensionfeb] |
+| Foreign-plan income, 1 January–27 February 2026 | Former §3(18) excludes qualifying foreign-employer income with NAV payments or a foreign pension arrangement TAKS regards as satisfactory. For the foreign-plan branch, original Regulation 52/2023 requires at least **75% for continuing payouts**, employer certification of the compulsory contractual plan, inability to choose a Faroese provider, and the application/evidence below. That original text contains no numeric 12% funding floor. Other income remains subject to the ordinary rules. | [Act 35/2021 §1(2)][pension2021]; [original Regulation 52/2023 §§1–4][foreignoriginal] |
+| Foreign-plan income, 28 February–24 August 2026 | New §3(17) additionally requires contributions, alone or together with Faroese contributions, at the level in §2(1), **12% in 2026**. Apply this statutory condition alongside the continuing-payout and approval/evidence conditions; the unchanged regulation does not postpone the Act. | [Act 23/2026 §1(12), §2][pensionfeb]; [original Regulation 52/2023 §§1–3][foreignoriginal] |
+| Foreign-plan income, from 25 August 2026 | Regulation 72/2026 expressly requires the **75%** continuing-payout test plus foreign contributions of at least **12% of foreign income**, or foreign/Faroese contributions together of at least **12% of total income**. Keep other income in the combined reconciliation. | [Regulation 72/2026 §§1–2, published 24 August][foreignaug]; [current Regulation 52/2023 §1][foreign2023] |
+
+For the foreign-plan route, send the personal or collective application to TAKS by **1 May following the contribution year**, with employer certification and the pension contract; send the provider's electronic prior-year contribution statement with the return. Two separate claimant illustrations each assume no other income and isolate foreign employment income of **DKK 30,000** and a compulsory foreign contribution of **DKK 2,700**, with 75% continuing payouts, all other conditions satisfied and actual TAKS acceptance. For a January event the selected pre-amendment provisions do not impose the later numeric funding floor. For a March event, DKK 2,700 alone is below the DKK 3,600 statutory minimum; **DKK 900** of qualifying Faroese contribution brings the combined funding to 12%. This is a contribution reconciliation, not permission to assume approval or use another income's contribution twice. [Regulation 52/2023 §§1–3][foreign2023]; [Act 35/2021][pension2021]; [Act 23/2026][pensionfeb]
+
+For an ordinary B-income-only person subject to contribution duty for part of 2026, §2(5) expressly reduces the annual mandatory contribution by **days without duty / 365**. First identify the actual duty dates and eligible annual B-income. With DKK 100,000 eligible B-income and 73 days without duty, DKK 12,000 × (365 − 73) / 365 gives **DKK 9,600**, before existing qualifying contributions and the applicable small-amount/cap checks. This statutory fraction does not establish a benefit-valuation or other scheme's fraction. The current ordinary B-income payment date is **1 November following the year**. A pre-28-February assessment versus later settlement of a B-income obligation needs its actual assessment history; do not manufacture a monthly B-income test or apply the new DKK 500 limit retroactively by assumption. [Pension Act §2(5)–(6), (10)][pension]
 
 Act 86/2026, published 12 October and effective **13 October 2026**, adds the confirmed early/disability pension payout route after the statutory approval, with renumbering. It does not change the 12% contribution rate. Review payout-start/contribution-stop facts against the applicable date; do not calculate a withdrawal from the payroll contribution example. [Act 86/2026 §§1–2][pensionoct]
 
@@ -106,7 +119,16 @@ Tax Act §25 includes money's-worth benefits, subject to §29's express exemptio
 | Taxi up to ten persons | 23,000 annually | [TAKS 2026 taxi row][values] |
 | Van/other vehicle | 60% of the corresponding electric/non-electric passenger-car value | [TAKS 2026 van row][values] |
 
-The schedule supplies annual standard values, not proof of entitlement to an exemption, part-year proration or employee-payment offset. Those adjustments need their own authority. Tax Act §29 contains work-computer/telecom and specified travel/accommodation exceptions; they are not universal benefit exclusions. TAKS requires both taxable benefits and exempt employee reimbursements to be reported on Vinnugluggin by **31 January following the year**, with the stated exceptional paper route. The employee reports corresponding information on the return. Reconcile the benefit schedule to the employer's records and employee statement rather than assuming noncash items pass through ordinary cash withholding automatically. [Tax Act §§25, 29, 118(1)(b)][tax]; [TAKS employer-benefits reporting][benefits]
+The schedule supplies annual standard values. Apply these separate **TAKS administrative valuation methods**, using the current annual column with VLS D's benefit guidance:
+
+- **Proved employee payment:** reduce the relevant benefit value by the amount the employee proves was paid **to the employer for use of the employer's asset**, with a floor of **zero**. Record the asset, actual payment and proof. A payroll deduction or employee expense is not automatically that payment. Thus a full-year DKK 56,800 car benefit with DKK 5,000 proved qualifying payment gives **DKK 51,800**; payment of DKK 60,000 gives **zero**, not a negative benefit.
+- **Proved lower private car use:** VLS D states that the standard car value corresponds to **10,000 private kilometres annually**. If actual private use is proved or substantiated below that figure, reduce proportionately, with a clear private/business mileage split. With a DKK 56,800 annual car value, use `56,800 × proved private km / 10,000` within this below-10,000-km route. A worker provided that car only from July through December, with a complete log proving **4,000 private km** over the year and no employee payment, has **DKK 22,720** under this route. Six months alone does not establish DKK 28,400: this example uses proved mileage, not a six-twelfths or 365-day convention. Missing logs do not establish zero private use. This source does not supply an above-standard-mileage uplift or the ordering of combined mileage and employee-payment adjustments.
+
+[VLS D, Fríir ágóðar and Koyribók][vlsd]; [TAKS 2026 car values][values]
+
+For an ordinary exemption, employer-owned work computer/equipment and telephone made available in connection with work have the express §29 exclusions. Free travel and housing for a person resident abroad on temporary Faroese work require an aggregate stay **shorter than 180 days in a twelve-month period**, counting interrupted stays, and TAKS states that the benefit must be additional to wages rather than deducted from them. Test those facts before treating housing as exempt; 180 days is not shorter than 180. Faroese-home/foreign-work travel has its separate §29(27) route. [Tax Act §29(20), (22), (27)–(28)][tax]; [TAKS employer benefits][benefits]
+
+Calendar-only part-year proration of annual housing, electricity and heat values, and the combined car-mileage/payment ordering, remain the precise valuation branches in Sources. Tax Act §29 contains work-computer/telecom and specified travel/accommodation exceptions; they are not universal benefit exclusions. TAKS requires both taxable benefits and exempt employee reimbursements to be reported on Vinnugluggin by **31 January following the year**, with the stated exceptional paper route. The employee reports corresponding information on the return. Reconcile the benefit schedule to the employer's records and employee statement rather than assuming noncash items pass through ordinary cash withholding automatically. [Tax Act §§25, 29, 118(1)(b)][tax]; [TAKS employer-benefits reporting][benefits]
 
 ## Deadlines and filing
 
@@ -251,8 +273,12 @@ expected:
 | [TAKS annual valuations][values] | Actual 2026 column; ordinary housing, utilities, meals and vehicle values | 2026-10-25 |
 | [TAKS employer-benefits reporting][benefits] | Annual employer/employee reporting and exceptional paper route | 2026-10-25 |
 | [TAKS employer broadcasting][broadcast] | Separate annual prior-year payroll invoice | 2026-10-25 |
+| [TAKS VLS D][vlsd] | Fríir ágóðar / Koyribók: proved payment, zero floor and private-mileage method; current-hosted administrative guidance, not a new 2026 enactment | 2026-10-28 |
+| [Original Pension Act][pensionoriginal]; [Acts 78/2020 and 35/2021][pension2020] [pension2021]; [Regulation 60/2021][pensionreg] | Selected earlier operative provisions, not the superseded original rate table | 2026-10-28 |
+| [Original and current Regulation 52/2023][foreignoriginal] [foreign2023] | §§1–4 and actual 2023 gazette; February statutory overlay and August amendment read separately | 2026-10-28 |
+| [Current contribution laws, 2026 values and employer guidance][employer] | Rate/payer, selected base, penalty and deadline provisions re-read; full rule/figure receipts in the research ledger | 2026-10-28 |
 
-Not yet confirmed: benefit part-year/employee-payment adjustments and full exemption implementation, retrospective pre-28-February temporary-stay/small-payment rules, pre-25-August foreign-plan implementing terms, guarantee-fund operative regulation and exact invoice calendar, parental/occupational-disease invoice implementation, detailed current holiday transmission/benefit reconciliation, unusual contribution-base/rounding cases and zero-income pension-tax annex treatment. Private broadcasting rates/age assessment and full special-worker/foreign-coverage procedures require their own review. Those are real gaps; payroll/social-contribution domains remain partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
+Not yet confirmed: calendar-only part-year annual housing/electricity/heat valuation, combined car-mileage/employee-payment ordering and full exemption execution; treatment after 28 February of an already approved temporary-stay exemption and the assessment/settlement cutover for old B-income small-payment obligations; guarantee-fund operative regulation and exact invoice calendar, parental/occupational-disease invoice implementation, detailed current holiday transmission/benefit reconciliation, unusual contribution-base/rounding cases and zero-income pension-tax annex treatment. Private broadcasting rates/age assessment and full special-worker/foreign-coverage procedures require their own review. Those are real gaps; payroll/social-contribution domains remain partial. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [pension]: https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum
@@ -277,6 +303,14 @@ Not yet confirmed: benefit part-year/employee-payment adjustments and full exemp
 [broadcast]: https://www.taks.fo/fo/vinna/skattur/kringvarpsgjald
 [values]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/arligar-virdisasetingar-hja-taks
 [benefits]: https://www.taks.fo/fo/vinna/skattur/friir-agodar-og-skattafriar-veitingar-til-starvsfolk
+
+[vlsd]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/d-skattskyldug-inntoeka-hja-loentakararum
+[pensionoriginal]: https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=12289
+[pension2020]: https://logir.fo/Logtingslog/78-fra-07-06-2020-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin-og-logtingslog-um-skatt
+[pension2021]: https://logir.fo/Logtingslog/35-fra-26-03-2021-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin
+[pensionreg]: https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti
+[foreignoriginal]: https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=38060
+[foreign2023]: https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara
 
 > Contributed by Ryan Duguid.
 

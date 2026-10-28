@@ -13,10 +13,10 @@ description: >
   documented checklist for qualified local review. Foreign branches, special
   entities, licences and unresolved first-year or holding-company audit
   implementation require their own source work.
-version: 0.2
+version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-28
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -25,7 +25,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands company registration and annual reporting v0.2
+# Faroe Islands company registration and annual reporting v0.3
 
 > **Checked against the law.** This Guide prepares working papers for review. It has no professional attestation and does not authorise a filing, incorporation or payment.
 
@@ -58,6 +58,8 @@ Prepare the formation, ownership, accounting-framework and filing calendar for a
 | Class-B audit opt-out size | DKK 1.25m assets, DKK 2.5m net sales, 12 average full-time employees; apply §156(2)'s two-of-three/two-year test and all exclusions | Same new-law period; [Annual Accounts Act §§156–157][accounts] |
 | Class-B extended review size | DKK 15m assets, DKK 30m net sales, 15 average full-time employees, with statutory two-of-three/two-year test and exclusions | Same new-law period; [Annual Accounts Act §156(1), (3)–(6)][accounts] |
 | Prior-law audit / extended review size | Opt-out: DKK 1m assets, DKK 2m sales, 12 employees. Extended review: DKK 12m assets, DKK 24m sales, 15 employees; apply old exclusions and elections | Earlier financial years, including ordinary 2025 accounts filed in 2026; [prior Act §135][prior] |
+
+**Selected statutory-incorporation reading for an ordinary cash-funded Sp/F:** §33 expressly allows premium to be paid in the same proportion as the subscribed capital. Section 40(2) says all premium must be paid “sambært §33, stk. 1”. Read that express reference together with §33's specific Sp/F sentence: apply the same paid proportion to Sp/F cash premium, while P/F premium remains fully payable. The literal “all premium” sentence in §40 is visible; this worksheet selects the specific §33 incorporation reading, rather than claiming a separate Registrar ruling. With DKK 200,000 Sp/F subscribed capital and DKK 100,000 premium, the minimum 25% capital payment is DKK 50,000 and corresponding premium payment DKK 25,000, for **DKK 75,000** total. The alternative isolated full-premium reading would require DKK 150,000. At the DKK 50,000 minimum capital, all capital is paid, so a DKK 20,000 premium is also fully paid: total DKK 70,000. Any noncash contribution requires full capital and premium under §33; it does not use this cash-only fraction. Retain the subscription, actual paid proportion, per-share reconciliation and payment evidence. [Companies Act §§33, 40][company]
 
 A threshold comparison is not an audit-election approval. Do not use current Danish or EU size thresholds in place of this Faroese Act. Under new §7, annualise net sales for a non-twelve-month period. Where financial/investment income is at least net sales, the specified combined income enters the size test. Class D and group cases have overrides. New-law §156(5)'s holding/influence wording requires confirmation before an ordinary standalone-company result is extended to a holding structure. First-year elections and the detailed current extended-review standard remain outside the confirmed procedure here. [Annual Accounts Act §§7, 156–158][accounts]
 
@@ -119,8 +121,9 @@ General reference material only. These working papers have not been professional
 | [Current Tax Act][tax] | §100; separate company return | 2026-10-25 |
 | [Registrar formation page][forms] | Ordinary forms and owner-notification requirement; linked PDFs not treated as independently re-read here | 2026-10-25 |
 | [TAKS starting-business procedure][start] | Expanded Registering a company and Taxation sections; Vinnuskráin documents and A-income classification | 2026-10-25 |
+| [Selected current and earlier-period sources re-read for the full rule/figure ledger][company] | Own §§33/40 premium interpretation; selected formation, ownership, reporting, bookkeeping and earlier-law provisions, with exact source locators retained in research | 2026-10-28 |
 
-Not yet confirmed: complete current form/fee execution, detailed UBO implementing instrument and control thresholds, first-year audit elections, holding-company §156(5) interpretation, new extended-review implementing standard, Sp/F premium interaction between §§33 and 40, and full transitional accounting/disclosure implementation. Foreign branches, ÍVF/partnerships, regulated entities, licences, complex groups, IFRS and insolvency execution are outside this ordinary-company checklist. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
+Not yet confirmed: complete current form/fee execution, detailed UBO implementing instrument and control thresholds, first-year audit elections, holding-company §156(5) interpretation, new extended-review implementing standard and full transitional accounting/disclosure implementation. The ordinary cash Sp/F premium calculation is a labelled statutory-incorporation interpretation of §§33 and 40, not a claimed Registrar determination of their wording. Foreign branches, ÍVF/partnerships, regulated entities, licences, complex groups, IFRS and insolvency execution are outside this ordinary-company checklist. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026. Professional attestation remains pending.
 
 [company]: https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog
 [accounts]: https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin

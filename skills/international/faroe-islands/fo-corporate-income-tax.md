@@ -17,13 +17,13 @@ jurisdiction: FO
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-25
-version: 0.5
+last_updated: 2026-10-28
+version: 0.6
 verified_by: pending
 review_status: pending_review
 ---
 
-# Faroe Islands corporate income tax v0.5
+# Faroe Islands corporate income tax v0.6
 
 ## Who this applies to
 
@@ -33,7 +33,7 @@ Compute ordinary income and non-business capital gains in separate schedules. Bu
 
 Petroleum, fishing/resource charges, aquaculture surcharges, tonnage taxation, reorganisations and minimum-tax exposure need separate work. Identify those activities before using the ordinary calculation. An 18% result here is not necessarily the company's complete tax liability.
 
-**Period:** income year 2026, selected current provisions read 25 October 2026. The Tax Act consolidation identifies amendment 53 of 1 June 2026, effective 1 September 2026. Event-specific rules must be matched to the event date.
+**Period:** income year 2026, with the additions below checked on 28 October 2026 against retained current primary provisions and the stated TAKS guidance. Earlier source checks retain their dates. The Tax Act consolidation identifies amendment 53 of 1 June 2026, effective 1 September 2026. Event-specific rules must be matched to the event date.
 
 ## Rates, bands and thresholds
 
@@ -111,9 +111,17 @@ Exclude land acquisition, site preparation and surrounding-area costs from the d
 
 No annual depreciation is allowed in the disposal or demolition year. Section 24 provides a separate demolition deduction for unrelieved amounts less material-sale proceeds only where ownership and qualifying use lasted at least five years before demolition. For disposal, separate gain and recaptured tax depreciation under §25. Index the building/land acquisition cost to the last prescribed index before disposal; Circular 10/1992 computes indexed cost as original cost divided by the acquisition-quarter multiplier, multiplied by the relevant disposal multiplier. Preserve separately dated improvement costs and their own evidence. The four 2026 multipliers appear in the rates table; do not extrapolate a later unpublished index. TAKS's standalone index page and the circular differ for some older entries, so reconcile any conflicting historic acquisition factor before computing that case. Do not use these 2026 factors as acquisition factors for an earlier acquisition. [Depreciation Act §25(3)][depreciation]; [Circular 10/1992 and annexes][index]; [TAKS index page][indices]
 
-For category (a), §25(1) permits the statutory gain/recapture reinvestment route into Chapter 1 equipment or category (a) buildings by the end of the following income year. Categories (b)/(c) bring gain and recaptured depreciation into disposal-year income under §25(2); do not extend the category (a) route to them. Disposal losses are not deductible. For buildings/land acquired before 1 January 1950, the gain/loss exclusion does not remove the separate recaptured-depreciation rule. Insurance/compensation is treated as disposal proceeds. Cases where the indexed cost exceeds proceeds but proceeds exceed written-down tax value still need the recapture amount verified before computation here. [§25][depreciation]
+For category (a), §25(1) permits the statutory gain/recapture reinvestment route into Chapter 1 equipment or category (a) buildings by the end of the following income year. Categories (b)/(c) bring gain and recaptured depreciation into disposal-year income under §25(2); do not extend the category (a) route to them. Disposal losses are not deductible. For buildings/land acquired before 1 January 1950, the gain/loss exclusion does not remove the separate recaptured-depreciation rule. Insurance/compensation is treated as disposal proceeds. The published TAKS worksheet below separates recapture from indexed gain; the acquisition-factor conflict still requires resolution in affected cases. [§25][depreciation]
+
+**Published TAKS recapture worksheet:** VLS N's §25 example calculates recapture as `min(prior tax depreciation, max(proceeds − unindexed tax book value, 0))`, then adds positive disposal gain over indexed building/land cost. Applying that separation to hypothetical proceeds DKK 900,000, book value DKK 700,000, prior depreciation DKK 300,000 and verified indexed cost DKK 1,100,000 gives recapture DKK 200,000 and indexed gain zero. The indexed loss does not offset recapture. This is an expressly identified derivation from TAKS's worked example and current §25, not a new statutory formula. Preserve land/building allocations and the existing category/1950 gates; use current indices and current §26 timing, not the older page's historic factors or insurance period. [Depreciation Act §25][depreciation]; [TAKS VLS N, §25 worked example][vls-n]
 
 For §26 insurance relief, request exemption and notify the use/intended use by the return deadline. All compensation must go into rebuilding/replacement in the gain year or next income year, and the gain is applied as advance depreciation reducing the replacement basis. Do not deduct it again. Failure to meet the period back-assesses the gain year and carries 1% for each commenced month from the original tax-payment times; a special extension requires approval. Unused compensation is brought back subject to the statutory gain cap. [§§21, 24–26][depreciation]
+
+### Purchased goodwill and other business intangibles
+
+Tax Act §35a(2) permits purchased goodwill and other business-use intangible acquisition cost to be deducted in equal amounts in the purchase year and the next nine years. For a right covering a specified term, use equal deductions over that entire term instead. Keep the contract, business-use evidence, purchase price, term and cumulative deductions separately from the equipment pool. A hypothetical DKK 100,000 goodwill purchase gives DKK 10,000 annually over ten years; a DKK 100,000 right lasting five years gives DKK 20,000 annually. These are derived amounts, not statutory allowances per asset. [Tax Act §35a(1)–(2)][tax]
+
+Business intangible sale proceeds enter sale-year income under §35a(1); subsection 3 allows the same asset's undeducted acquisition cost against those proceeds, or deduction in the business-cessation year. For an asset still held, follow subsection 3's ten-year route by reference to subsection 2; cessation and continued holding must be distinguished. Gifts/advances on inheritance and changes between business and private use follow subsection 4's deemed acquisition/disposal and ordinary-market-value rules. Do not replace these with accounting impairment or write off purchased goodwill immediately. [Tax Act §35a(1), (3)–(4)][tax]
 
 ### Losses
 
@@ -137,7 +145,16 @@ This produces two reconciled bases, two loss ledgers and the resulting tax, not 
 
 Regulation 148/2015 requires eligible Faroese-registered entities, matching financial years and full subsidiary ownership throughout the subsidiary's income year. Application is written, ordinarily by 1 July following the first relevant year, with returns/accounts submitted before consideration. Companies in liquidation cannot obtain permission; liquidation ends their participation from that income year. Section 4(4) prohibits renewed permission after departure. Treat approval as evidence, not an assumption. [Regulation §§1–5][group]
 
-Each company computes its own result. Pre-group losses first offset its own profit; the regulation prescribes further ordering involving its own capital income and group-period losses before group allocation. Do not transfer an acquired company's pre-group loss directly to its parent. The parent reports the joint result; §9 requires intercompany tax/loss compensation to be paid or booked by 1 October following the income year. [§§6–9][group]
+Each company computes its own ordinary result under §6(1). Apply the following order before pooling; distinguish pre-group losses, losses arising during grouping, and capital losses by entity and origin year. [Regulation §6][group]
+
+1. Use pre-group ordinary losses against that company's own ordinary surplus (§6(3)). Remaining pre-group losses then shelter its own capital income, after older capital losses (§6(4)); preserve any remainder for that company's later years (§6(5)).
+2. Use its own earlier group-period ordinary losses against its own ordinary surplus (§6(6)). Its remaining current/group-period ordinary losses then shelter its own current capital income, after older capital losses and pre-group ordinary losses (§6(7)).
+3. Only then allocate the remaining current/group-period ordinary loss, up to the remaining combined ordinary surpluses, proportionally among the surplus companies (§6(8)). For each surplus company, allocation is `usable group loss × its remaining ordinary surplus / total remaining ordinary surpluses`. Preserve unused current/group-period losses for later use under the same ordering (§6(9)). A loss never becomes a transferable pre-group loss merely because a company was acquired.
+4. Report the combined ordinary result on the parent's return using the special TAKS group schedule (§6(2)). A departing company retains its own unused pre-group and group-period losses (§7); the parent receives assessments/refunds under §8. Subsection 6(10) confines the stated debt-compromise loss reduction to the debtor company's own loss before the remaining group-period loss is used; obtain its debt/restructuring evidence before applying it.
+
+**Ordinary group control:** assume approved full-year grouping, no ownership-loss forfeiture or debt compromise, no separate capital-group permission, and C as parent. A has ordinary profit DKK 200,000, pre-group loss DKK 40,000 and own old group-period loss DKK 30,000, leaving DKK 130,000. C has DKK 70,000 ordinary profit. B has current ordinary loss DKK 100,000 and capital gain DKK 25,000 less old capital loss DKK 5,000. B first uses DKK 20,000 ordinary loss against its own net capital income; only DKK 80,000 remains for ordinary group allocation. A receives `80,000 × 130,000 / 200,000 = 52,000`; C receives DKK 28,000. Their final ordinary bases are DKK 78,000 and DKK 42,000: total DKK 120,000 and tax DKK 21,600 at the established 18% rate. B has no taxable capital remainder and no unused current ordinary loss in this fixture. [Regulation §6(3)–(9)][group]; [Capital Income Act §14][capital]; [Assessment Act §5(2)][rate]
+
+Under §9 the parent pays B DKK 14,400 compensation for the DKK 80,000 loss used; A pays the parent DKK 9,360 loss compensation and DKK 14,040 for the tax the parent pays for A. C's own loss benefit is DKK 5,040 and its own tax DKK 7,560. The parent's net cash outflow is `21,600 + 14,400 − 9,360 − 14,040 = 12,600`, matching `70,000 × 18%`. These internal payments have no tax consequences and must be paid or booked by 1 October following the income year. Compensation follows the losses actually used, not every available loss balance. [Regulation §9][group]
 
 The ordinary permission does not itself cover capital-income grouping. Capital Income Act §14a provides a separate TAKS permission for Faroese-resident parent/subsidiary companies with the same accounting year and full qualifying ownership. Pre-group losses remain restricted to that company's own surplus. Parent responsibility and participating companies' joint liability follow §14a(3). Obtain the actual capital-group permission and applicable implementing conditions; they remain incomplete here. TAKS's ordinary-group summary must not be read as repealing this distinct statutory route. [Capital Income Act §14a][capital]; [TAKS][taks]
 
@@ -167,7 +184,7 @@ Tax Act §139 penalises false/misleading tax information given with evasion inte
 
 ## Cross-border points
 
-Foreign incorporation does not settle residence where effective management is Faroese. Foreign businesses require a separate domestic-source/PE and treaty analysis under §§1–2. Controlled transactions and thin capitalisation require their own schedules; see the transfer-pricing Guide. Foreign-source capital income from a country without a double-tax treaty can receive credit under Capital Income Act §19 for tax actually paid/withheld there, capped at Faroese tax attributable to that same income. That provision does not supply the procedure for a treaty country or an ordinary-income credit. Treaty eligibility, ordinary foreign-tax relief, PE profit attribution and refund procedures remain separate. Cross-border dividends require the domestic §15 starting position above and a recipient-specific treaty/relief review. [Tax Act §§1–2, 37a–37b][tax]; [Capital Income Act §§15, 19][capital]
+Foreign incorporation does not settle residence where effective management is Faroese. Foreign businesses require a separate domestic-source/PE and treaty analysis under §§1–2. Controlled transactions and thin capitalisation require their own schedules; see the transfer-pricing Guide. Foreign-source capital income from a country without a double-tax treaty can receive credit under Capital Income Act §19 for tax actually paid/withheld there, capped at Faroese tax attributable to that same income. Tax Act §154 separately supplies credit for eligible ordinary income from a country without a treaty. Use the [ordinary foreign-tax credit method and its precise limits](fo-cross-border-payments.md#ordinary-foreign-tax-credit), including the source-expense and same-income caps; §19 must not be treated as its statutory substitute. Treaty eligibility, nonpositive credit bases, later adjustments, PE profit attribution and refund procedures remain separate. Cross-border dividends require the domestic §15 starting position above and a recipient-specific treaty/relief review. [Tax Act §§1–2, 37a–37b][tax]; [Capital Income Act §§15, 19][capital]
 
 ## Two worked examples that recompute
 
@@ -253,14 +270,18 @@ expected:
 | [Consolidated Tax Act][tax] | §§1–2, 21, 25, 27, 29, 31, 33, 33a, 81, 100, 104–105, 139–140, 146; controlled-transaction detail belongs to the separate TP Guide | 2026-10-25 |
 | [Assessment Act][rate] | §5, ordinary/residual/specified rates | 2026-10-25 |
 | [Capital Income Act][capital] | §§1–10, 14–15, 18–19; separate ordinary/capital classification, losses, dividends and settlement | 2026-10-25 |
-| [Group taxation regulation 148/2015][group] | §§1–9, ordinary group scope, ordering and compensation | 2026-10-25 |
+| [Group taxation regulation 148/2015][group] | §§1–9, ordinary group scope, ordered loss/capital allocation and compensation | 2026-10-28 |
 | [Current Depreciation Act][depreciation] | §§1–16, 17–27, 29–31; equipment, cars, mixed use, ships, buildings and transitions | 2026-10-25 |
 | [TAKS company tax][taks] | Ordinary loss direction, company/group/payment guidance | 2026-10-25 |
 | [TAKS returns][returns] | Company return/accounts submission and extension process | 2026-10-25 |
 | [TAKS Circular 10/1992, current annexes][index] | Acquisition/disposal index method and quarterly multipliers | 2026-10-25 |
 | [TAKS building/land index page][indices] | Cross-check current factors; some historical entries differ from circular | 2026-10-25 |
+| [Tax Act §35a][tax] | Full purchased-intangible acquisition, term, disposal, cessation and deemed-transfer provisions | 2026-10-28 |
+| [TAKS VLS N][vls-n] | §25 worked example: separate recapture capped at deductions and indexed gain; current Depreciation Act §25 cross-check; older §26 timing not adopted | 2026-10-28 |
 
-Not yet confirmed: conflicting historic acquisition-index entries and recapture computation when indexed cost exceeds proceeds but proceeds exceed written-down value; capital-group implementing conditions and complete group-loss operational filing; employee-benefit adjustments and full exemption implementation; ordinary foreign-credit and treaty procedures; current monetary fine practice; intangible-asset treatment and other common deductions not resolved above. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026; professional attestation remains outstanding; this Guide does not establish complete corporate coverage.
+The [whole-Guide figure/rule ledger and old-topic destination table](../../../ledgers/faroe-islands-2026-evidence/ledgers/fo-corporate-income-tax.md) records source quotes, read scopes and derived-example inputs. Supplementary controls there preserve exactly the two main examples in this Guide.
+
+Not yet confirmed: conflicting historic acquisition-index entries; capital-group implementing conditions and case-specific group schedule/filing fields; employee-benefit adjustments and full exemption implementation; foreign-credit nonpositive bases, changes/refunds, unused-credit treatment and filing fields, and treaty procedures; current monetary fine practice; other common deductions not resolved above. The supplied ordinary group allocation and purchased-intangible methods are distinct from these reservations. Special industry levies, tonnage tax, reorganisations and minimum-tax scope require separate applicability work. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026; professional attestation remains outstanding; this Guide does not establish complete corporate coverage. The 28 October additions require fresh independent review and do not extend the earlier review to this version.
 
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [rate]: https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170
@@ -273,3 +294,5 @@ Not yet confirmed: conflicting historic acquisition-index entries and recapture 
 [capital]: https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173
 [index]: https://www.taks.fo/fo/log/rundskriv/pristalsvidgerd-av-bygningum
 [indices]: https://www.taks.fo/fo/borgari/gjoeld-og-agodar/pristoel-a-bygningum-og-byggigrundum
+
+[vls-n]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/n-skattligar-avskrivingar

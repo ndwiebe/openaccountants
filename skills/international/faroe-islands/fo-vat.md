@@ -12,10 +12,10 @@ description: >
   regulation. Records the Q2 payment-date source conflict rather than assuming
   the return deadline changes the statutory payment clause. Specialist refunds
   and unresolved foreign-service implementation need separate evidence.
-version: 0.3
+version: 0.4
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-25
+last_updated: 2026-10-28
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -24,7 +24,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands VAT registration and returns v0.3
+# Faroe Islands VAT registration and returns v0.4
 
 > **Checked against the law for 2026.** This Guide has no professional attestation
 > for the revised content. It prepares classification and calculation working
@@ -257,8 +257,30 @@ B2B reverse-charge rule:
   records for five years and pay/notify within ten days of service receipt.
   Paragraph 4 does not state the supplier's DKK 50,000 threshold.
 - Imported services equivalent to an exempt domestic supply have paragraph
-  6's exemption. Partial-recovery registered recipients and particular
-  bundled/digital supplies need the actual current implementation evidence.
+  6's exemption. Test that exemption before computing a charge.
+
+For a registered customer that cannot recover all the VAT, paragraph 3's
+full-recovery exclusion does not apply. A foreign supplier within paragraph
+1 therefore registers and charges 25% on a taxable item 7–13 service used
+in the Faroes when its relevant annual sales exceed DKK 50,000. The customer
+then applies the ordinary input rules to the supplier's actual Faroese VAT
+invoice. Registration alone neither removes this supplier charge nor gives
+the customer full input recovery. For example, assume an established item
+12 telecommunications supply used in the Faroes, a foreign supplier with
+DKK 60,000 qualifying annual sales, and a DKK 10,000 net invoice. Supplier
+VAT is DKK 2,500. If this is a shared business overhead and final eligible
+turnover is 60% of total turnover, the customer's supported input recovery
+is DKK 1,500 and unrecovered VAT DKK 1,000. Assume no private use, blocked
+input, domestic-equivalent exemption or special allocation rule. These are
+case amounts, not statutory allowances ([§§15–17, 28(1)–(3), (6)][law];
+[regulation §1][reg]).
+
+Keep the different items 1–6 branch separate: paragraph 1 does not list
+those services, while paragraph 4 expressly addresses an unregistered
+recipient. Those provisions alone do not establish a registered partly
+recovering customer's liability for a foreign consultancy invoice. That
+specific branch and particular bundled/digital classifications remain
+unconfirmed; do not invent a general reverse charge or an exemption.
 
 The local-representative/Hoyvík exception is separate from these charging
 and recovery tests. No Danish/EU territorial entitlement is assumed
@@ -341,8 +363,9 @@ expected:
 | Act 36/2026 §§1–2, temporary fuel clause and publication 15 May 2026 | https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin | 2026-10-25 |
 | TAKS quarterly return/refund procedure, fee and dates, with Q2 payment conflict above | https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd | 2026-10-25 |
 | TAKS VAT/tourism guidance, exempt versus zero-output/input recovery and mixed use | https://www.taks.fo/fo/vinna/mvg/mvg-og-ferdavinna | 2026-10-25 |
+| Current VAT Act §§15–17 and 28(1)–(6), registered partial-recovery customer of an item 7–13 foreign service | https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24 | 2026-10-28 |
 
-Not yet confirmed: separate authority reconciling Q2 payment under §22 with TAKS's later guidance date; current implementing treatment of foreign services for partial-recovery registered recipients and particular bundled/digital cases; detailed Hoyvík representative exception and nonresident refund procedure. Voluntary property, charity/energy/vehicle refund schemes and other specialist conditions require separate sources. Independent whole-pack AI review accepted this material for partial tier-2 draft publication on 25 October 2026; professional attestation remains pending; VAT remains partial for the stated ordinary implementation gaps.
+Not yet confirmed: separate authority reconciling Q2 payment under §22 with TAKS's later guidance date; the distinct foreign-service items 1–6 liability branch for a registered partial-recovery customer and particular bundled/digital cases; detailed Hoyvík representative exception and nonresident refund procedure. The item 7–13 positive supplier-charge/input-recovery method is supplied above. Voluntary property, charity/energy/vehicle refund schemes and other specialist conditions require separate sources. Independent whole-pack AI review accepted the previous v0.3 for partial tier-2 draft publication on 25 October 2026; the current addition requires ledger-based review. Professional attestation remains pending; VAT remains partial for the stated ordinary implementation gap.
 
 [law]: https://logir.fo/Logtingslog/136-fra-08-09-1992-um-meirvirdisgjald-sum-seinast-broytt-vid-logtingslog-nr-28-fra-24
 [reg]: https://logir.fo/Kunngerd/35-fra-20-03-2000-um-lutfalsligan-fradrattarraett-fyri-meirvirdisgjald-og-um-javnan-av-inngangandi-avgjaldi
