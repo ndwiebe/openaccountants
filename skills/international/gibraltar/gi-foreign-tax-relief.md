@@ -1,24 +1,24 @@
 ---
 name: gi-foreign-tax-relief
 description: >
-  Gibraltar domestic foreign-tax relief under Income Tax Act section 37 and UK treaty Article 22 coordination. Covers same-income evidence, source and residence-only exclusions, proportional allocation of Gibraltar tax, overseas relief interaction, six-year claims and later adjustments. Includes recomputable credit examples and a claim working-paper checklist. Based on the official March 2026 consolidation checked in October 2026. Does not decide treaty residence, source disputes or foreign-country entitlement. Professional attestation is pending.
+  Gibraltar domestic foreign-tax relief under Income Tax Act section 37 and UK treaty Article 22 coordination. Covers same-income evidence, source and residence-only exclusions, proportional allocation of Gibraltar tax, overseas relief interaction, six-year claims and later adjustments. Adds the ordinary corporate tax-residence exit base, retained-PE asset boundary, conditional five-year deferral and cessation triggers. Includes recomputable credit/exit examples and working-paper controls. Based on the official March 2026 consolidation checked in October 2026. Does not decide treaty residence, source disputes or foreign-country entitlement. Professional attestation is pending.
 jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.2
+last_updated: 2026-10-28
+version: "0.3"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement, Articles 1, 4, 22, 28 and 29"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
-    title: "Gibraltar Income Tax Act 2010: consolidation dated 23 March 2026, section 37"
-    as_of: "2026-10-22"
+    title: "Gibraltar Income Tax Act 2010: consolidation dated 23 March 2026, section 37 and Schedule 4 paragraphs 8A/18A"
+    as_of: "2026-10-28"
 ---
 
-# Gibraltar: foreign income-tax relief and UK treaty coordination
+# Gibraltar: foreign-tax relief, UK coordination and corporate exit working papers
 
 ## Scope and eligibility
 
@@ -90,6 +90,39 @@ Article 22(4) supplies the opposite-direction exclusion: paragraph (2) does not 
 
 Keep a single reconciliation of domestic relief, treaty relief and foreign repayments. Do not add the section 37 result to the treaty result as two independent credits for the same tax. Identify the legal route, same-income allocation, treaty-compliant source charge, residence-only exclusion and any later revision. The filing mechanism and interaction between particular domestic restrictions and treaty obligations remain to verify; this section does not apply every section 37 condition or its six-year deadline automatically to a treaty claim.
 
+## Corporate tax-residence exit: scope and base
+
+This separate section applies to the **defined corporate taxpayer** in Schedule 4 paragraph 8A, with assessable income and an established tax-residence transfer. It is not an individual departure-tax rule. Paragraph 8A defines a tax-residence transfer by ceasing to be resident for tax purposes in Gibraltar while acquiring foreign tax residence. Establish that event; moving a registered office or an employee alone does not establish the statutory facts. This section does not decide company residence or a treaty conflict. [Paragraph 8A, printed page 190](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Paragraph 18A(1)(c) covers a taxpayer transferring tax residence to the UK, an EU Member State or a third country, **except assets remaining effectively connected with a Gibraltar permanent establishment**. For assets within the charge, paragraph 18A(2) measures the base as **market value at exit less value for tax purposes**, limited to assets which would otherwise produce assessable income under the Act. Paragraph 18A(9) defines market value using willing unrelated buyers and sellers in a direct transaction. An accounting book value is not automatically the statutory tax value or market value. Apply the actual section 24 rate only after establishing the taxpayer and income category; this section calculates a base, not a universal tax rate. [Paragraph 18A(1)(c), (2), (9), printed pages 202–204](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Prepare an asset-by-asset schedule showing the tax-residence event, Gibraltar taxing right, assessable-income character, retained-PE connection, exit-date market value, tax value and resulting base. Do not include the whole balance sheet merely because the company relocates. Reconcile later disposals and credits separately; this section does not determine another jurisdiction's starting tax value. Coordinate the resulting working paper with the [corporate-tax Guide](gi-corporate-tax.md); stock cessation and capital-allowance pool adjustments are distinct methods, not automatic replacements for paragraph 18A.
+
+**Ordinary example:** assume the corporate taxpayer and residence-transfer charge are established; one asset is within paragraph 18A(2), no Gibraltar PE retains it, its supported exit-date market value is £1,000,000 and tax value is £600,000. The exit base is **£400,000**. The example does not establish residence, value, tax rate, treaty relief or a filing/payment schedule.
+
+```oa-check
+name: Gibraltar corporate tax-residence exit base
+inputs:
+  supported_exit_market_value: 1000000
+  established_tax_value: 600000
+steps:
+  - exit_tax_base: supported_exit_market_value - established_tax_value
+expected:
+  exit_tax_base: 400000
+```
+
+**Retained-PE boundary:** on the same charge assumptions, a second asset with market value £300,000 and tax value £150,000 remains effectively connected with a Gibraltar PE. It is excluded from this **tax-residence-transfer** charge by paragraph 18A(1)(c); do not add its £150,000 difference to the first asset's £400,000 exit base. That exclusion does not declare a later disposal tax-free. The [supplementary boundary control](../../research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md) records the arithmetic after those asset classifications have been established. Negative-value cases, disputed valuations and overlapping adjustments are outside these illustrations.
+
+## Conditional exit-tax deferral and later changes
+
+For the tax-residence-transfer route, paragraph 18A(3)(c) permits payment in instalments **over five years** on the listed UK/EU/EEA transfers. For an EEA third country, paragraph (4) additionally requires an agreement for mutual assistance in recovery of tax claims. Do not extend that deferral to every third country or infer an equal-annual instalment amount/calendar from the words “over five years”. Where there is a demonstrable and actual non-recovery risk, the Commissioner may require a guarantee under paragraph (5). The current application channel, payment dates, instalment amounts and interest treatment still require operational authority; a prepared computation is not an approved payment schedule. [Paragraph 18A(3)–(5), printed pages 202–203](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Deferral ends immediately and the debt becomes recoverable in the paragraph 18A(6) cases: sale or disposal of transferred assets/business; the specified subsequent third-country transfers of assets, residence or PE business; bankruptcy, insolvency or winding-up; and failure to honour instalments without correction within a reasonable period **not exceeding 12 months**. That last limit is not an automatic twelve-month grace period for each missed instalment. Paragraph (7)'s EEA recovery-agreement exception applies only to the specified subsequent-transfer limbs; it does not neutralise the sale, insolvency or non-payment limbs. Keep the actual events, dates, authority schedule and recovery status. [Paragraph 18A(6)–(7), printed page 203](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For the separate inbound route from the UK or an EU Member State, paragraph 18A(8) requires acceptance of the transferor jurisdiction's established value as the starting tax value **unless it does not reflect market value**. This does not establish an unrestricted step-up for an inbound transfer from every country. The specified temporary asset transfers in paragraph (10) have their own condition that assets are set to revert to the **UK or an EU Member State as transferor within 12 months**, and concern securities financing, collateral, prudential capital or liquidity management. They are not a general one-year exemption for a company relocation. [Paragraph 18A(8)–(10), printed pages 203–204](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Remaining asset-transfer textual limit:** paragraphs 18A(1)(a)–(b) describe loss of Gibraltar's taxing right on head-office/PE asset transfers, while paragraph 8A's “transfer of assets” definition instead refers to the **UK or an EU Member State** losing that right. The tax-residence illustration above does not reconcile that mismatch or certify every asset-only/PE-business transfer. Preserve the exact relevant limb and obtain its legal reconciliation before using a generic outbound asset-transfer calculation. [Paragraphs 8A and 18A(1), printed pages 190 and 202](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
 ## Claim working paper
 
 Prepare and retain:
@@ -104,3 +137,15 @@ Prepare and retain:
 These are suggested evidence controls to support the statutory test, not an assertion that a particular claim form has been verified. Preserve records under the [bookkeeping and tax-records Guide](gi-bookkeeping-and-tax-records.md).
 
 Independent review and professional attestation are pending. Claim forms, foreign-currency conversion, disputed sourcing, assessed-but-unpaid tax and the application of any treaty require further verification. This Guide does not establish comprehensive cross-border coverage or promise a refund of excess foreign tax.
+
+
+## Sources
+
+| Source | Actual new read scope | Read on |
+|---|---|---|
+| [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Complete section 37; paragraph 8A taxpayer/transfer definitions and complete paragraph 18A(1)–(10), printed pages 97–99, 190 and 202–204 | 2026-10-28 |
+| [UK–Gibraltar agreement, official text](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force) | Articles 1, 4, 22, 28 and 29 actually read for the full current quote ledger; earlier completed treaty reviews retained | 2026-10-28 |
+
+The [complete writer rule ledger and old-topics map](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md) are ready for independent country review. This local writer candidate has not yet received that review. Earlier reviews cover their stated predecessors, not this new addition. Professional attestation remains pending.
+
+Not yet confirmed: domestic relief claim/correction submission and foreign-currency conversion, assessed-but-unpaid tax and disputed source cases; actual exit-tax deferral applications, payment dates/amounts and interest treatment; the paragraph 8A asset-transfer-definition mismatch with 18A(1)(a)–(b), other asset-only/PE-business transfer applications, disputed/negative valuations and overlapping reliefs. Other treaty corridors and individual departures are not established by the corporate tax-residence example.

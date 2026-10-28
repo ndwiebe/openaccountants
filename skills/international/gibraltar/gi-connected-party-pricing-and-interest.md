@@ -7,12 +7,12 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "0.6"
+version: "0.7"
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 22, 40, 42–43 and Schedule 4"
-    as_of: "2026-10-22"
+    as_of: "2026-10-28"
 ---
 
 # Gibraltar: connected-party pricing and interest restrictions
@@ -91,7 +91,7 @@ Retain security deeds, the lender/borrower connection maps, covered loan amounts
 
 ## Separate net-borrowing-cost limitation
 
-Schedule 4 Part V paragraph 18 supplies a further test. Apply it to **exceeding borrowing costs**, not automatically to gross interest or every finance cost in the accounts. Part III defines that amount as deductible borrowing costs exceeding taxable interest revenues and other economically equivalent taxable revenues. First establish those inputs under the Act, including the relevant earlier restrictions, so an expense already disallowed is not claimed a second time in this calculation. Financial undertakings and standalone entities are excluded by paragraph 18(1); apply the complete Part III definitions and group facts before using an ordinary company example. [Part III definitions and paragraph 18(1), printed pages 187–189 and 200](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+Schedule 4 Part V paragraph 18 supplies a further test. Apply it to **exceeding borrowing costs**, not automatically to gross interest or every finance cost in the accounts. Part III defines that amount as deductible borrowing costs exceeding taxable interest revenues and other economically equivalent taxable revenues. First establish those inputs under the Act, including the relevant earlier restrictions, so an expense already disallowed is not claimed a second time in this calculation. Financial undertakings and standalone entities are excluded by paragraph 18(1); apply the complete Part III definitions and group facts before using an ordinary company example. Paragraph 8A also supplies the corporate/PE-specific “taxpayer” definition for this Part. A connected-party loan held by an individual does not itself establish that this Part applies to that individual. [Part III definitions and paragraph 18(1), printed pages 187–189 and 200](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For an established in-scope case:
 
@@ -192,9 +192,9 @@ Section 43 requires a written decision identifying the person assessed, affected
 
 | Source | Actual read scope | Read on |
 |---|---|---|
-| [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Part III borrowing-cost/EBITDA/standalone definitions and complete Part V paragraph 18(1)–(8), printed pages 187–189 and 200–202; not the whole 297-page Act newly read | 2026-10-28 |
+| [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Sections 22, 40(1)–(4), 42–43; Schedule 4 paragraphs 2, 4–5, 7–11, targeted Part III definitions and complete Part V paragraph 18(1)–(8); not the whole 297-page Act newly read | 2026-10-28 |
 | Same Act, sections 22, 40, 42–43 and Schedule 4 earlier methods | Earlier source reads and completed reviews retained in the [lending/appeals full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); this date does not claim a fresh reread of every old provision | 2026-10-22 |
 
-The Part V addition is a local writer candidate awaiting the complete changed-Guide figure ledger and independent country review. The earlier review covers its stated predecessor, not this new addition. Professional attestation remains pending.
+The complete v0.7 writer rule ledger and old-topics map are prepared for the independent country review in the [country research ledger](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md). This is a local writer candidate, not an independent-review conclusion. The earlier review covers its stated predecessor, not this new addition. Professional attestation remains pending.
 
 Not yet confirmed: complex control/associate attribution and the paragraph 11 relative cross-reference; the paragraph 5 investment-definition successor; disputed exemptions and overlapping restrictions; paragraph 18(6)'s reference to 19(3), group-wide floor allocation, foreign-currency conversion, capacity amounts and current return fields; wider international documentation/reporting and other later-Part regimes. The ordinary paragraph 18 limit and separate carry-forward periods above do not resolve those specific questions.

@@ -22,3 +22,19 @@ The old README prose already disclosed ordinary gaps but lacked `partial:`frontm
 4. Bring main executable-example counts to the required two per computational taxGuide while retaining every original executable block in supplementary research and preserving its method/prose context. Complete full changed-Guide figure ledgers and old-topic maps, one independent country review, repairs, full requiredchecks and one country push.
 
 All49current checks pass;18Guide schemas pass with2warninggroups concerning the inherited2024minimum-taxGuide. Strictmetadata for the one editedGuide passes. No final country review, CI, merge, issueclosure, CLAconsent, accountantattestation, creditpurchase, paidAPI or settingschange. One country publication is still held until the pack is reviewed. Faroe/Spainremain with the other activechat.
+
+
+## Full financing ledger, continuation
+
+The complete existing connected-party/financing Guide and PartVaddition now have58rule rows and121source-quotation snippets matched to the saved primary Act. Actual targeted rereads additionally coversections22,40(1)–(4),42–43andSchedule4paragraphs2,4–5,7–11; complete source context/conditions were read, not merely quote-searched. The45oldparagraphmap remains. Hypothetical inputs and derived results are separately identified. Country review has not yet been requested; other changed-Guide ledgers and ordinary repairs remain.
+
+
+## Corporate residence-exit and full two-Guide ledgers
+
+The financing Guide v0.7 now includes its paragraph8Acorporate/PEtaxpayer gate and has59legal rows/123quote snippets. Foreign-relief Guide v0.3 adds the ordinary corporate tax-residence exit base/retained-PE boundary and conditional deferral/recovery sequence;33rule rows/73snippets cover both all retained domestic/treaty relief rules and the new exit method. Its25oldbody paragraphs are byte-exact. Only its title/description expand scope; no prior topic is removed. Draft options were recorded before editing.
+
+Full paragraph8A/18Aactual reads exposed the asset-transfer definition's UK/EUloss-of-taxing-right wording versus18A(1)(a)–(b)'s Gibraltar wording. That specific textual problem remains disclosed. Examples are confined to the supported corporate residence-transfer limb, with actual scope/valuation assumed established; they are not an individual departure rule or universal asset-transfer opinion. No equal instalment calendar, current deferral channel, rate, currency rule or foreign starting basis is invented. The temporary-transfer provision's literal UK/EUtransferor/12monthcondition is preserved.
+
+Current checks:51calculation blocks pass, all47originalmainblocks preserved, one supported newmainblock brings the foreign-relief Guide to exactlytwo, and three supplementary controls remain in research. All18Guide schemas pass with the same inherited2024minimum-tax warnings. Strictmetadata on both editedGuides passes. All121historicalGibraltarresearch/review files remain byte-exact to the split snapshot;16untouchedGuides are exact. Both complete ledgers have92rule rows/196matchedsourcequotes, with syntheticinputs/results explicitly separated from quotations. This remains a writer check, not independent acceptance.
+
+Next: finite ordinary gap/source disposition across individual/payroll/corporate/consumption methods, source-backed repairs and complete ledgers for each additional changed Guide; standardize main examples without losing original blocks/prose; then one independent whole-country ledger/preservation/computation review, fixes, requiredchecks and one country push. Genuine unresolved cases keep the seven-domainpartialmap/issue398open. No push, publiccomment, merge, CLAconsent, professionalattestation, paidAPI/credits or model/settingschange.
