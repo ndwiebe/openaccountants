@@ -17,10 +17,10 @@ category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-27
-version: 0.1
+version: 0.2
 ---
 
-# Spain: foral corporate tax for2026
+# Spain: foral corporate tax for2026 v0.2
 
 ## Who this applies to
 
@@ -423,4 +423,4 @@ expected:
 |[Álava DF41/2025 art.2](https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf) |2026monetary-correction coefficients used through the linked complete table |2026-10-27 |
 |[Gipuzkoa DF27/2025 DA2](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf) |2026monetary-correction coefficients used through the linked complete table |2026-10-27 |
 
-**Not yet confirmed:** numerical application of the extraordinary-profit surcharge and Álava's current implementing provision; Gipuzkoa complementary-tax exception's precise paragraph scope for a large-group case; operational2027 forms beyond the supplied statutory windows and confirmed provincial232 triggers. Specialist culture/financing, IP nexus, reinvestment, patrimonial entities, fiscal groups, co-ops and restructuring require their own complete methods before use. Ordinary medium/general-company surcharge coverage remains partial pending that calculation. No accountant attestation is claimed.
+**Not yet confirmed:** numerical application of the extraordinary-profit surcharge and Álava's current implementing provision; Gipuzkoa complementary-tax exception's precise paragraph scope for a large-group case; operational2027 forms beyond the supplied statutory windows and confirmed provincial232 triggers. Specialist culture/financing, IP nexus, reinvestment, patrimonial entities, fiscal groups, co-ops and restructuring require their own complete methods before use. Surcharge computation for potentially chargeable general-rate companies remains partial pending that calculation; art.13 medium companies remain statutorily excluded. No accountant attestation is claimed.
