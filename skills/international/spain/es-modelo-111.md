@@ -1,10 +1,10 @@
 ---
 name: es-modelo-111
 description: Use this Guide to compute and reconcile Spanish common-territory Modelo 111 withholding remittances for payments made in 2026. It covers payer and recipient classification, professional standard and startup rates, employee withholding inputs, in-kind payments, distinct recipient counts, the numbered form boxes, complementary returns, filing frequency, payment dates, negative returns, annual Modelo 190 reconciliation and certificates. Trigger phrases include Modelo 111, retenciones profesionales, retención siete por ciento, retención quince por ciento, certificado de retenciones, perceptor, ingreso a cuenta, declaración negativa and autoliquidación complementaria. Obtain the paid-income register, recipient tax status, signed reduced-rate evidence, payroll calculations and accepted earlier filings. Corporate service invoices, property rents, capital income and ordinary non-resident payments require their own correctly classified route.
-version: "1.1"
+version: "1.2"
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: Modelo 111 and recipient reconciliation v1.1
+# Spain: Modelo 111 and recipient reconciliation v1.2
 
 Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -95,6 +95,8 @@ The payer's 111 is separate from the recipient's annual IRPF and Modelo 130. The
 | Recipient certificate | Available before the recipient's IRPF return period opens, not a universal 1 February deadline | [RIRPF art. 108.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |
 
 The current [2026 calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) expressly gives July 2026 monthly 111 **20 August**, with direct debit through **17 August**. Do not carry forward the older form-order July/September exception or assume every debit cut-off is the 15th. Verify the 2027 calendar for Q4/annual filings when published; the 2026 calendar does not establish next year's operational cut-offs.
+
+**Legislative bridge for the July return.** [RD 960/2013 article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771) replaced RIRPF article 108.1 **with effects from 1 January 2014**, under the express heading of article Segundo.Tercero. The replacement requires monthly declaration and payment in the first twenty calendar days of the following month and contains no separate July exception; its IRPF preamble also expressly explains the removal of that exception. That later regulatory schedule, [current article 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) and the actual 2026 calendar support July 2026 filing by 20 August. Original [EHA/586/2011 article 3](https://www.boe.es/buscar/doc.php?id=BOE-A-2011-4948) still prints the older July/August–September wording: it is preserved as historical text, not represented as expressly rewritten by RD 960/2013. The current August result is therefore supported by the identified replacement, rather than a missing legislative source or a presumed continuation of the older form-order exception.
 
 Select electronic filing under current [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) rules; an SL/SA's quarterly frequency does not make paper filing available. Save the accepted declaration, receipt/CSV and separate successful payment evidence. An NRC proves payment, not by itself a filed return; an accepted direct-debit instruction is not proof a later bank debit succeeded. Withholding debts are excluded from ordinary deferral/instalment under [LGT art. 65.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65).
 
@@ -195,8 +197,9 @@ expected:
 | [AEAT 2026 payment calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html), [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) | Current filing/payment dates, including July, and electronic channels | 2026-10-26 |
 | [Orden EHA/3127/2009](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567) | Modelo 190 population/design and electronic January filing window | 2026-10-26 |
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Voluntary late correction, collection, withholding debt deferral exclusion and conduct-based penalties | 2026-10-26 |
+| [Original RD960/2013 IRPF preamble/article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771), [current RIRPF108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) | Full108.1 replacement with effects1January2014; monthlyJuly exception removed in later regulation, distinguished from unchanged oldformorder wording and current2026calendar | 2026-10-28 |
 
-**Not yet confirmed:** the precise later statutory amendment removing the old form order's July/September exception, although RIRPF art. 108 and AEAT's current 2026 calendar/instructions confirm the current August deadline; 2027 operational/direct-debit dates; case-specific foral allocation, non-resident treaty relief and disputed withholding-credit evidence. Special prize, public-forest and image-right transactions require their full underlying eligibility/base computation before using the mapped boxes. Independent whole-pack review remains outstanding.
+**Not yet confirmed:** 2027 operational/direct-debit dates; case-specific foral allocation, non-resident treaty relief and disputed withholding-credit evidence. Special prize, public-forest and image-right transactions require their full underlying eligibility/base computation before using the mapped boxes. Independent whole-pack review remains outstanding.
 
 <!-- openaccountants-cta-block -->
 
