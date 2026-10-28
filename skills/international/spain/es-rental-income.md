@@ -1,10 +1,10 @@
 ---
 name: es-rental-income
 description: Use this Guide to compute common-territory Spanish individual rental and own-use property income for 2026. It covers ownership and income classification, gross rent, property-specific interest and repair caps, other expenses, bad debts, depreciation and lifetime limits, residential net-income reductions, the October reform and December lease-date transition, relative lettings and imputed income. Trigger phrases include alquiler España, arrendamiento vivienda, rendimiento capital inmobiliario, reducción alquiler, amortización inmueble, gastos reparación, renta imputada and landlord tax Spain. Obtain actual lease and renewal dates, tenant use and age, prior rent and reference-price evidence, large-holder status, cadastral values, acquisition costs, rental days and prior expense ledgers. Resident rental results feed the full state and regional IRPF computation. Non-resident income, property businesses, corporate landlords and indirect-tax treatment have separate companion routes.
-version: 1.1
+version: 1.2
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: rental and own-use property income v1.1
+# Spain: rental and own-use property income v1.2
 
 Compute 2026 common-territory rental income property by property, then apply the correct lease-date relief and annual IRPF route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -35,7 +35,7 @@ There is **no single resident rental-income tax percentage**. Reduced net rent j
 | Interest/other finance costs **plus repairs/conservation**, per property | Combined deduction capped at that property's gross income; excess carries four following years under same cap | [LIRPF art. 23.1.a.1/RIRPF art. 13.a](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a23) |
 | Building depreciation, annual ordinary maximum | 3% of greater eligible acquisition cost or cadastral value, **land excluded** | [LIRPF art. 23.1.b/RIRPF art. 14](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a14) |
 | Furniture/fittings | Applicable simplified-table coefficient, normally 10% for listed furniture/installations, subject to actual asset/category | [RIRPF art. 14.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a14), [AEAT depreciation guidance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/gastos-deducibles/cantidades-destinadas-amortizacion.html) |
-| Doubtful debt | Debtor insolvency, or **more than six months** since first collection attempt at year-end without credit renewal | [RIRPF art. 13.e](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a13) |
+| Doubtful debt | Debtor in **concurso** proceedings, or **more than six months** since first collection attempt at year-end without credit renewal | [RIRPF art. 13.e](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a13) |
 | Qualifying irregular income | 30% reduction, single-period inclusion, eligible net-income ceiling 300,000 | [LIRPF art. 23.3/RIRPF art. 15](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a15) |
 | Own-use imputation | Generally 2%; qualifying 2026 revaluations effective from 1 January 2012 use 1.1% | [Operative art. 85](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1#a85), [DA 55](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-10) |
 
@@ -80,6 +80,8 @@ Choose the highest **actually applicable** current reduction if several qualify,
 Start from everything payable for the letting, including goods let with it and tenant payments of the landlord's obligations, excluding separately charged VAT/IGIC under [LIRPF art. 22.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a22). Identify refundable deposits separately until their actual retention/application. Use [art. 14](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a14) accrual rules; a missing bank receipt does not automatically eliminate rent due.
 
 Under [RIRPF art. 13](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a13), deduct necessary supported interest/finance, repairs, non-penalty property taxes, community/management/caretaking, insurance, utilities, legal/formalisation costs and qualifying bad debts. Keep improvements/enlargement as capital, not repairs, and mortgage principal as capital repayment. A landlord's early-termination payment can be an improvement under the cited [AEAT classification](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/rendimientos-capital-inmobiliario/concepto-rendimientos-capital-inmobiliario.html); classify who pays whom and why. A previously deducted bad debt later collected returns to income in collection year.
+
+For the first ordinary doubtful-debt route, **concurso** under RIRPF13.e.1 is the specified insolvency-proceeding status; an unpaid balance or a debtor's financial difficulty alone is not proof of that status. Alternatively, under13.e.2, retain evidence of the landlord's **first collection action**, require **strictly more than six months** between it and the tax-period end, and verify no credit renewal. For a normal31December2026 year-end and no concurso, a first collection action on1July2026 does not satisfy that timing route; one on30June2026 does. With otherwise qualifying unpaid rent EUR1,000 already included in gross income, the latter facts support a EUR1,000 doubtful-debt expense; the1July facts alone support none under that route. The finance/repair gross-income cap does not extend to this separate expense. Later recovery of an amount actually deducted is income in the recovery year. The exceptional three-month rule for2020/2021 is not the2026 threshold ([RIRPF13.e](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a13)).
 
 For each property, let G be gross income, F current qualifying finance-plus-repair costs and C eligible earlier capped costs. Apply `capped_deduction = min(G, F +eligible_C)` in the statutory expiry/order schedule and preserve unused amounts by origin year. **Only this class is capped at gross income**. Other expenses and depreciation can create a negative net property result. Do not offset one property's unused repair limit against another property's rent.
 

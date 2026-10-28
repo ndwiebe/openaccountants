@@ -1,7 +1,7 @@
 ---
 name: es-vat-return
 description: Calculates ordinary Spanish IVA for 2026 for sole traders and companies in the peninsula and Balearic Islands. Establishes tax points, rates, taxable consideration, invoice-supported input recovery, business and private use, blocked expenses, general and compulsory special prorrata, annual corrections and investment-good adjustments. Maps the ordinary result, reverse charges, imports and prior credit to the current Modelo 303 and records filing, SII, annual-summary and intra-EU reporting obligations. Distinguishes temporary energy measures and the December housing cutover from ordinary rates. Use for IVA, Modelo 303, deducibilidad, prorrata, mixed-use property, reverse charge and unused VAT credit. Special regimes, territorial allocations and specific unresolved source interactions remain identified limits.
-version: 2.3
+version: 2.4
 category: international
 jurisdiction: ES
 tax_year: 2026
@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Who this applies to
 
-Spanish IVA applies to the peninsula and Balearic Islands. The Canary Islands, Ceuta and Melilla are outside its territory; IGIC/IPSI are separate taxes. Establish the taxable person's business activity, establishment, transactions and filing administration before preparing the return ([LIVA arts. 3–5](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3)). This Guide covers ordinary-regime sole traders and companies, including ordinary mixed taxable/exempt activities. VAT groups, modules, retailer surcharge, agriculture, cash-accounting taxpayers, OSS/IOSS, travel agents, used goods, investment gold, fuel-depot payments and other special regimes need their own computation. A customer receiving a cash-scheme invoice still needs its special deduction timing. Foral allocation and IGIC/IPSI are pack gaps, not zero liabilities.
+Spanish IVA applies to the peninsula and Balearic Islands. The Canary Islands, Ceuta and Melilla are outside its territory; IGIC/IPSI are separate taxes. Establish the taxable person's business activity, establishment, transactions and filing administration before preparing the return ([LIVA arts. 3–5](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3)). This Guide covers ordinary-regime sole traders and companies, including ordinary mixed taxable/exempt activities. VAT groups, modules, retailer surcharge, agriculture, cash-accounting taxpayers, OSS/IOSS, travel agents, used goods, investment gold, fuel-depot payments and other special regimes need their own computation. A customer receiving a cash-scheme invoice still needs its special deduction timing. The ordinary foral result-allocation method is supplied below. Use the separate [Canary Islands IGIC](es-canary-islands-igic.md) and [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) Guides for their supplied ordinary methods and stated limits. The precise remaining territorial and other VAT reservations do not imply zero liabilities.
 
 Use actual invoices/registers, customs documents, prior returns and elections. Bank statements help reconcile payments; they do not replace the art. 97 deduction document or determine the place of supply. Unknown country, customer status, business use or rate stays an unresolved transaction rather than becoming a domestic 21% sale or an automatically deductible reverse charge ([LIVA arts. 69–70, 84, 97](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a97)).
 

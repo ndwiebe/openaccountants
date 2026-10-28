@@ -1,10 +1,10 @@
 ---
 name: spain-payroll
 description: Use this Guide to calculate ordinary common-territory Spanish employee payroll for 2026. It computes annual IRPF withholding inputs, the withholding-specific employment reduction, national personal and family minima, the reference scale, quota limits, rate truncation and mid-year recalculation. It reconciles taxable cash and in-kind pay with separate employee and employer social contributions, extra-pay proration, overtime and solidarity through the companion contribution Guide. Trigger phrases include nómina, bruto a neto, retención IRPF, Modelo 145, paga extraordinaria, regularización del tipo, payroll cost, Modelo 111 and Modelo 190. Obtain the contract, collective agreement, contribution classification, annual pay forecast, declared family circumstances and prior pay and withholding records. Foral, non-resident and elected impatriate payroll require their own applicable tax route.
-version: 1.1
+version: 1.2
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: employee payroll and withholding v1.1
+# Spain: employee payroll and withholding v1.2
 
 Turn contractual pay into a payslip, contribution settlement and withholding working paper for 2026. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. The payroll withholding calculation is separate from the worker's annual state-plus-regional IRPF return.
 
@@ -124,6 +124,17 @@ For the ordinary case, `Q = max(T(B) −T(M), 0)`. If judicial child-support ann
 Apply the no-withholding exclusion unless a fixed/minimum rate overrides it. For ordinary positive G, calculate `rate = 100 ×Q/G`; if B −M ≤0, the ordinary rate is zero. Apply qualifying territorial reduction and the notified two-point transitional mortgage reduction, without going below zero, then the statutory contract floor. For G=0 there is no ordinary cash withholding to compute; do not divide by zero. Use fixed-rate income's own rule instead of this annual calculation ([arts. 80–86](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a86)).
 
 The official 2026 calculation specification **truncates the percentage to two decimal places**, rather than rounding it up. Its final monetary rounding treats half a cent upwards. Retain precision until the designated rounding/truncation step. AEAT publishes separate specifications for **1 January–9 September** and **from 10 September 2026**; choose the dated version and preserve its input/output record. These implementation details are checked against the [AEAT 2026 specification](https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2026/Algoritmo%20Retenciones-2026_10sept.pdf), alongside the statutory procedure.
+
+For the **from-10-September-2026 specification**, carry full precision except at its named calls. Apply `REDONDEAR1`, rounding to cents with **0.005 upwards**, at these specific points before using the result downstream:
+
+- Round the calculated employment reduction **RED20 before** subtracting it to form reduced net income and the withholding base.
+- After completing each relevant population loop, round the general descendant subtotal **MINDESG**, under-three/adoption subtotal **MINDES3**, ascendant age subtotals **65AS/75AS**, relative-disability subtotals **DISDES/DISAS**, and relative-assistance subtotals **ASISDES/ASISAS**. Round each completed subtotal before combining the minima; do not round every person's apportioned share before summing unless a separately specified call requires it.
+- Truncate the mortgage-reduction amount **MINOPAGO to two decimal places before** subtracting it from the withholding quota. Truncate ordinary **TIPO** to two decimal percentage places before applying the subsequent statutory floors, then round annual **IMPORTE** to cents.
+- In regularisation, truncate **MINOPAGO** and **TIPOREG** at the specification's corresponding calls, round annual **IMPORTE**, and truncate **TIPOREG again** where the article 87.5 safeguards recalculate it. These are specific calls; they do not authorise cent-rounding every intermediate quota or base.
+
+Source: the linked AEAT dated specification, calculation notes and its RED20, family-minimum, TIPO/IMPORTE and regularisation sections. Use the separately dated specification for the earlier 2026 period rather than assuming this instruction itself establishes every earlier version's implementation.
+
+Arithmetic control with validated declared inputs: G EUR 21,008.84; qualifying article 83.3(b) contributions EUR 2,194.78; ordinary other expenses EUR 2,000; situation 3, no children, minimum EUR 5,550; no irregular reduction, mortgage, territorial reduction, pension/unemployment adjustment or fixed-rate override. R is EUR 18,814.06. The unrounded reduction is `2,364.34 - 1.14 × (18,814.06 - 17,673.52) = 1,064.1244`, so **RED20 becomes EUR 1,064.12**. Base is EUR 15,749.94 and the scale-minus-minimum quota is EUR 2,102.9856. The 43% cap is EUR 2,207.1212 and does not bind. The raw rate is approximately 10.01000436%, truncated to **10.01%**; carrying unrounded RED20 into the base instead gives approximately 10.00999933%, incorrectly truncated to 10.00%. The contribution amount is a stipulated qualifying input, not an amount derived here from a particular employment history. This is a specification boundary calculation, not a run of AEAT's filing program.
 
 ### 4. Recalculate when facts change
 
@@ -309,6 +320,8 @@ expected:
 | [Ley 58/2003, LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Tax late-return, collection and underpayment classification | 2026-10-26 |
 | [LGSS operative pre-December arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a171), [current arts. 179/248](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a179), [RDL 31/2026 art. 1/DT 1/DF 4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872), [Social Security BR/rates](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) | Restored employee IT/birth methods, benefit payer, bases, partial-time method and December process-start transition; art.169/172 eligibility and incorporated special-IT day/rate method | 2026-10-27 |
 | [FOGASA official FAQ](https://www.mites.gob.es/fogasa/faqs.html?q=%2F), [ET art. 33](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a33), [2026 order art. 32](https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296#a3-4) | Published FOGASA module/caps and statutory gateway; retirement-age common-IT contribution exception | 2026-10-27 |
+| AEAT2026 specification from10September, linked above | Exact RED20/family-subtotal cent-rounding and MINOPAGO/TIPO/TIPOREG truncation calls, annual IMPORTE rounding and declared-input rate boundary |2026-10-28 |
+
 
 **Not yet confirmed:** an agency statement expressly printing FOGASA’s daily-module denominator formula, beyond the sourced monetary limits and matching arithmetic reconstruction above; specialist limits in [foral payroll Sources](es-foral-payroll.md#sources), and non-resident/impatriate payroll routes; special-system contribution cases beyond the ordinary household/agricultural-employee methods supplied in [social contributions](es-social-contributions.md), and case-specific suspension exemptions; historical severance/leave transitions for an individual event; the applicable collective agreement and occupational tariff for any actual worker. No live-AEAT-service parity run has yet been performed for these two hypothetical examples. Independent whole-pack review remains outstanding.
 

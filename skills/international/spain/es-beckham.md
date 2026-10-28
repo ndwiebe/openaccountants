@@ -1,10 +1,10 @@
 ---
 name: es-beckham
 description: Use this Guide to assess and compute Spain’s incoming-worker special tax regime under article 93 for 2026, commonly called the Beckham regime. It covers qualifying employment, remote employment, administrators, entrepreneurs, highly qualified professionals and associated family members, the prior non-residence test, election evidence, income-source and service-period rules, annual ordinary and savings scales, foreign-tax relief, withholding, Modelo 149 and Modelo 151. Trigger phrases include Ley Beckham, régimen de impatriados, trabajadores desplazados, incoming-worker tax, digital nomad tax election, 24 percent regime and Spanish special residence taxation. Obtain the move and activity dates, residence history, actual election, service-period income, source evidence and payer certificates. A visa, foreign employer or foreign bank account alone does not settle eligibility or tax treatment.
-version: 1.1
+version: 1.2
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: incoming-worker special tax regime v1.1
+# Spain: incoming-worker special tax regime v1.2
 
 Calculate the 2026 art. 93 special regime, commonly called the Beckham regime, only after documenting eligibility and election. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -23,6 +23,10 @@ Calculate the 2026 art. 93 special regime, commonly called the Beckham regime, o
 Qualifying employment includes a Spanish employment/statutory relationship, an employer-directed posting evidenced by its letter, or employment performed remotely using the specified IT/telecommunications means. The international telework visa supports the employment route; a visa does not dispense with the remaining tax conditions. Ordinary freelance work is not automatically qualifying remote **employment**.
 
 An administrator can qualify, but an administrator of a patrimonial entity must not hold a participation that makes them related under LIS art. 18. Entrepreneurial activity requires the [RIRPF art. 113.2](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a113) ENISA/residence-authorisation evidence. Highly qualified services to qualifying emerging companies or the specified training/research/development/innovation activity require the same article's evidence and art. 93.1.b.4's **more-than-40%** remuneration condition. No Spanish PE income is allowed except in the expressly permitted entrepreneur/highly-qualified activity routes. Do not classify every investment manager or self-employed digital nomad as eligible.
+
+Before electing, check **RIRPF article 116.3**: a taxpayer who has used the special incoming-worker employment-withholding procedure in **article 89.B cannot exercise this special-regime option**. Article 89.B concerns an employee anticipating ordinary Spanish IRPF withholding on a move to Spain; AEAT identifies that communication as **Modelo 147**. It is a different procedure from the Modelo 149 special-regime election. Retain the actual prior communication, AEAT accreditation and payer implementation evidence rather than assuming that a timely 149 overrides the bar. [RIRPF arts.89.B/116.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a116); [AEAT general incoming-worker procedure/Modelo147](https://sede.agenciatributaria.gob.es/Sede/irpf/tengo-que-presentar-declaracion/regimen-fiscal-aplicable-trabajadores-desplazados.html).
+
+For example, an employee otherwise meets the article 93 residence-history, move and employment conditions and remains within the six-month election deadline, but has already used article 89.B's special withholding procedure. Article 116.3 bars the election on those facts. Absence of that prior procedure only clears this additional gate; every other eligibility/election condition still applies. The article89.A passive-benefit withholding procedure is a separately named procedure, so do not broaden the specific89.B bar by analogy.
 
 Qualifying spouse/children under 25, disabled children of any age, or the specified unmarried co-parent can elect individually under art. 93.3. Check their move/residence timing, five-year non-residence history, prohibited-PE condition and the annual **combined associated bases strictly below the principal's base**. [RIRPF art. 113.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a113) addresses an associated person's earlier arrival without earlier tax residence than the principal's first regime year. A family relationship alone does not grant automatic treatment.
 
@@ -72,6 +76,7 @@ The election sets wealth-tax **real-obligation** treatment under [LIRPF art. 93.
 | Action | Deadline/mechanism | Official source |
 |---|---|---|
 | Principal election, Modelo 149 | Maximum six months from documented activity start in Spanish SS registration, retained-origin SS documentation or, where no SS registration is mandatory, activity-start evidence | [RIRPF art. 116.1.a](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a116) |
+| Prior incoming-worker withholding procedure | Article116.3 bars election if the taxpayer has used article89.B; inspect Modelo147/accreditation/payer evidence before treating149as available | [RIRPF art.116.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a116) |
 | Associated person's individual election | Six months from entry, or principal's election deadline if later | [Art. 116.1.b](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a116) |
 | Evidence and accreditation | Route-specific documents under art. 119; provide regime accreditation to withholders | [Art. 119](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a119) |
 | Annual return, Modelo 151 | Electronic; same annual window approved for general IRPF, with separate direct-debit cut-off | [Order HFP/1338/2023 arts. 3–4](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416) |
@@ -156,7 +161,7 @@ expected:
 ## Ask the client first
 
 1. What move, residence, qualifying work/activity and documented social-security/origin-coverage dates establish eligibility and the election deadline?
-2. What residence history and actual 149 election/accreditation support each principal/associated person?
+2. What residence history, prior article89.B/Modelo147 procedure and actual149election/accreditation support each principal/associated person?
 3. Which income relates to pre-move, regime-period or post-notified-posting services, and what establishes each other item's Spanish/foreign source?
 4. What entrepreneur/emerging-company/qualification/administrator ownership and PE evidence satisfies the selected route?
 5. What foreign tax, service allocation and payer withholding certificates support the credit and annual balance?
@@ -171,6 +176,8 @@ expected:
 | [TRLIRNR, RDL 5/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527) | Art. 13 sources, arts. 24–26 base/rates/credits and property retention | 2026-10-26 |
 | [Orden HFP/1338/2023](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-25416) | Electronic 149/151 and annual campaign/direct-debit windows | 2026-10-26 |
 | [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Late filing, interest/collection and penalty classification | 2026-10-26 |
+| RIRPF arts.89.B/116.3 and AEAT general incoming-worker page linked above | Prior special ordinary-withholding procedure bars the incoming-worker special-regime election; Modelo147 distinguished from149 | 2026-10-28 |
+
 
 **Not yet confirmed:** the exact allocation of a complex multi-period equity award or mixed-category foreign-credit ceiling without its supporting service/source records; case-specific treaty residence entitlement and wealth-tax calculation. The ordinary employment and Spanish-source savings computations above are supplied; specialist PE/activity and family boundary cases need their actual eligibility evidence. Independent whole-pack review remains outstanding.
 
