@@ -591,7 +591,8 @@
       "number": 25,
       "heading": "Claim working paper",
       "sha256": "d96e5df1eb60bac5681c403f0c355769231d63c8ed7066dbc850483034168166",
-      "byte_exact": true
+      "byte_exact": false,
+      "disposition": "Obsolete pending-review sentence replaced by archive pointer; all original claim/operational qualifications retained. Current destination/hash in old_paragraph_map[24]."
     }
   ],
   "old_paragraph_map": [
