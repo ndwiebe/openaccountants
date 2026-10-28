@@ -2,6 +2,14 @@
 jurisdiction: GI
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+partial:
+  IT-IND: "Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled"
+  IT-CORP: "CT4 payment-on-account reduction form fields/submission and remaining ordinary deduction/claim implementation remain unverified"
+  VAT: "Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified"
+  SC: "Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified"
+  PR: "Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion"
+  TP: "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; complete domestic documentation scope remains to verify"
+  XB: "Domestic foreign-tax-relief claim/correction submission, ordinary exit/disposal method and remaining residence/treaty procedure limits remain unverified"
 covered_by:
   VAT: gi-transaction-tax-transition
   TP: gi-connected-party-pricing-and-interest
@@ -10,7 +18,9 @@ covered_by:
 
 # Gibraltar pack: coverage and remaining work
 
-Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Work in [consolidated PR #514](https://github.com/openaccountants/openaccountants/pull/514). Reconciled 22 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft.
+Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Country PR [#778](https://github.com/openaccountants/openaccountants/pull/778) preserves the original work from consolidated #514. Current main reconciled locally on 28 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft.
+
+The 28 October ordinary-method continuation is a local writer candidate. Its complete changed-Guide figure ledgers and one independent country review remain pending. Earlier completed reviews retain their exact scopes. The structured `partial:` map records the ordinary gaps already disclosed below; all seven domains being mapped does not establish a complete country.
 
 Full independent AI source/editorial review records are listed below. Each record identifies its reviewed versions, corrections and limits; subsequent additions have separate delta records in [research](../../../docs/research/). These reviews do not establish professional attestation.
 

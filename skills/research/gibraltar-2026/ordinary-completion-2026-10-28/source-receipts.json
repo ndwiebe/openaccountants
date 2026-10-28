@@ -1,0 +1,30 @@
+[
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/income-tax-act-20260323.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "bytes": 1849515,
+    "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+    "read_scope": "Freshly downloaded; targetedPartIIIdefinitions and completePartV18(1)\u2013(8) actually read; not all297pages."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/income-tax-act-20260323.txt",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "bytes": 716024,
+    "sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+    "read_scope": "pdftotextderived; actualPartIII/PartVread and quoted rows matched normalizedwhitespace after removal of repeated PDFpageheaders/footers; rawPDF/text unchanged."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/rates-tax-rules-20240701.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+    "bytes": 167676,
+    "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+    "read_scope": "Downloaded/converted for upcoming ledger; operative rules not freshly read in this phase. Official parentindexcurrent1July2024observed."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/allowances-rules-20260323.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+    "bytes": 356091,
+    "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+    "read_scope": "Downloaded/converted for upcoming ledger; operative rules not freshly read in this phase. Official parentindexcurrent23March2026observed."
+  }
+]

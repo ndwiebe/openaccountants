@@ -1,13 +1,13 @@
 ---
 name: gi-connected-party-pricing-and-interest
 description: >
-  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap, Commissioner-satisfied exemption and shareholder-loan deemed distributions and statutory advance-clearance procedure. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Complex control attribution, other interest limits, international reporting and independent professional review remain outstanding.
+  Gibraltar connected-party pricing and financing reference under Income Tax Act Schedule 4. Covers profit adjustments, excess interest, conditional thin capitalisation, the aggregate connected-expense cap, Commissioner-satisfied exemption and shareholder-loan deemed distributions and statutory advance-clearance procedure. Includes separate numerical examples and evidence controls, without treating any one threshold as a safe harbour. Based on the March 2026 statutory consolidation checked in October 2026. Adds the ordinary Schedule 4 Part V net-borrowing-cost limit and carry-forward rules. Complex control attribution, the specified exemption cross-reference, international reporting and independent professional review remain outstanding.
 jurisdiction: GI
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.5
+last_updated: 2026-10-28
+version: "0.6"
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
@@ -89,6 +89,29 @@ expected:
 
 Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the deposit/investment income, and evidence supporting any paragraph 7 exemption. Allocation between multiple loans, disputed security coverage and the investment-definition cross-reference require further review.
 
+## Separate net-borrowing-cost limitation
+
+Schedule 4 Part V paragraph 18 supplies a further test. Apply it to **exceeding borrowing costs**, not automatically to gross interest or every finance cost in the accounts. Part III defines that amount as deductible borrowing costs exceeding taxable interest revenues and other economically equivalent taxable revenues. First establish those inputs under the Act, including the relevant earlier restrictions, so an expense already disallowed is not claimed a second time in this calculation. Financial undertakings and standalone entities are excluded by paragraph 18(1); apply the complete Part III definitions and group facts before using an ordinary company example. [Part III definitions and paragraph 18(1), printed pages 187–189 and 200](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+For an established in-scope case:
+
+1. Determine exceeding borrowing costs from the legally deductible borrowing-cost and taxable-interest inputs.
+2. Calculate tax EBITDA by adding tax-adjusted exceeding borrowing costs, depreciation and amortisation back to assessable income. Exclude income not assessable under the Act.
+3. The ordinary paragraph 18(3) limit is the **greater of 30% of that tax EBITDA and €3,000,000**. Paragraph 18(4) treats the €3,000,000 amount for the **entire group**. It is not a new €3,000,000 allowance for every group company; establish its application across the actual group before allocating a limit to an entity.
+4. Compare the otherwise eligible exceeding borrowing costs with the applicable limit. Costs disallowed by this Part are added back in the tax working paper, subject to any independently established paragraph 18(7) alternative below. An exclusion from this Part or unused capacity does not itself prove deductibility under the rest of the Act.
+
+[Paragraph 18(3)–(5), printed pages 200–201](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+A consolidated-group member may elect the paragraph 18(7)(a) full-deduction route if its equity-to-total-assets ratio meets the group ratio, with a ratio lower by **up to two percentage points** treated as equal and the required consistent asset/liability valuation. Alternatively, paragraph 18(7)(b) supplies a higher group-ratio limit: group exceeding borrowing costs **vis-à-vis third parties ÷ group EBITDA**, multiplied by the taxpayer's paragraph 18(5) EBITDA. Establish the complete statutory conditions, underlying consolidated accounts and the actual comparison before replacing the ordinary limit. Do not assume an exemption merely because accounts are consolidated. [Paragraph 18(7), printed page 201](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Exceeding borrowing costs not deductible under paragraphs 18(3)–(7) may be carried forward **indefinitely**. Unused interest capacity may be carried forward for a **maximum of five years**. Keep those as separate dated ledgers; the statute does not give unused capacity an indefinite life. The treatment of capacity generated through the group-wide floor, group allocation, foreign-currency conversion and current return fields is not established by the illustrations below. [Paragraph 18(8), printed page 202](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Explicit cross-reference limit:** paragraph 18(6) describes pre-17 June 2016 loans, excluding later modifications, and specified infrastructure borrowing, but its operative reference is to **paragraph 19(3)**. Do not silently rewrite that reference to 18(3) or use this Guide to certify either exemption. These cases need that textual issue reconciled; the ordinary illustrations expressly assume no borrowing within those descriptions. [Paragraph 18(6), printed page 201](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+**Ordinary illustration:** assume an established in-scope taxpayer, €4,000,000 exceeding borrowing costs, €6,000,000 tax EBITDA and an independently established applicable group-wide floor of €3,000,000, with no competing group claim, paragraph 18(7) alternative, paragraph 18(6) case or other restriction. Thirty percent of EBITDA is €1,800,000; the ordinary limit is €3,000,000. Deduct €3,000,000 under this Part and carry forward €1,000,000 disallowed costs. All inputs are expressed in euros solely to illustrate the statutory comparison; this is not a sterling conversion or final company-tax assessment.
+
+**Equality boundary:** on the same scope assumptions, €3,000,000 exceeding borrowing costs and €10,000,000 tax EBITDA put both limbs at €3,000,000. Nothing is disallowed by this limit. Eligibility, other deduction restrictions and the actual group-wide amount still require proof. The [two supplementary arithmetic controls](../../research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md) retain these illustrations without adding extra main examples.
+
 ## Aggregate connected-expense cap
 
 Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected parties, collectively the “Expense”. Subject to the applicable exemption and other provisions, the deduction is the least of:
@@ -137,7 +160,7 @@ Paragraph 7(2) expressly applies the section 35 appeal route to the exemption de
 
 A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and equity movements, security documents, aggregate connected expenses, profit/loss reconciliation and any Commissioner correspondence. These are preparation controls rather than a claim that a particular statutory local-file form or filing deadline has been verified.
 
-Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, the paragraph 5 investment-definition cross-reference and complex security allocations, later-Part interest limitations and international reporting need further work before comprehensive coverage can be claimed.
+Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, the paragraph 5 investment-definition cross-reference and complex security allocations, the paragraph 18(6) exemption cross-reference, group allocation/currency/return implementation and international reporting need further work before comprehensive coverage can be claimed.
 
 ## Seeking clearance under section 42
 
@@ -163,3 +186,15 @@ A notification is void where the disclosure omits material facts or is not full 
 ## Anti-avoidance decisions and appeal scope
 
 Section 43 requires a written decision identifying the person assessed, affected/disregarded parts of the arrangements, reasons and proposed assessment amount. Section 35 appeal provisions apply, subject to section 43(3): Schedule 2 paragraph 13 does not apply, and the Tribunal can confirm the decision or remit it for reconsideration on its findings of law and fact. Do not assume every ordinary assessment-appeal power carries over unchanged. Preserve the decision and service evidence and use the [appeals Guide](gi-income-tax-assessment-appeals.md) for the general deadline framework. [Section 43(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+
+## Sources
+
+| Source | Actual read scope | Read on |
+|---|---|---|
+| [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Part III borrowing-cost/EBITDA/standalone definitions and complete Part V paragraph 18(1)–(8), printed pages 187–189 and 200–202; not the whole 297-page Act newly read | 2026-10-28 |
+| Same Act, sections 22, 40, 42–43 and Schedule 4 earlier methods | Earlier source reads and completed reviews retained in the [lending/appeals full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); this date does not claim a fresh reread of every old provision | 2026-10-22 |
+
+The Part V addition is a local writer candidate awaiting the complete changed-Guide figure ledger and independent country review. The earlier review covers its stated predecessor, not this new addition. Professional attestation remains pending.
+
+Not yet confirmed: complex control/associate attribution and the paragraph 11 relative cross-reference; the paragraph 5 investment-definition successor; disputed exemptions and overlapping restrictions; paragraph 18(6)'s reference to 19(3), group-wide floor allocation, foreign-currency conversion, capacity amounts and current return fields; wider international documentation/reporting and other later-Part regimes. The ordinary paragraph 18 limit and separate carry-forward periods above do not resolve those specific questions.
