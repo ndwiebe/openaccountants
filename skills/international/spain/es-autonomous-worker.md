@@ -1,7 +1,7 @@
 ---
 name: es-autonomous-worker
 description: Compute the 2026 tax, social contributions and cash position of a Spanish resident sole trader or professional. Covers autónomo registration, actual assessment-method selection, deductible expenses, simplified provisions, professional withholding, cumulative income-tax prepayments, VAT reconciliation and day-based RETA income banding. Distinguishes company controllers, family collaborators, TRADE arrangements and pluriactividad, and identifies the separate conditions for reduced contributions and new-activity relief. Use for cuota de autónomos, alta autónomo, Modelo 130, professional invoices, take-home profit or income-based regularisation questions. Includes an annual Madrid tax-to-cash reconciliation and a part-year contribution example. Common-territory computations are supplied; foral and island/city indirect taxes retain explicit limits.
-version: 1.2
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-27
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.2
+# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.3
 
 > Based on work by Nambu89 (Impuestify) and Pau March (larenta), licensed under MIT. Adapted for the OpenAccountants format.
 
@@ -224,6 +224,8 @@ expected:
 | [Ley 4/2012](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282), arts. 51–57 | Canary rate framework; BOE consolidation marked updating, not a complete 2026 IGIC reconciliation | 2026-10-26 |
 
 **Not yet confirmed:** general statutory amount for new 2026 reduced-fee awards and precise extension-boundary issues; legal reconciliation of the statutory/repeal texts with AEAT's published 2026 entry route, case-specific return corrections beyond its supplied election routes, and activity-specific module indices; the precisely outstanding branches in the linked foral IRPF/IGIC/IPSI Guides; specific foreign/treaty and special-system cases outside the ordinary routes. The final 2026 Modelo 100 campaign/schema for 2027 is not presumed from prior years. Independent whole-pack review remains pending.
+
+> Contributed by OpenAccountants.
 
 <!-- openaccountants-cta-block -->
 

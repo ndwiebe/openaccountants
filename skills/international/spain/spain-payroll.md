@@ -1,7 +1,7 @@
 ---
 name: spain-payroll
 description: Use this Guide to calculate ordinary common-territory Spanish employee payroll for 2026. It computes annual IRPF withholding inputs, the withholding-specific employment reduction, national personal and family minima, the reference scale, quota limits, rate truncation and mid-year recalculation. It reconciles taxable cash and in-kind pay with separate employee and employer social contributions, extra-pay proration, overtime and solidarity through the companion contribution Guide. Trigger phrases include nómina, bruto a neto, retención IRPF, Modelo 145, paga extraordinaria, regularización del tipo, payroll cost, Modelo 111 and Modelo 190. Obtain the contract, collective agreement, contribution classification, annual pay forecast, declared family circumstances and prior pay and withholding records. Foral, non-resident and elected impatriate payroll require their own applicable tax route.
-version: 1.2
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: employee payroll and withholding v1.2
+# Spain: employee payroll and withholding v1.3
 
 Turn contractual pay into a payslip, contribution settlement and withholding working paper for 2026. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off. The payroll withholding calculation is separate from the worker's annual state-plus-regional IRPF return.
 
@@ -324,6 +324,8 @@ expected:
 
 
 **Not yet confirmed:** an agency statement expressly printing FOGASA’s daily-module denominator formula, beyond the sourced monetary limits and matching arithmetic reconstruction above; specialist limits in [foral payroll Sources](es-foral-payroll.md#sources), and non-resident/impatriate payroll routes; special-system contribution cases beyond the ordinary household/agricultural-employee methods supplied in [social contributions](es-social-contributions.md), and case-specific suspension exemptions; historical severance/leave transitions for an individual event; the applicable collective agreement and occupational tariff for any actual worker. No live-AEAT-service parity run has yet been performed for these two hypothetical examples. Independent whole-pack review remains outstanding.
+
+> Contributed by OpenAccountants.
 
 <!-- openaccountants-cta-block -->
 

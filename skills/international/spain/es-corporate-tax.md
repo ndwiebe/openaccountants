@@ -1,7 +1,7 @@
 ---
 name: es-corporate-tax
 description: Use this Guide to compute Spanish common-territory corporate income tax for a period beginning in 2026. It covers residence, accounting-to-tax adjustments, microcompany and small-company rates, depreciation, finance costs, participation income, capitalisation and levelling reserves, carried-forward losses, credits, the domestic minimum tax, annual Modelo 200 and Modelo 202 instalments. Trigger phrases include Impuesto sobre Sociedades, IS, SL taxes, empresa de reducida dimensión, bases imponibles negativas, reserva de capitalización, reserva de nivelación, pagos fraccionados and corporate exit tax. Obtain the exact period, territory, entity status, aggregated turnover and accounts before computing. The September 2026 Ceuta and Melilla amendments have specific effective-date tests. Foral taxes, consolidation, reorganisations and specialist incentive claims require their own verified analysis.
-version: 1.1
+version: 1.2
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-27
@@ -16,7 +16,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Corporate income tax in Spain v1.1
+# Corporate income tax in Spain v1.2
 
 Compute Spanish corporate tax for a period beginning in 2026 from the accounts, then test the company's rate, reliefs and minimum tax. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -251,6 +251,8 @@ expected:
 | [AEAT interest calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html) | Explicit 2026 continued-budget interest rate; the underlying annual return is for 2025 | 2026-10-25 |
 
 Not yet confirmed: the specific foral surcharge/minimum and procedure questions recorded in [foral corporate Sources](es-foral-corporate-tax.md#sources); a legislative or binding resolution settling the art. 25 literal 5% overlap beyond AEAT’s now-cited administrative table; the final 2026 annual-return schema/calendar to be published for filing in 2027; full specialist-regime claims outside the ordinary computation. The reduced-rate minimum-tax rounding must be checked against the filing instructions applicable to the actual return. Independent whole-pack review is pending.
+
+> Contributed by OpenAccountants.
 
 <!-- openaccountants-cta-block -->
 

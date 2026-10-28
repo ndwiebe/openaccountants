@@ -1,7 +1,7 @@
 ---
 name: es-rental-income
 description: Use this Guide to compute common-territory Spanish individual rental and own-use property income for 2026. It covers ownership and income classification, gross rent, property-specific interest and repair caps, other expenses, bad debts, depreciation and lifetime limits, residential net-income reductions, the October reform and December lease-date transition, relative lettings and imputed income. Trigger phrases include alquiler España, arrendamiento vivienda, rendimiento capital inmobiliario, reducción alquiler, amortización inmueble, gastos reparación, renta imputada and landlord tax Spain. Obtain actual lease and renewal dates, tenant use and age, prior rent and reference-price evidence, large-holder status, cadastral values, acquisition costs, rental days and prior expense ledgers. Resident rental results feed the full state and regional IRPF computation. Non-resident income, property businesses, corporate landlords and indirect-tax treatment have separate companion routes.
-version: 1.2
+version: 1.3
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Spain: rental and own-use property income v1.2
+# Spain: rental and own-use property income v1.3
 
 Compute 2026 common-territory rental income property by property, then apply the correct lease-date relief and annual IRPF route. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.
 
@@ -223,6 +223,8 @@ expected:
 | [TEAC00/05138/2013,8September2016](https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F05138%2F2013%2F00%2F0%2F1), [AEAT housing-use/company-tenant explanation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/arrendamiento-inmuebles-destinados-vivienda.html) | Preserved-wording exclusive identified permanent-home use from outset; generic employee use excluded; actual preserved rate selected separately from historical dispute rate; new express-LAU-reference population unconfirmed | 2026-10-27 |
 
 **Not yet confirmed:** exact treatment of a lease signed on the 1 December transition boundary; a replacement contract versus a continuing/novated lease where facts are disputed; case-specific reference-index/zone eligibility, the effect of the new express LAUart.2.1 reference on post-transition company leases or a company-tenant claim to the new80% tacit-extension route, and foral allocation. The ordinary expense, depreciation, lease-date and own-use routes above are supplied. Independent whole-pack review remains outstanding.
+
+> Contributed by OpenAccountants.
 
 <!-- openaccountants-cta-block -->
 
