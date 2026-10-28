@@ -20,7 +20,7 @@ covered_by:
 
 Owner: Michael, as recorded in [issue #398](https://github.com/openaccountants/openaccountants/issues/398). Country PR [#778](https://github.com/openaccountants/openaccountants/pull/778) preserves the original work from consolidated #514. Current main reconciled locally on 28 October 2026. This is a work queue, not a certificate of complete coverage. Every Guide remains a source-cited draft.
 
-The 28 October ordinary-method continuation is a local writer candidate. The two current changed-Guide figure ledgers are writer-complete; remaining ordinary repairs and one independent country review are pending. Earlier completed reviews retain their exact scopes. The structured `partial:` map records the ordinary gaps already disclosed below; all seven domains being mapped does not establish a complete country.
+The 28 October continuation adds ordinary net-borrowing-cost and corporate tax-residence exit methods. Both revised Guides have complete rule/quote ledgers, original-topic destination maps and the nine-section tax structure. The [independent country review and bounded repair records](../../research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions, findings and closure. Earlier completed reviews retain their exact scopes. The structured `partial:` map records the ordinary gaps already disclosed below; all seven domains being mapped does not establish a complete country.
 
 Full independent AI source/editorial review records are listed below. Each record identifies its reviewed versions, corrections and limits; subsequent additions have separate delta records in [research](../../../docs/research/). These reviews do not establish professional attestation.
 

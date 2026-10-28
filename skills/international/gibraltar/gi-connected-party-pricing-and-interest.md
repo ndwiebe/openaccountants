@@ -7,7 +7,7 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: "0.7"
+version: "0.8"
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
@@ -17,13 +17,15 @@ sources:
 
 # Gibraltar: connected-party pricing and interest restrictions
 
-## Scope and relationship test
+## Who this applies to
+
+### Scope and relationship test
 
 This Guide covers selected Schedule 4 rules for connected-party business and financing. It does not establish complete transfer-pricing, borrowing-cost, hybrid-mismatch or country-by-country reporting compliance. Section 40's anti-avoidance rule operates alongside Schedule 4 and expressly refers to internationally accepted profit-determination principles and OECD transfer-pricing documents. Satisfying one numerical test is not a safe harbour from the remaining provisions. [Income Tax Act, section 40(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Determine connected status under Schedule 4 paragraph 9, with control construed under paragraph 10. Common control, control exercised with connected persons, specified family relationships, partnerships, trusts, foundations and persons acting together can be relevant. Do not replace that definition with a single ownership percentage or the separate “associated enterprise” definition used in later Parts of Schedule 4. Obtain a relationship and control analysis before calculating an adjustment. [Schedule 4, paragraphs 8, 8A and 9](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-## Determine control from rights, not just registered shares
+### Determine control from rights, not just registered shares
 
 Paragraph 10(1) covers a person who exercises, can exercise or is entitled to acquire direct or indirect control over company affairs. Its specific routes include the greater part of share capital or issued share capital, voting power, rights to distributed income, or rights to assets available for distribution. Those routes supplement the general test; a share register alone does not exhaust it. [Schedule 4, paragraph 10(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -33,7 +35,7 @@ Example: a person holds 40% of voting rights directly and a nominee holds a furt
 
 Paragraph 10(5) additionally addresses rights of controlled companies and associates, including its specified attribution limits and the rule concerning control by five or fewer participators. Do not repeatedly aggregate the same rights or assume an unrestricted chain of associate attribution: the provision expressly excludes rights attributed to an associate under that same subparagraph. Complex structures require a documented application of the complete wording. [Paragraph 10(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-## Connection extends beyond shareholders
+### Connection extends beyond shareholders
 
 Paragraph 9 connects companies under the specified common-control arrangements and a company with a person who controls it, alone or with connected persons. It also covers specified relatives, partnership relationships, settlement trustees, foundations and persons acting together. Its partnership provision has an exception for acquisitions or disposals of partnership assets under bona-fide commercial arrangements. Do not label every transaction with a business acquaintance or every partnership asset transfer connected without applying the relevant limb. [Paragraph 9(2)–(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -41,13 +43,29 @@ A “participator” under paragraph 11 includes persons with interests in compa
 
 For associate attribution, paragraph 11(4) addresses relatives, partners, specified trustees and estate representatives. Paragraph 11(5)'s narrower relative wording expressly refers to subparagraph (3), whereas the associate definition appears in (4); this is a textual cross-reference issue requiring legal reconciliation. Do not silently replace paragraph 9's different relative definition or certify a family-attribution conclusion from this summary. [Paragraphs 9(9) and 11(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-## Business-profit adjustment and excess interest
+## Rates, bands and thresholds
+
+| Item | Amount or test | Tax year | Official source |
+|---|---|---|---|
+| Conditional thin-capitalisation ratio | Greater than 5:1; other financing and arm’s-length conditions also apply | 2026 | [Schedule 4, paragraph 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Third-party loan backed by connected non-company assets | More than 50% security limb; other conditions remain | 2026 | [Schedule 4, paragraph 2(1)(b)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Untaxed-deposit/investment loan security | 50% or more is a substantial part | 2026 | [Schedule 4, paragraphs 5 and 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Aggregate connected-expense deduction | Least of Expense, 5% of turnover and 75% of pre-Expense profit after brought-forward losses | 2026 | [Schedule 4, paragraph 4(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Ordinary exceeding-borrowing-cost limit | Greater of 30% of tax EBITDA and €3,000,000; floor is group-wide | 2026 | [Schedule 4, paragraph 18(3)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Group equity comparison tolerance | Up to two percentage points lower; consistent valuation required | 2026 | [Schedule 4, paragraph 18(7)(a)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+| Disallowed costs / unused capacity | Indefinite carry-forward / maximum five years respectively | 2026 | [Schedule 4, paragraph 18(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) |
+
+This is a threshold index, not an exemption table. Apply the complete scope, conditions and unresolved cross-references in the base below; sterling and euro amounts are not converted by this Guide.
+
+## The base
+
+### Business-profit adjustment and excess interest
 
 Where connected business is arranged so that the taxable person earns no profits, less than ordinary profits, or creates or increases a loss, paragraph 4(1) provides for taxation by reference to the profits expected under the remainder of Schedule 4. Document the transaction, actual performance and pricing evidence; an intercompany invoice alone does not establish the expected profit. [Schedule 4, paragraph 4(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Paragraph 4(2) separately treats connected-party interest **above the amount payable to an arm's-length party** as a dividend and denies deduction of that excess. For example, if actual interest is £12,000 and a supported arm's-length amount is £8,000, the excess is **£12,000 − £8,000 = £4,000**, before considering paragraph 7 and other applicable rules. The example assumes the £8,000 comparison has been established; it is not a suggested rate or benchmark. [Schedule 4, paragraph 4(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-## Conditional thin capitalisation
+### Conditional thin capitalisation
 
 Paragraph 2 applies where the company's loan-capital-to-equity ratio is **greater than 5:1 at any time in the accounting period**, subject to its exclusion for the specified regulated credit institutions/deposit takers. It additionally requires one of the listed financing arrangements and a loan that is not arm's length as to rate or terms:
 
@@ -60,7 +78,7 @@ When the provision applies, the relevant interest is treated as a dividend and i
 
 Example: qualifying loan capital £600,000 divided by statutory equity £100,000 gives **6:1**. That meets the ratio limb; lender, security and arm's-length conditions still need examination. Exactly £500,000/£100,000 gives **5:1**, which does not exceed the ratio threshold, but paragraph 4 and other restrictions remain relevant. Check changes during the period, not just the closing balance.
 
-## Arm's-length loans secured by untaxed deposits or investments
+### Arm's-length loans secured by untaxed deposits or investments
 
 Schedule 4 paragraph 5 is a separate restriction from the 5:1 thin-capitalisation test. It applies where, at any time in a year, a person pays interest to an arm's-length lender and a substantial part or all of that loan is secured by the specified cash deposit or investments whose income or gains are not assessable under the Act. Paragraph 8 defines **substantial part as 50% or more**. Do not import paragraph 2's strict “more than 50%” wording into this test. [Schedule 4, paragraphs 5 and 8, printed pages 185–187](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -68,28 +86,11 @@ The cash-deposit route covers a deposit with the lender or a person connected to
 
 Where the provision applies, **the interest is not deductible**. It does not say to disallow only the fraction matching the security percentage. Paragraph 7's exemption and decision/appeal provisions below remain relevant; a bank lender alone does not establish exemption. Confirm the loan, actual security coverage and income treatment before determining the adjustment. [Paragraphs 5 and 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-**Conditional boundary example:** assume a £200,000 loan, £12,000 interest, qualifying cash-deposit security covering £100,000 of the loan, non-assessable deposit income and no applicable paragraph 7 exemption. Security covers **50%**, meeting the substantial-part threshold, and the paragraph 5 adjustment is **£12,000**, not £6,000. If established security coverage is £99,999, it is **49.9995%** and does not alone meet this threshold. That second case is not proof of deductibility under other provisions. Security coverage is an assumed legal fact, not automatically the deposit's account balance.
 
-```oa-check
-name: Secured cash-deposit loan substantial-part boundary
-inputs:
-  loan: 200000
-  qualifying_security: 100000
-  below_boundary_security: 99999
-  interest_paid: 12000
-steps:
-  - security_percent: qualifying_security / loan * 100
-  - below_boundary_percent: below_boundary_security / loan * 100
-  - conditional_disallowance: interest_paid
-expected:
-  security_percent: 50
-  below_boundary_percent: 49.9995
-  conditional_disallowance: 12000
-```
 
 Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the deposit/investment income, and evidence supporting any paragraph 7 exemption. Allocation between multiple loans, disputed security coverage and the investment-definition cross-reference require further review.
 
-## Separate net-borrowing-cost limitation
+### Separate net-borrowing-cost limitation
 
 Schedule 4 Part V paragraph 18 supplies a further test. Apply it to **exceeding borrowing costs**, not automatically to gross interest or every finance cost in the accounts. Part III defines that amount as deductible borrowing costs exceeding taxable interest revenues and other economically equivalent taxable revenues. First establish those inputs under the Act, including the relevant earlier restrictions, so an expense already disallowed is not claimed a second time in this calculation. Financial undertakings and standalone entities are excluded by paragraph 18(1); apply the complete Part III definitions and group facts before using an ordinary company example. Paragraph 8A also supplies the corporate/PE-specific “taxpayer” definition for this Part. A connected-party loan held by an individual does not itself establish that this Part applies to that individual. [Part III definitions and paragraph 18(1), printed pages 187–189 and 200](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -112,7 +113,7 @@ Exceeding borrowing costs not deductible under paragraphs 18(3)–(7) may be car
 
 **Equality boundary:** on the same scope assumptions, €3,000,000 exceeding borrowing costs and €10,000,000 tax EBITDA put both limbs at €3,000,000. Nothing is disallowed by this limit. Eligibility, other deduction restrictions and the actual group-wide amount still require proof. The [two supplementary arithmetic controls](../../research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md) retain these illustrations without adding extra main examples.
 
-## Aggregate connected-expense cap
+### Aggregate connected-expense cap
 
 Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected parties, collectively the “Expense”. Subject to the applicable exemption and other provisions, the deduction is the least of:
 
@@ -124,7 +125,7 @@ Pre-Expense net profit adds the Expense back to net profit; paragraph 4(4) speci
 
 Example: aggregate Expense £80,000, statutory gross turnover £1,000,000, pre-Expense net profit £100,000 and available brought-forward losses £40,000. The limits are **£80,000**, **£50,000**, and **75% × (£100,000 − £40,000) = £45,000**. The least is **£45,000**, giving a £35,000 restriction if that £80,000 was otherwise deducted, before assessing exemptions and other adjustments. No negative-profit case or interaction between overlapping disallowances is resolved by this example.
 
-## Shareholder advances and deemed distributions
+### Shareholder advances and deemed distributions
 
 Section 22 is a recipient-income rule, separate from the company's interest deduction tests above. It addresses specified company advances, loans, asset distributions and payments on behalf of or for the benefit of shareholders or connected persons. Its wording includes ordinary residence, excludes another company from the stated connected-person category, and excludes amounts charged under Schedule 7 Chapter 6. Establish the recipient's status, relationship and any employment-benefit charge before deciding which provision applies. Do not treat every debit on a director's loan account as automatically taxable under section 22. [Section 22(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -134,25 +135,7 @@ In forming that opinion, the Commissioner can presume the company distributes in
 
 If a later dividend is paid and set off against an advance, loan or payment already deemed income, section 22(3) prevents the dividend being assessable again **to the extent of that set-off**. Match the dividend, earlier deemed-income amount and actual debt satisfaction. The rule does not exempt an unrelated dividend or establish a general refund following cash repayment. [Section 22(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-**Worked example:** assume an earlier £30,000 advance was fully treated as income under section 22(1). A later £40,000 dividend is actually applied £30,000 against that advance, with £10,000 paid separately. Section 22(3) protects the £30,000 set-off from repeat assessment; the remaining £10,000 needs its own ordinary dividend analysis. This is an allocation, not a tax-rate calculation.
-
-```oa-check
-name: Gibraltar dividend set-off against previously deemed shareholder income
-inputs:
-  previously_deemed_advance: 30000
-  later_dividend: 40000
-  actual_setoff: 30000
-steps:
-  - protected_setoff: min(previously_deemed_advance, actual_setoff)
-  - dividend_requiring_separate_analysis: later_dividend - protected_setoff
-expected:
-  protected_setoff: 30000
-  dividend_requiring_separate_analysis: 10000
-```
-
-If only £12,000 of that dividend is actually set off, this provision protects only £12,000; a £30,000 historic deemed-income balance does not itself exempt £30,000 of every later dividend. Preserve the original assessment, transaction dates, account movements, dividend resolution and set-off evidence. These are recommended controls; the current return fields, administrative claim/correction route, disputed classification and cash-repayment consequences remain to verify. Coordinate with the [individual income-tax Guide](gi-individual-income-tax.md) and the payroll benefit rules where relevant.
-
-## Exemption and evidence
+### Exemption and evidence
 
 Paragraph 7 states that paragraphs 2 and 4–6 do not apply where the person establishes the prescribed matters to the Commissioner's satisfaction. Its wording addresses absence of tax-avoidance purpose, bona-fide commercial transactions not designed to avoid tax, and the reasonableness and proportionality of the amount to the business. Review the complete provision and its decision/appeal route; commercial labelling alone is not proof of an exemption. Do not omit this provision when presenting the numerical restrictions. [Schedule 4, paragraph 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -160,9 +143,11 @@ Paragraph 7(2) expressly applies the section 35 appeal route to the exemption de
 
 A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and equity movements, security documents, aggregate connected expenses, profit/loss reconciliation and any Commissioner correspondence. These are preparation controls rather than a claim that a particular statutory local-file form or filing deadline has been verified.
 
-Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). Independent source review remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, the paragraph 5 investment-definition cross-reference and complex security allocations, the paragraph 18(6) exemption cross-reference, group allocation/currency/return implementation and international reporting need further work before comprehensive coverage can be claimed.
+Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence under the [records Guide](gi-bookkeeping-and-tax-records.md). The independent country review and bounded repair closure are recorded in the country research archive; professional attestation remains pending. Complex attribution and the paragraph 11 relative cross-reference, exemption application, overlapping restrictions, the paragraph 5 investment-definition cross-reference and complex security allocations, the paragraph 18(6) exemption cross-reference, group allocation/currency/return implementation and international reporting need further work before comprehensive coverage can be claimed.
 
-## Seeking clearance under section 42
+## Deadlines and filing
+
+### Seeking clearance under section 42
 
 An applicant seeking confirmation that an effected or proposed arrangement is not taxable under section 40 or Schedule 4 must furnish full particulars **in writing** and agree to publication of the arrangement and decision in anonymised form. This is a clearance about the stated anti-avoidance provisions, not a certificate that every tax consequence is approved. [Section 42(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -183,10 +168,71 @@ Subsection (8) permits reliance on failure to decide within the period specified
 
 A notification is void where the disclosure omits material facts or is not full and accurate, or where those facts and circumstances change. Clearance for one arrangement does not prevent section 40 or Schedule 4 applying to a wider arrangement incorporating it. Maintain the submitted factual record and compare implementation with it. Sections 42(11)–(12) also condition advance interpretation/clearance on willingness to accept anonymised publication. [Section 42(9)–(12)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-## Anti-avoidance decisions and appeal scope
+### Anti-avoidance decisions and appeal scope
 
 Section 43 requires a written decision identifying the person assessed, affected/disregarded parts of the arrangements, reasons and proposed assessment amount. Section 35 appeal provisions apply, subject to section 43(3): Schedule 2 paragraph 13 does not apply, and the Tribunal can confirm the decision or remit it for reconsideration on its findings of law and fact. Do not assume every ordinary assessment-appeal power carries over unchanged. Preserve the decision and service evidence and use the [appeals Guide](gi-income-tax-assessment-appeals.md) for the general deadline framework. [Section 43(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
+The clearance sequence is not a corporate return or payment calendar. Use the [corporate-tax Guide](gi-corporate-tax.md) for that separate calendar. Current Part V return fields, group-floor allocation, currency conversion and the clearance submission channel remain unverified here.
+
+## Penalties and interest
+
+This Guide does not establish a separate penalty or interest computation for a connected-party adjustment. Use the separately sourced [corporate-tax Guide](gi-corporate-tax.md) and [assessment/appeals Guide](gi-income-tax-assessment-appeals.md) for their stated scopes. Do not infer that a restriction, pending clearance or the absence of a charge in this summary eliminates an otherwise applicable penalty or payment surcharge.
+
+## Cross-border points
+
+The Schedule 4 restrictions apply according to their statutory scope; the presence of a foreign counterparty alone establishes neither treaty relief nor an exemption. This Guide does not supply a foreign corresponding adjustment, a treaty claim, international reporting compliance or another jurisdiction’s tax treatment. Read the [foreign-tax-relief Guide](gi-foreign-tax-relief.md) for its distinct domestic/treaty and corporate residence-exit methods. The group and currency limitations in the base remain open.
+
+## Two worked examples that recompute
+
+### Example 1: secured-deposit threshold and boundary
+
+**Conditional boundary example:** assume a £200,000 loan, £12,000 interest, qualifying cash-deposit security covering £100,000 of the loan, non-assessable deposit income and no applicable paragraph 7 exemption. Security covers **50%**, meeting the substantial-part threshold, and the paragraph 5 adjustment is **£12,000**, not £6,000. If established security coverage is £99,999, it is **49.9995%** and does not alone meet this threshold. That second case is not proof of deductibility under other provisions. Security coverage is an assumed legal fact, not automatically the deposit's account balance.
+
+```oa-check
+name: Secured cash-deposit loan substantial-part boundary
+inputs:
+  loan: 200000
+  qualifying_security: 100000
+  below_boundary_security: 99999
+  interest_paid: 12000
+steps:
+  - security_percent: qualifying_security / loan * 100
+  - below_boundary_percent: below_boundary_security / loan * 100
+  - conditional_disallowance: interest_paid
+expected:
+  security_percent: 50
+  below_boundary_percent: 49.9995
+  conditional_disallowance: 12000
+```
+
+### Example 2: dividend set-off after a deemed distribution
+
+**Worked example:** assume an earlier £30,000 advance was fully treated as income under section 22(1). A later £40,000 dividend is actually applied £30,000 against that advance, with £10,000 paid separately. Section 22(3) protects the £30,000 set-off from repeat assessment; the remaining £10,000 needs its own ordinary dividend analysis. This is an allocation, not a tax-rate calculation.
+
+```oa-check
+name: Gibraltar dividend set-off against previously deemed shareholder income
+inputs:
+  previously_deemed_advance: 30000
+  later_dividend: 40000
+  actual_setoff: 30000
+steps:
+  - protected_setoff: min(previously_deemed_advance, actual_setoff)
+  - dividend_requiring_separate_analysis: later_dividend - protected_setoff
+expected:
+  protected_setoff: 30000
+  dividend_requiring_separate_analysis: 10000
+```
+
+If only £12,000 of that dividend is actually set off, this provision protects only £12,000; a £30,000 historic deemed-income balance does not itself exempt £30,000 of every later dividend. Preserve the original assessment, transaction dates, account movements, dividend resolution and set-off evidence. These are recommended controls; the current return fields, administrative claim/correction route, disputed classification and cash-repayment consequences remain to verify. Coordinate with the [individual income-tax Guide](gi-individual-income-tax.md) and the payroll benefit rules where relevant.
+
+## Ask the client first
+
+1. Who are the legal and beneficial parties, and what voting, acquisition, nominee and distribution rights connect them?
+2. What were the debt, statutory equity and security positions throughout the period, and how was the arm’s-length amount supported?
+3. What aggregate connected expenses, tax-computed profit, turnover and brought-forward losses enter the computation?
+4. For Part V, what corporate/PE scope, exclusion status, consolidated group facts and group-wide floor application have been established?
+5. Were shareholder advances previously assessed, and what later dividend amount was actually set off?
+6. What Commissioner decisions, exemption evidence, clearance notices and service dates exist?
 
 ## Sources
 
@@ -195,6 +241,6 @@ Section 43 requires a written decision identifying the person assessed, affected
 | [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Sections 22, 40(1)–(4), 42–43; Schedule 4 paragraphs 2, 4–5, 7–11, targeted Part III definitions and complete Part V paragraph 18(1)–(8); not the whole 297-page Act newly read | 2026-10-28 |
 | Same Act, sections 22, 40, 42–43 and Schedule 4 earlier methods | Earlier source reads and completed reviews retained in the [lending/appeals full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); this date does not claim a fresh reread of every old provision | 2026-10-22 |
 
-The complete v0.7 writer rule ledger and old-topics map are prepared for the independent country review in the [country research ledger](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md). This is a local writer candidate, not an independent-review conclusion. The earlier review covers its stated predecessor, not this new addition. Professional attestation remains pending.
+The [complete rule ledger and old-topics map](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md) and [independent country review records](../../research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions checked, findings and bounded repair closure. Earlier reviews retain their stated scopes. This remains a source-cited draft; professional attestation is pending.
 
 Not yet confirmed: complex control/associate attribution and the paragraph 11 relative cross-reference; the paragraph 5 investment-definition successor; disputed exemptions and overlapping restrictions; paragraph 18(6)'s reference to 19(3), group-wide floor allocation, foreign-currency conversion, capacity amounts and current return fields; wider international documentation/reporting and other later-Part regimes. The ordinary paragraph 18 limit and separate carry-forward periods above do not resolve those specific questions.
