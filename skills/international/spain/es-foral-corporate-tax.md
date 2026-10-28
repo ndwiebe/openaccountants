@@ -9,18 +9,19 @@ description: >
   documentation. Use for Impuesto sobre Sociedades foral, Hacienda Foral, Navarra
   corporate tax, cuota efectiva, tributación mínima and twelve-million territorial
   operations tests. Apply one selected substantive law before dividing collection.
-  Specialist entities and the expressly unresolved extraordinary-profit and foreign-
-  credit minimum branches need their separate confirmed method before a filing
-  calculation.
+  Supplies a labelled ordinary extraordinary-profit attribution method for Bizkaia/
+  Gipuzkoa. Álava profit measurement, unsupported attribution facts and the recorded
+  foreign-credit minimum branches retain their precise limits. Specialist entities
+  need their separate confirmed method before a filing calculation.
 jurisdiction: ES
 category: international
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-28
-version: 0.4
+version: 0.5
 ---
 
-# Spain: foral corporate tax for2026 v0.4
+# Spain: foral corporate tax for2026 v0.5
 
 ## Who this applies to
 
@@ -292,9 +293,26 @@ All three current Basque corporate statutes add this branch for general 24%, ban
 
 For Bizkaia/Gipuzkoa, start from pre-tax financial-statement profit before depreciation and impairment, minus the income adjustments in chapterIII of titleIV and approved exceptional results. Compare current positive measure `R` with mean `M` of the previous three positive measures. Regulations exclude any zero/negative result in current/prior three years, the first four periods from starting/restarting after at least a year inactive, and claims to the expressly listed investment/research/environment/employment credits in current/prior three periods. Exceptional-result exclusions require the local Director-General's decision. Tax groups need the regulation's consolidated-result/history rules; do not mechanically add individual surcharges. [BR DA 10; GR DA 9.](https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806), [Gipuzkoa DF17/2015](https://www.gipuzkoa.eus/documents/2456431/8.0761381E7/DF%2017-2015%20%282026%29.pdf/ad233e14-7236-0450-948f-50a669df270f)
 
-The growth slices are `(1.35 M,1.50 M]` at 1%,`(1.50 M,1.75 M]` at 2%,`(1.75 M,2 M]` at 3%, and above`2 M` at 4%, applied to the corresponding gross-quota portion. The exact conversion of the excess into the corresponding gross-quota portions needs an independently reviewed reconciliation before a numerical surcharge result is published; a numeric surcharge is therefore not supplied for that unresolved interpretation. [B art.57 bis; A/G art.56.7.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)
+The growth slices are `(1.35 M,1.50 M]` at 1%,`(1.50 M,1.75 M]` at 2%,`(1.75 M,2 M]` at 3%, and above`2 M` at 4%, applied to the corresponding gross-quota portion. Use the expressly labelled attribution-ledger interpretation below to reconcile fully taxable excess profit to its corresponding gross-quota portions; this does not assume that every accounting-profit slice is taxable or permit a blanket average allocation. [B art.57 bis; A/G art.56.7.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)
 
-This branch is not yet safe to publish as complete for Álava: its current cached corporate regulation includes amendments through DF 42/2025 but does not contain an equivalent surcharge implementation provision. Also check the statute's special disapplication of local minimum/credit caps in applying this surcharge and the exact current regulation cross-references; Gipuzkoa GR DA 9 currently names art.66 quinquies in its exclusion list. The precise statutory/regulatory interpretation remains on the Not yet confirmed line.
+Álava's own art.56.7 supplies the charging bands, but the retained current corporate regulation, including amendments through DF42/2025, has not supplied a confirmed own delegated accounting-profit measure in this review. Do not import B/G's pre-tax/depreciation definition or their regulatory exclusions into Álava. This is a precise unresolved measurement question, not a statement that the enacted Álava charge is suspended or zero. If its own applicable measure and attributable taxable increments are independently established for the actual case, art.56.7/57 supports the conditional quota arithmetic below. B DA34, A DA31 and G DA29 disapply arts.59.3–5 and67.1 for applying this surcharge and identify the fiscal group as taxpayer; they do not change the nominal rate in art.56.1. Gipuzkoa GR DA9 currently names art.66 quinquies in its exclusion list. Sources: the own statutes and regulations linked above.
+
+
+**Ordinary attribution-ledger method, reasoned from each own primary law.** This interpretation reads B57bis/G56.7 together with each province's arts.15,31 and57 and its own profit-measure regulation. First record the actual local eligibility and exclusion tests above, each of the four period measures, `M`, the nominal rate and the full accounts-to-tax reconciliation. Define accounting growth slices `E1=max(0,min(R,1.50M)-1.35M)`, `E2=max(0,min(R,1.75M)-1.50M)`, `E3=max(0,min(R,2M)-1.75M)`, `E4=max(0,R-2M)`. For each slice record the taxable-base increment `I_j` actually derived from that profit, with its identifiable tax additions, exclusions, deductions and used losses. Apply the selected law's tax treatment to those facts; an unsupported allocation is not a verified input. For a constant general24% rate, the corresponding gross-quota portion is `q_j=24% × I_j` and the additional quota is `S=1%q1+2%q2+3%q3+4%q4`. Ordinary gross quota plus `S` is the increased gross quota. This is a source-derived computation, not a published provincial algebra ruling. Álava's own15/31/56.7/57 supports the same **conditional** quota step after its own `R/M/I_j` inputs have been independently established; that condition does not complete its unresolved profit-measure method. Sources: B/A/G arts.15,31,56–57 and B57bis, BR DA10/GR DA9, linked above.
+
+A fully taxable incremental-profit ledger supplies a positive ordinary B/G case. Assume a standalone general24% trading company which fails the art.13 medium-company size tests, has been active for more than four periods, has no group/restart/exceptional-result issue, and has claimed none of its own regulation's excluded credits in any of the four periods. Each previous period has pre-tax profit80,000 and deductible depreciation20,000, giving own `R=100,000` and `M=100,000`. Current pre-tax profit190,000 plus deductible depreciation60,000 gives `R=250,000`; no impairment, income adjustment, reserve deduction, other tax difference, used loss or credit changes these figures. The actual operating-profit ledger establishes that the60,000 depreciation belongs to the continuing business and that the115,000 profit above `1.35M` consists of additional fully taxable income with no attributable expense or tax adjustment. Thus the underlying business at `R=135,000` has taxable profit75,000, and adding the four excess slices15,000/25,000/25,000/50,000 reconciles exactly to actual taxable base190,000. This is factual attribution of the excess, not a rule assigning every company's depreciation to its underlying business. Sources: each own15/16/31/56.1/57 and surcharge/regulatory provisions above; art.13 tests are supplied earlier.
+
+| Ledger component | Accounting-profit slice | Attributable taxable increment |24% gross-quota portion | Additional percentage | Additional quota |
+|---|---:|---:|---:|---:|---:|
+| Above35% to50% |15,000 |15,000 |3,600 |1% |36 |
+| Above50% to75% |25,000 |25,000 |6,000 |2% |120 |
+| Above75% to100% |25,000 |25,000 |6,000 |3% |180 |
+| Above100% |50,000 |50,000 |12,000 |4% |480 |
+| Total excess |115,000 |115,000 |27,600 | |816 |
+
+Ordinary gross quota is `190,000 ×24%=45,600`; increased gross quota is `45,600+816=46,416`. Assuming the only accounting tax expense is that current charge, net accounting profit143,584 plus nondeductible tax expense46,416 reconciles to pre-tax/taxable profit190,000, and adding depreciation60,000 recovers `R=250,000`. The surcharge is a quota increase, not a deduction from taxable income. All amounts here are exact whole euros; the example establishes no intermediate or return-field rounding convention. Applying `BI/R` to every slice would instead produce620.16 without an attribution basis; using190,000 as `R` would produce264 using the wrong growth measure; applying the additional percentages directly to the115,000 profit slices would produce3,400 on the wrong charge base. The816 result follows the stated ledger and own gross-quota wording. Sources: each own15/31/57 and surcharge provisions above.
+
+For a different case, retain a reconciliation showing where depreciation/impairment, income adjustments, reserves, interest restrictions and used losses actually affect the increment; neither whole-company `BI/R` averaging nor automatic `I_j=E_j` supplies missing facts. The ordinary method is computable where the attribution is established, including the fully taxable ledger above. A disputed attribution or interaction with a non-linear adjustment needs its own reasoned legal allocation before use; the Guide does not invent a universal allocation order. Actual zero/negative-history, excluded-credit and startup cases follow the own B/G regulation rather than this positive illustration. Álava still needs its own profit-measure authority. Sources: own15 and surcharge/regulatory provisions above.
 
 ## Deadlines and filing
 
@@ -481,4 +499,4 @@ expected:
 | CN art.24; B/A/G art.60.7, in the current sources below | Correct advance-payment connecting-factor citation and explicit prohibition on deducting excess Basque foreign tax as an expense | 2026-10-28 |
 
 
-**Not yet confirmed:** numerical application of the extraordinary-profit surcharge and Álava's current implementing provision; Gipuzkoa complementary-tax exception's precise paragraph scope for a large-group case; operational2027 forms beyond the supplied statutory windows and confirmed provincial232 triggers. Specialist culture/financing, IP nexus, reinvestment, patrimonial entities, fiscal groups, co-ops and restructuring require their own complete methods before use. Surcharge computation for potentially chargeable general-rate companies remains partial pending that calculation; art.13 medium companies remain statutorily excluded. No accountant attestation is claimed.
+**Not yet confirmed:** Álava's own delegated extraordinary-profit measure/current implementing equivalent; attribution or adjustment interactions outside the supplied reasoned ordinary ledger and return-specific rounding; Gipuzkoa complementary-tax exception's precise paragraph scope for a large-group case; operational2027 forms beyond the supplied statutory windows and confirmed provincial232 triggers. Specialist culture/financing, IP nexus, reinvestment, patrimonial entities, fiscal groups, co-ops and restructuring require their own complete methods before use. The supplied B/G fully taxable incremental-profit method gives a positive surcharge; Álava's conditional quota arithmetic does not establish its missing own measurement rule. These ordinary limits are not specialist exclusions; art.13 medium companies remain statutorily excluded. No accountant attestation is claimed.
